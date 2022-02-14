@@ -1,121 +1,304 @@
 <!doctype html>
 <html class="no-js" lang="{{ shop.locale }}">
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="theme-color" content="{{ settings.color_button }}">
-  <link rel="canonical" href="{{ canonical_url }}">
-  <meta name="format-detection" content="telephone=no">
+  <head>{%- comment -%}smartseo_integration_begin{%- endcomment -%}{% include 'smartseo' %}{%- comment -%}smartseo_integration_end{%- endcomment -%}
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    {% assign mlveda_code_flag = false %} 
+    
+    <!-- Reddit Pixel -->
+    <script>!function(w,d){if(!w.rdt){var p=w.rdt=function(){p.sendEvent?p.sendEvent.apply(p,arguments):p.callQueue.push(arguments)};p.callQueue=[];var t=d.createElement("script");t.src="https://www.redditstatic.com/ads/pixel.js",t.async=!0;var s=d.getElementsByTagName("script")[0];s.parentNode.insertBefore(t,s)}}(window,document);rdt('init','t2_5sbynb6q');rdt('track', 'PageVisit');</script>
+    <!-- DO NOT MODIFY --><!-- End Reddit Pixel -->
+    
+    <!-- Google Tag Manager -->  
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':  
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0], 
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src= 
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);  
+    })(window,document,'script','dataLayer','GTM-WXG4CNG');</script>  
+    <!-- End Google Tag Manager --> 
+        
+    {% if mlveda_code_flag == true %}
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.1/jquery.min.js"></script>  
+    <script>  
+        $m = $.noConflict(true);  
+   window.pattern = /^(do|sv|ee|fi|fr|gd|gp|gg|hu|is|im|il|kz|ke|kg|la|mo|mk|mh|mq|ms|ma|nl|ne|ng|no|pw|py|pl|pt|kn|st|sc|sg|sk|za|sr|sj|th|to|tm|tc|uz|vu|vn|zm|af|al|as|ao|ai|an|ag|ar|as|bb|by|aq|bm|bq|bv|au|vg|bs|cv|bh|cf|bd|cn|be|co|ba|ci|bw|dk|bn|dm|bi|cd|cm|ec|ca|eg|td|gq|cx|er|cc|et|cr|eu|ga|gh|cy|gi|dj|gu|eu|gt|fk|gn|fo|gw|gf|hm|pf|hn|gm|iq|ge|ie|de|jm|gr|jp|in|ki|id|lr|je|mw|lv|my|ly|mu|li|yt|mv|mx|mc|mn|mz|nr|np|ni|nu|nf|pk|na|ph|oc|pn|om|qa|pg|re|pr|sh|ro|ru|rw|sm|bl|rs|pm|sx|vc|gs|sa|sd|sl|se|si|tj|tz|sb|tt|sa|tn|es|gb|lk|va|ch|zw|sy|tw|tl|tg|tr|um|vi|ug|us|uy|ve|af|ax|dz|ad|am|aw|at|az|bz|bj|bt|bo|br|io|bg|bf|kh|ky|cl|km|cg|ck|hr|cu|cw|cz|fj|tf|gl|gy|ht|hk|ir|it|jo|kw|lb|ls|lt|lu|mg|ml|mt|mr|fm|md|me|mm|na|nc|nz|kp|mp|ps|pa|pe|lc|mf|ws|sn|so|kr|ss|sz|tk|tv|ua|ae|wf|eh|ye|intl)$/;  
+    </script> 
+    {% else %}
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    {% endif %}
 
-  {%- if settings.favicon -%}
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="theme-color" content="{{ settings.color_button }}">
+    <link rel="canonical" href="{{ canonical_url }}">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="facebook-domain-verification" content="bi21xxheobqde3zi66jwjc0tmj5gyb">
+    <script src="https://www.googleoptimize.com/optimize.js?id=OPT-NPMXQC2"></script>
+
+    {%- if settings.favicon -%}
     <link rel="shortcut icon" href="{{ settings.favicon | img_url: '32x32' }}" type="image/png" />
-  {%- endif -%}
+    {%- endif -%}
 
-  {% include 'seo-title' %}
-  <title>{{ seo_title }}</title>
+    {% include 'seo-title' %}
+    {%- comment smartseo_integration_begin_meta_data -%}<title>{{ seo_title }}</title>{%- endcomment smartseo_integration_end_meta_data -%}
 
-  {%- if page_description -%}
-  <meta name="description" content="{{ page_description | escape }}">
-  {%- endif -%}
+    {%- if page_description -%}
+    {%- comment smartseo_integration_begin_meta_data -%}<meta name="description" content="{{ page_description | escape }}">{%- endcomment smartseo_integration_end_meta_data -%}
+    {%- endif -%}
 
-  {% include 'social-meta-tags' %}
+    {% include 'social-meta-tags' %}
+    {% include 'font-face' %}
 
-  {% include 'font-face' %}
-  {{ 'theme.scss.css' | asset_url | stylesheet_tag }}
+    <script type="application/json" data-theme-information>
+      {
+        "locale": {
+          "productFlavour": "{{ 'general.subscription_page.product_flavours' | t }}",
+          "productOption": "{{ 'general.subscription_page.product_options' | t }}"
+        }
+      }
+    </script>  
 
-  <script>
-    document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
+    <script>
+      document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
 
-    window.theme = window.theme || {};
-    theme.strings = {
-      addToCart: {{ 'products.product.add_to_cart' | t | json }},
-      soldOut: {{ 'products.product.sold_out' | t | json }},
-      unavailable: {{ 'products.product.unavailable' | t | json }},
-      stockLabel: {{ 'products.product.stock_label' | t: count: '[count]' | json }},
-      cartSavings: {{ 'cart.general.savings_html' | t: savings: '[savings]' | json }},
-      cartEmpty: {{ 'cart.general.empty' | t | json }},
-      cartTermsConfirmation: {{ 'cart.general.terms_confirm' | t | json }}
-    };
-    theme.settings = {
-      dynamicVariantsEnable: true,
-      dynamicVariantType: {{ settings.variant_type | json }},
-      cartType: {{ settings.cart_type | json }},
-      currenciesEnabled: {{ settings.enable_currencies | json }},
-      nativeMultiCurrency: {{ shop.enabled_currencies.size }} > 1 ? true : false,
-      moneyFormat: {{ shop.money_format | json }},
-      inventoryThreshold: {{ settings.inventory_threshold }},
-      quickView: {{ settings.quick_shop_enable }},
-      themeVersion: "4.3.0"
-    };
-  </script>
+      window.theme = window.theme || {};
+      theme.strings = {
+        addToCart: {{ 'products.product.add_to_cart' | t | json }},
+        soldOut: {{ 'products.product.sold_out' | t | json }},
+        unavailable: {{ 'products.product.unavailable' | t | json }},
+        stockLabel: {{ 'products.product.stock_label' | t: count: '[count]' | json }},
+        cartSavings: {{ 'cart.general.savings_html' | t: savings: '[savings]' | json }},
+        cartEmpty: {{ 'cart.general.empty' | t | json }},
+        cartTermsConfirmation: {{ 'cart.general.terms_confirm' | t | json }}
+      };
+      theme.settings = {
+        dynamicVariantsEnable: true,
+        dynamicVariantType: {{ settings.variant_type | json }},
+        cartType: {{ settings.cart_type | json }},
+        currenciesEnabled: {{ settings.enable_currencies | json }},
+        nativeMultiCurrency: {{ shop.enabled_currencies.size }} > 1 ? true : false,
+        moneyFormat: {{ shop.money_format | json }},
+        inventoryThreshold: {{ settings.inventory_threshold }},
+        quickView: {{ settings.quick_shop_enable }},
+        themeVersion: "4.3.0"
+      };
+    </script>
 
-  {{ content_for_header }}
+    {{ content_for_header }} 
+    {%- include 'bold-common' -%} 
+    {%- include 'bold-product' with product, hide_action: 'header' -%}  
+      
+    {{ 'bold.css' | asset_url | stylesheet_tag }} 
+    {{ 'ffc.css' | asset_url | stylesheet_tag }}
 
-  <script src="{{ 'vendor-scripts-v5.js' | asset_url | split: '?' | first }}" defer="defer"></script>
+    <script src="{{ 'vendor-scripts-v5.js' | asset_url | split: '?' | first }}" defer="defer"></script>
 
-  {% if settings.enable_currencies %}
-    {% unless shop.enabled_currencies.size > 1 %}
-      <script src="/services/javascripts/currencies.js" defer="defer"></script>
-      <script src="{{ 'currencies.jquery.min.js' | asset_url | split: '?' | first }}" defer="defer"></script>
-    {% endunless %}
-    <link rel="stylesheet" href="{{ 'currency-flags.css' | asset_url }}">
-  {% endif %}
+    {% if settings.enable_currencies %}
+      {% unless shop.enabled_currencies.size > 1 %} 
+      <script src="/services/javascripts/currencies.js" defer="defer"></script> 
+      <script src="{{ 'currencies.jquery.min.js' | asset_url | split: '?' | first }}" defer="defer"></script> 
+      {% endunless %}     
+      <link rel="stylesheet" href="{{ 'currency-flags.css' | asset_url }}"> 
+    {% endif %}
 
-  <script src="{{ 'theme.js' | asset_url }}" defer="defer"></script>
+    <link rel="stylesheet" href="{{ 'currency-flags.css' | asset_url }}"> 
+    <script src="{{ 'theme.js' | asset_url }}" defer="defer"></script>  
+    
+    {%- if template contains 'customers' -%}  
+    <script src="{{ 'shopify_common.js' | shopify_asset_url }}" defer="defer"></script> 
+    {%- endif -%} 
+    
+    <script type="text/javascript">  
+    (function e(){var e=document.createElement("script");e.type="text/javascript",e.async=true,e.src="//staticw2.yotpo.com/f6ganaExxLD1IRvMP5JVN60bZ0BHGEQ8UsCgWweA/widget.js";var t=document.getElementsByTagName("script")[0];t.parentNode.insertBefore(e,t)})(); 
+    </script>
+      
+    {% render 'pagefly-header' %} 
+    {% if mlveda_code_flag == true %}  
+      {% if template != 'cart' %} 
+        <script>  
+          $m("<style type='text/css'>span.money{ display: none; }</style>").appendTo("head"); 
+                
+          {% if template contains 'product' %}  
+            $m("<style type='text/css'>button[name='add']{visibility : hidden;}</style>").appendTo("head"); 
+          {% endif %} 
+        </script> 
+      {% endif %} 
+    {% endif %} 
+    
+    {%- render 'bold-subscription-widget' -%} 
+    {{ 'bsub.js' | asset_url | script_tag }}  
+    {{ 'bsub.scss.css' | asset_url | stylesheet_tag }}  
+    
+    {{ 'sina-push.css' | asset_url | stylesheet_tag }}
+    
 
-  {%- if template contains 'customers' -%}
-    <script src="{{ 'shopify_common.js' | shopify_asset_url }}" defer="defer"></script>
-  {%- endif -%}
-</head>
+    <!-- Start of LittledataLayer -->
+    {% include 'LittledataLayer' %}
+    <!-- End of LittledataLayer -->
+  </head>
 
-<body class="template-{{ template | replace: '.', ' ' | truncatewords: 1, '' | handle }}{% if settings.enable_currencies %} currencies-enabled{% endif %}" data-transitions="{{ settings.animate_page_transitions }}">
+  <body class="template-{{ template | replace: '.', ' ' | truncatewords: 1, '' | handle }}{% if settings.enable_currencies %} currencies-enabled{% endif %}" data-transitions="{{ settings.animate_page_transitions }}">
 
-  {% if settings.animate_page_transitions %}
+    <div id="body-start"></div>
+   
+    {% if settings.animate_page_transitions %}
     <script type="text/javascript">window.setTimeout(function() { document.body.className += " loaded"; }, 25);</script>
-  {% endif %}
+    {% endif %}
 
-  <a class="in-page-link visually-hidden skip-link" href="#MainContent">{{ 'general.accessibility.skip_to_content' | t }}</a>
+    <a class="in-page-link visually-hidden skip-link" href="#MainContent">{{ 'general.accessibility.skip_to_content' | t }}</a>
 
-  <div id="PageContainer" class="page-container">
-    <div class="transition-body">
+    <div id="PageContainer" class="page-container">
+      <div class="transition-body">
+        
+        {% section 'header-v2' %}
+        
+        {% include 'cart-drawer' %}
 
-    {% section 'header' %}
+        <main class="main-content" id="MainContent">
+          {% if mlveda_code_flag == false %}
+            {{ content_for_layout }}  
+          {% endif %}
 
-      <main class="main-content" id="MainContent">
-        {{ content_for_layout }}
-      </main>
+          {% if mlveda_code_flag == true %}
+            <div class="mlvedaform">
+              {{ content_for_layout }}
+              {% include 'mlveda-multipricing-options' %}
+            </div>
+            {% include 'mlveda-multipricing-selectBox' %}
+            {% include 'mlveda-multipricing-selectors' %}
+          {% endif %}
 
-      {% section 'footer' %}
+          {% if template contains 'page' %}
+            {% assign show_newsletter = false %}
 
+            {% assign show_newsletter_metafield = shop.metafields.custom_fields.show_newsletter_on_pages %}
+            {% assign hide_newsletter_metafield = page.metafields.custom_fields.hide_newsletter_section %}
+            {% if show_newsletter_metafield %}
+              {% assign show_newsletter = true %}
+            {% endif %}
+            {% if hide_newsletter_metafield %}
+              {% assign show_newsletter = false %}
+            {% endif %}
+
+            {% if show_newsletter %}
+              {% section 'newsletter' %}
+            {% endif %}
+          {% endif %}
+        </main>
+
+        {% section 'footer' %}
+        {% section 'footer-v2' %}
+
+        {% section 'side-cart' %}
+        
+        {% unless request.path == '/challenge' %}
+        {% section 'newsletter-bar' %}
+        {% endunless %}
+
+        <a href="#body-start"><div class="mobile-button-to-top"><div class="arrow-down"></div></div></a>
+        <script>
+          $(document).scroll(function() {
+            if(window.outerWidth < 425) {
+              var y = $(this).scrollTop();
+                if (y > 800) {
+                  $('.mobile-button-to-top').show(1);
+                } else {
+                  $('.mobile-button-to-top').hide(1);
+                }
+              }
+            });
+        </script>
+      </div>
     </div>
-  </div>
 
-  {% section 'newsletter-popup' %}
+    {% section 'newsletter-popup' %}
 
-  {% if settings.cart_type == 'drawer' %}
+    {% comment %}
+    {% if settings.cart_type == 'drawer' %}
     {% include 'ajax-cart-template' %}
-  {% endif %}
+    <script type="application/json" data-upsell-options>
+      {%- assign upsell_prodcts = 'beeswax-candle,gift-box' | split: ',' -%}
+      [
+        {%- for upsell_item in upsell_prodcts -%}
+          {%- assign prod = all_products[upsell_item] -%}
+          {
+            "key": {{ prod.first_available_variant.id | json }},
+            "url": {{ prod.url | json }},
+            "variant": {{ prod.first_available_variant.id | json }},
+            "img": {{ prod.featured_image | json }},
+            "name": {{ prod.title | json }},
+            "variation": {{ prod.first_available_variant.title | json }},
+            "itemQty": {{ 1 | json }},
+            "price": {{ prod.first_available_variant.price | money | json }},
+            "vendor": {{ prod.vendor | json }},
+            "hide": {{ "" | json }}
+          }{%- unless forloop.last %},{%- endunless -%}
+        {%- endfor -%}
+      ]
+    </script>
+    {% endif %}
+    {% endcomment %}
 
-  {% if settings.enable_currencies %}
+    {% if settings.enable_currencies %}
     {% include 'currency-modal' %}
-  {% endif %}
+    {% endif %}
 
-  {% comment %}
+    {% comment %}
     Custom markup for slider arrows using theme icons
-  {% endcomment %}
-  <div class="hide">
-    <button id="prevArrowTemplate" class="slick-prev" aria-label="{{ 'general.pagination.previous' | t }}" type="button">
-      {% include 'icon-chevron-left' %}
-      <span class="icon__fallback-text">{{ 'general.pagination.previous' | t }}</span>
-    </button>
-    <button id="nextArrowTemplate" class="slick-next" aria-label="{{ 'general.pagination.next' | t }}" type="button">
-      {% include 'icon-chevron-right' %}
-      <span class="icon__fallback-text">{{ 'general.pagination.next' | t }}</span>
-    </button>
-  </div>
+    {% endcomment %}
+    <div class="hide">
+      <button id="prevArrowTemplate" class="slick-prev" aria-label="{{ 'general.pagination.previous' | t }}" type="button">
+        {% include 'icon-chevron-left' %}
+        <span class="icon__fallback-text">{{ 'general.pagination.previous' | t }}</span>
+      </button>
+      <button id="nextArrowTemplate" class="slick-next" aria-label="{{ 'general.pagination.next' | t }}" type="button">
+        {% include 'icon-chevron-right' %}
+        <span class="icon__fallback-text">{{ 'general.pagination.next' | t }}</span>
+      </button>
+    </div>
 
-  {% include 'video-modal' %}
-  {% include 'photoswipe-template' %}
-</body>
+    {% include 'video-modal' %}
+    {% include 'photoswipe-template' %}
+    {% include 'bold-currency-converter' %}
+
+    <script data-cart type="application/json">
+      {{ cart | json }}
+    </script>
+        
+    {% if template contains 'product' %}  
+      <script>  
+        var atcButtonID = "AddToCartForm-778391105";  
+        var atcButton = document.getElementById(atcButtonID); 
+        if(atcButton){  
+          atcButton.addEventListener("click", function(event) { 
+                    rdt('track', 'AddToCart') 
+          }); 
+        }
+      </script> 
+    {% endif %}
+
+    {% assign minification_string = "&enable_js_minification=1" %}
+    {% if theme.name contains 'FFC DEV' %}
+      {% assign minification_string = "&enable_js_minification=0" %}
+    {% endif %}
+
+    {% capture ffcJS %}{{ 'ffc.js' | asset_url }}{% endcapture %}
+    {% assign assetsPath = ffcJS | split: 'ffc.js' | first %}
+    <script>window.__webpack_public_path__ = "{{ assetsPath }}"</script>
+    <script src='{{ ffcJS }}{{ minification_string }}' defer='defer'></script>
+        
+    {% if mlveda_code_flag == true %} 
+      {% if template != 'cart' %} 
+      {% include 'mlveda-multipricing-updateprice' %} 
+      {% else %}  
+          <script>mlvedaFlagCalled = true;</script> 
+      {% endif %} 
+    {% else %}  
+      <script>mlvedaFlagCalled = true;</script> 
+    {% endif %}
+
+    <script type="text/javascript" async src="https://static.klaviyo.com/onsite/js/klaviyo.js?company_id=M5zFNA"></script>
+    {{ 'sina-push.js' | asset_url | script_tag }}
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  </body>
 </html>

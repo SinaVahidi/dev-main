@@ -29,8 +29,14 @@
         {% when 'rich-text'%}
           {% include 'page-block-rich-text' %}
 
+        {% when 'rich-text-contact'%}
+          {% include 'page-block-rich-text-contact' %}
+
         {% when 'text-and-image' %}
           {% include 'page-block-text-and-image' %}
+
+        {% when 'text-w-image-and-image' %}
+          {% include 'page-block-text-w-image-and-image' %}
 
         {% when 'text-columns' %}
           {% include 'page-block-text-columns' %}
@@ -46,6 +52,9 @@
 
         {% when 'fading-images' %}
           {% include 'page-block-fading-images' %}
+
+        {% when 'logos' %}
+          {% include 'landing-block--logos' %}
 
       {% endcase %}
     </div>

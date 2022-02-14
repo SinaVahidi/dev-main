@@ -1,0 +1,22 @@
+{% include 'yotpo-reviews' %}
+
+  {% if settings.enable_product_reviews and settings.reviews_layout == 'full' %}
+    <hr id="Reviews-{{ product.id }}" class="hr--large">
+    <div class="index-section index-section--small product-reviews product-reviews--full">
+      <div class="page-width">
+        <div id="shopify-product-reviews" data-id="{{product.id}}">{{ product.metafields.spr.reviews }}</div>
+      </div>
+    </div>
+  {% endif %}
+{% schema %}
+  {
+    "name": "Yotpo Reviews",
+    "settings": []
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

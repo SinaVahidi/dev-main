@@ -1,27 +1,88 @@
-{% style %}
-  .newsletter-{{ section.id }} {
-    background-color: {{ section.settings.color_background }};
-    color: {{ section.settings.color_text }};
-  }
+{% assign show_newsletter = false %}
 
-  .newsletter-{{ section.id }} .input-group-btn {
-    background-color: {{ section.settings.color_background }};
-  }
-{% endstyle %}
+{% assign show_newsletter_metafield = shop.metafields.custom_fields.show_newsletter_on_article %}
+{% assign hide_newsletter_metafield = article.metafields.custom_fields.hide_newsletter_section %}
+{% if show_newsletter_metafield %}
+  {% assign show_newsletter = true %}
+{% endif %}
+{% if hide_newsletter_metafield %}
+  {% assign show_newsletter = false %}
+{% endif %}
 
-<div class="newsletter-section newsletter-{{ section.id }}{% if section.settings.color_background == settings.color_body_bg %} newsletter-section--with-divider{% endif %}">
-  <div class="page-width text-center">
-    {% if section.settings.title != blank %}
-      <h2 class="h3">{{ section.settings.title | escape }}</h2>
-    {% endif %}
-    {% if section.settings.text != blank %}
-      <div class="rte">{{ section.settings.text }}</div>
-    {% endif %}
+{% if show_newsletter %}
+  {% style %}
+    .newsletter-{{ section.id }} {
+      background-color: {{ section.settings.color_background }};
+      color: {{ section.settings.color_text }};
+    }
 
-    {% include 'newsletter-form', section_id: section.id, snippet_context: 'section' %}
+    .newsletter-{{ section.id }} .input-group-btn {
+      background-color: {{ section.settings.color_background }};
+    }
+  {% endstyle %}
+
+  <div class="newsletter-section newsletter-{{ section.id }}{% if section.settings.color_background == settings.color_body_bg %} newsletter-section--with-divider{% endif %}">
+    <div class="page-width text-center">
+      {% if section.settings.title != blank %}
+        <h2 class="h3">{{ section.settings.title | escape }}</h2>
+      {% endif %}
+      {% if section.settings.text != blank %}
+        <div class="rte">{{ section.settings.text }}</div>
+      {% endif %}
+
+      {%- assign newsletter_form_id = 'newsletter-' | append: section.id -%}
+      {% form 'customer', id: 'newsletter-bottom' %}
+        {% if form.posted_successfully? %}
+          <div class="note note--success">{{ 'general.newsletter_form.newsletter_confirmation' | t }}</div>
+        {% endif %}
+
+        {% if form.errors %}
+          {{ form.errors | default_errors }}
+        {% endif %}
+
+        {% unless form.posted_successfully? or form.errors %}
+          <label for="Email-{{ section.id }}" class="hidden-label">{{ 'general.newsletter_form.newsletter_email' | t }}</label>
+          <input type="hidden" name="contact[tags]" value="prospect,newsletter">
+          <input type="hidden" name="contact[context]" value="newsletter-section">
+
+          <div class="newsletter-input-group flex">
+            <input type="email" value="{% if customer %}{{ customer.email }}{% endif %}" placeholder="{{ section.settings.email_text }}" name="contact[email]" id="Email-{{ section.id }}" class="newsletter-input global-border" autocorrect="off" autocapitalize="off">
+            <button type="submit" class="btn" name="commit" style="background-color: {{ section.settings.button_color_bg }}; color: {{ section.settings.button_color_text }};">{{ section.settings.email_button }}</button>
+          </div>
+        {% endunless %}
+      {% endform %}
+
+    </div>
   </div>
-</div>
+{% endif %}
+<script type="text/javascript">
+  var _learnq = _learnq || [];
 
+  var item = {
+    Name: {{ product.title|json }},
+    ProductID: {{ product.id|json }},
+    Categories: {{ product.collections|map:'title'|json }},
+    ImageURL: "https:{{ product.featured_image.src|img_url:'grande' }}",
+    URL: "{{ shop.secure_url }}{{ product.url }}",
+    Brand: {{ product.vendor|json }},
+    Price: {{ product.price|money|json }},
+    CompareAtPrice: {{ product.compare_at_price_max|money|json }}
+  };
+
+  _learnq.push(['track', 'Viewed Product', item]);
+  _learnq.push(['trackViewedItem', {
+    Title: item.Name,
+    ItemId: item.ProductID,
+    Categories: item.Categories,
+    ImageUrl: item.ImageURL,
+    Url: item.URL,
+    Metadata: {
+      Brand: item.Brand,
+      Price: item.Price,
+      CompareAtPrice: item.CompareAtPrice
+    }
+  }]);
+</script>
 {% schema %}
   {
     "name": "Newsletter",
@@ -43,16 +104,40 @@
         "default": "<p>Subscribe to get special offers, free giveaways, and once-in-a-lifetime deals.</p>"
       },
       {
+        "type": "text",
+        "id": "email_text",
+        "label": "Email placeholder",
+        "default": "Email address"
+      },
+      {
+        "type": "text",
+        "id": "email_button",
+        "label": "Email button text",
+        "default": "Subscribe"
+      },
+      {
         "type": "color",
         "id": "color_background",
         "label": "Background",
-        "default": "#f9f9f9"
+        "default": "#6CACE4"
       },
       {
         "type": "color",
         "id": "color_text",
         "label": "Text",
-        "default": "#1c1d1d"
+        "default": "#ffffff"
+      },
+      {
+        "type": "color",
+        "id": "button_color_bg",
+        "label": "Button background",
+        "default": "#f0bb5a"
+      },
+      {
+        "type": "color",
+        "id": "button_color_text",
+        "label": "Button text",
+        "default": "#ffffff"
       }
     ],
     "presets": [

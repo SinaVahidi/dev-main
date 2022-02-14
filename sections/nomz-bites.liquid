@@ -1,0 +1,261 @@
+{% assign ss = section.settings %}
+
+<div class="nomz-bites">
+  <div class="page-width grid">
+    
+    <div class="grid-item medium-up--one-half nomz-content">
+      
+      {% if ss.title != blank %}
+      <div class="section-header">
+        <h2 class="section-header__title">{{ ss.title | escape }}</h2>
+        <p class="section-header__subtitle">{{ ss.text }}</p>
+      </div>
+      {% endif %}
+      
+      <div class="nomz-values">
+        {% for i in (1..4) %}
+          {% capture ingredients_main %}ingredients-{{i}}-main{% endcapture %}
+          {% capture ingredients_text %}ingredients-{{i}}{% endcapture %}
+          
+          <div class="n-val">
+            <h5>{{ ss[ingredients_main] | escape }}</h5>
+            <span>{{ ss[ingredients_text] | escape }}</span>
+          </div>
+        {% endfor %}
+      </div>
+      
+      <div class="nomz-facts flex">
+        {% for block in section.blocks %}
+          <div class="n-fact flex">{% include 'icon-tick' %}{{ block.settings.bite-text }}</div>
+        {% endfor %}
+      </div>
+      
+      {% if ss.button_label != blank and ss.button_link != blank %}
+      <a href="{{ ss.button_link }}" class="btn">
+        {{ ss.button_label }}
+      </a>
+      {% endif %}
+      
+    </div>
+    
+    <div class="grid-item bites-section medium-up--one-half">
+      <div class="nomz-bites-container nomz-bites-{{ section.id }}">
+
+        {% for i in (1..4) %}
+          {% capture bite_image %}bite-image-{{i}}{% endcapture %}
+          {% capture bite_text %}bite-text-{{i}}{% endcapture %}
+          {% capture bite_link %}bite-link-{{i}}{% endcapture %}
+          {% capture bite_color %}bite-color-{{i}}{% endcapture %}
+          
+          <a href="{{ ss[bite_link] }}" class="bites__item" style="background-color: {{ ss[bite_color] }};">
+            <img class="bites__item-image lazyload" src="{{ ss[bite_image] | img_url: 'large' }}}}" alt="{{ ss[bite_image].alt | default: ss[bite_text] }}">
+            <div class="bite-text">{{ ss[bite_text] }}</div>
+          </a>
+          
+        {% endfor %}
+      </div>
+    </div>
+
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Nomz Bites",
+  "class": "index-section",
+  "max_blocks": 10,
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Heading"
+    },
+    {
+      "type": "richtext",
+      "id": "text",
+      "label": "Subheading",
+      "default": "<p>per bite:</p>"
+    },
+    {
+      "type": "header",
+      "content": "Ingredients"
+    },
+    { 
+      "type": "text",
+      "id": "ingredients-1-main",
+      "label": "Label 1 Title"
+    },
+    {
+      "type": "text",
+      "id": "ingredients-1",
+      "label": "Label 1 Subtitle"
+    },
+    {
+      "type": "text",
+      "id": "ingredients-2-main",
+      "label": "Label 2 Title"
+    },
+    {
+      "type": "text",
+      "id": "ingredients-2",
+      "label": "Label 2 Subtitle"
+    },
+    {
+      "type": "text",
+      "id": "ingredients-3-main",
+      "label": "Label 3 Title"
+    },
+    {
+      "type": "text",
+      "id": "ingredients-3",
+      "label": "Label 3 Subtitle"
+    },
+    {
+      "type": "text",
+      "id": "ingredients-4-main",
+      "label": "Label 4 Title"
+    },
+    {
+      "type": "text",
+      "id": "ingredients-4",
+      "label": "Label 4 Subtitle"
+    },
+    {
+      "type": "text",
+      "id": "button_label",
+      "label": "Button Text"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Button Link"
+    },
+    {
+      "type": "header",
+      "content": "Bites"
+    },
+    {
+      "type": "image_picker",
+      "id": "bite-image-1",
+      "label": "1 Flavour Image"
+    },
+    {
+      "type": "richtext",
+      "id": "bite-text-1",
+      "label": "1 Flavour Label",
+      "default": "<p>coconut</p>"
+    },
+    {
+      "type": "url",
+      "id": "bite-link-1",
+      "label": "1 Flavour Link"
+    },
+    {
+      "type": "color",
+      "id": "bite-color-1",
+      "label": "1 Flavour Color",
+      "default": "#6cace4"
+    },
+    {
+      "type": "image_picker",
+      "id": "bite-image-2",
+      "label": "2 Flavour Image"
+    },
+    {
+      "type": "richtext",
+      "id": "bite-text-2",
+      "label": "2 Flavour Label",
+      "default": "<p>almond</p>"
+    },
+    {
+      "type": "url",
+      "id": "bite-link-2",
+      "label": "2 Flavour Link"
+    },
+    {
+      "type": "color",
+      "id": "bite-color-2",
+      "label": "2 Flavour Color",
+      "default": "#ae9cdb"
+    },
+    {
+      "type": "image_picker",
+      "id": "bite-image-3",
+      "label": "3 Flavour Image"
+    },
+    {
+      "type": "richtext",
+      "id": "bite-text-3",
+      "label": "3 Flavour Label",
+      "default": "<p>hazelnut</p>"
+    },
+    {
+      "type": "url",
+      "id": "bite-link-3",
+      "label": "3 Flavour Link"
+    },
+    {
+      "type": "color",
+      "id": "bite-color-3",
+      "label": "3 Flavour Color",
+      "default": "#f0bb5a"
+    },
+    {
+      "type": "image_picker",
+      "id": "bite-image-4",
+      "label": "4 Flavour Image"
+    },
+    {
+      "type": "richtext",
+      "id": "bite-text-4",
+      "label": "4 Flavour Label",
+      "default": "<p>pistachio</p>"
+    },
+    {
+      "type": "url",
+      "id": "bite-link-4",
+      "label": "4 Flavour Link"
+    },
+    {
+      "type": "color",
+      "id": "bite-color-4",
+      "label": "4 Flavour Color",
+      "default": "#94cf66"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "logo_image",
+      "name": "Fact",
+      "settings": [
+        {
+          "type": "richtext",
+          "id": "bite-text",
+          "label": "Text",
+          "default": "<p>bites</p>"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Nomz Bites",
+      "category": "Custom Home Sections",
+      "blocks": [
+        {
+          "type": "logo_image"
+        },
+        {
+          "type": "logo_image"
+        },
+        {
+          "type": "logo_image"
+        },
+        {
+          "type": "logo_image"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

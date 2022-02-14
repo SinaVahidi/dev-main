@@ -1,6 +1,7 @@
+{% include 'breadcrumbs' %}
+
 {% if section.settings.page_title_enable or section.settings.page_content_enable %}
   <div class="page-width page-content{% if section.blocks.size > 0 %} page-content--with-blocks{% endif %}">
-    {% include 'breadcrumbs' %}
 
     <div class="grid">
       <div class="grid__item medium-up--three-quarters medium-up--push-one-eighth">
@@ -389,6 +390,12 @@
             "min": 1,
             "max": 5,
             "step": 1
+          },
+          {
+            "type": "checkbox",
+            "id": "overlay_scrollbars",
+            "label": "Horizontal scroll on mobiles?",
+            "default": true
           },
           {
             "type": "range",
@@ -1319,6 +1326,172 @@
                 "value": "100vh"
               }
             ]
+          }
+        ]
+      },
+      {
+        "type": "logos",
+        "name": "Logos",
+        "settings": [
+          {
+            "type": "text",
+            "id": "title",
+            "label": "Heading"
+          },   
+          {
+            "type": "richtext",
+            "id": "text",
+            "label": "Text"
+          },
+          {
+            "type": "html",
+            "id": "logo_code_1",
+            "label": "1 SVG Image Code"
+          },
+          {
+            "type": "url",
+            "id": "logo_link_1",
+            "label": "1 Link"
+          },
+          {
+            "type": "text",
+            "id": "logo_title_1",
+            "label": "1 Title"
+          },
+          {
+            "type": "color",
+            "id": "logo_color_1",
+            "label": "1 Logo Color"
+          },
+          {
+            "type": "color",
+            "id": "logo_color_bg_1",
+            "label": "1 Logo Background Color"
+          },
+          {
+            "type": "html",
+            "id": "logo_code_2",
+            "label": "2 SVG Image Code"
+          },
+          {
+            "type": "url",
+            "id": "logo_link_2",
+            "label": "2 Link"
+          },
+          {
+            "type": "text",
+            "id": "logo_title_2",
+            "label": "2 Title"
+          },
+          {
+            "type": "color",
+            "id": "logo_color_2",
+            "label": "2 Logo Color"
+          },
+          {
+            "type": "color",
+            "id": "logo_color_bg_2",
+            "label": "2 Logo Background Color"
+          },
+          {
+            "type": "html",
+            "id": "logo_code_3",
+            "label": "3 SVG Image Code"
+          },
+          {
+            "type": "url",
+            "id": "logo_link_3",
+            "label": "3 Link"
+          },
+          {
+            "type": "text",
+            "id": "logo_title_3",
+            "label": "3 Title"
+          },
+          {
+            "type": "color",
+            "id": "logo_color_3",
+            "label": "3 Logo Color"
+          },
+          {
+            "type": "color",
+            "id": "logo_color_bg_3",
+            "label": "3 Logo Background Color"
+          },
+          {
+            "type": "html",
+            "id": "logo_code_4",
+            "label": "4 SVG Image Code"
+          },
+          {
+            "type": "url",
+            "id": "logo_link_4",
+            "label": "4 Link"
+          },
+          {
+            "type": "text",
+            "id": "logo_title_4",
+            "label": "4 Title"
+          },
+          {
+            "type": "color",
+            "id": "logo_color_4",
+            "label": "4 Logo Color"
+          },
+          {
+            "type": "color",
+            "id": "logo_color_bg_4",
+            "label": "4 Logo Background Color"
+          },
+          {
+            "type": "html",
+            "id": "logo_code_5",
+            "label": "5 SVG Image Code"
+          },
+          {
+            "type": "url",
+            "id": "logo_link_5",
+            "label": "5 Link"
+          },
+          {
+            "type": "text",
+            "id": "logo_title_5",
+            "label": "5 Title"
+          },
+          {
+            "type": "color",
+            "id": "logo_color_5",
+            "label": "5 Logo Color"
+          },
+          {
+            "type": "color",
+            "id": "logo_color_bg_5",
+            "label": "5 Logo Background Color"
+          },
+          {
+            "type": "html",
+            "id": "logo_code_6",
+            "label": "6 SVG Image Code"
+          },
+          {
+            "type": "url",
+            "id": "logo_link_6",
+            "label": "6 Link"
+          },
+          {
+            "type": "text",
+            "id": "logo_title_6",
+            "label": "6 Title"
+          },
+          {
+            "type": "color",
+            "id": "logo_color_6",
+            "label": "6 Logo Color"
+          },
+          {
+            "type": "color",
+            "id": "logo_color_bg_6",
+            "label": "6 Logo Background Color"
           }
         ]
       }

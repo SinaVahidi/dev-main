@@ -1,0 +1,100 @@
+{% assign ss = section.settings %}
+<style>
+  .sina-text-and-image--{{ section.id }} {
+    background-color: {{ ss.color_bg }};
+    color: {{ ss.color_text }};
+  }
+</style>
+
+{% capture image_area %}
+  <div class="col-md-6 image-and-t">
+    {% render 'picture-element', image: ss.image, size: '400x', alt: ss.title %}
+  </div>
+{% endcapture %}
+
+<section class="row container-fluid px-0" style="height:400px;">
+  
+  {% if ss.layout == 'left' %}
+      {{ image_area }}
+  {% endif %}
+  
+  <div class="col-md-6 text-and-i">
+    {% if ss.title != blank %}
+      <h3>{{ ss.title }}</h3>
+    {% endif %}
+    
+    {% if ss.text != blank %}
+      <p>{{ ss.text }}</p>
+    {% endif %}
+  </div>
+  
+  {% if ss.layout == 'right' %}
+      {{ image_area }}
+  {% endif %}
+  
+</section>
+
+
+{% schema %}
+  {
+    "name": "Half Image Half Text",
+    "settings": [
+	  {
+        "type": "image_picker",
+        "id": "image",
+        "label": "Image"
+      },
+      {
+        "type": "color",
+        "id": "color_bg",
+        "label": "Background color",
+        "default": "#ffffff"
+      },
+      {
+        "type": "color",
+        "id": "color_text",
+        "label": "Text color",
+        "default": "#4f4f4f"
+      },
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Heading",
+        "default": "Image with text"
+      },
+      {
+        "type": "textarea",
+        "id": "text",
+        "label": "Text"
+      },
+      {
+        "type": "select",
+        "id": "layout",
+        "label": "Layout",
+        "default": "left",
+        "options": [
+          {
+            "value": "left",
+            "label": "Image on left"
+          },
+          {
+            "value": "right",
+            "label": "Image on right"
+          }
+        ]
+      }
+    ],
+	"presets": [
+      {
+        "name": "Sina Image with text",
+        "category": "Image"
+      }
+    ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

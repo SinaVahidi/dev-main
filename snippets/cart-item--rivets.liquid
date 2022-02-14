@@ -1,0 +1,39 @@
+<div class="cart-item--rivets flex f-a-start" rv-each-item="data.cart.items">
+    <div class="left-area"> 
+        <a class="cart-item-image" rv-href="item.url" class="object-fit--cover"><img loading="lazy" rv-alt="item.title" rv-src="item.image | getSizedImage '149x' "></a>
+    </div>
+
+    <div class="right-area">
+        <header class="flex f-j-between">
+            <a class="cart-item-product-title" rv-href="item.url" rv-text="item.product_title"></a>
+            <a class="cart-item-remove" href="#" rv-on-click="controller.removeItem">{% include 'icon-remove-s' %}</a>
+        </header>
+        <p rv-unless="item.selling_plan_allocation" class="cart-item-frequency">
+            <span>{{ 'cart.general.single' | t }}</span>
+        </p>
+      
+        <div rv-if="item.selling_plan_allocation" class="cart-item-frequency flex f-a-center">
+            <span>
+                <span rv-html="item.selling_plan_allocation.selling_plan.name"></span>
+                <span>{{ 'cart.general.subscription' | t }}</span>
+            </span>
+        </div>
+      
+        <div class="quantity-selector global-border flex f-a-center f-j-between">
+          <div class="flex">
+          	<button type="button" rv-on-click="controller.decrementQuantity">
+            	{% include 'icon-minus-s' %}
+          	</button>
+          	<input class="quantity-selector-num" autocomplete="off" type="text" rv-on-input="controller.updateQuantity" min="1" max="999" rv-value='item.quantity' name="quantity">
+          	<button type="button" rv-on-click="controller.incrementQuantity">
+            	{% include 'icon-plus-s' %}
+          	</button>
+          </div>
+
+          <div class="price-container flex">
+            <span class="cart-item-line-price money" rv-data-money="item.line_price" rv-text="item.line_price | money"></span>  
+          </div>
+        </div>
+        
+    </div>
+</div>

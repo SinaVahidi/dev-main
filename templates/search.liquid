@@ -1,9 +1,11 @@
+{%- capture qs_view -%}{%- render 'fn.querystring', param: "view" -%}{%- endcapture -%}
+
 {% paginate search.results by 12 %}
 
+{% include 'breadcrumbs' %}
+
 <div class="page-width page-content">
-
-  {% include 'breadcrumbs' %}
-
+	
   <div class="grid">
     <div class="grid__item">
       <header class="section-header">
@@ -31,9 +33,10 @@
 
               {% if item.object_type == 'product' %}
                 {% assign product = item %}
-                {% include 'product-grid-item' %}
+                 {%- comment -%}{%- include 'product-grid-item-ffc-b' -%}{%- endcomment -%}
+                  {%- include 'product-grid-item' -%}
               {% else %}
-                <div class="grid__item grid-search medium-up--one-quarter medium--one-half">
+                <div class="grid__item grid-search medium-up--one-third medium--one-half">
                   <div class="grid-search__page">
                     <a href="{{ item.url }}" class="grid-search__page-link">
                       <span class="grid-search__page-content">
@@ -75,6 +78,16 @@
 
     </div>
   </div>
+  
+  {% if search.performed %}
+  	{% if search.results_count == 0 %}
+  		<div class="additional-products-results">
+     		{% section 'featured-collection' %}
+    	</div>
+  	{% endif %}
+  {% endif %}
+  
 </div>
+
 
 {% endpaginate %}

@@ -6,7 +6,6 @@
 {% endif %}
 
 {% include 'drawer-menu' %}
-{% include 'cart-drawer' %}
 
 {%- assign template_name = template | replace: '.', ' ' | truncatewords: 2, '' | handle -%}
 
@@ -16,8 +15,10 @@
 {% endif %}
 {%- assign overlay_header = false -%}
 {%- assign has_logo = false -%}
-{% if template_name == 'index' and section.settings.sticky_index %}
-  {%- assign overlay_header = true -%}
+{% if template_name == 'index' or  template_name == 'index-b' or template_name == 'index-c' %}
+  {% if section.settings.sticky_index %}
+    {%- assign overlay_header = true -%}
+  {% endif %}
 {% endif %}
 {% if template_name == 'collection' and collection.image and section.settings.sticky_collection %}
   {%- assign overlay_header = true -%}
@@ -39,15 +40,20 @@
 
 <div data-section-id="{{ section.id }}" data-section-type="header-section">
   <div class="header-wrapper{% if overlay_header %} header-wrapper--overlay is-light{% endif %}">
-
-    {% if section.settings.show_announcement %}
-      {% include 'announcement-bar' %}
-    {% endif %}
+    
+    <style>
+      .main-content {
+        padding-top: 31px;
+      }
+    </style>
 
     <header
       class="site-header{%if section.settings.type_navigation_style %} site-header--heading-style{% endif %}"
       data-sticky="{{ sticky_header }}"
       data-overlay="{{ overlay_header }}">
+      {% if section.settings.show_announcement %}
+        {% include 'announcement-bar' %}
+      {% endif %}
       <div class="page-width">
         <div
           class="header-layout header-layout--{{ section.settings.main_menu_alignment }}"
@@ -140,6 +146,7 @@
 {% schema %}
   {
     "name": "Header and menus",
+    "class": "header-section",
     "settings": [
       {
         "type": "link_list",
@@ -246,6 +253,18 @@
         "label": "Announcement text",
         "default": "Free shipping and returns",
         "info": "When closed, the announcement will remain closed until the next visit. Change the text to see it again."
+      },
+	  {
+        "type": "text",
+        "id": "announcement_text_us",
+        "label": "Announcement text USA",
+        "default": "Free shipping and returns US"
+	  },
+	  {
+        "type": "text",
+        "id": "announcement_text_ca",
+        "label": "Announcement text Canada",
+        "default": "Free shipping and returns CA"
       },
       {
         "type": "url",

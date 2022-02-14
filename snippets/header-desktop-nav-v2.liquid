@@ -1,0 +1,155 @@
+{% unless limit %}
+  {%- assign limit = main_menu.links.size -%}
+{% endunless %}
+{% unless offset %}
+  {%- assign offset = 0 -%}
+{% endunless %}
+
+<ul
+  class="site-nav site-navigation site-navigation--v2 medium-down--hide"
+  {% unless disable_aria %}
+    role="navigation" aria-label="Primary"
+  {% endunless %}>
+  {% for link in main_menu.links limit: limit offset: offset %}
+    {%- assign has_dropdown = false -%}
+    {% if link.links != blank %}
+      {%- assign has_dropdown = true -%}
+    {% endif %}
+
+    <li
+      class="site-nav__item site-first-lvl-item site-nav__expanded-item{% if has_dropdown %} site-nav--has-dropdown{% endif %}{% unless template contains 'index' %}{% if link.active %} site-nav--active{% endif %}{% endunless %}"
+      {% if has_dropdown %}aria-haspopup="true"{% endif %}>
+
+      <a href="{{ link.url }}" class="site-nav__link{% if has_dropdown %} site-nav__link--has-dropdown{% endif %}{% if has_dropdown and link.title == 'Shop' or has_dropdown and link.title == 'shop' %} site-nav--has-dropdown--megamenu{% endif %}{% if forloop.first == true %} bold-link{% endif %}">
+        {{ link.title }}
+        {% if has_dropdown %}
+          {% include 'icon-chevron-down' %}
+        {% endif %}
+      </a>
+      {% if has_dropdown and link.title == 'Shop' or has_dropdown and link.title == 'shop' %}
+        
+        <div class="site-nav__dropdown text-left megamenu-init"> 
+          <ul class="megamenu-init-inner flex"> 
+            {% for childlink in link.links %}
+              {%- assign has_sub_dropdown = false -%}
+              {% if childlink.links != blank %}
+                {%- assign has_sub_dropdown = true -%}
+              {% endif %}
+
+              <li class="{% if childlink.active %}site-nav--active{% endif %}{% if has_sub_dropdown %} site-nav__deep-dropdown-trigger{% endif %}">
+                <span class="site-nav__dropdown-link site-nav__dropdown-link--second-level {% if has_sub_dropdown %} site-nav__dropdown-link--has-children{% endif %}">
+                  {{ childlink.title | escape }}
+                </span>
+
+                {% if has_sub_dropdown %}
+                  <ul class="">
+                    {% for grandchildlink in childlink.links %}
+
+                      {% assign link_color = '' %}
+                                  
+                      {% case grandchildlink.title %}
+                        {% when 'coconut' %}
+                          {% assign link_color = '#6cace4' %}
+                        {% when 'almond' %}
+                          {% assign link_color = '#ae9cdb' %}
+                        {% when 'hazelnut' %}
+                          {% assign link_color = '#f0bb5a' %}
+                        {% when 'pistachio' %}
+                          {% assign link_color = '#94cf66' %}
+                      {% endcase %}
+
+                      <li>
+                        <a href="{{ grandchildlink.url }}" class="site-nav__dropdown-link" {% if link_color != blank %}style="color: {{link_color}}; font-weight: 600;"{% endif %}>{{ grandchildlink.title | escape }}</a>
+                      </li>
+                    {% endfor %}
+                  </ul>
+                {% endif %}
+              </li>
+            {% endfor %}
+            
+            {% if collections['featured-products'].title != blank %}
+              <li class="featured-products-megamenu">
+                <a href="{{ collections['featured-products'].url }}" class="site-nav__dropdown-link site-nav__dropdown-link--second-level {% if has_sub_dropdown %} site-nav__dropdown-link--has-children{% endif %}">
+                  {{ collections['featured-products'].title }}
+                </a>
+                <div class="feat-prdct-grd-items-wrapper">
+                  <div class="feat-prdct-grd-items flex">
+                    {% for product in  collections['featured-products'].products limit: 6 %}
+                      <a href="{{ product.url | within: collection }}" class="featured-collection-item">
+                        <div class="image-wrap" style="height: 0; padding-bottom: 100%;">
+                          
+                          {% include 'product-tags' %}
+
+                          {%- assign img_url = product.featured_image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
+                          <img class="grid-product__image lazyload"
+                              data-src="{{ img_url }}"
+                              data-widths="[180, 360, 540, 720, 900, 1080]"
+                              data-aspectratio="{{ product.featured_image.aspect_ratio }}"
+                              data-sizes="auto"
+                              alt="{{ product.featured_image.alt | escape }}">
+                          <noscript>
+                            <img class="grid-product__image lazyloaded"
+                              src="{{ product.featured_image | img_url: '400x' }}"
+                              alt="{{ product.featured_image.alt | escape }}">
+                          </noscript>
+                        </div>
+
+                        {% assign link_color = '' %}
+                                      
+                        {% if product.title contains 'coconut' %}
+                          {% assign link_color = '#6cace4' %}
+                        {% elsif product.title contains 'almond' %}
+                          {% assign link_color = '#ae9cdb' %}
+                        {% elsif product.title contains 'hazelnut' %}
+                          {% assign link_color = '#f0bb5a' %}
+                        {% elsif product.title contains 'pistachio' %}
+                          {% assign link_color = '#94cf66' %}
+                        {% endif %}
+
+                        <div class="flex f-a-center f-j-between">
+                          <span class="megamenu-item-title" {% if link_color != blank %}style="color: {{link_color}};"{% endif %}>{{ product.title }}</span>
+                          <span class="megamenu-item-price">{{ product.price  | money }}</span>
+                        </div>
+                      </a>
+                    {% endfor %}
+                  </div>
+                </div>
+              </li>
+            {% endif %}
+
+          </ul>
+        </div>
+
+      {% else %}
+
+        <ul class="site-nav__dropdown text-left">
+          {% for childlink in link.links %}
+            {%- assign has_sub_dropdown = false -%}
+            {% if childlink.links != blank %}
+              {%- assign has_sub_dropdown = true -%}
+            {% endif %}
+
+            <li class="{% if childlink.active %}site-nav--active{% endif %}{% if has_sub_dropdown %} site-nav__deep-dropdown-trigger{% endif %}">
+              <a href="{{ childlink.url }}" class="site-nav__dropdown-link site-nav__dropdown-link--second-level {% if has_sub_dropdown %} site-nav__dropdown-link--has-children{% endif %}">
+                {{ childlink.title | escape }}
+                {% if has_sub_dropdown %}
+                  {% include 'icon-chevron-down' %}
+                {% endif %}
+              </a>
+              {% if has_sub_dropdown %}
+                <ul class="site-nav__deep-dropdown">
+                  {% for grandchildlink in childlink.links %}
+                    <li>
+                      <a href="{{ grandchildlink.url }}" class="site-nav__dropdown-link">{{ grandchildlink.title | escape }}</a>
+                    </li>
+                  {% endfor %}
+                </ul>
+              {% endif %}
+            </li>
+          {% endfor %}
+        </ul>
+
+      {% endif %}
+    </li>
+  {% endfor %}
+</ul>

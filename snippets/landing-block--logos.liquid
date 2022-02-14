@@ -1,0 +1,43 @@
+<div class="page-width logolist-section ffc-logos" data-aos="logo__animation">
+  
+  {% if block.settings.title != blank %}
+    <div class="section-header">
+      <h2 class="section-header__title">{{ block.settings.title | escape }}</h2>
+      <div class="rte sec-text">{{ block.settings.text }}</div>
+    </div>
+  {% endif %}
+
+  <div class="logo-bar logo-bar--{{ section.id }} flex f-a-start f-j-start">
+    {% for i in (1..10) %}
+      {% capture logo_code %}logo_code_{{i}}{% endcapture %}
+      {% capture logo_link %}logo_link_{{i}}{% endcapture %}
+      {% capture logo_color %}logo_color_{{i}}{% endcapture %}
+      {% capture logo_color_bg %}logo_color_bg_{{i}}{% endcapture %}
+      {% capture logo_title %}logo_title_{{i}}{% endcapture %}
+      
+      {% if block.settings[logo_code] != blank %}
+        <div class="logo-bar__item">
+          {% if block.settings[logo_link] != blank %}
+            <a href="{{ block.settings[logo_link] }}" class="logo-bar__link">
+          {% endif %}
+          
+          <div class="logo-bar__image" style="background-color: {{ block.settings[logo_color_bg] }}; fill: {{ block.settings[logo_color] }} ">
+            {% if block.settings[logo_code] != blank %}
+              {{ block.settings[logo_code] }}
+            {% endif %}
+          </div>
+
+          {% if block.settings[logo_title] != blank %}
+            <h3>{{ block.settings[logo_title] }}</h3>
+          {% endif %}
+
+          {% if block.settings[logo_link] != blank %}
+            </a>
+          {% endif %}
+        </div>
+      {% endif %}
+
+    {% endfor %}
+  </div>
+
+</div>

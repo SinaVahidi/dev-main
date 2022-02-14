@@ -1,0 +1,13 @@
+<div class="page-width">
+  <div class="section-header">
+    
+    {% if bs.title != blank %}
+      <h2 class="section-header__title">{{ bs.title | escape }}</h2>
+    {% endif %}
+
+    {% if bs.text != blank %}
+      <div class="rte">{{ bs.text }}</div>
+    {% endif %}
+
+  </div>
+</div>

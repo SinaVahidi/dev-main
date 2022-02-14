@@ -1,0 +1,207 @@
+{% assign ss = section.settings %}
+{% if ss.divider %}<div class="section--divider">{% endif %}
+
+<div class="page-width">
+
+  {% if ss.title != blank or bs.text != blank %}  
+    <div class="section-header">
+      
+      {% if ss.title != blank %}
+        <h2 class="section-header__title">{{ ss.title | escape }}</h2>
+      {% endif %}
+
+      {% if ss.text != blank %}
+        <div class="rte">{{ ss.text }}</div>
+      {% endif %}
+
+    </div>
+  {% endif %}
+
+
+  {% if ss.overlay_scrollbars %}
+
+    <div class="product-promotion__list-wrapper" data-overlay-scrollbars>
+
+      {% assign count = 0 %}
+      {% assign count = section.blocks.size %}
+      
+      {% assign width = 302 | plus: 24 %}
+      {% if count > 0 %}
+        {% assign width = width | times: count %}
+      {% endif %}
+      {% assign width = width | minus: 24 %}
+
+      {% assign width_mob = 302 | plus: 16 %}
+      {% if count > 0 %}
+        {% assign width_mob = width_mob | times: count %}
+      {% endif %}
+      {% assign width_mob = width_mob | minus: 16 %}
+
+      <style>
+        .product-promotion__list--{{ block.id }} {
+          width: {{width}}px;
+        }
+        @media only screen and (max-width:  834px) {
+          .product-promotion__list--{{ block.id }} {
+            width: {{width_mob}}px;
+          }
+        }
+      </style>
+
+      <div class="product-promotion__list product-promotion__list--{{ block.id }}">
+
+        {% for block in section.blocks %}
+          {% assign bs = block.settings %}
+
+          {% if bs.promo_image != blank %}
+          <div class="product-promotion__item">
+            {% assign img_url = bs.promo_image | img_url: '1x1' | replace: '_1x1.', '_302x.' %}
+            
+            <a {% if bs.promo_url != blank %}href="{{ bs.promo_url }}"{% endif %} class="product-promotion__link">
+              <img class="product-promotion__image lazyload"
+                  data-src="{{ img_url }}"
+                  data-widths="auto"
+                  data-aspectratio="{{ bs.promo_image.aspect_ratio }}"
+                  data-sizes="auto"
+                  alt="{{ bs.promo_image.alt | default: bs.promo_title }}">
+            </a>
+
+            {% if bs.promo_url != blank %}
+              <a href="{{ bs.promo_url }}" class="product-promotion__cta btn" style="background-color: {{ bs.promo_color }}; border-color: {{ bs.promo_color }};">{{ bs.promo_title }}</a>
+            {% else %}
+              <p class="product-promotion__cta btn" style="background-color: {{ bs.promo_color }}; border-color: {{ bs.promo_color }};">{{ bs.promo_title }}</p>
+            {% endif %}
+
+          </div>
+          {% endif %}
+
+        {% endfor %}
+      </div>
+
+    </div>
+  
+  {% else %}
+
+    <div class="product-promotion__list product-promotion__list--{{ block.id }}">
+
+      {%- assign grid_item_width = 'small--one-half medium-up--one-third' -%}
+
+      {%- case ss.per_row -%}
+      {%- when 2 -%}
+        {%- assign grid_item_width = 'medium-up--one-half' -%}
+      {%- when 3 -%}
+        {%- assign grid_item_width = 'small--one-half medium-up--one-third' -%}
+      {%- when 4 -%}
+        {%- assign grid_item_width = 'small--one-half medium-up--one-quarter' -%}
+      {%- when 5 -%}
+        {%- assign grid_item_width = 'small--one-half medium-up--one-fifth' -%}
+      {%- endcase -%}
+
+      {% for block in section.blocks %}
+        {% assign bs = block.settings %}
+
+        {% if bs.promo_image != blank %}
+        <div class="product-promotion__item grid__item {{ grid_item_width }}">
+          {% assign img_url = bs.promo_image | img_url: '1x1' | replace: '_1x1.', '_302x.' %}
+          
+          <a {% if bs.promo_url != blank %}href="{{ bs.promo_url }}"{% endif %} class="product-promotion__link">
+            <img class="product-promotion__image lazyload"
+                data-src="{{ img_url }}"
+                data-widths="auto"
+                data-aspectratio="{{ bs.promo_image.aspect_ratio }}"
+                data-sizes="auto"
+                alt="{{ bs.promo_image.alt | default: bs.promo_title }}">
+          </a>
+
+          {% if bs.promo_url != blank %}
+            <a href="{{ bs.promo_url }}" class="product-promotion__cta btn" style="background-color: {{ bs.promo_color }}; border-color: {{ bs.promo_color }};">{{ bs.promo_title }}</a>
+          {% else %}
+            <p class="product-promotion__cta btn" style="background-color: {{ bs.promo_color }}; border-color: {{ bs.promo_color }};">{{ bs.promo_title }}</p>
+          {% endif %}
+
+        </div>
+        {% endif %}
+
+      {% endfor %}
+    </div>
+
+  {% endif %}
+
+</div>
+
+
+{% if ss.divider %}</div>{% endif %}
+
+
+{% schema %}
+  {
+    "name": "Product Categories",
+    "class": "index-section landing-block--product-promotion",
+    "settings": [
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Heading"
+      },   
+      {
+        "type": "richtext",
+        "id": "text",
+        "label": "Text"
+      },
+      {
+        "type": "checkbox",
+        "id": "overlay_scrollbars",
+        "label": "Horizontal scroll?",
+        "default": true
+      },
+      {
+        "type": "checkbox",
+        "id": "divider",
+        "label": "Show section divider",
+        "default": false
+      },
+      {
+        "type": "range",
+        "id": "per_row",
+        "label": "Products per row",
+        "default": 4,
+        "min": 2,
+        "max": 5,
+        "step": 1
+      }
+    ],
+    "blocks": [
+      {
+        "type": "category",
+        "name": "Category",
+        "settings": [
+          {
+            "type": "url",
+            "id": "promo_url",
+            "label": "1 URL"
+          },
+          {
+            "type": "text",
+            "id": "promo_title",
+            "label": "1 Title"
+          },
+          {
+            "type": "color",
+            "id": "promo_color",
+            "label": "1 Color"
+          },
+          {
+            "type": "image_picker",
+            "id": "promo_image",
+            "label": "1 Image"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Product Categories"
+      }
+    ]
+  }
+{% endschema %}

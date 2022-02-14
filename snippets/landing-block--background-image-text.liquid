@@ -1,0 +1,79 @@
+<style>
+  .ffc-background-image-text__image--{{block.id}} {
+    background-position: {{ bs.alignment }};
+    color: {{ bs.color_text }};
+    {% if bs.image_contain %}
+    background-size: contain !important;
+    {% endif %}
+    {% if bs.background_color != blank %}
+    background-color: {{ bs.background_color }};
+    {% endif %}
+  }
+
+  .ffc-background-image-text__image--{{block.id}} .btn {
+    background-color: {{ bs.button_color_bg }};
+    border-color: {{ bs.button_color_bg }};
+    color: {{ bs.button_color }};
+  }
+</style>
+
+<div
+  class="ffc-background-image-text__image ffc-background-image-text__image--{{block.id}}{% if bs.image != blank %} lazyload{% endif %}"
+  {% if bs.image != blank %}
+    data-bgset="{% include 'bgset', image: bs.image, image_mobile: bs.image_mobile %}"
+    data-sizes="auto"
+  {% endif %}>
+  
+  {% if bs.subtitle != blank or bs.title != blank or bs.text != blank %}
+    <div class="page-width">
+      <div class="content-area content-area--{{ bs.layout }} desktop-only">
+        {% if bs.subtitle != blank %}
+          <p class="subtitle">{{ bs.subtitle }}</p>
+        {% endif %}
+        {% if bs.title != blank %}
+          <h2 class="h3">{{ bs.title | escape }}</h2>
+        {% endif %}
+        {% if bs.text != blank %}
+          <div class="rte background-media-text__subtext">{{ bs.text }}</div>
+        {% endif %}
+        {% if bs.button_label != blank and bs.button_link != blank %}
+          <a 
+            href="{{ bs.button_link }}" 
+            class="btn btn--almond" 
+            {% if template == 'page.wholesale-landing' %}
+              data-ga-event='{
+                "event": "click",
+                "eventCategory": "Signup",
+                "eventAction": "Clicked",
+                "eventLabel": "Wholesale"
+              }'
+            {% endif %}
+          >
+            {{ bs.button_label }}
+          </a>
+        {% endif %}
+      </div>
+    </div>
+  {% endif %}
+</div>
+
+{% if bs.subtitle != blank or bs.title != blank or bs.text != blank %}
+  <div class="page-width">
+    <div class="content-area tablet-only">
+      {% if bs.subtitle != blank %}
+        <p class="subtitle">{{ bs.subtitle }}</p>
+      {% endif %}
+      {% if bs.title != blank %}
+        <h2 class="h3">{{ bs.title | escape }}</h2>
+      {% endif %}
+      {% if bs.text != blank %}
+        <div class="rte background-media-text__subtext">{{ bs.text }}</div>
+      {% endif %}
+      {% if bs.button_label != blank and bs.button_link != blank %}
+        <a href="{{ bs.button_link }}" class="btn btn--almond">
+          {{ bs.button_label }}
+        </a>
+      {% endif %}
+    </div>
+  </div>
+{% endif %}

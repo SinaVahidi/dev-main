@@ -3,7 +3,7 @@
 {%- assign og_url = canonical_url -%}
 {%- assign og_type = 'website' -%}
 {%- assign og_description = page_description | default: shop.description | default: shop.name -%}
-{%- if template_base == 'index' -%}
+{%- if template_base contains 'index' -%}
   {%- if settings.homepage_social_image != blank -%}
     {%- capture og_image_tags -%}
       <meta property="og:image" content="http:{{ settings.homepage_social_image | img_url: '1200x630' }}">

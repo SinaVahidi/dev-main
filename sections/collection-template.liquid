@@ -1,14 +1,7 @@
 {%- assign per_row = section.settings.per_row -%}
-{% assign paginate_by = per_row | times: 5 %}
-{% if section.settings.collection_tags_style == 'inline' and collection.all_tags.size > 0 %}
-  {% assign paginate_by = paginate_by | minus: 1 %}
-{% elsif section.settings.collection_subnav_style == 'inline' %}
-  {% assign paginate_by = paginate_by | minus: 1 %}
-{% endif %}
+{%- capture qs_view -%}{%- render 'fn.querystring', param: "view" -%}{%- endcapture -%}
 
-{% paginate collection.products by paginate_by %}
-
-<div id="CollectionSection" data-section-id="{{ section.id }}" data-section-type="collection-template">
+<div id="CollectionSection" data-section-id="{{ section.id }}" data-section-type="collection-template" class="collection-section-template">
   {% if section.settings.collection_image_enable and collection.image %}
     <div class="collection-hero loading--delayed">
       <div
@@ -40,8 +33,9 @@
     </div>
   {% endif %}
 
+  {% include 'breadcrumbs' %}
+
   <div class="page-width page-content">
-    {% include 'breadcrumbs' %}
 
     {% unless section.settings.collection_image_enable and collection.image %}
       <header class="section-header">
@@ -203,7 +197,6 @@
             {% endif %}
 
             {% if have_sidebar %}
-              <div class="grid__item {{ grid_item_width }} grid__item--{{ section.id }}">
                 <ul class="tags tags--vertical">
                   {% if linklists.main-menu.levels > 0 %}
                     {% for link in linklists.main-menu.links %}
@@ -237,12 +230,12 @@
                     </button>
                   </p>
                 {% endif %}
-              </div>
             {% endif %}
           {% endif %}
 
           {% for product in collection.products %}
-            {% include 'product-grid-item' %}
+              {%- comment -%}{%- include 'product-grid-item' -%}{%- endcomment -%}
+              {%- include 'product-grid-item-ffc-b' -%}
           {% else %}
             <div class="grid__item">
               <p>{{ 'collections.general.no_matches' | t }}</p>
@@ -250,9 +243,7 @@
           {% endfor %}
         </div>
 
-        {% if paginate.pages > 1 %}
-          {% include 'pagination' %}
-        {% endif %}
+
 
         {% if settings.quick_shop_enable %}
           {% for product in collection.products %}
@@ -266,7 +257,7 @@
   </div>
 </div>
 
-{% endpaginate %}
+
 
 {% schema %}
   {

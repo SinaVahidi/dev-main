@@ -1,5 +1,24 @@
+<style>
+  .product-buttons .input-group.btn {
+    color: {{ section.settings.sub_button_color_text }};
+    background-color: {{ section.settings.sub_button_color_bg }};
+    border-color: {{ section.settings.sub_button_color_border }};
+  }
+  .product-buttons .input-group.btn:after {
+    border: 1px solid {{ section.settings.sub_button_color_border }};
+  }
+  .product-buttons .input-group.btn.active {
+    color: {{ section.settings.sub_button_color_text_active }};
+    background-color: {{ section.settings.sub_button_color_bg_active }};
+    border-color: transparent;
+  }
+  .product-buttons .input-group.btn.active:after {
+    background-color: {{ section.settings.sub_button_color_checkbox_active }};
+  }
+</style>
+
 {% capture form_id %}AddToCartForm-{{ section_id }}{% endcapture %}
-{% form 'product', product, id: form_id, class: 'product-single__form' %}
+<form method="post" action="/cart/add" accept-charset="UTF-8" class="product-single__form" enctype="multipart/form-data" data-add-to-cart>
   {%- assign is_default_variant = false -%}
   {% if product.variants[0].title == 'Default Title' or product.variants[0].title == 'Default' %}
     {%- assign is_default_variant = true -%}
@@ -30,28 +49,34 @@
     {% endfor %}
   </select>
 
-  {% if settings.quantity_enable %}
-    <div class="product__quantity product__quantity--{{ settings.variant_type }}">
-      <label for="Quantity-{{ section_id }}">{{ 'products.product.quantity' | t }}</label>
-      {% include 'quantity-input', id: section_id, qty: 1, min: 1 %}
-    </div>
-  {% endif %}
+  <div class="hide">
+    {% render 'bsub-widget' %}
+  </div>
 
-  {%- assign enable_dynamic_buttons = false -%}
-  {% if settings.enable_payment_button and template != 'product.preorder' %}
-    {%- assign enable_dynamic_buttons = true -%}
-  {% endif %}
+  <div class="product-qty-atc flex">
+    {% if settings.quantity_enable %}
+      <div class="product__quantity product__quantity--{{ settings.variant_type }} global-border">
+        {% include 'quantity-input', id: section_id, qty: 1, min: 1 %}
+      </div>
+    {% endif %}
 
-  {% if enable_dynamic_buttons %}
-    <div class="payment-buttons">
-  {% endif %}
-
+    {% assign atc_color = product.metafields.custom_fields.atc_color | escape %}
+    {% assign atc_style = product.metafields.custom_fields.atc_style | escape %}
+    {% assign atc_text_color = product.metafields.custom_fields.atc_text_color | escape %}
+    
     <button
-      {% if product.empty? %}type="button"{% else %}type="submit"{% endif %}
+      {% if product.empty? %}type="button"{% else %}type="submit"{% endif %} 
+      {% unless current_variant.available %} disabled="disabled"{% endunless %}
       name="add"
-      id="AddToCart-{{ section_id }}"
-      class="{% if enable_dynamic_buttons %}btn--tertiary{% else %}btn{% endif %} btn--full btn--no-animate add-to-cart"
-      {% unless current_variant.available %} disabled="disabled"{% endunless %}>
+      class="
+        btn--squared btn--thin btn--full btn--no-animate add-to-cart btn
+        {% if atc_color == 'almond' %}btn--almond{% elsif atc_color == 'coconut' %}btn--coconut{% elsif atc_color == 'hazelnut' %}btn--hazelnut{% elsif atc_color == 'pistachio' %}btn--pistachio{% else %}btn--coconut{% endif %}
+        {% if atc_style == 'filled' %}btn--filled{% endif %}
+      "
+      style="
+        {% if atc_text_color != blank %}color: {{atc_text_color }}!important;{% endif %}
+      "
+      >
       <span id="AddToCartText-{{ section_id }}">
         {% if current_variant.available %}
           {% if template == 'product.preorder' %}
@@ -64,14 +89,66 @@
         {% endif %}
       </span>
     </button>
+  </div>
 
-    {% if enable_dynamic_buttons %}
-      {{ form | payment_button }}
-    {% endif %}
+  <div class="product-buttons hide" data-product-buttons>
+    <div class="input-buttons">
+
+      <div class="input-group btn active" data-product-button-purchase></div>
+      <div class="input-group btn" data-product-button-subscribe>Subscribe and <span></span></div>
+      
+      <div class="subscription-details global-border hide" data-product-buttons-subscription-details>
+        <div class="subscription-length flex f-a-center">
+          <span>Deliver Every</span>
+          <select class="global-border" data-shipping-interval-frequency></select>
+        </div>
+        <div class="subscription-benefits">
+          <h5>Subscription Benefits</h5>
+          <ul class="flex f-wrap">
+            <li>
+              <svg class="Icon Icon--checkmark-circle" role="presentation" viewBox="0 0 24 24"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-1.25 17.292l-4.5-4.364 1.857-1.858 2.643 2.506 5.643-5.784 1.857 1.857-7.5 7.643z"></path></svg>
+              <span>Save 15% with every box</span>
+            </li>
+            <li>
+              <svg class="Icon Icon--checkmark-circle" role="presentation" viewBox="0 0 24 24"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-1.25 17.292l-4.5-4.364 1.857-1.858 2.643 2.506 5.643-5.784 1.857 1.857-7.5 7.643z"></path></svg>
+              <span>Cancel Anytime</span>
+            </li>
+            <li>
+              <svg class="Icon Icon--checkmark-circle" role="presentation" viewBox="0 0 24 24"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-1.25 17.292l-4.5-4.364 1.857-1.858 2.643 2.506 5.643-5.784 1.857 1.857-7.5 7.643z"></path></svg>
+              <span>Easily Swap Products &amp; Switch Shipping Dates</span>
+            </li>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  {% if section.settings.logos_position == 'below_subscribe' and section.blocks.size > 0 %}
+    <div class="logo-wrapper" style="{% if section.settings.logos_color_bg != blank %}background-color: {{section.settings.logos_color_bg}};{% endif %}{% if section.settings.logos_color_text != blank %}color: {{section.settings.logos_color_text}};{% endif %}">
+      {% include 'logos' %}
+    </div>
+  {% endif %}
+
+  {% comment %}
+  {%- assign enable_dynamic_buttons = false -%}
+  {% if settings.enable_payment_button and template != 'product.preorder' %}
+    {%- assign enable_dynamic_buttons = true -%}
+  {% endif %}
+
+  {% if enable_dynamic_buttons %}
+    <div class="payment-buttons">
+  {% endif %}
+
+  {% if enable_dynamic_buttons %}
+    {{ form | payment_button }}
+  {% endif %}
 
   {% if enable_dynamic_buttons %}
     </div>
   {% endif %}
+  {% endcomment %}
+
 
   <div id="VariantsJson-{{ section_id }}" class="hide" aria-hidden="true">
     {{ product.variants | json }}
@@ -81,4 +158,4 @@
       {{ current_variant | json }}
     </div>
   {% endif %}
-{% endform %}
+</form>

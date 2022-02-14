@@ -1,0 +1,21 @@
+/* 
+* Modify  This file as needed to ensure the Bold RO widget looks nice.
+*
+* Place the below include statment before the end </head> tag in the theme.liquid file.
+* {{ 'bold-ro.css' | asset_url | stylesheet_tag }}
+*/
+
+.button {
+  font-family: 'Neuzeit Office Soft Rounded', sans-serif;
+  font-weight: 400;
+  letter-spacing: -20em;
+  line-height: 1.2;
+  font-size: 1.06667em;
+  padding: 9px 20px;
+  border-radius: 0;
+  width: 100%;
+  background-color: transparent !important;
+  border: 1px solid #e8e8e1 !important;
+  color: #000 !important;
+}
+

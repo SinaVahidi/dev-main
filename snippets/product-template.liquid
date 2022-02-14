@@ -6,6 +6,10 @@
   {%- assign description_style = 'full' -%}
 {% endunless %}
 
+{% if settings.show_breadcrumbs and isModal != true %}
+  {% include 'breadcrumbs' %}
+{% endif %}
+
 <div id="ProductSection-{{ section_id }}"
   class="product-section"
   data-section-id="{{ section_id }}"
@@ -18,16 +22,14 @@
   {% endif %}
   {% unless isModal %}
     data-enable-history-state="true"
-  {% endunless %}>
+  {% endunless %}
+  data-product>
 
   {% include 'product-template-variables' %}
 
   <div class="page-content">
     <div class="page-width">
 
-      {% if settings.show_breadcrumbs and isModal != true %}
-        {% include 'breadcrumbs' %}
-      {% endif %}
 
       <div class="grid">
         <div class="grid__item {{ product_image_width }}">
@@ -51,6 +53,23 @@
               <h1 class="h2 product-single__title">
                 {{ product.title }}
               </h1>
+              <div class="yotpo bottomLine" style="padding-bottom: 10px"
+                  data-product-id="{{ product.id }}">
+                {%- assign yotpo_offload_content = shop.metafields.yotpo.yotpo_offload_content %}
+                {%- assign time_now = 'now' | date: '%s' %}
+                {%- assign yotpo_live_time = shop.metafields.yotpo.yotpo_live | date: '%s' %}
+                {%- assign diff_seconds_from_live = time_now | minus: yotpo_live_time %}
+                {%- assign yotpo_bottomline_last_updated = product.metafields.yotpo.bottomline_update_time | date: '%s' %}
+                {%- assign diff_seconds_from_last_bottomline_update = time_now | minus: yotpo_bottomline_last_updated %}
+                {%- if yotpo_live_time and diff_seconds_from_live < 86400 or yotpo_bottomline_last_updated and diff_seconds_from_last_bottomline_update < 86400 -%}
+                   {%- assign yotpo_bottomline_obsolete = false %}
+                {%- else %}
+                   {%- assign yotpo_bottomline_obsolete = true %}
+                {%- endif %}
+                {%- if yotpo_offload_content == 'yes' and yotpo_bottomline_obsolete != true -%}
+                   {{ product.metafields.yotpo.bottomline }}
+                {%- endif %}
+              </div>
             {% endif %}
 
             {% if settings.enable_product_reviews and settings.reviews_layout == 'full' %}
@@ -96,7 +115,7 @@
             {% endif %}
 
             <span id="ProductPrice-{{ section_id }}"
-              class="product__price{% if current_variant.compare_at_price > current_variant.price %} on-sale{% endif %}">
+              class="product__price{% if current_variant.compare_at_price > current_variant.price %} on-sale{% endif %} hidden" data-product-price="{{ current_variant.price | money }}">
               {{ current_variant.price | money }}
             </span>
 
@@ -181,8 +200,15 @@
             {% endunless %}
 
             {% unless description_style == 'full' %}
+
+              {% if section.settings.logos_position == 'above_description' and section.blocks.size > 0 %}
+                <div class="logo-wrapper" style="{% if section.settings.logos_color_bg != blank %}background-color: {{section.settings.logos_color_bg}};{% endif %}{% if section.settings.logos_color_text != blank %}color: {{section.settings.logos_color_text}};{% endif %}">
+                  {% include 'logos' %}
+                </div>
+              {% endif %}
+
               <div class="product-single__description rte">
-                {{ product.description }}
+                 {% render 'product-description-accordion' %}
               </div>
 
               {% include 'product-additional-content', section_id: section_id %}
@@ -196,8 +222,19 @@
       </div>
 
       {% if description_style == 'full' %}
+
+        {% if section.settings.logos_position == 'above_description' and section.blocks.size > 0 %}
+          <div class="logo-wrapper" style="{% if section.settings.logos_color_bg != blank %}background-color: {{section.settings.logos_color_bg}};{% endif %}{% if section.settings.logos_color_text != blank %}color: {{section.settings.logos_color_text}};{% endif %}">
+            {% include 'logos' %}
+          </div>
+        {% endif %}
+        
+        <div class="product-single__description rte">
+           {% render 'product-description-accordion' %}
+        </div>
+
         <div class="product-single__description-full rte">
-          {{ product.description }}
+           {% render 'product-description-accordion' %}
         </div>
 
         {% include 'product-additional-content', section_id: section_id %}
@@ -205,3 +242,11 @@
     </div>
   </div>
 </div>
+
+{% if section.settings.logos_position == 'below_description' and section.blocks.size > 0 %}
+  <div class="logo-wrapper" style="{% if section.settings.logos_color_bg != blank %}background-color: {{section.settings.logos_color_bg}};{% endif %}{% if section.settings.logos_color_text != blank %}color: {{section.settings.logos_color_text}};{% endif %}">
+    <div class="page-width logolist-section ffc-logos" data-aos="logo__animation">
+      {% include 'logos' %}
+    </div>
+  </div>
+{% endif %}

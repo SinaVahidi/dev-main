@@ -1,0 +1,202 @@
+{%- assign animation_row = 1 -%}
+{%- assign drawer_position = 'right' -%}
+{% if logo_alignment == 'center' %}
+  {%- assign drawer_position = 'left' -%} 
+{% endif %}
+
+{%- assign main_menu = linklists[section.settings.main_menu_link_list] -%}
+
+<div id="NavDrawerV2" class="drawer drawer--nav drawer--{{ drawer_position }}">
+  <div class="drawer__fixed-header">
+    <div class="drawer__header appear-animation appear-delay-{{ animation_row }}">
+      <div class="drawer__title">
+        {% include 'currency-picker', picker_id: 'drawer', currency_class: 'currency-picker--drawer' %}
+      </div>
+      <div class="drawer__close">
+        <button type="button" class="drawer__close-button js-drawer-close">
+          {% include 'icon-close' %}
+          <span class="icon__fallback-text">{{ 'general.drawers.close_menu' | t }}</span>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="drawer__inner">
+
+    <ul class="mobile-nav" role="navigation" aria-label="Primary">
+      {% assign dropdowns_count = 0 %}
+
+      {% for link in main_menu.links %}
+        {%- assign animation_row = animation_row | plus: 1 -%}
+        {%- assign child_list_handle = link.url | handleize | append: forloop.index -%}
+        {%- assign has_dropdown = false -%}
+        {% if link.links != blank %}
+          {%- assign has_dropdown = true -%}
+          {% assign dropdowns_count = dropdowns_count | plus: 1 %}
+        {% endif %}
+
+        <li class="mobile-nav__item{% unless template contains 'index' %}{% if link.active %} mobile-nav__item--active{% endif %}{% endunless %} appear-animation appear-delay-{{ animation_row }}">
+          {% if has_dropdown %}
+            <div class="mobile-nav__has-sublist {% if link.title == 'Shop' or link.title == 'shop' %}mobile-nav__has-sublist--mega{% endif %}">
+              {% if link.url == '#' %}
+                <button type="button" class="mobile-nav__link--button collapsible-trigger collapsible--auto-height" aria-controls="Linklist-{{ child_list_handle }}">
+                  <span class="mobile-nav__faux-link">{{ link.title }}</span>
+                  <div class="mobile-nav__toggle">
+                    <span>
+                      {% include 'collapsible-icons' %}
+                    </span>
+                  </div>
+                </button>
+              {% else %}
+                <a href="{{ link.url }}" class="mobile-nav__link mobile-nav__link--main" id="Label-{{ child_list_handle }}">
+                  {{ link.title }}
+                </a>
+                <div class="mobile-nav__toggle">
+                  <button type="button" class="collapsible-trigger collapsible--auto-height {% if dropdowns_count == 1 %}is-open{% endif %}" {% if dropdowns_count == 1 %}aria-expanded="true"{% endif %} aria-controls="Linklist-{{ child_list_handle }}">
+                    {% include 'collapsible-icons' %}
+                  </button>
+                </div>
+              {% endif %}
+            </div>
+          {% else %}
+            <a href="{{ link.url }}" class="mobile-nav__link">{{ link.title }}</a>
+          {% endif %}
+
+          {% if has_dropdown %}
+            <div id="Linklist-{{ child_list_handle }}" class="mobile-nav__sublist {% if link.title == 'Shop' or link.title == 'shop' %}mobile-nav__sublist--mega{% endif %} collapsible-content collapsible-content--all {% if dropdowns_count == 1 %}is-open{% endif %}" {% if dropdowns_count == 1 %}style="height: auto"{% endif %} aria-labelledby="Label-{{ child_list_handle }}">
+              <div class="collapsible-content__inner">
+                <ul class="mobile-nav__sublist">
+                  {% for childlink in link.links %}
+                    {%- assign has_sub_dropdown = false -%}
+                    {%- assign grand_child_list_handle = childlink.url | handleize | append: forloop.index -%}
+                    {% if childlink.links != blank %}
+                      {%- assign has_sub_dropdown = true -%}
+                    {% endif %}
+
+                    <li class="mobile-nav__item{% unless template contains 'index' %}{% if childlink.active %} mobile-nav__item--active{% endif %}{% endunless %}">
+                      <div class="mobile-nav__child-item">
+                        <a href="{{ childlink.url }}" class="mobile-nav__link flex f-a-center f-j-between" id="Sublabel-{{ grand_child_list_handle }}">
+                          {{ childlink.title | escape }}
+                          {% if childlink.url contains 'collections' %}
+                            <span>shop all</span>
+                          {% endif %}
+                        </a>
+                      </div>
+
+                      {% if has_sub_dropdown %}
+                        <div class="mobile-nav__sublist">
+                          <ul class="mobile-nav__grandchildlist">
+                            {% for grandchildlink in childlink.links %}
+
+                            {% assign link_color = '' %}
+                                                  
+                            {% if grandchildlink.title contains 'coconut' %}
+                              {% assign link_color = '#6cace4' %}
+                            {% elsif grandchildlink.title contains 'almond' %}
+                              {% assign link_color = '#ae9cdb' %}
+                            {% elsif grandchildlink.title contains 'hazelnut' %}
+                              {% assign link_color = '#f0bb5a' %}
+                            {% elsif grandchildlink.title contains 'pistachio' %}
+                              {% assign link_color = '#94cf66' %}
+                            {% endif %}
+
+                              <li class="mobile-nav__item{% unless template contains 'index' %}{% if grandchildlink.active %} mobile-nav__item--active{% endif %}{% endunless %}">
+                                <a href="{{ grandchildlink.url }}" class="mobile-nav__link" {% if link_color != blank %}style="color: {{link_color}}; font-weight: 600;"{% endif %}>
+                                  {{ grandchildlink.title }}
+                                </a>
+                              </li>
+                            {% endfor %}
+                          </ul>
+                        </div>
+                      {% endif %}
+                    </li>
+                  {% endfor %}
+
+                  {% if link.title == 'shop' or link.title == 'Shop' %}
+                    <li class="featured-products-megamenu">
+                      <a href="{{ collections['featured-products'].url }}" class="mobile-nav__link">
+                        {{ collections['featured-products'].title }}
+                      </a>
+
+                      <div class="feat-prdct-grd-items-wrapper">
+                        <div class="feat-prdct-grd-items flex">
+                          {% for product in  collections['featured-products'].products limit: 6 %}
+                            <a href="{{ product.url | within: collection }}" class="featured-collection-item">
+                              <div class="image-wrap" style="height: 0; padding-bottom: 100%;">
+                                
+                                {% include 'product-tags' %}
+
+                                {%- assign img_url = product.featured_image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
+                                <img class="grid-product__image lazyload"
+                                    data-src="{{ img_url }}"
+                                    data-widths="[180, 360, 540, 720, 900, 1080]"
+                                    data-aspectratio="{{ product.featured_image.aspect_ratio }}"
+                                    data-sizes="auto"
+                                    alt="{{ product.featured_image.alt | escape }}">
+                                <noscript>
+                                  <img class="grid-product__image lazyloaded"
+                                    src="{{ product.featured_image | img_url: '400x' }}"
+                                    alt="{{ product.featured_image.alt | escape }}">
+                                </noscript>
+                              </div>
+
+                              {% assign link_color = '' %}
+                                            
+                              {% if product.title contains 'coconut' %}
+                                {% assign link_color = '#6cace4' %}
+                              {% elsif product.title contains 'almond' %}
+                                {% assign link_color = '#ae9cdb' %}
+                              {% elsif product.title contains 'hazelnut' %}
+                                {% assign link_color = '#f0bb5a' %}
+                              {% elsif product.title contains 'pistachio' %}
+                                {% assign link_color = '#94cf66' %}
+                              {% endif %}
+
+                              <div class="flex f-a-center f-j-between">
+                                <span class="megamenu-item-title" {% if link_color != blank %}style="color: {{link_color}};"{% endif %}>{{ product.title }}</span>
+                                <span class="megamenu-item-price">{{ product.price  | money }}</span>
+                              </div>
+                            </a>
+                          {% endfor %}
+                        </div>
+                      </div>
+                    </li>
+                  {% endif %}
+
+                </ul>
+              </div>
+            </div>
+          {% endif %}
+        </li>
+
+
+      {% endfor %}
+
+      {% if shop.customer_accounts_enabled %}
+        {%- assign animation_row = animation_row | plus: 1 -%}
+        {% if customer %}
+          <li class="mobile-nav__item mobile-nav__item--account {% unless template contains 'index' %}{% if link.active %} mobile-nav__item--active{% endif %}{% endunless %} appear-animation appear-delay-{{ animation_row }}">
+            <a href="{{ routes.account_url }}" class="mobile-nav__link flex f-a-center">
+              {% include 'icon-login' %}
+              <span>
+                {{ 'layout.customer.account' | t }}
+              </span>
+            </a>
+          </li>
+        {% else %}
+          <li class="mobile-nav__item mobile-nav__item--account {% unless template contains 'index' %}{% if link.active %} mobile-nav__item--active{% endif %}{% endunless %} appear-animation appear-delay-{{ animation_row }}">
+            <a href="{{ routes.account_login_url }}" class="mobile-nav__link flex f-a-center">
+              {% include 'icon-login' %}
+              <span>
+                {{ 'layout.customer.log_in' | t }}
+              </span>
+            </a>
+          </li>
+        {% endif %}
+      {% endif %}
+
+      <li class="mobile-nav__spacer"></li>
+
+    </ul>
+
+  </div>
+</div>

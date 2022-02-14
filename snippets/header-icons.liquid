@@ -1,3 +1,4 @@
+
 <div class="site-nav site-nav--icons">
   {% if settings.enable_currencies %}
     {% include 'currency-picker', picker_id: 'header', currency_class: 'currency-picker--header medium-down--hide' %}
@@ -5,14 +6,11 @@
   <div class="site-nav__icons">
     {% if shop.customer_accounts_enabled %}
       <a class="site-nav__link site-nav__link--icon medium-down--hide" href="{{ routes.account_url }}">
-        {% include 'icon-user' %}
-        <span class="icon__fallback-text">
-          {% if customer %}
-            {{ 'layout.customer.account' | t }}
-          {% else %}
-            {{ 'layout.customer.log_in' | t }}
-          {% endif %}
-        </span>
+        {% if customer %}
+          {{ 'layout.customer.account' | t }}
+        {% else %}
+          {{ 'layout.customer.log_in' | t }}
+        {% endif %}
       </a>
     {% endif %}
 

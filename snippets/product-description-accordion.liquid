@@ -1,0 +1,155 @@
+{{ product.description }}
+
+{% assign accordions = product.metafields.accordion | sort %}
+{% if accordions.size > 0 %}
+
+<div class="accordionWrapper">
+  {% for accordion in accordions %}
+    {% for key in accordion %}
+      <div class="accordionItem close">
+        <p class="accordionItemHeading">
+          <span>{{ key[0] | slice: 2, key[0].size | replace: '_', ' ' }}</span>
+          <svg class="indicator" height="15px" viewBox="0 0 15 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+              <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                  <rect id="horizontal" fill="#4f4f4f" transform="translate(7.500000, 7.500000) rotate(90.000000) translate(-7.500000, -7.500000) " x="6.5" y="0" width="2" height="15" rx="1"></rect>
+                  <rect id="vertical" fill="#4f4f4f" x="6.5" y="0" width="2" height="15" rx="1"></rect>
+              </g>
+          </svg>
+        </p>
+        <div class="accordionItemContent">
+          {{ key[1] }}
+        </div>
+      </div>
+    {% endfor %}
+  {% endfor %}
+</div>
+
+<script type="text/javascript">
+  var accItem = document.getElementsByClassName('accordionItem');
+  var accHD = document.getElementsByClassName('accordionItemHeading');
+  for (i = 0; i < accHD.length; i++) {
+    accHD[i].addEventListener('click', toggleItem);
+  }
+  function toggleItem() {
+    var itemClass = this.parentNode.className;
+    if (itemClass == 'accordionItem close') {
+      this.parentNode.className = 'accordionItem open';
+    } else {
+      this.parentNode.className = 'accordionItem close';
+    }
+  }
+</script>
+<style type="text/css">
+.accordionItem {
+    position: relative;
+    display:block;
+    width:100%;
+    box-sizing: border-box;
+    border-top: 1px solid rgb(159, 159, 159);
+    border-bottom: 1px solid rgb(159, 159, 159);
+    transition: padding-bottom 0.2s ease-in-out;
+}
+.accordionItem + .accordionItem { border-top: 0; }
+
+.accordionItemHeading {
+    cursor:pointer;
+    margin:0 !important;
+    padding:10px;
+    box-sizing: border-box;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.accordionItemHeading span {
+  min-width: 40%;
+  text-align: center;
+  display: inline-block;
+}
+
+.accordionItemHeading .indicator {
+    height: 11px;
+    margin: 0 20px 3px;
+    display: inline-block;
+    transform: rotate(0deg);
+    transition: transform 0.3s ease-in;
+    align-self: center;
+}
+
+.open.accordionItem {
+    padding-bottom: 20px;
+}
+
+.open .accordionItemHeading .indicator {
+    padding-top: 0;
+    transform: rotate(90deg);
+}
+
+
+.accordionItemHeading .indicator #horizontal,
+.open .accordionItemHeading .indicator #horizontal {
+    transition: opacity 0.3s linear;
+}
+
+.accordionItemHeading .indicator #horizontal {
+    opacity: 1;
+}
+
+.open .accordionItemHeading .indicator #horizontal {
+    opacity: 0;
+}
+
+.accordionItemContent {
+    -webkit-transition: opacity 0.2s linear 0s, max-height 0.4s ease-in-out 0s;
+    -o-transition: opacity 0.2s linear 0s, max-height 0.4s ease-in-out 0s;
+    transition: opacity 0.2s linear 0s, max-height 0.4s ease-in-out 0s;
+    display: block;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    margin: 0;
+    opacity: 0;
+    overflow: hidden;
+}
+
+.close .accordionItemContent {
+  max-height: 0px;
+  z-index: 0;
+  padding: 0 20px
+}
+
+.accordionItemContent figure {
+  margin-block-end: 0;
+  margin-block-start: 0;
+}
+
+.open.accordionItem,
+.open .accordionItemHeading,
+.accordionItemHeading {
+	transition: padding 0.2s ease-in-out;
+}
+
+.accordionItemHeading {
+    transition-delay: 0.2s;
+}
+
+.open .accordionItemHeading {
+  padding-bottom: 30px;
+}
+
+.open.accordionItem {
+  padding-bottom: 20px;
+}
+
+.open .accordionItemContent {
+    padding: 0 20px;
+    width: 100%;
+    max-height: 500px;
+    opacity: 1;
+    -webkit-transition: max-height 0.3s ease-in-out 0s, opacity 0.2s linear 0s;
+    -o-transition: max-height 0.3s ease-in-out 0s, opacity 0.2s linear 0s;
+    transition: max-height 0.3s ease-in-out 0s, opacity 0.2s linear 0s;
+    z-index: 1;
+}
+</style>
+
+{% endif %}

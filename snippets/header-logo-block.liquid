@@ -41,11 +41,11 @@
     }
     {% endstyle %}
 
-    {% if template == 'index' %}
-      <h1 class="site-header__logo" itemscope itemtype="http://schema.org/Organization">
+    {% if template contains 'index' %}
+      <h1 class="site-header__logo" {% comment remove microdata structured data %}itemscope{% endcomment %} itemtype="http://schema.org/Organization">
         <span class="visually-hidden">{{ shop.name }}</span>
     {% else %}
-      <div class="h1 site-header__logo" itemscope itemtype="http://schema.org/Organization">
+      <div class="h1 site-header__logo" {% comment remove microdata structured data %}itemscope{% endcomment %} itemtype="http://schema.org/Organization">
     {% endif %}
     {% if block.settings.logo %}
       {% comment %}
@@ -88,7 +88,7 @@
     {% else %}
       <a href="{{ routes.root_url }}" itemprop="url">{{ shop.name }}</a>
     {% endif %}
-    {% if template == 'index' %}
+    {% if template contains 'index' %}
       </h1>
     {% else %}
       </div>
@@ -98,15 +98,15 @@
 {% endfor %}
 
 {% unless has_logo %}
-  {% if template == 'index' %}
-    <h1 class="site-header__logo" itemscope itemtype="http://schema.org/Organization">
+  {% if template contains 'index' %}
+    <h1 class="site-header__logo" {% comment remove microdata structured data %}itemscope{% endcomment %} itemtype="http://schema.org/Organization">
   {% else %}
-    <div class="h1 site-header__logo" itemscope itemtype="http://schema.org/Organization">
+    <div class="h1 site-header__logo" {% comment remove microdata structured data %}itemscope{% endcomment %} itemtype="http://schema.org/Organization">
   {% endif %}
   <a href="{{ routes.root_url }}" itemprop="url" class="site-header__logo-link">
     {{ shop.name }}
   </a>
-  {% if template == 'index' %}
+  {% if template contains 'index' %}
     </h1>
   {% else %}
     </div>

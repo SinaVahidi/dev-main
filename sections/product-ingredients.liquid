@@ -1,0 +1,159 @@
+{% assign ss = section.settings %}
+{% assign ingredients_metafield_array = product.metafields.custom_fields.product_ingredients | split: ',' %}
+
+{% assign show_product_ingredients = false %}
+
+{% if ss.show_product_ingredients %}
+  {% assign show_product_ingredients = true %}
+{% endif %}
+
+{% if ingredients_metafield_array == blank %}
+  {% assign show_product_ingredients = false %}
+{% endif %}
+
+{% if show_product_ingredients %}
+  <div class="index-section product-ingredients-section">
+    <div class="page-width">
+      
+      {% if ss.product_ingredients_heading != blank %}
+        <header class="section-header">
+          <h3 class="section-header__title">
+            {{ ss.product_ingredients_heading }}
+          </h3>
+        </header>
+      {% endif %}
+
+      {% case ss.number_of_items_per_row %}
+      {% when 1 %}
+        {%- assign grid_item_width = '' -%}
+      {% when 2 %}
+        {%- assign grid_item_width = 'medium-up--one-half' -%}
+      {% when 3 %}
+        {%- assign grid_item_width = 'medium-up--one-third' -%}
+      {% endcase %}
+    
+      <div class="product-ingredients grid grid--uniform flex f-wrap f-j-center" {% if ss.view_more %}data-toggle-group{% endif %}>
+        {% for ingredient_title in ingredients_metafield_array %}
+          {% for block in section.blocks %}
+            {% assign bs = block.settings %}
+            {% if bs.title == ingredient_title %}
+
+              <div class="grid__item ingredient-item {{ grid_item_width }}">
+                
+                <div class="image-area">
+                  {% if bs.image != blank %}
+                    {%- assign img_url = bs.image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
+                    <img class="lazyload"
+                        data-src="{{ img_url }}"
+                        data-widths="[180, 360, 540, 720, 900, 1080]"
+                        data-aspectratio="{{ bs.image.aspect_ratio }}"
+                        data-sizes="auto"
+                        alt="{{ bs.title | escape }}">
+                    <noscript>
+                      <img class="lazyloaded" src="{{ bs.image | img_url: '400x' }}" alt="{{ bs.title | escape }}">
+                    </noscript>
+                  {% endif %}
+                </div>
+
+                <div class="content-area">
+                  <h3>{{ bs.title }}</h3>
+                  <div class="rte">
+                    {{ bs.text }}
+                  </div>
+                </div>
+
+              </div>
+            {% endif %}
+          {% endfor %}
+
+          {% if ss.view_more %}
+            {% if forloop.index == ss.number_of_items_per_row %}
+              <div data-toggle-item>
+                <div class="btn product-ingredients-more" data-toggle-trigger>
+                  <span class="more">{{ ss.view_more_button }}</span>
+                  <span class="less">{{ ss.view_less_button }}</span>
+                </div>
+                <div class="product-ingredients grid grid--uniform flex f-wrap f-j-center" style="max-height: 0px;" data-toggle-elem>
+            {% endif %}
+
+            {% if forloop.last %}
+                </div>
+              </div>
+            {% endif %}
+          {% endif %}
+        {% endfor %}
+      </div>
+
+    </div>
+  </div>
+{% endif %}
+
+{% schema %}
+  {
+    "name": "Product ingredients",
+    "settings": [
+      {
+        "type": "checkbox",
+        "id": "show_product_ingredients",
+        "label": "Show product ingredients?",
+        "default": true
+      },
+      {
+        "type": "text",
+        "id": "product_ingredients_heading",
+        "label": "Heading",
+        "default": "The Ingredients"
+      },
+      {
+        "type": "checkbox",
+        "id": "view_more",
+        "label": "Show 'View more' button?",
+        "default": true
+      },
+      {
+        "type": "text",
+        "id": "view_more_button",
+        "label": "'View more' button text",
+        "default": "View All Ingredients"
+      },
+      {
+        "type": "text",
+        "id": "view_less_button",
+        "label": "'View less' button text",
+        "default": "View less"
+      },
+      {
+        "type": "range",
+        "id": "number_of_items_per_row",
+        "label": "Number of items per row",
+        "default": 3,
+        "min": 1,
+        "max": 3,
+        "step": 1
+      }
+    ],
+    "blocks": [
+      {
+        "type": "ingredient",
+        "name": "Ingredient",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Image"
+          },
+          {
+            "type": "text",
+            "id": "title",
+            "label": "Title"
+          },
+          {
+            "type": "richtext",
+            "id": "text",
+            "label": "Description"
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}

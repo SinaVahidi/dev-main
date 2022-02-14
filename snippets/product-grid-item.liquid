@@ -1,5 +1,5 @@
 {% unless grid_item_width %}
-  {%- assign grid_item_width = 'medium-up--one-quarter small--one-half' -%}
+  {%- assign grid_item_width = 'medium-up--one-quarter medium-down--one-third small--one-half' -%}
 {% endunless %}
 
 {% assign on_sale = false %}
@@ -12,45 +12,11 @@
   {%- assign sold_out = false -%}
 {% endif %}
 
-{%- assign product_tags = product.tags | join: ',' -%}
-{%- assign has_custom_label = false -%}
-{% if product_tags contains '_label_' %}
-  {% for tag in product.tags %}
-    {% if tag contains '_label_' %}
-      {%- assign tag_starts_with = tag | slice: 0 -%}
-      {% if tag_starts_with == '_' %}
-        {%- assign has_custom_label = true -%}
-        {%- assign custom_label = tag | replace: '_label_', '' -%}
-      {% endif %}
-    {% endif %}
-  {% endfor %}
-{% endif %}
-
 <div class="grid__item grid-product {{ grid_item_width }}{% if settings.quick_shop_enable and sold_out == false %} grid-product__has-quick-shop{% endif %}" data-aos="row-of-{{ per_row }}">
   <div class="grid-product__content">
-    {% if has_custom_label %}
-      <div class="grid-product__tag grid-product__tag--custom">
-        {{ custom_label }}
-      </div>
-    {% else %}
-      {% if sold_out %}
-        <div class="grid-product__tag grid-product__tag--sold-out">
-          {{ 'products.product.sold_out' | t }}
-        </div>
-      {% endif %}
-      {% if on_sale and sold_out == false %}
-        {% if settings.product_save_amount %}
-          <div class="grid-product__tag grid-product__tag--sale">
-            {% if settings.product_save_type == 'dollar' %}
-              {% capture saved_amount %}{{ product.compare_at_price | minus: product.price | money }}{% endcapture %}
-            {% else %}
-              {% capture saved_amount %}{{ product.compare_at_price | minus: product.price | times: 100.0 | divided_by: product.compare_at_price | round }}%{% endcapture %}
-            {% endif %}
-            {{ 'products.general.save_html' | t: saved_amount: saved_amount }}
-          </div>
-        {% endif %}
-      {% endif %}
-    {% endif %}
+
+    {% include 'product-tags' %}
+
     {% if settings.quick_shop_enable and sold_out == false %}
       <div class="quick-product__btn js-modal-open-quick-modal-{{ product.id }} small--hide" data-product-id="{{ product.id }}">
         <span class="quick-product__label">{{ settings.quick_shop_text }}</span>
@@ -72,7 +38,7 @@
           </div>
         {% else %}
           <div class="image-wrap"
-            style="height: 0; padding-bottom: {{ 100 | divided_by: product.featured_image.aspect_ratio }}%;"
+            style="height: 0; padding-bottom: 125%;"
             >
             {%- assign img_url = product.featured_image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
             <img class="grid-product__image lazyload"
@@ -104,10 +70,17 @@
       </div>
 
       <div class="grid-product__meta">
-        <div class="grid-product__title">{{ product.title }}</div>
+        
+        <h3 class="grid-product__title">{{ product.title }}</h3>
+        
+        <div style="text-align: center">
+          <div class="yotpo bottomLine" style="display:inline-block" data-product-id="{{ product.id }}"></div>
+        </div>
+        
         {% if settings.vendor_enable %}
           <div class="grid-product__vendor">{{ product.vendor }}</div>
         {% endif %}
+        
         <div class="grid-product__price">
           {% if on_sale %}
             <span class="visually-hidden">{{ 'products.general.regular_price' | t }}</span>
@@ -137,11 +110,13 @@
             </div>
           {%- endif -%}
         </div>
+        
         {% if settings.enable_product_reviews %}
           <span class="shopify-product-reviews-badge" data-id="{{ product.id }}"></span>
         {% endif %}
       </div>
     </a>
+    
     {% if settings.collection_color_swatches %}
       {%- assign swatch_file_extension = 'png' -%}
 
@@ -171,6 +146,22 @@
           </div>
         {% endif %}
       {% endfor %}
+    {% endif %}
+    
+    {% if settings.atc_enable %}
+      <a href="{{ product.url | within: collection }}" class="btn btn--coconut btn--squared btn--thin btn--full btn--no-animate add-to-cart">
+        <span id="AddToCartText-{{ section_id }}">
+          {% if product.selected_or_first_available_variant.available %}
+            {% if template == 'product.preorder' %}
+              {{ 'products.product.preorder' | t }}
+            {% else %}
+              {{ 'products.product.view_product' | t }}
+            {% endif %}
+          {% else %}
+            {{ 'products.product.sold_out' | t }}
+          {% endif %}
+        </span>
+      </a> 
     {% endif %}
   </div>
 </div>

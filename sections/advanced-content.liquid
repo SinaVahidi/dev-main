@@ -22,11 +22,15 @@
     {% endcase %}
     <div class="custom__item {{ block_width }} {% if block.settings.alignment %}align--{{ block.settings.alignment }}{% endif %}" {{ block.shopify_attributes }}>
       <div class="custom__item-inner custom__item-inner--{{ block.type }} {% if block.settings.image == blank and block.type == 'image' %} custom__item-inner--placeholder-image{% endif %}">
-        {% case block.type %}
+        {% case block.type %} 
           {% when 'html' %}
             {% if block.settings.code != blank %}
               <div class="rte" data-section-id="{{ section.id }}" data-section-type="featured-content-section">
                 {{ block.settings.code }}
+
+                {% if block.settings.overlay_title != blank %}
+                  <a style="background-color: {{ block.settings.overlay_bg }}; color: {{ block.settings.overlay_color }};" class="overlay-title" target="_blank" href="{{ block.settings.overlay_url }}">{{ block.settings.overlay_title }}</a>
+                {% endif %}
               </div>
             {% else %}
               <div class="rte">
@@ -111,6 +115,26 @@
             "id": "code",
             "label": "HTML",
             "default": "<h2>Custom content</h2><p>Use this advanced section to build your own layouts or to add custom HTML or scripts.</p>"
+          },
+          {
+            "type": "text",
+            "id": "overlay_title",
+            "label": "Overlay Title"
+          },
+          {
+            "type": "url",
+            "id": "overlay_url",
+            "label": "Overlay URL"
+          },
+          {
+            "type": "color",
+            "id": "overlay_color",
+            "label": "Overlay Text Color"
+          },
+          {
+            "type": "color",
+            "id": "overlay_bg",
+            "label": "Overlay Background"
           },
           {
             "type": "select",

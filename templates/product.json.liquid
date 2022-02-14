@@ -1,0 +1,7 @@
+{% layout none %}
+{
+  "product": {{ product | json }},
+  "metafields": {{ product.metafields.custom_fields | json }},
+  "upsells": {{ product.metafields.custom_fields.upsell_products.value  | json }},
+  "options": {{ product.options_with_values | json }}
+}

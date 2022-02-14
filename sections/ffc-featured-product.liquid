@@ -1,0 +1,300 @@
+{% if section.settings.divider %}<div class="section--divider">{% endif %}
+
+{%- capture nextArrow -%}<button type="button" class="slick-next">{% include 'icon-chevron' %}</button>{%- endcapture -%}
+{%- capture prevArrow -%}<button type="button" class="slick-prev">{% include 'icon-chevron' %}</button>{%- endcapture -%}
+
+<div class="page-width">
+
+  <div class="featured-products__featured">Featured</div>
+
+  <div class="featured-products__slider slick-slider" data-slider='{
+    "slidesToShow": 1,
+    "slidesToScroll": 1,
+    "arrows": true,
+    "dots": false,
+    "infinite": true,
+    "draggable": false,
+    "swipe": false,
+    "adaptiveHeight": true,
+    "nextArrow": {{ nextArrow | json }},
+    "prevArrow": {{ prevArrow | json }}
+  }'>
+
+    {% for block in section.blocks %}
+      {%- assign bs = block.settings -%}
+      {%- assign product = all_products[bs.featured_product] -%}
+      {%- assign current_variant = product.selected_or_first_available_variant -%}
+      {%- assign meta_obj = product.metafields.custom_fields -%}
+
+      <div id="ProductSection-{{ block.id }}"
+        data-section-id="{{ block.id }}"
+        data-section-type="product"
+        {% if settings.product_zoom_enable %}
+          data-image-zoom="true"
+        {% endif %}>
+
+        {% include 'product-template-variables' %}
+
+        <div class="grid">
+          <div class="grid__item medium-up--one-half">
+            {% include 'product-images', section_id: block.id, thumbnail_position: section.settings.thumbnail_position %}
+          </div>
+     
+          <div class="grid__item medium-up--one-half">
+            <div class="product-single__meta">
+              {% unless product.empty? %}
+                {%- assign compare_at_price = current_variant.compare_at_price -%}
+                {%- assign price = current_variant.price -%}
+                {%- assign product_available = current_variant.available -%}
+              {% else %}
+                {%- assign compare_at_price = 1999 -%}
+                {%- assign price = 1999 -%}
+                {%- assign product_available = true -%}
+              {% endunless %}
+
+              <span class="product-single__featured">Featured</span>
+
+              {% if settings.vendor_enable %}
+                <div class="product-single__vendor">{{ product.vendor }}</div>
+              {% endif %}
+
+              <div class="product-single__title-price flex f-a-center f-j-between">
+                {% unless product.empty? %}
+                  <a class="h1 product-single__title" href="{{ product.url }}">{{ product.title }}</a>
+                {% else %}
+                  <a class="h1 product-single__title">{{ 'home_page.onboarding.product_title' | t }}</a>
+                {% endunless %}
+
+                {% if product.compare_at_price_max > product.price %}
+                  <span id="PriceA11y-{{ block.id }}" class="visually-hidden">{{ 'products.general.regular_price' | t }}</span>
+                  <span class="product__price-wrap-{{ block.id }}">
+                    <span id="ComparePrice-{{ block.id }}" class="product__price product__price--compare">
+                      {% if compare_at_price > price %}
+                        {{ compare_at_price | money }}
+                      {% endif %}
+                    </span>
+                  </span>
+                  <span id="ComparePriceA11y-{{ block.id }}" class="visually-hidden">{{ 'products.general.sale_price' | t }}</span>
+                {% else %}
+                  <span id="PriceA11y-{{ block.id }}" class="visually-hidden">{{ 'products.general.regular_price' | t }}</span>
+                {% endif %}
+
+                <span id="ProductPrice-{{ block.id }}"
+                  class="product__price{% if compare_at_price > price %} on-sale{% endif %}">
+                  {{ price | money }}
+                </span>
+              </div>
+
+              <div>
+                <a href="{{ product.url }}#yotpoWidget" class="yotpo yotpo-featured-widget bottomLine" style="padding-bottom: 10px"
+                  data-product-id="{{ product.id }}">
+                {%- assign yotpo_offload_content = shop.metafields.yotpo.yotpo_offload_content %}
+                {%- assign time_now = 'now' | date: '%s' %}
+                {%- assign yotpo_live_time = shop.metafields.yotpo.yotpo_live | date: '%s' %}
+                {%- assign diff_seconds_from_live = time_now | minus: yotpo_live_time %}
+                {%- assign yotpo_bottomline_last_updated = product.metafields.yotpo.bottomline_update_time | date: '%s' %}
+                {%- assign diff_seconds_from_last_bottomline_update = time_now | minus: yotpo_bottomline_last_updated %}
+                {%- if yotpo_live_time and diff_seconds_from_live < 86400 or yotpo_bottomline_last_updated and diff_seconds_from_last_bottomline_update < 86400 -%}
+                   {%- assign yotpo_bottomline_obsolete = false %}
+                {%- else %}
+                   {%- assign yotpo_bottomline_obsolete = true %}
+                {%- endif %}
+                {%- if yotpo_offload_content == 'yes' and yotpo_bottomline_obsolete != true -%}
+                   {{ product.metafields.yotpo.bottomline }}
+                {%- endif %}
+                </a>
+              </div>
+
+              {% if settings.sku_enable %}
+                <p id="Sku-{{ block.id }}" class="product-single__sku">
+                  {% if current_variant.sku %}
+                    {{ current_variant.sku }}
+                  {% endif %}
+                </p>
+              {% endif %}
+              
+              {% unless product.empty? %}
+                {% capture form_id %}AddToCartForm-{{ block.id }}{% endcapture %}
+                {% form 'product', product, id: form_id, class: 'product-single__form' %}
+                  {%- assign is_default_variant = false -%}
+                  {% if product.variants[0].title == 'Default Title' or product.variants[0].title == 'Default' %}
+                    {%- assign is_default_variant = true -%}
+                  {% endif %}
+                  {% unless product.options.size == 1 and is_default_variant %}
+                    {% for option in product.options_with_values %}
+                      {% if settings.variant_type == 'button' %}
+                        {% include 'variant-button', section_id: block.id, option_drop: option %}
+                      {% else %}
+                        {% include 'variant-dropdown', section_id: block.id %}
+                      {% endif %}
+                    {% endfor %}
+                  {% endunless %}
+
+                  <select name="id" id="ProductSelect-{{ block.id }}" class="product-single__variants no-js">
+                    {% for variant in product.variants %}
+                      {% if variant.available %}
+                        <option {% if variant == product.selected_or_first_available_variant %}
+                          selected="selected" {% endif %}
+                          value="{{ variant.id }}">
+                          {{ variant.title }} - {{ variant.price | money_with_currency }}
+                        </option>
+                      {% else %}
+                        <option disabled="disabled">
+                          {{ variant.title }} - {{ 'products.product.sold_out' | t }}
+                        </option>
+                      {% endif %}
+                    {% endfor %}
+                  </select>
+
+                  <div class="product__quantity-atc flex f-a-end f-j-between">
+                    
+                    {% if settings.quantity_enable %}
+                      <div class="product__quantity product__quantity--{{ settings.variant_type }}">
+                        <label for="Quantity-{{ block.id }}">{{ 'products.product.quantity' | t }}</label>
+                        {% include 'quantity-input', id: block.id, qty: 1, min: 1 %}
+                      </div>
+                    {% endif %}
+
+                    {%- assign enable_dynamic_buttons = false -%}
+                    {% if settings.enable_payment_button and template != 'product.preorder' %}
+                      {%- assign enable_dynamic_buttons = true -%}
+                    {% endif %}
+
+                    {% if enable_dynamic_buttons %}
+                      <div class="payment-buttons">
+                    {% endif %}
+
+                    {% render 'bsub-widget' %}
+                    
+                    <button
+                      {% if product.empty? %}type="button"{% else %}type="submit"{% endif %} 
+                      name="add"
+                      id="AddToCart-{{ block.id }}"
+                      class="btn add-to-cart"
+                      {% unless current_variant.available %} disabled="disabled"{% endunless %}>
+                      <span id="AddToCartText-{{ block.id }}">
+                        {% if current_variant.available %}
+                          {% if template == 'product.preorder' %}
+                            {{ 'products.product.preorder' | t }}
+                          {% else %}
+                            {{ 'products.product.add_to_cart' | t }}
+                          {% endif %}
+                        {% else %}
+                          {{ 'products.product.sold_out' | t }}
+                        {% endif %}
+                      </span>
+                    </button> 
+
+                    {% if enable_dynamic_buttons %}
+                      {{ form | payment_button }}
+                    {% endif %}
+
+                    {% if enable_dynamic_buttons %}
+                      </div>
+                    {% endif %}
+
+                  </div>
+
+                  <div id="VariantsJson-{{ block.id }}" class="hide" aria-hidden="true">
+                    {{ product.variants | json }}
+                  </div>
+                  {% if product.options.size > 1 %}
+                    <div id="CurrentVariantJson-{{ block.id }}" class="hide" aria-hidden="true">
+                      {{ current_variant | json }}
+                    </div>
+                  {% endif %}
+                {% endform %}
+
+              {% endunless %}
+
+              {% if meta_obj.featured_description != blank %}
+              <div class="product-single__description rte">
+                {{ meta_obj.featured_description }}
+              </div>
+              {% endif %}
+
+              {% if meta_obj.featured_ingredients != blank or meta_obj.featured_details != blank %}
+                <div class="product-single__accordion" data-toggle-group>
+          
+                  {% if meta_obj.featured_ingredients != blank %}
+                  <div class="product-single__description rte" data-toggle-item>
+                    <div class="question-block-header flex f-a-center f-j-between" data-toggle-trigger>
+                      <span>organic ingredients</span>
+                      <span class="plus">+</span>
+                      <span class="minus">-</span>
+                    </div>
+                    <div class="question-block-content" style="max-height: 0px;" data-toggle-elem>
+                      <div class="rte">
+                        {{ meta_obj.featured_ingredients }}
+                      </div>
+                    </div>
+                  </div>
+                  {% endif %}
+
+                  {% if meta_obj.featured_details != blank %}
+                  <div class="product-single__description rte" data-toggle-item>
+                    <div class="question-block-header flex f-a-center f-j-between" data-toggle-trigger>
+                      <span>product details</span>
+                      <span class="plus">+</span>
+                      <span class="minus">-</span>
+                    </div>
+                    <div class="question-block-content" style="max-height: 0px;" data-toggle-elem>
+                      <div class="rte">
+                        {{ meta_obj.featured_details }}
+                      </div>
+                    </div>
+                  </div>
+                  {% endif %}
+
+                </div>
+              {% endif %}
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    {% endfor %}
+
+  </div>
+</div>
+
+{% if section.settings.divider %}</div>{% endif %}
+
+{% schema %}
+  {
+    "name": "FFC Featured products",
+    "class": "index-section ffc-featured-product test-section--b test-section--c",
+    "settings": [
+      {
+        "type": "checkbox",
+        "id": "divider",
+        "label": "Show section divider",
+        "default": false
+      }
+    ],
+    "blocks": [
+      {
+        "type": "product",
+        "name": "Product",
+        "settings": [
+          {
+            "type": "product",
+            "id": "featured_product",
+            "label": "Product"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "FFC Featured products",
+        "category": "Product"
+      }
+    ]
+  }
+{% endschema %}
+
+
+

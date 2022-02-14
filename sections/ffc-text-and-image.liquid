@@ -1,0 +1,123 @@
+{% assign ss = section.settings %}
+
+{% if ss.divider %}<div class="section--divider">{% endif %}
+
+{% capture image_area %}
+  <div class="image-area">
+    {% render 'picture-element', image: ss.image, size: '415x', alt: ss.title %}
+  </div>
+{% endcapture %}
+
+<style>
+  .ffc-text-and-image--{{ section.id }} {
+    background-color: {{ ss.color_bg }};
+    color: {{ ss.color_text }};
+  }
+</style>
+
+<div class="ffc-text-and-image ffc-text-and-image--{{ section.id }}">
+  <div class="page-width flex f-a-center">
+
+    {% if ss.layout == 'left' %}
+      {{ image_area }}
+    {% endif %}
+
+    <div class="content-area">
+      {% if ss.title != blank %}
+      <div class="h2">{{ ss.title }}</div>
+      {% endif %}
+
+      {% if ss.text != blank %}
+      <div class="rte">{{ ss.text }}</div>
+      {% endif %}
+
+      {% if ss.button_label != blank %}
+      <a href="{{ ss.button_link }}" class="btn">{{ ss.button_label }}</a>
+      {% endif %}
+    </div>
+
+    {% if ss.layout == 'right' %}
+      {{ image_area }}
+    {% endif %}
+
+  </div>
+</div>
+
+{% if ss.divider %}</div>{% endif %}
+
+{% schema %}
+  {
+    "name": "FFC Image with text",
+    "class": "section--ffc",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "image",
+        "label": "Image"
+      },
+      {
+        "type": "color",
+        "id": "color_bg",
+        "label": "Background color",
+        "default": "#ffffff"
+      },
+      {
+        "type": "color",
+        "id": "color_text",
+        "label": "Text color",
+        "default": "#4f4f4f"
+      },
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Heading",
+        "default": "Image with text"
+      },
+      {
+        "type": "richtext",
+        "id": "text",
+        "label": "Text",
+        "default": "<p>Pair large text with an image to tell a story, explain a detail about your product, or describe a new promotion.</p>"
+      },
+      {
+        "type": "text",
+        "id": "button_label",
+        "label": "Button label",
+        "default": "Optional button"
+      },
+      {
+        "type": "url",
+        "id": "button_link",
+        "label": "Button link"
+      },
+      {
+        "type": "select",
+        "id": "layout",
+        "label": "Layout",
+        "default": "left",
+        "options": [
+          {
+            "value": "left",
+            "label": "Image on left"
+          },
+          {
+            "value": "right",
+            "label": "Image on right"
+          }
+        ]
+      },
+      {
+        "type": "checkbox",
+        "id": "divider",
+        "label": "Show section divider",
+        "default": false
+      }
+    ],
+    "presets": [
+      {
+        "name": "FFC Image with text",
+        "category": "Image"
+      }
+    ]
+  }
+{% endschema %}

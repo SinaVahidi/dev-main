@@ -908,6 +908,7 @@ lazySizesConfig.expFactor = 4;
         // Clicking out of drawer closes it
         this.$nodes.page.on('click' + this.config.namespace, function () {
           this.close();
+          $('#yotpo_testimonials_btn').show();
           return false;
         }.bind(this));
   
@@ -915,6 +916,7 @@ lazySizesConfig.expFactor = 4;
         this.$nodes.parent.on('keyup' + this.config.namespace, function(evt) {
           if (evt.keyCode === 27) {
             this.close();
+            $('#yotpo_testimonials_btn').show();
           }
         }.bind(this));
       },
@@ -1034,7 +1036,8 @@ lazySizesConfig.expFactor = 4;
     var classes = {
       input: '.js-qty__num',
       plus: '.js-qty__adjust--plus',
-      minus: '.js-qty__adjust--minus'
+      minus: '.js-qty__adjust--minus',
+      add: '.js-qty__atc'
     };
   
     function QtySelector($el, options) {
@@ -1042,6 +1045,7 @@ lazySizesConfig.expFactor = 4;
       this.$input = $el.find(classes.input);
       this.$plus = $el.find(classes.plus);
       this.$minus = $el.find(classes.minus);
+      this.$add = $el.find(classes.add);
       this.minValue = this.$input.attr('min') || 1;
   
       var defaults = {
@@ -1070,6 +1074,10 @@ lazySizesConfig.expFactor = 4;
           var qty = this.validateQty(this.$input.val());
           this.changeQty(qty);
         }.bind(this));
+
+        this.$add.on('click', function() {
+          this.add(this.$add.data('variant-id'));
+        }.bind(this));
       },
   
       addQty: function(number) {
@@ -1088,6 +1096,10 @@ lazySizesConfig.expFactor = 4;
       changeQty: function(qty) {
         this.$input.val(qty);
         $('body').trigger('qty' + this.options.namespace, [this.options.key, qty]);
+      },
+  
+      add: function(variant) {
+        $('body').trigger('qty' + this.options.namespace + '--add', variant);
       },
   
       validateQty: function(number) {
@@ -1153,6 +1165,19 @@ lazySizesConfig.expFactor = 4;
       },
   
       buildCart: function(cart, openDrawer) {
+
+        // if(typeof window.BOLD !== 'undefined'
+        //    && typeof window.BOLD.common !== 'undefined'
+        //    && typeof window.BOLD.common.cartDoctor !== 'undefined') {
+        //   // NOTE: "cart" should be the variable containing the cart json data
+        //   cart = window.BOLD.common.cartDoctor.fix(cart);
+        // }
+
+        let upsellItemVariants = []
+        $('.js-qty__atc').each(function(index, btn){
+          upsellItemVariants.push($(btn).data('variant-id'))
+        })
+        
         this.loading(true);
         this.emptyCart();
   
@@ -1163,8 +1188,33 @@ lazySizesConfig.expFactor = 4;
           var item = {};
           var data = {};
           var animation_row = 1;
-  
+
+          var upsellItems = this._upsellOptions = document.querySelector('[data-upsell-options]') ? JSON.parse(document.querySelector('[data-upsell-options]').innerHTML) : []
+
           $.each(cart.items, function(index, product) {
+            
+            for (let variant of upsellItemVariants) {
+              if (product.variant_id === variant){
+                for (var i = 0; i < upsellItems.length; i++){
+                  if (upsellItems[i].variant === variant) {
+                    upsellItems[i].hide = "hide"
+                  }
+                }
+              }
+            }
+
+            var recurringDesc = "";
+
+            if(product.properties_all != undefined && product.properties_all.frequency_num != undefined && product.properties_all.frequency_type_text != undefined)
+            {
+              recurringDesc = "<div>Delivered every " + product.properties_all.frequency_num + " " + product.properties_all.frequency_type_text + "</div>";
+            }
+
+            if(product.selling_plan_allocation != undefined) {
+              if(product.selling_plan_allocation.selling_plan.name != undefined) {
+                recurringDesc = "Delivered every " + product.selling_plan_allocation.selling_plan.name;
+              }
+            }
   
             var prodImg;
             if (product.image !== null) {
@@ -1200,6 +1250,7 @@ lazySizesConfig.expFactor = 4;
               animationRow: animation_row,
               name: product.product_title,
               variation: product.variant_title,
+              recurring: recurringDesc,
               properties: product.properties,
               itemQty: product.quantity,
               price: theme.Currency.formatMoney(product.price, theme.settings.moneyFormat),
@@ -1213,7 +1264,7 @@ lazySizesConfig.expFactor = 4;
   
             items.push(item);
           });
-  
+
           animation_row+=2;
   
           // If we have cart discount, add a formattedAmount to the discount object
@@ -1228,6 +1279,7 @@ lazySizesConfig.expFactor = 4;
   
           data = {
             items: items,
+            upsellItems: upsellItems,
             note: cart.note,
             lastAnimationRow: animation_row,
             cartDiscounts: cart.cart_level_discount_applications,
@@ -1261,7 +1313,7 @@ lazySizesConfig.expFactor = 4;
           this.drawer.open();
         }
       },
-  
+    
       initQtySelectors: function() {
         $(selectors.container).find('.js-qty__wrapper').each(function(index, el) {
           var selector = new theme.QtySelector($(el), {
@@ -1270,6 +1322,38 @@ lazySizesConfig.expFactor = 4;
         }.bind(this));
   
         $('body').on('qty.cart-drawer', this.updateItem.bind(this));
+        $('body').on('qty.cart-drawer--add', this.addItem.bind(this));
+      },
+  
+      addItem: function(evt, variant) {
+        if (this.status.loading) {
+          return;
+        }
+
+        this.loading(true);
+
+        $.post(
+          '/cart/add.js',
+          {
+            items: [
+              {
+                quantity: 1,
+                id: variant
+              }
+            ]
+          },
+          null,
+          "json"
+        )
+        .then(function() {
+          theme.cart.getCart().then(this.buildCart.bind(this));
+        }.bind(this))
+        .catch(function(XMLHttpRequest) {
+          this.updateError(XMLHttpRequest)
+        }.bind(this))
+        .always(function() {
+          this.loading(false);
+        }.bind(this));
       },
   
       updateItem: function(evt, key, qty) {
@@ -1537,18 +1621,20 @@ lazySizesConfig.expFactor = 4;
     var $wrapper;
     var $siteHeader;
   
-    function init() {
+    function init(container) {
       $window = $(window);
-      $navContainerWithLogo = $(selectors.navContainerWithLogo);
-      $logoContainer = $(selectors.logoContainer);
-      $nav = $(selectors.navigation);
-      $wrapper = $(selectors.wrapper);
-      $siteHeader = $(selectors.siteHeader);
+      $headerContainer = container;
+
+      $wrapper = $headerContainer.find($(selectors.wrapper));
+      $navContainerWithLogo = $headerContainer.find($(selectors.navContainerWithLogo));
+      $logoContainer = $headerContainer.find($(selectors.logoContainer));
+      $nav = $headerContainer.find($(selectors.navigation));
+      $siteHeader = $headerContainer.find($(selectors.siteHeader));
   
       config.stickyEnabled = $siteHeader.data('sticky');
       if (config.stickyEnabled) {
         config.wrapperOverlayed = $wrapper.hasClass(config.overlayedClass);
-        stickyHeader();
+        stickyHeader($headerContainer);
       }
   
       theme.settings.overlayHeader = $siteHeader.data('overlay');
@@ -1757,46 +1843,49 @@ lazySizesConfig.expFactor = 4;
       }
     }
   
-    function stickyHeader() {
+    function stickyHeader(parent) {
+      var parent = parent;
+      
       config.lastScroll = 0;
-      $siteHeader.wrap('<div class="site-header-sticky"></div>');
-  
-      stickyHeaderHeight();
-      $window.on('resize' + config.namespace, $.debounce(50, stickyHeaderHeight));
-      $window.on('scroll' + config.namespace, $.throttle(15, stickyHeaderScroll));
+      parent.find(selectors.siteHeader).wrap('<div class="site-header-sticky"></div>');
+      stickyHeaderHeight(parent);
+      
+      $window.on('resize', function(){stickyHeaderHeight(parent)});
+      $window.on('scroll', $.throttle(15, stickyHeaderScroll));
   
       // This gets messed up in the editor, so here's a fix
       if (Shopify && Shopify.designMode) {
         setTimeout(function() {
-          stickyHeaderHeight();
+          stickyHeaderHeight(parent);
         }, 250);
       }
     }
   
-    function stickyHeaderHeight() {
-      var $stickyHeader = $('.site-header-sticky').css('height', $siteHeader.outerHeight(true));
+    function stickyHeaderHeight(parent) {
+      var $stickyHeader = parent.find('.site-header-sticky').css('height', parent.find(selectors.siteHeader).outerHeight(true));
     }
   
     function stickyHeaderScroll() {
+      var parent = parent;
       var scroll = $window.scrollTop();
-      var threshold = 250;
-  
+      var threshold = 110;
+      
       if (scroll > threshold) {
         if (config.stickyActive) {
           return;
         }
   
         config.stickyActive = true;
-  
-        $siteHeader.addClass(config.stickyClass);
+ 
+        $(selectors.siteHeader).addClass(config.stickyClass);
         if (config.wrapperOverlayed) {
-          $wrapper.removeClass(config.overlayedClass);
+          $(selectors.wrapper).removeClass(config.overlayedClass);
         }
   
         // Add open transition class after element is set to fixed
         // so CSS animation is applied correctly
         setTimeout(function() {
-          $siteHeader.addClass(config.openTransitionClass);
+          $(selectors.siteHeader).addClass(config.openTransitionClass);
         }, 100);
       } else {
         if (!config.stickyActive) {
@@ -1805,9 +1894,9 @@ lazySizesConfig.expFactor = 4;
   
         config.stickyActive = false;
   
-        $siteHeader.removeClass(config.openTransitionClass).removeClass(config.stickyClass);
+        $(selectors.siteHeader).removeClass(config.openTransitionClass).removeClass(config.stickyClass);
         if (config.wrapperOverlayed) {
-          $wrapper.addClass(config.overlayedClass);
+          $(selectors.wrapper).addClass(config.overlayedClass);
         }
       }
   
@@ -2034,10 +2123,12 @@ lazySizesConfig.expFactor = 4;
     };
   
     function init() {
+      headerBarGeo();
+      
       if (!$(selectors.closeBtn).length) {
         return;
       }
-  
+        
       if (theme.config.hasSessionStorage && sessionStorage[announcementBarText()] !== 'hidden') {
         window.setTimeout(function() {
           announcementBarShow();
@@ -2083,6 +2174,33 @@ lazySizesConfig.expFactor = 4;
   
     function announcementBarText() {
       return $(selectors.text).data('text');
+    }
+    
+    function headerBarGeo() {
+      var country = '';
+      var announcementContainer = $('.announcement__text');
+      var announcementText = announcementContainer.data('world');
+      
+      $.get("https://ipinfo.io", function(response) {
+
+        console.log(response)
+        country = response.country;
+             
+        switch(country) {
+          case 'US':
+            announcementText = announcementContainer.data('us');
+            break;
+          case 'CA':
+            announcementText = announcementContainer.data('ca');
+            break;
+          default:
+            announcementText = announcementContainer.data('world');
+        }
+
+        announcementContainer.text(announcementText);
+      }, "jsonp").fail(function() {
+        announcementContainer.text(announcementText);
+      });
     }
   
     return {
@@ -2954,7 +3072,9 @@ lazySizesConfig.expFactor = 4;
         if (variant) {
           // Regular price
           $(this.selectors.price).html(theme.Currency.formatMoney(variant.price, theme.settings.moneyFormat)).show();
-  
+          
+          document.querySelector('[data-product-price]').dataset.productPrice = theme.Currency.formatMoney(variant.price, theme.settings.moneyFormat)
+
           // Sale price, if necessary
           if (variant.compare_at_price > variant.price) {
             $(this.selectors.comparePrice).html(theme.Currency.formatMoney(variant.compare_at_price, theme.settings.moneyFormat));
@@ -3973,16 +4093,18 @@ lazySizesConfig.expFactor = 4;
   
       theme.currencySwitcher.init()
       this.initDrawers();
-      theme.headerNav.init();
+      theme.headerNav.init($container);
       theme.announcementBar.init();
     }
   
     Header.prototype = $.extend({}, Header.prototype, {
       initDrawers: function() {
         theme.NavDrawer = new theme.Drawers('NavDrawer', 'nav');
-        if (theme.settings.cartType === 'drawer') {
-          new theme.CartDrawer();
-        }
+        theme.NavDrawer = new theme.Drawers('NavDrawerV2', 'nav');
+        
+        // if (theme.settings.cartType === 'drawer') {
+        //   new theme.CartDrawer();
+        // }
   
         this.drawerMenuButtons();
       },

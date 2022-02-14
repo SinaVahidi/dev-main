@@ -1,0 +1,92 @@
+<div class="ffc-testimonials page-width">
+  
+  {% if bs.title != blank %}
+    <div class="section-header">
+      <h2 class="section-header__title section-header__title--smaller">{{ bs.title | escape }}</h2>
+
+      {% if bs.rating > 0 %}
+      <div class="yotpo flex f-j-center">
+        <span class="yotpo-stars yotpo-bottomline">
+          {% for i in (1..bs.rating) %}
+            <span class="yotpo-icon yotpo-icon-star rating-star pull-left"></span>
+          {% endfor %}
+        </span>
+      </div>
+      {% endif %}
+
+      {% if bs.content != blank %}
+        <div class="rte">{{ bs.content }}</div>
+      {% endif %}
+    </div>
+  {% endif %}
+
+  <div class="ffc-testimonials__slider slick-slider" data-slider='{
+    "slidesToShow": 3,
+    "slidesToScroll": 3,
+    "arrows": false,
+    "dots": true,
+    "swipeToSlide": false,
+    "infinite": true,
+    "adaptiveHeight": true,
+    "responsive": [
+      {
+        "breakpoint": 835,
+        "settings": {
+          "slidesToShow": 1,
+          "slidesToScroll": 1,
+          "infinite": false
+        }
+      }
+    ]
+  }'>
+
+    {% for i in (1..9) %}
+      {% capture testimonial_text %}testimonial_{{i}}{% endcapture %}
+      {% capture testimonial_author %}author_{{i}}{% endcapture %}
+      {% capture testimonial_product %}product_{{i}}{% endcapture %}
+      {% capture testimonial_rating %}rating_{{i}}{% endcapture %}
+
+      {% if bs[testimonial_text] == blank %}
+        {% continue %}
+      {% endif %}
+
+      <div class="testimonials-slide testimonials-slide--{{ i }}">
+        <blockquote class="testimonials-slider__text">
+          {% if bs[testimonial_product] != blank %}
+            {% assign product = all_products[bs[testimonial_product]] %}
+            <a href="{{ product.url }}#yotpoWidget">
+          {% endif %}
+
+          <span class="quote-icon">{% include 'icon-quote-ffc' %}</span>
+
+          {% if bs[testimonial_text] != blank %}
+            <div class="rte-setting text-spacing">{{ bs[testimonial_text] }}</div>
+          {% endif %}
+
+          {% if bs[testimonial_rating] > 0 %}
+            <div class="yotpo flex f-j-center">
+              <span class="yotpo-stars yotpo-bottomline">
+                {% for i in (1..bs[testimonial_rating]) %}
+                  <span class="yotpo-icon yotpo-icon-star rating-star pull-left"></span>
+                {% endfor %}
+              </span>
+            </div>
+          {% endif %}
+
+          {% if bs[testimonial_author] != blank %}
+            <cite class="author">{{ bs[testimonial_author] | escape }}</cite>
+          {% endif %}
+
+          {% if bs[testimonial_product] != blank %}
+            <div class="product"><span>{{ product.title }}</span></div>
+          {% endif %}
+
+          {% if bs[testimonial_product] != blank %}
+            </a>
+          {% endif %}
+        </blockquote>
+      </div>
+    {% endfor %}
+
+  </div>
+</div>

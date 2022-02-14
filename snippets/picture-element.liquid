@@ -1,0 +1,9 @@
+<div class="image-wrap image-wrap--ffc" style="height: 0; padding-bottom: {{ 100 | divided_by: image.aspect_ratio }}%;">
+  {% assign image_url = image | img_url: size %}
+  <img class="feature-row__image lazyload"
+      data-src="{{ image_url }}"
+      data-widths="[180, 360, 540, 720, 900, 1080]"
+      data-aspectratio="{{ image.aspect_ratio }}"
+      data-sizes="auto"
+      alt="{{ alt | default: image.alt }}">
+</div>

@@ -1,51 +1,104 @@
-{% style %}
+<style>
 .hero--{{ section.id }} .hero__title {
   font-size: {{ section.settings.title_size | times: 0.5 }}px;
 }
+  
+.hero--{{ section.id }} .hero__subtitle {
+  font-size: {{ section.settings.subheading_size | times: 0.5 }}px;
+}
+  
 @media only screen and (min-width: 590px) {
   .hero--{{ section.id }} .hero__title {
     font-size: {{ section.settings.title_size }}px;
   }
 }
-{% endstyle %}
+  
+@media only screen and (min-width: 590px) {
+  .hero--{{ section.id }} .hero__subtitle {
+    font-size: {{ section.settings.subheading_size }}px;
+  }
+}
+</style>
 
 <div
   data-section-id="{{ section.id }}"
   data-section-type="video-section"
-  class="video-parent-section hero hero--{{ section.id }} hero--{{ section.settings.section_height }} hero--mobile--{{ section.settings.mobile_height }}"
-  data-aos="hero__animation">
+  class="video-parent-section hero hero--{{ section.id }} hero--{{ section.settings.section_height }} hero--mobile--{{ section.settings.mobile_height }} {% if section.settings.image_video == 'image' %}loaded{% endif %}"
+  data-aos="hero__animation"
+  >
 
   <div class="hero__media hero__media--{{ section.id }}">
 
-    {% if section.settings.video_url contains 'youtube.com/watch' %}
-      {%- assign video_id = section.settings.video_url | split: 'v=' -%}
-      {%- assign video_id = video_id[1] | split: '&' | first -%}
-      <div
-        id="YouTubeVideo-{{ section.id }}"
-        data-video-id="{{ video_id }}"></div>
-    {% endif %}
+    {% if section.settings.image_video == 'video' %}
 
-    {% if section.settings.video_url contains 'youtu.be/' %}
-      {%- assign video_id = section.settings.video_url | split: '.be/' -%}
-      {%- assign video_id = video_id[1] | split: '&' | first -%}
-      <div
-        id="YouTubeVideo-{{ section.id }}"
-        data-video-id="{{ video_id }}"></div>
-    {% endif %}
+      {% if section.settings.video_url contains 'youtube.com/watch' %}
+        {%- assign video_id = section.settings.video_url | split: 'v=' -%}
+        {%- assign video_id = video_id[1] | split: '&' | first -%}
+        <div
+          id="YouTubeVideo-{{ section.id }}"
+          data-video-id="{{ video_id }}"></div>
+      {% endif %}
 
-    {% if section.settings.video_url contains 'vimeo.com' %}
-      {%- assign video_id = section.settings.video_url | split: '.com/' -%}
-      {%- assign video_id = video_id[1] | split: '/' | first -%}
-      <div
-        id="Vimeo-{{ section.id }}"
-        data-video-id="{{ video_id }}"></div>
-    {% endif %}
+      {% if section.settings.video_url contains 'youtu.be/' %}
+        {%- assign video_id = section.settings.video_url | split: '.be/' -%}
+        {%- assign video_id = video_id[1] | split: '&' | first -%}
+        <div
+          id="YouTubeVideo-{{ section.id }}"
+          data-video-id="{{ video_id }}"></div>
+      {% endif %}
 
-    {% if section.settings.video_url contains '.mp4' %}
-      <video
-        id="Mp4Video-{{ section.id }}"
-        src="{{ section.settings.video_url }}"
-        loop muted playsinline autoplay></video>
+      {% if section.settings.video_url contains 'vimeo.com' %}
+        {%- assign video_id = section.settings.video_url | split: '.com/' -%}
+        {%- assign video_id = video_id[1] | split: '/' | first -%}
+        <div
+          id="Vimeo-{{ section.id }}"
+          data-video-id="{{ video_id }}"></div>
+      {% endif %}
+
+      {% if section.settings.video_url contains '.mp4' %}
+        <div class="video {% if section.settings.video_url_mobile contains '.mp4' %}video--desktop{% endif %}" data-video>
+          <video id="Mp4Video-{{ section.id }}" loop muted playsinline autoplay data-video-elem {% if section.settings.image != blank %}style="background-image:url('{{ section.settings.image | img_url: '2000x' }}'); background-size:cover; background-repeat: no-repeat;"{% endif %}>
+            <source type="video/mp4" data-src="{{ section.settings.video_url }}">
+          </video>
+
+          <button class="mute-control is-muted" data-mute-toggle>
+            <i class="fas fa-volume-mute"></i>
+            <i class="fas fa-volume-up"></i>
+          </button>
+        </div>
+      {% endif %}
+      
+      {% if section.settings.video_url_mobile contains '.mp4' %}
+        <div class="video video--mobile" data-video>
+          <video id="Mp4Video-{{ section.id }}-mobile" loop muted playsinline autoplay data-video-elem {% if section.settings.image != blank %}style="background-image:url('{{ section.settings.image | img_url: '2000x' }}'); background-size:cover; background-repeat: no-repeat;"{% endif %}>
+            <source type="video/mp4" data-src="{{ section.settings.video_url_mobile }}"> 
+          </video>
+        </div>
+      {% endif %}
+
+    {% elsif section.settings.image_video == 'image' %}
+      <div class="image">
+        <div
+          class="background-image {% if section.settings.image != blank %}lazyload{% endif %}"
+          {% if section.settings.image != blank %}
+            {% assign image_mobile = section.settings.image %}
+            {% if section.settings.image_mobile != blank %}
+              {% assign image_mobile = section.settings.image_mobile %}
+            {% endif %}
+            data-bgset="{% include 'bgset', image: section.settings.image, image_mobile: image_mobile %}"
+            data-sizes="auto"
+          {% endif %}>
+          {% if section.settings.image == blank %}
+            {{ 'lifestyle-1' | placeholder_svg_tag: 'placeholder-svg' }}
+          {% endif %}
+        </div>
+        <noscript>
+          <div
+            class="background-image"
+            style="background-image: url({{ section.settings.image | img_url: '1400x' }});">
+          </div>
+        </noscript>
+      </div>
     {% endif %}
 
   </div>
@@ -61,44 +114,54 @@
         {% endif %}
 
         {% unless section.settings.title == blank %}
-          <h2 class="h1 hero__title">
-            <div class="animation-cropper"><div class="animation-contents">
+          <h1 class="h1 hero__title">
             {{ section.settings.title | newline_to_br }}
-            </div></div>
+          </h1>
+        {% endunless %}
+
+        {% unless section.settings.subheading == blank %}
+          <h2 class="hero__subtitle">
+            {% if section.settings.isBold %} 
+              <b>
+                {{ section.settings.subheading | escape }}
+              </b>
+            {% else %}
+              {{ section.settings.subheading | escape }}
+            {% endif %}
           </h2>
         {% endunless %}
-        {% if section.settings.subheading or section.settings.link %}
-          {% unless section.settings.subheading == blank %}
-            <div class="hero__subtitle">
-              <div class="animation-cropper"><div class="animation-contents">
-                {{ section.settings.subheading | escape }}
-              </div></div>
+
+        {% unless section.settings.content == blank %}
+          <div class="rte-wrapper">
+            <div class="rte">
+              {{ section.settings.content }}
             </div>
-          {% endunless %}
-          {% if section.settings.link_text != blank %}
-            {%- assign link_href = section.settings.link -%}
-            {% if section.settings.link == blank %}
-              {%- assign link_href = section.settings.video_url -%}
-            {% endif %}
+          </div>
+        {% endunless %}
 
-            {%- assign youtube_video_link = false -%}
-            {%- if link_href contains 'youtube.com/watch' or link_href contains 'youtu.be/' -%}
-              {%- assign youtube_video_link = true -%}
-            {%- endif -%}
+        {% if section.settings.link_text != blank %}
+          {%- assign link_href = section.settings.link -%}
+          {% if section.settings.link == blank %}
+            {%- assign link_href = section.settings.video_url -%}
+          {% endif %}
 
-            <div class="hero__link">
-              <div class="animation-cropper">
-                <div class="animation-contents">
-                  <a href="{{ link_href }}" class="btn btn--small btn--inverse{% if youtube_video_link %} btn--no-animate{% endif %}">
-                    {%- if youtube_video_link -%}
-                      {% include 'icon-play' %}
-                    {%- endif -%}
-                    {{ section.settings.link_text }}
-                  </a>
-                </div>
+          {%- assign youtube_video_link = false -%}
+          {%- if link_href contains 'youtube.com/watch' or link_href contains 'youtu.be/' -%}
+            {%- assign youtube_video_link = true -%}
+          {%- endif -%}
+
+          <div class="hero__link">
+            <div class="animation-cropper">
+              <div class="animation-contents">
+                <a href="{{ link_href }}" class="btn btn--large btn--no-hover btn--inverse{% if youtube_video_link %} btn--no-animate{% endif %}">
+                  {%- if youtube_video_link -%}
+                    {% include 'icon-play' %}
+                  {%- endif -%}
+                  {{ section.settings.link_text }}
+                </a>
               </div>
             </div>
-          {% endif %}
+          </div>
         {% endif %}
 
       </div>
@@ -133,6 +196,25 @@
         "label": "Subheading",
         "default": "Seamless hero videos"
       },
+	  {
+        "type": "checkbox",
+        "id": "isBold",
+        "label": "Bold subheading?"
+      },
+	  {
+        "type": "range",
+        "id": "subheading_size",
+        "label": "Subheading text size",
+        "default": 18,
+        "min": 7,
+        "max": 30,
+        "unit": "px"
+      },
+      {
+        "type": "richtext",
+        "id": "content",
+        "label": "Text"
+      },
       {
         "type": "text",
         "id": "link_text",
@@ -151,6 +233,18 @@
         "label": "Text alignment",
         "default": "vertical-bottom horizontal-left",
         "options": [
+          {
+            "value": "vertical-top horizontal-left",
+            "label": "Top left"
+          },
+          {
+            "value": "vertical-top horizontal-center",
+            "label": "Top center"
+          },
+          {
+            "value": "vertical-top horizontal-right",
+            "label": "Top right"
+          },
           {
             "value": "vertical-center horizontal-left",
             "label": "Center left"
@@ -178,11 +272,51 @@
         ]
       },
       {
+        "type": "header",
+        "content": "Image & Video"
+      },
+      {
+        "type": "select",
+        "id": "image_video",
+        "label": "Image or Video?",
+        "default": "image",
+        "options": [
+          {
+            "value": "image",
+            "label": "Image"
+          },
+          {
+            "value": "video",
+            "label": "Video"
+          }
+        ]
+      },
+      {
+        "type": "image_picker",
+        "id": "image",
+        "label": "Background image"
+      },
+      {
+        "type": "image_picker",
+        "id": "image_mobile",
+        "label": "Background image mobile"
+      },
+      {
         "type": "text",
         "id": "video_url",
         "label": "Background video link",
         "default": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
         "info": "Supports YouTube, .MP4 and Vimeo. Not all features supported by Vimeo. [Learn more](https://archetypethemes.co/blogs/motion/how-do-i-add-background-videos)"
+      },
+	    {
+        "type": "text",
+        "id": "video_url_mobile",
+        "label": "Background video link (mobile)",
+        "info": "Supports .MP4"
+      },
+      {
+        "type": "header",
+        "content": "Section height"
       },
       {
         "type": "select",

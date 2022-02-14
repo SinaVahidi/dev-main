@@ -1,0 +1,191 @@
+<div class="ffc-landing-page">
+
+  {% for block in section.blocks %}
+    {% capture snippetName %}landing-block--{{ block.type }}{% endcapture %}
+    {% assign bs = block.settings %}
+    <div class="landing-block {{ snippetName }}" {{ block.shopify_attributes }}>
+      {% include snippetName %}
+    </div>
+  {% endfor %}
+       
+</div>
+
+{% schema %}
+  {
+    "name": "Wholesale Landing Page",
+    "settings": [],
+    "blocks": [
+      {
+        "type": "background-image-text",
+        "name": "Background Image & Text",
+        "settings": [
+          
+        ]
+      },
+      {
+        "type": "benefits",
+        "name": "Benefits",
+        "settings": [
+          
+        ]
+      },
+      {
+        "type": "logo-list",
+        "name": "Logo List",
+        "settings": [
+          {
+            "type": "text",
+            "id": "title",
+            "label": "Heading"
+          },   
+          {
+            "type": "richtext",
+            "id": "text",
+            "label": "Text",
+            "default": "<p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Curabitur blandit tempus porttitor.</p>"
+          },
+          {
+            "type": "header",
+            "content": "Logos"
+          },
+          {
+            "type": "image_picker",
+            "id": "logo_image_1",
+            "label": "1 Image"
+          },
+          {
+            "type": "url",
+            "id": "logo_link_1",
+            "label": "1 Link"
+          },
+          {
+            "type": "image_picker",
+            "id": "logo_image_2",
+            "label": "2 Image"
+          },
+          {
+            "type": "url",
+            "id": "logo_link_2",
+
+            "label": "2 Link"
+          },
+          {
+            "type": "image_picker",
+            "id": "logo_image_3",
+            "label": "3 Image"
+          },
+          {
+            "type": "url",
+            "id": "logo_link_3",
+            "label": "3 Link"
+          },
+          {
+            "type": "image_picker",
+            "id": "logo_image_4",
+            "label": "4 Image"
+          },
+          {
+            "type": "url",
+            "id": "logo_link_4",
+            "label": "4 Link"
+          },
+          {
+            "type": "image_picker",
+            "id": "logo_image_5",
+            "label": "5 Image"
+          },
+          {
+            "type": "url",
+            "id": "logo_link_5",
+            "label": "5 Link"
+          },
+          {
+            "type": "image_picker",
+            "id": "logo_image_6",
+            "label": "6 Image"
+          },
+          {
+            "type": "url",
+            "id": "logo_link_6",
+            "label": "6 Link"
+          },
+          {
+            "type": "image_picker",
+            "id": "logo_image_7",
+            "label": "7 Image"
+          },
+          {
+            "type": "url",
+            "id": "logo_link_7",
+            "label": "7 Link"
+          },
+          {
+            "type": "image_picker",
+            "id": "logo_image_8",
+            "label": "8 Image"
+          },
+          {
+            "type": "url",
+            "id": "logo_link_8",
+            "label": "8 Link"
+          },
+          {
+            "type": "image_picker",
+            "id": "logo_image_9",
+            "label": "9 Image"
+          },
+          {
+            "type": "url",
+            "id": "logo_link_9",
+            "label": "9 Link"
+          },
+          {
+            "type": "image_picker",
+            "id": "logo_image_10",
+            "label": "10 Image"
+          },
+          {
+            "type": "url",
+            "id": "logo_link_10",
+            "label": "10 Link"
+          }
+        ]
+      },
+      {
+        "type": "featured-collections",
+        "name": "Featured Collections",
+        "settings": [
+          
+        ]
+      },
+      {
+        "type": "simple-header",
+        "name": "Simple Header",
+        "settings": [
+          
+        ]
+      },
+      {
+        "type": "testimonials-with-images",
+        "name": "Testimonials with Images",
+        "settings": [
+          
+        ]
+      },
+      {
+        "type": "logo-grid",
+        "name": "Logo Grid",
+        "settings": [
+          
+        ]
+      },
+      {
+        "type": "contact",
+        "name": "Contact",
+        "settings": [
+          
+        ]
+      }
+    ]
+  }
+{% endschema %}

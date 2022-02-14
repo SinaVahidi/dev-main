@@ -1,6 +1,8 @@
 <footer class="site-footer">
   <div class="page-width">
 
+
+
     <div class="grid">
       {% assign row_width = 0 %}
       {% for block in section.blocks %}
@@ -22,6 +24,9 @@
         {% when 'logo_social' %}
           <div {{ block.shopify_attributes }} class="grid__item small--hide footer__item--{{ block.id }}">
             {% include 'footer-logo-social', block: block, first_instance: true %}
+            <div class="bold-currency-picker-desktop" >
+              {%- include 'bold-currency-picker-mount', openDirection: 'up' -%}
+            </div>
           </div>
         {% when 'custom' %}
           <div {{ block.shopify_attributes }} class="grid__item footer__item--{{ block.id }}">
@@ -37,6 +42,9 @@
           </div>
         {% endcase %}
       {% endfor %}
+      <div class="grid__item bold-currency-picker-mobile" >
+        {%- include 'bold-currency-picker-mount', openDirection: 'up' -%}
+      </div>
       {% for block in section.blocks %}
         {% if block.type == 'logo_social' %}
           <div class="grid__item medium-up--hide">
@@ -44,6 +52,7 @@
           </div>
         {% endif %}
       {% endfor %}
+
     </div>
 
     {% if section.settings.show_payment_icons %}
@@ -79,6 +88,12 @@
         "type": "checkbox",
         "id": "show_payment_icons",
         "label": "Show payment icons",
+        "default": false
+      },
+      {
+        "type": "checkbox",
+        "id": "show_social",
+        "label": "Show social icons",
         "default": false
       },
       {

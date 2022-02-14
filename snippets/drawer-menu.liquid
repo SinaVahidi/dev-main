@@ -4,7 +4,7 @@
   {%- assign drawer_position = 'left' -%}
 {% endif %}
 
-<div id="NavDrawer" class="drawer drawer--{{ drawer_position }}">
+<div id="NavDrawerV2" class="drawer drawer--{{ drawer_position }}">
   <div class="drawer__fixed-header">
     <div class="drawer__header appear-animation appear-delay-{{ animation_row }}">
       <div class="drawer__title">
@@ -29,7 +29,7 @@
           {%- assign has_dropdown = true -%}
         {% endif %}
 
-        <li class="mobile-nav__item{% unless template == 'index' %}{% if link.active %} mobile-nav__item--active{% endif %}{% endunless %} appear-animation appear-delay-{{ animation_row }}">
+        <li class="mobile-nav__item{% unless template contains 'index' %}{% if link.active %} mobile-nav__item--active{% endif %}{% endunless %} appear-animation appear-delay-{{ animation_row }}">
           {% if has_dropdown %}
             <div class="mobile-nav__has-sublist">
               {% if link.url == '#' %}
@@ -46,20 +46,20 @@
                   {{ link.title }}
                 </a>
                 <div class="mobile-nav__toggle">
-                  <button type="button" class="collapsible-trigger collapsible--auto-height" aria-controls="Linklist-{{ child_list_handle }}">
+                  <button type="button" class="collapsible-trigger collapsible--auto-height {% if link.url == '/collections/all' %}is-open parent-trigger-shop {% else %} parent-trigger-about{% endif %}" aria-controls="Linklist-{{ child_list_handle }}">
                     {% include 'collapsible-icons' %}
                   </button>
                 </div>
               {% endif %}
             </div>
           {% else %}
-            <a href="{{ link.url }}" class="mobile-nav__link">{{ link.title }}</a>
+            <a href="{{ link.url }}" id="no-drop-down-story" class="mobile-nav__link">{{ link.title }}</a>
           {% endif %}
 
           {% if has_dropdown %}
-            <div id="Linklist-{{ child_list_handle }}" class="mobile-nav__sublist collapsible-content collapsible-content--all" aria-labelledby="Label-{{ child_list_handle }}">
+            <div id="Linklist-{{ child_list_handle }}" class="mobile-nav__sublist collapsible-content collapsible-content--all {% if link.url == '/collections/all' %}is-open{% endif %}" aria-labelledby="Label-{{ child_list_handle }}" {% if link.url == '/collections/all' %}style="height: auto;"{% endif %}>
               <div class="collapsible-content__inner">
-                <ul class="mobile-nav__sublist">
+                <ul class="mobile-nav__sublist {%unless link.url == '/collections/all' %}about-sublist{%else%} shop-sublist{% endunless %}">
                   {% for childlink in link.links %}
                     {%- assign has_sub_dropdown = false -%}
                     {%- assign grand_child_list_handle = childlink.url | handleize | append: forloop.index -%}
@@ -67,8 +67,8 @@
                       {%- assign has_sub_dropdown = true -%}
                     {% endif %}
 
-                    <li class="mobile-nav__item{% unless template == 'index' %}{% if childlink.active %} mobile-nav__item--active{% endif %}{% endunless %}">
-                      <div class="mobile-nav__child-item">
+                    <li class="mobile-nav__item{% unless template contains 'index' %}{% if childlink.active %} mobile-nav__item--active{% endif %}{% endunless %}">
+                      <div class="mobile-nav__child-item {%unless link.url == '/collections/all' %}about-us-div-style{% endunless %}">
                         {% if childlink.url == '#' and has_sub_dropdown %}
                           <button type="button" class="mobile-nav__link--button mobile-nav__link--button-small collapsible-trigger" aria-controls="Sublinklist-{{ child_list_handle }}-{{ grand_child_list_handle }}">
                             <span class="mobile-nav__faux-link">{{ childlink.title | escape }}</span>
@@ -79,24 +79,24 @@
                             </div>
                           </button>
                         {% else %}
-                          <a href="{{ childlink.url }}" class="mobile-nav__link" id="Sublabel-{{ grand_child_list_handle }}">
+                          <a href="{{ childlink.url }}" class="mobile-nav__link {%unless link.url == '/collections/all' %}about-us-a-style{% endunless %}" id="Sublabel-{{ grand_child_list_handle }}">
                             {{ childlink.title | escape }}
                           </a>
                         {% endif %}
                         {% if childlink.url != '#' and has_sub_dropdown %}
-                          <button type="button" class="collapsible-trigger" aria-controls="Sublinklist-{{ child_list_handle }}-{{ grand_child_list_handle }}">
+                          <button type="button" class="collapsible-trigger {% if childlink.url == '/collections/all' %}is-open child-trigger-shop {% else %}child-trigger-fav{% endif %}" aria-controls="Sublinklist-{{ child_list_handle }}-{{ grand_child_list_handle }}">
                             {% include 'collapsible-icons-alt' %}
                           </button>
                         {% endif %}
                       </div>
 
                       {% if has_sub_dropdown %}
-                        <div id="Sublinklist-{{ child_list_handle }}-{{ grand_child_list_handle }}" class="mobile-nav__sublist collapsible-content collapsible-content--all" aria-labelledby="Sublabel-{{ grand_child_list_handle }}">
+                        <div id="Sublinklist-{{ child_list_handle }}-{{ grand_child_list_handle }}" class="mobile-nav__sublist collapsible-content collapsible-content--all {% if childlink.url == '/collections/all' %}is-open{% endif %}" aria-labelledby="Sublabel-{{ grand_child_list_handle }}" {% if childlink.url == '/collections/all' %}style="height: auto;"{% endif %}>
                           <div class="collapsible-content__inner">
-                            <ul class="mobile-nav__grandchildlist">
+                            <ul class="mobile-nav__grandchildlist {% if childlink.url == '/collections/all' %}grandchildlist-shop{% else %}grandchildlist-fav{% endif %}">
                               {% for grandchildlink in childlink.links %}
-                                <li class="mobile-nav__item{% unless template == 'index' %}{% if grandchildlink.active %} mobile-nav__item--active{% endif %}{% endunless %}">
-                                  <a href="{{ grandchildlink.url }}" class="mobile-nav__link">
+                                <li class="mobile-nav__item{% unless template contains 'index' %}{% if grandchildlink.active %} mobile-nav__item--active{% endif %}{% endunless %}">
+                                  <a href="{{ grandchildlink.url }}" class="mobile-nav__link {%unless link.url == '/collections/all' %}about-us-a-style{% endunless %}">
                                     {{ grandchildlink.title }}
                                   </a>
                                 </li>
@@ -113,19 +113,10 @@
           {% endif %}
         </li>
       {% endfor %}
+      <li class="mobile-nav__item{% unless template contains 'index' %}{% if link.active %} mobile-nav__item--active{% endif %}{% endunless %} appear-animation appear-delay-{{ animation_row }}">
+        <a href="{{ routes.account_url }}" id="no-drop-down-account" class="mobile-nav__link">{{ 'layout.customer.account' | t }}</a>
+      </li>
 
-      {% if shop.customer_accounts_enabled %}
-        {%- assign animation_row = animation_row | plus: 1 -%}
-        {% if customer %}
-          <li class="mobile-nav__item{% unless template == 'index' %}{% if link.active %} mobile-nav__item--active{% endif %}{% endunless %} appear-animation appear-delay-{{ animation_row }}">
-            <a href="{{ routes.account_url }}" class="mobile-nav__link">{{ 'layout.customer.account' | t }}</a>
-          </li>
-        {% else %}
-          <li class="mobile-nav__item{% unless template == 'index' %}{% if link.active %} mobile-nav__item--active{% endif %}{% endunless %} appear-animation appear-delay-{{ animation_row }}">
-            <a href="{{ routes.account_login_url }}" class="mobile-nav__link">{{ 'layout.customer.log_in' | t }}</a>
-          </li>
-        {% endif %}
-      {% endif %}
 
       <li class="mobile-nav__spacer"></li>
 
@@ -138,15 +129,6 @@
         <a target="_blank" href="{{ settings.social_facebook_link }}" title="{{ 'layout.footer.social_platform' | t: name: shop.name, platform: 'Facebook' }}">
           {% include 'icon-facebook' %}
           <span class="icon__fallback-text">Facebook</span>
-        </a>
-      </li>
-    {% endif %}
-    {% if settings.social_twitter_link != blank %}
-      {%- assign animation_row = animation_row | plus: 1 -%}
-      <li class="appear-animation appear-delay-{{ animation_row }}">
-        <a target="_blank" href="{{ settings.social_twitter_link }}" title="{{ 'layout.footer.social_platform' | t: name: shop.name, platform: 'Twitter' }}">
-          {% include 'icon-twitter' %}
-          <span class="icon__fallback-text">Twitter</span>
         </a>
       </li>
     {% endif %}

@@ -1,4 +1,6 @@
+{%- include 'bold-product' with product, hide_action: 'break', output: 'none' -%}
 {%- assign recommend_products = true -%}
+{%- capture qs_view -%}{%- render 'fn.querystring', param: "view" -%}{%- endcapture -%}
 
 {% if recommendations.products and recommendations.products_count > 0 %}
   {%- assign related_collection = recommendations -%}
@@ -59,51 +61,52 @@
         </header>
       </div>
 
-      <div class="page-width page-width--flush-small">
-        <div class="grid-overflow-wrapper">
-          {% if recommend_products %}
-            <div class="product-recommendations-placeholder">
-              {% comment %}
-                This content is visually hidden and replaced when recommended
-                products show up
-              {% endcomment %}
-              <div class="grid grid--uniform visually-invisible" aria-hidden="true">
-                {% include 'product-grid-item' %}
-              </div>
+      <div class="page-width">
+        {% if recommend_products %}
+          <div class="product-recommendations-placeholder">
+            {% comment %}
+              This content is visually hidden and replaced when recommended
+              products show up
+            {% endcomment %}
+            <div class="grid grid--uniform visually-invisible flex f-wrap" aria-hidden="true">
+                {%- comment -%}{%- include 'product-grid-item-flex' -%}{%- endcomment -%}
+                {%- include 'product-grid-item-ffc-b' -%}
             </div>
-          {% endif %}
-          {% if related_collection.products_count > 1 %}
-            <div class="product-recommendations">
-              <div class="product-single__related grid grid--uniform" data-aos="overflow__animation">
-                {%- assign current_product = product -%}
-                {%- assign current_product_found = false -%}
-                {%- assign related_count = 0 -%}
-                {% for product in related_collection.products limit: number_of_products_to_fetch %}
-                  {% if product.handle == current_product.handle %}
-                    {%- assign current_product_found = true -%}
-                  {% else %}
-                    {%- assign related_count = related_count | plus: 1 -%}
-                    {% unless related_count > number_of_products %}
-                      {% if forloop.last and current_product_found %}
-                        {% include 'product-grid-item' %}
-                      {% else %}
-                        {% include 'product-grid-item' %}
-                      {% endif %}
-                    {% endunless %}
-                  {% endif %}
-                {% endfor %}
-              </div>
+          </div>
+        {% endif %}
+        {% if related_collection.products_count > 1 %}
+          <div class="product-recommendations">
+            <div class="product-single__related grid grid--uniform flex f-wrap" data-aos="overflow__animation">
+              {%- assign current_product = product -%}
+              {%- assign current_product_found = false -%}
+              {%- assign related_count = 0 -%}
+              {% for product in related_collection.products limit: number_of_products_to_fetch %}
+                {% if product.handle == current_product.handle %}
+                  {%- assign current_product_found = true -%}
+                {% else %}
+                  {%- assign related_count = related_count | plus: 1 -%}
+                  {% unless related_count > number_of_products %}
+                    {% if forloop.last and current_product_found %}
+                      {%- comment -%}{%- include 'product-grid-item-flex' -%}{%- endcomment -%}
+                      {%- include 'product-grid-item-ffc-b' -%}
+                    {% else %}
+                      {%- comment -%}{%- include 'product-grid-item-flex' -%}{%- endcomment -%}
+                      {%- include 'product-grid-item-ffc-b' -%}
+                    {% endif %}
+                  {% endunless %}
+                {% endif %}
+              {% endfor %}
+            </div>
 
-              {% if settings.quick_shop_enable %}
-                {% for product in related_collection.products limit: number_of_products_to_fetch %}
-                  {% if product.handle != current_product.handle %}
-                    {% include 'quick-shop-modal' %}
-                  {% endif %}
-                {% endfor %}
-              {% endif %}
-            </div>
-          {% endif %}
-        </div>
+            {% if settings.quick_shop_enable %}
+              {% for product in related_collection.products limit: number_of_products_to_fetch %}
+                {% if product.handle != current_product.handle %}
+                  {% include 'quick-shop-modal' %}
+                {% endif %}
+              {% endfor %}
+            {% endif %}
+          </div>
+        {% endif %}
       </div>
     </div>
   </div>

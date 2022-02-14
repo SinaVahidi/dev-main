@@ -1,0 +1,84 @@
+{%- assign ss = section.settings -%}
+{%- assign collection = collections[ss.home_featured_products] -%}
+{%- capture qs_view -%}{%- render 'fn.querystring', param: "view" -%}{%- endcapture -%}
+
+{%- if ss.divider -%}<div class="section--divider">{%- endif -%}
+
+<div class="ffc-featured-collection">
+  
+  {%- if ss.title != blank or ss.image != blank -%}
+    <div class="page-width">
+      <div class="section-header">
+        <img class="featured-collection-image lazyload" src="{{ ss.image | img_url: 'large' }}" alt="{{ ss.image.alt | default: ss.title }}">
+        <h2 class="section-header__title"><a href="{{ collections[ss.home_featured_products].url }}">{{ ss.title }}</a></h2>
+        {%- if ss.view_all -%}
+          <a href="{{ collections[ss.home_featured_products].url }}" class="section-header__all-link">{{ 'collections.general.shop_all_of_collection' | t }}</a>
+        {%- endif -%}
+      </div>
+    </div>
+  {%- endif -%}
+
+  <div class="page-width"> 
+    <div class="ffc-featured-collection__list-wrap" {% if ss.overlay_scrollbars %}data-overlay-scrollbars{% endif %}> 
+      <div class="ffc-featured-collection__list">
+    
+        {%- for product in collection.products -%}
+          {%- comment -%}{%- include 'product-grid-item-ffc-b' -%}{%- endcomment -%}
+          {%- include 'product-grid-item' -%}
+        {%- endfor -%}
+
+      </div>
+    </div>
+  </div>
+
+</div>
+
+{%- if ss.divider -%}</div>{%- endif -%}
+
+{%- schema -%}
+  {
+    "name": "FFC Featured collection",
+    "class": "index-section test-section--b test-section--c",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "image",
+        "label": "Image"
+      },
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Heading",
+        "default": "Featured collection"
+      },
+      {
+        "type": "collection",
+        "id": "home_featured_products",
+        "label": "Collection"
+      },
+      {
+        "type": "checkbox",
+        "id": "overlay_scrollbars",
+        "label": "Horizontal scroll on mobiles?",
+        "default": true
+      },
+      {
+        "type": "checkbox",
+        "id": "view_all",
+        "label": "Show 'View all' link",
+        "default": true
+      },
+      {
+        "type": "checkbox",
+        "id": "divider",
+        "label": "Show section divider",
+        "default": false
+      }
+    ],
+    "presets": [{
+      "name": "FFC Featured collection",
+      "category": "Collection"
+    }],
+    "blocks" : []
+  }
+{%- endschema -%}

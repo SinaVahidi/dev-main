@@ -1,0 +1,62 @@
+<div class="page-width">
+
+  {% if bs.title != blank or bs.text != blank %}  
+    <div class="section-header">
+      
+      {% if bs.title != blank %}
+        <h2 class="section-header__title">{{ bs.title | escape }}</h2>
+      {% endif %}
+
+      {% if bs.text != blank %}
+        <div class="rte">{{ bs.text }}</div>
+      {% endif %}
+
+    </div>
+  {% endif %}
+
+
+  <div class="testimonials-with-images__slider testimonials-with-images__slider--{{block.id}} slick-slider" data-slider='{
+    "slidesToShow": 1,
+    "slidesToScroll": 1,
+    "fade": true,
+    "arrows": false,
+    "dots": true,
+    "swipeToSlide": false,
+    "appendDots": ".testimonials-with-images__slider--{{block.id}} .dots-container",
+    "infinite": true,
+    "adaptiveHeight": true,
+    "autoplay": false,
+    "autoplaySpeed": 2000
+  }'>
+    {% for i in (1..10) %}
+      {% capture testimonial_image %}image_{{i}}{% endcapture %}
+      {% capture testimonial_author %}author_{{i}}{% endcapture %}
+      {% capture testimonial_author_details %}author_details_{{i}}{% endcapture %}
+      {% capture testimonial_text %}testimonial_{{i}}{% endcapture %}
+      
+      {% if bs[testimonial_text] != blank %}
+      <div class="testimonials-with-images__item flex f-a-center">{{ bs[benefit] }}
+        <div class="content-area">
+          <div class="content-area-inner">
+            <div class="testimonials-with-images__card">
+              <span class="quote-icon">{% include 'icon-quote-ffc' %}</span>
+              {% if bs[testimonial_text] != blank %}
+                <div class="rte-setting text-spacing">{{ bs[testimonial_text] }}</div>
+              {% endif %}
+              {% if bs[testimonial_author] != blank %}
+                <cite class="author"><span class="strong">{{ bs[testimonial_author] }}</span>{% if bs[testimonial_author_details] != blank %} - {{ bs[testimonial_author_details] }}{% endif %}</cite>
+              {% endif %}
+            </div>
+
+            <div class="dots-container"></div>
+          </div>
+        </div>
+        <div class="image-area">
+          {% render 'picture-element', image: bs[testimonial_image], size: '628x', alt: bs[testimonial_author] %}
+        </div>
+      </div>
+      {% endif %}
+    {% endfor %}
+  </div>
+
+</div>

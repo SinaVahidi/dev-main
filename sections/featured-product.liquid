@@ -16,7 +16,7 @@
       <div class="grid__item medium-up--one-half">
         {% include 'product-images', section_id: section.id, thumbnail_position: section.settings.thumbnail_position %}
       </div>
-
+ 
       <div class="grid__item medium-up--one-half">
         <div class="product-single__meta">
           {% unless product.empty? %}
@@ -33,14 +33,32 @@
             <div class="product-single__vendor">{{ product.vendor }}</div>
           {% endif %}
 
-          <div class="h1 product-single__title">
+          <div class="">
             {% unless product.empty? %}
-              {{ product.title }}
+              <a class="h1 product-single__title" href="{{ product.url }}">{{ product.title }}</a>
             {% else %}
-              {{ 'home_page.onboarding.product_title' | t }}
+              <a class="h1 product-single__title">{{ 'home_page.onboarding.product_title' | t }}</a>
             {% endunless %}
           </div>
-
+<div>
+  <a href="{{ product.url }}#yotpoWidget" class="yotpo yotpo-featured-widget bottomLine" style="padding-bottom: 10px"
+    data-product-id="{{ product.id }}">
+  {%- assign yotpo_offload_content = shop.metafields.yotpo.yotpo_offload_content %}
+  {%- assign time_now = 'now' | date: '%s' %}
+  {%- assign yotpo_live_time = shop.metafields.yotpo.yotpo_live | date: '%s' %}
+  {%- assign diff_seconds_from_live = time_now | minus: yotpo_live_time %}
+  {%- assign yotpo_bottomline_last_updated = product.metafields.yotpo.bottomline_update_time | date: '%s' %}
+  {%- assign diff_seconds_from_last_bottomline_update = time_now | minus: yotpo_bottomline_last_updated %}
+  {%- if yotpo_live_time and diff_seconds_from_live < 86400 or yotpo_bottomline_last_updated and diff_seconds_from_last_bottomline_update < 86400 -%}
+     {%- assign yotpo_bottomline_obsolete = false %}
+  {%- else %}
+     {%- assign yotpo_bottomline_obsolete = true %}
+  {%- endif %}
+  {%- if yotpo_offload_content == 'yes' and yotpo_bottomline_obsolete != true -%}
+     {{ product.metafields.yotpo.bottomline }}
+  {%- endif %}
+  </a>
+</div>
           {% if settings.sku_enable %}
             <p id="Sku-{{ section.id }}" class="product-single__sku">
               {% if current_variant.sku %}
@@ -94,6 +112,8 @@
 
 </div>
 
+
+
 {% if section.settings.divider %}</div>{% endif %}
 
 {% schema %}
@@ -143,3 +163,6 @@
     ]
   }
 {% endschema %}
+
+
+

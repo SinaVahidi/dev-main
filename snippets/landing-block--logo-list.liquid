@@ -1,0 +1,44 @@
+<div class="page-width logolist-section ffc-logolist-section">
+
+  {% if bs.title != blank %}
+    <div class="section-header">
+      <h2 class="section-header__title">{{ bs.title | escape }}</h2>
+      <div class="rte">{{ bs.text }}</div>
+    </div>
+  {% endif %}
+
+  {% if section.blocks.size > 0 %}
+    <div class="logo-bar logo-bar--{{ section.id }}">
+
+      {% for i in (1..10) %}
+        {% capture logo_image %}logo_image_{{i}}{% endcapture %}
+        {% capture logo_link %}logo_link_{{i}}{% endcapture %}
+
+        {% if bs[logo_image] != blank %}
+        <div class="logo-bar__item">
+          {%- assign img_url = bs[logo_image] | img_url: '1x1' | replace: '_1x1.', '_90x.' -%}
+          {%- assign img_url_mobile = bs[logo_image] | img_url: '1x1' | replace: '_1x1.', '_60x.' -%}
+          
+          {% if bs[logo_link] != blank %}
+            <a href="{{ bs[logo_link] }}" class="logo-bar__link">
+          {% endif %}
+
+          <img class="logo-bar__image desktop-only lazyload"
+              data-src="{{ img_url }}"
+              data-aspectratio="{{ bs[logo_image].aspect_ratio }}"
+              alt="{{ bs[logo_image].alt | default: bs.title }}">
+          <img class="logo-bar__image tablet-only lazyload"
+              data-src="{{ img_url_mobile }}"
+              data-aspectratio="{{ bs[logo_image].aspect_ratio }}"
+              alt="{{ bs[logo_image].alt | default: bs.title }}">
+
+          {% if bs[logo_link] != blank %}
+            </a>
+          {% endif %}
+        </div>
+        {% endif %}
+      
+      {% endfor %}
+    </div>
+  {% endif %}
+</div>

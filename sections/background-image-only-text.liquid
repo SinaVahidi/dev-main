@@ -1,0 +1,289 @@
+{% style %}
+  @media screen and (max-width: 589px) {
+    .background-media-only-text--{{ section.id }} {
+      background: {{ section.settings.color_border }};
+    }
+  }
+  .background-media-only-text--{{ section.id }} .background-media-text__image {
+    background-position: {{ section.settings.alignment }};
+  }
+  .background-media-text__image { 
+    position: absolute;
+    height: 100%;
+  }
+  .media-text__text {
+    padding: 55px;
+    margin-top: 20px;
+  }
+{% endstyle %}
+
+{%if section.settings.hero_link != blank %}
+  <a class="hero-link" href="{{ section.settings.hero_link }}">
+{% endif %}
+    <div
+      class="background-media-text background-media-text--{{ section.id }} background-media-text--{{ section.settings.height }} loaded"
+      data-aos="background-media-text__animation">
+      <div
+        class="background-media-text__image{% if section.settings.image != blank %} lazyload{% endif %}"
+        {% if section.settings.image != blank %}
+          data-bgset="{% include 'bgset', image: section.settings.image %}"
+          data-sizes="auto"
+        {% endif %}>
+        {% if section.settings.image == blank %}
+          {{ 'lifestyle-1' | placeholder_svg_tag: 'placeholder-svg' }}
+        {% endif %}
+      </div>
+      <noscript>
+        <div
+          class="background-media-text__image"
+          style="background-image: url({{ section.settings.image | img_url: '1400x' }});">
+        </div>
+      </noscript>
+      {% if section.settings.text_subtitle != blank or section.settings.text_title != blank or section.settings.text_text != blank %}
+      <div class="background-media-text__inner background-media-only-text__inner box-{{section.settings.text_alignment}} text-{{section.settings.text_position}}">
+        <div class="page-width">
+          <div class="background-media-text__aligner background-media-text--{{ section.settings.layout }}">
+            <div class="animation-cropper">
+              <div class="animation-contents">
+                <div class="media-text__text larger-text">
+                  {% if section.settings.text_subtitle %}
+                    <p class="subtitle" {% if section.settings.text_color != blank %} style="color: {{section.settings.text_color}}"{% endif %}>{{ section.settings.text_subtitle }}</p>
+                  {% endif %}
+                  {% if section.settings.text_title != blank %}
+                    <h2 class="h3" {% if section.settings.text_color != blank %} style="color: {{section.settings.text_color}}"{% endif %}>{{ section.settings.text_title | escape }}</h2>
+                  {% endif %}
+                  {% if section.settings.text_text != blank %}
+                    <div class="rte background-media-text__subtext" {% if section.settings.text_color != blank %} style="color: {{section.settings.text_color}}"{% endif %}>{{ section.settings.text_text }}</div>
+                  {% endif %}
+                  {% if section.settings.text_button_label != blank and section.settings.text_button_link != blank %}
+                    <a href="{{ section.settings.text_button_link }}" class="btn btn--{{section.settings.btn_color}}">
+                      {{ section.settings.text_button_label }}
+                    </a>
+                  {% endif %}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    {% endif %}
+    </div>
+{%if section.settings.hero_link != blank %}
+  </a> 
+{% endif %}
+
+<div class="background-media-text__spacer background-media-text--{{ section.settings.height }}"></div>
+
+{% schema %}
+  {
+    "name": "Large image with text",
+    "class": "index-section--flush",
+    "settings": [
+      {
+        "type": "text",
+        "id": "text_subtitle",
+        "label": "Subheading for text at bottom",
+        "default": "Impressive"
+      },
+      {
+        "type": "text",
+        "id": "text_title",
+        "label": "Heading for text box",
+        "default": "Large image with text"
+      },
+      {
+        "type": "richtext",
+        "id": "text_text",
+        "label": "Text",
+        "default": "<p>Pair large text with a full-width image to draw attention to an important detail of your brand or product line.</p>"
+      },
+      {
+        "type": "text",
+        "id": "text_button_label",
+        "label": "Button label for text"
+      },
+      {
+        "type": "url",
+        "id": "text_button_link",
+        "label": "Button link for text"
+      },
+      {
+        "type": "select",
+        "id": "text_position",
+        "label": "Text Position",
+        "default": "bottom",
+        "options": [
+          {
+            "value": "top",
+            "label": "top"
+          },
+          {
+            "value": "bottom",
+            "label": "bottom"
+          }
+        ]
+      },
+      {
+        "type": "select",
+        "id": "text_alignment",
+        "label": "Text Alignment",
+        "default": "right",
+        "options": [
+          {
+            "value": "left",
+            "label": "left"
+          },
+          {
+            "value": "right",
+            "label": "right"
+          }
+        ]
+      },
+      {
+        "type": "color",
+        "id": "text_color",
+        "label": "Text color",
+        "default": "#4f4f4f"
+      },
+      {
+        "type": "select",
+        "id": "btn_color",
+        "label": "Button Color",
+        "default": "gray",
+        "options": [
+          {
+            "value": "gray",
+            "label": "Gray"
+          },
+          {
+            "value": "coconut",
+            "label": "Blue"
+          },
+          {
+            "value": "pistachio",
+            "label": "Green"
+          },
+          {
+            "value": "hazelnut",
+            "label": "Orange"
+          },
+          {
+            "value": "almond",
+            "label": "Purple"
+          }
+        ]
+      },
+      {
+        "type": "image_picker",
+        "id": "image",
+        "label": "Image"
+      },
+      {
+        "type": "url",
+        "id": "hero_link",
+        "label": "Hero link for the whole image"
+      },
+      {
+        "type": "select",
+        "id": "alignment",
+        "label": "Image focal point",
+        "info": "Used to keep the subject of your photo in view.",
+        "default": "center",
+        "options": [
+          {
+            "value": "top left",
+            "label": "Top left"
+          },
+          {
+            "value": "top",
+            "label": "Top"
+          },
+          {
+            "value": "top right",
+            "label": "Top right"
+          },
+          {
+            "value": "center left",
+            "label": "Left"
+          },
+          {
+            "value": "center",
+            "label": "Middle"
+          },
+          {
+            "value": "center right",
+            "label": "Right"
+          },
+          {
+            "value": "bottom left",
+            "label": "Bottom left"
+          },
+          {
+            "value": "bottom",
+            "label": "Bottom"
+          },
+          {
+            "value": "bottom right",
+            "label": "Bottom right"
+          }
+        ]
+      },
+      {
+        "type": "color",
+        "id": "color_border",
+        "label": "Image color",
+        "info": "Used for mobile border",
+        "default": "#f4f4f4"
+      },
+      {
+        "type": "select",
+        "id": "layout",
+        "label": "Layout",
+        "default": "left",
+        "options": [
+          {
+            "value": "left",
+            "label": "Text on left"
+          },
+          {
+            "value": "right",
+            "label": "Text on right"
+          }
+        ]
+      },
+      {
+        "type": "range",
+        "id": "height",
+        "label": "Section height",
+        "default": 550,
+        "min": 450,
+        "max": 750,
+        "step": 100,
+        "unit": "px"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Large image with text",
+        "category": "Image"
+      }
+    ]
+  }
+{% endschema %}
+
+
+<script>
+  let heroLinks = document.querySelectorAll('.hero-link')
+  let heroBoxLinks = document.querySelectorAll('.background-media-text__inner .hero-link')
+  heroLinks.forEach(element => {
+        if (element.children.length == 0) {
+          element.remove();
+        }
+      });
+
+  heroBoxLinks.forEach(element => {
+      element.href = 'javascript:void(0)'
+      element.style.cursor = 'auto'
+  });
+ 
+</script>

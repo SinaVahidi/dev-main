@@ -4,10 +4,12 @@
   <div
     data-product-images
     data-zoom="{{ settings.product_zoom_enable }}"
-    data-has-slideshow="true">
+    data-has-slideshow="true" data-arrows="true" data-dots="true">
     <div class="product__photos product__photos-{{ section_id }} product__photos--{{ thumbnail_position }}">
-
       <div class="product__main-photos" data-aos>
+        
+        {% include 'product-tags' %}
+        
         <div id="ProductPhotos-{{ section_id }}">
           {% for image in product.images %}
             {%- assign is_featured = false -%}
@@ -50,7 +52,11 @@
                   {% if has_product_video and video_type == 'mp4' %} hide{% endif %}" style="height: 0; padding-bottom: {{ 100 | divided_by: image.aspect_ratio }}%;">
                   {%- assign img_url = image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
                   {%- assign zoom_img_url = image | img_url: product_zoom_size -%}
-
+                  {% if badge_label != blank %}
+                    <div class="grid-product__tag grid-product__tag--custom">
+                      {{badge_label}}
+                    </div>
+                  {% endif %}
                   {% if is_featured %}
                     <img class="{% if settings.product_zoom_enable %}photoswipe__image{% endif %} lazyload"
                       data-photoswipe-src="{{ zoom_img_url }}"
@@ -99,8 +105,7 @@
                           loading
                         {% endif %}
                       {% endif %}"
-                    data-video-style="{{ settings.product_video_style }}"
-                    style="padding-bottom: {{ aspect_ratio }}%;">
+                    data-video-style="{{ settings.product_video_style }}">
                     {% if video_type == 'youtube' %}
                       <div
                         id="ProductVideo-{{ section_id }}-{{ forloop.index }}"
@@ -153,6 +158,7 @@
         </div>
       </div>
 
+      {% if thumbnail_position != 'none' %}
       <div
         id="ProductThumbs-{{ section_id }}"
         class="product__thumbs product__thumbs--{{ thumbnail_position }} {% if product.images.size == 1 %} hide{% endif %}"
@@ -185,7 +191,7 @@
 
             <div class="product__thumb-item"
               data-index="{{ forloop.index0 }}">
-              <div class="image-wrap" style="height: 0; padding-bottom: {{ 100 | divided_by: image.aspect_ratio }}%;">
+              <div class="image-wrap" style="height: 0; padding-bottom: 125%;">
                 <div
                   class="product__thumb product__thumb-{{ section_id }} js-no-transition"
                   data-id="{{ image.id }}">
@@ -211,6 +217,7 @@
           {% endfor %}
         {% endif %}
       </div>
+      {% endif %}
     </div>
   </div>
 {% else %}

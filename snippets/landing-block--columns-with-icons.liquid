@@ -1,0 +1,29 @@
+<div class="page-width">
+  
+  {% if bs.title != blank %}
+    <div class="section-header">
+      <h2 class="section-header__title section-header__title--smaller">{{ bs.title | escape }}</h2>
+    </div>
+  {% endif %}
+
+  <div class="flex">
+
+    {% for i in (1..3) %}
+      {% capture col_text %}text_{{i}}{% endcapture %}
+      {% capture col_svg %}icon_{{i}}{% endcapture %}
+
+      {% if bs[col_text] == blank %}
+        {% continue %}
+      {% endif %}
+
+      <div class="column-with-icon text-center">
+        {% if bs[col_svg] != blank %}
+          <img src="{{ bs[col_svg] }}" alt="">
+        {% endif %}
+
+        <div class="rte">{{ bs[col_text] }}</div>
+      </div>
+    {% endfor %}
+
+  </div>
+</div>

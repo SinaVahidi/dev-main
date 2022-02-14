@@ -1,0 +1,26 @@
+<div class="logo-bar logo-bar--{{ section.id }}">
+  {% for block in section.blocks %}
+    {% assign bs = block.settings %}
+
+    <div class="logo-bar__item" {{ block.shopify_attributes }}>
+      {% if bs.link != blank %}
+        <a href="{{ bs.link }}" class="logo-bar__link">
+      {% endif %}
+      
+      <div class="logo-bar__image">
+        {% if bs.image != blank %}
+          <img src="{{ bs.image | img_url: 'x75' }}" alt="{{ bs.title }}">
+        {% endif %}
+      </div>
+
+      {% if bs.title != blank %}
+        <h3>{{ bs.title }}</h3>
+      {% endif %}
+
+      {% if bs.link != blank %}
+        </a>
+      {% endif %}
+    </div>
+
+  {% endfor %}
+</div>

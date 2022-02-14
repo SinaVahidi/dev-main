@@ -1,0 +1,34 @@
+/* BOLD.CSS
+  This File is used for Bold Custom App CSS only***
+  To include this file in your theme, add the
+  following before the closing </head> tag in theme.liquid
+  {{ 'bold.css' | asset_url | stylesheet_tag }}
+*/
+
+@media only screen and (min-width: 590px) {
+	
+  .bold-currency-picker-mobile {
+    display: none;
+  }
+
+  
+  .footer__logo {
+    margin-bottom: 10px;
+  }
+  .grid__item p.footer__powered_by {
+	margin-bottom:0;
+}
+}
+
+@media only screen and (max-width: 589px) {
+	
+  .bold-currency-picker-desktop {
+    display: none;
+  }
+
+  span.BOLD-mc-picker-mnt {
+    padding-bottom: 10px;
+    padding-top: 7px;
+  }
+	
+}

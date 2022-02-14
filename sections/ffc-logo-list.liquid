@@ -1,0 +1,161 @@
+{% assign ss = section.settings %}
+
+<style>
+.logo-bar--{{ section.id }} {
+  opacity: {{ ss.logo_opacity | divided_by: 100.0 }};
+}
+</style>
+
+{% if ss.divider %}<div class="section--divider">{% endif %}
+
+<div class="page-width logolist-section ffc-logolist-section" data-aos="logo__animation">
+  {% if ss.image_bg_1 != blank %}<img class="logolist-section__bg-image logolist-section__bg-image--1" src="{{ ss.image_bg_1 }}" alt="{{ ss.title }}">{% endif %}
+  {% if ss.image_bg_2 != blank %}<img class="logolist-section__bg-image logolist-section__bg-image--2" src="{{ ss.image_bg_2 }}" alt="{{ ss.title }}">{% endif %}
+  {% if ss.image_bg_3 != blank %}<img class="logolist-section__bg-image logolist-section__bg-image--3" src="{{ ss.image_bg_3 }}" alt="{{ ss.title }}">{% endif %}
+  {% if ss.image_bg_4 != blank %}<img class="logolist-section__bg-image logolist-section__bg-image--4" src="{{ ss.image_bg_4 }}" alt="{{ ss.title }}">{% endif %}
+
+  {% if ss.title != blank %}
+    <div class="section-header">
+      <h2 class="section-header__title">{{ ss.title | escape }}</h2>
+      <div class="rte sec-text">{{ ss.text }}</div>
+    </div>
+  {% endif %}
+
+  {% if section.blocks.size > 0 %}
+    <div class="logo-bar logo-bar--{{ section.id }}">
+      {% for block in section.blocks %}
+        {% assign bs = block.settings %}
+
+        <div class="logo-bar__item" {{ block.shopify_attributes }}>
+          {% if bs.link != blank %}
+            <a href="{{ bs.link }}" class="logo-bar__link">
+          {% endif %}
+          {% if bs.image != blank %}
+            {%- assign img_url = bs.image | img_url: '1x1' | replace: '_1x1.', '_90x.' -%}
+            {%- assign img_url_mobile = bs.image | img_url: '1x1' | replace: '_1x1.', '_60x.' -%}
+
+            <img class="logo-bar__image desktop-only lazyload"
+                data-src="{{ img_url }}"
+                data-aspectratio="{{ bs.image.aspect_ratio }}"
+                alt="{{ bs.image.alt }}">
+            <img class="logo-bar__image tablet-only lazyload"
+                data-src="{{ img_url_mobile }}"
+                data-aspectratio="{{ bs[logo_image].aspect_ratio }}"
+                alt="{{ bs[logo_image].alt | default: bs.title }}">
+
+          {% else %}
+            {{ 'logo' | placeholder_svg_tag: 'placeholder-svg' }}
+          {% endif %}
+          {% if bs.link != blank %}
+            </a>
+          {% endif %}
+        </div>
+
+      {% endfor %}
+    </div>
+  {% endif %}
+</div>
+
+
+{% if ss.divider %}</div>{% endif %}
+
+
+{% schema %}
+  {
+    "name": "FFC Logo list",
+    "class": "index-section test-section--b test-section--c",
+    "max_blocks": 10,
+    "settings": [
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Heading"
+      },   
+      {
+        "type": "richtext",
+        "id": "text",
+        "label": "Text",
+        "default": "<p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Curabitur blandit tempus porttitor.</p>"
+      },
+      {
+        "type": "range",
+        "id": "logo_opacity",
+        "label": "Logo opacity",
+        "default": 76,
+        "min": 0,
+        "max": 100,
+        "step": 2,
+        "unit": "%"
+      },
+      {
+        "type": "checkbox",
+        "id": "divider",
+        "label": "Show section divider",
+        "default": false
+      },
+      {
+        "type": "header",
+        "content": "Background Illustrations"
+      },
+      {
+        "type": "text",
+        "id": "image_bg_1",
+        "label": "1 Background Illustration URL"
+      },
+      {
+        "type": "text",
+        "id": "image_bg_2",
+        "label": "2 Background Illustration URL"
+      },
+      {
+        "type": "text",
+        "id": "image_bg_3",
+        "label": "3 Background Illustration URL"
+      },
+      {
+        "type": "text",
+        "id": "image_bg_4",
+        "label": "4 Background Illustration URL"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "logo_image",
+        "name": "Logo",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Image"
+          },
+          {
+            "type": "url",
+            "id": "link",
+            "label": "Link",
+            "info": "Optional"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "FFC Logo list",
+        "category": "Image",
+        "blocks": [
+          {
+            "type": "logo_image"
+          },
+          {
+            "type": "logo_image"
+          },
+          {
+            "type": "logo_image"
+          },
+          {
+            "type": "logo_image"
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}

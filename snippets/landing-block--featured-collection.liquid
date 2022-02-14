@@ -1,0 +1,34 @@
+{%- assign collection = collections[bs.collection] -%}
+{%- capture qs_view -%}{%- render 'fn.querystring', param: "view" -%}{%- endcapture -%}
+
+<div class="ffc-featured-collection">
+
+  {%- if bs.title != blank or bs.image != blank -%}
+    <div class="page-width">
+      <div class="section-header">
+        <h2 class="section-header__title"><a href="{{ collection.url }}">{{ bs.title }}</a></h2>
+        {%- if bs.view_all -%}
+          <a href="{{ collection.url }}" class="section-header__all-link">{{ 'collections.general.shop_all_of_collection' | t }}</a>
+        {%- endif -%}
+      </div>
+    </div>
+  {%- endif -%}
+
+  <div class="page-width">
+    <div class="ffc-featured-collection__list-wrap" {% if bs.overlay_scrollbars %}data-overlay-scrollbars{% endif %}> 
+      <div class="ffc-featured-collection__list">
+    
+        {%- for product in collection.products -%}
+            {%- comment -%}{%- include 'product-grid-item-ffc-b' -%}{%- endcomment -%}
+            {%- if bs.subscription -%}
+              {%- include 'product-grid-item-ffc-subscription' -%}
+            {%- else -%}
+              {%- include 'product-grid-item-ffc' -%}
+            {%- endif -%}
+        {%- endfor -%}
+
+      </div>
+    </div>
+  </div>
+
+</div>

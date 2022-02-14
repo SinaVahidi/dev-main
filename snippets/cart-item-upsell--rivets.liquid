@@ -1,0 +1,41 @@
+<div class="cart-item--rivets cart-item--upsell flex f-d-column" rv-each-item="data.cart.upsellProducts">        
+    <div class="left-area"> 
+        <a rv-href="item.handle | getUrl" class="object-fit--cover"><img loading="lazy" rv-src="item | getImage item.currentVariant | getSizedImage '202x' "></a>
+    </div>
+
+    <div class="right-area">
+        <div class="upsell-item" id="upsell-item" rv-class="item | productAccentColor">
+            
+            <header>
+                <a class="cart-item-product-title" rv-href="item.handle | getUrl" rv-text="item.title"></a>
+                <div class="item-prices flex">
+                    <span class="cart-item-line-price money compare-price" rv-if="item.currentVariant.compare_at_price" rv-text="item.currentVariant.compare_at_price | money"></span>
+                    <span class="cart-item-line-price money" rv-data-money="item.currentVariant.price" rv-text="item.currentVariant.price | money"></span>
+
+                    <span rv-if="item.grams">
+                        <span> • </span>
+                        <span rv-html="item.grams"></span>
+                        <span>g jar</span>
+                    </span>
+                </div>
+            </header>
+
+            {%- comment -%}
+            <div class="variant-section">
+                <div class="variant-options" rv-if='item | hasVariants'>
+                    <div class="variant-option flex f-a-center" rv-each-option='item.options' rv-data-option='option.name'>
+                        <label>{ option.name | capitalize }:</label>
+                        <select rv-on-change="controller.changeUpsellOption" data-variant-select rv-name="option.name" rv-value='option.selectedValue'>
+                            <option rv-each-value='option.values' rv-value="value">{ value }</option>
+                        </select> 
+                    </div>
+                </div>
+            </div>
+            {%- endcomment -%}
+            <a href="#" class="btn" rv-on-click="controller.addUpsellItem" >
+                {{ 'products.product.add_to_cart' | t }}
+            </a>
+
+        </div>
+    </div>
+</div>

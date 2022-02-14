@@ -3,14 +3,18 @@
     <a href="{{ section.settings.announcement_link }}" class="announcement__link">
   {% endif %}
 
-    <span class="announcement__text{% unless sections.settings.announcement_closable %} announcement__text--open{% endunless %}" data-text="{{ section.settings.announcement_text | strip_html | handle }}">
-      {{ section.settings.announcement_text | strip_html }}
+    <span class="announcement__text{% unless sections.settings.announcement_closable %} announcement__text--open{% endunless %} announcement__color" 
+          data-text="{{ section.settings.announcement_text | strip_html | handle }}"
+          data-world="{{ section.settings.announcement_text }}"
+          data-us="{% if cart.currency.iso_code == 'USD' %}{{ section.settings.announcement_text_us }}{% elsif cart.currency.iso_code == 'CAD' %}{{ section.settings.announcement_text_ca }}{% endif %}"
+          data-ca="{% if cart.currency.iso_code == 'USD' %}{{ section.settings.announcement_text_us }}{% elsif cart.currency.iso_code == 'CAD' %}{{ section.settings.announcement_text_ca }}{% endif %}">
+      &nbsp;
     </span>
 
   {% if section.settings.announcement_link != blank %}
     </a>
   {% endif %}
-
+  
   {% if section.settings.announcement_closable %}
     <button type="button" class="text-link announcement__close">
       {% include 'icon-close' %}

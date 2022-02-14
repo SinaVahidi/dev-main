@@ -1,0 +1,37 @@
+<div class="page-width flex">
+
+  <div class="content-area">
+
+    {% if bs.title != blank or bs.text != blank %}  
+      <div class="section-header">
+        
+        {% if bs.title != blank %}
+          <h2 class="section-header__title">{{ bs.title | escape }}</h2>
+        {% endif %}
+
+        {% if bs.text != blank %}
+          <div class="rte">{{ bs.text }}</div>
+        {% endif %}
+
+      </div>
+    {% endif %}
+
+    <ul class="benefits__list">
+      {% for i in (1..10) %}
+        {% capture benefit %}benefit_{{i}}{% endcapture %}
+        
+        {% if bs[benefit] != blank %}
+          <li class="benefits__item">{% include 'icon-tick' %} {{ bs[benefit] }}</li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+
+  </div>
+
+  {% if bs.image != blank %}
+    <div class="image-area">
+      {% render 'picture-element', image: bs.image, size: '628x', alt: bs.title %}
+    </div>
+  {% endif %}
+
+</div>

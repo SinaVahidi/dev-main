@@ -1,0 +1,28 @@
+<div class="index-section {{ section_class }}">
+  <div class="page-width page-contact-details text-{{ block.settings.align_text }}">
+    <div class="grid">
+      <div class="grid__item{% if block.settings.narrow_column %} medium-up--three-quarters medium-up--push-one-eighth{% endif %}">
+        {% if block.settings.title != blank %}
+          <p class="h3">
+            {{ block.settings.title | escape }}
+          </p>
+        {% endif %}
+        {% if block.settings.text != blank %}
+          <div class="rte">
+              <h3>{{ block.settings.text }}</h3>
+          </div>
+        {% endif %}
+        {% if block.settings.contact_1 != blank and block.settings.contact_2 != blank%}
+        <div class="rte flex f-j-center f-wrap contact-rte">
+          <div class="contact-column">
+            {{ block.settings.contact_1 }}
+          </div>
+          <div class="contact-column">
+            {{ block.settings.contact_2 }}
+          </div>
+        </div>
+      {% endif %}
+      </div>
+    </div>
+  </div>
+</div>

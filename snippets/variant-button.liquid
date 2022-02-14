@@ -50,7 +50,7 @@
           value="{{ value | escape }}"
           data-index="option{{ option_index }}"
           name="{{ option.name }}"
-          class="variant__input-{{ section_id }}{% unless product_available %} disabled{% endunless %}{% if is_color %} variant__input--color-swatch-{{ section_id }}{% endif %}"
+          class="single-option-selector variant__input-{{ section_id }}{% unless product_available %} disabled{% endunless %}{% if is_color %} variant__input--color-swatch-{{ section_id }}{% endif %}"
           {% if is_color %} data-color-name="{{ value | escape }}"{% endif %}
           {% if is_color %} data-color-index="{{ color_option_index }}"{% endif %}
           id="ProductSelect-{{ section_id }}-option-{{ option.name | handleize }}-{{ value | url_encode }}">
@@ -59,13 +59,13 @@
           {%- assign color_swatch_fallback = value | split: ' ' | last | handle -%}
           <label
             for="ProductSelect-{{ section_id }}-option-{{ option.name | handleize }}-{{ value | url_encode }}"
-            class="color-swatch color-swatch--{{ value | handle }}{% unless product_available %} disabled{% endunless %}"
+            class="color-swatch color-swatch--{{ value | handle }}{% unless product_available %} disabled{% endunless %} global-border"
             style="background-image: url({{ color_image }}); background-color: {{ color_swatch_fallback }};"
           >
             {{ value | escape }}
           </label>
         {% else %}
-          <label for="ProductSelect-{{ section_id }}-option-{{ option.name | handleize }}-{{ value | url_encode }}"{% unless product_available %} class="disabled"{% endunless %}>{{ value | escape }}</label>
+          <label class="global-border {% unless product_available %}disabled{% endunless %}" for="ProductSelect-{{ section_id }}-option-{{ option.name | handleize }}-{{ value | url_encode }}" data-title="{{ value | escape }}">{{ value | escape }}</label>
         {% endif %}
       </div>
     {% endfor %}

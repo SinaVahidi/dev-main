@@ -1,19 +1,12 @@
-{% include 'product-template',
-  description_style: section.settings.description_style,
-  image_container_width: section.settings.image_size,
-  section_id: product.id,
-  social: section.settings.social_enable,
-  thumbnail_position: section.settings.thumbnail_position
-%}
-
-{% if settings.enable_product_reviews and settings.reviews_layout == 'full' %}
-  <hr id="Reviews-{{ product.id }}" class="hr--large">
-  <div class="index-section index-section--small product-reviews product-reviews--full">
-    <div class="page-width">
-      <div id="shopify-product-reviews" data-id="{{product.id}}">{{ product.metafields.spr.reviews }}</div>
-    </div>
-  </div>
-{% endif %}
+<div class="mlvedaform">
+  {%- include 'bold-product' with product, hide_action: 'break', output: 'none' -%}
+  {% include 'product-template',
+    description_style: section.settings.description_style,
+    image_container_width: section.settings.image_size,
+    section_id: product.id,
+    social: section.settings.social_enable,
+    thumbnail_position: section.settings.thumbnail_position
+  %}
 
 {% schema %}
   {
@@ -76,6 +69,106 @@
         "id": "social_enable",
         "label": "Enable social sharing",
         "default": true
+      },
+      {
+        "type": "header",
+        "content": "Logos"
+      },
+      {
+        "type": "select",
+        "id": "logos_position",
+        "label": "Logos position",
+        "options": [
+          {
+            "value": "hide",
+            "label": "Hide logos"
+          },
+          {
+            "value": "below_subscribe",
+            "label": "Below the Subscribe & Save button"
+          },
+          {
+            "value": "above_description",
+            "label": "Above the product description"
+          },
+          {
+            "value": "below_description",
+            "label": "Below the product description"
+          }
+        ]
+      },
+      {
+        "type": "color",
+        "id": "logos_color_bg",
+        "label": "Background color"
+      },
+      {
+        "type": "color",
+        "id": "logos_color_text",
+        "label": "Text color"
+      },
+      {
+        "type": "header",
+        "content": "Subscription buttons"
+      },
+      {
+        "type": "color",
+        "id": "sub_button_color_bg",
+        "label": "Button background color",
+        "default": "#ffffff"
+      },
+      {
+        "type": "color",
+        "id": "sub_button_color_text",
+        "label": "Button text color",
+        "default": "#4f4f4f"
+      },
+      {
+        "type": "color",
+        "id": "sub_button_color_border",
+        "label": "Button border color",
+        "default": "#6cace4"
+      },
+      {
+        "type": "color",
+        "id": "sub_button_color_bg_active",
+        "label": "Active button background color",
+        "default": "#6cace4"
+      },
+      {
+        "type": "color",
+        "id": "sub_button_color_text_active",
+        "label": "Active button text color",
+        "default": "#ffffff"
+      },
+      {
+        "type": "color",
+        "id": "sub_button_color_checkbox_active",
+        "label": "Active button checkbox",
+        "default": "#ffffff"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "logo_image",
+        "name": "Logo",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Image"
+          },
+          {
+            "type": "url",
+            "id": "link",
+            "label": "Link"
+          },
+          {
+            "type": "text",
+            "id": "title",
+            "label": "Title"
+          }
+        ]
       }
     ]
   }

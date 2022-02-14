@@ -1,0 +1,37 @@
+<div class="page-width">
+
+  {% if bs.title != blank or bs.text != blank %}  
+    <div class="section-header">
+      
+      {% if bs.title != blank %}
+        <h2 class="section-header__title">{{ bs.title | escape }}</h2>
+      {% endif %}
+
+      {% if bs.text != blank %}
+        <div class="rte">{{ bs.text }}</div>
+      {% endif %}
+
+    </div>
+  {% endif %}
+
+  <div class="contact__content flex f-j-center">
+    
+    {% if bs.phone != blank %}
+      <div class="contact__item">
+        {% include 'icon-contact-phone' %}
+        <h3 class="contact__heading">{{ bs.heading_phone }}</h3>
+        <a class="contact__value" href="tel:{{ bs.phone | strip | replace: ' ', '' }}">{{ bs.phone }}</a>
+      </div>  
+    {% endif %}
+
+    {% if bs.email != blank %}
+      <div class="contact__item">
+        {% include 'icon-contact-email' %}
+        <h3 class="contact__heading">{{ bs.heading_email }}</h3>
+        <a class="contact__value" href="mailto:{{ bs.email | strip | replace: ' ', '' }}">{{ bs.email }}</a>
+      </div>  
+    {% endif %}
+
+  </div>
+
+</div>

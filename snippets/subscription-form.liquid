@@ -1,0 +1,62 @@
+{% assign selling_plan = true %}
+
+<div id="ProductSection-{{ block.id }}-{{forloop.index }}"
+data-section-id="{{ block.id }}-{{forloop.index }}"
+data-section-type="product">
+{% capture form_id %}AddToCartForm-{{ block.id }}-{{forloop.index }}{% endcapture %}
+<form id="subscription-form" method="post" action="/cart/add" accept-charset="UTF-8" class="product-single__form" enctype="multipart/form-data" data-add-to-cart data-bsub-selling-plan-group="{{group_id}}" data-selling-plan="{{subscription_id}}">
+<div class="hide">
+  <select name="id" id="ProductSelect-{{ block.id }}-{{forloop.index }}" class="product-single__variants no-js">
+    {% for variant in product.variants %}
+      {% if variant.available %}
+        <option {% if variant == product.selected_or_first_available_variant %}
+          selected="selected" {% endif %}
+          value="{{ variant.id }}">
+          {{ variant.title }} - {{ variant.price | money_with_currency }}
+        </option>
+      {% else %}
+        <option disabled="disabled">
+          {{ variant.title }} - {{ 'products.product.sold_out' | t }}
+        </option>
+      {% endif %}
+    {% endfor %}
+  </select>
+</div>
+
+<div class="hide">
+  {% include 'bsub-widget' %}
+</div>
+
+<div class="subscription-form-dropdown">
+<div class="dropdown product__delivery subscription-dropdown flex f-a-center f-j-center">
+  <label for="Delivery-{{ section_id }}" class="delivery-label">{{ 'general.subscription_page.delivery' | t }}</label>
+  <select id="product-delivery">
+      {% for group in product.selling_plan_groups %}
+          {% for plan in group.selling_plans %}
+            <option value="{{plan.name}}" data-plan-id="{{plan.id}}">{{ plan.name }}</option>
+          {% endfor %}
+    {% endfor %}
+  </select>
+</div>
+
+{% if settings.quantity_enable %}
+  <div class="dropdown product__quantity product__quantity--{{ settings.variant_type }} flex f-a-center f-j-center">
+    <label for="Quantity-{{ section_id }}" class="quantity-label">{{ 'products.product.quantity' | t }}</label>
+    {% include 'quantity-input', id: section_id, qty: 1, min: 1 %}
+  </div>
+{% endif %}
+</div>
+
+{% if settings.atc_enable %}
+  <button type="submit" name="add" id="AddToCart--{{ block.id }}-{{forloop.index }}" class="btn add-to-cart" tabindex="0">
+    <span>
+      {% if product.selected_or_first_available_variant.available %}
+        {{ 'products.product.add_to_cart' | t }}
+      {% else %}
+        {{ 'products.product.sold_out' | t }}
+      {% endif %}
+    </span>
+  </button>
+{% endif %}
+</form>
+</div>

@@ -1,0 +1,144 @@
+<div class="page-width">
+
+  {% if bs.title != blank or bs.text != blank %}  
+    <div class="section-header">
+      
+      {% if bs.title != blank %}
+        <h2 class="section-header__title">{{ bs.title | escape }}</h2>
+      {% endif %}
+
+      {% if bs.text != blank %}
+        <div class="rte">{{ bs.text }}</div>
+      {% endif %}
+
+    </div>
+  {% endif %}
+
+  {% if bs.overlay_scrollbars %}
+
+    <div class="product-promotion__list-wrapper" data-overlay-scrollbars>
+
+      {% assign count = 0 %}
+      {% for i in (1..10) %}
+        {% capture promo_image %}promo_image_{{i}}{% endcapture %}
+        {% if bs[promo_image] != blank %}
+          {% assign count = count | plus: 1 %}
+        {% endif %}
+      {% endfor %}
+      
+      {% assign width = 302 | plus: 24 %}
+      {% if count > 0 %}
+        {% assign width = width | times: count %}
+      {% endif %}
+      {% assign width = width | minus: 24 %}
+
+      {% assign width_mob = 302 | plus: 16 %}
+      {% if count > 0 %}
+        {% assign width_mob = width_mob | times: count %}
+      {% endif %}
+      {% assign width_mob = width_mob | minus: 16 %}
+
+
+      <style>
+        .product-promotion__list--{{ block.id }} {
+          width: {{width}}px;
+        }
+        @media only screen and (max-width:  834px) {
+          .product-promotion__list--{{ block.id }} {
+            width: {{width_mob}}px;
+          }
+        }
+      </style>
+
+      <div class="product-promotion__list product-promotion__list--{{ block.id }}">
+
+        {% for i in (1..10) %}
+          {% capture promo_title %}promo_title_{{i}}{% endcapture %}
+          {% capture promo_image %}promo_image_{{i}}{% endcapture %}
+          {% capture promo_url %}promo_url_{{i}}{% endcapture %}
+          {% capture promo_color %}promo_color_{{i}}{% endcapture %}
+
+          {% if bs[promo_image] != blank %}
+          <div class="product-promotion__item">
+            {% assign img_url = bs[promo_image] | img_url: '1x1' | replace: '_1x1.', '_302x.' %}
+            {% if bs[promo_url] != blank %}
+              <a href="{{ bs[promo_url] }}" class="product-promotion__link">
+            {% endif %}
+            <img class="product-promotion__image lazyload"
+                data-src="{{ img_url }}"
+                data-widths="auto"
+                data-aspectratio="{{ bs[promo_image].aspect_ratio }}"
+                data-sizes="auto"
+                alt="{{ bs[promo_image].alt | default: bs[promo_title] }}">
+            {% if bs[promo_url] != blank %}
+              </a>
+            {% endif %}
+
+            {% if bs[promo_url] != blank %}
+              <a href="{{ bs[promo_url] }}" class="product-promotion__cta btn" style="background-color: {{ bs[promo_color] }}; border-color: {{ bs[promo_color] }};">{{ bs[promo_title] }}</a>
+            {% else %}
+              <p class="product-promotion__cta btn" style="background-color: {{ bs[promo_color] }}; border-color: {{ bs[promo_color] }};">{{ bs[promo_title] }}</p>
+            {% endif %}
+
+          </div>
+          {% endif %}
+
+        {% endfor %}
+      </div>
+
+    </div>
+  
+  {% else %}
+
+    {%- assign grid_item_width = 'small--one-half medium-up--one-third' -%}
+
+    {%- case bs.per_row -%}
+    {%- when 2 -%}
+      {%- assign grid_item_width = 'medium-up--one-half' -%}
+    {%- when 3 -%}
+      {%- assign grid_item_width = 'small--one-half medium-up--one-third' -%}
+    {%- when 4 -%}
+      {%- assign grid_item_width = 'small--one-half medium-up--one-quarter' -%}
+    {%- when 5 -%}
+      {%- assign grid_item_width = 'small--one-half medium-up--one-fifth' -%}
+    {%- endcase -%}
+
+    <div class="product-promotion__list product-promotion__list--{{ block.id }}">
+
+      {% for i in (1..10) %}
+        {% capture promo_title %}promo_title_{{i}}{% endcapture %}
+        {% capture promo_image %}promo_image_{{i}}{% endcapture %}
+        {% capture promo_url %}promo_url_{{i}}{% endcapture %}
+        {% capture promo_color %}promo_color_{{i}}{% endcapture %}
+
+        {% if bs[promo_image] != blank %}
+        <div class="product-promotion__item grid__item {{ grid_item_width }}">
+          {% assign img_url = bs[promo_image] | img_url: '1x1' | replace: '_1x1.', '_302x.' %}
+          {% if bs[promo_url] != blank %}
+            <a href="{{ bs[promo_url] }}" class="product-promotion__link">
+          {% endif %}
+          <img class="product-promotion__image lazyload"
+              data-src="{{ img_url }}"
+              data-widths="auto"
+              data-aspectratio="{{ bs[promo_image].aspect_ratio }}"
+              data-sizes="auto"
+              alt="{{ bs[promo_image].alt | default: bs[promo_title] }}">
+          {% if bs[promo_url] != blank %}
+            </a>
+          {% endif %}
+
+          {% if bs[promo_url] != blank %}
+            <a href="{{ bs[promo_url] }}" class="product-promotion__cta btn" style="background-color: {{ bs[promo_color] }}; border-color: {{ bs[promo_color] }};">{{ bs[promo_title] }}</a>
+          {% else %}
+            <p class="product-promotion__cta btn" style="background-color: {{ bs[promo_color] }}; border-color: {{ bs[promo_color] }};">{{ bs[promo_title] }}</p>
+          {% endif %}
+
+        </div>
+        {% endif %}
+
+      {% endfor %}
+    </div>
+  
+  {% endif %}
+
+</div>

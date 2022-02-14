@@ -13,20 +13,13 @@
     </div>
   {% endif %}
 
+  {% if block.settings.show_social %}
   <ul class="no-bullets footer__social">
     {% if settings.social_facebook_link != blank %}
       <li>
         <a target="_blank" href="{{ settings.social_facebook_link }}" title="{{ 'layout.footer.social_platform' | t: name: shop.name, platform: 'Facebook' }}">
           {% include 'icon-facebook' %}
           <span class="icon__fallback-text">Facebook</span>
-        </a>
-      </li>
-    {% endif %}
-    {% if settings.social_twitter_link != blank %}
-      <li>
-        <a target="_blank" href="{{ settings.social_twitter_link }}" title="{{ 'layout.footer.social_platform' | t: name: shop.name, platform: 'Twitter' }}">
-          {% include 'icon-twitter' %}
-          <span class="icon__fallback-text">Twitter</span>
         </a>
       </li>
     {% endif %}
@@ -87,8 +80,8 @@
       </li>
     {% endif %}
   </ul>
+  {% endif %}
+  
+  <p class="copyright">&copy; {{ 'now' | date: "%Y" }} {{ shop.name }} inc.</p>
 
 </div>
-
-<p class="footer__powered_by{% if first_instance %} small--hide{% endif %}">{{ powered_by_link }}</p>
-

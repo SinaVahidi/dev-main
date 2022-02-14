@@ -1,0 +1,66 @@
+{% comment %}
+{%- assign product_tags = product.tags | join: ',' -%}
+{%- assign has_custom_label = false -%}
+{% if product_tags contains '_label_' %}
+  {% for tag in product.tags %}
+    {% if tag contains '_label_' %}
+      {%- assign tag_starts_with = tag | slice: 0 -%}
+      {% if tag_starts_with == '_' %}
+        {%- assign has_custom_label = true -%}
+        {%- assign custom_label = tag | replace: '_label_', '' -%}
+      {% endif %}
+    {% endif %}
+  {% endfor %}
+{% endif %}
+{% endcomment %}
+
+{% comment %}
+{% if has_custom_label %}
+  <div class="grid-product__tag grid-product__tag--custom">
+    {{ custom_label }}
+  </div>
+{% else %}
+  {% if sold_out %}
+    <div class="grid-product__tag grid-product__tag--sold-out">
+      {{ 'products.product.sold_out' | t }}
+    </div>
+  {% endif %}
+  {% if on_sale and sold_out == false %}
+    {% if settings.product_save_amount %}
+      <div class="grid-product__tag grid-product__tag--sale">
+        {% if settings.product_save_type == 'dollar' %}
+          {% capture saved_amount %}{{ product.compare_at_price | minus: product.price | money }}{% endcapture %}
+        {% else %}
+          {% capture saved_amount %}{{ product.compare_at_price | minus: product.price | times: 100.0 | divided_by: product.compare_at_price | round }}%{% endcapture %}
+        {% endif %}
+        {{ 'products.general.save_html' | t: saved_amount: saved_amount }}
+      </div>
+    {% endif %}
+  {% endif %}
+{% endif %}
+{% endcomment %}
+
+{% if sold_out %}
+  <div class="grid-product__label grid-product__label--sold-out">
+    {{ 'products.product.sold_out' | t }}
+  </div>
+{% else %}
+
+  {% if product.metafields.custom_fields.product_tag != blank %}
+    {% assign product_tags = product.metafields.custom_fields.product_tag | split: '|' %}
+    {% assign tag_array = '' %}
+    {% for tag in product_tags %}
+      {% assign tag_array = tag | split: ',' %}
+      <div class="grid-product__label grid-product__label--{{forloop.index}}" style="
+        background-color: {{tag_array[2]}};
+        color: {{tag_array[3]}};
+        {% if tag_array[1] contains 'top' %}bottom: auto;{% endif %}
+        {% if tag_array[1] contains 'bottom' %}top: auto;{% endif %}
+        {% if tag_array[1] contains 'left' %}right: auto;{% endif %}
+        {% if tag_array[1] contains 'right' %}left: auto;{% endif %}
+        ">
+        {{ tag_array[0] }}
+      </div>
+    {% endfor %}
+  {% endif %}
+{% endif %}

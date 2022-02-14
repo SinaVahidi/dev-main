@@ -1,0 +1,193 @@
+{%- assign product = all_products[bs.featured_product] -%}
+{% assign compare_price = product.variants[0].selling_plan_allocations[0].compare_at_price  %}
+{% assign delivery_price = product.variants[0].selling_plan_allocations[0].per_delivery_price %}
+
+{% if bs.divider %}<div class="section--divider">{% endif %}
+
+<div id="SubscriptionSection-{{ section.id }}"
+  class="ffc-select-subscription"
+  data-section-id="{{ section.id }}"
+  data-section-type="subscription"
+  data-select-subscription
+  {% if settings.product_zoom_enable %}
+    data-image-zoom="true"
+  {% endif %}>
+
+  <script type="application/json" data-product-json>
+    [
+    {% for product in collections.all.products %}
+    {
+      "id": {{ product.id | json }},
+      "title": {{product.title | json}},
+      "handle": {{product.handle | json}},
+      "url": {{product.url | json}},
+      "tags": {{product.tags | json}},
+      "image": {{product.featured_image | json}},
+      "collections" : {{product.collections | json}},
+      "has_only_default_variant" : {{ product.has_only_default_variant | json}},
+      "reviews" : {{product.metafields.yotpo.reviews_count | json}},
+      "variants": {{product.variants | json}}
+    }{% unless forloop.last %},{% endunless %}
+    {% endfor %}
+    ]
+  </script>
+
+
+  {% include 'product-template-variables' %}
+
+  <div class="page-width">
+    <div class="grid">
+      <div class="grid__item medium-up--one-half grid__image">
+        {% include 'product-images', section_id: section.id, thumbnail_position: bs.thumbnail_position, badge_label: bs.badge_label %}
+      </div>
+ 
+      <div class="grid__item medium-up--one-half">
+        <div class="product-single__meta">
+          
+          <div class="subscription-type">    
+            <p class="h1 product-single__title">{{ 'general.subscription_page.create_subscription' | t }}</p>
+            
+            <div>
+              <a href="{{ product.url }}#yotpoWidget" class="yotpo yotpo-featured-widget bottomLine yotpo-subscription-product" style="padding-bottom: 10px"
+                data-product-id="{{ product.id }}">
+              {%- assign yotpo_offload_content = shop.metafields.yotpo.yotpo_offload_content %}
+              {%- assign time_now = 'now' | date: '%s' %}
+              {%- assign yotpo_live_time = shop.metafields.yotpo.yotpo_live | date: '%s' %}
+              {%- assign diff_seconds_from_live = time_now | minus: yotpo_live_time %}
+              {%- assign yotpo_bottomline_last_updated = product.metafields.yotpo.bottomline_update_time | date: '%s' %}
+              {%- assign diff_seconds_from_last_bottomline_update = time_now | minus: yotpo_bottomline_last_updated %}
+              {%- if yotpo_live_time and diff_seconds_from_live < 86400 or yotpo_bottomline_last_updated and diff_seconds_from_last_bottomline_update < 86400 -%}
+                {%- assign yotpo_bottomline_obsolete = false %}
+              {%- else %}
+                {%- assign yotpo_bottomline_obsolete = true %}
+              {%- endif %}
+              {%- if yotpo_offload_content == 'yes' and yotpo_bottomline_obsolete != true -%}
+                {{ product.metafields.yotpo.bottomline }}
+              {%- endif %}
+              </a>
+            </div>
+
+            {% assign types_split = shop.metafields.global.product_types | split: "," %}
+            {% assign bites_flavours_split = shop.metafields.global.bites_flavours | split: "," %}
+            {% assign bites_sizes_split = shop.metafields.global.bites_sizes | split: "," %}
+            {% assign bites_jar_flavours_split = shop.metafields.global.bites_jar_flavours | split: "," %}
+            {% assign daily_nourish_options_split = shop.metafields.global.daily_nourish_options | split: "," %}
+            {% assign candles_options_split = shop.metafields.global.candles_options | split: "," %}
+            {% assign nomzicles_options_split = shop.metafields.global.nomzicles_options | split: "," %}
+            {% assign butters_flavours_split = shop.metafields.global.butters_flavours | split: "," %}
+            {% assign butters_sizes_split = shop.metafields.global.butters_sizes | split: "," %}
+            {% assign trio_butters_sizes_split = shop.metafields.global.trio_butters_sizes | split: "," %}
+
+            <script  type="application/json" data-bites-flavours>
+              {{bites_flavours_split | json}}
+            </script>
+            <script  type="application/json" data-bites-jar-flavours>
+              {{bites_jar_flavours_split | json}}
+            </script>
+            <script  type="application/json" data-nourish-options>
+              {{daily_nourish_options_split | json}}
+            </script>
+            <script  type="application/json" data-candles-options>
+              {{candles_options_split | json}}
+            </script>
+            <script  type="application/json" data-nomzicles-options>
+              {{nomzicles_options_split | json}}
+            </script>
+            <script  type="application/json" data-butters-flavours>
+              {{butters_flavours_split | json}}
+            </script>
+            <script  type="application/json" data-butters-sizes>
+              {{butters_sizes_split | json}}
+            </script>
+            <script  type="application/json" data-trio-butters-sizes>
+              {{trio_butters_sizes_split | json}}
+            </script>
+            <script  type="application/json" data-bites-sizes>
+              {{bites_sizes | json}}
+            </script>
+
+            <div class="subscription-dropdown">
+              <p>{{ 'general.subscription_page.product_types' | t }}</p>
+              <select id="product-types" class="subscription-types-dropdown">
+                  {% for type in types_split %}
+                    <option value="{{type}}">{{ type }}</option>
+                  {% endfor %}
+              </select>
+
+              <div class="flex-selects">
+                <div class="flex-selects__column">
+                  <p id="subscription-opt-flv">{{ 'general.subscription_page.product_flavours' | t }}</p>
+                  <select id="product-flavours" class="subscription-types-dropdown">
+                      {% for flavour in bites_flavours_split %}
+                        <option value="{{flavour}}">{{ flavour }}</option>
+                      {% endfor %}
+                  </select>
+                </div>
+                <div class="flex-selects__column hide" id="product-sizes-column">
+                  <p id="subscription-opt-flv">{{ 'general.subscription_page.product_sizes' | t }}</p>
+                  <select id="product-sizes" class="subscription-types-dropdown">
+                      {% for size in butters_sizes_split %}
+                        <option value="{{size}}">{{ size }}</option>
+                      {% endfor %}
+                  </select>
+                </div>
+                <div class="flex-selects__column" id="bites-sizes-column">
+                  <p id="subscription-opt-flv">{{ 'general.subscription_page.product_sizes' | t }}</p>
+                  <select id="bites-sizes" class="subscription-types-dropdown">
+                      {% for size in bites_sizes_split %}
+                        <option value="{{size}}">{{ size }}</option>
+                      {% endfor %}
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="subscription-form">
+              <p>{{ 'general.subscription_page.frequency' | t }}</p>
+
+            <span id="SubscriptionPrice-{{ section.id }}"
+              class="product__price{% if compare_price > delivery_price %} on-sale{% endif %}">
+              {{ delivery_price | money }}
+            </span>
+
+            {% if compare_price > delivery_price %}
+              <span id="PriceA11y-{{ section.id }}" class="visually-hidden">{{ 'products.general.regular_price' | t }}</span>
+              <span class="product__price-wrap-{{ section.id }}">
+                <span id="ComparePrice-{{ section.id }}" class="product__price product__price--compare">
+                  {% if compare_price > delivery_price %}
+                    {{ compare_price | money }}
+                  {% endif %}
+                </span>
+              </span>
+              <span id="ComparePriceA11y-{{ section.id }}" class="visually-hidden">{{ 'products.general.sale_price' | t }}</span>
+            {% else %}
+              <span id="PriceA11y-{{ section.id }}" class="visually-hidden">{{ 'products.general.regular_price' | t }}</span>
+            {% endif %}
+            
+            <div class="subscription-badge">
+              {{ 'general.subscription_page.badge' | t }}
+            </div>
+
+            <hr class="hr--medium">
+
+            {% assign selected_selling_plan = product.selected_or_first_available_selling_plan_allocation %}
+            {% unless product.empty? %}
+              {% include 'subscription-form', section_id: section.id, group_id: selected_selling_plan.selling_plan.group_id, subscription_id: selected_selling_plan.selling_plan.id  %}
+            {% endunless %}
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+
+{% if bs.divider %}</div>{% endif %}
+
+
+
+

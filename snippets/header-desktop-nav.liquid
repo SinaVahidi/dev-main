@@ -17,10 +17,10 @@
     {% endif %}
 
     <li
-      class="site-nav__item site-nav__expanded-item{% if has_dropdown %} site-nav--has-dropdown{% endif %}{% unless template == 'index' %}{% if link.active %} site-nav--active{% endif %}{% endunless %}"
+      class="site-nav__item site-nav__expanded-item{% if has_dropdown %} site-nav--has-dropdown{% endif %}{% unless template contains 'index' %}{% if link.active %} site-nav--active{% endif %}{% endunless %}"
       {% if has_dropdown %}aria-haspopup="true"{% endif %}>
 
-      <a href="{{ link.url }}" class="site-nav__link{% if has_dropdown %} site-nav__link--has-dropdown{% endif %}">
+      <a href="{{ link.url }}" class="site-nav__link{% if has_dropdown %} site-nav__link--has-dropdown{% endif %} {% if forloop.first == true %}bold-link{% endif %}">
         {{ link.title }}
         {% if has_dropdown %}
           {% include 'icon-chevron-down' %}
