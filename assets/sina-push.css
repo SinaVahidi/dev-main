@@ -1064,3 +1064,29 @@
 .embed-register_right-inside{
   width: 75%;
 }
+
+/* Almond energy bites page */
+
+.product-single__form .product-qty-atc .add-to-cart.btn--filled.btn--almond{
+  background: transparent;
+  border:1px solid #6CACE4;
+  color:#6CACE4!important;
+}
+
+.product-single__form .product-qty-atc .add-to-cart.btn--filled.btn--almond:hover{
+  background-color: #6CACE4!important;
+  border:1px solid #6CACE4!important;
+  color:white!important;
+}
+
+/* Upsell titles and hover state */
+
+.cart-item--rivets.cart-item--upsell .right-area .color--pistachio .btn:hover{
+  background-color: #6CACE4!important;
+  border:1px solid #6CACE4!important;
+  color:white!important;
+}
+
+.cart-item--rivets.cart-item--upsell .right-area .cart-item-product-title {
+  color:#202020!important;
+}
