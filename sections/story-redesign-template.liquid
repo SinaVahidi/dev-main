@@ -1,16 +1,17 @@
+{% assign ss = section.settings %}
 <section class="top-section">
   <div class="container main-container">
     <section class="row">
       <div class="col-md-4 pe-md-2 pe-0 ps-0 top-text-section">
         <div class="text-head">
           <div class="inside-text-head">
-            <h2 class="ss1-head">Hi, I'm Jana!</h2>
-            <p class="ss1-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+            <h2 class="ss1-head">{{ ss.ss1-head | escape }}</h2>
+            <p class="ss1-text">{{ ss.ss1-text | escape }}</p>
           </div>
         </div>
       </div>
       <div class="col-md-8 ps-md-2 ps-0 pe-0">
-        <img src="{{ '857A0235.jpg' | asset_img_url: '1200x' }}" class="img-fluid image-head">
+        <img src="{{ 'ss.image-head' | img_url: '1x1' | replace: '_1x1.', '_{width}x.' }}" class="img-fluid image-head">
       </div>
     </section>
   </div>
@@ -18,16 +19,16 @@
 <section class="middle-section">
   <div class="main-container my-md-4 my-5">
     <div class="row inside-content">
-      <h2 class="text-center middle-heading">A Sweet Start</h2>
+      <h2 class="text-center middle-heading">{{ ss.middle-head| escape}}</h2>
       <div class="inside-content-text col-md-7 text-left">
-        <p class="middle-text">Anytime I craved something sweet, I reached for these energy bites. They completely satisfied my desire. Eliminating refined sugars became easy with these by my side. I had more energy, more clarity, and slept better. I was much happier.</p>
-        <p class="middle-text">I spent the summer months that year on the Moose Cree Indigenous Reserve in Northern Ontario. I tried my best to eat healthy, but food insecurity was, and still is an issue.</p>    
-		<p class="middle-text">When I came home, I started falling back into my old ways of eating candy and chocolate bars. So, I mixed up a batch of these bites, and took them to my family’s home to try.</p>
-		<p class="middle-text">My mom loved them so much that she suggested I start selling them. My brother helped come up with the name “nomz”, and a month later, local retailers started carrying it in their stores. </p>
+        <p class="middle-text">{{ ss.middle-text1 | escape}}</p>
+        <p class="middle-text">{{ ss.middle-text2 | escape}}</p>    
+		    <p class="middle-text">{{ ss.middle-text3 | escape}}</p>
+		    <p class="middle-text">{{ ss.middle-text4 | escape}}</p>
       </div>
       <div class="col-md-5 middle-section-images">
-        <img src="{{ '857A0235.jpg' | asset_img_url: '1200x' }}" class="img-fluid mb-3 image-middle">
-        <img src="{{ '857A0235.jpg' | asset_img_url: '1200x' }}" class="img-fluid">
+        <img src="{{ 'ss.image-middle1' | img_url: '1x1' | replace: '_1x1.', '_{width}x.' }}" class="img-fluid mb-3 image-middle">
+        <img src="{{ 'ss.image-middle2' | img_url: '1x1' | replace: '_1x1.', '_{width}x.' }}" class="img-fluid">
       </div>
     </div>
   </div>
@@ -35,14 +36,14 @@
 <section class="grant-section">
   <div class="main-container mb-5">
     <div class="row inside-content-grant" style"height:400px;">
-      <h2 class="text-center grant-heading mb-4">Giving Back</h2>
-      <div class="col-md-6 px-md-4">
-        <img src="{{ '857A0235.jpg' | asset_img_url: '1200x' }}" class="img-fluid ps-md-3">
+      <h2 class="text-center grant-heading mb-4">{{ ss.grant-head | escape}}</h2>
+      <div class="col-md-6 px-md-4 grant-image-wrap">
+        <img src="{{ 'ss.image-grant' | img_url: '1x1' | replace: '_1x1.', '_{width}x.' }}" class="img-fluid ps-md-3">
       </div>
-      <div class="col-md-6">
-        <p class="grant-text px-md-3">My time with the Moose Cree Indigenous community transformed me. It also fueled the company’s mission to help people eat and live better, across Canada and beyond. </p>
-        <p class="grant-text px-md-3">The annual nomz grant provides funding for an Indigenous individual to pursue their dreams to start or grow their own business. As we grow, so does our ability to give back. </p>
-		<a href="https://nomz.com/pages/grant" class="btn ms-md-3 grant-btn" type="button">visit the grant</a>
+      <div class="col-md-6 grant-text-wrap">
+        <p class="grant-text px-md-3">{{ ss.grant-text1 | escape}}</p>
+        <p class="grant-text px-md-3">{{ ss.grant-text2 | escape}}</p>
+		<a href="https://nomz.com/pages/grant" class="btn ms-md-3 grant-btn" type="button">{{ ss.grant-btn | escape}}</a>
       </div>
     </div>
   </div>
@@ -50,78 +51,78 @@
 <section class="bottom-section">
   <div class="main-container mb-5">
     <div class="row inside-content">
-      <h2 class="text-center bottom-heading">What you put in your body is <b>important</b>.</h2>
-      <p class="middle-text px-md-3 text-center mb-0">That’s why we’re committed to quality ingredients and why “delicious” is our true north star. </p>
-      {% assign ss = section.settings %}
-  <div class="index-section product-ingredients-section">
-      <div class="main-container-ingredients">
+      <h2 class="text-center bottom-heading">{{ ss.ingredient-section-head | escape}}</h2>
+      <p class="middle-text px-md-3 text-center mb-0 px-0">{{ ss.ingredient-section-text| escape}}</p>
+      
+      <div class="index-section product-ingredients-section">
+          <div class="main-container-ingredients">
 
-        {% if ss.product_ingredients_heading != blank %}
-          <header class="section-header">
-            <h3 class="section-header__title">
-              {{ ss.product_ingredients_heading }}
-            </h3>
-          </header>
-        {% endif %}
-
-        {% case ss.number_of_items_per_row %}
-        {% when 1 %}
-          {%- assign grid_item_width = '' -%}
-        {% when 2 %}
-          {%- assign grid_item_width = 'medium-up--one-half' -%}
-        {% when 3 %}
-          {%- assign grid_item_width = 'medium-up--one-third' -%}
-        {% endcase %}
-
-        <div class="product-ingredients grid grid--uniform flex f-wrap f-j-center" {% if ss.view_more %}data-toggle-group{% endif %}>
-            {% for block in section.blocks %}
-              {% assign bs = block.settings %}
-                <div class="grid__item ingredient-item ingredient-block {{ grid_item_width }}">
-
-                  <div class="image-area">
-                    {% if bs.image != blank %}
-                      {%- assign img_url = bs.image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
-                      <img class="lazyload"
-                          data-src="{{ img_url }}"
-                          data-widths="[180, 360, 540, 720, 900, 1080]"
-                          data-aspectratio="{{ bs.image.aspect_ratio }}"
-                          data-sizes="auto"
-                          alt="{{ bs.title | escape }}">
-                      <noscript>
-                        <img class="lazyloaded" src="{{ bs.image | img_url: '400x' }}" alt="{{ bs.title | escape }}">
-                      </noscript>
-                    {% endif %}
-                  </div>
-
-                  <div class="content-area ingredient-content-block">
-                    <h3>{{ bs.title }}</h3>
-                    <div class="rte">
-                      {{ bs.text }}
-                    </div>
-                  </div>
-
-                </div>
-            {% endfor %}
-
-            {% if ss.view_more %}
-              {% if forloop.index == ss.number_of_items_per_row %}
-                <div data-toggle-item>
-                  <div class="btn product-ingredients-more" data-toggle-trigger>
-                    <span class="more">{{ ss.view_more_button }}</span>
-                    <span class="less">{{ ss.view_less_button }}</span>
-                  </div>
-                  <div class="product-ingredients grid grid--uniform flex f-wrap f-j-center" style="max-height: 0px;" data-toggle-elem>
-              {% endif %}
-
-              {% if forloop.last %}
-                  </div>
-                </div>
-              {% endif %}
+            {% if ss.product_ingredients_heading != blank %}
+              <header class="section-header">
+                <h3 class="section-header__title">
+                  {{ ss.product_ingredients_heading }}
+                </h3>
+              </header>
             {% endif %}
-        </div>
 
-      </div>
-    </div>
+            {% case ss.number_of_items_per_row %}
+            {% when 1 %}
+              {%- assign grid_item_width = '' -%}
+            {% when 2 %}
+              {%- assign grid_item_width = 'medium-up--one-half' -%}
+            {% when 3 %}
+              {%- assign grid_item_width = 'medium-up--one-third' -%}
+            {% endcase %}
+
+            <div class="product-ingredients grid grid--uniform flex f-wrap f-j-center" {% if ss.view_more %}data-toggle-group{% endif %}>
+                {% for block in section.blocks %}
+                  {% assign bs = block.settings %}
+                    <div class="grid__item ingredient-item ingredient-block {{ grid_item_width }}">
+
+                      <div class="image-area">
+                        {% if bs.image != blank %}
+                          {%- assign img_url = bs.image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
+                          <img class="lazyload"
+                              data-src="{{ img_url }}"
+                              data-widths="[180, 360, 540, 720, 900, 1080]"
+                              data-aspectratio="{{ bs.image.aspect_ratio }}"
+                              data-sizes="auto"
+                              alt="{{ bs.title | escape }}">
+                          <noscript>
+                            <img class="lazyloaded" src="{{ bs.image | img_url: '400x' }}" alt="{{ bs.title | escape }}">
+                          </noscript>
+                        {% endif %}
+                      </div>
+
+                      <div class="content-area ingredient-content-block">
+                        <h3>{{ bs.title }}</h3>
+                        <div class="rte">
+                          {{ bs.text }}
+                        </div>
+                      </div>
+
+                    </div>
+                {% endfor %}
+
+                {% if ss.view_more %}
+                  {% if forloop.index == ss.number_of_items_per_row %}
+                    <div data-toggle-item>
+                      <div class="btn product-ingredients-more" data-toggle-trigger>
+                        <span class="more">{{ ss.view_more_button }}</span>
+                        <span class="less">{{ ss.view_less_button }}</span>
+                      </div>
+                      <div class="product-ingredients grid grid--uniform flex f-wrap f-j-center" style="max-height: 0px;" data-toggle-elem>
+                  {% endif %}
+
+                  {% if forloop.last %}
+                      </div>
+                    </div>
+                  {% endif %}
+                {% endif %}
+            </div>
+
+          </div>
+        </div>
     </div>
   </div>
 </section>
@@ -129,7 +130,105 @@
   {
     "name": "Story Modern Template",
     "settings": [
-	{
+      {
+        "type":"textarea",
+        "id":"ss1-head",
+        "label":"Top section heading",
+        "default":"Hi, I'm Jana!"
+      },
+      {
+        "type":"textarea",
+        "id":"ss1-text",
+        "label":"Top section text",
+        "default":"I started nomz to..."
+      },
+      {
+        "type":"image_picker",
+        "id":"image-head",
+        "label":"Top section image"
+      },
+      {
+        "type":"textarea",
+        "id":"middle-head",
+        "label":"Middle section heading",
+        "default":"A Sweet Start"
+      },
+      {
+        "type":"textarea",
+        "id":"middle-text1",
+        "label":"Middle section first paragraph",
+        "default":"Anytime I craved something sweet, I reached for these energy bites. They completely satisfied my desire. Eliminating refined sugars became easy with these by my side. I had more energy, more clarity, and slept better. I was much happier."
+      },
+      {
+        "type":"textarea",
+        "id":"middle-text2",
+        "label":"Middle section second paragraph",
+        "default":"I spent the summer months that year on the Moose Cree Indigenous Reserve in Northern Ontario. I tried my best to eat healthy, but food insecurity was, and still is an issue."
+      },
+      {
+        "type":"textarea",
+        "id":"middle-text3",
+        "label":"Middle section third paragraph",
+        "default":"When I came home, I started falling back into my old ways of eating candy and chocolate bars. So, I mixed up a batch of these bites, and took them to my family’s home to try."
+      },
+      {
+        "type":"textarea",
+        "id":"middle-text4",
+        "label":"Middle section fourth paragraph",
+        "default":"My mom loved them so much that she suggested I start selling them. My brother helped come up with the name “nomz”, and a month later, local retailers started carrying it in their stores. "
+      },
+      {
+        "type":"image_picker",
+        "id":"image-middle1",
+        "label":"Middle section first image"
+      },
+      {
+        "type":"image_picker",
+        "id":"image-middle2",
+        "label":"Middle section second image"
+      },
+      {
+        "type":"textarea",
+        "id":"grant-head",
+        "label":"Grant section heading",
+        "default":"Giving Back"
+      },
+      {
+        "type":"textarea",
+        "id":"grant-text1",
+        "label":"Grant section first paragraph",
+        "default":"My time with the Moose Cree Indigenous community transformed me. It also fueled the company’s mission to help people eat and live better, across Canada and beyond."
+      },
+      {
+        "type":"textarea",
+        "id":"grant-text2",
+        "label":"Grant section second paragraph",
+        "default":"The annual nomz grant provides funding for an Indigenous individual to pursue their dreams to start or grow their own business. As we grow, so does our ability to give back."
+      },
+      {
+        "type":"image_picker",
+        "id":"image-grant",
+        "label":"Grant section second image"
+      },
+      {
+        "type":"text",
+        "id":"grant-btn",
+        "label":"Grant section button text",
+        "default":"visit the grant"
+      },
+      {
+        "type":"textarea",
+        "id":"ingredient-section-head",
+        "label":"Ingredient section heading",
+        "default":"What you put in your body is <b>important</b>."
+      },
+      {
+        "type":"textarea",
+        "id":"ingredient-section-text",
+        "label":"Ingredient section text",
+        "default":"That’s why we’re committed to quality ingredients and why “delicious” is our true north star."
+      },
+	    {
         "type": "text",
         "id": "product_ingredients_heading",
         "label": "Heading",

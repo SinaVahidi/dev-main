@@ -915,7 +915,7 @@
 }
 
 .grant-btn{
-  margin-top:1.6rem;
+  margin-top:-0.4rem;
   border-radius:0.5rem;
   background:#AE9CDB;
   font-size:1.2rem;
@@ -943,6 +943,9 @@
   }
   .middle-heading, .grant-heading{
     font-size:2rem;
+  }
+  .bottom-heading,{
+    padding:0;
   }
   .middle-text, .grant-text {
     font-size:15px;
@@ -974,6 +977,12 @@
   }
   .ingredient-block{
     padding-left:20px;
+  }
+  .grant-btn{
+    margin-top: 1.6rem;
+  }
+  .grant-text-wrap, .grant-image-wrap{
+    padding: 0;
   }
 }
 
@@ -1093,7 +1102,7 @@
 
 /* from text on collections */
 
-.from-text{
+.from-text{`
   font-size: 16px;
   color: #4f4f4f;
 }
