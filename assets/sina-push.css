@@ -1090,3 +1090,23 @@
 .cart-item--rivets.cart-item--upsell .right-area .cart-item-product-title {
   color:#202020!important;
 }
+
+/* from text on collections */
+
+.from-text{
+  font-size: 16px;
+  color: #4f4f4f;
+}
+
+.grid-product.grid-product--ffc--subscription .grid-product__title-price .grid-product__price .grid-product__price-orgnl .money{
+  font-size: 16px;
+}
+
+.grid-product.grid-product--ffc .grid-product__meta .grid-product__title-price .grid-product__price .money{
+  color:#4F4F4F;
+}
+
+/* metafield tag position on product page */
+.product__photos .product__main-photos .grid-product__label{
+  right:107px;
+}

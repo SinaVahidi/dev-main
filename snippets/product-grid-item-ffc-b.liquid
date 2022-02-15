@@ -102,6 +102,9 @@
                 <span class="text">(per <span data-subscr-price-plan></span>)</span>
               </div>
               <div class="grid-product__price-orgnl hidden">
+                {% if product.price_varies %}
+                <span class="from-text">{{ 'products.general.from_text_html' | t: price: price }}</span>
+                {% endif %}
                 <span data-subscr-price-original>{{ product.first_available_variant.price | money }}</span>
               </div>
             </div>

@@ -116,7 +116,7 @@
             {% endif %}
 
             <span id="ProductPrice-{{ section_id }}"
-              class="product__price{% if current_variant.compare_at_price > current_variant.price %} on-sale{% endif %} hidden" data-product-price="{{ current_variant.price | money }}">
+              class="product__price{% if current_variant.compare_at_price > current_variant.price %} on-sale{% elsif current_variant.compare_at_price %} hidden {% endif %}" data-product-price="{{ current_variant.price | money }}">
               {{ current_variant.price | money }}
             </span>
 
