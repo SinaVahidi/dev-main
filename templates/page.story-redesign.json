@@ -1,1 +1,123 @@
-{"sections":{"main":{"type":"story-redesign-template","blocks":{"449abd21-5607-49fc-a766-cf0793d40b91":{"type":"ingredient","settings":{"title":"Ingredient","text":"<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<\/p>"}},"4c6aa60b-c0f7-42e5-b6e0-5dec8fe6dcc3":{"type":"ingredient","settings":{"title":"Ingredient","text":""}},"3f06a907-3571-413d-80e6-ab9b3c5c76be":{"type":"ingredient","settings":{"title":"Ingredient","text":""}},"0cb98a2c-7892-44f4-bda7-21610e6da64c":{"type":"ingredient","settings":{"title":"Ingredient","text":""}},"376b3202-81af-4df5-b33b-fccde4c04a60":{"type":"ingredient","settings":{"title":"Ingredient","text":""}},"a0bd29a5-a4d8-4f2b-baed-f088bea3c205":{"type":"ingredient","settings":{"title":"Ingredient","text":""}},"f5a2dc29-9eb0-47a2-adda-9ff37f084d8f":{"type":"ingredient","settings":{"title":"Ingredient","text":""}},"51a175b6-68ce-4c2e-8316-df33f42e9c64":{"type":"ingredient","settings":{"title":"Ingredient","text":""}},"7789e9d9-0f9f-4445-b60c-3642b29b69f2":{"type":"ingredient","settings":{"title":"Ingredient","text":""}}},"block_order":["449abd21-5607-49fc-a766-cf0793d40b91","4c6aa60b-c0f7-42e5-b6e0-5dec8fe6dcc3","3f06a907-3571-413d-80e6-ab9b3c5c76be","0cb98a2c-7892-44f4-bda7-21610e6da64c","376b3202-81af-4df5-b33b-fccde4c04a60","a0bd29a5-a4d8-4f2b-baed-f088bea3c205","f5a2dc29-9eb0-47a2-adda-9ff37f084d8f","51a175b6-68ce-4c2e-8316-df33f42e9c64","7789e9d9-0f9f-4445-b60c-3642b29b69f2"],"settings":{"product_ingredients_heading":"","view_more":true,"view_more_button":"View All Ingredients","view_less_button":"View less","number_of_items_per_row":3}},"ingredients":{"type":"product-ingredients","disabled":true,"settings":{"show_product_ingredients":true,"product_ingredients_heading":"","view_more":true,"view_more_button":"View All Ingredients","view_less_button":"View less","number_of_items_per_row":3}}},"order":["main","ingredients"]}
+{
+  "sections": {
+    "main": {
+      "type": "story-redesign-template",
+      "blocks": {
+        "449abd21-5607-49fc-a766-cf0793d40b91": {
+          "type": "ingredient",
+          "settings": {
+            "title": "Ingredient",
+            "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<\/p>"
+          }
+        },
+        "4c6aa60b-c0f7-42e5-b6e0-5dec8fe6dcc3": {
+          "type": "ingredient",
+          "settings": {
+            "title": "Ingredient",
+            "text": ""
+          }
+        },
+        "3f06a907-3571-413d-80e6-ab9b3c5c76be": {
+          "type": "ingredient",
+          "settings": {
+            "title": "Ingredient",
+            "text": ""
+          }
+        },
+        "0cb98a2c-7892-44f4-bda7-21610e6da64c": {
+          "type": "ingredient",
+          "settings": {
+            "title": "Ingredient",
+            "text": ""
+          }
+        },
+        "376b3202-81af-4df5-b33b-fccde4c04a60": {
+          "type": "ingredient",
+          "settings": {
+            "title": "Ingredient",
+            "text": ""
+          }
+        },
+        "a0bd29a5-a4d8-4f2b-baed-f088bea3c205": {
+          "type": "ingredient",
+          "settings": {
+            "title": "Ingredient",
+            "text": ""
+          }
+        },
+        "f5a2dc29-9eb0-47a2-adda-9ff37f084d8f": {
+          "type": "ingredient",
+          "settings": {
+            "title": "Ingredient",
+            "text": ""
+          }
+        },
+        "51a175b6-68ce-4c2e-8316-df33f42e9c64": {
+          "type": "ingredient",
+          "settings": {
+            "title": "Ingredient",
+            "text": ""
+          }
+        },
+        "7789e9d9-0f9f-4445-b60c-3642b29b69f2": {
+          "type": "ingredient",
+          "settings": {
+            "title": "Ingredient",
+            "text": ""
+          }
+        }
+      },
+      "block_order": [
+        "449abd21-5607-49fc-a766-cf0793d40b91",
+        "4c6aa60b-c0f7-42e5-b6e0-5dec8fe6dcc3",
+        "3f06a907-3571-413d-80e6-ab9b3c5c76be",
+        "0cb98a2c-7892-44f4-bda7-21610e6da64c",
+        "376b3202-81af-4df5-b33b-fccde4c04a60",
+        "a0bd29a5-a4d8-4f2b-baed-f088bea3c205",
+        "f5a2dc29-9eb0-47a2-adda-9ff37f084d8f",
+        "51a175b6-68ce-4c2e-8316-df33f42e9c64",
+        "7789e9d9-0f9f-4445-b60c-3642b29b69f2"
+      ],
+      "settings": {
+        "ss1-head": "Hi, I'm Jana!",
+        "ss1-text": "I started nomz to...",
+        "image-head": "shopify:\/\/shop_images\/857A0485.jpg",
+        "middle-head": "A Sweet Start",
+        "middle-text1": "Anytime I craved something sweet, I reached for these energy bites. They completely satisfied my desire. Eliminating refined sugars became easy with these by my side. I had more energy, more clarity, and slept better. I was much happier.",
+        "middle-text2": "I spent the summer months that year on the Moose Cree Indigenous Reserve in Northern Ontario. I tried my best to eat healthy, but food insecurity was, and still is an issue.",
+        "middle-text3": "When I came home, I started falling back into my old ways of eating candy and chocolate bars. So, I mixed up a batch of these bites, and took them to my family’s home to try.",
+        "middle-text4": "My mom loved them so much that she suggested I start selling them. My brother helped come up with the name “nomz”, and a month later, local retailers started carrying it in their stores.",
+        "image-middle1": "shopify:\/\/shop_images\/857A0456_2.jpg",
+        "image-middle2": "shopify:\/\/shop_images\/857A0398.jpg",
+        "grant-head": "Giving Back",
+        "grant-text1": "My time with the Moose Cree Indigenous community transformed me. It also fueled the company’s mission to help people eat and live better, across Canada and beyond.",
+        "grant-text2": "The annual nomz grant provides funding for an Indigenous individual to pursue their dreams to start or grow their own business. As we grow, so does our ability to give back.",
+        "image-grant": "shopify:\/\/shop_images\/almond-butter-dressing-composite-2.jpg",
+        "grant-btn": "visit the grant",
+        "ingredient-section-head": "What you put in your body is <b>important<\/b>.",
+        "ingredient-section-text": "That’s why we’re committed to quality ingredients and why “delicious” is our true north star.",
+        "product_ingredients_heading": "",
+        "view_more": true,
+        "view_more_button": "View All Ingredients",
+        "view_less_button": "View less",
+        "number_of_items_per_row": 3
+      }
+    },
+    "ingredients": {
+      "type": "product-ingredients",
+      "disabled": true,
+      "settings": {
+        "show_product_ingredients": true,
+        "product_ingredients_heading": "",
+        "view_more": true,
+        "view_more_button": "View All Ingredients",
+        "view_less_button": "View less",
+        "number_of_items_per_row": 3
+      }
+    }
+  },
+  "order": [
+    "main",
+    "ingredients"
+  ]
+}
