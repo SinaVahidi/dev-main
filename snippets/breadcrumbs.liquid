@@ -12,9 +12,9 @@
           {% if collection.handle %}
             {% capture url %}/collections/{{ collection.handle }}{% endcapture %}
             {{ collection.title | link_to: url }}
+            <span class="divider" aria-hidden="true">/</span>
           {% endif %}
         {% endif %}
-        {% comment %}<span class="divider" aria-hidden="true">/</span>{% endcomment %}
         <span class="breadcrumb--truncate">{{ product.title }}</span>
 
       {% elsif template.name == 'collection' and collection.handle %}
