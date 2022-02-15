@@ -53,6 +53,7 @@
               <h1 class="h2 product-single__title">
                 {{ product.title }}
               </h1>
+              <span class="short-description__mobile">{{ section.settings.mobile_description }}</span>
               <div class="yotpo bottomLine" style="padding-bottom: 10px"
                   data-product-id="{{ product.id }}">
                 {%- assign yotpo_offload_content = shop.metafields.yotpo.yotpo_offload_content %}

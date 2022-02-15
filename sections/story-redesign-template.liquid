@@ -1,7 +1,7 @@
 <section class="top-section">
   <div class="container main-container">
     <section class="row">
-      <div class="col-md-4 pe-2 ps-0">
+      <div class="col-md-4 pe-md-2 pe-0 ps-0 top-text-section">
         <div class="text-head">
           <div class="inside-text-head">
             <h2 class="ss1-head">Hi, I'm Jana!</h2>
@@ -9,14 +9,14 @@
           </div>
         </div>
       </div>
-      <div class="col-md-8 ps-2 pe-0">
+      <div class="col-md-8 ps-md-2 ps-0 pe-0">
         <img src="{{ '857A0235.jpg' | asset_img_url: '1200x' }}" class="img-fluid image-head">
       </div>
     </section>
   </div>
 </section>
 <section class="middle-section">
-  <div class="main-container my-5">
+  <div class="main-container my-md-4 my-5">
     <div class="row inside-content">
       <h2 class="text-center middle-heading">A Sweet Start</h2>
       <div class="inside-content-text col-md-7 text-left">
@@ -25,7 +25,7 @@
 		<p class="middle-text">When I came home, I started falling back into my old ways of eating candy and chocolate bars. So, I mixed up a batch of these bites, and took them to my family’s home to try.</p>
 		<p class="middle-text">My mom loved them so much that she suggested I start selling them. My brother helped come up with the name “nomz”, and a month later, local retailers started carrying it in their stores. </p>
       </div>
-      <div class="col-md-5">
+      <div class="col-md-5 middle-section-images">
         <img src="{{ '857A0235.jpg' | asset_img_url: '1200x' }}" class="img-fluid mb-3 image-middle">
         <img src="{{ '857A0235.jpg' | asset_img_url: '1200x' }}" class="img-fluid">
       </div>
@@ -36,13 +36,13 @@
   <div class="main-container mb-5">
     <div class="row inside-content-grant" style"height:400px;">
       <h2 class="text-center grant-heading mb-4">Giving Back</h2>
-      <div class="col-md-6">
-        <img src="{{ '857A0235.jpg' | asset_img_url: '1200x' }}" class="img-fluid ps-3">
+      <div class="col-md-6 px-md-4">
+        <img src="{{ '857A0235.jpg' | asset_img_url: '1200x' }}" class="img-fluid ps-md-3">
       </div>
       <div class="col-md-6">
-        <p class="grant-text px-3">My time with the Moose Cree Indigenous community transformed me. It also fueled the company’s mission to help people eat and live better, across Canada and beyond. </p>
-        <p class="grant-text px-3">The annual nomz grant provides funding for an Indigenous individual to pursue their dreams to start or grow their own business. As we grow, so does our ability to give back. </p>
-		<a href="https://nomz.com/pages/grant" class="btn ms-3 grant-btn" type="button">visit the grant</a>
+        <p class="grant-text px-md-3">My time with the Moose Cree Indigenous community transformed me. It also fueled the company’s mission to help people eat and live better, across Canada and beyond. </p>
+        <p class="grant-text px-md-3">The annual nomz grant provides funding for an Indigenous individual to pursue their dreams to start or grow their own business. As we grow, so does our ability to give back. </p>
+		<a href="https://nomz.com/pages/grant" class="btn ms-md-3 grant-btn" type="button">visit the grant</a>
       </div>
     </div>
   </div>
@@ -51,7 +51,7 @@
   <div class="main-container mb-5">
     <div class="row inside-content">
       <h2 class="text-center bottom-heading">What you put in your body is <b>important</b>.</h2>
-      <p class="middle-text px-3 text-center mb-0">That’s why we’re committed to quality ingredients and why “delicious” is our true north star. </p>
+      <p class="middle-text px-md-3 text-center mb-0">That’s why we’re committed to quality ingredients and why “delicious” is our true north star. </p>
       {% assign ss = section.settings %}
   <div class="index-section product-ingredients-section">
       <div class="main-container-ingredients">
@@ -76,7 +76,7 @@
         <div class="product-ingredients grid grid--uniform flex f-wrap f-j-center" {% if ss.view_more %}data-toggle-group{% endif %}>
             {% for block in section.blocks %}
               {% assign bs = block.settings %}
-                <div class="grid__item ingredient-item {{ grid_item_width }}">
+                <div class="grid__item ingredient-item ingredient-block {{ grid_item_width }}">
 
                   <div class="image-area">
                     {% if bs.image != blank %}
@@ -93,7 +93,7 @@
                     {% endif %}
                   </div>
 
-                  <div class="content-area">
+                  <div class="content-area ingredient-content-block">
                     <h3>{{ bs.title }}</h3>
                     <div class="rte">
                       {{ bs.text }}

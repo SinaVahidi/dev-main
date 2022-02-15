@@ -915,7 +915,7 @@
 }
 
 .grant-btn{
-  margin-top:0.6rem;
+  margin-top:1.6rem;
   border-radius:0.5rem;
   background:#AE9CDB;
   font-size:1.2rem;
@@ -932,6 +932,49 @@
 
 .inside-content .product-ingredients-section .product-ingredients .ingredient-item .image-area{
   background-color:#73787c8a;
+}
+
+@media screen and (max-width:590px){
+  .main-container{
+    max-width:90%;
+  }
+  .inside-content-text{
+    padding:0;
+  }
+  .middle-heading, .grant-heading{
+    font-size:2rem;
+  }
+  .middle-text, .grant-text {
+    font-size:15px;
+  }
+  .grant-text{
+    margin-top:15px;
+  }
+  .ss1-head {
+	margin-bottom:40px;
+  }
+  .ss1-text{
+    font-size: 21px;
+    margin-bottom:0;
+  }
+  .top-text-section{
+    margin-top:15px;
+    order:1;
+  }
+  .inside-content, .inside-content-grant{
+    padding-right:1rem;
+    padding-left:1rem;
+  }
+  .text-head {
+	padding:8px;
+  }
+  .middle-section-images{
+    padding-right:0;
+    padding-left:0;
+  }
+  .ingredient-block{
+    padding-left:20px;
+  }
 }
 
 /* Yotpo Testimonials button color */
@@ -956,4 +999,68 @@
 .header-section--v2 .megamenu-init:before {
   height:150px;
   top:-130px;
+}
+
+/* Short mobile description */
+
+.short-description__mobile{
+  display:none;
+}
+
+@media screen and (max-width: 590px){
+  .short-description__mobile{
+    display:block;
+    font-size: 0.8rem;
+  }
+}
+
+/* Embedded register login page */
+
+.embed-register_section{
+  margin:0 0 50px;
+  padding: 0 80px;
+}
+
+.embed-register_wrap{
+  background:#6CACE4;
+}
+
+.embed-register_head{
+}
+
+.embed-register_text{
+  font-size:1.5rem;
+  line-height:1.80;
+  margin-left:20px;
+}
+
+.embed-register_left{
+  padding:50px 100px;
+}
+.embed-register_right{
+  padding:50px 100px;
+}
+
+.embed-form_input{
+  border:none;
+  background:white;
+  margin:10px 0;
+}
+.embed-form_input::placeholder{
+  color:#343333;
+}
+.embed-form_label{
+  margin-top: 10px;
+}
+
+.embed-form_btn{
+  background: #4f4f4f;
+  margin-top: 15px;
+}
+
+.embed-form_btn:hover{
+  background: #4f4f4f;
+}
+.embed-register_right-inside{
+  width: 75%;
 }

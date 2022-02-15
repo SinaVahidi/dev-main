@@ -38,7 +38,7 @@
           <p>
             <input type="submit" class="btn btn--full btn--no-animate" value="{{ 'customer.login.sign_in' | t }}">
           </p>
-          <p>{{ 'layout.customer.create_account' | t | customer_register_link }}</p>
+          {% comment %}<p>{{ 'layout.customer.create_account' | t | customer_register_link }}</p>{% endcomment %}
 
         {% endform %}
       </div>
@@ -84,7 +84,41 @@
     </div>
   </div>
 </div>
+<section class="embed-register_section">
+  <div class="row embed-register_wrap">
+    <div class="col-md-6 embed-register_left">
+      <h2 class="embed-register_head">Why register?</h2>
+      <ul class="embed-register_text">
+        <li>Easier Check Out</li>
+        <li>Track Your Orders</li>
+        <li>View Your Order History</li>
+        <li>Save Shipping Addresses</li>
+        <li>Manage Your Subscriptions</li>
+      </ul>
+    </div>
+    <div class="col-md-6 embed-register_right">
+      <div class="embed-register_right-inside">
+        {% form 'create_customer' %}
 
+          {{ form.errors | default_errors }}
+        <h2 class="embed-register_head">Create account</h2>
+          <input type="text" name="customer[first_name]" id="FirstName" class="input-full embed-form_input" {% if form.first_name %}value="{{ form.first_name }}"{% endif %} autocapitalize="words" autofocus placeholder="First name">
+
+          <input type="text" name="customer[last_name]" id="LastName" class="input-full embed-form_input" {% if form.last_name %}value="{{ form.last_name }}"{% endif %} autocapitalize="words" placeholder="Last name">
+
+          <input type="email" name="customer[email]" id="Email" class="input-full embed-form_input{% if form.errors contains 'email' %} error{% endif %}" {% if form.email %} value="{{ form.email }}"{% endif %} autocorrect="off" autocapitalize="off" placeholder="Email">
+
+          <input type="password" name="customer[password]" id="CreatePassword" class="input-full embed-form_input{% if form.errors contains 'password' %} error{% endif %}" placeholder="Password">
+
+          <p>
+            <input type="submit" value="{{ 'customer.register.submit' | t }}" class="btn btn--full btn--no-animate embed-form_btn">
+          </p>
+
+        {% endform %}
+      </div>
+    </div>
+  </div>
+</section>
 
 {% schema %}
   {
