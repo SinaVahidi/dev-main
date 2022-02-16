@@ -1125,3 +1125,20 @@
 .product__video {
  height:69%;
 }
+
+.grid-product .grid-product__image-mask .grid-product__secondary-image video{
+  width:120%;
+}
+
+/* product thumbnails mobile */
+@media screen and (max-width:590px){
+  .product__thumb img{
+    height:4.7rem;
+  }
+}
+
+@media screen and (max-width:590px){
+  .display-none-mobile{
+    display:none;
+  }
+}

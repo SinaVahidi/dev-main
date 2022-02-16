@@ -105,6 +105,13 @@
                 {% if product.price_varies %}
                 <span class="from-text">{{ 'products.general.from_text_html' | t: price: price }}</span>
                 {% endif %}
+                {% if product.compare_at_price_max > product.price %}
+                  <span class="product__price-wrap-{{ section_id }}{% if hide_sale_price %} hide{% endif %}">
+                    <span id="ComparePrice-{{ section_id }}" class="product__price product__price--compare">
+                      {{ product.compare_at_price_max | money }}
+                    </span>
+                  </span> 
+                {% endif %}
                 <span data-subscr-price-original>{{ product.first_available_variant.price | money }}</span>
               </div>
             </div>
