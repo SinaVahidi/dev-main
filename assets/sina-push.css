@@ -755,8 +755,8 @@
     padding: 0px 95px;
   }
   .product__main-photos .starting-slide img, .product__main-photos .slick-initialized img {
-    width: 430px;
-    max-height: 530px;
+    max-width: 430px;
+    max-height: 650px;
   }
   .product__main-photos{
     height:535px;
@@ -994,7 +994,8 @@
 
 /* Product Thumbnail size organization */
 .product__thumb img{
-  height: 5.8125rem;
+  height: 5.8rem;
+  width:4.6rem;
 }
 
 /* satisfaction guarantee section */
@@ -1099,6 +1100,11 @@
 .cart-item--rivets.cart-item--upsell .right-area .cart-item-product-title {
   color:#202020!important;
 }
+  
+/* metafield tag position on product page */
+.product__photos .product__main-photos .grid-product__label{
+  right:107px;
+}
 
 /* from text on collections */
 
@@ -1115,7 +1121,7 @@
   color:#4F4F4F;
 }
 
-/* metafield tag position on product page */
-.product__photos .product__main-photos .grid-product__label{
-  right:107px;
+/* product video */
+.product__video {
+ height:69%;
 }
