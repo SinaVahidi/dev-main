@@ -10460,7 +10460,7 @@ var BoldGridItem = /*#__PURE__*/function (_Component) {
 
           that._buildBoldItemFunction();
         }
-      }, 1500);
+      }, 150);
     }
   }, {
     key: "_buildBoldItemFunction",

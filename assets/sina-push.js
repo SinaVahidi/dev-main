@@ -30,20 +30,22 @@ $(function() {
 	});
 
 	$(".js-drawer-open-nav").click(function() {
-      $(".parent-trigger-shop").removeClass("is-open");
-      $(".parent-trigger-about").removeClass("is-open");
-      $(".collapsible-content--all").removeClass("is-open");
-      $("#Sublinklist-collections-all1-collections-all1").hide();
-      $("#Sublinklist-collections-all1-collections-flavours2").hide();
-      $(".shop-sublist").hide();
+      $(".parent-trigger-shop").addClass("is-open");
       $(".about-sublist").hide();
-      $(".mobile-nav__grandchildlist").hide();
-    });
-
-	$(".parent-trigger-shop").click(function() {
       $(".shop-sublist").show();
+      $(".parent-trigger-about").removeClass("is-open");
+      $("#Linklist-collections-all1").addClass("is-open");
+      $("#Linklist-collections-all1").css("height", "auto");
       $(".child-trigger-shop").removeClass("is-open");
       $(".child-trigger-fav").removeClass("is-open");
+      $(".mobile-nav__grandchildlist").hide();
+      $(".grandchildlist-shop").hide();
+      $(".grandchildlist-fav").hide();
+      $("#Sublinklist-collections-all1-collections-all1").hide();
+      $("#Sublinklist-collections-all1-collections-all1").removeClass("is-open");
+      $("#Sublinklist-collections-all1-collections-flavours2").hide();
+      $("#Sublinklist-collections-all1-collections-flavours2").removeClass("is-open");
+
     });
 
     $(".parent-trigger-about").click(function() {
