@@ -1033,15 +1033,18 @@
 
 .embed-register_wrap{
   background:#6CACE4;
+  background: linear-gradient(270deg, rgba(108,172,228,1) 4%, rgba(174,156,219,1) 85%);
 }
 
 .embed-register_head{
+  color: white;
 }
 
 .embed-register_text{
   font-size:1.5rem;
   line-height:1.80;
   margin-left:20px;
+  color: white;
 }
 
 .embed-register_left{
@@ -1061,6 +1064,7 @@
 }
 .embed-form_label{
   margin-top: 10px;
+  color: white;
 }
 
 .embed-form_btn{
@@ -1140,5 +1144,30 @@
 @media screen and (max-width:590px){
   .display-none-mobile{
     display:none;
+  }
+}
+
+/* non-updated phones price in grid */
+@media screen and (max-width:590px){
+  .grid-product__price-orgnl{
+    margin-top:15px;
+  }
+}
+
+/* mobile content padding */
+
+
+@media only screen and (max-width: 589px){
+  .product-section .page-content {
+    padding-top: 0px;
+  }
+  .main-content {
+    padding-top: 0px!important;
+  }
+  .page-content, .shopify-policy__container{
+    padding-top:30px;
+  }
+  .product-section .page-content{
+    padding-top:15px;
   }
 }
