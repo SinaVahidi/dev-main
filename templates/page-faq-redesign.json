@@ -1,0 +1,10 @@
+{
+	"sections": {
+    "main": {
+      "type": "faq-redesign-template"
+    }
+  },
+  "order": [
+		"main"
+	]
+}
