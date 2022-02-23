@@ -7,8 +7,7 @@
         {% assign numRightBlocks = numRightBlocks | plus: 1 %} 
     {% endif %}
 {% endfor %}
-{{ numLeftBlocks }}
-{{ numRightBlocks }}
+
 {%- if section.settings.page_title_enable %}
 {% include 'breadcrumbs' %}
 {% endif %}
