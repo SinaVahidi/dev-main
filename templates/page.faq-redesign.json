@@ -106,7 +106,7 @@
           "type": "col_right",
           "settings": {
             "col_right_question": "I have a store and would like to carry your product. Do you sell wholesale?",
-            "col_right_answer": "Thank you for your interest in carrying our products! We would be delighted to work with you as a wholesale partner. Please create an account on our wholesale portal at \n<a href=\"https:\/\/wholesale.nomz.com\/login\" style=\"text-decoration: underline;\">wholesale.nomz.com.<\/a>"
+            "col_right_answer": "Thank you for your interest in carrying our products! We would be delighted to work with you as a wholesale partner. Please create an account on our wholesale portal at \n<a href=\"https:\/\/wholesale.nomz.com\/login\" style=\"text-decoration: underline; text-underline-offset: 0.2em;\">wholesale.nomz.com.<\/a>"
           }
         }
       },
