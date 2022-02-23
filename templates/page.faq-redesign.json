@@ -7,28 +7,28 @@
           "type": "col_left",
           "settings": {
             "col_left_question": "I can't log into my account?",
-            "col_left_answer": "You are not required to create an account when you make a subscription order. However, in order to manage your subscription preferences, you need to create an account with the same email provided during your order. <a href=\"\/account\/register\" style=\"text-decoration: underline;\">Click here<\/a> if you haven’t created an account yet. If you already have an account, log in below"
+            "col_left_answer": "You are not required to create an account when you make a subscription order. However, in order to manage your subscription preferences, you need to create an account with the same email provided during your order. <a href=\"\/account\/register\" style=\"text-decoration: underline; text-underline-offset: 0.2em;\">Click here<\/a> if you haven’t created an account yet. If you already have an account, log in below"
           }
         },
         "7363a40e-1d5b-4888-9ce5-efae2d27a422": {
           "type": "col_left",
           "settings": {
             "col_left_question": "Can I skip my next order?",
-            "col_left_answer": "Yes, <a href=\"\/account\/login\" style=\"text-decoration: underline; font-weight: 700;\">log in<\/a> to your account and click 'Manage my subscription' on the left hand side of your desktop or scroll down on your mobile. Click View details. Click Manage upcoming orders. Click Skip order for any upcoming orders you wouldn't like to receive."
+            "col_left_answer": "Yes, <a href=\"\/account\/login\" style=\"text-decoration: underline; text-underline-offset: 0.2em; font-weight: 700;\">log in<\/a> to your account and click 'Manage my subscription' on the left hand side of your desktop or scroll down on your mobile. Click View details. Click Manage upcoming orders. Click Skip order for any upcoming orders you wouldn't like to receive."
           }
         },
         "c34ec5f8-4e17-4f73-9e64-4565c697aa0b": {
           "type": "col_left",
           "settings": {
             "col_left_question": "Can I change the products in my subscription?",
-            "col_left_answer": "Yes, <a href=\"\/account\/login\" style=\"text-decoration: underline; font-weight: 700;\">log in<\/a> to your account and click 'Manage my subscription' on the left hand side of your desktop or scroll down on your mobile. Click View details. Click Products in your subscription. Click Swap product and select which flavour you would like to receive instead."
+            "col_left_answer": "Yes, <a href=\"\/account\/login\" style=\"text-decoration: underline; text-underline-offset: 0.2em; font-weight: 700;\">log in<\/a> to your account and click 'Manage my subscription' on the left hand side of your desktop or scroll down on your mobile. Click View details. Click Products in your subscription. Click Swap product and select which flavour you would like to receive instead."
           }
         },
         "01120b05-049c-44bd-a085-47b10546bbca": {
           "type": "col_left",
           "settings": {
             "col_left_question": "Can I cancel my subscription?",
-            "col_left_answer": "Yes, <a href=\"\/account\/login\" style=\"text-decoration: underline; font-weight: 700;\">log in<\/a> to your account and click 'Manage my subscription' on the left hand side of your desktop or scroll down on your mobile. Click View details. Click Cancel Subscription."
+            "col_left_answer": "Yes, <a href=\"\/account\/login\" style=\"text-decoration: underline; text-underline-offset: 0.2em; font-weight: 700;\">log in<\/a> to your account and click 'Manage my subscription' on the left hand side of your desktop or scroll down on your mobile. Click View details. Click Cancel Subscription."
           }
         },
         "63dadf34-d367-431f-8fbc-54ed299bb10a": {
