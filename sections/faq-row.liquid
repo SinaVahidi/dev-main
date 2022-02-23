@@ -9,8 +9,8 @@
 {% endfor %}
 {% assign validLeft = numLeftBlocks | at_least: 3 %}
 {% assign validRight = numRightBlocks | at_least: 3 %}
-{{ numLeftBlocks }}
-{{ numRightBlocks }}
+{{ validLeft }}
+{{ validRight }}
 {%- if section.settings.page_title_enable %}
 {% include 'breadcrumbs' %}
 {% endif %}
