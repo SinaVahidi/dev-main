@@ -115,37 +115,13 @@
             "col_right_question": "Do you have a distributer?",
             "col_right_answer": "Yes, UNFI is our national distribution partner."
           }
-        },
-        "8a6392b3-f2dc-4263-8f40-e505080d1602": {
-          "type": "col_left",
-          "settings": {
-            "col_left_question": "xgsdfsdvsdv",
-            "col_left_answer": "sdvsdvsdvsdvsd"
-          }
-        },
-        "85ec3edf-32c4-40c6-b47e-272e46bb8307": {
-          "type": "col_left",
-          "settings": {
-            "col_left_question": "sdsdvdsvsdv",
-            "col_left_answer": "xdvsdvsdvsdv"
-          }
-        },
-        "efff3592-5488-451b-ac93-50b82aed554b": {
-          "type": "col_left",
-          "settings": {
-            "col_left_question": "dfvsdvsdvsd",
-            "col_left_answer": "sdvsdvsdvsdv"
-          }
         }
       },
       "block_order": [
         "ee1e5ff1-47fc-4670-8dfc-7cc266e5dfde",
         "00701692-3c13-4147-ba92-d69f1934d720",
         "765ba8f6-2879-47c6-a226-9541cc422201",
-        "f8c07962-77ea-4aee-aef1-4e4f08c41454",
-        "8a6392b3-f2dc-4263-8f40-e505080d1602",
-        "85ec3edf-32c4-40c6-b47e-272e46bb8307",
-        "efff3592-5488-451b-ac93-50b82aed554b"
+        "f8c07962-77ea-4aee-aef1-4e4f08c41454"
       ],
       "settings": {
         "page_title_enable": false,
