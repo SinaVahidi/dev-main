@@ -1,12 +1,172 @@
+<div class="row">
+    <div class="col-md-6 accordion-column-faq">
+        <div class="accordion-item-category-faq">
+            <h4 class="category-header-faq">{{ section.settings.col_left_title }}</h4>
+        </div>
+        {%- for block in section.blocks -%}
+        {% case block.type %}
+            {% when 'col-left' %}
+                <div class="accordion-item-faq">
+                    <div class="accordion-item-inner-faq">
+                        <header class="accordion-item-header-faq">
+                            <button class="accordion-item-button-faq">
+                                <ion-icon name="add-outline"></ion-icon>
+                                <ion-icon name="remove-outline"></ion-icon>
+                            </button>
+                            <h3 class="accordion-item-question-faq">
+                                {{ block.settings.col_left_question }}
+                            </h3>
+                        </header>
+                        <div class="accordion-item-body-faq">
+                            <p class="accordion-item-description-faq">
+                                {{ block.settings.col_left_answer}}
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            {% when 'col-right' %}
+                <div class="accordion-item-category-faq">
+                    <h4 class="category-header-faq">{{ section.settings.col_right_title }}</h4>
+                </div>
+                <div class="accordion-item-faq">
+                    <div class="accordion-item-inner-faq">
+                        <header class="accordion-item-header-faq">
+                            <button class="accordion-item-button-faq">
+                                <ion-icon name="add-outline"></ion-icon>
+                                <ion-icon name="remove-outline"></ion-icon>
+                            </button>
+                            <h3 class="accordion-item-question-faq">
+                                {{ block.settings.col_right_question }}
+                            </h3>
+                        </header>
+                        <div class="accordion-item-body-faq">
+                            <p class="accordion-item-description-faq">
+                                {{ block.settings.col_right_answer}}
+                            </p>
+                        </div>
+                    </div>
+                </div>
+					{% endcase %}
+					{% endfor %}
+					<div class="btn-wrap-faq">
+						<p class="expand-btn">View more</p>
+						<p class="close-btn">View less</p>
+					</div>
+      </div>
+			<div class="col-md-6 accordion-column-faq">
+        <div class="accordion-item-category-faq">
+            <h4 class="category-header-faq">{{ section.settings.col_left_title }}</h4>
+        </div>
+        {%- for block in section.blocks -%}
+        {% case block.type %}
+            {% when 'col-left' %}
+                <div class="accordion-item-faq">
+                    <div class="accordion-item-inner-faq">
+                        <header class="accordion-item-header-faq">
+                            <button class="accordion-item-button-faq">
+                                <ion-icon name="add-outline"></ion-icon>
+                                <ion-icon name="remove-outline"></ion-icon>
+                            </button>
+                            <h3 class="accordion-item-question-faq">
+                                {{ block.settings.col_left_question }}
+                            </h3>
+                        </header>
+                        <div class="accordion-item-body-faq">
+                            <p class="accordion-item-description-faq">
+                                {{ block.settings.col_left_answer}}
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            {% when 'col-right' %}
+                <div class="accordion-item-category-faq">
+                    <h4 class="category-header-faq">{{ section.settings.col_right_title }}</h4>
+                </div>
+                <div class="accordion-item-faq">
+                    <div class="accordion-item-inner-faq">
+                        <header class="accordion-item-header-faq">
+                            <button class="accordion-item-button-faq">
+                                <ion-icon name="add-outline"></ion-icon>
+                                <ion-icon name="remove-outline"></ion-icon>
+                            </button>
+                            <h3 class="accordion-item-question-faq">
+                                {{ block.settings.col_right_question }}
+                            </h3>
+                        </header>
+                        <div class="accordion-item-body-faq">
+                            <p class="accordion-item-description-faq">
+                                {{ block.settings.col_right_answer}}
+                            </p>
+                        </div>
+                    </div>
+                </div>
+					{% endcase %}
+					{% endfor %}
+					<div class="btn-wrap-faq">
+						<p class="expand-btn">View more</p>
+						<p class="close-btn">View less</p>
+					</div>
+      </div>
+</div>
+
 {% schema %}
   {
-    "name": "Section name",
-    "settings": []
+    "name": "Faq row",
+    "settings": [
+      {
+        "type": "checkbox",
+        "id": "page_title_enable",
+        "label": "Show page title"
+      },
+      {
+        "type": "checkbox",
+        "id": "page_content_enable",
+        "label": "Show page content"
+      },
+      {
+        "type": "text",
+        "id": "col_left_title",
+        "label": "Category title for left column"
+      },
+      {
+        "type": "text",
+        "id": "col_right_title",
+        "label": "Category title for right column"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "col_left",
+        "name": "Left Column",
+        "settings": [
+          {
+            "type": "textarea",
+            "id": "col_left_question",
+            "label": "Question for left column"
+          },
+          {
+            "type": "textarea",
+            "id": "col_left_answer",
+            "label": "Answer for left column question"
+          }
+        ]
+      },
+      {
+        "type": "col-right",
+        "name": "Right Column",
+        "settings": [
+          {
+            "type": "textarea",
+            "id": "col_right_question",
+            "label": "Question for right column"
+          },
+          {
+            "type": "textarea",
+            "id": "col_right_answer",
+            "label": "Answer for right column question"
+          }
+        ]
+      }
+    ]
   }
 {% endschema %}
-
-{% stylesheet %}
-{% endstylesheet %}
-
-{% javascript %}
-{% endjavascript %}
