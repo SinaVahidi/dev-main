@@ -108,12 +108,20 @@
             "col_right_question": "I have a store and would like to carry your product. Do you sell wholesale?",
             "col_right_answer": "Thank you for your interest in carrying our products! We would be delighted to work with you as a wholesale partner. Please create an account on our wholesale portal at \n<a href=\"https:\/\/wholesale.nomz.com\/login\" style=\"text-decoration: underline; text-underline-offset: 0.2em;\">wholesale.nomz.com.<\/a>"
           }
+        },
+        "f8c07962-77ea-4aee-aef1-4e4f08c41454": {
+          "type": "col_right",
+          "settings": {
+            "col_right_question": "Do you have a distributer?",
+            "col_right_answer": "Yes, UNFI is our national distribution partner."
+          }
         }
       },
       "block_order": [
         "ee1e5ff1-47fc-4670-8dfc-7cc266e5dfde",
         "00701692-3c13-4147-ba92-d69f1934d720",
-        "765ba8f6-2879-47c6-a226-9541cc422201"
+        "765ba8f6-2879-47c6-a226-9541cc422201",
+        "f8c07962-77ea-4aee-aef1-4e4f08c41454"
       ],
       "settings": {
         "page_title_enable": false,
