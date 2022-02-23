@@ -35,7 +35,7 @@
                             </div>
                         {% endif %}
                     {% endfor %}
-                  	{% assign section.blocks | size = numBlocks %}
+                  	{% assign numBlocks = section.blocks | size %}
                   	<p>{{ numBlocks }}</p>
                   	{% if numBlocks > 6 %}
                     <div class="btn-wrap-faq">
