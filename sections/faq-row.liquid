@@ -2,9 +2,9 @@
 {% assign numRightBlocks = 0 %}
 {% for block in section.blocks %}
     {% if block.type == 'col_left' %}
-        {{ numLeftBlocks | plus: 1 }}
+        {% assign numLeftBlocks = numLeftBlocks | plus: 1 %}
     {% else %}
-        {{ numRightBlocks | plus: 1  }}
+        {% assign numRightBlocks = numRightBlocks | plus: 1 %} 
     {% endif %}
 {% endfor %}
 
