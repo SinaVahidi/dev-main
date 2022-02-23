@@ -2,10 +2,10 @@
 	"sections": {
     "top": {
       "type": "faq-top-wrapper"
-    }
+    },
     "main": {
       "type": "faq-row"
-    }
+    },
     "bottom": {
       "type": "faq-bottom-wrapper"
     }
