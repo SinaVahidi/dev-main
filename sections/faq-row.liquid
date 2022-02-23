@@ -7,10 +7,8 @@
         {% assign numRightBlocks = numRightBlocks | plus: 1 %} 
     {% endif %}
 {% endfor %}
-{% assign validLeft = numLeftBlocks | at_least: 3 %}
-{% assign validRight = numRightBlocks | at_least: 3 %}
-{{ validLeft }}
-{{ validRight }}
+{{ numLeftBlocks }}
+{{ numRightBlocks }}
 {%- if section.settings.page_title_enable %}
 {% include 'breadcrumbs' %}
 {% endif %}
@@ -50,7 +48,7 @@
                     {% endfor %}
                     
                     
-                  	{% if validLeft %}
+                  	{% if numLeftBlocks > 3 %}
                     <div class="btn-wrap-faq">
                         <p class="expand-btn">View more</p>
                         <p class="close-btn">View less</p>
@@ -83,7 +81,7 @@
                             </div>
                         {% endif %}
                     {% endfor %}
-                  	{% if validRight %}
+                  	{% if numRightBlocks > 3 %}
                     <div class="btn-wrap-faq">
                         <p class="expand-btn">View more</p>
                         <p class="close-btn">View less</p>
