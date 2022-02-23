@@ -1186,10 +1186,11 @@
 .accordion-container_no-title {
   margin: 0;
   padding: 5rem;
+  padding-top: 0;
   box-sizing: border-box;
   font-size: 62.5%;
   background-color: #eef3fd;
-  margin-top: -3.1rem;
+  margin-top: -5rem;
 }
 .accordion-faq{
   background-color: white;
@@ -1264,6 +1265,7 @@ ion-icon[name="add-outline"] {
 
 .accordion-column-faq{
   max-height: 21rem;
+  margin-top: 2rem;
   overflow: hidden;
   transition: max-height 0.5s;
 }
