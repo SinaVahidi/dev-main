@@ -1,12 +1,30 @@
+{% include 'breadcrumbs' %}
+
+<section class="accordion-container-faq">
+    <div class="accordion-faq">
+        <div class="accordion-header-faq">
+            <h3 class="accordion-title-faq">{{ section.settings.faq_tilte }}</h3>
+        </div>
+      
 {% schema %}
   {
-    "name": "Section name",
-    "settings": []
+    "name": "Page.faq page",
+    "settings": [
+      {
+        "type": "checkbox",
+        "id": "page_title_enable",
+        "label": "Show page title"
+      },
+      {
+        "type": "checkbox",
+        "id": "page_content_enable",
+        "label": "Show page content"
+      },
+      {
+        "type": "text",
+        "id": "faq_title",
+        "label": "Page Title"
+      }
+    ]
   }
 {% endschema %}
-
-{% stylesheet %}
-{% endstylesheet %}
-
-{% javascript %}
-{% endjavascript %}
