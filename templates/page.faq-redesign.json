@@ -102,27 +102,6 @@
             "col_left_answer": "Yes, we ship worldwide via UPS. All orders ship out same day or next day from Toronto, Ontario in Canada. Depending on where you're located, you'll receive your parcel within days of placing the order. UPS tracking numbers are automatically emailed to you upon shipment, so you are able to check the progress and ETA of your orders. Send us a note for any questions about your shipment!"
           }
         },
-        "18b16e3a-c0da-42a6-8ae2-2e9e940b4327": {
-          "type": "col_left",
-          "settings": {
-            "col_left_question": "sadasdasd",
-            "col_left_answer": "dsfsdfsdfsdf"
-          }
-        },
-        "f48eaaf9-b338-4520-bbee-f3d524e56dce": {
-          "type": "col_left",
-          "settings": {
-            "col_left_question": "sdfsdfsdfsdf",
-            "col_left_answer": "sdfsdfsdfsdfsdf"
-          }
-        },
-        "bbb74297-158d-4b93-bed8-34a3da5f1af9": {
-          "type": "col_left",
-          "settings": {
-            "col_left_question": "sadasdasda",
-            "col_left_answer": "asdasdasdasd"
-          }
-        },
         "765ba8f6-2879-47c6-a226-9541cc422201": {
           "type": "col_right",
           "settings": {
@@ -141,9 +120,6 @@
       "block_order": [
         "ee1e5ff1-47fc-4670-8dfc-7cc266e5dfde",
         "00701692-3c13-4147-ba92-d69f1934d720",
-        "18b16e3a-c0da-42a6-8ae2-2e9e940b4327",
-        "f48eaaf9-b338-4520-bbee-f3d524e56dce",
-        "bbb74297-158d-4b93-bed8-34a3da5f1af9",
         "765ba8f6-2879-47c6-a226-9541cc422201",
         "f8c07962-77ea-4aee-aef1-4e4f08c41454"
       ],
