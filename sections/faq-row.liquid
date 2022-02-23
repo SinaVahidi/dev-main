@@ -1,3 +1,15 @@
+{% assign numLeftBlocks = 0 %}
+{% assign numRightBlocks = 0 %}
+{% for block in section.blocks %}
+    {% if block.type == 'col_left' %}
+        {% numLeftBlocks += 1 %}
+    {% else %}
+        {% numRightBlocks += 1 %}
+    {% endif %}
+{% endfor %}
+
+{{ numLeftBlocks }}
+{{ numRightBlocks }}
 {%- if section.settings.page_title_enable %}
 {% include 'breadcrumbs' %}
 {% endif %}
@@ -35,8 +47,9 @@
                             </div>
                         {% endif %}
                     {% endfor %}
-                  	{% assign numBlocks = section.blocks | size %}
-                  	{% if numBlocks > 6 %}
+                    
+                    
+                  	{% if numLeftBlocks > 3 %}
                     <div class="btn-wrap-faq">
                         <p class="expand-btn">View more</p>
                         <p class="close-btn">View less</p>
@@ -69,7 +82,7 @@
                             </div>
                         {% endif %}
                     {% endfor %}
-                  	{% if numBlocks > 6 %}
+                  	{% if numRightBlocks > 3 %}
                     <div class="btn-wrap-faq">
                         <p class="expand-btn">View more</p>
                         <p class="close-btn">View less</p>
