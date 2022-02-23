@@ -79,14 +79,52 @@
         "6628af77-b24e-4d5c-9c4e-0605c01458ab"
       ],
       "settings": {
-        "page_title_enable": false,
+        "page_title_enable": true,
         "page_content_enable": false,
         "col_left_title": "Subscriptions",
         "col_right_title": "Product"
       }
+    },
+    "164562804122ac4670": {
+      "type": "faq-row",
+      "blocks": {
+        "ee1e5ff1-47fc-4670-8dfc-7cc266e5dfde": {
+          "type": "col_left",
+          "settings": {
+            "col_left_question": "Where are you based out of?",
+            "col_left_answer": "We are a proudly Canadian company based in Toronto, Ontario."
+          }
+        },
+        "00701692-3c13-4147-ba92-d69f1934d720": {
+          "type": "col_left",
+          "settings": {
+            "col_left_question": "Do you ship to countries outside of Canada?",
+            "col_left_answer": "Yes, we ship worldwide via UPS. All orders ship out same day or next day from Toronto, Ontario in Canada. Depending on where you're located, you'll receive your parcel within days of placing the order. UPS tracking numbers are automatically emailed to you upon shipment, so you are able to check the progress and ETA of your orders. Send us a note for any questions about your shipment!"
+          }
+        },
+        "765ba8f6-2879-47c6-a226-9541cc422201": {
+          "type": "col_right",
+          "settings": {
+            "col_right_question": "I have a store and would like to carry your product. Do you sell wholesale?",
+            "col_right_answer": "Thank you for your interest in carrying our products! We would be delighted to work with you as a wholesale partner. Please create an account on our wholesale portal at wholesale.nomz.com. If need any help, please reach out to us directly. We would be happy to answer any questions and guide you through the process!"
+          }
+        }
+      },
+      "block_order": [
+        "ee1e5ff1-47fc-4670-8dfc-7cc266e5dfde",
+        "00701692-3c13-4147-ba92-d69f1934d720",
+        "765ba8f6-2879-47c6-a226-9541cc422201"
+      ],
+      "settings": {
+        "page_title_enable": false,
+        "page_content_enable": false,
+        "col_left_title": "Company",
+        "col_right_title": "Wholesale"
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "164562804122ac4670"
   ]
 }
