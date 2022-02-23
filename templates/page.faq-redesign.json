@@ -14,21 +14,21 @@
           "type": "col_left",
           "settings": {
             "col_left_question": "Can I skip my next order?",
-            "col_left_answer": "Yes, log in to your account and click 'Manage my subscription' on the left hand side of your desktop or scroll down on your mobile. Click View details. Click Manage upcoming orders. Click Skip order for any upcoming orders you wouldn't like to receive."
+            "col_left_answer": "Yes, <a href=\"\/account\/login\" style=\"text-decoration: underline; font-weight: 700;\">log in<\/a> to your account and click 'Manage my subscription' on the left hand side of your desktop or scroll down on your mobile. Click View details. Click Manage upcoming orders. Click Skip order for any upcoming orders you wouldn't like to receive."
           }
         },
         "c34ec5f8-4e17-4f73-9e64-4565c697aa0b": {
           "type": "col_left",
           "settings": {
             "col_left_question": "Can I change the products in my subscription?",
-            "col_left_answer": "Yes, log in to your account and click 'Manage my subscription' on the left hand side of your desktop or scroll down on your mobile. Click View details. Click Products in your subscription. Click Swap product and select which flavour you would like to receive instead."
+            "col_left_answer": "Yes, <a href=\"\/account\/login\" style=\"text-decoration: underline; font-weight: 700;\">log in<\/a> to your account and click 'Manage my subscription' on the left hand side of your desktop or scroll down on your mobile. Click View details. Click Products in your subscription. Click Swap product and select which flavour you would like to receive instead."
           }
         },
         "01120b05-049c-44bd-a085-47b10546bbca": {
           "type": "col_left",
           "settings": {
             "col_left_question": "Can I cancel my subscription?",
-            "col_left_answer": "Yes, log in to your account and click 'Manage my subscription' on the left hand side of your desktop or scroll down on your mobile. Click View details. Click Cancel Subscription."
+            "col_left_answer": "Yes, <a href=\"\/account\/login\" style=\"text-decoration: underline; font-weight: 700;\">log in<\/a> to your account and click 'Manage my subscription' on the left hand side of your desktop or scroll down on your mobile. Click View details. Click Cancel Subscription."
           }
         },
         "63dadf34-d367-431f-8fbc-54ed299bb10a": {
@@ -49,7 +49,7 @@
           "type": "col_right",
           "settings": {
             "col_right_question": "I have a nut allergy, can I eat your products?",
-            "col_right_answer": "Nomz is not a nut free facility. A majority of our products are made with tree nuts including almonds, hazelnuts, pistachios and cashews.\n\nOur facility does not process peanuts."
+            "col_right_answer": "Nomz is <span style=\"font-weight: 700;\">not<\/span> a nut free facility. A majority of our products are made with tree nuts including almonds, hazelnuts, pistachios and cashews.\n\nOur facility <span style=\"font-weight: 700;\">does not<\/span> process peanuts."
           }
         },
         "bfa50819-240b-45e4-b409-94f7a46c8126": {
@@ -106,7 +106,7 @@
           "type": "col_right",
           "settings": {
             "col_right_question": "I have a store and would like to carry your product. Do you sell wholesale?",
-            "col_right_answer": "Thank you for your interest in carrying our products! We would be delighted to work with you as a wholesale partner. Please create an account on our wholesale portal at wholesale.nomz.com. If need any help, please reach out to us directly. We would be happy to answer any questions and guide you through the process!"
+            "col_right_answer": "Thank you for your interest in carrying our products! We would be delighted to work with you as a wholesale partner. Please create an account on our wholesale portal at \n<a href=\"https:\/\/wholesale.nomz.com\/login\" style=\"text-decoration: underline;\">wholesale.nomz.com.<\/a>"
           }
         }
       },
