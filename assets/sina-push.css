@@ -1282,6 +1282,7 @@ ion-icon[name="add-outline"] {
 .accordion-item-question-faq {
   margin-bottom: 0;
   margin-top: 0.5rem;
+  width: 80%;
 }
 
 .accordion-item-description-faq {
