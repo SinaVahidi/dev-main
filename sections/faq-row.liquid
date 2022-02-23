@@ -1,10 +1,13 @@
+{%- if section.settings.page_title_enable %}
 {% include 'breadcrumbs' %}
-
+{% endif %}
 <section class="accordion-container-faq">
     <div class="accordion-faq">
+        {%- if section.settings.page_title_enable %}
         <div class="accordion-header-faq">
             <h3 class="accordion-title-faq">Frequently asked questions</h3>
         </div>
+        {% endif %}
         <div class="row">
                 <div class="col-md-6 accordion-column-faq">
                     <div class="accordion-item-category-faq">
