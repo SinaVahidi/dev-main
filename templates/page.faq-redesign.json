@@ -2,7 +2,55 @@
   "sections": {
     "main": {
       "type": "faq-row",
+      "blocks": {
+        "2cb41c6e-55b7-440e-8c66-47a1f2584e62": {
+          "type": "col_left",
+          "settings": {
+            "col_left_question": "dslfksdklnfsdf",
+            "col_left_answer": "sdklfskdlnflksdnflksdnflksdf"
+          }
+        },
+        "592ce172-b06e-49bf-aa48-01b5689b9c3b": {
+          "type": "col_right",
+          "settings": {
+            "col_right_question": "sdklfnsdnflksdnflksd",
+            "col_right_answer": "ksdnflksndkfsdklfnklsd"
+          }
+        },
+        "92825152-37dc-4769-8566-d1b5a79e5f56": {
+          "type": "col_left",
+          "settings": {
+            "col_left_question": "dsfnsd;lfnklsdnflsd",
+            "col_left_answer": "skldnfsdnflsdnlfsdklf"
+          }
+        },
+        "bcf059f8-8b1e-4ee2-aecc-2ba91dc5b3aa": {
+          "type": "col_left",
+          "settings": {
+            "col_left_question": "",
+            "col_left_answer": ""
+          }
+        },
+        "5d63eeb4-c49b-4366-a06c-f6d173f84d3f": {
+          "type": "col_left",
+          "settings": {
+            "col_left_question": "",
+            "col_left_answer": ""
+          }
+        }
+      },
+      "block_order": [
+        "2cb41c6e-55b7-440e-8c66-47a1f2584e62",
+        "592ce172-b06e-49bf-aa48-01b5689b9c3b",
+        "92825152-37dc-4769-8566-d1b5a79e5f56",
+        "bcf059f8-8b1e-4ee2-aecc-2ba91dc5b3aa",
+        "5d63eeb4-c49b-4366-a06c-f6d173f84d3f"
+      ],
       "settings": {
+        "page_title_enable": false,
+        "page_content_enable": false,
+        "col_left_title": "Hi",
+        "col_right_title": "Hello"
       }
     }
   },
