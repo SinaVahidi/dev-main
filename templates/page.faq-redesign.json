@@ -1,18 +1,24 @@
 {
-	"sections": {
+  "sections": {
     "top": {
-      "type": "faq-top-wrapper"
+      "type": "faq-top-wrapper",
+      "settings": {
+      }
     },
     "main": {
-      "type": "faq-row"
+      "type": "faq-row",
+      "settings": {
+      }
     },
     "bottom": {
-      "type": "faq-bottom-wrapper"
+      "type": "faq-bottom-wrapper",
+      "settings": {
+      }
     }
   },
   "order": [
-		"top",
+    "top",
     "main",
     "bottom"
-	]
+  ]
 }
