@@ -1,10 +1,18 @@
 {
 	"sections": {
+    "top": {
+      "type": "faq-top-wrapper"
+    }
     "main": {
-      "type": "faq-redesign-template"
+      "type": "faq-row"
+    }
+    "bottom": {
+      "type": "faq-bottom-wrapper"
     }
   },
   "order": [
-		"main"
+		"top",
+    "main",
+    "bottom"
 	]
 }

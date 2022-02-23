@@ -26,116 +26,64 @@ accordionItems.forEach(element => {
     element.classList.toggle('active-faq');
 
     if(element.classList.contains('active-faq')){
-      element.lastElementChild.style.maxHeight = element.lastElementChild.scrollHeight + 'px';
+      let answerScrollHeight = element.lastElementChild.scrollHeight;
+      element.lastElementChild.style.maxHeight = answerScrollHeight + 'px';
+      element.style.background = null;
+      element.parentElement.parentElement.style.maxHeight = element.parentElement.parentElement.scrollHeight + answerScrollHeight + 100 + 'px';
     }else {
       element.lastElementChild.style.maxHeight = '0px';
+      element.style.background = 'white';
+      element.parentElement.parentElement.style.maxHeight = element.parentElement.parentElement.scrollHeight + 'px';
     }
   });
 });
 
-const accordionColumn1 = document.querySelectorAll('.accordion-column1-faq .accordion-item-inner-faq');
-const accordionColumn2 = document.querySelectorAll('.accordion-column2-faq .accordion-item-inner-faq');
-const accordionColumn3 = document.querySelectorAll('.accordion-column3-faq .accordion-item-inner-faq');
-const accordionColumn4 = document.querySelectorAll('.accordion-column4-faq .accordion-item-inner-faq');
-
-for(let i = 0; i < accordionColumn1.length - 3; i++)
-{
-  accordionColumn1[i].style.display = 'none';
-}
-for(let i = 0; i < accordionColumn2.length - 3; i++)
-{
-  accordionColumn2[i].style.display = 'none';
-}
-for(let i = 0; i < accordionColumn3.length - 3; i++)
-{
-  accordionColumn3[i].style.display = 'none';
-}
-for(let i = 0; i < accordionColumn4.length - 3; i++)
-{
-  accordionColumn4[i].style.display = 'none';
-}
-
-console.log(accordionColumn1);
-
-const expandButton1 = document.querySelector('.expand-btn1');
-const expandButton2 = document.querySelector('.expand-btn2');
-const expandButton3 = document.querySelector('.expand-btn3');
-const expandButton4 = document.querySelector('.expand-btn4');
-
-const closeButton1 = document.querySelector('.close-btn1');
-const closeButton2 = document.querySelector('.close-btn2');
-const closeButton3 = document.querySelector('.close-btn3');
-const closeButton4 = document.querySelector('.close-btn4');
-
-expandButton1.addEventListener('click', () => {
-  for(let i = 0; i < accordionColumn1.length; i++)
+const accordionColumns = document.querySelectorAll('.accordion-column-faq');
+accordionColumns.forEach(element => {
+  console.log(element.children);
+  for(let i = 4; i < element.children.length - 1; i++)
   {
-    accordionColumn1[i].style.display = 'block';
+    element.children[i].style.display = 'none';
   }
-  expandButton1.style.display = 'none';
-  closeButton1.style.display = 'inline';
-});
-expandButton2.addEventListener('click', () => {
-  for(let i = 0; i < accordionColumn2.length; i++)
-  {
-    accordionColumn2[i].style.display = 'block';
-  }
-  expandButton2.style.display = 'none';
-  closeButton2.style.display = 'inline';
+  element.lastElementChild.addEventListener('click', () => {
+    element.lastElementChild.classList.toggle('active-faq');
+    element.classList.toggle('active-faq-col');
+    if(element.lastElementChild.classList.contains('active-faq')){
+      for(let i = 1; i < element.children.length - 1; i++)
+      {
+        element.children[i].style.display = 'block';
+      }
+      element.style.overflow = 'hidden';
+      element.lastElementChild.firstElementChild.style.display = 'none';
+      element.lastElementChild.lastElementChild.style.display = 'inline';
+    }else {
+      for(let i = 4; i < element.children.length - 1; i++)
+      {
+        element.children[i].style.display = 'none';
+      }
+      element.lastElementChild.firstElementChild.style.display = 'inline';
+      element.lastElementChild.lastElementChild.style.display = 'none';
+    }
+    element.style.maxHeight = element.scrollHeight + 'px';
+  });
 });
 
-expandButton3.addEventListener('click', () => {
-  for(let i = 0; i < accordionColumn3.length; i++)
-  {
-    accordionColumn3[i].style.display = 'block';
-  }
-  expandButton3.style.display = 'none';
-  closeButton3.style.display = 'inline';
-});
 
-expandButton4.addEventListener('click', () => {
-  for(let i = 0; i < accordionColumn4.length; i++)
-  {
-    accordionColumn4[i].style.display = 'block';
-  }
-  expandButton4.style.display = 'none';
-  closeButton4.style.display = 'inline';
-});
 
-closeButton1.addEventListener('click', () => {
-  for(let i = 0; i < accordionColumn1.length - 3; i++)
-  {
-    accordionColumn1[i].style.display = 'none';
-  }
-  expandButton1.style.display = 'inline';
-  closeButton1.style.display = 'none';
-});
-closeButton2.addEventListener('click', () => {
-  for(let i = 0; i < accordionColumn2.length - 3; i++)
-  {
-    accordionColumn2[i].style.display = 'none';
-  }
-  expandButton2.style.display = 'inline';
-  closeButton2.style.display = 'none';
-});
+// const expandButton1 = document.querySelector('.expand-btn1');
+// const expandButton2 = document.querySelector('.expand-btn2');
+// const expandButton3 = document.querySelector('.expand-btn3');
+// const expandButton4 = document.querySelector('.expand-btn4');
 
-closeButton3.addEventListener('click', () => {
-  for(let i = 0; i < accordionColumn3.length - 3; i++)
-  {
-    accordionColumn3[i].style.display = 'none';
-  }
-  expandButton3.style.display = 'inline';
-  closeButton3.style.display = 'none';
-});
+// const closeButton1 = document.querySelector('.close-btn1');
+// const closeButton2 = document.querySelector('.close-btn2');
+// const closeButton3 = document.querySelector('.close-btn3');
+// const closeButton4 = document.querySelector('.close-btn4');
 
-closeButton4.addEventListener('click', () => {
-  for(let i = 0; i < accordionColumn4.length - 3; i++)
-  {
-    accordionColumn4[i].style.display = 'none';
-  }
-  expandButton4.style.display = 'inline';
-  closeButton4.style.display = 'none';
-});
+// const faqCol = document.querySelectorAll('.accordion-faq .row .col-md-6');
+// const faqRow = document.querySelectorAll('.accordion-faq .row');
+
+
 
 
 $(function() {

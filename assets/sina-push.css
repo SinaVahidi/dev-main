@@ -1216,6 +1216,7 @@
   background: #eff4fc;
 }
 .accordion-item-inner-faq {
+  background: white;
   transition: background 0.25s;
 }
 
@@ -1242,14 +1243,25 @@ ion-icon[name="add-outline"] {
   margin: 0.5rem 0 0 1rem;
   padding: 0;
   padding-top: 0.3rem;
+  background: white;
   transition: background 0.25s;
 }
 
 .accordion-item-body-faq {
   margin: 0 4rem;
-  max-height: 0;
+  max-height: 0px;
   overflow: hidden;
   transition: max-height 0.25s, margin 0.25s;
+}
+
+.accordion-column-faq{
+  max-height: 21rem;
+  overflow: hidden;
+  transition: max-height 0.5s;
+}
+
+.accordion-column-faq.active-faq-col{
+  max-height: 100rem; 
 }
 
 .accordion-item-question-faq {
@@ -1269,6 +1281,7 @@ ion-icon[name="add-outline"] {
   background: white;
 }
 
+
 .accordion-item-inner-faq .active-faq {
   background: #eff4fc;
 }
@@ -1283,71 +1296,49 @@ ion-icon[name="add-outline"] {
   display:none;
 }
 
-.accordion-faq > .row > .col-md-6:first-of-type {
-  padding-right: 0;
-}
-.accordion-faq > .row > .col-md-6:first-of-type .accordion-item-faq {
-  padding-right: 0;
-}
-.accordion-faq > .row > .col-md-6:first-of-type .accordion-item-category-faq {
-  padding-right: 0;
-}
-
-.accordion-faq > .row > .col-md-6:nth-of-type(2) {
-  padding-left: 0;
-}
-
-.accordion-faq > .row > .col-md-6:nth-of-type(2) .accordion-item-faq {
-  padding-left: 0;
-}
-
-.accordion-faq > .row > .col-md-6:nth-of-type(2) .accordion-item-category-faq {
-  padding-left: 1.5rem;
-}
-
-.accordion-faq > .row > .col-md-6:nth-of-type(2) .expand-btn1 {
-  margin-left: 1.5rem;
-}
-
-.accordion-faq > .row > .col-md-6:nth-of-type(2) .expand-btn2 {
-  margin-left: 1.5rem;
-}
-
-.accordion-faq > .row > .col-md-6:nth-of-type(2) .expand-btn3 {
-  margin-left: 1.5rem;
-}
-
-.accordion-faq > .row > .col-md-6:nth-of-type(2) .expand-btn4 {
-  margin-left: 1.5rem;
+@media screen and (min-width: 589px){
+  .accordion-faq > .row > .col-md-6:first-of-type {
+    padding-right: 0;
+  }
+  .accordion-faq > .row > .col-md-6:first-of-type .accordion-item-faq {
+    padding-right: 0;
+  }
+  .accordion-faq > .row > .col-md-6:first-of-type .accordion-item-category-faq {
+    padding-right: 0;
+  }
+  
+  .accordion-faq > .row > .col-md-6:nth-of-type(2) {
+    padding-left: 0;
+  }
+  
+  .accordion-faq > .row > .col-md-6:nth-of-type(2) .accordion-item-faq {
+    padding-left: 0;
+  }
+  
+  .accordion-faq > .row > .col-md-6:nth-of-type(2) .accordion-item-category-faq {
+    padding-left: 1.5rem;
+  }
+  
+  .accordion-faq > .row > .col-md-6:nth-of-type(2) .expand-btn {
+    margin-left: 1.5rem;
+  }
+  
+  .accordion-faq > .row > .col-md-6:nth-of-type(2) .close-btn {
+    margin-left: 1.5rem;
+  }
+  .accordion-faq > .row {
+    margin-bottom: 4rem;
+  }
 }
 
-.accordion-faq > .row > .col-md-6:nth-of-type(2) .close-btn1 {
-  margin-left: 1.5rem;
-}
 
-.accordion-faq > .row > .col-md-6:nth-of-type(2) .close-btn2 {
-  margin-left: 1.5rem;
-}
-
-.accordion-faq > .row > .col-md-6:nth-of-type(2) .close-btn3 {
-  margin-left: 1.5rem;
-}
-
-.accordion-faq > .row > .col-md-6:nth-of-type(2) .close-btn4 {
-  margin-left: 1.5rem;
-}
-
-.accordion-faq > .row {
-  margin-bottom: 4rem;
-  height: auto;
-}
 
 .needsclick { 
   left: 10%!important;
 }
 
 
-.close-btn1, .close-btn2, .close-btn3, .close-btn4, .expand-btn1, .expand-btn2, .expand-btn3, .expand-btn4 {
+.close-btn, .expand-btn {
   display: inline;
   padding: 0.5rem 0.9rem;
   margin-top: 1rem;
@@ -1355,12 +1346,51 @@ ion-icon[name="add-outline"] {
   font-weight: 600;
   background: #A4CC87;
   border-radius: 0.2rem;
+  color: white;
+  transition: background-color 0.2s;
 }
 
-.close-btn1, .close-btn2, .close-btn3, .close-btn4 {
+.close-btn:hover,  .expand-btn:hover {
+  background-color: #90c36c;
+}
+
+.close-btn {
   display: none;
 }
 
 .btn-wrap-faq {
-  margin-top: 1.5rem;
+  margin: 1.5rem 0;
+}
+
+@media screen and (max-width:590px){
+  .accordion-container-faq {
+    padding: 3.5rem 1rem 1rem;
+  }
+  .accordion-item-faq{
+    padding: 0;
+  }
+  .close-btn, .expand-btn {
+    margin-left: 1.5rem;
+  }
+  .accordion-item-category-faq {
+    padding: 0 1.6rem;
+  }
+  .accordion-column-faq {
+    margin-bottom: 3rem;
+  }
+  .accordion-header-faq{
+    padding: 3rem 0;
+  }
+  .accordion-faq {
+    padding: 0;
+  }
+  .accordion-item-body-faq {
+    margin: 1rem 2rem;
+  }
+  .active-faq .accordion-item-body-faq {
+    margin: 1rem 2rem;
+  }
+  .category-header-faq {
+    margin-bottom: 1.5rem;
+  }
 }
