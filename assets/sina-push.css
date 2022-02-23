@@ -1270,11 +1270,6 @@ ion-icon[name="add-outline"] {
   transition: max-height 0.5s;
 }
 
-.accordion-column_no-title {
-  max-height: 21rem;
-  overflow: hidden;
-  transition: max-height 0.5s;
-}
 .accordion-column-faq.active-faq-col{
   max-height: 100rem; 
 }
