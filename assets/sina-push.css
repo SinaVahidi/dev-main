@@ -1405,3 +1405,18 @@ ion-icon[name="add-outline"] {
     margin-bottom: 1.5rem;
   }
 }
+
+/* wholesale initial redesigns */
+
+.ffc-page-wholesale-landing .ffc-background-image-text__image{
+  height:30rem;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+}
+
+.ffc-page-wholesale-landing .ffc-background-image-text__image .page-width{
+  margin:0;
+  margin-left: 10rem;
+}
+  
