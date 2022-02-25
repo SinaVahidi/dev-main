@@ -1549,11 +1549,18 @@ ion-icon[name="add-outline"] {
   }
 }
 
-/* product categories wholesale */
+/* product categories and stockist community wholesale */
 .product-promotion__image {
   transition: transform 0.5s;
 }
 .product-promotion__image:hover{
+  transform: scale(1.05);
+}
+
+.landing-block--testimonials-with-images .testimonials-with-images__slider .testimonials-with-images__item .image-area .image-wrap--ffc img {
+  transition: transform 0.5s;
+}
+.landing-block--testimonials-with-images .testimonials-with-images__slider .testimonials-with-images__item .image-area .image-wrap--ffc img:hover{
   transform: scale(1.05);
 }
 
@@ -1582,4 +1589,10 @@ ion-icon[name="add-outline"] {
   .ben-main .row {
     margin-bottom: 0;
   }
+}
+
+/* contact border-rad */
+
+.landing-block--contact .contact__content .contact__item {
+  border-radius: 0.3rem;
 }
