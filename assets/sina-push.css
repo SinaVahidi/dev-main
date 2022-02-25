@@ -1536,3 +1536,17 @@ ion-icon[name="add-outline"] {
     width: 50%;
   }
 }
+
+/* product categories wholesale */
+.product-promotion__image {
+  transition: transform 0.5s;
+}
+.product-promotion__image:hover{
+  transform: scale(1.05);
+}
+
+/* company logos wholesale */
+
+.landing-block--logo-grid .logo-grid__list .logo-grid__item {
+  width: 305px;
+}
