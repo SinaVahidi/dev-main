@@ -20,51 +20,6 @@
             "button_color": "#ae9cdb"
           }
         },
-        "96e6d103-8619-4bb7-a1bd-add3689ea534": {
-          "type": "benefits-sina",
-          "settings": {
-            "title": "benefits of wholesale",
-            "benefit_alt_1": "Wholesale pricing",
-            "benefit_1_icon": "https:\/\/cdn-icons-png.flaticon.com\/128\/2237\/2237932.png",
-            "benefit_alt_2": "Low minimums",
-            "benefit_2_icon": "https:\/\/cdn-icons-png.flaticon.com\/128\/2237\/2237850.png",
-            "benefit_alt_3": "Net 30 day payment terms",
-            "benefit_3_icon": "https:\/\/cdn-icons-png.flaticon.com\/128\/5988\/5988070.png",
-            "benefit_alt_4": "Automated invoicing",
-            "benefit_4_icon": "https:\/\/cdn-icons-png.flaticon.com\/128\/2701\/2701172.png",
-            "benefit_alt_5": "Ships out next day with tracking link",
-            "benefit_5_icon": "https:\/\/cdn-icons-png.flaticon.com\/128\/6302\/6302810.png",
-            "benefit_alt_6": "Sales and merchandising resources",
-            "benefit_6_icon": "https:\/\/cdn-icons.flaticon.com\/png\/128\/3104\/premium\/3104517.png?token=exp=1645827775~hmac=7fdc2bf81879da351689477e8de272fe",
-            "benefit_alt_7": "Creating an account and placing an order takes less than a minute",
-            "benefit_7_icon": "https:\/\/cdn-icons-png.flaticon.com\/128\/5984\/5984367.png",
-            "benefit_alt_8": "",
-            "benefit_8_icon": "",
-            "benefit_alt_9": "",
-            "benefit_9_icon": "",
-            "benefit_alt_10": "",
-            "benefit_10_icon": ""
-          }
-        },
-        "2a6a986c-5d5c-4581-a856-d62633eba93c": {
-          "type": "benefits",
-          "disabled": true,
-          "settings": {
-            "title": "the benefits",
-            "text": "",
-            "image": "shopify:\/\/shop_images\/wholesale2.jpg",
-            "benefit_1": "Wholesale pricing",
-            "benefit_2": "Low minimums",
-            "benefit_3": "Net 30 day payment terms",
-            "benefit_4": "Automated invoicing",
-            "benefit_5": "Ships out next day with tracking link",
-            "benefit_6": "Sales and merchandising resources",
-            "benefit_7": "Creating an account and placing an order takes less than a minute",
-            "benefit_8": "",
-            "benefit_9": "",
-            "benefit_10": ""
-          }
-        },
         "6e7c748c-6f85-459c-8320-93deca420552": {
           "type": "logo-list",
           "settings": {
@@ -128,6 +83,51 @@
             "promo_url_10": "",
             "promo_title_10": "",
             "promo_color_10": ""
+          }
+        },
+        "96e6d103-8619-4bb7-a1bd-add3689ea534": {
+          "type": "benefits-sina",
+          "settings": {
+            "title": "benefits of wholesale",
+            "benefit_alt_1": "Wholesale pricing",
+            "benefit_1_icon": "https:\/\/cdn-icons-png.flaticon.com\/128\/2237\/2237932.png",
+            "benefit_alt_2": "Low minimums",
+            "benefit_2_icon": "https:\/\/cdn-icons-png.flaticon.com\/128\/2237\/2237850.png",
+            "benefit_alt_3": "Net 30 day payment terms",
+            "benefit_3_icon": "https:\/\/cdn-icons-png.flaticon.com\/128\/5988\/5988070.png",
+            "benefit_alt_4": "Automated invoicing",
+            "benefit_4_icon": "https:\/\/cdn-icons-png.flaticon.com\/128\/2701\/2701172.png",
+            "benefit_alt_5": "Ships out next day with tracking link",
+            "benefit_5_icon": "https:\/\/cdn-icons-png.flaticon.com\/128\/6302\/6302810.png",
+            "benefit_alt_6": "Sales and merchandising resources",
+            "benefit_6_icon": "https:\/\/cdn-icons.flaticon.com\/png\/128\/3104\/premium\/3104517.png?token=exp=1645827775~hmac=7fdc2bf81879da351689477e8de272fe",
+            "benefit_alt_7": "Creating an account and placing an order takes less than a minute",
+            "benefit_7_icon": "https:\/\/cdn-icons-png.flaticon.com\/128\/5984\/5984367.png",
+            "benefit_alt_8": "",
+            "benefit_8_icon": "",
+            "benefit_alt_9": "",
+            "benefit_9_icon": "",
+            "benefit_alt_10": "",
+            "benefit_10_icon": ""
+          }
+        },
+        "2a6a986c-5d5c-4581-a856-d62633eba93c": {
+          "type": "benefits",
+          "disabled": true,
+          "settings": {
+            "title": "the benefits",
+            "text": "",
+            "image": "shopify:\/\/shop_images\/wholesale2.jpg",
+            "benefit_1": "Wholesale pricing",
+            "benefit_2": "Low minimums",
+            "benefit_3": "Net 30 day payment terms",
+            "benefit_4": "Automated invoicing",
+            "benefit_5": "Ships out next day with tracking link",
+            "benefit_6": "Sales and merchandising resources",
+            "benefit_7": "Creating an account and placing an order takes less than a minute",
+            "benefit_8": "",
+            "benefit_9": "",
+            "benefit_10": ""
           }
         },
         "b4145870-c465-48ac-99ac-876edd006a8a": {
@@ -218,10 +218,10 @@
       },
       "block_order": [
         "46b02e73-d7e6-4519-812d-638701d0bfcc",
-        "96e6d103-8619-4bb7-a1bd-add3689ea534",
-        "2a6a986c-5d5c-4581-a856-d62633eba93c",
         "6e7c748c-6f85-459c-8320-93deca420552",
         "e501178f-a8b2-4826-bfe5-ee30c5b244b9",
+        "96e6d103-8619-4bb7-a1bd-add3689ea534",
+        "2a6a986c-5d5c-4581-a856-d62633eba93c",
         "b4145870-c465-48ac-99ac-876edd006a8a",
         "2f7afc7a-f585-4695-aac9-29a352eeb873",
         "19d3fcf3-15ad-4b3e-89f5-e0dc4382a18b"
