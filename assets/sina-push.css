@@ -1523,8 +1523,9 @@ ion-icon[name="add-outline"] {
 }
 
 .ffc-page-wholesale-landing .ffc-page-landing .landing-block {
-  margin-bottom:2rem;
+  margin-bottom:2rem!important;
 }
+
 @media screen and (max-width: 590px){
   .ben-col{
     width: 50%;
