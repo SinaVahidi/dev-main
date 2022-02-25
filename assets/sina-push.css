@@ -1213,11 +1213,16 @@
 
 .accordion-item-category-faq {
   padding: 0rem 3.6rem;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .category-header-faq {
   font-size: 1.5rem;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0;
+  display: inline-block;
 }
 
 
@@ -1264,14 +1269,14 @@ ion-icon[name="add-outline"] {
 }
 
 .accordion-column-faq{
-  max-height: 21rem;
+  max-height: 22rem;
   margin-top: 2rem;
   overflow: hidden;
   transition: max-height 0.5s;
 }
 
 .accordion-column-faq.active-faq-col{
-  max-height: 100rem; 
+  max-height: 200rem; 
 }
 
 .accordion-item-question-faq {
@@ -1288,23 +1293,41 @@ ion-icon[name="add-outline"] {
   max-height: 25rem;
   margin: 1rem 4rem;
 }
-.active-faq .accordion-item-button-faq {
+.active-faq-all .accordion-item-body-faq {
+  max-height: 25rem;
+  margin: 1rem 4rem;
+}
+
+.active-faq-all .active-faq .accordion-item-body-faq {
+  max-height: 0rem;
+  margin: 1rem 4rem;
+}
+.active-faq .accordion-item-button-faq, .active-faq-all .accordion-item-button-faq {
   background: white;
 }
 
 
-.accordion-item-inner-faq .active-faq {
+.accordion-item-inner-faq .active-faq, .accordion-item-inner-faq .active-faq-all  {
   background: #eff4fc;
 }
 
-.active-faq ion-icon[name="remove-outline"] {
+.active-faq ion-icon[name="remove-outline"], .active-faq-all ion-icon[name="remove-outline"] {
   display:block;
   margin-left: 0.52rem;
   margin-bottom: 0.32rem;
 }
-
-.active-faq ion-icon[name="add-outline"] {
+.active-faq-all .active-faq ion-icon[name="remove-outline"] {
   display:none;
+}
+
+.active-faq ion-icon[name="add-outline"], .active-faq-all ion-icon[name="add-outline"] {
+  display:none;
+}
+.active-faq-all .active-faq ion-icon[name="add-outline"] {
+  display:block;
+  margin:0;
+  margin-left: 0.52rem;
+  margin-bottom: 0.32rem;
 }
 
 @media screen and (min-width: 589px){
@@ -1338,7 +1361,7 @@ ion-icon[name="add-outline"] {
     margin-left: 1.5rem;
   }
   .accordion-faq > .row {
-    margin-bottom: 4rem;
+    margin-bottom: 1rem;
   }
 }
 
@@ -1406,6 +1429,20 @@ ion-icon[name="add-outline"] {
   }
 }
 
+.expand-all-btn, .collapse-all-btn {
+  padding: 0.4em 0.6em;
+  margin-right: 0.4em;
+  font-size: 0.8rem;
+  background: #6CACE4;
+  border-radius: 0.2em;
+  color: white;
+  font-weight: 600;
+  transition: background 0.2s;
+}
+
+.expand-all-btn:hover, .collapse-all-btn:hover {
+  background: #4e9ce0;
+}
 /* wholesale initial redesigns */
 
 .ffc-page-wholesale-landing .ffc-background-image-text__image{
@@ -1420,3 +1457,8 @@ ion-icon[name="add-outline"] {
   margin-left: 10rem;
 }
   
+/* display none class */
+
+.dis-none {
+  display:none!important;
+}

@@ -22,6 +22,10 @@
                 <div class="col-md-6 accordion-column-faq">
                     <div class="accordion-item-category-faq">
                         <h4 class="category-header-faq">{{ section.settings.col_left_title }}</h4>
+                        <button class="btn-wrap-faq2">
+                            <span class="expand-all-btn">Expand all</span>
+                            <span class="collapse-all-btn dis-none">Collapse all</span>
+                        </button>
                     </div>
                     {%- for block in section.blocks -%}
                         {% if block.type == 'col_left' %}
@@ -55,6 +59,10 @@
                 <div class="col-md-6 accordion-column-faq">
                     <div class="accordion-item-category-faq">
                         <h4 class="category-header-faq">{{ section.settings.col_right_title }}</h4>
+                        <button class="btn-wrap-faq2">
+                            <span class="expand-all-btn">Expand all</span>
+                            <span class="collapse-all-btn dis-none">Collapse all</span>
+                        </button>
                     </div>
                     {%- for block in section.blocks -%}
                         {% if block.type == 'col_right' %}

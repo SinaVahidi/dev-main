@@ -26,25 +26,33 @@ accordionItems.forEach(element => {
     element.classList.toggle('active-faq');
 
     if(element.classList.contains('active-faq')){
-      let answerScrollHeight = element.lastElementChild.scrollHeight;
-      element.lastElementChild.style.maxHeight = answerScrollHeight + 'px';
       element.style.background = null;
-      element.parentElement.parentElement.style.maxHeight = element.parentElement.parentElement.scrollHeight + answerScrollHeight + 100 + 'px';
     }else {
-      element.lastElementChild.style.maxHeight = '0px';
       element.style.background = 'white';
-      element.parentElement.parentElement.style.maxHeight = element.parentElement.parentElement.scrollHeight + 'px';
     }
+    element.parentElement.parentElement.style.maxHeight = '200rem';
   });
 });
 
 const accordionColumns = document.querySelectorAll('.accordion-column-faq');
 accordionColumns.forEach(element => {
-  console.log(element.children);
   for(let i = 4; i < element.children.length - 1; i++)
   {
     element.children[i].style.display = 'none';
   }
+  element.firstElementChild.lastElementChild.addEventListener('click', (btn) => {
+    element.classList.toggle('active-faq-all');
+    element.classList.toggle('active-faq-col');
+    element.style.maxHeight = '200rem';
+    element.firstElementChild.lastElementChild.firstElementChild.classList.toggle('dis-none');
+    element.firstElementChild.lastElementChild.lastElementChild.classList.toggle('dis-none');
+    for(let i = 0; i < element.children.length; i++){
+      if(element.children[i].firstElementChild.classList.contains('active-faq'))
+      {
+        element.children[i].firstElementChild.classList.toggle('active-faq');
+      }
+    }
+  })
   element.lastElementChild.addEventListener('click', () => {
     element.lastElementChild.classList.toggle('active-faq');
     element.classList.toggle('active-faq-col');
@@ -56,6 +64,7 @@ accordionColumns.forEach(element => {
       element.style.overflow = 'hidden';
       element.lastElementChild.firstElementChild.style.display = 'none';
       element.lastElementChild.lastElementChild.style.display = 'inline';
+      element.style.maxHeight = '200rem';
     }else {
       for(let i = 4; i < element.children.length - 1; i++)
       {
@@ -63,8 +72,8 @@ accordionColumns.forEach(element => {
       }
       element.lastElementChild.firstElementChild.style.display = 'inline';
       element.lastElementChild.lastElementChild.style.display = 'none';
+      element.style.maxHeight = null;
     }
-    element.style.maxHeight = element.scrollHeight + 'px';
   });
 });
 
