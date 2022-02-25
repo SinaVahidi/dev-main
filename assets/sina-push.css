@@ -1509,6 +1509,11 @@ ion-icon[name="add-outline"] {
   margin-inline: 0.7rem;
   border-radius: 0.4rem;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  transition: transform 0.2s;
+}
+
+.ben-col:hover{
+  transform: scale(1.05);
 }
 
 .ben-icon{
