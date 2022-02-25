@@ -1445,11 +1445,21 @@ ion-icon[name="add-outline"] {
 }
 /* wholesale initial redesigns */
 
+
 .ffc-page-wholesale-landing .ffc-background-image-text__image{
   height:30rem;
   display:flex;
   flex-direction:column;
   justify-content:center;
+}
+
+@media (max-width: 590px) {
+  .ffc-page-wholesale-landing .ffc-background-image-text__image{
+  height:30rem;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  }
 }
 
 .ffc-page-wholesale-landing .ffc-background-image-text__image .page-width{
@@ -1480,6 +1490,7 @@ ion-icon[name="add-outline"] {
 .ben-head-text {
   margin-bottom: 0;
   font-size: 2.5rem;
+  text-align: center;
   color: #202020;
 }
 
@@ -1533,7 +1544,8 @@ ion-icon[name="add-outline"] {
 
 @media screen and (max-width: 590px){
   .ben-col{
-    width: 50%;
+    width: 43%;
+    margin-bottom: 1.3rem;
   }
 }
 
@@ -1549,4 +1561,25 @@ ion-icon[name="add-outline"] {
 
 .landing-block--logo-grid .logo-grid__list .logo-grid__item {
   width: 305px;
+}
+
+@media screen and (max-width: 589px){
+  .landing-block--logo-grid .logo-grid__list {
+    align-items: center;
+    justify-content: start;
+  }
+  .logo-bar .logo-bar__item .logo-bar__image {
+    padding: 0;
+    padding-inline: 2px;
+    height: 65px;
+  }
+  .ben-head-text {
+    font-size: 2rem;
+  }
+  .ben-main {
+    padding: 2rem 0;
+  }
+  .ben-main .row {
+    margin-bottom: 0;
+  }
 }
