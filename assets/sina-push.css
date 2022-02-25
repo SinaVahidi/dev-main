@@ -1462,3 +1462,68 @@ ion-icon[name="add-outline"] {
 .dis-none {
   display:none!important;
 }
+
+
+/* benefits section wholesale */
+
+.ben-container {
+  box-sizing: border-box;
+  padding: 5rem;
+}
+
+.ben-head {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 0;
+}
+
+.ben-head-text {
+  margin-bottom: 0;
+  font-size: 2.5rem;
+  color: #202020;
+}
+
+.ben-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 3rem;
+}
+.ben-main .row {
+  width: 100%;
+  margin-bottom: 1.4rem;
+  display: flex;
+  justify-content: center;
+}
+.ben-col{
+  width: 22%;
+  background-color: #fff;
+  padding: 1rem;
+  padding-top: 1.5rem;
+  padding-bottom:1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  margin-inline: 0.7rem;
+  border-radius: 0.4rem;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.ben-icon{
+  width: 5rem;
+  height: 5rem;
+  background-size: cover;
+}
+
+.ben-text {
+  text-align: center;
+  font-size: 1rem;
+}
+@media screen and (max-width: 590px){
+  .ben-col{
+    width: 50%;
+  }
+}

@@ -1,0 +1,55 @@
+<div class="ben-container">
+    <div class="ben-head">
+        <h2 class="ben-head-text">
+            {{ bs.title }}
+        </h2>
+    </div>
+    <div class="ben-main">
+        <div class="row">
+            <div class="ben-col">
+                <div class="ben-icon" style="background-image: url('{{ bs.benefit_1_icon }}');"></div>
+                <p class="ben-text">{{ bs.benefit_alt_1 }}</p>
+            </div>
+            <div class="ben-col">
+                <div class="ben-icon" style="background-image: url('{{ bs.benefit_2_icon}}');"></div>
+                <p class="ben-text">{{ bs.benefit_alt_2 }}</p>
+            </div>
+            <div class="ben-col">
+                <div class="ben-icon" style="background-image: url('{{ bs.benefit_3_icon}}');"></div>
+                <p class="ben-text">{{ bs.benefit_alt_3 }}</p>
+            </div>
+            <div class="ben-col">
+                <div class="ben-icon" style="background-image: url('{{ bs.benefit_4_icon}}');"></div>
+                <p class="ben-text">{{ bs.benefit_alt_4 }}</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="ben-col">
+                <div class="ben-icon" style="background-image: url('{{ bs.benefit_5_icon}}');"></div>
+                <p class="ben-text">{{ bs.benefit_alt_5 }}</p>
+            </div>
+            <div class="ben-col">
+                <div class="ben-icon" style="background-image: url('{{ bs.benefit_6_icon}}');"></div>
+                <p class="ben-text">{{ bs.benefit_alt_6 }}</p>
+            </div>
+            <div class="ben-col">
+                <div class="ben-icon" style="background-image: url('{{ bs.benefit_7_icon}}');"></div>
+                <p class="ben-text">{{ bs.benefit_alt_7 }}</p>
+            </div>
+            {% if bs.benefit_alt_8 %}
+                <div class="ben-col">
+                    <div class="ben-icon" style="background-image: url('{{ bs.benefit_8_icon}}');"></div>
+                    <p class="ben-text">{{ bs.benefit_alt_8 }}</p>
+                </div>
+                <div class="ben-col">
+                    <div class="ben-icon" style="background-image: url('{{ bs.benefit_9_icon}}');"></div>
+                    <p class="ben-text">{{ bs.benefit_alt_9 }}</p>
+                </div>
+                <div class="ben-col">
+                    <div class="ben-icon" style="background-image: url('{{ bs.benefit_10_icon}}');"></div>
+                    <p class="ben-text">{{ bs.benefit_alt_10 }}</p>
+                </div>
+            {% endif %}
+        </div>
+    </div>
+</div>
