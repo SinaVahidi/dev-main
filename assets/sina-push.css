@@ -1509,8 +1509,12 @@ ion-icon[name="add-outline"] {
   margin-inline: 0.7rem;
   border-radius: 0.4rem;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  transition: transform 0.2s ease-in-out;
 }
 
+.ben-col:hover{
+  transform: scale(1.05);
+}
 .ben-icon{
   width: 5rem;
   height: 5rem;
@@ -1522,8 +1526,12 @@ ion-icon[name="add-outline"] {
   font-size: 1rem;
 }
 
-.ffc-page-wholesale-landing .ffc-page-landing .landing-block {
+.ffc-page-landing .ffc-page-wholesale-landing .landing-block {
   margin-bottom:2rem!important;
+}
+
+.landing-block--logo-grid {
+  margin-bottom: 100px!important;
 }
 
 @media screen and (max-width: 590px){
