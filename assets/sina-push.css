@@ -1633,6 +1633,7 @@ ion-icon[name="add-outline"] {
   position: relative;
   display: flex;
   align-items: flex-end;
+  justify-content: flex-end;
   overflow: hidden;
   padding: 1rem;
   width: 100%;
