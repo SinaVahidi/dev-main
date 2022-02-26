@@ -1591,6 +1591,10 @@ ion-icon[name="add-outline"] {
   .ben-main .row {
     margin-bottom: 0;
   }
+  .ben-text{
+    font-weight: 400;
+  	padding: 0;
+  }
 }
 
 /* contact border-rad */
