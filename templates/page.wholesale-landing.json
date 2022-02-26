@@ -68,8 +68,23 @@
             "logo_link_10": ""
           }
         },
+        "697ace91-9b96-490b-a180-20346a48f5af": {
+          "type": "product-cards",
+          "settings": {
+            "title_1": "snack bites",
+            "text_1": "short description that is maybe this long? maybe even this long?",
+            "title_2": "beeswax candles",
+            "text_2": "short description that is maybe this long? maybe even this long?",
+            "title_3": "nut butters",
+            "text_3": "short description that is maybe this long? maybe even this long?",
+            "title_4": "superfood mixes",
+            "text_4": "short description that is maybe this long? maybe even this long?",
+            "btn-text": "View"
+          }
+        },
         "e501178f-a8b2-4826-bfe5-ee30c5b244b9": {
           "type": "product-promotion",
+          "disabled": true,
           "settings": {
             "title": "",
             "text": "",
@@ -217,6 +232,7 @@
         "46b02e73-d7e6-4519-812d-638701d0bfcc",
         "96e6d103-8619-4bb7-a1bd-add3689ea534",
         "6e7c748c-6f85-459c-8320-93deca420552",
+        "697ace91-9b96-490b-a180-20346a48f5af",
         "e501178f-a8b2-4826-bfe5-ee30c5b244b9",
         "2a6a986c-5d5c-4581-a856-d62633eba93c",
         "b4145870-c465-48ac-99ac-876edd006a8a",
