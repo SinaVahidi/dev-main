@@ -104,6 +104,7 @@ $(function() {
   	$('.nom-close').click(() => {
       $('.nom-alert').hide();
 	});
+  
 
 	$(".js-drawer-open-nav").click(function() {
       $(".parent-trigger-shop").addClass("is-open");
