@@ -29,3 +29,17 @@
     </div>
   </div>
   
+{% style %}
+.card:nth-child(1):before {
+    background-image: url('{{ bs.img_1 }}');
+}
+.card:nth-child(2):before {
+    background-image: url('{{ bs.img_2 }}');
+}
+.card:nth-child(3):before {
+    background-image: url('{{ bs.img_3 }}');
+}
+.card:nth-child(4):before {
+    background-image: url('{{ bs.img_4 }}');
+}
+{% endstyle %}

@@ -1672,18 +1672,6 @@ ion-icon[name="add-outline"] {
   transform: translateY(-50%);
   transition: transform calc(var(--d) * 2) var(--e);
 }
-.card:nth-child(1):before {
-  background-image: url('https://cdn.shopify.com/s/files/1/0857/4434/files/variety_302x.jpg?v=1645651377');
-}
-.card:nth-child(2):before {
-  background-image: url('https://cdn.shopify.com/s/files/1/0857/4434/files/candle_302x.jpg?v=1637024381');
-}
-.card:nth-child(3):before {
-  background-image: url('https://cdn.shopify.com/s/files/1/0857/4434/files/chocolate_almond_butter_cups-12-2_302x.jpg?v=1638971514');
-}
-.card:nth-child(4):before {
-  background-image: url('https://cdn.shopify.com/s/files/1/0857/4434/files/IMG_3348_302x.jpg?v=1645651419');
-}
 
 .content {
   position: relative;
@@ -1720,7 +1708,7 @@ ion-icon[name="add-outline"] {
   letter-spacing: 0.025rem;
   text-transform: uppercase;
   color: white;
-  background-color: black;
+  background-color: #202020;
   border: none;
   border-radius: 0.2em;
 }
