@@ -1602,12 +1602,10 @@ ion-icon[name="add-outline"] {
   border-radius: 0.3rem;
 }
 
-@import url("https://fonts.googleapis.com/css?family=Cardo:400i|Rubik:400,700&display=swap");
+
 :root {
   --d: 700ms;
   --e: cubic-bezier(0.19, 1, 0.22, 1);
-  --font-sans: "Gotham Rounded", sans-serif;
-  --font-serif: "Gotham Rounded", serif;
 }
 
 
@@ -1616,9 +1614,8 @@ ion-icon[name="add-outline"] {
   display: grid;
   grid-gap: 1rem;
   padding: 1rem;
-  max-width: 1200px;
+  max-width: 1250px;
   margin: 0 auto;
-  font-family: var(--font-sans);
   margin-bottom: 3rem;
 }
 @media (min-width: 600px) {
@@ -1708,7 +1705,6 @@ ion-icon[name="add-outline"] {
 }
 
 .copy {
-  font-family: var(--font-serif);
   font-size: 1.125rem;
   font-style: italic;
   line-height: 1.35;
