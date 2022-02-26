@@ -1536,6 +1536,8 @@ ion-icon[name="add-outline"] {
 .ben-text {
   text-align: center;
   font-size: 1rem;
+  font-weight: 600;
+  padding: 0 0.5rem;
 }
 
 .ffc-page-wholesale-landing .ffc-page-landing .landing-block {
