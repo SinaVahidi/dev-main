@@ -1674,16 +1674,16 @@ ion-icon[name="add-outline"] {
 }
 
 .card:nth-child(1):before {
-  background-image: url({{ bs.img_1 }});
+  background-image: url('https://cdn.shopify.com/s/files/1/0857/4434/files/variety_302x.jpg?v=1645651377');
 }
 .card:nth-child(2):before {
-  background-image: url({{ bs.img_2 }});
+  background-image: url('https://cdn.shopify.com/s/files/1/0857/4434/files/candle_302x.jpg?v=1637024381');
 }
 .card:nth-child(3):before {
-  background-image: url({{ bs.img_3 }});
+  background-image: url('https://cdn.shopify.com/s/files/1/0857/4434/files/chocolate_almond_butter_cups-12-2_302x.jpg?v=1638971514');
 }
 .card:nth-child(4):before {
-  background-image: url({{ bs.img_4 }});
+  background-image: url('https://cdn.shopify.com/s/files/1/0857/4434/files/IMG_3348_302x.jpg?v=1645651419');
 }
 
 .content {
