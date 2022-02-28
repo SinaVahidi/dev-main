@@ -28,7 +28,7 @@
                 <div class="ben-icon" style="background-image: url('{{ bs.benefit_5_icon}}');"></div>
                 <p class="ben-text">{{ bs.benefit_alt_5 }}</p>
             </div>
-            {% unless bs.benefit_alt_6 %}
+            {% if bs.benefit_alt_6 != "" %}
                 <div class="ben-col">
                     <div class="ben-icon" style="background-image: url('{{ bs.benefit_6_icon}}');"></div>
                     <p class="ben-text">{{ bs.benefit_alt_6 }}</p>
@@ -38,7 +38,7 @@
                     <p class="ben-text">{{ bs.benefit_alt_7 }}</p>
                 </div>
                 <!-- intentionall unless, change to if when there is more benefits -->
-                {% unless bs.benefit_alt_8 %}
+                {% if bs.benefit_alt_8 != "" %}
                     <div class="ben-col">
                         <div class="ben-icon" style="background-image: url('{{ bs.benefit_8_icon}}');"></div>
                         <p class="ben-text">{{ bs.benefit_alt_8 }}</p>
@@ -51,8 +51,8 @@
                         <div class="ben-icon" style="background-image: url('{{ bs.benefit_10_icon}}');"></div>
                         <p class="ben-text">{{ bs.benefit_alt_10 }}</p>
                     </div>
-                {% endunless %}
-            {% endunless %}
+                {% endif %}
+            {% endif %}
         </div>
     </div>
 </div>
