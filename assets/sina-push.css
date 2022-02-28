@@ -1033,7 +1033,7 @@
 
 .embed-register_wrap{
   background:#6CACE4;
-  background: linear-gradient(270deg, rgba(108,172,228,1) 4%, rgba(174,156,219,1) 85%);
+  border-radius: 0.3rem;
 }
 
 .embed-register_head{
@@ -1045,6 +1045,21 @@
   line-height:1.80;
   margin-left:20px;
   color: white;
+}
+
+.embed-register_text li{
+  list-style-type: none;
+  margin-left: 1rem;
+}
+.embed-register_text li:before{
+  content:"";
+  position: absolute;
+  margin-left: -2rem;
+  width: 1.3rem;
+  height: 1.3rem;
+  margin-top:0.7rem;
+  background-image: url("https://cdn-icons-png.flaticon.com/128/4892/4892322.png");
+  background-size: cover;
 }
 
 .embed-register_left{
@@ -1073,7 +1088,7 @@
 }
 
 .embed-form_btn:hover{
-  background: #4f4f4f;
+  background: #202020;
 }
 .embed-register_right-inside{
   width: 75%;
