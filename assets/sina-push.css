@@ -1495,6 +1495,10 @@ ion-icon[name="add-outline"] {
   box-sizing: border-box;
 }
 
+.ffc-page-wholesale-landing .ben-container{
+  margin-bottom: -5rem;
+}
+
 .ben-head {
   display: flex;
   align-items: center;
