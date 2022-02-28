@@ -28,7 +28,7 @@
                 <div class="ben-icon" style="background-image: url('{{ bs.benefit_5_icon}}');"></div>
                 <p class="ben-text">{{ bs.benefit_alt_5 }}</p>
             </div>
-            {% if bs.benefit_alt_6 %}
+            {% unless bs.benefit_alt_6 %}
                 <div class="ben-col">
                     <div class="ben-icon" style="background-image: url('{{ bs.benefit_6_icon}}');"></div>
                     <p class="ben-text">{{ bs.benefit_alt_6 }}</p>
@@ -52,7 +52,7 @@
                         <p class="ben-text">{{ bs.benefit_alt_10 }}</p>
                     </div>
                 {% endunless %}
-            {% endif %}
+            {% unless %}
         </div>
     </div>
 </div>
