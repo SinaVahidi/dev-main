@@ -673,6 +673,10 @@
   height:100%;
 }
 
+.ffc-page-subscription-landing .landing-block--subscription-product .ffc-select-subscription .product-image-main img{
+  max-width: 100%;
+}
+
 .main-faq-area .index-section--faq {
   margin:0;
 }
@@ -1794,4 +1798,10 @@ ion-icon[name="add-outline"] {
 .card:focus-within .content > *:not(.title) {
     transition-duration: 0s;
   }
+}
+
+/* yotpo reviews slider */
+
+.yotpo div, .yotpo span, .yotpo p, .yotpo a, .yotpo img, .yotpo i, .yotpo strong, .yotpo sup, .yotpo ul, .yotpo li, .yotpo form, .yotpo label {
+  font-family: 'Gotham Rounded Book', verdana, sans-serif!important;
 }
