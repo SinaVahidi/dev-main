@@ -1,1 +1,3036 @@
-{"current":{"custom_border":"#4f4f4f","color_body_bg":"#ffffff","color_body_text":"#4f4f4f","color_borders":"rgba(0,0,0,0)","color_button":"#6cace4","color_button_text":"#ffffff","color_cart_dot":"#a77bca","color_header":"#fff","color_header_text":"#4f4f4f","color_announcement":"#ffffff","color_announcement_text":"#4f4f4f","color_footer":"#6cace4","color_footer_text":"#fff","color_drawer_background":"#ffffff","color_drawer_text":"#4f4f4f","color_drawer_border":"rgba(0,0,0,0)","color_drawer_button":"#4f4f4f","color_drawer_button_text":"rgba(0,0,0,0)","color_modal_overlays":"rgba(0,0,0,0)","color_image_text":"#ffffff","color_image_2":"rgba(0,0,0,0)","color_image_2_opacity":86,"color_image_1":"rgba(0,0,0,0)","color_image_1_opacity":0,"color_small_image_bg":"#fff","color_large_image_bg":"#4f4f4f","type_header_font_family":"neuzeit_office_soft_rounded_n4","type_header_spacing":"0","type_header_base_size":35,"type_header_line_height":1.2,"type_header_accent_transform":true,"type_headers_align_text":true,"type_base_font_family":"neuzeit_office_soft_rounded_n4","type_base_spacing":"25","type_base_size":15,"type_base_line_height":1.6,"type_base_accent_transform":true,"plus_price_font_family":"madera_n4","icon_weight":"2px","icon_linecaps":"round","button_radius":0,"animate_page_transitions":false,"animate_page_transition_style":"page-slow-fade","animate_sections":false,"animate_sections_background_style":"zoom-fade","animate_sections_text_style":"rise-up","animate_images":false,"animate_images_style":"zoom-fade","animate_buttons":true,"animate_underlines":false,"vendor_enable":false,"sku_enable":false,"quantity_enable":true,"variant_labels_enable":true,"variant_type":"button","enable_payment_button":false,"inventory_enable":false,"inventory_threshold":10,"product_save_amount":true,"product_save_type":"dollar","product_zoom_enable":false,"quick_shop_enable":false,"quick_shop_text":"quick view","atc_enable":true,"product_hover_image":true,"product_grid_image_size":"natural","product_color_swatches":false,"collection_color_swatches":false,"product_video_width":"1280","product_video_height":"720","product_video_style":"muted","product_content_1":"","product_content_2":"","product_content_3":"","product_contact":false,"product_contact_title":"Ask a question","product_contact_show_phone":false,"enable_product_reviews":false,"reviews_layout":"expandable","cart_type":"drawer","cart_additional_buttons":false,"cart_notes_enable":true,"cart_terms_conditions_enable":false,"cart_terms_conditions_link":"","enable_currencies":true,"currency_format":"money_format","supported_currencies":"USD CAD INR GBP AUD EUR JPY","social_facebook_link":"https:\/\/www.facebook.com\/nomzorganic\/","social_twitter_link":"https:\/\/twitter.com\/nomzorganic","social_pinterest_link":"","social_instagram_link":"https:\/\/www.instagram.com\/nomz\/","social_snapchat_link":"","social_tumblr_link":"","social_linkedin_link":"","social_youtube_link":"","social_vimeo_link":"","share_facebook":false,"share_twitter":false,"share_pinterest":false,"homepage_social_image":"","favicon":"shopify:\/\/shop_images\/favicon_608ba6ca-3ac9-4d54-9c10-b6cc666b7a42.png","show_breadcrumbs":true,"search_type":"product","recurring-orders-loading":"Loading subscription info...","recurring-orders-inherit-classes":false,"recurring-orders-additional-button-classes":"","checkout_header_image":"","checkout_logo_image":"shopify:\/\/shop_images\/greylogovector.png","checkout_logo_position":"left","checkout_logo_size":"small","checkout_body_background_image":"","checkout_body_background_color":"#fff","checkout_input_background_color_mode":"white","checkout_sidebar_background_image":"","checkout_sidebar_background_color":"#fafafa","checkout_heading_font":"Open Sans","checkout_body_font":"Open Sans","checkout_accent_color":"#4f4f4f","checkout_button_color":"#6cace4","checkout_error_color":"#ff6d6d","default_currency":"USD","color_image_bg":"#000000","breadcrumb":true,"color_sale_tag":"#990000","color_input":"#ffffff","checkout_banner_background_color":"#fff","checkout_call_to_action_color":"#a26b25","checkout_use_header_image":false,"sections":{"header":{"type":"header","blocks":{"1571939201819":{"type":"logo","settings":{"logo":"shopify:\/\/shop_images\/whitelogopng.png","logo-inverted":"shopify:\/\/shop_images\/whitelogopng.png","desktop_logo_width":140,"mobile_logo_width":120}}},"block_order":["1571939201819"],"settings":{"main_menu_link_list":"main-menu","main_menu_alignment":"center-left","header_style":"sticky","sticky_index":true,"sticky_collection":true,"header_search_enable":true,"type_navigation_size":16,"type_navigation_style":false,"show_announcement":true,"announcement_text":"shop thoughtfully crafted, organic goods.","announcement_text_us":"shop thoughtfully crafted, organic goods. free shipping on orders over $45","announcement_text_ca":"shop thoughtfully crafted, organic goods. free shipping on orders over $60","announcement_link":"","announcement_closable":false}},"header-v2":{"type":"header-v2","blocks":{"6c48c7f4-9184-4e04-9092-9843366445a4":{"type":"logo","settings":{"logo":"shopify:\/\/shop_images\/whitelogopng.png","logo-inverted":"shopify:\/\/shop_images\/whitelogopng.png","desktop_logo_width":140,"mobile_logo_width":120}}},"block_order":["6c48c7f4-9184-4e04-9092-9843366445a4"],"settings":{"main_menu_link_list":"mega-menu-v2","main_menu_alignment":"center-left","header_style":"sticky","sticky_index":true,"sticky_collection":true,"header_search_enable":true,"type_navigation_size":16,"type_navigation_style":false,"show_announcement":true,"announcement_text":"free shipping on orders $60+","announcement_text_us":"free shipping on orders $60+","announcement_text_ca":"free shipping on orders $60+","announcement_link":"","announcement_closable":false}},"footer":{"type":"footer","blocks":{"1572456197591":{"type":"logo_social","settings":{"logo":"shopify:\/\/shop_images\/Artboard_1.png","desktop_logo_height":85,"container_width":20}},"1576510764890":{"type":"menu","settings":{"show_footer_title":false,"menu":"footer-product-support-v2","container_width":20}},"1494301487049":{"type":"menu","settings":{"show_footer_title":false,"menu":"footer","container_width":20}},"1494292487693":{"type":"newsletter","settings":{"show_footer_title":false,"title":"Sign up and save","richtext":"","container_width":30}}},"block_order":["1572456197591","1576510764890","1494301487049","1494292487693"],"settings":{"show_payment_icons":false,"show_social":false,"show_copyright":false,"copyright_text":""}},"collection-template":{"type":"collection-template","settings":{"per_row":3,"collection_image_enable":false,"collection_subnav_style":"none","collection_tags_style":"none","collection_sort_enable":false}},"product-template":{"type":"product-template","settings":{"image_size":"medium","thumbnail_position":"below","description_style":"default","social_enable":false}},"article-template":{"type":"article-template","settings":{"blog_show_image":true,"blog_show_tags":true,"blog_show_date":true,"blog_show_comments":true,"blog_show_author":false,"social_sharing_blog":true}},"blog-template":{"type":"blog-template","settings":{"blog_show_tag_filter":true}},"product-sections-template":{"type":"product-sections-template","blocks":{"product-image-row":{"type":"image-row","settings":{"image_1":"","image_1_link":"","image_2":"","image_2_link":"","image_3":"","image_3_link":"","image_4":"","image_4_link":"","enable_gutter":false,"enable_zoom":true}},"product-text-and-image":{"type":"text-and-image","settings":{"image":"","image_width":500,"subtitle":"Improved","title":"Image with text","text":"<p>Pair large text with an image to tell a story, explain a detail about your product, or describe a new promotion.<\/p>","button_label":"Optional button","button_link":"","layout":"left"}},"product-background-image-text":{"type":"background-image-text","settings":{"subtitle":"Impressive","title":"Large image with text box","text":"<p>Pair large text with a full-width image to draw attention to an important detail of your brand or product line.<\/p>","button_label":"","button_link":"","image":"","alignment":"center","color_border":"#f4f4f4","layout":"right","height":550}},"product-text-columns":{"type":"text-columns","settings":{"title":"","align_text":"left","enable_image_1":true,"image_1":"","title_1":"Example title","text_1":"<p>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions about your products. Add images for emphasis.<\/p>","button_label_1":"","button_link_1":"","enable_image_2":true,"image_2":"","title_2":"Example title","text_2":"<p>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions about your products. Add images for emphasis.<\/p>","button_label_2":"","button_link_2":"","enable_image_3":true,"image_3":"","title_3":"Example title","text_3":"<p>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions about your products. Add images for emphasis.<\/p>","button_label_3":"","button_link_3":""}},"product-hero-video":{"type":"hero-video","settings":{"title":"Bring your\nbrand to life.","title_size":80,"subheading":"Seamless hero videos","link_text":"Optional button","link":"","text_align":"vertical-bottom horizontal-left","video_url":"https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc","section_height":"650px","mobile_height":"auto"}}},"block_order":["product-image-row","product-text-and-image","product-background-image-text","product-text-columns","product-hero-video"],"settings":{"image_size":"medium","thumbnail_position":"beside","description_style":"default","social_enable":true}},"page-sections-template":{"type":"page-sections-template","blocks":{"page-fading-images":{"type":"fading-images","settings":{"title_lines":"2","title_size":45,"slide_speed":5,"color_overlay":"#000","color_overlay_opacity":30,"section_height":650,"enable_image_1":true,"image_1":"","focal_point_1":"center center","slide_title_1a":"Beautifully animated","slide_title_1b":"titles and images","enable_image_2":true,"image_2":"","focal_point_2":"center center","slide_title_2a":"Use this section","slide_title_2b":"to impress customers","enable_image_3":false,"image_3":"","focal_point_3":"center center","slide_title_3a":"","slide_title_3b":""}},"page-rich-text":{"type":"rich-text","settings":{"title":"","text":"<p>Use this section for any descriptive text you need to fill out your pages or to add introductory headings between other blocks.<\/p>","align_text":"center","narrow_column":true,"enlarge_text":true}},"page-text-columns":{"type":"text-columns","settings":{"title":"","align_text":"left","enable_image_1":true,"image_1":"","title_1":"Example title","text_1":"<p>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions about your products. Add images for emphasis.<\/p>","button_label_1":"","button_link_1":"","enable_image_2":true,"image_2":"","title_2":"Example title","text_2":"<p>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions about your products. Add images for emphasis.<\/p>","button_label_2":"","button_link_2":"","enable_image_3":true,"image_3":"","title_3":"Example title","text_3":"<p>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions about your products. Add images for emphasis.<\/p>","button_label_3":"","button_link_3":""}},"page-background-image-text":{"type":"background-image-text","settings":{"subtitle":"Impressive","title":"Large image with text box","text":"<p>Pair large text with a full-width image to draw attention to an important detail of your brand or product line.<\/p>","button_label":"","button_link":"","image":"","alignment":"center","color_border":"#f4f4f4","layout":"right","height":550}},"page-featured-collection":{"type":"featured-collection","settings":{"title":"Featured collection","collection":"","per_row":4,"rows":1,"view_all":true}}},"block_order":["page-fading-images","page-rich-text","page-text-columns","page-background-image-text","page-featured-collection"],"settings":{"page_title_enable":false,"page_content_enable":false}},"newsletter-popup":{"type":"newsletter-popup","settings":{"mode":"disabled","popup_seconds":5,"popup_days":30,"popup_title":"Sign up and save","popup_text":"<p>Entice customers to sign up for your mailing list with discounts or exclusive offers. Include an image for extra impact.<\/p>","close_text":"No thanks","enable_newsletter":true,"button_label":"Optional button","button_link":"","enable_button":false}},"product-recommendations":{"type":"product-recommendations","settings":{"show_product_recommendations":true,"product_recommendations_heading":"Frequently Bought Together","related_count":5}},"product-collection-links":{"type":"product-collection-links","settings":{"collection_links_enable":false}},"list-collections-template":{"type":"list-collections-template","settings":{"title_enable":true,"display_type":"all","sort":"alphabetical","grid":"3"}},"page-faq-template":{"type":"page-faq-template","blocks":{"1588196747042":{"type":"rich-text","settings":{"title":"subscriptions","text":"","align_text":"left"}},"1588262478690":{"type":"question","settings":{"title":"I can't log into my account?","text":"<p>You are not required to create an account when you make a subscription order. However, in order to manage your subscription preferences, you need to create an account with the same email provided during your order. <a href=\"https:\/\/nomz.com\/account\/register\"><span style=\"text-decoration:underline\">Click here<\/span><\/a> if you haven’t created an account yet. If you already have an account, log in below<\/p>"}},"1588196769000":{"type":"question","settings":{"title":"Can I skip my next order?","text":"<p>Yes, <a href=\"https:\/\/nomz.com\/account\/login?return_url=%2Faccount\"><strong>log in<\/strong><\/a> to your account and click &#x27;Manage my subscription&#x27; on the left hand side of your desktop or scroll down on your mobile. Click View details. Click Manage upcoming orders. Click Skip order for any upcoming orders you wouldn&#x27;t like to receive.<\/p>"}},"1588196783576":{"type":"question","settings":{"title":"Can I change the products in my subscription?","text":"<p>Yes, <a href=\"https:\/\/nomz.com\/account\/login?return_url=%2Faccount\"><strong>log in<\/strong><\/a> to your account and click &#x27;Manage my subscription&#x27; on the left hand side of your desktop or scroll down on your mobile. Click View details. Click Products in your subscription. Click Swap product and select which flavour you would like to receive instead.<\/p>"}},"1588196801367":{"type":"question","settings":{"title":"Can I cancel my subscription?","text":"<p>Yes, <a href=\"https:\/\/nomz.com\/account\/login?return_url=%2Faccount\"><strong>log in<\/strong><\/a> to your account and click &#x27;Manage my subscription&#x27; on the left hand side of your desktop or scroll down on your mobile. Click View details. Click Cancel Subscription.<\/p>"}},"page-faq-template-0":{"type":"rich-text","settings":{"title":"product","text":"","align_text":"left"}},"page-faq-template-1":{"type":"question","settings":{"title":"What are nomz energy bites?","text":"<p>Nomz Energy Bites are a decadent healthy snack that everyone enjoys. It&#x27;s perfect for a workout, a car snack, or breakfast. You can add it to your smoothie bowls, take it with you to the park, or enjoy on vacation. Our energy bites are certified organic, vegan, gluten free, and paleo. It&#x27;s a snack that tastes good, made with simple and real ingredients.<\/p>"}},"page-faq-template-2":{"type":"question","settings":{"title":"How many flavours of nomz are there?","text":"<p>Our energy bites are available in four different coatings: Hazelnut, Pistachio, Coconut and Almond.<\/p>"}},"5a5fd753-c136-4493-a0ae-95cf189cad41":{"type":"question","settings":{"title":"I have a nut allergy, can I eat your products?","text":"<p>Nomz is <strong>not<\/strong> a nut free facility. A majority of our products are made with tree nuts including almonds, hazelnuts, pistachios and cashews.<\/p><p>Our facility <strong>does not <\/strong>process peanuts.<\/p>"}},"1588196585389":{"type":"question","settings":{"title":"What are the ingredients?","text":"<p>All our energy bites have nuts, dates, cocoa, and sea salt – that's it.<\/p>"}},"1588196619742":{"type":"question","settings":{"title":"90 calories per ball – is that good or bad?","text":"<p>Nomz Energy Bites are an enjoyable snack for two equally weighted reasons: they taste good and they are healthy. Win\/win. As a bonus, they also sustain your hunger and tide you over when you haven&#x27;t had much else to eat. Our calories are packed with nutrients and healthy fats. We always believe that as long as you&#x27;re eating good calories, there&#x27;s no need to count.<\/p>"}},"1588196646961":{"type":"question","settings":{"title":"What is the shelf life of nomz energy bites?","text":"<p>4 months stored at room temperature. We ship out energy bites that have been freshly made<\/p>"}},"page-faq-template-3":{"type":"rich-text","settings":{"title":"company","text":"","align_text":"left"}},"page-faq-template-4":{"type":"question","settings":{"title":"Where are you based out of?","text":"<p>We are a proudly Canadian company based in Toronto, Ontario.<\/p>"}},"1588196723252":{"type":"question","settings":{"title":"Do you ship to countries outside of Canada?","text":"<p>Yes, we ship worldwide via UPS. All orders ship out same day or next day from Toronto, Ontario in Canada. Depending on where you&#x27;re located, you&#x27;ll receive your parcel within days of placing the order. UPS tracking numbers are automatically emailed to you upon shipment, so you are able to check the progress and ETA of your orders. Send us a note for any questions about your shipment!<\/p>"}},"1588196820051":{"type":"rich-text","settings":{"title":"wholesale","text":"","align_text":"left"}},"1588196846296":{"type":"question","settings":{"title":"I have a store and would like to carry your product. Do you sell wholesale?","text":"<p>Thank you for your interest in carrying our products! We would be delighted to work with you as a wholesale partner. Please create an account on our wholesale portal at <a href=\"http:\/\/wholesale.nomz.com\/\">wholesale.nomz.com<\/a>. If need any help, please reach out to us directly. We would be happy to answer any questions and guide you through the process!<\/p>"}},"1588196859861":{"type":"question","settings":{"title":"Do you have a distributor?","text":"<p>Yes, UNFI is our national distribution partner.<\/p>"}}},"block_order":["1588196747042","1588262478690","1588196769000","1588196783576","1588196801367","page-faq-template-0","page-faq-template-1","page-faq-template-2","5a5fd753-c136-4493-a0ae-95cf189cad41","1588196585389","1588196619742","1588196646961","page-faq-template-3","page-faq-template-4","1588196723252","1588196820051","1588196846296","1588196859861"],"settings":{"page_title_enable":false,"page_content_enable":true}},"featured-collection":{"type":"featured-collection","settings":{"title":"Product Suggestions","home_featured_products":"energy-bites","per_row":4,"rows":1,"divider":false,"view_all":true}},"1499790529450":{"type":"hero-video","settings":{"title":"treat your body","title_size":80,"subheading":"ORGANIC, VEGAN & PALEO SNACKS","isBold":true,"subheading_size":30,"content":"","link_text":"shop now","link":"shopify:\/\/collections\/all-products","text_align":"vertical-center horizontal-center","image_video":"video","image":"shopify:\/\/shop_images\/coconutbites.jpg","image_mobile":"shopify:\/\/shop_images\/coconutbites.jpg","video_url":"https:\/\/cdn.shopify.com\/s\/files\/1\/0857\/4434\/files\/nomz_homepage.mp4?v=1640190006","video_url_mobile":"https:\/\/cdn.shopify.com\/s\/files\/1\/0857\/4434\/files\/nomz_homepage.mp4?v=1640190006","section_height":"750px","mobile_height":"100vh"}},"1576771100827":{"type":"advanced-content","disabled":true,"blocks":{"1576771100827-1":{"type":"html","settings":{"code":"<div id=\"insta-feed\" class=\"instagram-feed\"><\/div>","overlay_title":"test","overlay_url":"https:\/\/www.instagram.com\/nomz\/?hl=en","overlay_color":"#4f4f4f","overlay_bg":"#ffffff","width":"100%","alignment":"center"}}},"block_order":["1576771100827-1"],"settings":{"full_width":true,"space_around":true}},"1600796453398":{"type":"featured-collection","settings":{"title":"nut butters","home_featured_products":"nut-butters","per_row":5,"rows":1,"overlay_scrollbars":true,"view_all_link":false,"divider":false,"view_all":false,"view_all_text":"View all products","view_all_url":"","view_all_color_bg":"#6cace4","view_all_color_text":"#ffffff"}},"1600798311007":{"type":"featured-collection","disabled":true,"settings":{"title":"featured selection","home_featured_products":"featured-collection","per_row":3,"rows":1,"overlay_scrollbars":true,"view_all_link":true,"divider":false,"view_all":false,"view_all_text":"View all products","view_all_url":"","view_all_color_bg":"#6cace4","view_all_color_text":"#ffffff"}},"1601304991319":{"type":"featured-collection","settings":{"title":"energy bites","home_featured_products":"energy-bites","per_row":4,"rows":2,"overlay_scrollbars":true,"view_all_link":false,"divider":false,"view_all":false,"view_all_text":"View all products","view_all_url":"","view_all_color_bg":"#6cace4","view_all_color_text":"#ffffff"}},"1620133030d8531624":{"type":"nomz-bites","disabled":true,"blocks":{"1620133030d8531624-0":{"type":"logo_image","settings":{"bite-text":"<p>organic<\/p>"}},"76ccf86a-d45b-49ec-9bfd-ea8c6af242f0":{"type":"logo_image","settings":{"bite-text":"<p>vegan<\/p>"}},"687d7abb-9663-4c45-9891-9db113c1eeac":{"type":"logo_image","settings":{"bite-text":"<p>gluten free<\/p>"}},"8e625954-bb38-40ab-9e93-89f20ec4123e":{"type":"logo_image","settings":{"bite-text":"<p>paleo<\/p>"}},"b5b86404-b990-4f59-b302-540b92d14b8d":{"type":"logo_image","settings":{"bite-text":"<p>non-GMO<\/p>"}},"9efcafbc-2f2c-4889-9197-7c7f91b604d5":{"type":"logo_image","settings":{"bite-text":"<p>no added sugar<\/p>"}},"5ddac722-06db-4534-b040-48e812c5a48c":{"type":"logo_image","settings":{"bite-text":"<p>ethically sourced ingredients<\/p>"}}},"block_order":["1620133030d8531624-0","76ccf86a-d45b-49ec-9bfd-ea8c6af242f0","687d7abb-9663-4c45-9891-9db113c1eeac","8e625954-bb38-40ab-9e93-89f20ec4123e","b5b86404-b990-4f59-b302-540b92d14b8d","9efcafbc-2f2c-4889-9197-7c7f91b604d5","5ddac722-06db-4534-b040-48e812c5a48c"],"settings":{"title":"nomz bites","text":"<p>per bite:<\/p>","ingredients-1-main":"3g","ingredients-1":"sugar","ingredients-2-main":"90","ingredients-2":"calories","ingredients-3-main":"2g","ingredients-3":"fibre","ingredients-4-main":"4g","ingredients-4":"protein","button_label":"shop all flavours","button_link":"shopify:\/\/collections\/all","bite-image-1":"shopify:\/\/shop_images\/coconut-bite.png","bite-text-1":"<p>coconut<\/p>","bite-link-1":"shopify:\/\/products\/coconut-energy-bites","bite-color-1":"#6cace4","bite-image-2":"shopify:\/\/shop_images\/almond-bite.png","bite-text-2":"<p>almond<\/p>","bite-link-2":"shopify:\/\/products\/almond-energy-bites","bite-color-2":"#ae9cdb","bite-image-3":"shopify:\/\/shop_images\/hazelnut-bite.png","bite-text-3":"<p>hazelnut<\/p>","bite-link-3":"shopify:\/\/products\/hazelnut-energy-bites","bite-color-3":"#f0bb5a","bite-image-4":"shopify:\/\/shop_images\/pistachio-bite-nomz.png","bite-text-4":"<p>pistachio<\/p>","bite-link-4":"shopify:\/\/products\/pistachio-energy-bites","bite-color-4":"#94cf66"}},"1622560873034bfd09":{"type":"ffc-text-and-image","disabled":true,"settings":{"image":"shopify:\/\/shop_images\/circle-img.png","color_bg":"#fbd891","color_text":"#ffffff","title":"about nomz","text":"<p>nomz began in 2013 with our energy bites, a simple snacking option made with nutrient-dense ingredients and the belief that we could provide our community with accessible, healthy snacking options that taste good, and nourishes the body too.<\/p>","button_label":"read more","button_link":"shopify:\/\/pages\/our-story","layout":"right","divider":false}},"16228163262297b684":{"type":"ffc-background-image-text","settings":{"subtitle":"","title":"satisfaction guarantee","text":"<p>We're lucky to have so many happy  customers. We're confident you'll be one too.<br\/><br\/>If you're not 100% satisfied with your order, reach out to care@nomz.com and we'll send you a full refund, no questions asked.<\/p>","button_label":"","button_link":"shopify:\/\/collections\/all","image":"shopify:\/\/shop_images\/guarantee-bg.jpg","image_mobile":"shopify:\/\/shop_images\/guarantee_bg.png","alignment":"center","layout":"left"}},"1624001104304ed81f":{"type":"ffc-testimonials","disabled":true,"blocks":{"1624001104304ed81f-0":{"type":"testimonial","settings":{"testimonial":"<p>Nomz were excellent in every way...the flavors (hazelnut is my favorite!). the ingredients spot on. the name is perfect. the packaging is clean, simple and elegant.<\/p>","author":"Jacquelyne S","product":"","rating":5}},"1624001104304ed81f-1":{"type":"testimonial","settings":{"testimonial":"<p>Amazing taste and texture.<br\/>These little bites are amazing!! The texture is so rich and the taste is heavenly!! My favorite snack by far!<\/p>","author":"Tracey D","product":"","rating":5}},"1624001104304ed81f-2":{"type":"testimonial","settings":{"testimonial":"<p>Best snack ever. I absolutely love Nomz. The quality is unbeatable, they are delicious, full of flavor, easy to pack and perfect nutritionally. Thank you.<\/p>","author":"Jonathan J","product":"","rating":5}},"be644d2a-dde3-403e-b592-4611ce6c6168":{"type":"testimonial","settings":{"testimonial":"<p>I absolutely love these things!!! I don’t know how many months I have been ordering them but they are a staple in my every day diet!! Oh and don’t just stick to one flavour....try all 4.<\/p>","author":"Hali C","product":"","rating":5}},"7f0b9c46-c6d6-4941-b274-26b30ae001be":{"type":"testimonial","settings":{"testimonial":"<p>Delicious, clean eating and I appreciate the 96 pak for the bulk discount. I love all the flavours and the online shopping\/shipping was seamless. Highly recommend - they are SO good.<\/p>","author":"Chris B","product":"","rating":5}},"bab07f0f-8c7c-4cef-8279-f818250fce71":{"type":"testimonial","settings":{"testimonial":"<p>Nomz in the only treat in the market, natural and organic, with a very low sugar content. It has helped me replace refined sugar and serves as a daily dessert. I order a box monthly. Cant live without it! Thank you Nomz!<\/p>","author":"Camila N","product":"","rating":5}},"1f2bb533-bc78-4989-833e-80b669fbfd38":{"type":"testimonial","settings":{"testimonial":"<p>Soft and seriously delicious! Packed with nutritious ingredients. Best part is they only have a few ingredients!<\/p>","author":"Michelle Z","product":"","rating":5}},"3074c80c-6126-4a10-9acc-3a750e9b2629":{"type":"testimonial","settings":{"testimonial":"<p>This is just amazing! So healthy and filling! I am addicted to it. It is the best snack out there and it tastes heavenly; I tried various brands of energy balls and this is one is the best.<\/p>","author":"Rachelle","product":"","rating":5}},"e76c6b2d-e15a-4c21-981a-c85e1b68c5ca":{"type":"testimonial","settings":{"testimonial":"<p>These magical healthy bites taste like chocolate truffles! I am obsessed with them and have gotten my family hooked. As someone with celiac these are a great sweet treat with no worry or guilt. Pistachio bites are my favourite!<\/p>","author":"Amanda C","product":"","rating":5}}},"block_order":["1624001104304ed81f-0","1624001104304ed81f-1","1624001104304ed81f-2","be644d2a-dde3-403e-b592-4611ce6c6168","7f0b9c46-c6d6-4941-b274-26b30ae001be","bab07f0f-8c7c-4cef-8279-f818250fce71","1f2bb533-bc78-4989-833e-80b669fbfd38","3074c80c-6126-4a10-9acc-3a750e9b2629","e76c6b2d-e15a-4c21-981a-c85e1b68c5ca"],"settings":{"title":"taste·monials","content":"","rating":5,"divider":true}},"page-wholesale-landing":{"type":"page-wholesale-landing","blocks":{"168c62cb-d5ce-44ed-b664-7889624c40d5":{"type":"background-image-text","settings":{"subtitle":"","title":"Join our wholesale community!","text":"","button_label":"sign up \/ login","button_link":"https:\/\/wholesale.nomz.com\/login","image":"shopify:\/\/shop_images\/hero-img3_2x_c2fd863e-0cb3-4831-96f9-60e6c83710e0.png","image_mobile":"shopify:\/\/shop_images\/hero-img3mobile.png","alignment":"center right","layout":"left","color_text":"#ffffff","button_color_bg":"#ffffff","button_color":"#ae9cdb"}},"7fef6fb8-619c-4fce-95b5-8067dd9b32fa":{"type":"benefits","settings":{"title":"the benefits","text":"","image":"shopify:\/\/shop_images\/wholesale2.jpg","benefit_1":"Wholesale pricing","benefit_2":"Low minimums","benefit_3":"Net 30 day payment terms","benefit_4":"Automated invoicing","benefit_5":"Ships out next day with tracking link","benefit_6":"Sales and merchandising resources","benefit_7":"Creating an account and placing an order takes less than a minute","benefit_8":"","benefit_9":"","benefit_10":""}},"b113af8c-d3c6-455f-9378-758e12610178":{"type":"logo-list","settings":{"title":"our products","text":"<p>Always organic, fresh and delicious.<\/p>","logo_image_1":"shopify:\/\/shop_images\/organic_426a92aa-5633-4454-9189-ec5b541623b4.png","logo_link_1":"","logo_image_2":"shopify:\/\/shop_images\/vegan_62978363-0c6d-497b-a8f5-b45d0158a062.png","logo_link_2":"","logo_image_3":"shopify:\/\/shop_images\/paleo.png","logo_link_3":"","logo_image_4":"shopify:\/\/shop_images\/gluten_free.png","logo_link_4":"","logo_image_5":"shopify:\/\/shop_images\/made_in_canada.png","logo_link_5":"","logo_link_6":"","logo_link_7":"","logo_link_8":"","logo_link_9":"","logo_link_10":""}},"87c3ab6a-daba-4866-8f6d-54094e5c3fd9":{"type":"product-promotion","settings":{"title":"","text":"","promo_url_1":"https:\/\/wholesale.nomz.com\/login","promo_title_1":"snack bites","promo_color_1":"#6cace4","promo_image_1":"shopify:\/\/shop_images\/prod1.jpg","promo_url_2":"https:\/\/wholesale.nomz.com\/login","promo_title_2":"beeswax candles","promo_color_2":"#f0bb5a","promo_image_2":"shopify:\/\/shop_images\/candle.jpg","promo_url_3":"https:\/\/wholesale.nomz.com\/login","promo_title_3":"nut butters","promo_color_3":"#ae9cdb","promo_image_3":"shopify:\/\/shop_images\/prod3.jpg","promo_url_4":"https:\/\/wholesale.nomz.com\/login","promo_title_4":"superfood mixes","promo_color_4":"#a4cc87","promo_image_4":"shopify:\/\/shop_images\/prod4.jpg","promo_url_5":"","promo_title_5":"","promo_color_5":"","promo_url_6":"","promo_title_6":"","promo_color_6":"","promo_url_7":"","promo_title_7":"","promo_color_7":"","promo_url_8":"","promo_title_8":"","promo_color_8":"","promo_url_9":"","promo_title_9":"","promo_color_9":"","promo_url_10":"","promo_title_10":"","promo_color_10":""}},"9e2d8517-1da2-4d67-847c-4a30752beb2d":{"type":"testimonials-with-images","settings":{"title":"our stockist community","text":"<p>Cafes, fitness studios, gift shops juice bars, universities, grocery stores, health and gormet stores, spas, airports and more<\/p>","testimonial_1":"<p>Sooooo good and a great option for our customers who need an energy pick me up after a sweaty spin or barre class!<\/p>","author_1":"Alexis L.","author_details_1":"bcycle","image_1":"shopify:\/\/shop_images\/instore.jpg","testimonial_2":"<p>\"These are one of my favourites in the set!\" –, <\/p>","author_2":"Nicole M.","author_details_2":"Category Buyer, Loblaws","image_2":"shopify:\/\/shop_images\/juicebox.jpg","testimonial_3":"","author_3":"","author_details_3":"","testimonial_4":"","author_4":"","author_details_4":"","testimonial_5":"","author_5":"","author_details_5":"","testimonial_6":"","author_6":"","author_details_6":"","testimonial_7":"","author_7":"","author_details_7":"","testimonial_8":"","author_8":"","author_details_8":"","testimonial_9":"","author_9":"","author_details_9":"","testimonial_10":"","author_10":"","author_details_10":""}},"89d44f79-5ca3-4e87-aab1-023363f0da63":{"type":"logo-grid","settings":{"title":"","text":"","logo_image_1":"shopify:\/\/shop_images\/wholefoods.jpg","logo_link_1":"","logo_image_2":"shopify:\/\/shop_images\/logo-nordstrom_1.png","logo_link_2":"","logo_image_3":"shopify:\/\/shop_images\/la_colombe.jpg","logo_link_3":"","logo_image_4":"shopify:\/\/shop_images\/indigo2.jpg","logo_link_4":"","logo_image_5":"shopify:\/\/shop_images\/air_canada.jpg","logo_link_5":"","logo_image_6":"shopify:\/\/shop_images\/logo-pusateris_1.png","logo_link_6":"","logo_image_7":"shopify:\/\/shop_images\/farmboy.jpg","logo_link_7":"","logo_image_8":"shopify:\/\/shop_images\/loblaws.jpg","logo_link_8":"","logo_link_9":"","logo_link_10":""}},"380493c8-cadc-42d3-8da0-5b68e80d8eae":{"type":"contact","settings":{"title":"we’d love to hear from you!","text":"","heading_phone":"call or text us","phone":"+1 416 278 9542","heading_email":"write to us","email":"hello@nomz.com"}}},"block_order":["168c62cb-d5ce-44ed-b664-7889624c40d5","7fef6fb8-619c-4fce-95b5-8067dd9b32fa","b113af8c-d3c6-455f-9378-758e12610178","87c3ab6a-daba-4866-8f6d-54094e5c3fd9","9e2d8517-1da2-4d67-847c-4a30752beb2d","89d44f79-5ca3-4e87-aab1-023363f0da63","380493c8-cadc-42d3-8da0-5b68e80d8eae"],"settings":{}},"footer-v2":{"type":"footer-v2","blocks":{"footer-v2-1":{"type":"logo_social","settings":{"logo":"shopify:\/\/shop_images\/whitelogopng.png","desktop_logo_height":32,"width":26}},"footer-v2-0":{"type":"menu","settings":{"show_footer_title":true,"menu":"footer-v2-1","width":18}},"8f27ebf1-c706-40e2-8752-772ad73ac978":{"type":"menu","settings":{"show_footer_title":true,"menu":"footer-v2-2","width":18}},"292663bc-4fab-4264-aec8-a431ebeebd51":{"type":"newsletter","disabled":true,"settings":{"show_footer_title":true,"title":"sign up to our newsletter","richtext":"","width":40}}},"block_order":["footer-v2-1","footer-v2-0","8f27ebf1-c706-40e2-8752-772ad73ac978","292663bc-4fab-4264-aec8-a431ebeebd51"],"settings":{"show_payment_icons":false,"show_copyright":true,"copyright_text":""}},"newsletter-bar":{"type":"newsletter-bar","settings":{"enable":false,"title":"Sign Up for 10% off your first order","button":"sign up","color_bg":"#6cace4","color":"#ffffff"}},"page-subscription-landing":{"type":"page-subscription-landing","blocks":{"6e2fa851-4801-4377-b937-aef05a2610dd":{"type":"background-image-text","settings":{"subtitle":"","title":"subscribe & save 15% on everything","text":"","button_label":"login","button_link":"https:\/\/nomz.com\/account\/login?return_url=%2Faccount","image":"shopify:\/\/shop_images\/hero-img3_2xn.jpg","image_mobile":"shopify:\/\/shop_images\/Mask_Group.jpg","image_contain":true,"alignment":"center","layout":"left","color_text":"#ffffff","button_color_bg":"#ffffff","button_color":"#ae9cdb","background_color":"#f8e4c4"}},"90f516d0-edeb-4d7c-921f-6a1dc926a3bd":{"type":"columns-with-icons","settings":{"title":"how does subscription work?","text_1":"<p>Sign up to  our subscription  service for 15% discount<\/p>","icon_1":"https:\/\/cdn.shopify.com\/s\/files\/1\/0857\/4434\/files\/percent_1.svg?v=1631802535","text_2":"<p>Choose the frequency and  amount of your subscription<\/p>","icon_2":"https:\/\/cdn.shopify.com\/s\/files\/1\/0857\/4434\/files\/calendar_1.svg?v=1631802535","text_3":"<p>Pause or cancel your subscription at any time<\/p>","icon_3":"https:\/\/cdn.shopify.com\/s\/files\/1\/0857\/4434\/files\/pause_alt2_1.svg?v=1631802535"}},"2c047b77-f7f1-410c-9c89-b46ef6bd1bc9":{"type":"subscription-product","settings":{"featured_product":"coconut-energy-bites","bg_color":"#fafafa","thumbnail_position":"none","badge_label":"subscribe and save 15%","divider":false}},"219fc71a-1c98-4fe1-9037-3db197039a82":{"type":"logo-list","settings":{"title":"snack subscription box","text":"<p>Subscribe and save 15%. Simply set your order frequency and we will ship nomz directly to your doorstep. Need a healthy snack option? Want to try something new and delicious? Just fancy having an emergency stash of something sweet and guilt-free? You're in the right place.<\/p>","bg_color":"#fafafa","logo_image_1":"shopify:\/\/shop_images\/icon-1_07ba290d-78f0-46fc-b44c-a36a2bd166ba.png","logo_link_1":"","logo_image_2":"shopify:\/\/shop_images\/icon-2_0164c3b4-cd71-4138-851f-7c8493f7ac91.png","logo_link_2":"","logo_image_3":"shopify:\/\/shop_images\/icon-3_962891f4-945b-4e61-91e9-a8d7c04ab29e.png","logo_link_3":"","logo_image_4":"shopify:\/\/shop_images\/icon-4_93ea57df-ede1-4ae7-91d1-a706b8a69605.png","logo_link_4":"","logo_image_5":"shopify:\/\/shop_images\/proudly_canadian_a61795b3-6c08-4f57-a847-917ddb7b04a7.png","logo_link_5":"","logo_link_6":"","logo_link_7":"","logo_link_8":"","logo_link_9":"","logo_link_10":""}},"b2f7e123-2593-455e-ab79-4f4e1a932b8b":{"type":"benefits","settings":{"title":"subscription benefits","text":"","image":"shopify:\/\/shop_images\/sunflower.jpg","benefit_1":"Change shipping date \/ frequency anytime","benefit_2":"No strings attached – pause or cancel subscription anytime","benefit_3":"Swap products in your subscription","benefit_4":"You can skip or change your next order date","benefit_5":"Save 10% and have nomz shipped to your door automatically so you're never hangry","benefit_6":"","benefit_7":"","benefit_8":"","benefit_9":"","benefit_10":""}},"7e4261b9-d061-45a0-a5ac-d778c0d3a4f7":{"type":"testimonials","settings":{"title":"taste·monials","testimonial_1":"<p>Nomz were excellent in every way...the flavors (hazelnut is my favorite!). the ingredients spot on. the name is perfect. the packaging is clean, simple and elegant.<\/p>","author_1":"Jacquelyne S","testimonial_2":"<p>Amazing taste and texture.These little bites are amazing!! The texture is so rich and the taste is heavenly!! My favorite snack by far!<\/p>","author_2":"Tracey D","testimonial_3":"<p>Best snack ever. I absolutely love Nomz. The quality is unbeatable, they are delicious, full of flavor, easy to pack and perfect nutritionally. Thank you.<\/p>","author_3":"Jonathan J","testimonial_4":"<p>I absolutely love these things!!! I don’t know how many months I have been ordering them but they are a staple in my every day diet!! Oh and don’t just stick to one flavour....try all 4.<\/p>","author_4":"Hali C","testimonial_5":"<p>Delicious, clean eating and I appreciate the 96 pak for the bulk discount. I love all the flavours and the online shopping\/shipping was seamless. Highly recommend - they are SO good.<\/p>","author_5":"Chris B","testimonial_6":"<p>Nomz in the only treat in the market, natural and organic, with a very low sugar content. It has helped me replace refined sugar and serves as a daily dessert. I order a box monthly. Cant live without it! Thank you Nomz!<\/p>","author_6":"Camila N","testimonial_7":"<p>Soft and seriously delicious! Packed with nutritious ingredients. Best part is they only have a few ingredients!<\/p>","author_7":"Michelle Z","testimonial_8":"<p>This is just amazing! So healthy and filling! I am addicted to it. It is the best snack out there and it tastes heavenly; I tried various brands of energy balls and this is one is the best.<\/p>","author_8":"Rachelle","testimonial_9":"<p>These magical healthy bites taste like chocolate truffles! I am obsessed with them and have gotten my family hooked. As someone with celiac these are a great sweet treat with no worry or guilt. Pistachio bites are my favourite!<\/p>","author_9":"Amanda C"}},"0c2d41c6-9615-48bb-8c7c-f2f112cd1198":{"type":"featured-collection","disabled":true,"settings":{"title":"subscribe to bites","collection":"energy-bites","view_all":false,"subscription":true}},"80159878-78c6-46b9-8572-67239016cbbc":{"type":"featured-collection","disabled":true,"settings":{"title":"subscribe to butters","collection":"nut-butters","view_all":false,"subscription":true}},"7a89a637-dea1-4eba-8d31-d5b62ed83a5e":{"type":"featured-collection","disabled":true,"settings":{"title":"other subscription products","collection":"featured-products","view_all":false,"subscription":true}}},"block_order":["6e2fa851-4801-4377-b937-aef05a2610dd","90f516d0-edeb-4d7c-921f-6a1dc926a3bd","2c047b77-f7f1-410c-9c89-b46ef6bd1bc9","219fc71a-1c98-4fe1-9037-3db197039a82","b2f7e123-2593-455e-ab79-4f4e1a932b8b","7e4261b9-d061-45a0-a5ac-d778c0d3a4f7","0c2d41c6-9615-48bb-8c7c-f2f112cd1198","80159878-78c6-46b9-8572-67239016cbbc","7a89a637-dea1-4eba-8d31-d5b62ed83a5e"],"settings":{}},"16335925935f4a84e3":{"type":"ffc-logos","blocks":{"16335925935f4a84e3-0":{"type":"logo_image","settings":{"image":"shopify:\/\/shop_images\/Asset_1.png","link":"","title":"ORGANIC"}},"16335925935f4a84e3-1":{"type":"logo_image","settings":{"image":"shopify:\/\/shop_images\/vegan_34a5a699-0185-40dc-9482-b1250da90352.png","link":"","title":"VEGAN"}},"16335925935f4a84e3-2":{"type":"logo_image","settings":{"image":"shopify:\/\/shop_images\/paleo_67c3f401-79c4-45e8-b7a3-0abab802c091.png","link":"","title":"PALEO"}},"16335925935f4a84e3-3":{"type":"logo_image","settings":{"image":"shopify:\/\/shop_images\/gluten-free_5862b28b-977e-4f99-9423-dc593a976c59.jpg","link":"","title":"GLUTEN FREE"}},"076f92e8-292a-4e87-9922-89a0eda45faf":{"type":"logo_image","disabled":true,"settings":{"image":"shopify:\/\/shop_images\/made_in_canada.png","link":"","title":""}},"39d71649-fde8-4974-983f-e00c5a931bd8":{"type":"logo_image","disabled":true,"settings":{"link":"","title":""}}},"block_order":["16335925935f4a84e3-0","16335925935f4a84e3-1","16335925935f4a84e3-2","16335925935f4a84e3-3","076f92e8-292a-4e87-9922-89a0eda45faf","39d71649-fde8-4974-983f-e00c5a931bd8"],"settings":{"title":"naturally delicious","text":"<p>snacks made with simple, healthy ingredients<\/p>","color_bg":"","color_text":""}},"side-cart":{"type":"side-cart","settings":{"title":"your cart","checkout_notice":"Shipping, taxes & discounts calculated at checkout","enable_additional_buttons":false,"cart_notes_enable":false,"cart_notes_title":"add a gift note?","enable_upsell":true,"upsell_title":"why not add?","upsell_limit":5,"shipping_threshold_enabled":true,"shipping_threshold":60,"shipping_promotion":"[value] more until free shipping!","shipping_threshold_reached":"You’ve qualified for free shipping!"}},"page-story":{"type":"page-story","blocks":{"2251e0d2-48b5-47ff-b398-9aa7322caa94":{"type":"text-w-image-and-image","disabled":true,"settings":{"image":"shopify:\/\/shop_images\/10500381_335928523225851_7054520079761862060_n_0224e8a2-5921-4e00-9fbd-5817cc790ae8.jpg","image_width":500,"small_image":"shopify:\/\/shop_images\/Screen_Shot_2019-11-04_at_2.43.47_PM_ad1b43bf-6fc8-47c0-9fb8-bb246fa1953a.png","small_image_width":500,"subtitle":"","title":"","text":"<p>In 2013, Jana Zaibak started learning about the impact refined sugar has on the body and became inspired to live a healthier lifestyle. To satisfy her sweet tooth, she started making energy bites with natural ingredients from earth: nuts, dates and cocoa. Her first attempt was a success: her creation tasted better than any dessert she had tried, kept her full, and nourished the body too!<\/p><p><\/p><p>Eventually, Jana’s mom tried the energy bites and loved them as much as Jana did. She suggested that Jana should start selling them. Jana’s brother helped name the business (“nomz”), and a month later, local retailers started carrying it in their stores. People enjoyed them so much that our business has been growing ever since.<\/p>","bottom_text":"<p>We are passionate about what we do and we will continue source the best quality ingredients for our snacks. Our products will always be made without refined sugars and we’ll always only use natural ingredients. <\/p>","button_label":"","button_link":"","layout":"left"}},"760d7986-bf4d-4926-9cd1-04e306a7323e":{"type":"custom-html","settings":{"full_width":false,"space_around":false,"code":"<div class=\"element\">\n<p class=\"specialp\"><img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0857\/4434\/files\/10500381_335928523225851_7054520079761862060_n_f74c35a9-3cbd-48c9-96b1-6c085af2df36_480x480.jpg?v=1490140152\" width=\"323\" height=\"327\" style=\"margin-top: 20px; margin-right: 20px; margin-bottom: 20px; float: left;\">In 2013, Jana Zaibak started learning about the impact refined sugar has on the body and became inspired to live a healthier lifestyle. To satisfy her sweet tooth, she started making energy bites with natural ingredients from earth: nuts, dates and cocoa. Her first attempt was a success: her creation tasted better than any dessert she had tried, kept her full, and nourished the body too!<\/p>\n<\/div>\n<p class=\"specialp\" style=\"text-align: left;\">Eventually, Jana’s mom tried the energy bites and loved them as much as Jana did. She suggested that Jana should start selling them. Jana’s brother helped name the business (“nomz”), and a month later, local retailers started carrying it in their stores. People enjoyed them so much that our business has been growing ever since.<img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0857\/4434\/files\/Screen_Shot_2019-11-04_at_2.43.47_PM_480x480.png?v=1572896651\" width=\"200\" height=\"200\" style=\"margin-top: 20px; margin-left: 20px; float: right;\"><\/p>\n<p class=\"specialp\" style=\"text-align: left;\">We are passionate about what we do and we will continue source the best quality ingredients for our snacks. Our products will always be made without refined sugars and we’ll always only use natural ingredients. <\/p>"}}},"block_order":["2251e0d2-48b5-47ff-b398-9aa7322caa94","760d7986-bf4d-4926-9cd1-04e306a7323e"],"settings":{"page_title_enable":true,"page_content_enable":false}},"page-contact":{"type":"page-contact","blocks":{"e41eb7a5-26d6-40b4-badd-17fc5ebd889c":{"type":"image-hero","settings":{"title":"","title_size":80,"subheading":"","link":"","link_text":"","text_align":"vertical-bottom horizontal-left","image":"shopify:\/\/shop_images\/pf-834b802c-770e-4839-b2f2-f33343324a6d--contactusnocopy.jpg","focal_point":"center center","section_height":"natural","mobile_height":"auto"}},"bce2416c-0b89-47aa-a28e-b49b2719eb4e":{"type":"rich-text-contact","settings":{"title":"ask us anything!","text":"we'd love to hear from you.","align_text":"center","contact_1":"<p style=\"text-decoration-line: underline;\">call\/text us<\/p>\n\n<a href=\"tel:14162789542\" target=\"_self\">+1 416 278 9542<\/a>","contact_2":"<p style=\"text-decoration-line: underline;\">write to us<\/p>\n\n<a href=\"mailto:hello@nomz.com\" target=\"_self\">hello@nomz.com<\/a>"}}},"block_order":["e41eb7a5-26d6-40b4-badd-17fc5ebd889c","bce2416c-0b89-47aa-a28e-b49b2719eb4e"],"settings":{"page_title_enable":false,"page_content_enable":false}},"page-values":{"type":"page-values","blocks":{"26528c53-6320-4037-aa2a-e4f59638c5da":{"type":"text-and-image","settings":{"image":"shopify:\/\/shop_images\/pf-3b5598c5-5283-45d8-9052-0157ab6e5fe8--Untitled401_4fcc4897-4951-489e-898a-3c47f0d03878.png","image_width":500,"subtitle":"","title":"","text":"<p>Our commitment to sourcing quality <strong>organic <\/strong>ingredients and crafting deliciousness is our true north. Organic ingredients are in their most pure, wholesome form, just as nature intended. Better for your body, and more gentle for the environment.<\/p>","button_label":"","button_link":"","layout":"left"}},"476ae58b-49ac-4db2-9126-6c1c0d5a8aa2":{"type":"text-and-image","settings":{"image":"shopify:\/\/shop_images\/pf-276c92ef-60b9-4c59-9a12-1ad7c05269ac--Untitled402.png","image_width":500,"subtitle":"","title":"","text":"<p>Treat your body, and bite into decadence. Our energy bites are perfectly balanced. Soft, chocolatey, nutty and sweet... mmm, nom nom. The perfect snack with the best <strong>taste <\/strong>to satisfy your cravings.<\/p>","button_label":"","button_link":"","layout":"left"}},"aded29d6-6363-49e0-8bac-414d2ef0bc7a":{"type":"text-and-image","settings":{"image":"shopify:\/\/shop_images\/pf-2ca1bc17-8c49-4d2e-96d1-b2c0dc1eb2dc--Untitled403.png","image_width":500,"subtitle":"","title":"","text":"<p>From our ingredients to our design, we like to keep things <strong>simple<\/strong>. Minimal ingredients that we proudly list on the front of our package: nuts, dates, cocoa, coconut oil, and sea salt – that’s it. We keep our packaging design minimal too, communicating only what’s needed. Nothing less, nothing more.<\/p>","button_label":"","button_link":"","layout":"left"}},"5419ee51-5a02-4b9d-9269-a1a2687c248c":{"type":"text-and-image","settings":{"image":"shopify:\/\/shop_images\/pf-8755a822-c6a1-415e-a40a-7c7a58f4975d--Untitled404.png","image_width":500,"subtitle":"","title":"","text":"<p>We are so <strong>grateful<\/strong> for our team, those who have supported us along our journey, everyone who continues to nibble on our bites, and Toronto’s community who has provided a strong, and welcoming foundation for our business to grow. Gratitude with every day, and every bite.<\/p>","button_label":"","button_link":"","layout":"left"}}},"block_order":["26528c53-6320-4037-aa2a-e4f59638c5da","476ae58b-49ac-4db2-9126-6c1c0d5a8aa2","aded29d6-6363-49e0-8bac-414d2ef0bc7a","5419ee51-5a02-4b9d-9269-a1a2687c248c"],"settings":{"page_title_enable":true,"page_content_enable":false}},"16370767152aa8e8e8":{"type":"ffc-featured-collection","settings":{"title":"Featured collection","home_featured_products":"","overlay_scrollbars":true,"view_all":true,"divider":false}},"16370769490ce1fb5d":{"type":"featured-collection","settings":{"title":"best sellers","home_featured_products":"best-sellers","per_row":4,"rows":1,"overlay_scrollbars":false,"view_all_link":false,"divider":false,"view_all":false,"view_all_text":"View all products","view_all_url":"","view_all_color_bg":"#6cace4","view_all_color_text":"#ffffff"}},"16401960982d1b854d":{"type":"instafeed","disabled":true,"settings":{"heading_font":"helvetica_n4","heading_size":25,"feed_width":75,"html_area":""}},"1640201785de6afdf4":{"type":"advanced-content","blocks":{"1640201785de6afdf4-0":{"type":"image","disabled":true,"settings":{"link":"","width":"50%","alignment":"top-middle"}},"1640201785de6afdf4-1":{"type":"html","settings":{"code":"<div class=\"yotpo yotpo-reviews-carousel\" data-header-customisation-enabled=\"1\" data-header-customisation-color=\"#56575f\" data-header-customisation-font-size=\"22\" data-header-customisation-text=\"customer reviews\" data-header-customisation-alignment=\"left\" data-background-color=\"transparent\" data-mode=\"manual\" data-type=\"both\" data-review-ids=\"310656488,322387021,179299547,323617656,238201708,320064962,219286885,100610587\" data-show-bottomline=\"1\" data-autoplay-enabled=\"1\" data-autoplay-speed=\"3000\" data-show-navigation=\"1\"> <\/div>","overlay_title":"","overlay_url":"","overlay_color":"","overlay_bg":"rgba(0,0,0,0)","width":"100%","alignment":"center"}}},"block_order":["1640201785de6afdf4-0","1640201785de6afdf4-1"],"settings":{"full_width":false,"space_around":true}},"newsletter":{"type":"newsletter","settings":{"title":"Sign Up and Save 10%","text":"<p>Join our email list and get the latest offers, recipes and healthy living tips. <\/p>","email_text":"Email address","email_button":"Sign Me Up","color_background":"#ffffff","color_text":"#434343","button_color_bg":"#6cace4","button_color_text":"#ffffff"}},"1642170268a8da40df":{"type":"newsletter","settings":{"title":"Sign Up and Save 10%","text":"<p>Join our email list and get the latest offers, recipes and healthy living tips.<\/p>","email_text":"Email address","email_button":"Sign Me Up","color_background":"#ffffff","color_text":"#4f4f4f","button_color_bg":"#6cace4","button_color_text":"#ffffff"}},"16426573624d22dfce":{"type":"ffc-product-promotions","disabled":true,"blocks":{"2781d7f1-632f-43a2-b4c7-ca6d74dd194f":{"type":"category","settings":{"promo_url":"shopify:\/\/collections\/nut-butters","promo_title":"NUT BUTTERS","promo_color":"#6cace4","promo_image":"shopify:\/\/shop_images\/chocolate_almond_butter_cups-12-2.jpg"}}},"block_order":["2781d7f1-632f-43a2-b4c7-ca6d74dd194f"],"settings":{"title":"categories","text":"<p>from your pantry to your freezer<\/p>","overlay_scrollbars":true,"divider":false,"per_row":4}},"1644617339b9a020d3":{"type":"satisfaction-guarantee","disabled":true,"settings":{"image":"shopify:\/\/shop_images\/857A0398.jpg","color_bg":"#fbd891","color_text":"#4f4f4f","title":"satisfaction guarantee","text":"We're lucky to have so many happy customers. We're confident you'll be one too.\n<br><br>\nIf you're not 100% satisfied with your order, reach out to care@nomz.com and we'll send you a full refund, no questions asked.","layout":"left"}}},"content_for_index":["1499790529450","16335925935f4a84e3","1620133030d8531624","16370769490ce1fb5d","1640201785de6afdf4","1601304991319","1600796453398","1600798311007","1622560873034bfd09","1624001104304ed81f","16228163262297b684","1576771100827","16370767152aa8e8e8","1644617339b9a020d3","16401960982d1b854d","1642170268a8da40df","16426573624d22dfce"]},"presets":{"Classic":{"color_body_bg":"#ffffff","color_body_text":"#000000","color_borders":"#e8e8e1","color_button":"#111111","color_button_text":"#fff","color_drawer_background":"#ffffff","color_drawer_text":"#000000","color_drawer_border":"#e8e8e1","color_drawer_button":"#111111","color_drawer_button_text":"#ffffff","color_footer":"#111111","color_footer_text":"#fff","color_image_1":"#000000","color_image_1_opacity":62,"color_image_2":"#000000","color_image_2_opacity":0,"color_small_image_bg":"#fff","color_large_image_bg":"#111111","type_header_spacing":"0","type_header_font_family":"itc_avant_garde_gothic_n7","type_header_base_size":35,"type_header_line_height":1.2,"type_header_accent_transform":true,"type_base_font_family":"futura_n4","type_base_spacing":"25","type_base_size":17,"type_base_line_height":1.6,"type_base_accent_transform":true,"icon_weight":"4px","icon_linecaps":"miter","animate_page_transitions":true,"animate_page_transition_style":"page-slow-fade","animate_sections":true,"animate_sections_background_style":"zoom-fade","animate_sections_text_style":"rise-up","animate_images":true,"animate_images_style":"zoom-fade","animate_buttons":true,"animate_underlines":true,"quick_shop_text":"Quick view","cart_type":"drawer","currency_format":"money_format","supported_currencies":"USD CAD INR GBP AUD EUR JPY","default_currency":"USD","share_facebook":true,"share_twitter":true,"share_pinterest":true,"checkout_header_image":"","checkout_logo_image":"","checkout_logo_position":"left","checkout_logo_size":"medium","checkout_body_background_image":"","checkout_body_background_color":"#fff","checkout_input_background_color_mode":"white","checkout_sidebar_background_image":"","checkout_sidebar_background_color":"#fafafa","checkout_heading_font":"Helvetica Neue","checkout_body_font":"Helvetica Neue","checkout_accent_color":"#111111","checkout_button_color":"#111111","checkout_error_color":"#ff6d6d","color_image_bg":"#000000","breadcrumb":true,"color_sale_tag":"#990000","color_input":"#ffffff","checkout_banner_background_color":"#fff","checkout_call_to_action_color":"#a26b25","checkout_use_header_image":false,"sections":{"header":{"type":"header","settings":{"main_menu_link_list":"main-menu","sticky_index":true,"sticky_collection":false,"header_search_enable":false,"show_announcement":true}},"footer":{"type":"footer","blocks":{"1494292481350":{"type":"logo_social","settings":{"container_width":20}},"1494292485313":{"type":"menu","settings":{"menu":"main-menu","container_width":20}},"1494292487693":{"type":"newsletter","settings":{"container_width":33}},"1494301487049":{"type":"menu","settings":{"menu":"footer","container_width":20}}},"block_order":["1494292481350","1494301487049","1494292485313","1494292487693"],"settings":{"show_payment_icons":false}},"collection-template":{"type":"collection-template","settings":{"per_row":4,"collection_image_enable":true,"collection_sort_enable":false}},"product-template":{"type":"product-template","settings":{"image_size":"medium","social_enable":true}},"article-template":{"type":"article-template","settings":{"blog_show_tags":true,"blog_show_date":true,"blog_show_comments":true,"blog_show_author":false,"social_sharing_blog":true}},"1498163293234":{"type":"featured-content","settings":{"divider":false}},"1498501481980":{"type":"fading-images","blocks":{"1498501481980-0":{"type":"image","settings":{"image":"","focal_point":"center center","slide_title1":"Beautifully animated","slide_title2":"titles and images"}},"1498501481980-1":{"type":"image","settings":{"image":"","focal_point":"center center","slide_title1":"Use this section","slide_title2":"to impress"}},"1498501481980-2":{"type":"image","settings":{"image":"","focal_point":"center center","slide_title1":"And highlight","slide_title2":"important details"}}},"block_order":["1498501481980-0","1498501481980-1","1498501481980-2"],"settings":{"slide_speed":5,"color_overlay":"#000","color_overlay_opacity":30,"section_height":550}},"blog-template":{"type":"blog-template","settings":{"blog_show_tag_filter":true}},"1566999869051":{"type":"featured-collection-switcher","settings":{}},"1499789718857":{"type":"featured-collections","blocks":{"1499789718857-0":{"type":"collection","settings":{"collection":"","size":"wide"}},"1499789718857-1":{"type":"collection","settings":{"collection":"","size":"square-small"}},"1499789718857-2":{"type":"collection","settings":{"collection":"","size":"square-small"}},"1499789718857-3":{"type":"collection","settings":{"collection":"","size":"square-small"}},"1499789718857-4":{"type":"collection","settings":{"collection":"","size":"square-small"}},"1499789718857-5":{"type":"collection","settings":{"collection":"","size":"wide"}}},"block_order":["1499789718857-0","1499789718857-1","1499789718857-2","1499789718857-3","1499789718857-4","1499789718857-5"],"settings":{"title":"","divider":false}},"1499790529450":{"type":"hero-video","settings":{"title":"Bring your\nbrand to life.","title_size":80,"subheading":"Seamless hero videos","link_text":"","link":"","text_align":"vertical-bottom horizontal-left","video_url":"https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc","section_height":"650px"}},"1499790633921":{"type":"background-image-text","settings":{"subtitle":"Impressive","title":"Large image and text","text":"<p>Pair large text with a full-width image to draw attention to an important detail of your brand or product line.<\/p>","button_label":"","button_link":"","image":"","alignment":"center","color_border":"#f4f4f4","layout":"left","height":650}},"1499790731541":{"type":"collection-callout","settings":{"collection":"","subtitle":"Brand new","title":"Collection callout","text":"Use this section to easily call attention to one of your collections. We'll show photos of the first 5 products.","cta_text1":"Shop Jackets","cta_link1":"","cta_text2":"Shop All","cta_link2":"","divider":false}},"1499790782828":{"type":"text-columns","blocks":{"1499790782828-0":{"type":"text_block","settings":{"enable_image":true,"image":"","title":"Example title","text":"<p>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions about your products. Add images for emphasis.<\/p>","button_label":"","button_link":""}},"1499790782828-1":{"type":"text_block","settings":{"enable_image":true,"image":"","title":"Example title","text":"<p>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions about your products. Add images for emphasis.<\/p>","button_label":"","button_link":""}},"1499790782828-2":{"type":"text_block","settings":{"enable_image":true,"image":"","title":"Example title","text":"<p>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions about your products. Add images for emphasis.<\/p>","button_label":"","button_link":""}}},"block_order":["1499790782828-0","1499790782828-1","1499790782828-2"],"settings":{"title":"","align_text":"left","divider":false}},"product-sections-template":{"type":"product-sections-template","blocks":{"product-image-row":{"type":"image-row","settings":{}},"product-text-and-image":{"type":"text-and-image","settings":{}},"product-background-image-text":{"type":"background-image-text","settings":{"layout":"right"}},"product-text-columns":{"type":"text-columns","settings":{}},"product-hero-video":{"type":"hero-video","settings":{}}},"block_order":["product-image-row","product-text-and-image","product-background-image-text","product-text-columns","product-hero-video"],"settings":{}},"page-sections-template":{"type":"page-sections-template","blocks":{"page-fading-images":{"type":"fading-images","settings":{}},"page-rich-text":{"type":"rich-text","settings":{"title":"","align_text":"center","enlarge_text":true}},"page-text-columns":{"type":"text-columns","settings":{}},"page-background-image-text":{"type":"background-image-text","settings":{"layout":"right"}},"page-featured-collection":{"type":"featured-collection","settings":{}}},"block_order":["page-fading-images","page-rich-text","page-text-columns","page-background-image-text","page-featured-collection"],"settings":{}}},"content_for_index":["1499790529450","1498163293234","1499789718857","1566999869051","1498501481980","1499790731541","1499790633921","1499790782828"]},"Elegant":{"color_body_bg":"#ffffff","color_body_text":"#000000","color_borders":"#e8e8e1","color_button":"#353956","color_button_text":"#fff","color_header":"#ffffff","color_header_text":"#040404","color_footer":"#17172c","color_footer_text":"#fff","color_drawer_background":"#ffffff","color_drawer_text":"#17172c","color_drawer_border":"#e8e8e1","color_drawer_button":"#353956","color_drawer_button_text":"#ffffff","color_modal_overlays":"#17172c","color_image_2":"#17172c","color_image_2_opacity":0,"color_image_1":"#17172c","color_image_1_opacity":32,"color_small_image_bg":"#f4f4f4","color_large_image_bg":"#17172c","type_header_spacing":"0","type_header_font_family":"bauer_bodoni_n7","type_header_base_size":42,"type_header_line_height":1.3,"type_base_font_family":"futura_n4","type_base_spacing":"25","type_base_size":17,"type_base_line_height":1.6,"icon_weight":"3px","icon_linecaps":"miter","animate_page_transitions":true,"animate_page_transition_style":"page-slow-fade","animate_sections":true,"animate_sections_background_style":"zoom-fade","animate_sections_text_style":"rise-up","animate_images":true,"animate_images_style":"zoom-fade","animate_buttons":true,"animate_underlines":true,"quick_shop_text":"Quick view","cart_type":"drawer","currency_format":"money_format","supported_currencies":"USD CAD INR GBP AUD EUR JPY","default_currency":"USD","share_facebook":true,"share_twitter":true,"share_pinterest":true,"checkout_header_image":"","checkout_logo_image":"","checkout_logo_position":"left","checkout_logo_size":"medium","checkout_body_background_image":"","checkout_body_background_color":"#fff","checkout_input_background_color_mode":"white","checkout_sidebar_background_image":"","checkout_sidebar_background_color":"#fafafa","checkout_heading_font":"Helvetica Neue","checkout_body_font":"Helvetica Neue","checkout_accent_color":"#111111","checkout_button_color":"#111111","checkout_error_color":"#ff6d6d","color_image_bg":"#000000","breadcrumb":true,"color_sale_tag":"#990000","color_input":"#ffffff","checkout_banner_background_color":"#fff","checkout_call_to_action_color":"#a26b25","checkout_use_header_image":false,"sections":{"header":{"type":"header","settings":{"main_menu_link_list":"main-menu","sticky_index":true,"sticky_collection":false,"header_search_enable":false,"show_announcement":true}},"footer":{"type":"footer","blocks":{"1494292481350":{"type":"logo_social","settings":{"container_width":20}},"1494292485313":{"type":"menu","settings":{"menu":"main-menu","container_width":20}},"1494292487693":{"type":"newsletter","settings":{"container_width":33}},"1494301487049":{"type":"menu","settings":{"menu":"footer","container_width":20}}},"block_order":["1494292481350","1494301487049","1494292485313","1494292487693"],"settings":{"show_payment_icons":false}},"collection-template":{"type":"collection-template","settings":{"per_row":4,"collection_image_enable":true,"collection_sort_enable":false}},"product-template":{"type":"product-template","settings":{"image_size":"medium","social_enable":true}},"article-template":{"type":"article-template","settings":{"blog_show_tags":true,"blog_show_date":true,"blog_show_comments":true,"blog_show_author":false,"social_sharing_blog":true}},"1498163293234":{"type":"featured-content","settings":{"divider":false}},"1498501481980":{"type":"fading-images","blocks":{"1498501481980-0":{"type":"image","settings":{"image":"","focal_point":"center center","slide_title1":"Beautifully animated","slide_title2":"titles and images"}},"1498501481980-1":{"type":"image","settings":{"image":"","focal_point":"center center","slide_title1":"Use this section","slide_title2":"to impress"}},"1498501481980-2":{"type":"image","settings":{"image":"","focal_point":"center center","slide_title1":"And highlight","slide_title2":"important details"}}},"block_order":["1498501481980-0","1498501481980-1","1498501481980-2"],"settings":{"slide_speed":5,"color_overlay":"#000","color_overlay_opacity":30,"section_height":550}},"blog-template":{"type":"blog-template","settings":{"blog_show_tag_filter":true}},"1566999869051":{"type":"featured-collection-switcher","settings":{}},"1499789718857":{"type":"featured-collections","blocks":{"1499789718857-0":{"type":"collection","settings":{"collection":"","size":"wide"}},"1499789718857-1":{"type":"collection","settings":{"collection":"","size":"square-small"}},"1499789718857-2":{"type":"collection","settings":{"collection":"","size":"square-small"}},"1499789718857-3":{"type":"collection","settings":{"collection":"","size":"square-small"}},"1499789718857-4":{"type":"collection","settings":{"collection":"","size":"square-small"}},"1499789718857-5":{"type":"collection","settings":{"collection":"","size":"wide"}}},"block_order":["1499789718857-0","1499789718857-1","1499789718857-2","1499789718857-3","1499789718857-4","1499789718857-5"],"settings":{"title":"","divider":false}},"1499790529450":{"type":"hero-video","settings":{"title":"Bring your\nbrand to life.","title_size":80,"subheading":"Seamless hero videos","link_text":"","link":"","text_align":"vertical-bottom horizontal-left","video_url":"https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc","section_height":"650px"}},"1499790633921":{"type":"background-image-text","settings":{"subtitle":"Impressive","title":"Large image and text","text":"<p>Pair large text with a full-width image to draw attention to an important detail of your brand or product line.<\/p>","button_label":"","button_link":"","image":"","alignment":"center","color_border":"#f4f4f4","layout":"left","height":650}},"1499790731541":{"type":"collection-callout","settings":{"collection":"","subtitle":"Brand new","title":"Collection callout","text":"Use this section to easily call attention to one of your collections. We'll show photos of the first 5 products.","cta_text1":"Shop Jackets","cta_link1":"","cta_text2":"Shop All","cta_link2":"","divider":false}},"1499790782828":{"type":"text-columns","blocks":{"1499790782828-0":{"type":"text_block","settings":{"enable_image":true,"image":"","title":"Example title","text":"<p>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions about your products. Add images for emphasis.<\/p>","button_label":"","button_link":""}},"1499790782828-1":{"type":"text_block","settings":{"enable_image":true,"image":"","title":"Example title","text":"<p>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions about your products. Add images for emphasis.<\/p>","button_label":"","button_link":""}},"1499790782828-2":{"type":"text_block","settings":{"enable_image":true,"image":"","title":"Example title","text":"<p>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions about your products. Add images for emphasis.<\/p>","button_label":"","button_link":""}}},"block_order":["1499790782828-0","1499790782828-1","1499790782828-2"],"settings":{"title":"","align_text":"left","divider":false}}},"content_for_index":["1499790529450","1498163293234","1499789718857","1566999869051","1498501481980","1499790731541","1499790633921","1499790782828"]},"Minimal":{"color_body_bg":"#ffffff","color_body_text":"#000000","color_borders":"#f0f1f3","color_button":"#111111","color_button_text":"#fff","color_header":"#fff","color_header_text":"#000","color_footer":"#f0f1f3","color_footer_text":"#2c2c2c","color_drawer_background":"#ffffff","color_drawer_text":"#000000","color_drawer_border":"#f0f1f3","color_drawer_button":"#111111","color_drawer_button_text":"#ffffff","color_modal_overlays":"#aeb1b8","color_image_2":"#000000","color_image_2_opacity":0,"color_image_1":"#000000","color_image_1_opacity":26,"color_small_image_bg":"#ffffff","color_large_image_bg":"#dedfe1","type_header_spacing":"75","type_header_font_family":"din_next_n7","type_header_base_size":34,"type_header_line_height":1.3,"type_header_accent_transform":true,"type_base_font_family":"din_next_n4","type_base_spacing":"25","type_base_size":17,"type_base_line_height":1.6,"type_base_accent_transform":true,"icon_weight":"2px","icon_linecaps":"round","animate_page_transitions":true,"animate_page_transition_style":"page-slide-reveal-down","animate_sections":true,"animate_sections_background_style":"zoom-fade","animate_sections_text_style":"rise-up","animate_images":true,"animate_images_style":"fade-in","animate_buttons":true,"animate_underlines":true,"quick_shop_text":"Quick view","cart_type":"drawer","currency_format":"money_format","supported_currencies":"USD CAD INR GBP AUD EUR JPY","default_currency":"USD","share_facebook":true,"share_twitter":true,"share_pinterest":true,"checkout_header_image":"","checkout_logo_image":"","checkout_logo_position":"left","checkout_logo_size":"medium","checkout_body_background_image":"","checkout_body_background_color":"#fff","checkout_input_background_color_mode":"white","checkout_sidebar_background_image":"","checkout_sidebar_background_color":"#fafafa","checkout_heading_font":"Helvetica Neue","checkout_body_font":"Helvetica Neue","checkout_accent_color":"#111111","checkout_button_color":"#111111","checkout_error_color":"#ff6d6d","color_image_bg":"#000000","breadcrumb":true,"color_sale_tag":"#990000","color_input":"#ffffff","checkout_banner_background_color":"#fff","checkout_call_to_action_color":"#a26b25","checkout_use_header_image":false,"sections":{"header":{"type":"header","settings":{"main_menu_link_list":"main-menu","sticky_index":false,"sticky_collection":false,"header_search_enable":false,"show_announcement":true}},"footer":{"type":"footer","blocks":{"1494292481350":{"type":"logo_social","settings":{"container_width":20}},"1494292485313":{"type":"menu","settings":{"menu":"main-menu","container_width":20}},"1494292487693":{"type":"newsletter","settings":{"container_width":33}},"1494301487049":{"type":"menu","settings":{"menu":"footer","container_width":20}}},"block_order":["1494292481350","1494301487049","1494292485313","1494292487693"],"settings":{"show_payment_icons":false}},"collection-template":{"type":"collection-template","settings":{"per_row":4,"collection_image_enable":true,"collection_sort_enable":false}},"product-template":{"type":"product-template","settings":{"image_size":"medium","social_enable":true}},"article-template":{"type":"article-template","settings":{"blog_show_tags":true,"blog_show_date":true,"blog_show_comments":true,"blog_show_author":false,"social_sharing_blog":true}},"1498163293234":{"type":"featured-content","settings":{"divider":false}},"1498501481980":{"type":"fading-images","blocks":{"1498501481980-0":{"type":"image","settings":{"image":"","focal_point":"center center","slide_title1":"Beautifully animated","slide_title2":"titles and images"}},"1498501481980-1":{"type":"image","settings":{"image":"","focal_point":"center center","slide_title1":"Use this section","slide_title2":"to impress"}},"1498501481980-2":{"type":"image","settings":{"image":"","focal_point":"center center","slide_title1":"And highlight","slide_title2":"important details"}}},"block_order":["1498501481980-0","1498501481980-1","1498501481980-2"],"settings":{"slide_speed":5,"color_overlay":"#000","color_overlay_opacity":30,"section_height":550}},"blog-template":{"type":"blog-template","settings":{"blog_show_tag_filter":true}},"1566999869051":{"type":"featured-collection-switcher","settings":{}},"1499789718857":{"type":"featured-collections","blocks":{"1499789718857-0":{"type":"collection","settings":{"collection":"","size":"wide"}},"1499789718857-1":{"type":"collection","settings":{"collection":"","size":"square-small"}},"1499789718857-2":{"type":"collection","settings":{"collection":"","size":"square-small"}},"1499789718857-3":{"type":"collection","settings":{"collection":"","size":"square-small"}},"1499789718857-4":{"type":"collection","settings":{"collection":"","size":"square-small"}},"1499789718857-5":{"type":"collection","settings":{"collection":"","size":"wide"}}},"block_order":["1499789718857-0","1499789718857-1","1499789718857-2","1499789718857-3","1499789718857-4","1499789718857-5"],"settings":{"title":"","divider":false}},"1499790529450":{"type":"hero-video","settings":{"title":"Bring your\nbrand to life.","title_size":80,"subheading":"Seamless hero videos","link_text":"","link":"","text_align":"vertical-bottom horizontal-left","video_url":"https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc","section_height":"650px"}},"1499790633921":{"type":"background-image-text","settings":{"subtitle":"Impressive","title":"Large image and text","text":"<p>Pair large text with a full-width image to draw attention to an important detail of your brand or product line.<\/p>","button_label":"","button_link":"","image":"","alignment":"center","color_border":"#f4f4f4","layout":"left","height":650}},"1499790731541":{"type":"collection-callout","settings":{"collection":"","subtitle":"Brand new","title":"Collection callout","text":"Use this section to easily call attention to one of your collections. We'll show photos of the first 5 products.","cta_text1":"Shop Jackets","cta_link1":"","cta_text2":"Shop All","cta_link2":"","divider":false}},"1499790782828":{"type":"text-columns","blocks":{"1499790782828-0":{"type":"text_block","settings":{"enable_image":true,"image":"","title":"Example title","text":"<p>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions about your products. Add images for emphasis.<\/p>","button_label":"","button_link":""}},"1499790782828-1":{"type":"text_block","settings":{"enable_image":true,"image":"","title":"Example title","text":"<p>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions about your products. Add images for emphasis.<\/p>","button_label":"","button_link":""}},"1499790782828-2":{"type":"text_block","settings":{"enable_image":true,"image":"","title":"Example title","text":"<p>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions about your products. Add images for emphasis.<\/p>","button_label":"","button_link":""}}},"block_order":["1499790782828-0","1499790782828-1","1499790782828-2"],"settings":{"title":"","align_text":"left","divider":false}}},"content_for_index":["1499790529450","1498163293234","1499789718857","1566999869051","1498501481980","1499790731541","1499790633921","1499790782828"]}}}
+{
+  "current": {
+    "custom_border": "#4f4f4f",
+    "color_body_bg": "#ffffff",
+    "color_body_text": "#4f4f4f",
+    "color_borders": "rgba(0,0,0,0)",
+    "color_button": "#6cace4",
+    "color_button_text": "#ffffff",
+    "color_cart_dot": "#a77bca",
+    "color_header": "#fff",
+    "color_header_text": "#4f4f4f",
+    "color_announcement": "#ffffff",
+    "color_announcement_text": "#4f4f4f",
+    "color_footer": "#6cace4",
+    "color_footer_text": "#fff",
+    "color_drawer_background": "#ffffff",
+    "color_drawer_text": "#4f4f4f",
+    "color_drawer_border": "rgba(0,0,0,0)",
+    "color_drawer_button": "#4f4f4f",
+    "color_drawer_button_text": "rgba(0,0,0,0)",
+    "color_modal_overlays": "rgba(0,0,0,0)",
+    "color_image_text": "#ffffff",
+    "color_image_2": "rgba(0,0,0,0)",
+    "color_image_2_opacity": 86,
+    "color_image_1": "rgba(0,0,0,0)",
+    "color_image_1_opacity": 0,
+    "color_small_image_bg": "#fff",
+    "color_large_image_bg": "#4f4f4f",
+    "type_header_font_family": "neuzeit_office_soft_rounded_n4",
+    "type_header_spacing": "0",
+    "type_header_base_size": 35,
+    "type_header_line_height": 1.2,
+    "type_header_accent_transform": true,
+    "type_headers_align_text": true,
+    "type_base_font_family": "neuzeit_office_soft_rounded_n4",
+    "type_base_spacing": "25",
+    "type_base_size": 15,
+    "type_base_line_height": 1.6,
+    "type_base_accent_transform": true,
+    "plus_price_font_family": "madera_n4",
+    "icon_weight": "2px",
+    "icon_linecaps": "round",
+    "button_radius": 0,
+    "animate_page_transitions": false,
+    "animate_page_transition_style": "page-slow-fade",
+    "animate_sections": false,
+    "animate_sections_background_style": "zoom-fade",
+    "animate_sections_text_style": "rise-up",
+    "animate_images": false,
+    "animate_images_style": "zoom-fade",
+    "animate_buttons": true,
+    "animate_underlines": false,
+    "vendor_enable": false,
+    "sku_enable": false,
+    "quantity_enable": true,
+    "variant_labels_enable": true,
+    "variant_type": "button",
+    "enable_payment_button": false,
+    "inventory_enable": false,
+    "inventory_threshold": 10,
+    "product_save_amount": true,
+    "product_save_type": "dollar",
+    "product_zoom_enable": false,
+    "quick_shop_enable": false,
+    "quick_shop_text": "quick view",
+    "atc_enable": true,
+    "product_hover_image": true,
+    "product_grid_image_size": "natural",
+    "product_color_swatches": false,
+    "collection_color_swatches": false,
+    "product_video_width": "1280",
+    "product_video_height": "720",
+    "product_video_style": "muted",
+    "product_content_1": "",
+    "product_content_2": "",
+    "product_content_3": "",
+    "product_contact": false,
+    "product_contact_title": "Ask a question",
+    "product_contact_show_phone": false,
+    "enable_product_reviews": false,
+    "reviews_layout": "expandable",
+    "cart_type": "drawer",
+    "cart_additional_buttons": false,
+    "cart_notes_enable": true,
+    "cart_terms_conditions_enable": false,
+    "cart_terms_conditions_link": "",
+    "enable_currencies": true,
+    "currency_format": "money_format",
+    "supported_currencies": "USD CAD INR GBP AUD EUR JPY",
+    "social_facebook_link": "https:\/\/www.facebook.com\/nomzorganic\/",
+    "social_twitter_link": "https:\/\/twitter.com\/nomzorganic",
+    "social_pinterest_link": "",
+    "social_instagram_link": "https:\/\/www.instagram.com\/nomz\/",
+    "social_snapchat_link": "",
+    "social_tumblr_link": "",
+    "social_linkedin_link": "",
+    "social_youtube_link": "",
+    "social_vimeo_link": "",
+    "share_facebook": false,
+    "share_twitter": false,
+    "share_pinterest": false,
+    "homepage_social_image": "",
+    "favicon": "shopify:\/\/shop_images\/favicon_608ba6ca-3ac9-4d54-9c10-b6cc666b7a42.png",
+    "show_breadcrumbs": true,
+    "search_type": "product",
+    "recurring-orders-loading": "Loading subscription info...",
+    "recurring-orders-inherit-classes": false,
+    "recurring-orders-additional-button-classes": "",
+    "checkout_header_image": "",
+    "checkout_logo_image": "shopify:\/\/shop_images\/greylogovector.png",
+    "checkout_logo_position": "left",
+    "checkout_logo_size": "small",
+    "checkout_body_background_image": "",
+    "checkout_body_background_color": "#fff",
+    "checkout_input_background_color_mode": "white",
+    "checkout_sidebar_background_image": "",
+    "checkout_sidebar_background_color": "#fafafa",
+    "checkout_heading_font": "Open Sans",
+    "checkout_body_font": "Open Sans",
+    "checkout_accent_color": "#4f4f4f",
+    "checkout_button_color": "#6cace4",
+    "checkout_error_color": "#ff6d6d",
+    "default_currency": "USD",
+    "color_image_bg": "#000000",
+    "breadcrumb": true,
+    "color_sale_tag": "#990000",
+    "color_input": "#ffffff",
+    "checkout_banner_background_color": "#fff",
+    "checkout_call_to_action_color": "#a26b25",
+    "checkout_use_header_image": false,
+    "sections": {
+      "header": {
+        "type": "header",
+        "blocks": {
+          "1571939201819": {
+            "type": "logo",
+            "settings": {
+              "logo": "shopify:\/\/shop_images\/whitelogopng.png",
+              "logo-inverted": "shopify:\/\/shop_images\/whitelogopng.png",
+              "desktop_logo_width": 140,
+              "mobile_logo_width": 120
+            }
+          }
+        },
+        "block_order": [
+          "1571939201819"
+        ],
+        "settings": {
+          "main_menu_link_list": "main-menu",
+          "main_menu_alignment": "center-left",
+          "header_style": "sticky",
+          "sticky_index": true,
+          "sticky_collection": true,
+          "header_search_enable": true,
+          "type_navigation_size": 16,
+          "type_navigation_style": false,
+          "show_announcement": true,
+          "announcement_text": "shop thoughtfully crafted, organic goods.",
+          "announcement_text_us": "shop thoughtfully crafted, organic goods. free shipping on orders over $45",
+          "announcement_text_ca": "shop thoughtfully crafted, organic goods. free shipping on orders over $60",
+          "announcement_link": "",
+          "announcement_closable": false
+        }
+      },
+      "header-v2": {
+        "type": "header-v2",
+        "blocks": {
+          "6c48c7f4-9184-4e04-9092-9843366445a4": {
+            "type": "logo",
+            "settings": {
+              "logo": "shopify:\/\/shop_images\/whitelogopng.png",
+              "logo-inverted": "shopify:\/\/shop_images\/whitelogopng.png",
+              "desktop_logo_width": 140,
+              "mobile_logo_width": 120
+            }
+          }
+        },
+        "block_order": [
+          "6c48c7f4-9184-4e04-9092-9843366445a4"
+        ],
+        "settings": {
+          "main_menu_link_list": "mega-menu-v2",
+          "main_menu_alignment": "center-left",
+          "header_style": "sticky",
+          "sticky_index": true,
+          "sticky_collection": true,
+          "header_search_enable": true,
+          "type_navigation_size": 16,
+          "type_navigation_style": false,
+          "show_announcement": true,
+          "announcement_text": "free shipping on orders $60+",
+          "announcement_text_us": "free shipping on orders $60+",
+          "announcement_text_ca": "free shipping on orders $60+",
+          "announcement_link": "",
+          "announcement_closable": false
+        }
+      },
+      "footer": {
+        "type": "footer",
+        "blocks": {
+          "1572456197591": {
+            "type": "logo_social",
+            "settings": {
+              "logo": "shopify:\/\/shop_images\/Artboard_1.png",
+              "desktop_logo_height": 85,
+              "container_width": 20
+            }
+          },
+          "1576510764890": {
+            "type": "menu",
+            "settings": {
+              "show_footer_title": false,
+              "menu": "footer-product-support-v2",
+              "container_width": 20
+            }
+          },
+          "1494301487049": {
+            "type": "menu",
+            "settings": {
+              "show_footer_title": false,
+              "menu": "footer",
+              "container_width": 20
+            }
+          },
+          "1494292487693": {
+            "type": "newsletter",
+            "settings": {
+              "show_footer_title": false,
+              "title": "Sign up and save",
+              "richtext": "",
+              "container_width": 30
+            }
+          }
+        },
+        "block_order": [
+          "1572456197591",
+          "1576510764890",
+          "1494301487049",
+          "1494292487693"
+        ],
+        "settings": {
+          "show_payment_icons": false,
+          "show_social": false,
+          "show_copyright": false,
+          "copyright_text": ""
+        }
+      },
+      "collection-template": {
+        "type": "collection-template",
+        "settings": {
+          "per_row": 3,
+          "collection_image_enable": false,
+          "collection_subnav_style": "none",
+          "collection_tags_style": "none",
+          "collection_sort_enable": false
+        }
+      },
+      "product-template": {
+        "type": "product-template",
+        "settings": {
+          "image_size": "medium",
+          "thumbnail_position": "below",
+          "description_style": "default",
+          "social_enable": false
+        }
+      },
+      "article-template": {
+        "type": "article-template",
+        "settings": {
+          "blog_show_image": true,
+          "blog_show_tags": true,
+          "blog_show_date": true,
+          "blog_show_comments": true,
+          "blog_show_author": false,
+          "social_sharing_blog": true
+        }
+      },
+      "blog-template": {
+        "type": "blog-template",
+        "settings": {
+          "blog_show_tag_filter": true
+        }
+      },
+      "product-sections-template": {
+        "type": "product-sections-template",
+        "blocks": {
+          "product-image-row": {
+            "type": "image-row",
+            "settings": {
+              "image_1": "",
+              "image_1_link": "",
+              "image_2": "",
+              "image_2_link": "",
+              "image_3": "",
+              "image_3_link": "",
+              "image_4": "",
+              "image_4_link": "",
+              "enable_gutter": false,
+              "enable_zoom": true
+            }
+          },
+          "product-text-and-image": {
+            "type": "text-and-image",
+            "settings": {
+              "image": "",
+              "image_width": 500,
+              "subtitle": "Improved",
+              "title": "Image with text",
+              "text": "<p>Pair large text with an image to tell a story, explain a detail about your product, or describe a new promotion.<\/p>",
+              "button_label": "Optional button",
+              "button_link": "",
+              "layout": "left"
+            }
+          },
+          "product-background-image-text": {
+            "type": "background-image-text",
+            "settings": {
+              "subtitle": "Impressive",
+              "title": "Large image with text box",
+              "text": "<p>Pair large text with a full-width image to draw attention to an important detail of your brand or product line.<\/p>",
+              "button_label": "",
+              "button_link": "",
+              "image": "",
+              "alignment": "center",
+              "color_border": "#f4f4f4",
+              "layout": "right",
+              "height": 550
+            }
+          },
+          "product-text-columns": {
+            "type": "text-columns",
+            "settings": {
+              "title": "",
+              "align_text": "left",
+              "enable_image_1": true,
+              "image_1": "",
+              "title_1": "Example title",
+              "text_1": "<p>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions about your products. Add images for emphasis.<\/p>",
+              "button_label_1": "",
+              "button_link_1": "",
+              "enable_image_2": true,
+              "image_2": "",
+              "title_2": "Example title",
+              "text_2": "<p>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions about your products. Add images for emphasis.<\/p>",
+              "button_label_2": "",
+              "button_link_2": "",
+              "enable_image_3": true,
+              "image_3": "",
+              "title_3": "Example title",
+              "text_3": "<p>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions about your products. Add images for emphasis.<\/p>",
+              "button_label_3": "",
+              "button_link_3": ""
+            }
+          },
+          "product-hero-video": {
+            "type": "hero-video",
+            "settings": {
+              "title": "Bring your\nbrand to life.",
+              "title_size": 80,
+              "subheading": "Seamless hero videos",
+              "link_text": "Optional button",
+              "link": "",
+              "text_align": "vertical-bottom horizontal-left",
+              "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+              "section_height": "650px",
+              "mobile_height": "auto"
+            }
+          }
+        },
+        "block_order": [
+          "product-image-row",
+          "product-text-and-image",
+          "product-background-image-text",
+          "product-text-columns",
+          "product-hero-video"
+        ],
+        "settings": {
+          "image_size": "medium",
+          "thumbnail_position": "beside",
+          "description_style": "default",
+          "social_enable": true
+        }
+      },
+      "page-sections-template": {
+        "type": "page-sections-template",
+        "blocks": {
+          "page-fading-images": {
+            "type": "fading-images",
+            "settings": {
+              "title_lines": "2",
+              "title_size": 45,
+              "slide_speed": 5,
+              "color_overlay": "#000",
+              "color_overlay_opacity": 30,
+              "section_height": 650,
+              "enable_image_1": true,
+              "image_1": "",
+              "focal_point_1": "center center",
+              "slide_title_1a": "Beautifully animated",
+              "slide_title_1b": "titles and images",
+              "enable_image_2": true,
+              "image_2": "",
+              "focal_point_2": "center center",
+              "slide_title_2a": "Use this section",
+              "slide_title_2b": "to impress customers",
+              "enable_image_3": false,
+              "image_3": "",
+              "focal_point_3": "center center",
+              "slide_title_3a": "",
+              "slide_title_3b": ""
+            }
+          },
+          "page-rich-text": {
+            "type": "rich-text",
+            "settings": {
+              "title": "",
+              "text": "<p>Use this section for any descriptive text you need to fill out your pages or to add introductory headings between other blocks.<\/p>",
+              "align_text": "center",
+              "narrow_column": true,
+              "enlarge_text": true
+            }
+          },
+          "page-text-columns": {
+            "type": "text-columns",
+            "settings": {
+              "title": "",
+              "align_text": "left",
+              "enable_image_1": true,
+              "image_1": "",
+              "title_1": "Example title",
+              "text_1": "<p>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions about your products. Add images for emphasis.<\/p>",
+              "button_label_1": "",
+              "button_link_1": "",
+              "enable_image_2": true,
+              "image_2": "",
+              "title_2": "Example title",
+              "text_2": "<p>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions about your products. Add images for emphasis.<\/p>",
+              "button_label_2": "",
+              "button_link_2": "",
+              "enable_image_3": true,
+              "image_3": "",
+              "title_3": "Example title",
+              "text_3": "<p>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions about your products. Add images for emphasis.<\/p>",
+              "button_label_3": "",
+              "button_link_3": ""
+            }
+          },
+          "page-background-image-text": {
+            "type": "background-image-text",
+            "settings": {
+              "subtitle": "Impressive",
+              "title": "Large image with text box",
+              "text": "<p>Pair large text with a full-width image to draw attention to an important detail of your brand or product line.<\/p>",
+              "button_label": "",
+              "button_link": "",
+              "image": "",
+              "alignment": "center",
+              "color_border": "#f4f4f4",
+              "layout": "right",
+              "height": 550
+            }
+          },
+          "page-featured-collection": {
+            "type": "featured-collection",
+            "settings": {
+              "title": "Featured collection",
+              "collection": "",
+              "per_row": 4,
+              "rows": 1,
+              "view_all": true
+            }
+          }
+        },
+        "block_order": [
+          "page-fading-images",
+          "page-rich-text",
+          "page-text-columns",
+          "page-background-image-text",
+          "page-featured-collection"
+        ],
+        "settings": {
+          "page_title_enable": false,
+          "page_content_enable": false
+        }
+      },
+      "newsletter-popup": {
+        "type": "newsletter-popup",
+        "settings": {
+          "mode": "disabled",
+          "popup_seconds": 5,
+          "popup_days": 30,
+          "popup_title": "Sign up and save",
+          "popup_text": "<p>Entice customers to sign up for your mailing list with discounts or exclusive offers. Include an image for extra impact.<\/p>",
+          "close_text": "No thanks",
+          "enable_newsletter": true,
+          "button_label": "Optional button",
+          "button_link": "",
+          "enable_button": false
+        }
+      },
+      "product-recommendations": {
+        "type": "product-recommendations",
+        "settings": {
+          "show_product_recommendations": true,
+          "product_recommendations_heading": "Frequently Bought Together",
+          "related_count": 5
+        }
+      },
+      "product-collection-links": {
+        "type": "product-collection-links",
+        "settings": {
+          "collection_links_enable": false
+        }
+      },
+      "list-collections-template": {
+        "type": "list-collections-template",
+        "settings": {
+          "title_enable": true,
+          "display_type": "all",
+          "sort": "alphabetical",
+          "grid": "3"
+        }
+      },
+      "page-faq-template": {
+        "type": "page-faq-template",
+        "blocks": {
+          "1588196747042": {
+            "type": "rich-text",
+            "settings": {
+              "title": "subscriptions",
+              "text": "",
+              "align_text": "left"
+            }
+          },
+          "1588262478690": {
+            "type": "question",
+            "settings": {
+              "title": "I can't log into my account?",
+              "text": "<p>You are not required to create an account when you make a subscription order. However, in order to manage your subscription preferences, you need to create an account with the same email provided during your order. <a href=\"https:\/\/nomz.com\/account\/register\"><span style=\"text-decoration:underline\">Click here<\/span><\/a> if you haven’t created an account yet. If you already have an account, log in below<\/p>"
+            }
+          },
+          "1588196769000": {
+            "type": "question",
+            "settings": {
+              "title": "Can I skip my next order?",
+              "text": "<p>Yes, <a href=\"https:\/\/nomz.com\/account\/login?return_url=%2Faccount\"><strong>log in<\/strong><\/a> to your account and click &#x27;Manage my subscription&#x27; on the left hand side of your desktop or scroll down on your mobile. Click View details. Click Manage upcoming orders. Click Skip order for any upcoming orders you wouldn&#x27;t like to receive.<\/p>"
+            }
+          },
+          "1588196783576": {
+            "type": "question",
+            "settings": {
+              "title": "Can I change the products in my subscription?",
+              "text": "<p>Yes, <a href=\"https:\/\/nomz.com\/account\/login?return_url=%2Faccount\"><strong>log in<\/strong><\/a> to your account and click &#x27;Manage my subscription&#x27; on the left hand side of your desktop or scroll down on your mobile. Click View details. Click Products in your subscription. Click Swap product and select which flavour you would like to receive instead.<\/p>"
+            }
+          },
+          "1588196801367": {
+            "type": "question",
+            "settings": {
+              "title": "Can I cancel my subscription?",
+              "text": "<p>Yes, <a href=\"https:\/\/nomz.com\/account\/login?return_url=%2Faccount\"><strong>log in<\/strong><\/a> to your account and click &#x27;Manage my subscription&#x27; on the left hand side of your desktop or scroll down on your mobile. Click View details. Click Cancel Subscription.<\/p>"
+            }
+          },
+          "page-faq-template-0": {
+            "type": "rich-text",
+            "settings": {
+              "title": "product",
+              "text": "",
+              "align_text": "left"
+            }
+          },
+          "page-faq-template-1": {
+            "type": "question",
+            "settings": {
+              "title": "What are nomz energy bites?",
+              "text": "<p>Nomz Energy Bites are a decadent healthy snack that everyone enjoys. It&#x27;s perfect for a workout, a car snack, or breakfast. You can add it to your smoothie bowls, take it with you to the park, or enjoy on vacation. Our energy bites are certified organic, vegan, gluten free, and paleo. It&#x27;s a snack that tastes good, made with simple and real ingredients.<\/p>"
+            }
+          },
+          "page-faq-template-2": {
+            "type": "question",
+            "settings": {
+              "title": "How many flavours of nomz are there?",
+              "text": "<p>Our energy bites are available in four different coatings: Hazelnut, Pistachio, Coconut and Almond.<\/p>"
+            }
+          },
+          "5a5fd753-c136-4493-a0ae-95cf189cad41": {
+            "type": "question",
+            "settings": {
+              "title": "I have a nut allergy, can I eat your products?",
+              "text": "<p>Nomz is <strong>not<\/strong> a nut free facility. A majority of our products are made with tree nuts including almonds, hazelnuts, pistachios and cashews.<\/p><p>Our facility <strong>does not <\/strong>process peanuts.<\/p>"
+            }
+          },
+          "1588196585389": {
+            "type": "question",
+            "settings": {
+              "title": "What are the ingredients?",
+              "text": "<p>All our energy bites have nuts, dates, cocoa, and sea salt – that's it.<\/p>"
+            }
+          },
+          "1588196619742": {
+            "type": "question",
+            "settings": {
+              "title": "90 calories per ball – is that good or bad?",
+              "text": "<p>Nomz Energy Bites are an enjoyable snack for two equally weighted reasons: they taste good and they are healthy. Win\/win. As a bonus, they also sustain your hunger and tide you over when you haven&#x27;t had much else to eat. Our calories are packed with nutrients and healthy fats. We always believe that as long as you&#x27;re eating good calories, there&#x27;s no need to count.<\/p>"
+            }
+          },
+          "1588196646961": {
+            "type": "question",
+            "settings": {
+              "title": "What is the shelf life of nomz energy bites?",
+              "text": "<p>4 months stored at room temperature. We ship out energy bites that have been freshly made<\/p>"
+            }
+          },
+          "page-faq-template-3": {
+            "type": "rich-text",
+            "settings": {
+              "title": "company",
+              "text": "",
+              "align_text": "left"
+            }
+          },
+          "page-faq-template-4": {
+            "type": "question",
+            "settings": {
+              "title": "Where are you based out of?",
+              "text": "<p>We are a proudly Canadian company based in Toronto, Ontario.<\/p>"
+            }
+          },
+          "1588196723252": {
+            "type": "question",
+            "settings": {
+              "title": "Do you ship to countries outside of Canada?",
+              "text": "<p>Yes, we ship worldwide via UPS. All orders ship out same day or next day from Toronto, Ontario in Canada. Depending on where you&#x27;re located, you&#x27;ll receive your parcel within days of placing the order. UPS tracking numbers are automatically emailed to you upon shipment, so you are able to check the progress and ETA of your orders. Send us a note for any questions about your shipment!<\/p>"
+            }
+          },
+          "1588196820051": {
+            "type": "rich-text",
+            "settings": {
+              "title": "wholesale",
+              "text": "",
+              "align_text": "left"
+            }
+          },
+          "1588196846296": {
+            "type": "question",
+            "settings": {
+              "title": "I have a store and would like to carry your product. Do you sell wholesale?",
+              "text": "<p>Thank you for your interest in carrying our products! We would be delighted to work with you as a wholesale partner. Please create an account on our wholesale portal at <a href=\"http:\/\/wholesale.nomz.com\/\">wholesale.nomz.com<\/a>. If need any help, please reach out to us directly. We would be happy to answer any questions and guide you through the process!<\/p>"
+            }
+          },
+          "1588196859861": {
+            "type": "question",
+            "settings": {
+              "title": "Do you have a distributor?",
+              "text": "<p>Yes, UNFI is our national distribution partner.<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "1588196747042",
+          "1588262478690",
+          "1588196769000",
+          "1588196783576",
+          "1588196801367",
+          "page-faq-template-0",
+          "page-faq-template-1",
+          "page-faq-template-2",
+          "5a5fd753-c136-4493-a0ae-95cf189cad41",
+          "1588196585389",
+          "1588196619742",
+          "1588196646961",
+          "page-faq-template-3",
+          "page-faq-template-4",
+          "1588196723252",
+          "1588196820051",
+          "1588196846296",
+          "1588196859861"
+        ],
+        "settings": {
+          "page_title_enable": false,
+          "page_content_enable": true
+        }
+      },
+      "featured-collection": {
+        "type": "featured-collection",
+        "settings": {
+          "title": "Product Suggestions",
+          "home_featured_products": "energy-bites",
+          "per_row": 4,
+          "rows": 1,
+          "divider": false,
+          "view_all": true
+        }
+      },
+      "1499790529450": {
+        "type": "hero-video",
+        "settings": {
+          "title": "treat your body",
+          "title_size": 80,
+          "subheading": "ORGANIC, VEGAN & PALEO SNACKS",
+          "isBold": true,
+          "subheading_size": 30,
+          "content": "",
+          "link_text": "shop now",
+          "link": "shopify:\/\/collections\/all-products",
+          "text_align": "vertical-center horizontal-center",
+          "image_video": "video",
+          "image": "shopify:\/\/shop_images\/coconutbites.jpg",
+          "image_mobile": "shopify:\/\/shop_images\/coconutbites.jpg",
+          "video_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0857\/4434\/files\/nomz_homepage.mp4?v=1640190006",
+          "video_url_mobile": "https:\/\/cdn.shopify.com\/s\/files\/1\/0857\/4434\/files\/nomz_homepage.mp4?v=1640190006",
+          "section_height": "750px",
+          "mobile_height": "100vh"
+        }
+      },
+      "1576771100827": {
+        "type": "advanced-content",
+        "disabled": true,
+        "blocks": {
+          "1576771100827-1": {
+            "type": "html",
+            "settings": {
+              "code": "<div id=\"insta-feed\" class=\"instagram-feed\"><\/div>",
+              "overlay_title": "test",
+              "overlay_url": "https:\/\/www.instagram.com\/nomz\/?hl=en",
+              "overlay_color": "#4f4f4f",
+              "overlay_bg": "#ffffff",
+              "width": "100%",
+              "alignment": "center"
+            }
+          }
+        },
+        "block_order": [
+          "1576771100827-1"
+        ],
+        "settings": {
+          "full_width": true,
+          "space_around": true
+        }
+      },
+      "1600796453398": {
+        "type": "featured-collection",
+        "settings": {
+          "title": "nut butters",
+          "home_featured_products": "nut-butters",
+          "per_row": 5,
+          "rows": 1,
+          "overlay_scrollbars": true,
+          "view_all_link": false,
+          "divider": false,
+          "view_all": false,
+          "view_all_text": "View all products",
+          "view_all_url": "",
+          "view_all_color_bg": "#6cace4",
+          "view_all_color_text": "#ffffff"
+        }
+      },
+      "1600798311007": {
+        "type": "featured-collection",
+        "disabled": true,
+        "settings": {
+          "title": "featured selection",
+          "home_featured_products": "featured-collection",
+          "per_row": 3,
+          "rows": 1,
+          "overlay_scrollbars": true,
+          "view_all_link": true,
+          "divider": false,
+          "view_all": false,
+          "view_all_text": "View all products",
+          "view_all_url": "",
+          "view_all_color_bg": "#6cace4",
+          "view_all_color_text": "#ffffff"
+        }
+      },
+      "1601304991319": {
+        "type": "featured-collection",
+        "settings": {
+          "title": "energy bites",
+          "home_featured_products": "energy-bites",
+          "per_row": 4,
+          "rows": 2,
+          "overlay_scrollbars": true,
+          "view_all_link": false,
+          "divider": false,
+          "view_all": false,
+          "view_all_text": "View all products",
+          "view_all_url": "",
+          "view_all_color_bg": "#6cace4",
+          "view_all_color_text": "#ffffff"
+        }
+      },
+      "1620133030d8531624": {
+        "type": "nomz-bites",
+        "disabled": true,
+        "blocks": {
+          "1620133030d8531624-0": {
+            "type": "logo_image",
+            "settings": {
+              "bite-text": "<p>organic<\/p>"
+            }
+          },
+          "76ccf86a-d45b-49ec-9bfd-ea8c6af242f0": {
+            "type": "logo_image",
+            "settings": {
+              "bite-text": "<p>vegan<\/p>"
+            }
+          },
+          "687d7abb-9663-4c45-9891-9db113c1eeac": {
+            "type": "logo_image",
+            "settings": {
+              "bite-text": "<p>gluten free<\/p>"
+            }
+          },
+          "8e625954-bb38-40ab-9e93-89f20ec4123e": {
+            "type": "logo_image",
+            "settings": {
+              "bite-text": "<p>paleo<\/p>"
+            }
+          },
+          "b5b86404-b990-4f59-b302-540b92d14b8d": {
+            "type": "logo_image",
+            "settings": {
+              "bite-text": "<p>non-GMO<\/p>"
+            }
+          },
+          "9efcafbc-2f2c-4889-9197-7c7f91b604d5": {
+            "type": "logo_image",
+            "settings": {
+              "bite-text": "<p>no added sugar<\/p>"
+            }
+          },
+          "5ddac722-06db-4534-b040-48e812c5a48c": {
+            "type": "logo_image",
+            "settings": {
+              "bite-text": "<p>ethically sourced ingredients<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "1620133030d8531624-0",
+          "76ccf86a-d45b-49ec-9bfd-ea8c6af242f0",
+          "687d7abb-9663-4c45-9891-9db113c1eeac",
+          "8e625954-bb38-40ab-9e93-89f20ec4123e",
+          "b5b86404-b990-4f59-b302-540b92d14b8d",
+          "9efcafbc-2f2c-4889-9197-7c7f91b604d5",
+          "5ddac722-06db-4534-b040-48e812c5a48c"
+        ],
+        "settings": {
+          "title": "nomz bites",
+          "text": "<p>per bite:<\/p>",
+          "ingredients-1-main": "3g",
+          "ingredients-1": "sugar",
+          "ingredients-2-main": "90",
+          "ingredients-2": "calories",
+          "ingredients-3-main": "2g",
+          "ingredients-3": "fibre",
+          "ingredients-4-main": "4g",
+          "ingredients-4": "protein",
+          "button_label": "shop all flavours",
+          "button_link": "shopify:\/\/collections\/all",
+          "bite-image-1": "shopify:\/\/shop_images\/coconut-bite.png",
+          "bite-text-1": "<p>coconut<\/p>",
+          "bite-link-1": "shopify:\/\/products\/coconut-energy-bites",
+          "bite-color-1": "#6cace4",
+          "bite-image-2": "shopify:\/\/shop_images\/almond-bite.png",
+          "bite-text-2": "<p>almond<\/p>",
+          "bite-link-2": "shopify:\/\/products\/almond-energy-bites",
+          "bite-color-2": "#ae9cdb",
+          "bite-image-3": "shopify:\/\/shop_images\/hazelnut-bite.png",
+          "bite-text-3": "<p>hazelnut<\/p>",
+          "bite-link-3": "shopify:\/\/products\/hazelnut-energy-bites",
+          "bite-color-3": "#f0bb5a",
+          "bite-image-4": "shopify:\/\/shop_images\/pistachio-bite-nomz.png",
+          "bite-text-4": "<p>pistachio<\/p>",
+          "bite-link-4": "shopify:\/\/products\/pistachio-energy-bites",
+          "bite-color-4": "#94cf66"
+        }
+      },
+      "1622560873034bfd09": {
+        "type": "ffc-text-and-image",
+        "disabled": true,
+        "settings": {
+          "image": "shopify:\/\/shop_images\/circle-img.png",
+          "color_bg": "#fbd891",
+          "color_text": "#ffffff",
+          "title": "about nomz",
+          "text": "<p>nomz began in 2013 with our energy bites, a simple snacking option made with nutrient-dense ingredients and the belief that we could provide our community with accessible, healthy snacking options that taste good, and nourishes the body too.<\/p>",
+          "button_label": "read more",
+          "button_link": "shopify:\/\/pages\/our-story",
+          "layout": "right",
+          "divider": false
+        }
+      },
+      "16228163262297b684": {
+        "type": "ffc-background-image-text",
+        "settings": {
+          "subtitle": "",
+          "title": "satisfaction guarantee",
+          "text": "<p>We're lucky to have so many happy  customers. We're confident you'll be one too.<br\/><br\/>If you're not 100% satisfied with your order, reach out to care@nomz.com and we'll send you a full refund, no questions asked.<\/p>",
+          "button_label": "",
+          "button_link": "shopify:\/\/collections\/all",
+          "image": "shopify:\/\/shop_images\/guarantee-bg.jpg",
+          "image_mobile": "shopify:\/\/shop_images\/guarantee_bg.png",
+          "alignment": "center",
+          "layout": "left"
+        }
+      },
+      "1624001104304ed81f": {
+        "type": "ffc-testimonials",
+        "disabled": true,
+        "blocks": {
+          "1624001104304ed81f-0": {
+            "type": "testimonial",
+            "settings": {
+              "testimonial": "<p>Nomz were excellent in every way...the flavors (hazelnut is my favorite!). the ingredients spot on. the name is perfect. the packaging is clean, simple and elegant.<\/p>",
+              "author": "Jacquelyne S",
+              "product": "",
+              "rating": 5
+            }
+          },
+          "1624001104304ed81f-1": {
+            "type": "testimonial",
+            "settings": {
+              "testimonial": "<p>Amazing taste and texture.<br\/>These little bites are amazing!! The texture is so rich and the taste is heavenly!! My favorite snack by far!<\/p>",
+              "author": "Tracey D",
+              "product": "",
+              "rating": 5
+            }
+          },
+          "1624001104304ed81f-2": {
+            "type": "testimonial",
+            "settings": {
+              "testimonial": "<p>Best snack ever. I absolutely love Nomz. The quality is unbeatable, they are delicious, full of flavor, easy to pack and perfect nutritionally. Thank you.<\/p>",
+              "author": "Jonathan J",
+              "product": "",
+              "rating": 5
+            }
+          },
+          "be644d2a-dde3-403e-b592-4611ce6c6168": {
+            "type": "testimonial",
+            "settings": {
+              "testimonial": "<p>I absolutely love these things!!! I don’t know how many months I have been ordering them but they are a staple in my every day diet!! Oh and don’t just stick to one flavour....try all 4.<\/p>",
+              "author": "Hali C",
+              "product": "",
+              "rating": 5
+            }
+          },
+          "7f0b9c46-c6d6-4941-b274-26b30ae001be": {
+            "type": "testimonial",
+            "settings": {
+              "testimonial": "<p>Delicious, clean eating and I appreciate the 96 pak for the bulk discount. I love all the flavours and the online shopping\/shipping was seamless. Highly recommend - they are SO good.<\/p>",
+              "author": "Chris B",
+              "product": "",
+              "rating": 5
+            }
+          },
+          "bab07f0f-8c7c-4cef-8279-f818250fce71": {
+            "type": "testimonial",
+            "settings": {
+              "testimonial": "<p>Nomz in the only treat in the market, natural and organic, with a very low sugar content. It has helped me replace refined sugar and serves as a daily dessert. I order a box monthly. Cant live without it! Thank you Nomz!<\/p>",
+              "author": "Camila N",
+              "product": "",
+              "rating": 5
+            }
+          },
+          "1f2bb533-bc78-4989-833e-80b669fbfd38": {
+            "type": "testimonial",
+            "settings": {
+              "testimonial": "<p>Soft and seriously delicious! Packed with nutritious ingredients. Best part is they only have a few ingredients!<\/p>",
+              "author": "Michelle Z",
+              "product": "",
+              "rating": 5
+            }
+          },
+          "3074c80c-6126-4a10-9acc-3a750e9b2629": {
+            "type": "testimonial",
+            "settings": {
+              "testimonial": "<p>This is just amazing! So healthy and filling! I am addicted to it. It is the best snack out there and it tastes heavenly; I tried various brands of energy balls and this is one is the best.<\/p>",
+              "author": "Rachelle",
+              "product": "",
+              "rating": 5
+            }
+          },
+          "e76c6b2d-e15a-4c21-981a-c85e1b68c5ca": {
+            "type": "testimonial",
+            "settings": {
+              "testimonial": "<p>These magical healthy bites taste like chocolate truffles! I am obsessed with them and have gotten my family hooked. As someone with celiac these are a great sweet treat with no worry or guilt. Pistachio bites are my favourite!<\/p>",
+              "author": "Amanda C",
+              "product": "",
+              "rating": 5
+            }
+          }
+        },
+        "block_order": [
+          "1624001104304ed81f-0",
+          "1624001104304ed81f-1",
+          "1624001104304ed81f-2",
+          "be644d2a-dde3-403e-b592-4611ce6c6168",
+          "7f0b9c46-c6d6-4941-b274-26b30ae001be",
+          "bab07f0f-8c7c-4cef-8279-f818250fce71",
+          "1f2bb533-bc78-4989-833e-80b669fbfd38",
+          "3074c80c-6126-4a10-9acc-3a750e9b2629",
+          "e76c6b2d-e15a-4c21-981a-c85e1b68c5ca"
+        ],
+        "settings": {
+          "title": "taste·monials",
+          "content": "",
+          "rating": 5,
+          "divider": true
+        }
+      },
+      "page-wholesale-landing": {
+        "type": "page-wholesale-landing",
+        "blocks": {
+          "168c62cb-d5ce-44ed-b664-7889624c40d5": {
+            "type": "background-image-text",
+            "settings": {
+              "subtitle": "",
+              "title": "Join our wholesale community!",
+              "text": "",
+              "button_label": "sign up \/ login",
+              "button_link": "https:\/\/wholesale.nomz.com\/login",
+              "image": "shopify:\/\/shop_images\/hero-img3_2x_c2fd863e-0cb3-4831-96f9-60e6c83710e0.png",
+              "image_mobile": "shopify:\/\/shop_images\/hero-img3mobile.png",
+              "alignment": "center right",
+              "layout": "left",
+              "color_text": "#ffffff",
+              "button_color_bg": "#ffffff",
+              "button_color": "#ae9cdb"
+            }
+          },
+          "7fef6fb8-619c-4fce-95b5-8067dd9b32fa": {
+            "type": "benefits",
+            "settings": {
+              "title": "the benefits",
+              "text": "",
+              "image": "shopify:\/\/shop_images\/wholesale2.jpg",
+              "benefit_1": "Wholesale pricing",
+              "benefit_2": "Low minimums",
+              "benefit_3": "Net 30 day payment terms",
+              "benefit_4": "Automated invoicing",
+              "benefit_5": "Ships out next day with tracking link",
+              "benefit_6": "Sales and merchandising resources",
+              "benefit_7": "Creating an account and placing an order takes less than a minute",
+              "benefit_8": "",
+              "benefit_9": "",
+              "benefit_10": ""
+            }
+          },
+          "b113af8c-d3c6-455f-9378-758e12610178": {
+            "type": "logo-list",
+            "settings": {
+              "title": "our products",
+              "text": "<p>Always organic, fresh and delicious.<\/p>",
+              "logo_image_1": "shopify:\/\/shop_images\/organic_426a92aa-5633-4454-9189-ec5b541623b4.png",
+              "logo_link_1": "",
+              "logo_image_2": "shopify:\/\/shop_images\/vegan_62978363-0c6d-497b-a8f5-b45d0158a062.png",
+              "logo_link_2": "",
+              "logo_image_3": "shopify:\/\/shop_images\/paleo.png",
+              "logo_link_3": "",
+              "logo_image_4": "shopify:\/\/shop_images\/gluten_free.png",
+              "logo_link_4": "",
+              "logo_image_5": "shopify:\/\/shop_images\/made_in_canada.png",
+              "logo_link_5": "",
+              "logo_link_6": "",
+              "logo_link_7": "",
+              "logo_link_8": "",
+              "logo_link_9": "",
+              "logo_link_10": ""
+            }
+          },
+          "87c3ab6a-daba-4866-8f6d-54094e5c3fd9": {
+            "type": "product-promotion",
+            "settings": {
+              "title": "",
+              "text": "",
+              "promo_url_1": "https:\/\/wholesale.nomz.com\/login",
+              "promo_title_1": "snack bites",
+              "promo_color_1": "#6cace4",
+              "promo_image_1": "shopify:\/\/shop_images\/prod1.jpg",
+              "promo_url_2": "https:\/\/wholesale.nomz.com\/login",
+              "promo_title_2": "beeswax candles",
+              "promo_color_2": "#f0bb5a",
+              "promo_image_2": "shopify:\/\/shop_images\/candle.jpg",
+              "promo_url_3": "https:\/\/wholesale.nomz.com\/login",
+              "promo_title_3": "nut butters",
+              "promo_color_3": "#ae9cdb",
+              "promo_image_3": "shopify:\/\/shop_images\/prod3.jpg",
+              "promo_url_4": "https:\/\/wholesale.nomz.com\/login",
+              "promo_title_4": "superfood mixes",
+              "promo_color_4": "#a4cc87",
+              "promo_image_4": "shopify:\/\/shop_images\/prod4.jpg",
+              "promo_url_5": "",
+              "promo_title_5": "",
+              "promo_color_5": "",
+              "promo_url_6": "",
+              "promo_title_6": "",
+              "promo_color_6": "",
+              "promo_url_7": "",
+              "promo_title_7": "",
+              "promo_color_7": "",
+              "promo_url_8": "",
+              "promo_title_8": "",
+              "promo_color_8": "",
+              "promo_url_9": "",
+              "promo_title_9": "",
+              "promo_color_9": "",
+              "promo_url_10": "",
+              "promo_title_10": "",
+              "promo_color_10": ""
+            }
+          },
+          "9e2d8517-1da2-4d67-847c-4a30752beb2d": {
+            "type": "testimonials-with-images",
+            "settings": {
+              "title": "our stockist community",
+              "text": "<p>Cafes, fitness studios, gift shops juice bars, universities, grocery stores, health and gormet stores, spas, airports and more<\/p>",
+              "testimonial_1": "<p>Sooooo good and a great option for our customers who need an energy pick me up after a sweaty spin or barre class!<\/p>",
+              "author_1": "Alexis L.",
+              "author_details_1": "bcycle",
+              "image_1": "shopify:\/\/shop_images\/instore.jpg",
+              "testimonial_2": "<p>\"These are one of my favourites in the set!\" –, <\/p>",
+              "author_2": "Nicole M.",
+              "author_details_2": "Category Buyer, Loblaws",
+              "image_2": "shopify:\/\/shop_images\/juicebox.jpg",
+              "testimonial_3": "",
+              "author_3": "",
+              "author_details_3": "",
+              "testimonial_4": "",
+              "author_4": "",
+              "author_details_4": "",
+              "testimonial_5": "",
+              "author_5": "",
+              "author_details_5": "",
+              "testimonial_6": "",
+              "author_6": "",
+              "author_details_6": "",
+              "testimonial_7": "",
+              "author_7": "",
+              "author_details_7": "",
+              "testimonial_8": "",
+              "author_8": "",
+              "author_details_8": "",
+              "testimonial_9": "",
+              "author_9": "",
+              "author_details_9": "",
+              "testimonial_10": "",
+              "author_10": "",
+              "author_details_10": ""
+            }
+          },
+          "89d44f79-5ca3-4e87-aab1-023363f0da63": {
+            "type": "logo-grid",
+            "settings": {
+              "title": "",
+              "text": "",
+              "logo_image_1": "shopify:\/\/shop_images\/wholefoods.jpg",
+              "logo_link_1": "",
+              "logo_image_2": "shopify:\/\/shop_images\/logo-nordstrom_1.png",
+              "logo_link_2": "",
+              "logo_image_3": "shopify:\/\/shop_images\/la_colombe.jpg",
+              "logo_link_3": "",
+              "logo_image_4": "shopify:\/\/shop_images\/indigo2.jpg",
+              "logo_link_4": "",
+              "logo_image_5": "shopify:\/\/shop_images\/air_canada.jpg",
+              "logo_link_5": "",
+              "logo_image_6": "shopify:\/\/shop_images\/logo-pusateris_1.png",
+              "logo_link_6": "",
+              "logo_image_7": "shopify:\/\/shop_images\/farmboy.jpg",
+              "logo_link_7": "",
+              "logo_image_8": "shopify:\/\/shop_images\/loblaws.jpg",
+              "logo_link_8": "",
+              "logo_link_9": "",
+              "logo_link_10": ""
+            }
+          },
+          "380493c8-cadc-42d3-8da0-5b68e80d8eae": {
+            "type": "contact",
+            "settings": {
+              "title": "we’d love to hear from you!",
+              "text": "",
+              "heading_phone": "call or text us",
+              "phone": "+1 416 278 9542",
+              "heading_email": "write to us",
+              "email": "hello@nomz.com"
+            }
+          }
+        },
+        "block_order": [
+          "168c62cb-d5ce-44ed-b664-7889624c40d5",
+          "7fef6fb8-619c-4fce-95b5-8067dd9b32fa",
+          "b113af8c-d3c6-455f-9378-758e12610178",
+          "87c3ab6a-daba-4866-8f6d-54094e5c3fd9",
+          "9e2d8517-1da2-4d67-847c-4a30752beb2d",
+          "89d44f79-5ca3-4e87-aab1-023363f0da63",
+          "380493c8-cadc-42d3-8da0-5b68e80d8eae"
+        ],
+        "settings": {
+        }
+      },
+      "footer-v2": {
+        "type": "footer-v2",
+        "blocks": {
+          "footer-v2-1": {
+            "type": "logo_social",
+            "settings": {
+              "logo": "shopify:\/\/shop_images\/whitelogopng.png",
+              "desktop_logo_height": 32,
+              "width": 26
+            }
+          },
+          "footer-v2-0": {
+            "type": "menu",
+            "settings": {
+              "show_footer_title": true,
+              "menu": "footer-v2-1",
+              "width": 18
+            }
+          },
+          "8f27ebf1-c706-40e2-8752-772ad73ac978": {
+            "type": "menu",
+            "settings": {
+              "show_footer_title": true,
+              "menu": "footer-v2-2",
+              "width": 18
+            }
+          },
+          "292663bc-4fab-4264-aec8-a431ebeebd51": {
+            "type": "newsletter",
+            "disabled": true,
+            "settings": {
+              "show_footer_title": true,
+              "title": "sign up to our newsletter",
+              "richtext": "",
+              "width": 40
+            }
+          }
+        },
+        "block_order": [
+          "footer-v2-1",
+          "footer-v2-0",
+          "8f27ebf1-c706-40e2-8752-772ad73ac978",
+          "292663bc-4fab-4264-aec8-a431ebeebd51"
+        ],
+        "settings": {
+          "show_payment_icons": false,
+          "show_copyright": true,
+          "copyright_text": ""
+        }
+      },
+      "newsletter-bar": {
+        "type": "newsletter-bar",
+        "settings": {
+          "enable": false,
+          "title": "Sign Up for 10% off your first order",
+          "button": "sign up",
+          "color_bg": "#6cace4",
+          "color": "#ffffff"
+        }
+      },
+      "page-subscription-landing": {
+        "type": "page-subscription-landing",
+        "blocks": {
+          "6e2fa851-4801-4377-b937-aef05a2610dd": {
+            "type": "background-image-text",
+            "settings": {
+              "subtitle": "",
+              "title": "subscribe & save 15% on everything",
+              "text": "",
+              "button_label": "login",
+              "button_link": "https:\/\/nomz.com\/account\/login?return_url=%2Faccount",
+              "image": "shopify:\/\/shop_images\/hero-img3_2xn.jpg",
+              "image_mobile": "shopify:\/\/shop_images\/Mask_Group.jpg",
+              "image_contain": true,
+              "alignment": "center",
+              "layout": "left",
+              "color_text": "#ffffff",
+              "button_color_bg": "#ffffff",
+              "button_color": "#ae9cdb",
+              "background_color": "#f8e4c4"
+            }
+          },
+          "90f516d0-edeb-4d7c-921f-6a1dc926a3bd": {
+            "type": "columns-with-icons",
+            "settings": {
+              "title": "how does subscription work?",
+              "text_1": "<p>Sign up to  our subscription  service for 15% discount<\/p>",
+              "icon_1": "https:\/\/cdn.shopify.com\/s\/files\/1\/0857\/4434\/files\/percent_1.svg?v=1631802535",
+              "text_2": "<p>Choose the frequency and  amount of your subscription<\/p>",
+              "icon_2": "https:\/\/cdn.shopify.com\/s\/files\/1\/0857\/4434\/files\/calendar_1.svg?v=1631802535",
+              "text_3": "<p>Pause or cancel your subscription at any time<\/p>",
+              "icon_3": "https:\/\/cdn.shopify.com\/s\/files\/1\/0857\/4434\/files\/pause_alt2_1.svg?v=1631802535"
+            }
+          },
+          "2c047b77-f7f1-410c-9c89-b46ef6bd1bc9": {
+            "type": "subscription-product",
+            "settings": {
+              "featured_product": "coconut-energy-bites",
+              "bg_color": "#fafafa",
+              "thumbnail_position": "none",
+              "badge_label": "subscribe and save 15%",
+              "divider": false
+            }
+          },
+          "219fc71a-1c98-4fe1-9037-3db197039a82": {
+            "type": "logo-list",
+            "settings": {
+              "title": "snack subscription box",
+              "text": "<p>Subscribe and save 15%. Simply set your order frequency and we will ship nomz directly to your doorstep. Need a healthy snack option? Want to try something new and delicious? Just fancy having an emergency stash of something sweet and guilt-free? You're in the right place.<\/p>",
+              "bg_color": "#fafafa",
+              "logo_image_1": "shopify:\/\/shop_images\/icon-1_07ba290d-78f0-46fc-b44c-a36a2bd166ba.png",
+              "logo_link_1": "",
+              "logo_image_2": "shopify:\/\/shop_images\/icon-2_0164c3b4-cd71-4138-851f-7c8493f7ac91.png",
+              "logo_link_2": "",
+              "logo_image_3": "shopify:\/\/shop_images\/icon-3_962891f4-945b-4e61-91e9-a8d7c04ab29e.png",
+              "logo_link_3": "",
+              "logo_image_4": "shopify:\/\/shop_images\/icon-4_93ea57df-ede1-4ae7-91d1-a706b8a69605.png",
+              "logo_link_4": "",
+              "logo_image_5": "shopify:\/\/shop_images\/proudly_canadian_a61795b3-6c08-4f57-a847-917ddb7b04a7.png",
+              "logo_link_5": "",
+              "logo_link_6": "",
+              "logo_link_7": "",
+              "logo_link_8": "",
+              "logo_link_9": "",
+              "logo_link_10": ""
+            }
+          },
+          "69112630-7a8d-4085-b10b-60ae5f77c9bd": {
+            "type": "benefits-sina",
+            "settings": {
+              "title": "subscription benefits",
+              "benefit_alt_1": "Change shipping date \/ frequency anytime",
+              "benefit_1_icon": "https:\/\/cdn-icons-png.flaticon.com\/128\/3652\/3652191.png",
+              "benefit_alt_2": "No strings attached, pause or cancel subscription anytime",
+              "benefit_2_icon": "https:\/\/cdn-icons-png.flaticon.com\/128\/5578\/5578909.png",
+              "benefit_alt_3": "Swap products in your subscription",
+              "benefit_3_icon": "https:\/\/cdn-icons-png.flaticon.com\/128\/466\/466154.png",
+              "benefit_alt_4": "You can skip or change your next order date",
+              "benefit_4_icon": "https:\/\/cdn-icons-png.flaticon.com\/128\/5207\/5207767.png",
+              "benefit_alt_5": "Save 10% and have nomz shipped to your door automatically so you're never hangry",
+              "benefit_5_icon": "https:\/\/cdn-icons-png.flaticon.com\/128\/4961\/4961776.png",
+              "benefit_alt_6": "",
+              "benefit_6_icon": "",
+              "benefit_alt_7": "",
+              "benefit_7_icon": "",
+              "benefit_alt_8": "",
+              "benefit_8_icon": "",
+              "benefit_alt_9": "",
+              "benefit_9_icon": "",
+              "benefit_alt_10": "",
+              "benefit_10_icon": ""
+            }
+          },
+          "b2f7e123-2593-455e-ab79-4f4e1a932b8b": {
+            "type": "benefits",
+            "disabled": true,
+            "settings": {
+              "title": "subscription benefits",
+              "text": "",
+              "image": "shopify:\/\/shop_images\/sunflower.jpg",
+              "benefit_1": "Change shipping date \/ frequency anytime",
+              "benefit_2": "No strings attached – pause or cancel subscription anytime",
+              "benefit_3": "Swap products in your subscription",
+              "benefit_4": "You can skip or change your next order date",
+              "benefit_5": "Save 10% and have nomz shipped to your door automatically so you're never hangry",
+              "benefit_6": "",
+              "benefit_7": "",
+              "benefit_8": "",
+              "benefit_9": "",
+              "benefit_10": ""
+            }
+          },
+          "7e4261b9-d061-45a0-a5ac-d778c0d3a4f7": {
+            "type": "testimonials",
+            "settings": {
+              "title": "taste·monials",
+              "content": "",
+              "rating": 5,
+              "testimonial_1": "<p>Nomz were excellent in every way...the flavors (hazelnut is my favorite!). the ingredients spot on. the name is perfect. the packaging is clean, simple and elegant.<\/p>",
+              "author_1": "Jacquelyne S",
+              "product_1": "",
+              "rating_1": 5,
+              "testimonial_2": "<p>Amazing taste and texture.These little bites are amazing!! The texture is so rich and the taste is heavenly!! My favorite snack by far!<\/p>",
+              "author_2": "Tracey D",
+              "product_2": "",
+              "rating_2": 5,
+              "testimonial_3": "<p>Best snack ever. I absolutely love Nomz. The quality is unbeatable, they are delicious, full of flavor, easy to pack and perfect nutritionally. Thank you.<\/p>",
+              "author_3": "Jonathan J",
+              "product_3": "",
+              "rating_3": 5,
+              "testimonial_4": "<p>I absolutely love these things!!! I don’t know how many months I have been ordering them but they are a staple in my every day diet!! Oh and don’t just stick to one flavour....try all 4.<\/p>",
+              "author_4": "Hali C",
+              "product_4": "",
+              "rating_4": 5,
+              "testimonial_5": "<p>Delicious, clean eating and I appreciate the 96 pak for the bulk discount. I love all the flavours and the online shopping\/shipping was seamless. Highly recommend - they are SO good.<\/p>",
+              "author_5": "Chris B",
+              "product_5": "",
+              "rating_5": 5,
+              "testimonial_6": "<p>Nomz in the only treat in the market, natural and organic, with a very low sugar content. It has helped me replace refined sugar and serves as a daily dessert. I order a box monthly. Cant live without it! Thank you Nomz!<\/p>",
+              "author_6": "Camila N",
+              "product_6": "",
+              "rating_6": 5,
+              "testimonial_7": "<p>Soft and seriously delicious! Packed with nutritious ingredients. Best part is they only have a few ingredients!<\/p>",
+              "author_7": "Michelle Z",
+              "product_7": "",
+              "rating_7": 5,
+              "testimonial_8": "<p>This is just amazing! So healthy and filling! I am addicted to it. It is the best snack out there and it tastes heavenly; I tried various brands of energy balls and this is one is the best.<\/p>",
+              "author_8": "Rachelle",
+              "product_8": "",
+              "rating_8": 5,
+              "testimonial_9": "<p>These magical healthy bites taste like chocolate truffles! I am obsessed with them and have gotten my family hooked. As someone with celiac these are a great sweet treat with no worry or guilt. Pistachio bites are my favourite!<\/p>",
+              "author_9": "Amanda C",
+              "product_9": "",
+              "rating_9": 5
+            }
+          },
+          "0c2d41c6-9615-48bb-8c7c-f2f112cd1198": {
+            "type": "featured-collection",
+            "disabled": true,
+            "settings": {
+              "title": "subscribe to bites",
+              "collection": "energy-bites",
+              "overlay_scrollbars": true,
+              "view_all": false,
+              "subscription": true
+            }
+          },
+          "80159878-78c6-46b9-8572-67239016cbbc": {
+            "type": "featured-collection",
+            "disabled": true,
+            "settings": {
+              "title": "subscribe to butters",
+              "collection": "nut-butters",
+              "overlay_scrollbars": true,
+              "view_all": false,
+              "subscription": true
+            }
+          },
+          "7a89a637-dea1-4eba-8d31-d5b62ed83a5e": {
+            "type": "featured-collection",
+            "disabled": true,
+            "settings": {
+              "title": "other subscription products",
+              "collection": "featured-products",
+              "overlay_scrollbars": true,
+              "view_all": false,
+              "subscription": true
+            }
+          }
+        },
+        "block_order": [
+          "6e2fa851-4801-4377-b937-aef05a2610dd",
+          "90f516d0-edeb-4d7c-921f-6a1dc926a3bd",
+          "2c047b77-f7f1-410c-9c89-b46ef6bd1bc9",
+          "219fc71a-1c98-4fe1-9037-3db197039a82",
+          "69112630-7a8d-4085-b10b-60ae5f77c9bd",
+          "b2f7e123-2593-455e-ab79-4f4e1a932b8b",
+          "7e4261b9-d061-45a0-a5ac-d778c0d3a4f7",
+          "0c2d41c6-9615-48bb-8c7c-f2f112cd1198",
+          "80159878-78c6-46b9-8572-67239016cbbc",
+          "7a89a637-dea1-4eba-8d31-d5b62ed83a5e"
+        ],
+        "settings": {
+        }
+      },
+      "16335925935f4a84e3": {
+        "type": "ffc-logos",
+        "blocks": {
+          "16335925935f4a84e3-0": {
+            "type": "logo_image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Asset_1.png",
+              "link": "",
+              "title": "ORGANIC"
+            }
+          },
+          "16335925935f4a84e3-1": {
+            "type": "logo_image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/vegan_34a5a699-0185-40dc-9482-b1250da90352.png",
+              "link": "",
+              "title": "VEGAN"
+            }
+          },
+          "16335925935f4a84e3-2": {
+            "type": "logo_image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/paleo_67c3f401-79c4-45e8-b7a3-0abab802c091.png",
+              "link": "",
+              "title": "PALEO"
+            }
+          },
+          "16335925935f4a84e3-3": {
+            "type": "logo_image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/gluten-free_5862b28b-977e-4f99-9423-dc593a976c59.jpg",
+              "link": "",
+              "title": "GLUTEN FREE"
+            }
+          },
+          "076f92e8-292a-4e87-9922-89a0eda45faf": {
+            "type": "logo_image",
+            "disabled": true,
+            "settings": {
+              "image": "shopify:\/\/shop_images\/made_in_canada.png",
+              "link": "",
+              "title": ""
+            }
+          },
+          "39d71649-fde8-4974-983f-e00c5a931bd8": {
+            "type": "logo_image",
+            "disabled": true,
+            "settings": {
+              "link": "",
+              "title": ""
+            }
+          }
+        },
+        "block_order": [
+          "16335925935f4a84e3-0",
+          "16335925935f4a84e3-1",
+          "16335925935f4a84e3-2",
+          "16335925935f4a84e3-3",
+          "076f92e8-292a-4e87-9922-89a0eda45faf",
+          "39d71649-fde8-4974-983f-e00c5a931bd8"
+        ],
+        "settings": {
+          "title": "naturally delicious",
+          "text": "<p>snacks made with simple, healthy ingredients<\/p>",
+          "color_bg": "",
+          "color_text": ""
+        }
+      },
+      "side-cart": {
+        "type": "side-cart",
+        "settings": {
+          "title": "your cart",
+          "checkout_notice": "Shipping, taxes & discounts calculated at checkout",
+          "enable_additional_buttons": false,
+          "cart_notes_enable": false,
+          "cart_notes_title": "add a gift note?",
+          "enable_upsell": true,
+          "upsell_title": "why not add?",
+          "upsell_limit": 5,
+          "shipping_threshold_enabled": true,
+          "shipping_threshold": 60,
+          "shipping_promotion": "[value] more until free shipping!",
+          "shipping_threshold_reached": "You’ve qualified for free shipping!"
+        }
+      },
+      "page-story": {
+        "type": "page-story",
+        "blocks": {
+          "2251e0d2-48b5-47ff-b398-9aa7322caa94": {
+            "type": "text-w-image-and-image",
+            "disabled": true,
+            "settings": {
+              "image": "shopify:\/\/shop_images\/10500381_335928523225851_7054520079761862060_n_0224e8a2-5921-4e00-9fbd-5817cc790ae8.jpg",
+              "image_width": 500,
+              "small_image": "shopify:\/\/shop_images\/Screen_Shot_2019-11-04_at_2.43.47_PM_ad1b43bf-6fc8-47c0-9fb8-bb246fa1953a.png",
+              "small_image_width": 500,
+              "subtitle": "",
+              "title": "",
+              "text": "<p>In 2013, Jana Zaibak started learning about the impact refined sugar has on the body and became inspired to live a healthier lifestyle. To satisfy her sweet tooth, she started making energy bites with natural ingredients from earth: nuts, dates and cocoa. Her first attempt was a success: her creation tasted better than any dessert she had tried, kept her full, and nourished the body too!<\/p><p><\/p><p>Eventually, Jana’s mom tried the energy bites and loved them as much as Jana did. She suggested that Jana should start selling them. Jana’s brother helped name the business (“nomz”), and a month later, local retailers started carrying it in their stores. People enjoyed them so much that our business has been growing ever since.<\/p>",
+              "bottom_text": "<p>We are passionate about what we do and we will continue source the best quality ingredients for our snacks. Our products will always be made without refined sugars and we’ll always only use natural ingredients. <\/p>",
+              "button_label": "",
+              "button_link": "",
+              "layout": "left"
+            }
+          },
+          "760d7986-bf4d-4926-9cd1-04e306a7323e": {
+            "type": "custom-html",
+            "settings": {
+              "full_width": false,
+              "space_around": false,
+              "code": "<div class=\"element\">\n<p class=\"specialp\"><img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0857\/4434\/files\/10500381_335928523225851_7054520079761862060_n_f74c35a9-3cbd-48c9-96b1-6c085af2df36_480x480.jpg?v=1490140152\" width=\"323\" height=\"327\" style=\"margin-top: 20px; margin-right: 20px; margin-bottom: 20px; float: left;\">In 2013, Jana Zaibak started learning about the impact refined sugar has on the body and became inspired to live a healthier lifestyle. To satisfy her sweet tooth, she started making energy bites with natural ingredients from earth: nuts, dates and cocoa. Her first attempt was a success: her creation tasted better than any dessert she had tried, kept her full, and nourished the body too!<\/p>\n<\/div>\n<p class=\"specialp\" style=\"text-align: left;\">Eventually, Jana’s mom tried the energy bites and loved them as much as Jana did. She suggested that Jana should start selling them. Jana’s brother helped name the business (“nomz”), and a month later, local retailers started carrying it in their stores. People enjoyed them so much that our business has been growing ever since.<img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0857\/4434\/files\/Screen_Shot_2019-11-04_at_2.43.47_PM_480x480.png?v=1572896651\" width=\"200\" height=\"200\" style=\"margin-top: 20px; margin-left: 20px; float: right;\"><\/p>\n<p class=\"specialp\" style=\"text-align: left;\">We are passionate about what we do and we will continue source the best quality ingredients for our snacks. Our products will always be made without refined sugars and we’ll always only use natural ingredients. <\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "2251e0d2-48b5-47ff-b398-9aa7322caa94",
+          "760d7986-bf4d-4926-9cd1-04e306a7323e"
+        ],
+        "settings": {
+          "page_title_enable": true,
+          "page_content_enable": false
+        }
+      },
+      "page-contact": {
+        "type": "page-contact",
+        "blocks": {
+          "e41eb7a5-26d6-40b4-badd-17fc5ebd889c": {
+            "type": "image-hero",
+            "settings": {
+              "title": "",
+              "title_size": 80,
+              "subheading": "",
+              "link": "",
+              "link_text": "",
+              "text_align": "vertical-bottom horizontal-left",
+              "image": "shopify:\/\/shop_images\/pf-834b802c-770e-4839-b2f2-f33343324a6d--contactusnocopy.jpg",
+              "focal_point": "center center",
+              "section_height": "natural",
+              "mobile_height": "auto"
+            }
+          },
+          "bce2416c-0b89-47aa-a28e-b49b2719eb4e": {
+            "type": "rich-text-contact",
+            "settings": {
+              "title": "ask us anything!",
+              "text": "we'd love to hear from you.",
+              "align_text": "center",
+              "contact_1": "<p style=\"text-decoration-line: underline;\">call\/text us<\/p>\n\n<a href=\"tel:14162789542\" target=\"_self\">+1 416 278 9542<\/a>",
+              "contact_2": "<p style=\"text-decoration-line: underline;\">write to us<\/p>\n\n<a href=\"mailto:hello@nomz.com\" target=\"_self\">hello@nomz.com<\/a>"
+            }
+          }
+        },
+        "block_order": [
+          "e41eb7a5-26d6-40b4-badd-17fc5ebd889c",
+          "bce2416c-0b89-47aa-a28e-b49b2719eb4e"
+        ],
+        "settings": {
+          "page_title_enable": false,
+          "page_content_enable": false
+        }
+      },
+      "page-values": {
+        "type": "page-values",
+        "blocks": {
+          "26528c53-6320-4037-aa2a-e4f59638c5da": {
+            "type": "text-and-image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/pf-3b5598c5-5283-45d8-9052-0157ab6e5fe8--Untitled401_4fcc4897-4951-489e-898a-3c47f0d03878.png",
+              "image_width": 500,
+              "subtitle": "",
+              "title": "",
+              "text": "<p>Our commitment to sourcing quality <strong>organic <\/strong>ingredients and crafting deliciousness is our true north. Organic ingredients are in their most pure, wholesome form, just as nature intended. Better for your body, and more gentle for the environment.<\/p>",
+              "button_label": "",
+              "button_link": "",
+              "layout": "left"
+            }
+          },
+          "476ae58b-49ac-4db2-9126-6c1c0d5a8aa2": {
+            "type": "text-and-image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/pf-276c92ef-60b9-4c59-9a12-1ad7c05269ac--Untitled402.png",
+              "image_width": 500,
+              "subtitle": "",
+              "title": "",
+              "text": "<p>Treat your body, and bite into decadence. Our energy bites are perfectly balanced. Soft, chocolatey, nutty and sweet... mmm, nom nom. The perfect snack with the best <strong>taste <\/strong>to satisfy your cravings.<\/p>",
+              "button_label": "",
+              "button_link": "",
+              "layout": "left"
+            }
+          },
+          "aded29d6-6363-49e0-8bac-414d2ef0bc7a": {
+            "type": "text-and-image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/pf-2ca1bc17-8c49-4d2e-96d1-b2c0dc1eb2dc--Untitled403.png",
+              "image_width": 500,
+              "subtitle": "",
+              "title": "",
+              "text": "<p>From our ingredients to our design, we like to keep things <strong>simple<\/strong>. Minimal ingredients that we proudly list on the front of our package: nuts, dates, cocoa, coconut oil, and sea salt – that’s it. We keep our packaging design minimal too, communicating only what’s needed. Nothing less, nothing more.<\/p>",
+              "button_label": "",
+              "button_link": "",
+              "layout": "left"
+            }
+          },
+          "5419ee51-5a02-4b9d-9269-a1a2687c248c": {
+            "type": "text-and-image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/pf-8755a822-c6a1-415e-a40a-7c7a58f4975d--Untitled404.png",
+              "image_width": 500,
+              "subtitle": "",
+              "title": "",
+              "text": "<p>We are so <strong>grateful<\/strong> for our team, those who have supported us along our journey, everyone who continues to nibble on our bites, and Toronto’s community who has provided a strong, and welcoming foundation for our business to grow. Gratitude with every day, and every bite.<\/p>",
+              "button_label": "",
+              "button_link": "",
+              "layout": "left"
+            }
+          }
+        },
+        "block_order": [
+          "26528c53-6320-4037-aa2a-e4f59638c5da",
+          "476ae58b-49ac-4db2-9126-6c1c0d5a8aa2",
+          "aded29d6-6363-49e0-8bac-414d2ef0bc7a",
+          "5419ee51-5a02-4b9d-9269-a1a2687c248c"
+        ],
+        "settings": {
+          "page_title_enable": true,
+          "page_content_enable": false
+        }
+      },
+      "16370767152aa8e8e8": {
+        "type": "ffc-featured-collection",
+        "settings": {
+          "title": "Featured collection",
+          "home_featured_products": "",
+          "overlay_scrollbars": true,
+          "view_all": true,
+          "divider": false
+        }
+      },
+      "16370769490ce1fb5d": {
+        "type": "featured-collection",
+        "settings": {
+          "title": "best sellers",
+          "home_featured_products": "best-sellers",
+          "per_row": 4,
+          "rows": 1,
+          "overlay_scrollbars": false,
+          "view_all_link": false,
+          "divider": false,
+          "view_all": false,
+          "view_all_text": "View all products",
+          "view_all_url": "",
+          "view_all_color_bg": "#6cace4",
+          "view_all_color_text": "#ffffff"
+        }
+      },
+      "16401960982d1b854d": {
+        "type": "instafeed",
+        "disabled": true,
+        "settings": {
+          "heading_font": "helvetica_n4",
+          "heading_size": 25,
+          "feed_width": 75,
+          "html_area": ""
+        }
+      },
+      "1640201785de6afdf4": {
+        "type": "advanced-content",
+        "blocks": {
+          "1640201785de6afdf4-0": {
+            "type": "image",
+            "disabled": true,
+            "settings": {
+              "link": "",
+              "width": "50%",
+              "alignment": "top-middle"
+            }
+          },
+          "1640201785de6afdf4-1": {
+            "type": "html",
+            "settings": {
+              "code": "<div class=\"yotpo yotpo-reviews-carousel\" data-header-customisation-enabled=\"1\" data-header-customisation-color=\"#56575f\" data-header-customisation-font-size=\"22\" data-header-customisation-text=\"customer reviews\" data-header-customisation-alignment=\"left\" data-background-color=\"transparent\" data-mode=\"manual\" data-type=\"both\" data-review-ids=\"310656488,322387021,179299547,323617656,238201708,320064962,219286885,100610587\" data-show-bottomline=\"1\" data-autoplay-enabled=\"1\" data-autoplay-speed=\"3000\" data-show-navigation=\"1\"> <\/div>",
+              "overlay_title": "",
+              "overlay_url": "",
+              "overlay_color": "",
+              "overlay_bg": "rgba(0,0,0,0)",
+              "width": "100%",
+              "alignment": "center"
+            }
+          }
+        },
+        "block_order": [
+          "1640201785de6afdf4-0",
+          "1640201785de6afdf4-1"
+        ],
+        "settings": {
+          "full_width": false,
+          "space_around": true
+        }
+      },
+      "newsletter": {
+        "type": "newsletter",
+        "settings": {
+          "title": "Sign Up and Save 10%",
+          "text": "<p>Join our email list and get the latest offers, recipes and healthy living tips. <\/p>",
+          "email_text": "Email address",
+          "email_button": "Sign Me Up",
+          "color_background": "#ffffff",
+          "color_text": "#434343",
+          "button_color_bg": "#6cace4",
+          "button_color_text": "#ffffff"
+        }
+      },
+      "1642170268a8da40df": {
+        "type": "newsletter",
+        "settings": {
+          "title": "Sign Up and Save 10%",
+          "text": "<p>Join our email list and get the latest offers, recipes and healthy living tips.<\/p>",
+          "email_text": "Email address",
+          "email_button": "Sign Me Up",
+          "color_background": "#ffffff",
+          "color_text": "#4f4f4f",
+          "button_color_bg": "#6cace4",
+          "button_color_text": "#ffffff"
+        }
+      },
+      "16426573624d22dfce": {
+        "type": "ffc-product-promotions",
+        "disabled": true,
+        "blocks": {
+          "2781d7f1-632f-43a2-b4c7-ca6d74dd194f": {
+            "type": "category",
+            "settings": {
+              "promo_url": "shopify:\/\/collections\/nut-butters",
+              "promo_title": "NUT BUTTERS",
+              "promo_color": "#6cace4",
+              "promo_image": "shopify:\/\/shop_images\/chocolate_almond_butter_cups-12-2.jpg"
+            }
+          }
+        },
+        "block_order": [
+          "2781d7f1-632f-43a2-b4c7-ca6d74dd194f"
+        ],
+        "settings": {
+          "title": "categories",
+          "text": "<p>from your pantry to your freezer<\/p>",
+          "overlay_scrollbars": true,
+          "divider": false,
+          "per_row": 4
+        }
+      },
+      "1644617339b9a020d3": {
+        "type": "satisfaction-guarantee",
+        "disabled": true,
+        "settings": {
+          "image": "shopify:\/\/shop_images\/857A0398.jpg",
+          "color_bg": "#fbd891",
+          "color_text": "#4f4f4f",
+          "title": "satisfaction guarantee",
+          "text": "We're lucky to have so many happy customers. We're confident you'll be one too.\n<br><br>\nIf you're not 100% satisfied with your order, reach out to care@nomz.com and we'll send you a full refund, no questions asked.",
+          "layout": "left"
+        }
+      }
+    },
+    "content_for_index": [
+      "1499790529450",
+      "16335925935f4a84e3",
+      "1620133030d8531624",
+      "16370769490ce1fb5d",
+      "1640201785de6afdf4",
+      "1601304991319",
+      "1600796453398",
+      "1600798311007",
+      "1622560873034bfd09",
+      "1624001104304ed81f",
+      "16228163262297b684",
+      "1576771100827",
+      "16370767152aa8e8e8",
+      "1644617339b9a020d3",
+      "16401960982d1b854d",
+      "1642170268a8da40df",
+      "16426573624d22dfce"
+    ]
+  },
+  "presets": {
+    "Classic": {
+      "color_body_bg": "#ffffff",
+      "color_body_text": "#000000",
+      "color_borders": "#e8e8e1",
+      "color_button": "#111111",
+      "color_button_text": "#fff",
+      "color_drawer_background": "#ffffff",
+      "color_drawer_text": "#000000",
+      "color_drawer_border": "#e8e8e1",
+      "color_drawer_button": "#111111",
+      "color_drawer_button_text": "#ffffff",
+      "color_footer": "#111111",
+      "color_footer_text": "#fff",
+      "color_image_1": "#000000",
+      "color_image_1_opacity": 62,
+      "color_image_2": "#000000",
+      "color_image_2_opacity": 0,
+      "color_small_image_bg": "#fff",
+      "color_large_image_bg": "#111111",
+      "type_header_spacing": "0",
+      "type_header_font_family": "itc_avant_garde_gothic_n7",
+      "type_header_base_size": 35,
+      "type_header_line_height": 1.2,
+      "type_header_accent_transform": true,
+      "type_base_font_family": "futura_n4",
+      "type_base_spacing": "25",
+      "type_base_size": 17,
+      "type_base_line_height": 1.6,
+      "type_base_accent_transform": true,
+      "icon_weight": "4px",
+      "icon_linecaps": "miter",
+      "animate_page_transitions": true,
+      "animate_page_transition_style": "page-slow-fade",
+      "animate_sections": true,
+      "animate_sections_background_style": "zoom-fade",
+      "animate_sections_text_style": "rise-up",
+      "animate_images": true,
+      "animate_images_style": "zoom-fade",
+      "animate_buttons": true,
+      "animate_underlines": true,
+      "quick_shop_text": "Quick view",
+      "cart_type": "drawer",
+      "currency_format": "money_format",
+      "supported_currencies": "USD CAD INR GBP AUD EUR JPY",
+      "default_currency": "USD",
+      "share_facebook": true,
+      "share_twitter": true,
+      "share_pinterest": true,
+      "checkout_header_image": "",
+      "checkout_logo_image": "",
+      "checkout_logo_position": "left",
+      "checkout_logo_size": "medium",
+      "checkout_body_background_image": "",
+      "checkout_body_background_color": "#fff",
+      "checkout_input_background_color_mode": "white",
+      "checkout_sidebar_background_image": "",
+      "checkout_sidebar_background_color": "#fafafa",
+      "checkout_heading_font": "Helvetica Neue",
+      "checkout_body_font": "Helvetica Neue",
+      "checkout_accent_color": "#111111",
+      "checkout_button_color": "#111111",
+      "checkout_error_color": "#ff6d6d",
+      "color_image_bg": "#000000",
+      "breadcrumb": true,
+      "color_sale_tag": "#990000",
+      "color_input": "#ffffff",
+      "checkout_banner_background_color": "#fff",
+      "checkout_call_to_action_color": "#a26b25",
+      "checkout_use_header_image": false,
+      "sections": {
+        "header": {
+          "type": "header",
+          "settings": {
+            "main_menu_link_list": "main-menu",
+            "sticky_index": true,
+            "sticky_collection": false,
+            "header_search_enable": false,
+            "show_announcement": true
+          }
+        },
+        "footer": {
+          "type": "footer",
+          "blocks": {
+            "1494292481350": {
+              "type": "logo_social",
+              "settings": {
+                "container_width": 20
+              }
+            },
+            "1494292485313": {
+              "type": "menu",
+              "settings": {
+                "menu": "main-menu",
+                "container_width": 20
+              }
+            },
+            "1494292487693": {
+              "type": "newsletter",
+              "settings": {
+                "container_width": 33
+              }
+            },
+            "1494301487049": {
+              "type": "menu",
+              "settings": {
+                "menu": "footer",
+                "container_width": 20
+              }
+            }
+          },
+          "block_order": [
+            "1494292481350",
+            "1494301487049",
+            "1494292485313",
+            "1494292487693"
+          ],
+          "settings": {
+            "show_payment_icons": false
+          }
+        },
+        "collection-template": {
+          "type": "collection-template",
+          "settings": {
+            "per_row": 4,
+            "collection_image_enable": true,
+            "collection_sort_enable": false
+          }
+        },
+        "product-template": {
+          "type": "product-template",
+          "settings": {
+            "image_size": "medium",
+            "social_enable": true
+          }
+        },
+        "article-template": {
+          "type": "article-template",
+          "settings": {
+            "blog_show_tags": true,
+            "blog_show_date": true,
+            "blog_show_comments": true,
+            "blog_show_author": false,
+            "social_sharing_blog": true
+          }
+        },
+        "1498163293234": {
+          "type": "featured-content",
+          "settings": {
+            "divider": false
+          }
+        },
+        "1498501481980": {
+          "type": "fading-images",
+          "blocks": {
+            "1498501481980-0": {
+              "type": "image",
+              "settings": {
+                "image": "",
+                "focal_point": "center center",
+                "slide_title1": "Beautifully animated",
+                "slide_title2": "titles and images"
+              }
+            },
+            "1498501481980-1": {
+              "type": "image",
+              "settings": {
+                "image": "",
+                "focal_point": "center center",
+                "slide_title1": "Use this section",
+                "slide_title2": "to impress"
+              }
+            },
+            "1498501481980-2": {
+              "type": "image",
+              "settings": {
+                "image": "",
+                "focal_point": "center center",
+                "slide_title1": "And highlight",
+                "slide_title2": "important details"
+              }
+            }
+          },
+          "block_order": [
+            "1498501481980-0",
+            "1498501481980-1",
+            "1498501481980-2"
+          ],
+          "settings": {
+            "slide_speed": 5,
+            "color_overlay": "#000",
+            "color_overlay_opacity": 30,
+            "section_height": 550
+          }
+        },
+        "blog-template": {
+          "type": "blog-template",
+          "settings": {
+            "blog_show_tag_filter": true
+          }
+        },
+        "1566999869051": {
+          "type": "featured-collection-switcher",
+          "settings": {
+          }
+        },
+        "1499789718857": {
+          "type": "featured-collections",
+          "blocks": {
+            "1499789718857-0": {
+              "type": "collection",
+              "settings": {
+                "collection": "",
+                "size": "wide"
+              }
+            },
+            "1499789718857-1": {
+              "type": "collection",
+              "settings": {
+                "collection": "",
+                "size": "square-small"
+              }
+            },
+            "1499789718857-2": {
+              "type": "collection",
+              "settings": {
+                "collection": "",
+                "size": "square-small"
+              }
+            },
+            "1499789718857-3": {
+              "type": "collection",
+              "settings": {
+                "collection": "",
+                "size": "square-small"
+              }
+            },
+            "1499789718857-4": {
+              "type": "collection",
+              "settings": {
+                "collection": "",
+                "size": "square-small"
+              }
+            },
+            "1499789718857-5": {
+              "type": "collection",
+              "settings": {
+                "collection": "",
+                "size": "wide"
+              }
+            }
+          },
+          "block_order": [
+            "1499789718857-0",
+            "1499789718857-1",
+            "1499789718857-2",
+            "1499789718857-3",
+            "1499789718857-4",
+            "1499789718857-5"
+          ],
+          "settings": {
+            "title": "",
+            "divider": false
+          }
+        },
+        "1499790529450": {
+          "type": "hero-video",
+          "settings": {
+            "title": "Bring your\nbrand to life.",
+            "title_size": 80,
+            "subheading": "Seamless hero videos",
+            "link_text": "",
+            "link": "",
+            "text_align": "vertical-bottom horizontal-left",
+            "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+            "section_height": "650px"
+          }
+        },
+        "1499790633921": {
+          "type": "background-image-text",
+          "settings": {
+            "subtitle": "Impressive",
+            "title": "Large image and text",
+            "text": "<p>Pair large text with a full-width image to draw attention to an important detail of your brand or product line.<\/p>",
+            "button_label": "",
+            "button_link": "",
+            "image": "",
+            "alignment": "center",
+            "color_border": "#f4f4f4",
+            "layout": "left",
+            "height": 650
+          }
+        },
+        "1499790731541": {
+          "type": "collection-callout",
+          "settings": {
+            "collection": "",
+            "subtitle": "Brand new",
+            "title": "Collection callout",
+            "text": "Use this section to easily call attention to one of your collections. We'll show photos of the first 5 products.",
+            "cta_text1": "Shop Jackets",
+            "cta_link1": "",
+            "cta_text2": "Shop All",
+            "cta_link2": "",
+            "divider": false
+          }
+        },
+        "1499790782828": {
+          "type": "text-columns",
+          "blocks": {
+            "1499790782828-0": {
+              "type": "text_block",
+              "settings": {
+                "enable_image": true,
+                "image": "",
+                "title": "Example title",
+                "text": "<p>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions about your products. Add images for emphasis.<\/p>",
+                "button_label": "",
+                "button_link": ""
+              }
+            },
+            "1499790782828-1": {
+              "type": "text_block",
+              "settings": {
+                "enable_image": true,
+                "image": "",
+                "title": "Example title",
+                "text": "<p>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions about your products. Add images for emphasis.<\/p>",
+                "button_label": "",
+                "button_link": ""
+              }
+            },
+            "1499790782828-2": {
+              "type": "text_block",
+              "settings": {
+                "enable_image": true,
+                "image": "",
+                "title": "Example title",
+                "text": "<p>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions about your products. Add images for emphasis.<\/p>",
+                "button_label": "",
+                "button_link": ""
+              }
+            }
+          },
+          "block_order": [
+            "1499790782828-0",
+            "1499790782828-1",
+            "1499790782828-2"
+          ],
+          "settings": {
+            "title": "",
+            "align_text": "left",
+            "divider": false
+          }
+        },
+        "product-sections-template": {
+          "type": "product-sections-template",
+          "blocks": {
+            "product-image-row": {
+              "type": "image-row",
+              "settings": {
+              }
+            },
+            "product-text-and-image": {
+              "type": "text-and-image",
+              "settings": {
+              }
+            },
+            "product-background-image-text": {
+              "type": "background-image-text",
+              "settings": {
+                "layout": "right"
+              }
+            },
+            "product-text-columns": {
+              "type": "text-columns",
+              "settings": {
+              }
+            },
+            "product-hero-video": {
+              "type": "hero-video",
+              "settings": {
+              }
+            }
+          },
+          "block_order": [
+            "product-image-row",
+            "product-text-and-image",
+            "product-background-image-text",
+            "product-text-columns",
+            "product-hero-video"
+          ],
+          "settings": {
+          }
+        },
+        "page-sections-template": {
+          "type": "page-sections-template",
+          "blocks": {
+            "page-fading-images": {
+              "type": "fading-images",
+              "settings": {
+              }
+            },
+            "page-rich-text": {
+              "type": "rich-text",
+              "settings": {
+                "title": "",
+                "align_text": "center",
+                "enlarge_text": true
+              }
+            },
+            "page-text-columns": {
+              "type": "text-columns",
+              "settings": {
+              }
+            },
+            "page-background-image-text": {
+              "type": "background-image-text",
+              "settings": {
+                "layout": "right"
+              }
+            },
+            "page-featured-collection": {
+              "type": "featured-collection",
+              "settings": {
+              }
+            }
+          },
+          "block_order": [
+            "page-fading-images",
+            "page-rich-text",
+            "page-text-columns",
+            "page-background-image-text",
+            "page-featured-collection"
+          ],
+          "settings": {
+          }
+        }
+      },
+      "content_for_index": [
+        "1499790529450",
+        "1498163293234",
+        "1499789718857",
+        "1566999869051",
+        "1498501481980",
+        "1499790731541",
+        "1499790633921",
+        "1499790782828"
+      ]
+    },
+    "Elegant": {
+      "color_body_bg": "#ffffff",
+      "color_body_text": "#000000",
+      "color_borders": "#e8e8e1",
+      "color_button": "#353956",
+      "color_button_text": "#fff",
+      "color_header": "#ffffff",
+      "color_header_text": "#040404",
+      "color_footer": "#17172c",
+      "color_footer_text": "#fff",
+      "color_drawer_background": "#ffffff",
+      "color_drawer_text": "#17172c",
+      "color_drawer_border": "#e8e8e1",
+      "color_drawer_button": "#353956",
+      "color_drawer_button_text": "#ffffff",
+      "color_modal_overlays": "#17172c",
+      "color_image_2": "#17172c",
+      "color_image_2_opacity": 0,
+      "color_image_1": "#17172c",
+      "color_image_1_opacity": 32,
+      "color_small_image_bg": "#f4f4f4",
+      "color_large_image_bg": "#17172c",
+      "type_header_spacing": "0",
+      "type_header_font_family": "bauer_bodoni_n7",
+      "type_header_base_size": 42,
+      "type_header_line_height": 1.3,
+      "type_base_font_family": "futura_n4",
+      "type_base_spacing": "25",
+      "type_base_size": 17,
+      "type_base_line_height": 1.6,
+      "icon_weight": "3px",
+      "icon_linecaps": "miter",
+      "animate_page_transitions": true,
+      "animate_page_transition_style": "page-slow-fade",
+      "animate_sections": true,
+      "animate_sections_background_style": "zoom-fade",
+      "animate_sections_text_style": "rise-up",
+      "animate_images": true,
+      "animate_images_style": "zoom-fade",
+      "animate_buttons": true,
+      "animate_underlines": true,
+      "quick_shop_text": "Quick view",
+      "cart_type": "drawer",
+      "currency_format": "money_format",
+      "supported_currencies": "USD CAD INR GBP AUD EUR JPY",
+      "default_currency": "USD",
+      "share_facebook": true,
+      "share_twitter": true,
+      "share_pinterest": true,
+      "checkout_header_image": "",
+      "checkout_logo_image": "",
+      "checkout_logo_position": "left",
+      "checkout_logo_size": "medium",
+      "checkout_body_background_image": "",
+      "checkout_body_background_color": "#fff",
+      "checkout_input_background_color_mode": "white",
+      "checkout_sidebar_background_image": "",
+      "checkout_sidebar_background_color": "#fafafa",
+      "checkout_heading_font": "Helvetica Neue",
+      "checkout_body_font": "Helvetica Neue",
+      "checkout_accent_color": "#111111",
+      "checkout_button_color": "#111111",
+      "checkout_error_color": "#ff6d6d",
+      "color_image_bg": "#000000",
+      "breadcrumb": true,
+      "color_sale_tag": "#990000",
+      "color_input": "#ffffff",
+      "checkout_banner_background_color": "#fff",
+      "checkout_call_to_action_color": "#a26b25",
+      "checkout_use_header_image": false,
+      "sections": {
+        "header": {
+          "type": "header",
+          "settings": {
+            "main_menu_link_list": "main-menu",
+            "sticky_index": true,
+            "sticky_collection": false,
+            "header_search_enable": false,
+            "show_announcement": true
+          }
+        },
+        "footer": {
+          "type": "footer",
+          "blocks": {
+            "1494292481350": {
+              "type": "logo_social",
+              "settings": {
+                "container_width": 20
+              }
+            },
+            "1494292485313": {
+              "type": "menu",
+              "settings": {
+                "menu": "main-menu",
+                "container_width": 20
+              }
+            },
+            "1494292487693": {
+              "type": "newsletter",
+              "settings": {
+                "container_width": 33
+              }
+            },
+            "1494301487049": {
+              "type": "menu",
+              "settings": {
+                "menu": "footer",
+                "container_width": 20
+              }
+            }
+          },
+          "block_order": [
+            "1494292481350",
+            "1494301487049",
+            "1494292485313",
+            "1494292487693"
+          ],
+          "settings": {
+            "show_payment_icons": false
+          }
+        },
+        "collection-template": {
+          "type": "collection-template",
+          "settings": {
+            "per_row": 4,
+            "collection_image_enable": true,
+            "collection_sort_enable": false
+          }
+        },
+        "product-template": {
+          "type": "product-template",
+          "settings": {
+            "image_size": "medium",
+            "social_enable": true
+          }
+        },
+        "article-template": {
+          "type": "article-template",
+          "settings": {
+            "blog_show_tags": true,
+            "blog_show_date": true,
+            "blog_show_comments": true,
+            "blog_show_author": false,
+            "social_sharing_blog": true
+          }
+        },
+        "1498163293234": {
+          "type": "featured-content",
+          "settings": {
+            "divider": false
+          }
+        },
+        "1498501481980": {
+          "type": "fading-images",
+          "blocks": {
+            "1498501481980-0": {
+              "type": "image",
+              "settings": {
+                "image": "",
+                "focal_point": "center center",
+                "slide_title1": "Beautifully animated",
+                "slide_title2": "titles and images"
+              }
+            },
+            "1498501481980-1": {
+              "type": "image",
+              "settings": {
+                "image": "",
+                "focal_point": "center center",
+                "slide_title1": "Use this section",
+                "slide_title2": "to impress"
+              }
+            },
+            "1498501481980-2": {
+              "type": "image",
+              "settings": {
+                "image": "",
+                "focal_point": "center center",
+                "slide_title1": "And highlight",
+                "slide_title2": "important details"
+              }
+            }
+          },
+          "block_order": [
+            "1498501481980-0",
+            "1498501481980-1",
+            "1498501481980-2"
+          ],
+          "settings": {
+            "slide_speed": 5,
+            "color_overlay": "#000",
+            "color_overlay_opacity": 30,
+            "section_height": 550
+          }
+        },
+        "blog-template": {
+          "type": "blog-template",
+          "settings": {
+            "blog_show_tag_filter": true
+          }
+        },
+        "1566999869051": {
+          "type": "featured-collection-switcher",
+          "settings": {
+          }
+        },
+        "1499789718857": {
+          "type": "featured-collections",
+          "blocks": {
+            "1499789718857-0": {
+              "type": "collection",
+              "settings": {
+                "collection": "",
+                "size": "wide"
+              }
+            },
+            "1499789718857-1": {
+              "type": "collection",
+              "settings": {
+                "collection": "",
+                "size": "square-small"
+              }
+            },
+            "1499789718857-2": {
+              "type": "collection",
+              "settings": {
+                "collection": "",
+                "size": "square-small"
+              }
+            },
+            "1499789718857-3": {
+              "type": "collection",
+              "settings": {
+                "collection": "",
+                "size": "square-small"
+              }
+            },
+            "1499789718857-4": {
+              "type": "collection",
+              "settings": {
+                "collection": "",
+                "size": "square-small"
+              }
+            },
+            "1499789718857-5": {
+              "type": "collection",
+              "settings": {
+                "collection": "",
+                "size": "wide"
+              }
+            }
+          },
+          "block_order": [
+            "1499789718857-0",
+            "1499789718857-1",
+            "1499789718857-2",
+            "1499789718857-3",
+            "1499789718857-4",
+            "1499789718857-5"
+          ],
+          "settings": {
+            "title": "",
+            "divider": false
+          }
+        },
+        "1499790529450": {
+          "type": "hero-video",
+          "settings": {
+            "title": "Bring your\nbrand to life.",
+            "title_size": 80,
+            "subheading": "Seamless hero videos",
+            "link_text": "",
+            "link": "",
+            "text_align": "vertical-bottom horizontal-left",
+            "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+            "section_height": "650px"
+          }
+        },
+        "1499790633921": {
+          "type": "background-image-text",
+          "settings": {
+            "subtitle": "Impressive",
+            "title": "Large image and text",
+            "text": "<p>Pair large text with a full-width image to draw attention to an important detail of your brand or product line.<\/p>",
+            "button_label": "",
+            "button_link": "",
+            "image": "",
+            "alignment": "center",
+            "color_border": "#f4f4f4",
+            "layout": "left",
+            "height": 650
+          }
+        },
+        "1499790731541": {
+          "type": "collection-callout",
+          "settings": {
+            "collection": "",
+            "subtitle": "Brand new",
+            "title": "Collection callout",
+            "text": "Use this section to easily call attention to one of your collections. We'll show photos of the first 5 products.",
+            "cta_text1": "Shop Jackets",
+            "cta_link1": "",
+            "cta_text2": "Shop All",
+            "cta_link2": "",
+            "divider": false
+          }
+        },
+        "1499790782828": {
+          "type": "text-columns",
+          "blocks": {
+            "1499790782828-0": {
+              "type": "text_block",
+              "settings": {
+                "enable_image": true,
+                "image": "",
+                "title": "Example title",
+                "text": "<p>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions about your products. Add images for emphasis.<\/p>",
+                "button_label": "",
+                "button_link": ""
+              }
+            },
+            "1499790782828-1": {
+              "type": "text_block",
+              "settings": {
+                "enable_image": true,
+                "image": "",
+                "title": "Example title",
+                "text": "<p>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions about your products. Add images for emphasis.<\/p>",
+                "button_label": "",
+                "button_link": ""
+              }
+            },
+            "1499790782828-2": {
+              "type": "text_block",
+              "settings": {
+                "enable_image": true,
+                "image": "",
+                "title": "Example title",
+                "text": "<p>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions about your products. Add images for emphasis.<\/p>",
+                "button_label": "",
+                "button_link": ""
+              }
+            }
+          },
+          "block_order": [
+            "1499790782828-0",
+            "1499790782828-1",
+            "1499790782828-2"
+          ],
+          "settings": {
+            "title": "",
+            "align_text": "left",
+            "divider": false
+          }
+        }
+      },
+      "content_for_index": [
+        "1499790529450",
+        "1498163293234",
+        "1499789718857",
+        "1566999869051",
+        "1498501481980",
+        "1499790731541",
+        "1499790633921",
+        "1499790782828"
+      ]
+    },
+    "Minimal": {
+      "color_body_bg": "#ffffff",
+      "color_body_text": "#000000",
+      "color_borders": "#f0f1f3",
+      "color_button": "#111111",
+      "color_button_text": "#fff",
+      "color_header": "#fff",
+      "color_header_text": "#000",
+      "color_footer": "#f0f1f3",
+      "color_footer_text": "#2c2c2c",
+      "color_drawer_background": "#ffffff",
+      "color_drawer_text": "#000000",
+      "color_drawer_border": "#f0f1f3",
+      "color_drawer_button": "#111111",
+      "color_drawer_button_text": "#ffffff",
+      "color_modal_overlays": "#aeb1b8",
+      "color_image_2": "#000000",
+      "color_image_2_opacity": 0,
+      "color_image_1": "#000000",
+      "color_image_1_opacity": 26,
+      "color_small_image_bg": "#ffffff",
+      "color_large_image_bg": "#dedfe1",
+      "type_header_spacing": "75",
+      "type_header_font_family": "din_next_n7",
+      "type_header_base_size": 34,
+      "type_header_line_height": 1.3,
+      "type_header_accent_transform": true,
+      "type_base_font_family": "din_next_n4",
+      "type_base_spacing": "25",
+      "type_base_size": 17,
+      "type_base_line_height": 1.6,
+      "type_base_accent_transform": true,
+      "icon_weight": "2px",
+      "icon_linecaps": "round",
+      "animate_page_transitions": true,
+      "animate_page_transition_style": "page-slide-reveal-down",
+      "animate_sections": true,
+      "animate_sections_background_style": "zoom-fade",
+      "animate_sections_text_style": "rise-up",
+      "animate_images": true,
+      "animate_images_style": "fade-in",
+      "animate_buttons": true,
+      "animate_underlines": true,
+      "quick_shop_text": "Quick view",
+      "cart_type": "drawer",
+      "currency_format": "money_format",
+      "supported_currencies": "USD CAD INR GBP AUD EUR JPY",
+      "default_currency": "USD",
+      "share_facebook": true,
+      "share_twitter": true,
+      "share_pinterest": true,
+      "checkout_header_image": "",
+      "checkout_logo_image": "",
+      "checkout_logo_position": "left",
+      "checkout_logo_size": "medium",
+      "checkout_body_background_image": "",
+      "checkout_body_background_color": "#fff",
+      "checkout_input_background_color_mode": "white",
+      "checkout_sidebar_background_image": "",
+      "checkout_sidebar_background_color": "#fafafa",
+      "checkout_heading_font": "Helvetica Neue",
+      "checkout_body_font": "Helvetica Neue",
+      "checkout_accent_color": "#111111",
+      "checkout_button_color": "#111111",
+      "checkout_error_color": "#ff6d6d",
+      "color_image_bg": "#000000",
+      "breadcrumb": true,
+      "color_sale_tag": "#990000",
+      "color_input": "#ffffff",
+      "checkout_banner_background_color": "#fff",
+      "checkout_call_to_action_color": "#a26b25",
+      "checkout_use_header_image": false,
+      "sections": {
+        "header": {
+          "type": "header",
+          "settings": {
+            "main_menu_link_list": "main-menu",
+            "sticky_index": false,
+            "sticky_collection": false,
+            "header_search_enable": false,
+            "show_announcement": true
+          }
+        },
+        "footer": {
+          "type": "footer",
+          "blocks": {
+            "1494292481350": {
+              "type": "logo_social",
+              "settings": {
+                "container_width": 20
+              }
+            },
+            "1494292485313": {
+              "type": "menu",
+              "settings": {
+                "menu": "main-menu",
+                "container_width": 20
+              }
+            },
+            "1494292487693": {
+              "type": "newsletter",
+              "settings": {
+                "container_width": 33
+              }
+            },
+            "1494301487049": {
+              "type": "menu",
+              "settings": {
+                "menu": "footer",
+                "container_width": 20
+              }
+            }
+          },
+          "block_order": [
+            "1494292481350",
+            "1494301487049",
+            "1494292485313",
+            "1494292487693"
+          ],
+          "settings": {
+            "show_payment_icons": false
+          }
+        },
+        "collection-template": {
+          "type": "collection-template",
+          "settings": {
+            "per_row": 4,
+            "collection_image_enable": true,
+            "collection_sort_enable": false
+          }
+        },
+        "product-template": {
+          "type": "product-template",
+          "settings": {
+            "image_size": "medium",
+            "social_enable": true
+          }
+        },
+        "article-template": {
+          "type": "article-template",
+          "settings": {
+            "blog_show_tags": true,
+            "blog_show_date": true,
+            "blog_show_comments": true,
+            "blog_show_author": false,
+            "social_sharing_blog": true
+          }
+        },
+        "1498163293234": {
+          "type": "featured-content",
+          "settings": {
+            "divider": false
+          }
+        },
+        "1498501481980": {
+          "type": "fading-images",
+          "blocks": {
+            "1498501481980-0": {
+              "type": "image",
+              "settings": {
+                "image": "",
+                "focal_point": "center center",
+                "slide_title1": "Beautifully animated",
+                "slide_title2": "titles and images"
+              }
+            },
+            "1498501481980-1": {
+              "type": "image",
+              "settings": {
+                "image": "",
+                "focal_point": "center center",
+                "slide_title1": "Use this section",
+                "slide_title2": "to impress"
+              }
+            },
+            "1498501481980-2": {
+              "type": "image",
+              "settings": {
+                "image": "",
+                "focal_point": "center center",
+                "slide_title1": "And highlight",
+                "slide_title2": "important details"
+              }
+            }
+          },
+          "block_order": [
+            "1498501481980-0",
+            "1498501481980-1",
+            "1498501481980-2"
+          ],
+          "settings": {
+            "slide_speed": 5,
+            "color_overlay": "#000",
+            "color_overlay_opacity": 30,
+            "section_height": 550
+          }
+        },
+        "blog-template": {
+          "type": "blog-template",
+          "settings": {
+            "blog_show_tag_filter": true
+          }
+        },
+        "1566999869051": {
+          "type": "featured-collection-switcher",
+          "settings": {
+          }
+        },
+        "1499789718857": {
+          "type": "featured-collections",
+          "blocks": {
+            "1499789718857-0": {
+              "type": "collection",
+              "settings": {
+                "collection": "",
+                "size": "wide"
+              }
+            },
+            "1499789718857-1": {
+              "type": "collection",
+              "settings": {
+                "collection": "",
+                "size": "square-small"
+              }
+            },
+            "1499789718857-2": {
+              "type": "collection",
+              "settings": {
+                "collection": "",
+                "size": "square-small"
+              }
+            },
+            "1499789718857-3": {
+              "type": "collection",
+              "settings": {
+                "collection": "",
+                "size": "square-small"
+              }
+            },
+            "1499789718857-4": {
+              "type": "collection",
+              "settings": {
+                "collection": "",
+                "size": "square-small"
+              }
+            },
+            "1499789718857-5": {
+              "type": "collection",
+              "settings": {
+                "collection": "",
+                "size": "wide"
+              }
+            }
+          },
+          "block_order": [
+            "1499789718857-0",
+            "1499789718857-1",
+            "1499789718857-2",
+            "1499789718857-3",
+            "1499789718857-4",
+            "1499789718857-5"
+          ],
+          "settings": {
+            "title": "",
+            "divider": false
+          }
+        },
+        "1499790529450": {
+          "type": "hero-video",
+          "settings": {
+            "title": "Bring your\nbrand to life.",
+            "title_size": 80,
+            "subheading": "Seamless hero videos",
+            "link_text": "",
+            "link": "",
+            "text_align": "vertical-bottom horizontal-left",
+            "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+            "section_height": "650px"
+          }
+        },
+        "1499790633921": {
+          "type": "background-image-text",
+          "settings": {
+            "subtitle": "Impressive",
+            "title": "Large image and text",
+            "text": "<p>Pair large text with a full-width image to draw attention to an important detail of your brand or product line.<\/p>",
+            "button_label": "",
+            "button_link": "",
+            "image": "",
+            "alignment": "center",
+            "color_border": "#f4f4f4",
+            "layout": "left",
+            "height": 650
+          }
+        },
+        "1499790731541": {
+          "type": "collection-callout",
+          "settings": {
+            "collection": "",
+            "subtitle": "Brand new",
+            "title": "Collection callout",
+            "text": "Use this section to easily call attention to one of your collections. We'll show photos of the first 5 products.",
+            "cta_text1": "Shop Jackets",
+            "cta_link1": "",
+            "cta_text2": "Shop All",
+            "cta_link2": "",
+            "divider": false
+          }
+        },
+        "1499790782828": {
+          "type": "text-columns",
+          "blocks": {
+            "1499790782828-0": {
+              "type": "text_block",
+              "settings": {
+                "enable_image": true,
+                "image": "",
+                "title": "Example title",
+                "text": "<p>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions about your products. Add images for emphasis.<\/p>",
+                "button_label": "",
+                "button_link": ""
+              }
+            },
+            "1499790782828-1": {
+              "type": "text_block",
+              "settings": {
+                "enable_image": true,
+                "image": "",
+                "title": "Example title",
+                "text": "<p>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions about your products. Add images for emphasis.<\/p>",
+                "button_label": "",
+                "button_link": ""
+              }
+            },
+            "1499790782828-2": {
+              "type": "text_block",
+              "settings": {
+                "enable_image": true,
+                "image": "",
+                "title": "Example title",
+                "text": "<p>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions about your products. Add images for emphasis.<\/p>",
+                "button_label": "",
+                "button_link": ""
+              }
+            }
+          },
+          "block_order": [
+            "1499790782828-0",
+            "1499790782828-1",
+            "1499790782828-2"
+          ],
+          "settings": {
+            "title": "",
+            "align_text": "left",
+            "divider": false
+          }
+        }
+      },
+      "content_for_index": [
+        "1499790529450",
+        "1498163293234",
+        "1499789718857",
+        "1566999869051",
+        "1498501481980",
+        "1499790731541",
+        "1499790633921",
+        "1499790782828"
+      ]
+    }
+  }
+}
