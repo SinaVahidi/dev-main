@@ -2,11 +2,11 @@
 {%- assign ss = section.settings -%}
 {% style %}
 .header__container { 
-  background-image: url({{ section.settings.collection_image_desk | img_url: '1200x' }});
+  background-image: url({{ ss.collection_image_desk }});
 }
 @media screen and (max-width:68.75em){
   .header__container { 
-    background-image: url({{ section.settings.collection_image_cell| img_url: '1200x' }});
+    background-image: url({{ ss.collection_image_cell|  }});
   }
 }
 {% endstyle %}
@@ -348,14 +348,14 @@
         "label": "Collection subheading"
       },
       {
-        "type": "image_picker",
+        "type": "url",
         "id": "collection_image_desk",
-        "label": "Collection image desktop"
+        "label": "Collection image desktop URL"
       },
       {
-        "type": "image_picker",
+        "type": "url",
         "id": "collection_image_cell",
-        "label": "Collection image mobile"
+        "label": "Collection image mobile URL"
       }
     ]
   }
