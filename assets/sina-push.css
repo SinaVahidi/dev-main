@@ -2002,7 +2002,7 @@ ion-icon[name="add-outline"] {
   .header__container {
     -webkit-animation: fadeIn 1s ease-out;
             animation: fadeIn 1s ease-out;
-    background-position: bottom;
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     -webkit-clip-path: polygon(5% 0, 100% 0, 100% 90%, 95% 100%, 0 100%, 0 10%);
