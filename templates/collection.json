@@ -1,1 +1,35 @@
-{"sections":{"main":{"type":"collection-template","settings":{"per_row":4,"collection_image_enable":false,"collection_subnav_style":"none","collection_tags_style":"none","collection_sort_enable":false}},"newsletter":{"type":"newsletter","settings":{"title":"Sign up and save","text":"<p>Subscribe to get special offers, free giveaways, and once-in-a-lifetime deals.<\/p>","email_text":"Email address","email_button":"Subscribe","color_background":"#6CACE4","color_text":"#ffffff","button_color_bg":"#f0bb5a","button_color_text":"#ffffff"}}},"order":["main","newsletter"]}
+{
+  "sections": {
+    "main": {
+      "type": "collection-template",
+      "settings": {
+        "per_row": 4,
+        "collection_image_enable": false,
+        "collection_subnav_style": "none",
+        "collection_tags_style": "none",
+        "collection_sort_enable": false,
+        "collection_header": "nut butter",
+        "collection_subheader": "Explore our range of smooth and creamy, organic nut butters",
+        "collection_image_desk": "shopify:\/\/shop_images\/Screen_Shot_2022-02-28_at_8.41.49_PM.png",
+        "collection_image_cell": "shopify:\/\/shop_images\/Screen_Shot_2022-02-28_at_8.44.40_PM.png"
+      }
+    },
+    "newsletter": {
+      "type": "newsletter",
+      "settings": {
+        "title": "Sign up and save",
+        "text": "<p>Subscribe to get special offers, free giveaways, and once-in-a-lifetime deals.<\/p>",
+        "email_text": "Email address",
+        "email_button": "Subscribe",
+        "color_background": "#6cace4",
+        "color_text": "#ffffff",
+        "button_color_bg": "#f0bb5a",
+        "button_color_text": "#ffffff"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "newsletter"
+  ]
+}
