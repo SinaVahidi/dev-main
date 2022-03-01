@@ -1,19 +1,19 @@
 {%- assign per_row = section.settings.per_row -%}
 {%- assign ss = section.settings -%}
 {% style %}
-.header__container { 
-  background-image: url({{ section.settings.collection_image_desk }});
-}
-@media screen and (max-width:68.75em){
   .header__container { 
-    background-image: url({{ section.settings.collection_image_cell }});
+    background-image: url({{ section.settings.collection_image_desk }});
   }
-}
-{% if section.settings.collection_header ='coconut' %}
-  .header__container {
-    background-position: center;
+  @media screen and (max-width:68.75em){
+    .header__container { 
+      background-image: url({{ section.settings.collection_image_cell }});
+    }
   }
-{% endif %}
+  {% if collection.title = 'energy bites' or  collection.title = 'nut butters'%}
+    .header__container {
+      background-position: center;
+    }
+  {% endif %}
 {% endstyle %}
 {%- capture qs_view -%}{%- render 'fn.querystring', param: "view" -%}{%- endcapture -%}
 
