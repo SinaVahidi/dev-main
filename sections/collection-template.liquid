@@ -115,7 +115,7 @@
       <hr class="hr--clear hr--small">
     {% endif %} -->
     {% assign header = ss.collection_header %}
-    {% unless collection.title == "all" %}
+    {% unless collection.url == "/collections/all" %}
       <header class="header">
         <section class="header__container" {% if header == 'nut butters' or header == 'energy bites'%}style="background-position:bottom!important;"{% endif %}>
           <h1 class="heading-main-lev">
