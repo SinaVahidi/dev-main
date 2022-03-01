@@ -1446,6 +1446,11 @@
               "view_all": false,
               "subscription": true
             }
+          },
+          "264ce9c6-2600-42e2-a649-a603f1ed2a80": {
+            "type": "bg_img_alt",
+            "settings": {
+            }
           }
         },
         "block_order": [
@@ -1458,7 +1463,8 @@
           "7e4261b9-d061-45a0-a5ac-d778c0d3a4f7",
           "0c2d41c6-9615-48bb-8c7c-f2f112cd1198",
           "80159878-78c6-46b9-8572-67239016cbbc",
-          "7a89a637-dea1-4eba-8d31-d5b62ed83a5e"
+          "7a89a637-dea1-4eba-8d31-d5b62ed83a5e",
+          "264ce9c6-2600-42e2-a649-a603f1ed2a80"
         ],
         "settings": {
         }
