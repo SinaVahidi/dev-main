@@ -267,11 +267,11 @@
 
 {% style %}
 .header__container { 
-  background-image: url({{ section.settings.collection_image_desk | image_url: '1200x' }});
+  background-image: url({{ section.settings.collection_image_desk | img_url: '1200x' }});
 }
 @media screen and (max-width:68.75em){
   .header__container { 
-    background-image: url({{ section.settings.collection_image_desk | image_url: '1200x' }});
+    background-image: url({{ section.settings.collection_image_desk | img_url: '1200x' }});
   }
 }
 {% endstyle %}
