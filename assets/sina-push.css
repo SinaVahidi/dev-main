@@ -2002,7 +2002,6 @@ ion-icon[name="add-outline"] {
   .header__container {
     -webkit-animation: fadeIn 1s ease-out;
             animation: fadeIn 1s ease-out;
-    background-image: url(https://cdn.shopify.com/s/files/1/0857/4434/files/Screen_Shot_2022-02-28_at_8.41.49_PM.png?v=1646098937);
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: cover;
@@ -2015,7 +2014,6 @@ ion-icon[name="add-outline"] {
   }
   @media only screen and (max-width: 68.75em) {
     .header__container {
-      background-image: url(https://cdn.shopify.com/s/files/1/0857/4434/files/Screen_Shot_2022-02-28_at_8.44.40_PM.png?v=1646099098);
       -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 100% 100%, 0 100%, 0 0);
               clip-path: polygon(0 0, 100% 0, 100% 100%, 100% 100%, 0 100%, 0 0);
       height: 70rem;
