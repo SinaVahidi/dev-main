@@ -9,11 +9,6 @@
       background-image: url({{ section.settings.collection_image_cell }});
     }
   }
-  {% if collection.title = 'energy bites' or  collection.title = 'nut butters'%}
-    .header__container {
-      background-position: bottom;
-    }
-  {% endif %}
 {% endstyle %}
 {%- capture qs_view -%}{%- render 'fn.querystring', param: "view" -%}{%- endcapture -%}
 
@@ -120,7 +115,7 @@
       <hr class="hr--clear hr--small">
     {% endif %} -->
     <header class="header">
-      <section class="header__container">
+      <section class="header__container" {% if ss.collection_header = 'nut butters' or ss.collection_header = 'energy_bites' %}style="background-position:bottom!important;"{% endif %}>
         <h1 class="heading-main-lev">
           <span class="heading-main-lev--main">{{ ss.collection_header }}</span>
           {% if section.settings.collection_subheader != blank %}
