@@ -115,16 +115,18 @@
       <hr class="hr--clear hr--small">
     {% endif %} -->
     {% assign header = ss.collection_header %}
-    <header class="header">
-      <section class="header__container" {% if header == 'nut butters' or header == 'energy bites'%}style="background-position:bottom!important;"{% endif %}>
-        <h1 class="heading-main-lev">
-          <span class="heading-main-lev--main">{{ ss.collection_header }}</span>
-          {% if section.settings.collection_subheader != blank %}
-            <span class="heading-main-lev--sub"> {{ ss.collection_subheader }}</span>
-          {% endif %}
-        </h1>
-      </section>
-    </header>
+    {% unless collection.title == "all" %}
+      <header class="header">
+        <section class="header__container" {% if header == 'nut butters' or header == 'energy bites'%}style="background-position:bottom!important;"{% endif %}>
+          <h1 class="heading-main-lev">
+            <span class="heading-main-lev--main">{{ ss.collection_header }}</span>
+            {% if section.settings.collection_subheader != blank %}
+              <span class="heading-main-lev--sub"> {{ ss.collection_subheader }}</span>
+            {% endif %}
+          </h1>
+        </section>
+      </header>
+    {% endunless %}
     <div id="CollectionAjaxResult">
       <div id="CollectionAjaxContent">
         <div class="grid grid--uniform">
