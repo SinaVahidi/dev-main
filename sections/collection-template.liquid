@@ -1,4 +1,5 @@
 {%- assign per_row = section.settings.per_row -%}
+{%- assign ss = section.settings -%}
 {%- capture qs_view -%}{%- render 'fn.querystring', param: "view" -%}{%- endcapture -%}
 
 <div id="CollectionSection" data-section-id="{{ section.id }}" data-section-type="collection-template" class="collection-section-template">
@@ -37,13 +38,13 @@
 
   <div class="page-width page-content">
 
-    {% unless section.settings.collection_image_enable and collection.image %}
+    <!-- {% unless section.settings.collection_image_enable and collection.image %}
       <header class="section-header">
         <h1 class="section-header__title">
           {{ collection.title }}
         </h1>
       </header>
-    {% endunless %}
+    {% endunless %} -->
 
     {% if section.settings.collection_tags_style == 'dropdown' or section.settings.collection_sort_enable %}
       <div class="collection-filter">
@@ -97,13 +98,20 @@
       </div>
     {% endif %}
 
-    {% if collection.description != blank %}
+    <!-- {% if collection.description != blank %}
       <div class="rte">
         {{ collection.description }}
       </div>
       <hr class="hr--clear hr--small">
-    {% endif %}
-
+    {% endif %} -->
+    <header class="header">
+      <section class="header__container">
+        <h1 class="heading-main-lev">
+          <span class="heading-main-lev--main">{{ ss.collection_header}}</span>
+          <span class="heading-main-lev--sub"> {{ ss.collection_subheader}}</span>
+        </h1>
+      </section>
+    </header>
     <div id="CollectionAjaxResult">
       <div id="CollectionAjaxContent">
         <div class="grid grid--uniform">
@@ -320,6 +328,16 @@
         "id": "collection_sort_enable",
         "label": "Show sort options",
         "default": false
+      },
+      {
+        "type": "text",
+        "id": "collection_header",
+        "label": "Collection heading"
+      },
+      {
+        "type": "text",
+        "id": "collection_subeader",
+        "label": "Collection subheading"
       }
     ]
   }

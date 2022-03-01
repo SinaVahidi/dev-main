@@ -1184,7 +1184,7 @@
     padding-top: 0px!important;
   }
   .page-content, .shopify-policy__container{
-    padding-top:30px;
+    padding-top:15px;
   }
   .product-section .page-content{
     padding-top:15px;
@@ -1805,3 +1805,220 @@ ion-icon[name="add-outline"] {
 .yotpo div, .yotpo span, .yotpo p, .yotpo a, .yotpo img, .yotpo i, .yotpo strong, .yotpo sup, .yotpo ul, .yotpo li, .yotpo form, .yotpo label {
   font-family: 'Gotham Rounded Book', verdana, sans-serif!important;
 }
+
+/* collection pages top */
+
+@-webkit-keyframes fadeIn {
+    0% {
+      filter: blur(8px);
+      opacity: 0;
+      -webkit-filter: blur(8px);
+    }
+    100% {
+      filter: blur(0);
+      opacity: 1;
+      -webkit-filter: blur(0);
+    }
+  }
+  @keyframes fadeIn {
+    0% {
+      filter: blur(8px);
+      opacity: 0;
+      -webkit-filter: blur(8px);
+    }
+    100% {
+      filter: blur(0);
+      opacity: 1;
+      -webkit-filter: blur(0);
+    }
+  }
+  *,
+  *::after,
+  *::before {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    box-sizing: border-box;
+    position: relative;
+  }
+  
+  html {
+    font-size: 62.5%;
+  }
+  @media only screen and (max-width: 68.75em) {
+    html {
+      font-size: 56.25%;
+    }
+  }
+  @media only screen and (max-width: 56.25em) {
+    html {
+      font-size: 50%;
+    }
+  }
+  @media only screen and (max-width: 37.5em) {
+    html {
+      font-size: 43.75%;
+    }
+  }
+  @media only screen and (max-width: 37.5em) {
+    html {
+      font-size: 37.5%;
+    }
+  }
+  @media only screen and (min-width: 112.5em) {
+    html {
+      font-size: 75%;
+    }
+  }
+  
+  
+  body {
+    font-family: "Open Sans", sans-serif;
+    line-height: 1.75;
+  }
+  
+  .heading-main-lev {
+    bottom: 30px;
+    left: 30px;
+    position: absolute;
+  }
+  @media only screen and (max-width: 68.75em) {
+    .heading-main-lev {
+      bottom: 20%;
+      left: 0;
+      padding: 0 10rem;
+      text-align: center;
+      width: 100%;
+    }
+  }
+  @media only screen and (max-width: 28.125em) {
+    .heading-main-lev {
+      padding: 0 5rem;
+      text-align: center;
+      top: 60%;
+      width: 100%;
+    }
+  }
+  .heading-main-lev--main {
+    -webkit-animation: fadeIn 0.8s ease-out 1s;
+            animation: fadeIn 0.8s ease-out 1s;
+    -webkit-animation-fill-mode: backwards;
+            animation-fill-mode: backwards;
+    background-color: rgba(255, 255, 255, 0.7);
+    /* color: black; */
+    display: inline-block;
+    font-size: 6rem;
+    font-weight: bolder;
+    letter-spacing: 1.2rem;
+    margin-bottom: 10px;
+    /* mix-blend-mode: screen; */
+    padding: 1rem 1rem 1rem 2.75rem;
+  }
+  @media only screen and (max-width: 68.75em) {
+    .heading-main-lev--main {
+      font-size: 5rem;
+    }
+  }
+  @media only screen and (max-width: 56.25em) {
+    .heading-main-lev--main {
+      background-color: rgba(255, 255, 255, 0.6);
+      font-size: 4rem;
+    }
+  }
+  @media only screen and (max-width: 28.125em) {
+    .heading-main-lev--main {
+      font-size: 3rem;
+    }
+  }
+  .heading-main-lev--sub {
+    -webkit-animation: fadeIn 0.5s ease-out 1.2s;
+            animation: fadeIn 0.5s ease-out 1.2s;
+    -webkit-animation-fill-mode: backwards;
+            animation-fill-mode: backwards;
+    /* color: #fff; */
+    display: block;
+    font-size: 2.25rem;
+    font-weight: 400;
+    letter-spacing: 0.5rem;
+    margin-top: 1rem;
+    padding: 0.5rem 2rem;
+  }
+  @media only screen and (max-width: 68.75em) {
+    .heading-main-lev--sub {
+      font-size: 2rem;
+      background-color: rgba(255, 255, 255, 0.6);
+    }
+  }
+  @media only screen and (max-width: 56.25em) {
+    .heading-main-lev--sub {
+      font-size: 1.9rem;
+    }
+  }
+  .heading-section-lev {
+    background: linear-gradient(to right, #714214, #d07a25);
+    color: transparent;
+    font-size: 3.5rem;
+    font-weight: 900;
+    letter-spacing: 1.25rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    text-align: center;
+    -webkit-background-clip: text;
+  }
+  .heading-number-lev {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 10rem;
+    font-weight: 700;
+    height: 70%;
+    left: 1.7rem;
+    position: absolute;
+  }
+  @media only screen and (max-width: 56.25em), only screen and (hover: none) {
+    .heading-number-lev {
+      color: rgba(255, 255, 255, 0.5);
+      display: block;
+      font-size: 15rem;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+  
+  .header {
+    padding: 2rem 0;
+  }
+  @media screen and (max-width:68.75em){
+    .header{
+      padding-top: 0;
+    }
+  }
+  @media only screen and (max-width: 68.75em) {
+    .header {
+      padding-bottom: 2rem;
+    }
+  }
+  .header__container {
+    -webkit-animation: fadeIn 1s ease-out;
+            animation: fadeIn 1s ease-out;
+    background-image: url(https://cdn.shopify.com/s/files/1/0857/4434/files/Screen_Shot_2022-02-28_at_8.41.49_PM.png?v=1646098937);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-clip-path: polygon(5% 0, 100% 0, 100% 90%, 95% 100%, 0 100%, 0 10%);
+            clip-path: polygon(5% 0, 100% 0, 100% 90%, 95% 100%, 0 100%, 0 10%);
+    height: 50rem;
+    margin-bottom: 2rem;
+    position: relative;
+    transition: all 0.5s;
+  }
+  @media only screen and (max-width: 68.75em) {
+    .header__container {
+      background-image: url(https://cdn.shopify.com/s/files/1/0857/4434/files/Screen_Shot_2022-02-28_at_8.44.40_PM.png?v=1646099098);
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 100% 100%, 0 100%, 0 0);
+              clip-path: polygon(0 0, 100% 0, 100% 100%, 100% 100%, 0 100%, 0 0);
+      height: 70rem;
+    }
+  }
+  
