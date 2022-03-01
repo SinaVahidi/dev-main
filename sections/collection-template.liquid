@@ -9,6 +9,11 @@
     background-image: url({{ section.settings.collection_image_cell }});
   }
 }
+{% if section.settings.collection_header ='coconut' %}
+  .header__container {
+    background-position: center;
+  }
+{% endif %}
 {% endstyle %}
 {%- capture qs_view -%}{%- render 'fn.querystring', param: "view" -%}{%- endcapture -%}
 
@@ -118,7 +123,9 @@
       <section class="header__container">
         <h1 class="heading-main-lev">
           <span class="heading-main-lev--main">{{ ss.collection_header }}</span>
-          <span class="heading-main-lev--sub"> {{ ss.collection_subheader }}</span>
+          {% if section.settings.collection_subheader != blank %}
+            <span class="heading-main-lev--sub"> {{ ss.collection_subheader }}</span>
+          {% endif %}
         </h1>
       </section>
     </header>
