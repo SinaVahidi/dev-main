@@ -2020,3 +2020,23 @@ ion-icon[name="add-outline"] {
     }
   }
   
+/* subscription hero */
+.sub-head-wrap{
+  width:79.66%!important;
+}
+.sub-head{
+  margin-bottom: 1rem;
+  color: #F1BB5A;
+}
+.sub-btn{
+  font-weight: 700;
+  color: #F1BB5A;
+  border: 1px solid #F1BB5A;
+  border-radius: 0.2em;
+  transition: all 0.2s;
+}
+
+.sub-btn:hover{
+  color:white;
+  background-color: #F1BB5A;
+}
