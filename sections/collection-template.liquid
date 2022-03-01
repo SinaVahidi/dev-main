@@ -265,17 +265,6 @@
   </div>
 </div>
 
-{% stylesheet %}
-.header__container { 
-  background-image: url({{ ss.collection_image_desk | img_url }});
-}
-@media screen and (max-width:68.75em){
-  .header__container { 
-    background-image: url({{ ss.collection_image_cell | img_url }});
-  }
-}
-{% endstylesheet %}
-
 {% schema %}
   {
     "name": "Collection pages",
