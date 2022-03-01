@@ -2,11 +2,11 @@
 {%- assign ss = section.settings -%}
 {% style %}
 .header__container { 
-  background-image: url({{ ss.collection_image_desk }});
+  background-image: url({{ section.settings.collection_image_desk }});
 }
 @media screen and (max-width:68.75em){
   .header__container { 
-    background-image: url({{ ss.collection_image_cell }});
+    background-image: url({{ section.settings.collection_image_cell }});
   }
 }
 {% endstyle %}
