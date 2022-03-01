@@ -1162,7 +1162,7 @@
 
 @media screen and (max-width:590px){
   .display-none-mobile{
-    display:none;
+    display:none!important;
   }
 }
 
