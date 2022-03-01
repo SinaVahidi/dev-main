@@ -1,5 +1,15 @@
 {%- assign per_row = section.settings.per_row -%}
 {%- assign ss = section.settings -%}
+{% style %}
+.header__container { 
+  background-image: url({{ section.settings.collection_image_desk | img_url: '1200x' }});
+}
+@media screen and (max-width:68.75em){
+  .header__container { 
+    background-image: url({{ section.settings.collection_image_desk | img_url: '1200x' }});
+  }
+}
+{% endstyle %}
 {%- capture qs_view -%}{%- render 'fn.querystring', param: "view" -%}{%- endcapture -%}
 
 <div id="CollectionSection" data-section-id="{{ section.id }}" data-section-type="collection-template" class="collection-section-template">
@@ -264,17 +274,6 @@
     </div>
   </div>
 </div>
-
-{% style %}
-.header__container { 
-  background-image: url({{ section.settings.collection_image_desk | img_url: '1200x' }});
-}
-@media screen and (max-width:68.75em){
-  .header__container { 
-    background-image: url({{ section.settings.collection_image_desk | img_url: '1200x' }});
-  }
-}
-{% endstyle %}
 
 {% schema %}
   {
