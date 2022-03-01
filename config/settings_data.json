@@ -1268,6 +1268,7 @@
           },
           "6e2fa851-4801-4377-b937-aef05a2610dd": {
             "type": "background-image-text",
+            "disabled": true,
             "settings": {
               "subtitle": "",
               "title": "subscribe & save 15% on everything",
