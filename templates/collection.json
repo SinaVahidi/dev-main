@@ -8,10 +8,10 @@
         "collection_subnav_style": "none",
         "collection_tags_style": "none",
         "collection_sort_enable": false,
-        "collection_header": "nut butter",
-        "collection_subheader": "Explore our range of smooth and creamy, organic nut butters",
-        "collection_image_desk": "shopify:\/\/shop_images\/Screen_Shot_2022-02-28_at_8.41.49_PM.png",
-        "collection_image_cell": "shopify:\/\/shop_images\/Screen_Shot_2022-02-28_at_8.44.40_PM.png"
+        "collection_header": "{{ collection.metafields.my_fields.collection_heading.value }}",
+        "collection_subheader": "{{ collection.metafields.my_fields.collection_subheading_alt.value }}",
+        "collection_image_desk": "{{ collection.metafields.my_fields.collection_image_desktop.value }}",
+        "collection_image_cell": "{{ collection.metafields.my_fields.collection_image_mobile.value }}"
       }
     },
     "newsletter": {
