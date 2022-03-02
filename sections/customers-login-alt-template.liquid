@@ -1,0 +1,67 @@
+<div class="section">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 text-center align-self-center">
+                <div class="section pb-5 pt-5 pt-sm-2 text-center">
+                    <h6 class="mb-0 pb-3">
+                      <span class="switch-login">Log In </span>
+                      <span class="switch-login">Sign Up</span>
+                    </h6>
+                      <input class="checkbox" type="checkbox" id="reg-log" name="reg-log"/>
+                      <label for="reg-log"></label>
+                    <div class="card-3d-wrap mx-auto">
+                        <div class="card-3d-wrapper">
+                            <div class="card-front">
+                                <div class="center-wrap">
+                                    {% form 'customer_login' %}
+                                    {{ form.errors | default_errors }}
+                                        <div class="section text-center">
+                                            <h4 class="mb-4 pb-3">Log In</h4>
+                                            <div class="form-group">
+                                                <input type="email" name="customer[email]" id="CustomerEmail" class="form-style{% if form.errors contains 'email' %} error{% endif %}" autocorrect="off" autocapitalize="off" autofocus placeholder="Your email">
+                                                <i class="input-icon uil uil-at"></i>
+                                            </div>	
+                                            <div class="form-group mt-2">
+                                                <input type="password" value="" name="customer[password]" id="CustomerPassword" class="form-style{% if form.errors contains 'password' %} error{% endif %}" placeholder="Your password">
+                                                <i class="input-icon uil uil-lock-alt"></i>                                 
+                                            </div>
+                                            <a href="#" class="btn-login mt-4">submit</a>
+                                            <p class="mb-0 mt-4 text-center"><a href="#recover" id="RecoverPassword" class="link">Forgot your password?</a></p>
+                                        </div>
+                                      {% endform %}
+                                  </div>
+                              </div>
+                            <div class="card-back">
+                                <div class="center-wrap">
+                                    <div class="section text-center">
+                                        {% form 'create_customer' %}
+                                        {{ form.errors | default_errors }}
+                                            <h4 class="mb-4 pb-3">Sign Up</h4>
+                                            <div class="form-group">
+                                                <input type="text" name="customer[first_name]" id="FirstName" class="form-style" {% if form.first_name %}value="{{ form.first_name }}"{% endif %} autocapitalize="words" autofocus placeholder="Your first name">
+                                                <i class="input-icon uil uil-user"></i>
+                                            </div>	
+                                            <div class="form-group mt-2">
+                                                <input type="text" name="customer[last_name]" id="LastName" class="form-style" {% if form.last_name %}value="{{ form.last_name }}"{% endif %} autocapitalize="words" placeholder="Your last name">
+                                                <i class="input-icon uil uil-user"></i>
+                                            </div>	
+                                            <div class="form-group mt-2">
+                                                <input type="email" name="customer[email]" id="Email" class="form-style{% if form.errors contains 'email' %} error{% endif %}" {% if form.email %} value="{{ form.email }}"{% endif %} autocorrect="off" autocapitalize="off" placeholder="Your email">
+                                                <i class="input-icon uil uil-at"></i>
+                                            </div>
+                                            <div class="form-group mt-2">
+                                                <input type="password" name="customer[password]" id="CreatePassword" class="form-style{% if form.errors contains 'password' %} error{% endif %}" placeholder="Your password">
+                                                <i class="input-icon uil uil-lock-alt"></i>
+                                            </div>
+                                            <input value="submit"" type="submit" class="btn-login mt-4">
+                                        {% endform %}
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+    </div>
+</div>
