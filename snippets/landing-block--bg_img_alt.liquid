@@ -1,13 +1,13 @@
 <div class="flex flex-col flex-row-alt sub-container">
     <div class="w-full w-1-2 my-4 flex align-items-center justify-content-center ">
-      <div class="sub-head-wrap">
+      <div class="sub-head-wrap order-1 order-md-2">
         <!-- <h1 class="tracking-tight font-light text-gray-500 text-4xl ">Meet the</h3> -->
           <h1 class="text-6xl md:text-8xl tracking-tight leading-none font-extrabold sub-head">{{ block.settings.heading_text_alt }}</h1>
           <!-- <p class="text-lg text-gray-500 mt-2"></p> -->
           <a href="https://nomz.com/account/login?return_url=%2Faccount" class="mt-3 px-3 py-1 sub-btn">{{ block.settings.btn_text_alt }}</a>
       </div>
     </div>
-    <div class="w-full w-1-2 sub-img">
+    <div class="w-full w-1-2 sub-img order-2 order-md-1">
       <img class="object-cover w-full" src="{{ block.settings.img_alt | img_url: '1200x'}}" alt="Robot Group">
     </div>
   </div>
