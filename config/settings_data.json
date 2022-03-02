@@ -1264,6 +1264,9 @@
           "264ce9c6-2600-42e2-a649-a603f1ed2a80": {
             "type": "bg_img_alt",
             "settings": {
+              "heading_text_alt": "subscribe and save 15% on everything",
+              "btn_text_alt": "log in \/ sign up",
+              "img_alt": "shopify:\/\/shop_images\/Screen_Shot_2022-03-01_at_11.58.49_AM.png"
             }
           },
           "6e2fa851-4801-4377-b937-aef05a2610dd": {
