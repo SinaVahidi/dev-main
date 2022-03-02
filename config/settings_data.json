@@ -1313,6 +1313,7 @@
           },
           "219fc71a-1c98-4fe1-9037-3db197039a82": {
             "type": "logo-list",
+            "disabled": true,
             "settings": {
               "title": "snack subscription box",
               "text": "<p>Subscribe and save 15%. Simply set your order frequency and we will ship nomz directly to your doorstep. Need a healthy snack option? Want to try something new and delicious? Just fancy having an emergency stash of something sweet and guilt-free? You're in the right place.<\/p>",
