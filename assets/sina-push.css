@@ -1982,7 +1982,7 @@ ion-icon[name="add-outline"] {
 }
 .sub-head{
   margin-bottom: 1rem;
-  color: #F1BB5A;
+  color: #AE9CDB;
   letter-spacing: -0.025em;
   font-weight: 800;
 }
@@ -1995,8 +1995,8 @@ ion-icon[name="add-outline"] {
 }
 .sub-btn{
   font-weight: 700;
-  color: #F1BB5A;
-  border: 1px solid #F1BB5A;
+  color: #AE9CDB;
+  border: 1px solid #AE9CDB;
   border-radius: 0.2em;
   transition: all 0.2s;
   display: inline-block;
@@ -2008,7 +2008,7 @@ ion-icon[name="add-outline"] {
 
 .sub-btn:hover{
   color:white;
-  background-color: #F1BB5A;
+  background-color: #AE9CDB;
 }
 
 .flex-col{
@@ -2032,8 +2032,14 @@ ion-icon[name="add-outline"] {
 }
 
 .sub-container{
-  padding: 3rem 0 0;
   margin-bottom: -2rem;
 }
+
+@media screen and (max-width:786px){
+  .sub-container{
+    padding: 3rem 0 0;
+  }
+}
+
 
 
