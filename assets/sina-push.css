@@ -1845,7 +1845,7 @@ ion-icon[name="add-outline"] {
     .heading-main-lev {
       bottom: 20%;
       left: 0;
-      padding: 0 10rem;
+      padding: 0 5rem;
       text-align: center;
       width: 100%;
     }
@@ -1900,12 +1900,14 @@ ion-icon[name="add-outline"] {
     font-weight: 400;
     letter-spacing: 0.2rem;
     margin-top: 1rem;
-    padding: 0.5rem 2rem;
+    padding: 0.5rem 2rem 0.5rem 0;
   }
   @media only screen and (max-width: 68.75em) {
     .heading-main-lev--sub {
       font-size: 1rem;
       background-color: rgba(255, 255, 255, 0.6);
+      padding: 0.5rem 2rem;
+      letter-spacing: 0.1rem;
     }
   }
   @media only screen and (max-width: 56.25em) {
@@ -1952,7 +1954,7 @@ ion-icon[name="add-outline"] {
   }
   @media only screen and (max-width: 68.75em) {
     .header {
-      padding-bottom: 2rem;
+      padding-bottom: 0rem;
     }
   }
   .header__container {
@@ -1963,7 +1965,7 @@ ion-icon[name="add-outline"] {
     background-size: cover;
     -webkit-clip-path: polygon(5% 0, 100% 0, 100% 90%, 95% 100%, 0 100%, 0 10%);
             clip-path: polygon(5% 0, 100% 0, 100% 90%, 95% 100%, 0 100%, 0 10%);
-    height: 50rem;
+    height: 35rem;
     margin-bottom: 2rem;
     position: relative;
     transition: all 0.5s;
@@ -1977,12 +1979,15 @@ ion-icon[name="add-outline"] {
   }
   
 /* subscription hero */
+.sub-text{
+  order:1;
+}
 .sub-head-wrap{
   width:79.66%!important;
 }
 .sub-head{
   margin-bottom: 1rem;
-  color: #AE9CDB;
+  color: #F1BB5A;
   letter-spacing: -0.025em;
   font-weight: 800;
 }
@@ -1995,8 +2000,8 @@ ion-icon[name="add-outline"] {
 }
 .sub-btn{
   font-weight: 700;
-  color: #AE9CDB;
-  border: 1px solid #AE9CDB;
+  color: #F1BB5A;
+  border: 1px solid #F1BB5A;
   border-radius: 0.2em;
   transition: all 0.2s;
   display: inline-block;
@@ -2004,11 +2009,12 @@ ion-icon[name="add-outline"] {
 
 .sub-img{
   object-fit: cover;
+  order: 2;
 }
 
 .sub-btn:hover{
   color:white;
-  background-color: #AE9CDB;
+  background-color: #F1BB5A;
 }
 
 .flex-col{
@@ -2037,9 +2043,35 @@ ion-icon[name="add-outline"] {
 
 @media screen and (max-width:786px){
   .sub-container{
-    padding: 3rem 0 0;
+    padding: 2rem 0 0;
+  }
+  .sub-text{
+    order: 2;
+  }
+  .sub-img{
+    order: 1;
   }
 }
 
 
+.ffc-page-subscription-landing .landing-block--columns-with-icons{
+  background: #fafafa;
+}
+.ffc-page-subscription-landing .landing-block--columns-with-icons>.page-width{
+  background: #fafafa;
+  margin: -8.5rem auto -5rem;
+  padding: 5rem 0 3rem;
+}
 
+.ffc-page-subscription-landing .landing-block--columns-with-icons .section-header .section-header__title--smaller{
+  margin-bottom: 3rem;
+}
+
+.ffc-page-subscription-landing .landing-block--columns-with-icons .flex {
+  justify-content: center;
+}
+
+.ffc-page-subscription-landing .landing-block--columns-with-icons .column-with-icon {
+  margin-inline:0.5rem;
+  transition: margin-inline 0.5s ease-in-out;
+}

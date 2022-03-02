@@ -77,20 +77,16 @@ accordionColumns.forEach(element => {
   });
 });
 
+const subscriptionIconColumns = document.querySelectorAll('.ffc-page-subscription-landing .landing-block--columns-with-icons .flex');
+// console.log(subscriptionIconColumns);
+// subscriptionIconColumns.forEach(element => {
+//   window.onscroll = function(){
+//     if(window.scrollTop == 250){
+//       console.log('test');
+//     }
+//   }
+// });
 
-
-// const expandButton1 = document.querySelector('.expand-btn1');
-// const expandButton2 = document.querySelector('.expand-btn2');
-// const expandButton3 = document.querySelector('.expand-btn3');
-// const expandButton4 = document.querySelector('.expand-btn4');
-
-// const closeButton1 = document.querySelector('.close-btn1');
-// const closeButton2 = document.querySelector('.close-btn2');
-// const closeButton3 = document.querySelector('.close-btn3');
-// const closeButton4 = document.querySelector('.close-btn4');
-
-// const faqCol = document.querySelectorAll('.accordion-faq .row .col-md-6');
-// const faqRow = document.querySelectorAll('.accordion-faq .row');
 
 
 
@@ -104,7 +100,14 @@ $(function() {
   	$('.nom-close').click(() => {
       $('.nom-alert').hide();
 	});
-  
+
+  $(window).scroll(function() {
+    let scrollTop = $(window).scrollTop();
+
+    if (scrollTop > 250) {
+        $('.ffc-page-subscription-landing .landing-block--columns-with-icons .column-with-icon').css('margin-inline', '6.5rem');
+    }
+});
 
 	$(".js-drawer-open-nav").click(function() {
       $(".parent-trigger-shop").addClass("is-open");

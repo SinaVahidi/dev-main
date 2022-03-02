@@ -1,7 +1,7 @@
-{% unless settings.show_breadcrumbs %}
+{% if settings.show_breadcrumbs %}
 
 {% unless template.name == 'index' or template.name == 'cart' %}
-  <div class="page-width">
+  <div class="page-width display-none-mobile">
     <nav class="breadcrumb" role="navigation" aria-label="breadcrumbs">
       {% comment %}<a href="{{ routes.root_url }}" title="{{ 'general.breadcrumbs.home_link_title' | t }}">{{ 'general.breadcrumbs.home' | t }}</a>{% endcomment %}
 
@@ -76,4 +76,4 @@
   </div>
 {% endunless %}
 
-{% endunless %}
+{% endif%}
