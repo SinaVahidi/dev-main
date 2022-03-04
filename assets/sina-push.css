@@ -1674,6 +1674,7 @@ ion-icon[name="add-outline"] {
 }
 .card:before {
   content: "";
+  width: 100%;
   position: absolute;
   top: 0;
   left: 0;
