@@ -1674,7 +1674,6 @@ ion-icon[name="add-outline"] {
 }
 .card:before {
   content: "";
-  width: 100%;
   position: absolute;
   top: 0;
   left: 0;
@@ -1682,6 +1681,7 @@ ion-icon[name="add-outline"] {
   height: 110%;
   background-size: cover;
   background-position: 0 0;
+  background-repeat: no-repeat;
   transition: transform calc(var(--d) * 1.5) var(--e);
   pointer-events: none;
 }
