@@ -1698,7 +1698,7 @@ ion-icon[name="add-outline"] {
   transition: transform calc(var(--d) * 2) var(--e);
 }
 
-.card:nth-child(1):before {
+/* .card:nth-child(1):before {
   background-image: url('https://cdn.shopify.com/s/files/1/0857/4434/files/variety_302x.jpg?v=1645651377');
 }
 .card:nth-child(2):before {
@@ -1709,7 +1709,7 @@ ion-icon[name="add-outline"] {
 }
 .card:nth-child(4):before {
   background-image: url('https://cdn.shopify.com/s/files/1/0857/4434/files/IMG_3348_302x.jpg?v=1645651419');
-}
+} */
 
 .content {
   position: relative;
@@ -1808,6 +1808,15 @@ ion-icon[name="add-outline"] {
   font-family: 'Gotham Rounded Book', verdana, sans-serif!important;
 }
 
+.yotpo-reviews-carousel .carousel-display-wrapper .yotpo-carousel .carousel-review-body{
+  margin-left: 0!important;
+}
+.yotpo-reviews-carousel .carousel-display-wrapper .yotpo-carousel .carousel-review-title {
+  margin-bottom: 0.5rem!important;
+}
+.yotpo-reviews-carousel .carousel-display-wrapper .yotpo-carousel .y-slider-container .single-carousel .product-image-container .y-carousel-product-image img {
+  object-fit: cover;
+}
 /* collection pages top */
 
 @-webkit-keyframes fadeIn {
