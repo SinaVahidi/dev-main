@@ -73,15 +73,19 @@
           "settings": {
             "title_1": "snack bites",
             "text_1": "Perfectly balanced, velvety and moist, our energy bites are handcrafted moments of joy and are great for sharing.",
+            "img_1": "shopify:\/\/shop_images\/pistachiobites.jpg",
             "btn-url_1": "https:\/\/wholesale.nomz.com\/login",
             "title_2": "beeswax candles",
             "text_2": "The cleanest candle to cozy up your home, minus the carbon soot build up.",
+            "img_2": "shopify:\/\/shop_images\/Beeswax-Candle-4.jpg",
             "btn-url_2": "https:\/\/wholesale.nomz.com\/login",
             "title_3": "nut butters",
             "text_3": "Our naturally sweet and rich nut butters are delicious, while being good for both you and the environment.",
+            "img_3": "shopify:\/\/shop_images\/857A0398.jpg",
             "btn-url_3": "https:\/\/wholesale.nomz.com\/login",
             "title_4": "superfood mixes",
             "text_4": "short description that is maybe this long? maybe even this long?",
+            "img_4": "shopify:\/\/shop_images\/Superfood_labels.jpg",
             "btn-url_4": "https:\/\/wholesale.nomz.com\/login",
             "btn-text": "View"
           }
