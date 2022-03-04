@@ -2382,3 +2382,27 @@ ion-icon[name="add-outline"] {
   font-size: 1.5rem;
   color: white;
 }
+
+/* mobile grid images */
+@media screen and (max-width: 590px) {
+  .homepage .grid--uniform {
+    margin-left: 0px;
+  }
+  .homepage .grid__item:nth-child(even) { 
+    padding-left: 7.5px;
+  }
+  .homepage .grid__item:nth-child(odd) { 
+    padding-right: 7.5px;
+    padding-left: 0;
+  }
+  .collection-section-template .grid--uniform {
+    margin-left: 0px;
+  }
+  .collection-section-template .grid__item:nth-child(even) { 
+    padding-left: 7.5px;
+  }
+  .collection-section-template .grid__item:nth-child(odd) { 
+    padding-right: 7.5px;
+    padding-left: 0;
+  }
+}
