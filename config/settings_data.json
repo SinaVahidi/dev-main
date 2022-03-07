@@ -900,7 +900,7 @@
           "button_label": "",
           "button_link": "shopify:\/\/collections\/all",
           "image": "shopify:\/\/shop_images\/happy.png",
-          "image_mobile": "shopify:\/\/shop_images\/guarantee_bg.png",
+          "image_mobile": "shopify:\/\/shop_images\/happy.png",
           "alignment": "center",
           "layout": "left"
         }
