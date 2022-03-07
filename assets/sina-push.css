@@ -831,9 +831,18 @@
     background-position: right -71px top -48px;
   }
   .ffc-background-image-text .ffc-background-image-text__image .content-area.content-area--left{
-    background: rgba(255,255,255,0.6);
+    margin: -5rem 0 0 0 !important;
+    padding: 32px 2px 24px;
+  }
+  .ffc-background-image-text .ffc-background-image-text__image .content-area .rte, .ffc-background-image-text .ffc-background-image-text__image .content-area .rte p {
+    font-size: 13px;
+  }
+  .ffc-background-image-text .ffc-background-image-text__image{
+    background-position: right 0px top -231px;
   }
 }
+
+
 /* category page remove stuff */
 @media screen and (max-width: 590px){
   .yotpo .text-m{
@@ -1052,12 +1061,13 @@
   background-color: white;
 }
 
-.inside-content .product-ingredients-section .product-ingredients .ingredient-item .image-area , .inside-content .product-ingredients-section .product-ingredients .ingredient-item h3, .inside-content .product-ingredients-section .product-ingredients .ingredient-item .rte{
+.inside-content .product-ingredients-section .product-ingredients .ingredient-item .image-area , .inside-content .product-ingredients-section .product-ingredients .ingredient-item h3 {
   transition: all 0.5s;
 }
 
 .inside-content .product-ingredients-section .product-ingredients .ingredient-item .rte{
-  height:0;
+  max-height:0;
+  overflow: hidden;
 }
 .inside-content .product-ingredients-section .product-ingredients .ingredient-item.active .image-area  {
   background: black;
@@ -1070,7 +1080,8 @@
 .inside-content .product-ingredients-section .product-ingredients .ingredient-item.active h3, 
 .inside-content .product-ingredients-section .product-ingredients .ingredient-item.active .rte{
   color: white;
-  height: auto;
+  max-height: 100%;
+  transition: all 0.5s;
 }
 
 /* Yotpo Testimonials button color */
