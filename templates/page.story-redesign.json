@@ -6,65 +6,73 @@
         "449abd21-5607-49fc-a766-cf0793d40b91": {
           "type": "ingredient",
           "settings": {
-            "image": "shopify:\/\/shop_images\/857A1477.jpg",
+            "image": "shopify:\/\/shop_images\/almonds_ae78bb2f-a340-4a1d-87b7-e9b9f001580f.jpg",
             "title": "Almonds",
-            "text": "<p>Description about the ingredient...<\/p>"
+            "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<\/p>"
           }
         },
         "4c6aa60b-c0f7-42e5-b6e0-5dec8fe6dcc3": {
           "type": "ingredient",
           "settings": {
+            "image": "shopify:\/\/shop_images\/hazelnuts.jpg",
             "title": "Hazelnuts",
-            "text": ""
+            "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<\/p>"
           }
         },
         "3f06a907-3571-413d-80e6-ab9b3c5c76be": {
           "type": "ingredient",
           "settings": {
+            "image": "shopify:\/\/shop_images\/coconuts_81ce6c95-98d4-4b1f-9ebb-45267a56707b.png",
             "title": "Coconut",
-            "text": ""
+            "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<\/p>"
           }
         },
         "0cb98a2c-7892-44f4-bda7-21610e6da64c": {
           "type": "ingredient",
           "settings": {
+            "image": "shopify:\/\/shop_images\/pistachios.webp",
             "title": "Pistachios",
-            "text": ""
+            "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<\/p>"
           }
         },
         "376b3202-81af-4df5-b33b-fccde4c04a60": {
           "type": "ingredient",
           "settings": {
+            "image": "shopify:\/\/shop_images\/cashews.jpg",
             "title": "Cashews",
-            "text": ""
+            "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<\/p>"
           }
         },
         "a0bd29a5-a4d8-4f2b-baed-f088bea3c205": {
           "type": "ingredient",
           "settings": {
+            "image": "shopify:\/\/shop_images\/dates.jpg",
             "title": "Dates",
-            "text": ""
+            "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<\/p>"
           }
         },
         "f5a2dc29-9eb0-47a2-adda-9ff37f084d8f": {
           "type": "ingredient",
           "settings": {
+            "image": "shopify:\/\/shop_images\/cocoa.jpg",
             "title": "Cocoa",
-            "text": ""
+            "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<\/p>"
           }
         },
         "51a175b6-68ce-4c2e-8316-df33f42e9c64": {
           "type": "ingredient",
           "settings": {
+            "image": "shopify:\/\/shop_images\/seasalt.jpg",
             "title": "Sea Salt",
-            "text": ""
+            "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<\/p>"
           }
         },
         "7789e9d9-0f9f-4445-b60c-3642b29b69f2": {
           "type": "ingredient",
           "settings": {
+            "image": "shopify:\/\/shop_images\/857A0578.jpg",
             "title": "Superfoods",
-            "text": ""
+            "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<\/p>"
           }
         }
       },
