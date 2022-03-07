@@ -16,7 +16,7 @@
 
         {% if bs[logo_image] != blank %}
         <div class="logo-bar__item">
-          {%- assign img_url = bs[logo_image] | img_url: '1x1' | replace: '_1x1.', '_90x.' -%}
+          {%- assign img_url = bs[logo_image] | img_url: '1200x' -%}
           {%- assign img_url_mobile = bs[logo_image] | img_url: '1x1' | replace: '_1x1.', '_60x.' -%}
           
           {% if bs[logo_link] != blank %}

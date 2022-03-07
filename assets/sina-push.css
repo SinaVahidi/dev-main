@@ -1955,7 +1955,7 @@ ion-icon[name="add-outline"] {
   }
   
   .header {
-    padding: 2rem 0;
+    padding: 0 0 2rem;
   }
   @media screen and (max-width:68.75em){
     .header{
@@ -2188,7 +2188,7 @@ ion-icon[name="add-outline"] {
   left: 0;  
   -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
-  transition: all 600ms ease-out; 
+  transition: all 400ms ease-out; 
 }
 .card-front, .card-back {
   width: 100%;
@@ -2405,4 +2405,82 @@ ion-icon[name="add-outline"] {
     padding-right: 7.5px;
     padding-left: 0;
   }
+}
+
+/* homepage logos */
+@media screen  and (min-width: 768px){
+  .homepage .logo-bar {
+    max-width: 800px;
+    gap: 60px;
+  }
+  .homepage .logo-bar .logo-bar__item .logo-bar__image {
+    height: 160px;
+  }
+  .ffc-logos{
+    padding-bottom: 0;
+  }
+}
+@media screen and (max-width: 768px){
+  .logo-bar .logo-bar__item .logo-bar__image img{
+    width: 40%;
+  }
+  .homepage .logo-bar .logo-bar__item .logo-bar__image {
+    height: 80px;
+  }
+}
+/* you may also like */
+
+.grid-product__title{
+  color: #4f4f4f;
+}
+.product-recommendations .grid .grid-product .grid-product__content .btn:hover, .product-recommendations .grid .grid-product .grid-product__content .btn:active, .product-recommendations .grid .grid-product .grid-product__content .btn:focus{
+  background-color: #6cace4!important;
+  border-color: #6cace4!important;
+}
+
+/* newsletter */
+
+.newsletter-section{
+  background-color: white!important;
+  color: #4f4f4f!important;
+}
+
+.newsletter-section .newsletter-input-group .btn {
+  background-color: #6cace4!important;
+  border-color: #6cace4!important;
+}
+
+.variant-input-wrap input[type=radio]:checked+label {
+  background-color: #6CACE4;
+  color: white;
+  box-shadow: none;
+  border-color:#6CACE4;
+  transition: background-color 0.5s;
+}
+
+.product-buttons .input-group.btn:after {
+  border: 1.5px solid #202020!important;
+  background: #fff;
+}
+.product-buttons .btn.active:before {
+  background-color: #6cabe2;
+  border: 1.5px solid #202020;
+}
+
+.product-buttons .input-group.btn.active:after {
+  display:none;
+}
+
+.product-single__form .variant-input-wrap label {
+  padding:9px 37px;
+}
+
+.product-buttons .input-group.btn.active {
+  color: #202020!important;
+  background-color: #d6e5f4!important;
+  border-color: #bbd6ed!important;
+}
+
+.product-single__form .product-qty-atc .product__quantity {
+  border: 1px solid #6cabe2;
 }
