@@ -1055,6 +1055,7 @@
   background: url('https://cdn-icons-png.flaticon.com/128/992/992651.png');
   transition: background-color 0.5s;
   border-radius: 50%;
+  cursor: pointer;
 }
 .active .more_info_btn {
   background: url('https://cdn-icons.flaticon.com/png/128/2920/premium/2920674.png?token=exp=1646679983~hmac=3ef4d4ec70b64e57fe10655e45b4fdee');
@@ -1387,7 +1388,7 @@ ion-icon[name="add-outline"] {
   max-height: 22rem;
   margin-top: 2rem;
   overflow: hidden;
-  transition: max-height 0.5s;
+  transition: max-height 2s;
 }
 
 .accordion-column-faq.active-faq-col{
@@ -1493,14 +1494,17 @@ ion-icon[name="add-outline"] {
   margin-top: 1rem;
   margin-left: 3.5rem;
   font-weight: 600;
-  background: #A4CC87;
+  background: white;
   border-radius: 0.2rem;
-  color: white;
+  color: #A4CC87;
+  border: 1px solid #A4CC87;
   transition: background-color 0.2s;
+  cursor: pointer;
 }
 
 .close-btn:hover,  .expand-btn:hover {
-  background-color: #90c36c;
+  background-color: #A4CC87;
+  color: white;
 }
 
 .close-btn {
@@ -1548,15 +1552,17 @@ ion-icon[name="add-outline"] {
   padding: 0.4em 0.6em;
   margin-right: 0.4em;
   font-size: 0.8rem;
-  background: #6CACE4;
+  background: white;
   border-radius: 0.2em;
-  color: white;
+  color: #6cace4;
+  border: 1px solid #6cace4;
   font-weight: 600;
   transition: background 0.2s;
 }
 
 .expand-all-btn:hover, .collapse-all-btn:hover {
-  background: #4e9ce0;
+  background: #6cace4;
+  color:white;
 }
 /* wholesale initial redesigns */
 
@@ -2188,6 +2194,12 @@ ion-icon[name="add-outline"] {
   }
 }
 
+@media screen and (max-width: 1000px){
+  .ffc-page-subscription-landing .landing-block--columns-with-icons .column-with-icon{
+    margin-inline: 0.5rem!important;
+  }
+}
+
 /* login page */
 
 .link {
@@ -2567,6 +2579,6 @@ ion-icon[name="add-outline"] {
 }
 
 .product-buttons .input-group.btn {
-  background-color: #f2f2f2;
-  border-color: #ecf0f1;
+  background-color: #f2f2f2!important;
+  border-color: #ecf0f1!important;
 }
