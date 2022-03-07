@@ -812,6 +812,24 @@
   box-shadow: none;
 }
 
+.ffc-background-image-text .ffc-background-image-text__image {
+  padding: 0;
+  height: 0;
+  overflow: hidden;
+  padding-top: 10%;
+  padding-bottom: 17%;
+  background-size: cover;
+  background-position: top -65px right 0px;
+}
+@media screen and (max-width:768px){
+  .ffc-background-image-text .ffc-background-image-text__image {
+    padding: 22% 0px 100%;
+    background-position: right -71px top -48px;
+  }
+  .ffc-background-image-text .ffc-background-image-text__image .content-area.content-area--left{
+    background: rgba(255,255,255,0.6);
+  }
+}
 /* category page remove stuff */
 @media screen and (max-width: 590px){
   .yotpo .text-m{
