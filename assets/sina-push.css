@@ -807,6 +807,11 @@
   margin: -115px auto 0px 0;
 }
 
+.ffc-background-image-text .ffc-background-image-text__image .content-area{
+  background: none;
+  box-shadow: none;
+}
+
 /* category page remove stuff */
 @media screen and (max-width: 590px){
   .yotpo .text-m{
