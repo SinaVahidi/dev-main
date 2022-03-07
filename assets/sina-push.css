@@ -653,6 +653,10 @@
   color: #6cace4!important;
 }
 
+.btn:hover, .btn:focus{ 
+  background-color: #6cace4!important;
+  border-color: #6cace4!important;
+}
 /* side to side problem on mobile */
 
 @media screen and (max-width: 589px) {
@@ -1053,7 +1057,7 @@
 }
 
 .inside-content .product-ingredients-section .product-ingredients .ingredient-item .rte{
-  display:none;
+  height:0;
 }
 .inside-content .product-ingredients-section .product-ingredients .ingredient-item.active .image-area  {
   background: black;
@@ -1066,7 +1070,7 @@
 .inside-content .product-ingredients-section .product-ingredients .ingredient-item.active h3, 
 .inside-content .product-ingredients-section .product-ingredients .ingredient-item.active .rte{
   color: white;
-  display:block;
+  height: auto;
 }
 
 /* Yotpo Testimonials button color */
