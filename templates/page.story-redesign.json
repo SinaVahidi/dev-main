@@ -6,63 +6,63 @@
         "449abd21-5607-49fc-a766-cf0793d40b91": {
           "type": "ingredient",
           "settings": {
-            "title": "Ingredient",
-            "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<\/p>"
+            "title": "Almonds",
+            "text": ""
           }
         },
         "4c6aa60b-c0f7-42e5-b6e0-5dec8fe6dcc3": {
           "type": "ingredient",
           "settings": {
-            "title": "Ingredient",
+            "title": "Hazelnuts",
             "text": ""
           }
         },
         "3f06a907-3571-413d-80e6-ab9b3c5c76be": {
           "type": "ingredient",
           "settings": {
-            "title": "Ingredient",
+            "title": "Coconut",
             "text": ""
           }
         },
         "0cb98a2c-7892-44f4-bda7-21610e6da64c": {
           "type": "ingredient",
           "settings": {
-            "title": "Ingredient",
+            "title": "Pistachios",
             "text": ""
           }
         },
         "376b3202-81af-4df5-b33b-fccde4c04a60": {
           "type": "ingredient",
           "settings": {
-            "title": "Ingredient",
+            "title": "Cashews",
             "text": ""
           }
         },
         "a0bd29a5-a4d8-4f2b-baed-f088bea3c205": {
           "type": "ingredient",
           "settings": {
-            "title": "Ingredient",
+            "title": "Dates",
             "text": ""
           }
         },
         "f5a2dc29-9eb0-47a2-adda-9ff37f084d8f": {
           "type": "ingredient",
           "settings": {
-            "title": "Ingredient",
+            "title": "Cocoa",
             "text": ""
           }
         },
         "51a175b6-68ce-4c2e-8316-df33f42e9c64": {
           "type": "ingredient",
           "settings": {
-            "title": "Ingredient",
+            "title": "Sea Salt",
             "text": ""
           }
         },
         "7789e9d9-0f9f-4445-b60c-3642b29b69f2": {
           "type": "ingredient",
           "settings": {
-            "title": "Ingredient",
+            "title": "Superfoods",
             "text": ""
           }
         }
