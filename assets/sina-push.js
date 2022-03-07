@@ -77,15 +77,13 @@ accordionColumns.forEach(element => {
   });
 });
 
-const subscriptionIconColumns = document.querySelectorAll('.ffc-page-subscription-landing .landing-block--columns-with-icons .flex');
-// console.log(subscriptionIconColumns);
-// subscriptionIconColumns.forEach(element => {
-//   window.onscroll = function(){
-//     if(window.scrollTop == 250){
-//       console.log('test');
-//     }
-//   }
-// });
+const ingredientInfoToggle = document.querySelectorAll('.more_info_btn');
+ingredientInfoToggle.forEach(element => {
+  console.log(element);
+  element.addEventListener('click', () => {
+    element.parentElement.parentElement.classList.toggle('active');
+  })
+})
 
 
 
