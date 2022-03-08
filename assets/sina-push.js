@@ -84,7 +84,8 @@ ingredientInfoToggle.forEach(element => {
     element.parentElement.parentElement.classList.toggle('active');
   })
 })
-
+const discountBar = document.querySelector('.needsclick .kl-teaser-Vjzwx2');
+console.log(discountBar);
 
 
 

@@ -1482,10 +1482,12 @@ ion-icon[name="add-outline"] {
 }
 
 
-
-.kl-teaser-Vjzwx2 { 
-  left: 10%!important;
+@media screen and (min-width:768px) {
+  .kl-teaser-Vjzwx2 { 
+    left: 10%!important;
+  }
 }
+
 
 
 .close-btn, .expand-btn {
@@ -2582,3 +2584,11 @@ ion-icon[name="add-outline"] {
   background-color: #f2f2f2!important;
   border-color: #ecf0f1!important;
 }
+
+/* 10% off  */
+@media screen and (max-width: 768px) {
+  #_hjRemoteVarsFrame > div > .needsclick {
+    left:50%!important;
+  }
+}
+ 
