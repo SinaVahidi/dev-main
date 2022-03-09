@@ -9,7 +9,7 @@
         "collection_tags_style": "none",
         "collection_sort_enable": false,
         "collection_header": "{{ collection.metafields.my_fields.collection_heading.value }}",
-        "collection_subheader": "{{ collection.metafields.my_fields.collection_subheading_alt.value }}",
+        "collection_subheader": "",
         "collection_image_desk": "{{ collection.metafields.my_fields.collection_image_desktop.value }}",
         "collection_image_cell": "{{ collection.metafields.my_fields.collection_image_mobile.value }}"
       }
