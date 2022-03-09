@@ -1,0 +1,10 @@
+{
+    "sections":{
+        "main":{
+            "type": "rewards-template"
+        }
+    },
+    "order": [
+        "main"
+    ]
+}
