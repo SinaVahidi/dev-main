@@ -914,19 +914,6 @@
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
-@media (min-width: 768px){
-  .inside-content {
-    padding: 3em 1.5em;
-  }
-  .inside-content-grant, .bottom-section .inside-content{
-    margin-top: 4rem;
-  }
-  .inside-content-grant {
-    justify-content: space-evenly;
-  }
-}
-
-
 .inside-content-text{
   max-width:834px;
   padding:0 2.9em;
@@ -968,7 +955,7 @@
   background:white;
   font-size:1.2rem;
 }
-.grant-btn:hover{
+.grant-btn:hover, .grant-btn:focus{
   color: white;
   background: #AE9CDB!important;
   border: #AE9CDB!important;
@@ -983,10 +970,24 @@
   margin: 0 auto;
 }
 
-.inside-content .product-ingredients-section .product-ingredients .ingredient-item .image-area{
-  background-color:#73787c8a;
+.inside-content .product-ingredients-section .product-ingredients .ingredient-items .image-area{
+  background-color:#4f4f4f;
 }
-
+@media (min-width: 768px){
+  .inside-content {
+    padding: 3em 1.5em;
+  }
+  .inside-content-grant, .bottom-section .inside-content{
+    margin-top: 4rem;
+  }
+  .inside-content-grant {
+    justify-content: space-evenly;
+    padding: 4rem 1.5rem;
+  }
+  .middle-heading, .grant-heading{
+    margin-bottom: 2.5rem!important;
+  }
+}
 @media screen and (max-width:590px){
   .main-container{
     max-width:90%;
@@ -1057,6 +1058,24 @@
   height: 1.5rem;
   background: url('https://cdn-icons.flaticon.com/png/128/1665/premium/1665629.png?token=exp=1646677151~hmac=ef5e7f771cd6f59412bd366177fd10b9');
 } */
+.image-area:hover .image-area:focus{
+  background: #4f4f4f;
+}
+.product-ingredients-section .product-ingredients .ingredient-item:hover .image-area img, .product-ingredients-section .product-ingredients .ingredient-item:focus .image-area img{
+  display: none;
+}
+.product-ingredients-section .product-ingredients .ingredient-item:hover .image-area, .product-ingredients-section .product-ingredients .ingredient-item:focus .image-area{
+  background: #4f4f4f;
+}
+.product-ingredients-section .product-ingredients .ingredient-item:hover .content-area .rte, .product-ingredients-section .product-ingredients .ingredient-item:focus .content-area .rte{
+  max-height: 100%;
+  color: white;
+  transition: all 1s;
+}
+.product-ingredients-section .product-ingredients .ingredient-item:hover .content-area h3, .product-ingredients-section .product-ingredients .ingredient-item:focus .content-area h3{
+  color: white;
+  transition: all 0.5s;
+}
 .more_info_btn{
   position: absolute;
   display: block;
@@ -1200,7 +1219,7 @@
   margin-top: 15px;
 }
 
-.embed-form_btn:hover{
+.embed-form_btn:hover, .embed-form_btn:focus{
   background: #202020;
 }
 .embed-register_right-inside{
@@ -1215,7 +1234,7 @@
   color:#6CACE4!important;
 }
 
-.product-single__form .product-qty-atc .add-to-cart.btn--filled.btn--almond:hover{
+.product-single__form .product-qty-atc .add-to-cart.btn--filled.btn--almond:hover, .product-single__form .product-qty-atc .add-to-cart.btn--filled.btn--almond:focus{
   background-color: #6CACE4!important;
   border:1px solid #6CACE4!important;
   color:white!important;
@@ -1223,7 +1242,7 @@
 
 /* Upsell titles and hover state */
 
-.cart-item--rivets.cart-item--upsell .right-area .color--pistachio .btn:hover{
+.cart-item--rivets.cart-item--upsell .right-area .color--pistachio .btn:hover, .cart-item--rivets.cart-item--upsell .right-area .color--pistachio .btn:focus{
   background-color: #6CACE4!important;
   border:1px solid #6CACE4!important;
   color:white!important;
@@ -1354,7 +1373,7 @@
 }
 
 
-.accordion-item-inner-faq:hover {
+.accordion-item-inner-faq:hover, .accordion-item-inner-faq:focus {
   background: #eff4fc;
 }
 .accordion-item-inner-faq {
@@ -1517,7 +1536,7 @@ ion-icon[name="add-outline"] {
   cursor: pointer;
 }
 
-.close-btn:hover,  .expand-btn:hover {
+.close-btn:hover, .close-btn:focus, .expand-btn:hover, .expand-btn:focus {
   background-color: #A4CC87;
   color: white;
 }
@@ -1593,7 +1612,7 @@ ion-icon[name="add-outline"] {
   transition: width 0.3s ease 0s, left 0.3s ease 0s;
   width: 0;
 }
-.expand-all-btn:hover:after, .collapse-all-btn:hover:after{
+.expand-all-btn:hover:after, .expand-all-btn:focus:after, .collapse-all-btn:hover:after, .collapse-all-btn:focus:after{
   width: 100%; 
   left: 0; 
 }
@@ -1619,6 +1638,14 @@ ion-icon[name="add-outline"] {
 .ffc-page-wholesale-landing .ffc-background-image-text__image .page-width{
   margin:0;
   margin-left: 10rem;
+}
+.ffc-page-wholesale-landing .landing-block .ffc-background-image-text__image .page-width .content-area .btn{
+  border-radius: 0.1em;
+}
+.ffc-page-wholesale-landing .landing-block .ffc-background-image-text__image .page-width .content-area .btn:hover, .ffc-page-wholesale-landing .landing-block .ffc-background-image-text__image .page-width .content-area .btn:focus{
+  background: #AE9CDB!important;
+  border-color: #AE9CDB!important;
+  color: #fff;
 }
   
 /* display none class */
@@ -1681,7 +1708,7 @@ ion-icon[name="add-outline"] {
   transition: transform 0.2s;
 }
 
-.ben-col:hover{
+.ben-col:hover, .ben-col:focus{
   transform: scale(1.05);
 }
 
@@ -1713,15 +1740,15 @@ ion-icon[name="add-outline"] {
 .product-promotion__image {
   transition: transform 0.5s;
 }
-.product-promotion__image:hover{
+.product-promotion__image:hover, .product-promotion__image:focus{
   transform: scale(1.05);
 }
 
 .landing-block--testimonials-with-images .testimonials-with-images__slider .testimonials-with-images__item .image-area .image-wrap--ffc img {
   transition: transform 0.5s;
 }
-.landing-block--testimonials-with-images .testimonials-with-images__slider .testimonials-with-images__item .image-area .image-wrap--ffc img:hover{
-  transform: scale(1.05);
+.landing-block--testimonials-with-images .testimonials-with-images__slider .testimonials-with-images__item .image-area .image-wrap--ffc img:hover, .landing-block--testimonials-with-images .testimonials-with-images__slider .testimonials-with-images__item .image-area .image-wrap--ffc img:focus{
+  transform: scale(1.02);
 }
 
 /* company logos wholesale */
@@ -2765,4 +2792,12 @@ ion-icon[name="add-outline"] {
   width:5rem;
   height:5rem;
   margin: 0 auto 2rem;
+}
+
+/* btn focus */
+
+.btn:focus{
+  background-color: unset !important;
+  border-color: unset !important;
+  box-shadow: unset;
 }
