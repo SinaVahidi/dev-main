@@ -1,4 +1,4 @@
-{% if settings.show_breadcrumbs %}
+{% unless settings.show_breadcrumbs %}
 
 {% unless template.name == 'index' or template.name == 'cart' %}
   <div class="page-width display-none-mobile">
@@ -76,4 +76,4 @@
   </div>
 {% endunless %}
 
-{% endif%}
+{% endunless%}

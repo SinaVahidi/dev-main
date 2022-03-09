@@ -117,7 +117,7 @@
     {% assign header = ss.collection_header %}
     {% unless collection.url == "/collections/all" %}
       <header class="header">
-        <section class="header__container" {% if header == 'nut butters' or header == 'energy bites'%}style="background-position:bottom!important;"{% endif %}>
+        <section class="header__container" {% if header == 'best sellers' or header == 'pistachio' %}style="background-position:bottom -270px right 0px;"{% endif %}>
           <h1 class="heading-main-lev">
             <span class="heading-main-lev--main">{{ ss.collection_header }}</span>
             {% if section.settings.collection_subheader != blank %}

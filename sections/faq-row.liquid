@@ -15,7 +15,7 @@
     <div class="accordion-faq">
         {%- if section.settings.page_title_enable %}
         <div class="accordion-header-faq">
-            <h3 class="accordion-title-faq">Frequently asked questions</h3>
+            <h3 class="accordion-title-faq">Frequently Asked Questions</h3>
         </div>
         {% endif %}
         <div class="row">
@@ -49,12 +49,10 @@
                             </div>
                         {% endif %}
                     {% endfor %}
-                  	{% if numLeftBlocks > 3 %}
-                    <div class="btn-wrap-faq">
+                    <div class="btn-wrap-faq" {% unless numRightBlocks > 3 %}style="display:none"{% endunless %}>
                         <p class="expand-btn">View more</p>
                         <p class="close-btn">View less</p>
                     </div>
-                  	{% endif %}
                 </div>
                 <div class="col-md-6 accordion-column-faq">
                     <div class="accordion-item-category-faq">
@@ -86,12 +84,10 @@
                             </div>
                         {% endif %}
                     {% endfor %}
-                  	{% if numRightBlocks > 3 %}
-                    <div class="btn-wrap-faq">
+                    <div class="btn-wrap-faq" {% unless numRightBlocks > 3 %}style="display:none"{% endunless %}>
                         <p class="expand-btn">View more</p>
                         <p class="close-btn">View less</p>
                     </div>
-                  	{% endif %}
                 </div>
         </div>
     </div>

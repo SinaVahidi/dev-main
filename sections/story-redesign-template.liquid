@@ -1,4 +1,11 @@
 {% assign ss = section.settings %}
+{% style %}
+  .grant-image-wrap{
+    background-image: url("{{ ss.image-grant |img_url: '1200x' }}");
+    width: 40%;
+    background-size: cover;
+  }
+{% endstyle %}
 <section class="top-section">
   <div class="container main-container">
     <section class="row">
@@ -38,7 +45,7 @@
     <div class="row inside-content-grant" style"height:400px;">
       <h2 class="text-center grant-heading mb-4">{{ ss.grant-head | escape}}</h2>
       <div class="col-md-6 px-md-4 grant-image-wrap">
-        <img src="{{ ss.image-grant |img_url: '1200x' }}" class="img-fluid ps-md-3">
+        <div class="grant-image"></div>
       </div>
       <div class="col-md-6 grant-text-wrap">
         <p class="grant-text px-md-3">{{ ss.grant-text1 | escape}}</p>
