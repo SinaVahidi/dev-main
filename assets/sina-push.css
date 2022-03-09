@@ -900,7 +900,7 @@
 }
 
 .ss1-text{
-  font-size: 25px;
+  font-size: 22px;
   font-weight:700;
 }
 
@@ -962,9 +962,16 @@
 
 .grant-btn{
   margin-top:-0.4rem;
-  border-radius:0.5rem;
-  background:#AE9CDB;
+  border-radius:0.2rem;
+  color: #AE9CDB;
+  border: 1px solid AE9CDB;
+  background:white;
   font-size:1.2rem;
+}
+.grant-btn:hover{
+  color: white;
+  background: #AE9CDB!important;
+  border: #AE9CDB!important;
 }
 
 .bottom-heading{
