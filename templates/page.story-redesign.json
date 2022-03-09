@@ -22,7 +22,7 @@
         "3f06a907-3571-413d-80e6-ab9b3c5c76be": {
           "type": "ingredient",
           "settings": {
-            "image": "shopify:\/\/shop_images\/coconuts_81ce6c95-98d4-4b1f-9ebb-45267a56707b.png",
+            "image": "shopify:\/\/shop_images\/coconuts3.jpg",
             "title": "Coconuts",
             "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<\/p>"
           }
@@ -70,7 +70,7 @@
         "7789e9d9-0f9f-4445-b60c-3642b29b69f2": {
           "type": "ingredient",
           "settings": {
-            "image": "shopify:\/\/shop_images\/857A0578.jpg",
+            "image": "shopify:\/\/shop_images\/superfoods.jpg",
             "title": "Superfoods",
             "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<\/p>"
           }
