@@ -1693,7 +1693,7 @@ ion-icon[name="add-outline"] {
   justify-content: center;
 }
 .ben-col{
-  width: 22%;
+  max-width: 30%;
   background-color: #fff;
   padding: 1rem;
   padding-top: 1.5rem;
