@@ -1293,11 +1293,11 @@
             "type": "columns-with-icons",
             "settings": {
               "title": "how does subscription work?",
-              "text_1": "<p>Sign up to  our subscription  service for 15% discount<\/p>",
+              "text_1": "<p>Sign up to our subscription  service for 15% discount<\/p>",
               "icon_1": "https:\/\/cdn.shopify.com\/s\/files\/1\/0857\/4434\/files\/percent_1.svg?v=1631802535",
-              "text_2": "<p>Choose the frequency and  amount of your subscription<\/p>",
+              "text_2": "<p>Change the frequency, modify shipping dates, and swap products in your subscription at any time<\/p>",
               "icon_2": "https:\/\/cdn.shopify.com\/s\/files\/1\/0857\/4434\/files\/calendar_1.svg?v=1631802535",
-              "text_3": "<p>Pause or cancel your subscription at any time<\/p>",
+              "text_3": "<p>Pause or cancel your subscription at any time, or just skip your next scheduled order<\/p>",
               "icon_3": "https:\/\/cdn.shopify.com\/s\/files\/1\/0857\/4434\/files\/pause_alt2_1.svg?v=1631802535"
             }
           },
