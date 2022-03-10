@@ -1625,6 +1625,7 @@ ion-icon[name="add-outline"] {
   flex-direction:column;
   justify-content:center;
   background-size: cover;
+  background-position: center;
 }
 
 @media (max-width: 590px) {
@@ -1639,7 +1640,13 @@ ion-icon[name="add-outline"] {
 .ffc-page-wholesale-landing .ffc-background-image-text__image .page-width{
   margin:0;
   margin-left: 5rem;
-  max-width: 40%;
+  max-width: 50%;
+}
+.ffc-page-wholesale-landing .ffc-background-image-text__image .page-width .content-area .h3 {
+  font-size: 3rem;
+}
+.ffc-page-wholesale-landing .ffc-background-image-text__image .page-width .content-area .rte p{
+  font-size: 1.2rem;
 }
 .ffc-page-wholesale-landing .landing-block .ffc-background-image-text__image .page-width .content-area .btn{
   border-radius: 0.1em;
