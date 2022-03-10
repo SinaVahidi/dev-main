@@ -1657,9 +1657,11 @@ ion-icon[name="add-outline"] {
   .ffc-page-wholesale-landing .ffc-background-image-text__image .page-width{
     margin:3rem 0 0;
     max-width: 100%;
+    text-align: center;
   }
   .ffc-page-wholesale-landing .ffc-background-image-text__image .page-width .content-area .h3 {
-    font-size: 2rem;
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
   }
   .ffc-page-wholesale-landing .ffc-background-image-text__image .page-width .content-area .rte p{
     font-size: 1rem;
