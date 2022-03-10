@@ -1624,6 +1624,7 @@ ion-icon[name="add-outline"] {
   display:flex;
   flex-direction:column;
   justify-content:center;
+  background-size: cover;
 }
 
 @media (max-width: 590px) {
@@ -1637,7 +1638,8 @@ ion-icon[name="add-outline"] {
 
 .ffc-page-wholesale-landing .ffc-background-image-text__image .page-width{
   margin:0;
-  margin-left: 10rem;
+  margin-left: 5rem;
+  max-width: 40%;
 }
 .ffc-page-wholesale-landing .landing-block .ffc-background-image-text__image .page-width .content-area .btn{
   border-radius: 0.1em;
