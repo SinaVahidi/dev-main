@@ -104,7 +104,7 @@ $(function() {
     let scrollTop = $(window).scrollTop();
 
     if (scrollTop > 250) {
-        $('.ffc-page-subscription-landing .landing-block--columns-with-icons .column-with-icon').css('margin-inline', '6.5rem');
+        $('.ffc-page-subscription-landing .landing-block--columns-with-icons .column-with-icon').css('margin-inline', '4.5rem');
     }
 });
 

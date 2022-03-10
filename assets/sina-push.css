@@ -2266,6 +2266,19 @@ ion-icon[name="add-outline"] {
   }
 }
 
+.landing-block--columns-with-icons .flex .column-with-icon .rte {
+  max-width: 320px;
+}
+
+.ffc-select-subscription .page-width .grid .grid__image{
+  padding-left: 0!important;
+  padding-right: 30px;
+}
+
+.ffc-select-subscription .page-width .grid .grid__image .product__photos .product__main-photos {
+  max-height:610px;
+  height: unset;
+}
 /* login page */
 
 .link {
