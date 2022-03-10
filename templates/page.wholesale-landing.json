@@ -152,8 +152,22 @@
             "benefit_10": ""
           }
         },
+        "1dd4bd8a-395e-47ad-82b4-7f94db05dc11": {
+          "type": "ffc-bg-img-text",
+          "settings": {
+            "subtitle": "",
+            "title": "Our Stockist Community",
+            "text": "<p>Cafes, fitness studios, gift shops juice bars, universities, grocery stores, health and gourmet stores, spas, airports and more<\/p>",
+            "button_label": "",
+            "button_link": "",
+            "image": "shopify:\/\/shop_images\/857A1434-Edit.jpg",
+            "alignment": "top right",
+            "layout": "left"
+          }
+        },
         "b4145870-c465-48ac-99ac-876edd006a8a": {
           "type": "testimonials-with-images",
+          "disabled": true,
           "settings": {
             "title": "our stockist community",
             "text": "<p>Cafes, fitness studios, gift shops juice bars, universities, grocery stores, health and gourmet stores, spas, airports and more<\/p>",
@@ -241,6 +255,7 @@
         "697ace91-9b96-490b-a180-20346a48f5af",
         "e501178f-a8b2-4826-bfe5-ee30c5b244b9",
         "2a6a986c-5d5c-4581-a856-d62633eba93c",
+        "1dd4bd8a-395e-47ad-82b4-7f94db05dc11",
         "b4145870-c465-48ac-99ac-876edd006a8a",
         "2f7afc7a-f585-4695-aac9-29a352eeb873",
         "19d3fcf3-15ad-4b3e-89f5-e0dc4382a18b"
