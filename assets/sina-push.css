@@ -1668,6 +1668,11 @@ ion-icon[name="add-outline"] {
   }
 }
 
+.landing-block--background-image-text .content-area .btn {
+  background-color: #ae9cdb!important;
+  border-color: #ae9cdb!important;
+  color: #ffffff!important;
+}
 /* display none class */
 
 .dis-none {
