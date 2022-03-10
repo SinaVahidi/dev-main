@@ -1337,6 +1337,7 @@
           },
           "69112630-7a8d-4085-b10b-60ae5f77c9bd": {
             "type": "benefits-sina",
+            "disabled": true,
             "settings": {
               "title": "subscription benefits",
               "benefit_alt_1": "Change shipping date \/ frequency anytime",
