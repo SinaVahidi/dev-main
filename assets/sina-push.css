@@ -1061,7 +1061,7 @@
 .image-area:hover .image-area:focus{
   background: #4f4f4f;
 }
-.product-ingredients-section .product-ingredients .ingredient-item:hover .image-area img, .product-ingredients-section .product-ingredients .ingredient-item:focus .image-area img{
+/* .product-ingredients-section .product-ingredients .ingredient-item:hover .image-area img, .product-ingredients-section .product-ingredients .ingredient-item:focus .image-area img{
   display: none;
 }
 .product-ingredients-section .product-ingredients .ingredient-item:hover .image-area, .product-ingredients-section .product-ingredients .ingredient-item:focus .image-area{
@@ -1075,7 +1075,7 @@
 .product-ingredients-section .product-ingredients .ingredient-item:hover .content-area h3, .product-ingredients-section .product-ingredients .ingredient-item:focus .content-area h3{
   color: white;
   transition: all 0.5s;
-}
+} */
 .more_info_btn{
   position: absolute;
   display: block;
@@ -2150,14 +2150,15 @@ ion-icon[name="add-outline"] {
 .sub-head{
   margin-bottom: 1rem;
   color: #F1BB5A;
-  letter-spacing: -0.025em;
+  letter-spacing: 0.02em;
   font-weight: 800;
 }
 
 @media (min-width: 768px){
   .sub-head{
     font-size: 4rem;
-    line-height: 1;
+    margin-bottom: 3rem;
+    line-height: 1.1;
   }
 }
 .sub-btn{
@@ -2800,4 +2801,8 @@ ion-icon[name="add-outline"] {
   background-color: unset !important;
   border-color: unset !important;
   box-shadow: unset;
+}
+
+.logo-bar .logo-bar__item .logo-bar__image{
+  padding: 0 2px;
 }
