@@ -2878,7 +2878,7 @@ ion-icon[name="add-outline"] {
   transform-origin: left;
 }
 .refer_container { 
-  background: #4f4f4f;
+  background: #F1BB5A;
   padding: 2rem 0 1rem;
 }
 .info_head, .earn_head, .redeem_head{
@@ -2977,6 +2977,9 @@ ion-icon[name="add-outline"] {
   padding: 4rem 5rem;
   background: #f7f7f7;
 }
+.join_num{
+  font-size: 2.2rem;
+}
 
 @media screen and (max-width: 768px) {
   .rewards_head {
@@ -3022,4 +3025,15 @@ ion-icon[name="add-outline"] {
 
 .logo-bar .logo-bar__item .logo-bar__image{
   padding: 0;
+}
+
+
+/* adding wholesale to menu */
+
+.header-section--v2 .site-header .header-layout .site-nav .site-nav__item {
+  margin-right: 9px;
+}
+
+.header-section--v2 .site-header .header-layout .site-nav .site-nav__item .site-nav__link{
+  font-size: 18px;
 }
