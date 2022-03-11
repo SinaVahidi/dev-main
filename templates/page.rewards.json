@@ -1,10 +1,50 @@
 {
-    "sections":{
-        "main":{
-            "type": "rewards-template"
-        }
-    },
-    "order": [
-        "main"
-    ]
+  "sections": {
+    "main": {
+      "type": "rewards-template",
+      "settings": {
+        "rewards_title": "nomz rewards",
+        "rewards_subtitle": "Join nomz rewards and get rewarded! You'll get 25 points just for signing up. What are you waiting for?",
+        "rewards_img": "shopify:\/\/shop_images\/Screen_Shot_2022-02-28_at_10.40.32_PM.png",
+        "works_title": "How It Works",
+        "works_icon_1": "https:\/\/cdn-icons.flaticon.com\/png\/128\/5836\/premium\/5836191.png?token=exp=1647029155~hmac=e26872eebc386579a2980b59522cd6b2",
+        "works_title_col_1": "Join Nomz Rewards",
+        "works_text_1": "Follow the instructions below to create your account for Nomz Rewards. It’s easy and free, and then you’ll be ready to start earning points.",
+        "works_icon_2": "https:\/\/cdn-icons.flaticon.com\/png\/512\/4442\/premium\/4442179.png?token=exp=1647029225~hmac=dcb2847f4c9f66227ca6d1dbc0004b53",
+        "works_title_col_2": "Earn Points",
+        "works_text_2": "Once you create your account, start completing the items below to begin earning points for referring friends, following us on social media, and more!",
+        "works_icon_3": "https:\/\/cdn-icons.flaticon.com\/png\/512\/2520\/premium\/2520140.png?token=exp=1647029632~hmac=9d37da5a2c38400a1910d8cc35982037",
+        "works_title_col_3": "Redeem",
+        "works_text_3": "Once you have enough points to redeem a reward, check out the Rewards section to get codes to apply to your next order. Enter the codes at checkout.",
+        "join_title": "How to join",
+        "join_img_1": "shopify:\/\/shop_images\/Screen_Shot_2022-03-11_at_11.59.20_AM_f2e6c7da-c2d1-4942-9f81-8212828578a1.png",
+        "join_text_1": "Click on the 'rewards' icon in the bottom left corner of your screen",
+        "join_img_2": "shopify:\/\/shop_images\/Screen_Shot_2022-03-11_at_11.57.59_AM.png",
+        "join_text_2": "Enter your email address and click 'sign in'",
+        "join_img_3": "shopify:\/\/shop_images\/Screen_Shot_2022-03-11_at_12.18.22_PM_49e41711-cb4c-4124-80dc-51cc1531af8c.png",
+        "join_text_3": "You will receive an email with a link that takes you back to nomz and signs you in",
+        "earn_title": "Ways to earn points",
+        "earn_icon_1": "https:\/\/cdn.sweettooth.io\/v1\/images\/earning\/signup.svg?color=%236DABE4&theme=light",
+        "earn_item_1": "Signup",
+        "earn_points_1": "25 points",
+        "earn_icon_2": "https:\/\/cdn.sweettooth.io\/v1\/images\/earning\/order-online.svg?color=%236DABE4&theme=light",
+        "earn_item_2": "Place an order",
+        "earn_points_2": "5 points for every $1 spent",
+        "earn_icon_3": "https:\/\/cdn.sweettooth.io\/v1\/images\/earning\/facebook-like.svg?color=%236DABE4&theme=light",
+        "earn_item_3": "Like on Facebook",
+        "earn_points_3": "10 points",
+        "earn_icon_4": "https:\/\/cdn.sweettooth.io\/v1\/images\/earning\/instagram-follow.svg?color=%236DABE4&theme=light",
+        "earn_item_4": "Follow on Instagram",
+        "earn_points_4": "10 points",
+        "refer_title": "Refer Friends & Earn Coupons",
+        "refer_subtitle": "Love nomz? Refer friends and you both earn a $6 off coupon!",
+        "redeem_title": "How to redeem your points",
+        "redeem_icon": "https:\/\/cdn.sweettooth.io\/v1\/images\/rewards\/fixed-amount.svg?color=%236DABE4&theme=light",
+        "redeem_text": "Use your points at checkout and recieve $1 off for every 100 points"
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
 }
