@@ -1,49 +1,351 @@
+{% assign ss = section.settings %}
+{% style %}
+	.img_wrap {
+		background-image: url("{{ ss.rewards_img | img_url: '1200x'}}");
+	}
+{% endstyle %}
 <div class="hero_container">
     <div class="img_wrap">
         <div class="text_wrap">
-            <h2 class="rewards_head">nomz rewards</h2>
-            <p class="rewards_text">Join nomz rewards and get rewarded!
-
-                You'll get 250 points just for signing up. What are you waiting for?</p>
-            <a href="#" class="rewards_btn">Join now</a>
-            <div class="rewards_account">
-                <span class="rewards_login">Have an account?</span>
-                <span class="rewards_login_alt">Login</span>
-            </div>
+            <h2 class="rewards_head">{{ ss.rewards_title }}</h2>
+							<p class="rewards_text">{{ ss.rewards_subtitle }}</p>
         </div>
     </div>
 </div>
 <div class="info_container">
-    <h3 class="info_head">How It Works</h3>
+    <h3 class="info_head">{{ ss.works_title }}</h3>
     <div class="row">
         <div class="col-md-4 info_col">
             <div class="rewards_logo_wrap">
-                <div class="rewards_logo" style="background-image: url('https://cdn-icons.flaticon.com/png/512/5836/premium/5836191.png?token=exp=1646837777~hmac=9b7ae75af03f63e3ed7870d68caa77fa');">
+                <div class="rewards_logo" style="background-image: url('{{ ss.works_icon_1 }}');">
                 </div>
             </div>
-            <h4 class="sub_info_head">Join Soylent Rewards</h4>
-            <p class="sub_info_text">Click the “Join Now” button up above to create your account for Soylent Rewards. It’s easy and free, and then you’ll be ready to start earning points.</p>
+            <h4 class="sub_info_head">{{ ss.works_title_col_1 }}</h4>
+            <p class="sub_info_text">{{ ss.works_text_1 }}</p>
         </div>
         <div class="col-md-4 info_col">
             <div class="rewards_logo_wrap">
-                <div class="rewards_logo" style="background-image: url('https://cdn-icons.flaticon.com/png/128/4442/premium/4442179.png?token=exp=1646838340~hmac=2ecae3e9ff93572adec5ea85d4d75415');"></div>
+                <div class="rewards_logo" style="background-image: url('{{ ss.works_icon_2 }}');"></div>
             </div>
-            <h4 class="sub_info_head">Earn Points</h4>
-            <p class="sub_info_text">Once you create your account, start completing the items below to begin earning points for referring friends, following us on social media, and more!</p>
+            <h4 class="sub_info_head">{{ ss.works_title_col_2 }}</h4>
+            <p class="sub_info_text">{{ ss.works_text_2 }}</p>
         </div>
         <div class="col-md-4 info_col">
             <div class="rewards_logo_wrap">
-                <div class="rewards_logo" style="background-image: url('https://cdn-icons.flaticon.com/png/512/2283/premium/2283470.png?token=exp=1646838405~hmac=9fb2211544751a82ab91b3c6c68bc003');"></div>
+                <div class="rewards_logo" style="background-image: url('{{ ss.works_icon_3 }}');"></div>
             </div>
-            <h4 class="sub_info_head">Redeem</h4>
-            <p class="sub_info_text">Once you have enough points to redeem a reward, check out the Rewards section to get codes to apply to your next order (it even works on subscriptions!). Copy your code and enter it in and checkout. Voila! You’re good to go.</p>
+            <h4 class="sub_info_head">{{ ss.works_title_col_3 }}</h4>
+            <p class="sub_info_text">{{ ss.works_text_3 }}</p>
+        </div>
+    </div>
+</div>
+<div class="join_container">
+    <div class="redeem_text_wrap">
+        <h3 class="redeem_head">{{ ss.join_title }}</h3>
+    </div>
+    <div class="row join_content-wrap">
+        <div class="col-md-4 join_col">
+            <div class="join_content">
+                <div class="join_img" style="background-image: url('{{ ss.join_img_1 | img_url: '1200x' }}');"></div>
+                <p class="join_text">{{ ss.join_text_1 }}</p>
+            </div>
+        </div>
+        <div class="col-md-4 join_col">
+            <div class="join_content">
+                <div class="join_img" style="background-image: url('{{ ss.join_img_2 | img_url: '1200x' }}');"></div>
+                <p class="join_text">{{ ss.join_text_2 }}</p>
+            </div>
+        </div>
+        <div class="col-md-4 join_col">
+            <div class="join_content">
+                <div class="join_img" style="background-image: url('{{ ss.join_img_3 | img_url: '1200x' }}');"></div>
+                <p class="join_text">{{ ss.join_text_3 }}</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="earn_container">
+ 
+    <div class="earn_text_wrap">
+        <h3 class="earn_head">{{ ss.earn_title }}</h3>
+    </div>
+    <div class="rewards_grid">
+        <div class="row">
+            <div class="col-md-3 rewards_grid_entry">
+                <div class="entry_content">
+                    <div class="entry_icon" style="background-image: url('{{ ss.earn_icon_1 }}');"></div>
+                    <h4 class="entry_head">{{ ss.earn_item_1 }}</h4>
+                    <span class="entry_points">{{ ss.earn_points_1 }}</span>
+                </div>
+            </div>
+            <div class="col-md-3 rewards_grid_entry">
+                <div class="entry_content">
+                    <div class="entry_icon" style="background-image: url('{{ ss.earn_icon_2 }}');"></div>
+                    <h4 class="entry_head">{{ ss.earn_item_2 }}</h4>
+                    <span class="entry_points">{{ ss.earn_points_2 }}</span>
+                </div>
+            </div>
+            <div class="col-md-3 rewards_grid_entry">
+                <div class="entry_content">
+                    <div class="entry_icon" style="background-image: url('{{ ss.earn_icon_3 }}');"></div>
+                    <h4 class="entry_head">{{ ss.earn_item_3 }}</h4>
+                    <span class="entry_points">{{ ss.earn_points_3 }}</span>
+                </div>
+            </div>
+            <div class="col-md-3 rewards_grid_entry">
+                <div class="entry_content">
+                    <div class="entry_icon" style="background-image: url('{{ ss.earn_icon_1 }}');"></div>
+                    <h4 class="entry_head">{{ ss.earn_item_4 }}</h4>
+                    <span class="entry_points">{{ ss.earn_points_4 }}</span>
+                </div>
+            </div>
         </div>
     </div>
 </div>
 <div class="refer_container">
     <div class="refer_text_wrap">
-        <h3 class="refer_info_head">Refer Friends & Earn Points</h3>
-        <p class="refer_info_text">Love Soylent? Refer friends and earn 10,000 Soylent Rewards Points for each sign up.</p>
-        <a href="#" class="refer_btn">Start Referring</a>
+        <h3 class="refer_info_head">{{ ss.refer_title }}</h3>
+        <p class="refer_info_text">{{ ss.refer_subtitle}}</p>
     </div>
 </div>
+<div class="redeem_container">
+    <div class="redeem_text_wrap">
+        <h3 class="redeem_head">{{ ss.redeem_title }}</h3>
+    </div>
+    <div class="redeem_content">
+        <div class="redeem_icon" style="background-image: url('{{ ss.redeem_icon }}')"></div>
+        <h5 class="redeem_text">{{ ss.redeem_text }}</h5>
+    </div>
+</div>
+
+{% schema %}
+	{
+		"name": "Rewards page",
+    "settings": [
+			{
+				"type": "text",
+				"id": "rewards_title",
+				"label": "Main title for the page",
+				"default": "nomz rewards"
+			},
+			{
+				"type": "text",
+				"id": "rewards_subtitle",
+				"label": "Main subtitle for the page",
+				"default": "Join nomz rewards and get rewarded! You'll get 25 points just for signing up. What are you waiting for?"
+			},
+			{
+				"type": "image_picker",
+				"id": "rewards_img",
+				"label": "Main image for the page",
+			},
+			{
+				"type": "text",
+				"id": "works_title",
+				"label": "Title for second section",
+				"default": "How It Works"					
+			},
+			{
+				"type": "url",
+				"id": "works_icon_1",
+				"label": "First icon url for second section",
+				"default": "https://cdn-icons.flaticon.com/png/512/5836/premiu…=1646837777~hmac=9b7ae75af03f63e3ed7870d68caa77fa"
+			},
+			{
+				"type": "textarea",
+				"id": "works_title_col_1",
+				"label": "Title for first column second section",
+				"default": "Join Nomz Rewards"
+			},
+			{
+				"type": "textarea",
+				"id": "works_text_1",
+				"label": "Description for first column second section",
+				"default": "Follow the instructions below to create your account for Nomz Rewards. It’s easy and free, and then you’ll be ready to start earning points."
+			},
+			{
+				"type": "url",
+				"id": "works_icon_2",
+				"label": "Second icon url for second section",
+				"default": "https://cdn-icons.flaticon.com/png/128/4442/premiu…=1646838340~hmac=2ecae3e9ff93572adec5ea85d4d75415"
+			},
+			{
+				"type": "textarea",
+				"id": "works_title_col_2",
+				"label": "Title for second column second section",
+				"default": "Earn Points"
+			},
+			{
+				"type": "textarea",
+				"id": "works_text_2",
+				"label": "Description for second column second section",
+				"default": "Once you create your account, start completing the items below to begin earning points for referring friends, following us on social media, and more!"
+			},
+			{
+				"type": "url",
+				"id": "works_icon_3",
+				"label": "Third icon url for second section",
+				"default": "https://cdn-icons.flaticon.com/png/512/2283/premiu…=1646838405~hmac=9fb2211544751a82ab91b3c6c68bc003"
+			},
+			{
+				"type": "textarea",
+				"id": "works_title_col_3",
+				"label": "Title for third column second section",
+				"default": "Redeem"
+			},
+			{
+				"type": "textarea",
+				"id": "works_text_3",
+				"label": "Description for third column second section",
+				"default": "Once you have enough points to redeem a reward, check out the Rewards section to get codes to apply to your next order. Enter the codes at checkout."
+			},
+			{
+				"type": "text",
+				"id": "join_title",
+				"label": "Title for third section",
+				"default": "How to join"
+			},
+			{
+				"type": "image_picker",
+				"id": "join_img_1",
+				"label": "First image for third section"
+			},
+			{
+				"type": "textarea",
+				"id": "join_text_1",
+				"label": "Description for first image in third section",
+				"default": "Click on the 'rewards' icon in the bottom left corner of your screen"
+			},
+			{
+				"type": "image_picker",
+				"id": "join_img_2",
+				"label": "Second image for third section"
+			},
+			{
+				"type": "textarea",
+				"id": "join_text_2",
+				"label": "Description for second image in third section",
+				"default": "Enter your email address and click 'sign in'"
+			},
+			{
+				"type": "image_picker",
+				"id": "join_img_3",
+				"label": "Third image for third section"
+			},
+			{
+				"type": "textarea",
+				"id": "join_text_3",
+				"label": "Description for third image in third section",
+				"default": "You will receive an email with a link that takes you back to nomz and signs you in"
+			},
+			{
+				"type": "text",
+				"id": "earn_title",
+				"label": "Title for fourth section",
+				"default": "Ways to earn points"
+			},
+			{
+				"type": "url",
+				"id": "earn_icon_1",
+				"label": "First icon url for fourth section",
+				"default": "https://cdn.sweettooth.io/v1/images/earning/signup.svg?color=%236DABE4&theme=light"
+			},
+			{
+				"type": "text",
+				"id": "earn_item_1",
+				"label": "First column title for fourth section",
+				"default": "Signup"
+			},
+			{
+				"type": "text",
+				"id": "earn_points_1",
+				"label": "First column thinner title for fourth section",
+				"default": "25 points"
+			},
+			{
+				"type": "url",
+				"id": "earn_icon_2",
+				"label": "Second icon url for fourth section",
+				"default": "https://cdn.sweettooth.io/v1/images/earning/order-online.svg?color=%236DABE4&theme=light"
+			},
+			{
+				"type": "text",
+				"id": "earn_item_2",
+				"label": "Second column title for fourth section",
+				"default": "Place an order"
+			},
+			{
+				"type": "text",
+				"id": "earn_points_2",
+				"label": "Second column thinner title for fourth section",
+				"default": "5 points for every $1 spent"
+			},
+			{
+				"type": "url",
+				"id": "earn_icon_3",
+				"label": "Third icon url for fourth section",
+				"default": "https://cdn.sweettooth.io/v1/images/earning/facebook-like.svg?color=%236DABE4&theme=light"
+			},
+			{
+				"type": "text",
+				"id": "earn_item_3",
+				"label": "Third column title for fourth section",
+				"default": "Like on Facebook"
+			},
+			{
+				"type": "text",
+				"id": "earn_points_3",
+				"label": "Third column thinner title for fourth section",
+				"default": "10 points"
+			},
+			{
+				"type": "url",
+				"id": "earn_icon_4",
+				"label": "Fourth icon url for fourth section",
+				"default": "https://cdn.sweettooth.io/v1/images/earning/instagram-follow.svg?color=%236DABE4&theme=light"
+			},
+			{
+				"type": "text",
+				"id": "earn_item_4",
+				"label": "Fourth column title for fourth section",
+				"default": "Follow on Instagram"
+			},
+			{
+				"type": "text",
+				"id": "earn_points_4",
+				"label": "Fourth column thinner title for fourth section",
+				"default": "10 points"
+			},
+			{
+				"type": "text",
+				"id": "refer_title",
+				"label": "Title for fifth section",
+				"default": "Refer Friends & Earn Coupons"
+			},
+			{
+				"type": "text",
+				"id": "refer_subtitle",
+				"label": "Subitle for fifth section",
+				"default": "Love nomz? Refer friends and you both earn a $6 off coupon!"
+			},
+			{
+				"type": "text",
+				"id": "redeem_title",
+				"label": "Title for sixth section",
+				"default": "How to redeem your points"
+			},
+			{
+				"type": "url",
+				"id": "redeem_icon",
+				"label": "Icon url for sixth section",
+				"default": "https://cdn.sweettooth.io/v1/images/rewards/fixed-amount.svg?color=%236DABE4&theme=light"
+			},
+			{
+				"type": "text",
+				"id": "redeem_text",,
+				"label": "Description for sixth section",
+				"default": "Use your points at checkout and recieve $1 off for every 100 points"
+			}
+		]
+	}
+{% endschema %}

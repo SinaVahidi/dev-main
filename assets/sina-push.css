@@ -293,7 +293,11 @@
   font-family: 'Gotham Rounded Medium';
   font-size: 14px;
 }
-
+.cart-item--rivets .left-area .cart-item-image {
+  width: 85px;
+  height: 85px;
+  display: block;
+}
 .cart-item--rivets .right-area header .cart-item-remove svg {
   width: 9px;
   margin: 0 0 2px 1px;
@@ -1675,12 +1679,12 @@ ion-icon[name="add-outline"] {
 }
 @media screen and (min-width: 768px) {
   .ffc-background-image-text__image--1dd4bd8a-395e-47ad-82b4-7f94db05dc11 {
-    transition: transform 0.7s;
+    transition: max-width 0.7s;
     margin: 0 auto;
-    width: 85.5%;
+    max-width: 85.5%;
   }
   .ffc-background-image-text__image--1dd4bd8a-395e-47ad-82b4-7f94db05dc11.active{
-    transform: scale(1.17, 1.11);
+    max-width: 100%;
   }
 }
 
@@ -2712,53 +2716,6 @@ ion-icon[name="add-outline"] {
     left:50%!important;
   }
 }
- /* copy */
-
-.cart-item--rivets.cart-item--upsell .left-area a img {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  left: 0;
-  top: 0;
-  -o-object-fit: cover;
-  object-fit: cover;
-}
-
-.cart-item--rivets.cart-item--upsell .left-area {
-  width: 100%;
-}
-
-.cart-item--rivets.cart-item--upsell {
-  width: 50%;
-  padding: 0 14px;
-  border-bottom: 0;
-}
-
-.cart-item--rivets.cart-item--upsell .right-area {
-    width: 100%;
-    padding: 0;
-    margin: auto 0 0;
-}
-
-.cart-item--rivets.cart-item--upsell .right-area .cart-item-product-title {
-  display: inline-block;
-  font-family: Gotham Rounded Book,sans-serif;
-  font-size: 16px;
-  font-weight: 600;
-  margin: 16px 0 6px;
-}
-
-.cart-item--rivets.cart-item--upsell .right-area .btn {
-  width: 100%;
-  min-width: 100%;
-  font-size: 16px;
-  font-weight: 600;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  margin-top: 16px;
-  letter-spacing: 0;
-}
 
 /* rewards page */
 
@@ -2766,16 +2723,32 @@ ion-icon[name="add-outline"] {
   box-sizing: border-box;
   font-family: 'Gotham Rounded Medium', verdana;
 }
+.hero_container { 
+  margin-top: -2rem;
+}
+
+.earn_container {
+  padding: 0 0 5rem;
+}
+
+.info_container {
+  max-width: 86%;
+  margin: 0 auto;
+  padding: 2rem 0 0;
+}
+.redeem_container {
+  padding: 5rem 0;
+}
 .img_wrap {
   box-sizing: border-box;
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: url('https://images.unsplash.com/photo-1472289065668-ce650ac443d2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2069&q=80');
-  height: 27rem;
+  background-image: url('https://cdn.shopify.com/s/files/1/0857/4434/files/Screen_Shot_2022-02-28_at_10.40.32_PM.png?v=1646106050');
+  background-position: bottom 30% right 50%;
+  padding: 1rem 0 9rem;
 }
-.text_wrap, .refer_text_wrap{
-  padding-top: 56px;
-  padding-bottom: 64px;
+.text_wrap, .earn_text_wrap, .redeem_text_wrap {
+  padding: 2rem 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -2784,6 +2757,9 @@ ion-icon[name="add-outline"] {
   max-width: 550px;
   margin: 0 auto;
   color: #4F4F4F;
+}
+.redeem_text_wrap{
+  padding-top: 0;
 }
 .rewards_head{
   font-weight: bold;
@@ -2799,23 +2775,38 @@ ion-icon[name="add-outline"] {
   font-size: 16px;
   line-height: 20px;
   letter-spacing: 1.9px;
-  color: #AE9CDB;
+  color: #4f4f4f;
   width: 235px;
   height: 56px;
   background: #fff;
-  border: 1px solid #AE9CDB;
+  border: 1px solid #4f4f4f;
   display: flex;
   justify-content: center;
   align-items: center;
   margin-bottom: 16px;
   transition: all 0.2s;
   border-radius: 0.2em;
+  z-index: 1;
+  position: relative;
 }
 .rewards_btn:hover{
-  background: #AE9CDB;
   color: white;
 }
+.rewards_btn::before {
+  background:#202020;
+  content: "";
+  inset: 0;
+  position: absolute;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.5s ease-in-out;
+  z-index: -1;
+}
 
+.rewards_btn:hover::before {
+  transform: scaleX(1);
+  transform-origin: left;
+}
 .rewards_text{
   margin-bottom: 2rem;
   font-size: 1.1rem;
@@ -2826,18 +2817,81 @@ ion-icon[name="add-outline"] {
 .rewards_login_alt{
   text-decoration: underline;
   text-underline-offset: 0.2em;
+  cursor: pointer;
 }
 .refer_info_head{
   font-size: 3rem;
 }
-.info_head{
+.refer_text_wrap{ 
+  padding-top: 56px;
+  padding-bottom: 64px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  max-width: 55%;
+  margin: 0 auto;
+  color: #fff;
+}
+.refer_info_text {
+  font-size: 1.2rem;
+}
+.refer_btn { 
+  color: #4f4f4f;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 1.9px;
+  width: 235px;
+  height: 56px;
+  background: #fff;
+  border: 1px solid #202020;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 16px;
+  border-radius: 0.2em;
+  position: relative;
+  z-index: 1;
+  transition: all 0.5s ease-in-out;
+}
+.refer_btn:hover{ 
+  color: #fff;
+}
+.refer_btn::before {
+  background:#202020;
+  content: "";
+  inset: 0;
+  position: absolute;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.5s ease-in-out;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+}
+
+.refer_btn:hover::before {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+.refer_container { 
+  background: #4f4f4f;
+  padding: 2rem 0 1rem;
+}
+.info_head, .earn_head, .redeem_head{
   text-align: center;
   margin-top: 2rem;
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: bold;
 }
+.redeem_head {
+  margin-top: 0;
+}
 .info_col{
-  padding: 3rem;
+  padding: 3rem 3rem;
   text-align: center;
 }
 
@@ -2852,6 +2906,112 @@ ion-icon[name="add-outline"] {
   margin: 0 auto 2rem;
 }
 
+.rewards_grid {
+  width: 80%;
+  margin: 0 auto;
+}
+.rewards_grid .row {
+  justify-content: space-between;
+}
+.rewards_grid_entry { 
+  background: #f7f7f7;
+  padding: 3.5rem 0 3rem;
+  border: 1px solid transparent;
+  width: 24%;
+  transition: all 0.2s ease-in-out;
+}
+.rewards_grid_entry:hover, .redeem_content:hover { 
+  border-bottom: 2px solid #6cace1;
+}
+.entry_content { 
+  text-align: center;
+}
+.entry_head { 
+  margin-bottom: 0.2rem;
+}
+.entry_icon {
+  background-size: cover;
+  width:3rem;
+  height:3rem;
+  margin: 0 auto 2rem;
+}
+
+.redeem_content {
+  width: 80%;
+  margin: 0 auto 2rem;
+  text-align: center;
+  padding: 4rem 5rem;
+  border: 1px solid transparent;
+  transition: all 0.2s;
+  background: #f7f7f7;
+}
+.redeem_icon { 
+  background-image: url('https://cdn.sweettooth.io/v1/images/rewards/fixed-amount.svg?color=%236DABE4&theme=light');
+  background-size: cover;
+  width:6rem;
+  height:6rem;
+  margin: 0 auto 2rem;
+}
+.redeem_text { 
+  font-size: 1.3rem;
+}
+.bottom_info_head {
+  font-size: 3rem;    
+  color: #4f4f4f;
+  margin-bottom: 3rem;
+}
+.bottom_container {
+  background: none;
+}
+
+.join_img{
+  background-size: cover;
+  margin: 0 auto 2rem;
+  background-position: top 0px left 50%;
+  height: 26rem;
+}
+.join_content-wrap{
+  width: 80%;
+  margin: 0 auto 2rem;
+  text-align: center;
+  padding: 4rem 5rem;
+  background: #f7f7f7;
+}
+
+@media screen and (max-width: 768px) {
+  .rewards_head {
+    font-size: 3rem;
+  }
+  .info_col:not(:last-of-type) {
+    padding-bottom: 0;
+  }
+  .join_content-wrap {
+    width: 90%;
+    padding: 3rem 1rem;
+  }
+  .join_text {
+    margin-bottom: 3rem;
+  }
+  .info_head, .earn_head, .redeem_head{
+    font-size: 2rem;
+  }
+  .rewards_grid_entry {
+    width: 47.5%;
+    padding: 3rem 1rem;
+    margin-bottom: 1rem;
+  }
+  .refer_text_wrap {
+    max-width: 90%;
+  }
+  .refer_info_head {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  .redeem_content{
+    width: 90%;
+    padding: 3rem 1rem;
+  }
+}
 /* btn focus */
 
 .btn:focus{
