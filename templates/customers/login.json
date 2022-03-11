@@ -1,1 +1,12 @@
-{"sections":{"main":{"type":"customers-login-template","settings":{}}},"order":["main"]}
+{
+  "sections": {
+    "main": {
+      "type": "customers-login-template",
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}
