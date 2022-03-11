@@ -4,10 +4,14 @@ If you plan to remove PageFly, please see the guide in our help center first: ht
 {% endcomment %}
 <!doctype html>
 <html class="no-js" lang="{{ shop.locale }}">
-  <head>{%- comment -%}smartseo_integration_begin{%- endcomment -%}{% include 'smartseo' %}{%- comment -%}smartseo_integration_end{%- endcomment -%}
-    
+  <head>{% render 'pagefly-head' %}{%- comment -%}smartseo_integration_begin{%- endcomment -%}{% include 'smartseo' %}{%- comment -%}smartseo_integration_end{%- endcomment -%}
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel='stylesheet' href='https://unicons.iconscout.com/release/v2.1.9/css/unicons.css'>
     {% assign mlveda_code_flag = false %} 
-      
+    <!-- Reddit Pixel -->
+    <script>!function(w,d){if(!w.rdt){var p=w.rdt=function(){p.sendEvent?p.sendEvent.apply(p,arguments):p.callQueue.push(arguments)};p.callQueue=[];var t=d.createElement("script");t.src="https://www.redditstatic.com/ads/pixel.js",t.async=!0;var s=d.getElementsByTagName("script")[0];s.parentNode.insertBefore(t,s)}}(window,document);rdt('init','t2_5sbynb6q');rdt('track', 'PageVisit');</script>
+    <!-- DO NOT MODIFY --><!-- End Reddit Pixel -->
+    
     <!-- Google Tag Manager -->  
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':  
     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0], 
@@ -130,7 +134,10 @@ If you plan to remove PageFly, please see the guide in our help center first: ht
     {{ 'bsub.scss.css' | asset_url | stylesheet_tag }}  
     
     {{ 'sina-push.css' | asset_url | stylesheet_tag }}
-
+    <!-- Start of ion icons -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <!-- End of ion icons -->
     <!-- Start of LittledataLayer -->
     {% include 'LittledataLayer' %}
     <!-- End of LittledataLayer -->
