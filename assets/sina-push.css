@@ -733,10 +733,14 @@
 }
 
 .grid-product.grid-product--ffc .grid-product__meta .grid-product__title-price{
-  height: 50px;
+  height: 66px;
   flex-direction: column;
 }
-
+@media screen and (min-width: 768px) {
+  .grid-product.grid-product--ffc .grid-product__meta .grid-product__title-price{
+    height: 50px;
+  }
+}
 @media screen and (max-width: 589px) {
   .page-width, .page-full{
     padding: 0px 14px;
