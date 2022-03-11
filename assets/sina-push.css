@@ -1668,11 +1668,22 @@ ion-icon[name="add-outline"] {
   }
 }
 
-.landing-block--background-image-text .content-area .btn {
+.landing-block--background-image-text .content-area .btn:hover, .landing-block--background-image-text .content-area .btn:focus {
   background-color: #ae9cdb!important;
   border-color: #ae9cdb!important;
   color: #ffffff!important;
 }
+@media screen and (min-width: 768px) {
+  .ffc-background-image-text__image--1dd4bd8a-395e-47ad-82b4-7f94db05dc11 {
+    transition: transform 0.7s;
+    margin: 0 auto;
+    width: 85.5%;
+  }
+  .ffc-background-image-text__image--1dd4bd8a-395e-47ad-82b4-7f94db05dc11.active{
+    transform: scale(1.17, 1.11);
+  }
+}
+
 /* display none class */
 
 .dis-none {
@@ -2057,7 +2068,7 @@ ion-icon[name="add-outline"] {
     font-weight: bolder;
     letter-spacing: 0.2rem;
     margin-bottom: 10px;
-    /* mix-blend-mode: screen; */
+    mix-blend-mode: hard-light;
     padding: 1rem 1rem 1rem 1rem;
   }
   @media only screen and (max-width: 68.75em) {
@@ -2264,7 +2275,7 @@ ion-icon[name="add-outline"] {
 }
 .ffc-page-subscription-landing .landing-block--subscription-product {
   padding-bottom: 5rem;
-  background: linear-gradient(180deg, rgba(250,250,250,1) 87%, rgba(255,255,255,1) 100%);
+  background: linear-gradient(180deg, rgba(250,250,250,1) 87%, rgba(255,255,255,1) 100%)!important;
 }
 @media screen and (max-width:786px){
   .sub-container{

@@ -152,7 +152,7 @@
                   </button>
                 {% endif %}
 
-                <a href="#" data-cart-mount class="site-nav__link site-nav__link--cart site-nav__link--icon" data-class-change='
+                <a href="#" data-cart-mount class="site-nav__link site-nav__link--cart site-nav__link--icon" onclick="theme.shipBar.update();" data-class-change='
                     [
                         {
                             "target": ".side-cart",
@@ -172,7 +172,7 @@
                           }
                       ]
                   '>
-                  <span class="cart-link" onclick="theme.shipBar.update();">
+                  <span class="cart-link">
                     {% include 'icon-cart' %}
                     <span class="icon__fallback-text">{{ 'layout.cart.title' | t }}</span>
                     <div rv-if="data.cart.item_count | gt 0">
