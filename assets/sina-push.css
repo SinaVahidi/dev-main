@@ -733,7 +733,7 @@
 }
 
 .grid-product.grid-product--ffc .grid-product__meta .grid-product__title-price{
-  height: 66px;
+  height: 50px;
   flex-direction: column;
 }
 
