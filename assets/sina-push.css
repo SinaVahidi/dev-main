@@ -1597,7 +1597,10 @@ ion-icon[name="add-outline"] {
 }
 /* wholesale initial redesigns */
 
-
+.ffc-page-wholesale-landing .landing-block--background-image-text .content-area .btn{
+  color: #6cace1;
+  border-color: #6cace1;
+}
 .ffc-page-wholesale-landing .ffc-background-image-text__image{
   height:30rem;
   display:flex;
@@ -1621,8 +1624,8 @@ ion-icon[name="add-outline"] {
   border-radius: 0.1em;
 }
 .ffc-page-wholesale-landing .landing-block .ffc-background-image-text__image .page-width .content-area .btn:hover, .ffc-page-wholesale-landing .landing-block .ffc-background-image-text__image .page-width .content-area .btn:focus{
-  background: #AE9CDB!important;
-  border-color: #AE9CDB!important;
+  background: #6cace1!important;
+  border-color: #6cace1!important;
   color: #fff;
 }
   
