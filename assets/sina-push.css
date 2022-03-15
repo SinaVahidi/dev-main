@@ -3052,7 +3052,8 @@ ion-icon[name="add-outline"] {
   background-repeat: no-repeat;
   background-size: cover;
   margin: 0.5rem;
-  width: 65%;
+  max-width: 65%;
+  min-width: 50%;
   border-radius: 1rem;
   color: #fff;
 }
