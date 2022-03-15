@@ -106,10 +106,6 @@ $(function() {
     if (scrollTop > 250) {
       $('.ffc-page-subscription-landing .landing-block--columns-with-icons .column-with-icon').css('margin-inline', '4.5rem');
     }
-    if (scrollTop > 2000) {
-      $('.ffc-background-image-text__image--1dd4bd8a-395e-47ad-82b4-7f94db05dc11').addClass('active');
-    }
-  
 });
 
 	$(".js-drawer-open-nav").click(function() {
