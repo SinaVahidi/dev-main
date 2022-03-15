@@ -1,1 +1,19 @@
-{"sections":{"main":{"type":"page-contact-alt-template","settings":{}}},"order":["main"]}
+{
+  "sections": {
+    "main": {
+      "type": "page-contact-alt-template",
+      "settings": {
+        "contact-top-head": "Contact us",
+        "contact-subhead": "Ask us anything! We'd love to hear from you!",
+        "contacts-content-title": "Contact info",
+        "contacts-info-city": "Toronto",
+        "contacts-info-address": "180 University Avenue",
+        "contacts-info-phone": "(647) 370-6740",
+        "contacts-info-email": "hello@nomz.com"
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}
