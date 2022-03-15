@@ -3132,7 +3132,7 @@ ion-icon[name="add-outline"] {
   fill: #fff;
 }
 
-@media screen and (max-width: 589px){
+@media screen and (max-width: 790px){
   .contact-subhead {
     width: 75%;
     text-align: center;
