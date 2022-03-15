@@ -3132,7 +3132,11 @@ ion-icon[name="add-outline"] {
 .contact-socials > svg {
   fill: #fff;
 }
-
+@media screen and (max-width: 1250px){
+  .contact-right-col{
+    max-width: 62%;
+  }
+}
 @media screen and (max-width: 790px){
   .contact-subhead {
     width: 75%;
