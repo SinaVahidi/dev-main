@@ -1,7 +1,7 @@
 {% assign ss = section.settings %}
 {% style %}
 	.img_wrap {
-		background-image: url("{{ ss.rewards_img | img_url: 'x1800'}}");
+		background-image: url("{{ ss.rewards_img | img_url: '1200x'}}");
 	}
 {% endstyle %}
 <div class="hero_container">
@@ -17,7 +17,7 @@
     <div class="row">
         <div class="col-md-4 info_col">
             <div class="rewards_logo_wrap">
-                <div class="rewards_logo" style="background-image: url('{{ ss.works_icon_1 }}');">
+                <div class="rewards_logo" style="background-image: url('{{ ss.works_icon_1| img_url: '1200x'}}')">
                 </div>
             </div>
             <h4 class="sub_info_head">{{ ss.works_title_col_1 }}</h4>
@@ -25,14 +25,14 @@
         </div>
         <div class="col-md-4 info_col">
             <div class="rewards_logo_wrap">
-                <div class="rewards_logo" style="background-image: url('{{ ss.works_icon_2 }}');"></div>
+                <div class="rewards_logo" style="background-image: url('{{ ss.works_icon_2| img_url: '1200x'}}');"></div>
             </div>
             <h4 class="sub_info_head">{{ ss.works_title_col_2 }}</h4>
             <p class="sub_info_text">{{ ss.works_text_2 }}</p>
         </div>
         <div class="col-md-4 info_col">
             <div class="rewards_logo_wrap">
-                <div class="rewards_logo" style="background-image: url('{{ ss.works_icon_3 }}');"></div>
+                <div class="rewards_logo" style="background-image: url('{{ ss.works_icon_3| img_url: '1200x'}}');"></div>
             </div>
             <h4 class="sub_info_head">{{ ss.works_title_col_3 }}</h4>
             <p class="sub_info_text">{{ ss.works_text_3 }}</p>
@@ -120,14 +120,6 @@
         <h5 class="redeem_text">{{ ss.redeem_text }}</h5>
     </div>
 </div>
-<!-- https://cdn-icons.flaticon.com/png/512/5836/premiu…=1646837777~hmac=9b7ae75af03f63e3ed7870d68caa77fa
-https://cdn-icons.flaticon.com/png/128/4442/premiu…=1646838340~hmac=2ecae3e9ff93572adec5ea85d4d75415
-https://cdn-icons.flaticon.com/png/512/2283/premiu…=1646838405~hmac=9fb2211544751a82ab91b3c6c68bc003
-https://cdn.sweettooth.io/v1/images/earning/signup.svg?color=%236DABE4&theme=light
-https://cdn.sweettooth.io/v1/images/earning/order-online.svg?color=%236DABE4&theme=light
-https://cdn.sweettooth.io/v1/images/earning/facebook-like.svg?color=%236DABE4&theme=light
-https://cdn.sweettooth.io/v1/images/earning/instagram-follow.svg?color=%236DABE4&theme=light
-https://cdn.sweettooth.io/v1/images/rewards/fixed-amount.svg?color=%236DABE4&theme=light -->
 {% schema %}
 	{
 		"name": "Rewards page",
@@ -156,9 +148,9 @@ https://cdn.sweettooth.io/v1/images/rewards/fixed-amount.svg?color=%236DABE4&the
 				"default": "How It Works"					
 			},
 			{
-				"type": "url",
+				"type": "image_picker",
 				"id": "works_icon_1",
-				"label": "First icon url for second section"
+				"label": "First icon for second section"
 			},
 			{
 				"type": "textarea",
@@ -173,9 +165,9 @@ https://cdn.sweettooth.io/v1/images/rewards/fixed-amount.svg?color=%236DABE4&the
 				"default": "Follow the instructions below to create your account for Nomz Rewards. It’s easy and free, and then you’ll be ready to start earning points."
 			},
 			{
-				"type": "url",
+				"type": "image_picker",
 				"id": "works_icon_2",
-				"label": "Second icon url for second section"
+				"label": "Second icon for second section"
 			},
 			{
 				"type": "textarea",
@@ -190,9 +182,9 @@ https://cdn.sweettooth.io/v1/images/rewards/fixed-amount.svg?color=%236DABE4&the
 				"default": "Once you create your account, start completing the items below to begin earning points for referring friends, following us on social media, and more!"
 			},
 			{
-				"type": "url",
+				"type": "image_picker",
 				"id": "works_icon_3",
-				"label": "Third icon url for second section"
+				"label": "Third icon for second section"
 			},
 			{
 				"type": "textarea",

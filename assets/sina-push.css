@@ -3384,3 +3384,11 @@ time {
   box-sizing: border-box;
   width: 100%;
 }
+
+/* button on home page */
+
+.homepage .index-section--hero .hero__text-wrap .hero__text-content .hero__link .btn {
+  border-radius: 0.1em;
+  color: #6cace1;
+  border: 1px solid #6cace1!important;
+}
