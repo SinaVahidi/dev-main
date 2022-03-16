@@ -2893,9 +2893,7 @@ ion-icon[name="add-outline"] {
   width: 24%;
   transition: all 0.2s ease-in-out;
 }
-.rewards_grid_entry:hover, .redeem_content:hover { 
-  border-bottom: 2px solid #6cace1;
-}
+
 .entry_content { 
   text-align: center;
 }
@@ -2941,7 +2939,7 @@ ion-icon[name="add-outline"] {
   background-size: cover;
   margin: 0 auto 2rem;
   background-position: top 0px left 50%;
-  height: 26rem;
+  height: 17rem;
 }
 .join_content-wrap{
   width: 80%;
