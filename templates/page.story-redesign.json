@@ -40,7 +40,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/cashews.jpg",
             "title": "Cashews",
-            "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<\/p>"
+            "text": "<p>Filled with healthy fats – cashews control blood sugar, boost bone strength and lower cholesterol. Plus, the high magnesium content works to protect the heart.<\/p>"
           }
         },
         "a0bd29a5-a4d8-4f2b-baed-f088bea3c205": {
@@ -72,7 +72,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/superfoods.jpg",
             "title": "Superfoods",
-            "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<\/p>"
+            "text": "<p>Rich in minerals, vitamins, and antioxidants – superfoods are nutrionally super-charged! They help ward off diseases, boost immunity, and reduce inflammation.<\/p>"
           }
         }
       },
