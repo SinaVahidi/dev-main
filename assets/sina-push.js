@@ -87,30 +87,62 @@ ingredientInfoToggle.forEach(element => {
 const discountBar = document.querySelector('.needsclick .kl-teaser-Vjzwx2');
 console.log(discountBar);
 
+// grant
+// jQuery(document).ready(function($){
+// 	let $timeline_block = $('.cd-timeline-block');
+//   console.log($timeline_block);
+// 	//hide timeline blocks which are outside the viewport
+// 	$timeline_block.each(function(){
+// 		if($(this).offset().top > $(window).scrollTop()+$(window).height()*0.75) {
+// 			$(this).find('.cd-timeline-img, .cd-timeline-content').addClass('is-hidden');
+// 		}
+// 	});
 
+// 	//on scolling, show/animate timeline blocks when enter the viewport
+// 	$(window).on('scroll', function(){
+// 		$timeline_block.each(function(){
+// 			if( $(this).offset().top <= $(window).scrollTop()+$(window).height()*0.75 && $(this).find('.cd-timeline-img').hasClass('is-hidden') ) {
+// 				$(this).find('.cd-timeline-img, .cd-timeline-content').removeClass('is-hidden').addClass('bounce-in');
+// 			}
+// 		});
+// 	});
+// });
+// grant end
 
+(function () {
+  "use strict";
+
+  // define variables
+  var items = document.querySelectorAll(".timeline li");
+
+  // check if an element is in viewport
+  // http://stackoverflow.com/questions/123999/how-to-tell-if-a-dom-element-is-visible-in-the-current-viewport
+  function isElementInViewport(el) {
+    var rect = el.getBoundingClientRect();
+    return (
+      rect.top >= 0 &&
+      rect.left >= 0 &&
+      rect.bottom <=
+        (window.innerHeight || document.documentElement.clientHeight) &&
+      rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+  }
+
+  function callbackFunc() {
+    for (var i = 0; i < items.length; i++) {
+      if (isElementInViewport(items[i])) {
+        items[i].classList.add("in-view");
+      }
+    }
+  }
+
+  // listen for events
+  window.addEventListener("load", callbackFunc);
+  window.addEventListener("resize", callbackFunc);
+  window.addEventListener("scroll", callbackFunc);
+})();
 
 $(function() {
-    // grant redesign
-    var $timeline_block = $('.cd-timeline-block');
-
-    //hide timeline blocks which are outside the viewport
-    $timeline_block.each(function(){
-      if($(this).offset().top > $(window).scrollTop()+$(window).height()*0.75) {
-        $(this).find('.cd-timeline-img, .cd-timeline-content').addClass('is-hidden');
-      }
-    });
-
-    //on scolling, show/animate timeline blocks when enter the viewport
-    $(window).on('scroll', function(){
-      $timeline_block.each(function(){
-        if( $(this).offset().top <= $(window).scrollTop()+$(window).height()*0.75 && $(this).find('.cd-timeline-img').hasClass('is-hidden') ) {
-          $(this).find('.cd-timeline-img, .cd-timeline-content').removeClass('is-hidden').addClass('bounce-in');
-        }
-      });
-    });
-    // grant redesign end
-
     $(".coupon-btn" ).click(function() {
       $( ".coupon-area-expand" ).show();
       $( "#coupon-msg" ).text("Please enter your code");
