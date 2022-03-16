@@ -1,1 +1,12 @@
-{"sections":{"main":{"type":"page-grant-redesign","settings":{}}},"order":["main"]}
+{
+  "sections": {
+    "main": {
+      "type": "page-grant-redesign",
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}
