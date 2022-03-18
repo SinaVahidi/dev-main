@@ -87,27 +87,17 @@ ingredientInfoToggle.forEach(element => {
 const discountBar = document.querySelector('.needsclick .kl-teaser-Vjzwx2');
 console.log(discountBar);
 
-// grant
-// jQuery(document).ready(function($){
-// 	let $timeline_block = $('.cd-timeline-block');
-//   console.log($timeline_block);
-// 	//hide timeline blocks which are outside the viewport
-// 	$timeline_block.each(function(){
-// 		if($(this).offset().top > $(window).scrollTop()+$(window).height()*0.75) {
-// 			$(this).find('.cd-timeline-img, .cd-timeline-content').addClass('is-hidden');
-// 		}
-// 	});
+const signUpButton = document.getElementById('signUp');
+const signInButton = document.getElementById('signIn');
+const container = document.getElementById('container');
 
-// 	//on scolling, show/animate timeline blocks when enter the viewport
-// 	$(window).on('scroll', function(){
-// 		$timeline_block.each(function(){
-// 			if( $(this).offset().top <= $(window).scrollTop()+$(window).height()*0.75 && $(this).find('.cd-timeline-img').hasClass('is-hidden') ) {
-// 				$(this).find('.cd-timeline-img, .cd-timeline-content').removeClass('is-hidden').addClass('bounce-in');
-// 			}
-// 		});
-// 	});
-// });
-// grant end
+signUpButton.addEventListener('click', () => {
+	container.classList.add("right-panel-active");
+});
+
+signInButton.addEventListener('click', () => {
+	container.classList.remove("right-panel-active");
+});
 
 (function () {
   "use strict";
@@ -158,7 +148,8 @@ $(function() {
     if (scrollTop > 250) {
       $('.ffc-page-subscription-landing .landing-block--columns-with-icons .column-with-icon').css('margin-inline', '4.5rem');
     }
-});
+  });
+  
 
 	$(".js-drawer-open-nav").click(function() {
       $(".parent-trigger-shop").addClass("is-open");
@@ -199,5 +190,39 @@ $(function() {
     $('.drawer__close-button').click(() => {
       $('#yotpo_testimonials_btn').show();
 	});   
+  $("[data-js=open1]").on("click", function() {
+		popupOpenClose($(".popup1"));
+	});
+  $("[data-js=open2]").on("click", function() {
+		popupOpenClose($(".popup2"));
+	});
 });
+
+function popupOpenClose(popup) {
+	
+	/* Add div inside popup for layout if one doesn't exist */
+	if ($(".wrapper").length == 0){
+		$(popup).wrapInner("<div class='wrapper'></div>");
+	}
+	
+	/* Open popup */
+	$(popup).show();
+
+	/* Close popup if user clicks on background */
+	$(popup).click(function(e) {
+		if ( e.target == this ) {
+			if ($(popup).is(':visible')) {
+				$(popup).hide();
+			}
+		}
+	});
+
+	/* Close popup and remove errors if user clicks on cancel or close buttons */
+	$(popup).find("button[name=close]").on("click", function() {
+		if ($(".formElementError").is(':visible')) {
+			$(".formElementError").remove();
+		}
+		$(popup).hide();
+	});
+}
 

@@ -1,69 +1,37 @@
-<div class="section">
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-12 text-center align-self-center">
-                <div class="section pb-5 pt-5 pt-sm-2 text-center">
-                    <h6 class="mb-0 pb-3">
-                      <span class="switch-login">Log In </span>
-                      <span class="switch-login">Sign Up</span>
-                    </h6>
-                      <input class="checkbox" type="checkbox" id="reg-log" name="reg-log"/>
-                      <label for="reg-log"></label>
-                    <div class="card-3d-wrap mx-auto">
-                        <div class="card-3d-wrapper">
-                            <div class="card-front">
-                                <div class="pb-5 center-wrap">
-                                    <div id="CustomerLoginForm">
-                                        {% form 'customer_login' %}
-                                        {{ form.errors | default_errors }}
-                                            <div class="section text-center">
-                                                <h4 class="mb-3 pb-3">Log In</h4>
-                                                <div class="form-group">
-                                                    <input type="email" name="customer[email]" id="CustomerEmail" class="form-style{% if form.errors contains 'email' %} error{% endif %}" autocorrect="off" autocapitalize="off" autofocus placeholder="Your email">
-                                                    <i class="input-icon uil uil-at"></i>
-                                                </div>	
-                                                <div class="form-group mt-2">
-                                                    <input type="password" value="" name="customer[password]" id="CustomerPassword" class="form-style{% if form.errors contains 'password' %} error{% endif %}" placeholder="Your password">
-                                                    <i class="input-icon uil uil-lock-alt"></i>                                 
-                                                </div>
-                                                <input type="submit" class="btn-login mt-4 btn--no-animate" value="submit">
-                                                <p class="mb-0 mt-4 text-center"><a href="#recover" id="RecoverPassword" class="link js-no-transition">Forgot your password?</a></p>
-                                            </div>
-                                        {% endform %}
-                                    </div>
-                                  </div>
-                              </div>
-                            <div class="card-back">
-                                <div class="center-wrap">
-                                    <div class="section text-center">
-                                        {% form 'create_customer' %}
-                                        {{ form.errors | default_errors }}
-                                            <h4 class="my-4 pb-3">Sign Up</h4>
-                                            <div class="form-group">
-                                                <input type="text" name="customer[first_name]" id="FirstName" class="form-style" {% if form.first_name %}value="{{ form.first_name }}"{% endif %} autocapitalize="words" autofocus placeholder="Your first name">
-                                                <i class="input-icon uil uil-user"></i>
-                                            </div>	
-                                            <div class="form-group mt-2">
-                                                <input type="text" name="customer[last_name]" id="LastName" class="form-style" {% if form.last_name %}value="{{ form.last_name }}"{% endif %} autocapitalize="words" placeholder="Your last name">
-                                                <i class="input-icon uil uil-user"></i>
-                                            </div>	
-                                            <div class="form-group mt-2">
-                                                <input type="email" name="customer[email]" id="Email" class="form-style{% if form.errors contains 'email' %} error{% endif %}" {% if form.email %} value="{{ form.email }}"{% endif %} autocorrect="off" autocapitalize="off" placeholder="Your email">
-                                                <i class="input-icon uil uil-at"></i>
-                                            </div>
-                                            <div class="form-group mt-2">
-                                                <input type="password" name="customer[password]" id="CreatePassword" class="form-style{% if form.errors contains 'password' %} error{% endif %}" placeholder="Your password">
-                                                <i class="input-icon uil uil-lock-alt"></i>
-                                            </div>
-                                            <input value="submit"" type="submit" class="btn-login mt-4">
-                                        {% endform %}
-                                      </div>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-          </div>
-    </div>
+<div class="container-login" id="container">
+	<div class="form-container sign-up-container">
+		<form class="form-login" action="#">
+			<h1>Create Account</h1>
+			<span>or use your account</span>
+            <input class="input-login" type="text" placeholder="First Name" />
+			<input class="input-login" type="text" placeholder="Last Name" />
+			<input class="input-login" type="email" placeholder="Email" />
+			<input class="input-login" type="password" placeholder="Password" />
+			<button class="button-login">Sign Up</button>
+		</form>
+	</div>
+	<div class="form-container sign-in-container">
+		<form class="form-login" action="#">
+			<h1>Sign in</h1>
+			<span>or use your email for registration</span>
+			<input class="input-login" type="email" placeholder="Email" />
+			<input class="input-login" type="password" placeholder="Password" />
+			<a href="#">Forgot your password?</a>
+			<button class="button-login">Sign In</button>
+		</form>
+	</div>
+	<div class="overlay-container">
+		<div class="overlay">
+			<div class="overlay-panel overlay-left">
+				<h1>Welcome Back!</h1>
+				<p>Please login with your personal info</p>
+				<button class="ghost" id="signIn">Sign In</button>
+			</div>
+			<div class="overlay-panel overlay-right">
+				<h1>Hello, Friend!</h1>
+				<p>Enter your personal details and start your journey with us</p>
+				<button class="ghost" id="signUp">Sign Up</button>
+			</div>
+		</div>
+	</div>
 </div>
