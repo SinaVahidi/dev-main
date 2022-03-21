@@ -1604,6 +1604,12 @@ ion-icon[name="add-outline"] {
 .ffc-page-wholesale-landing .landing-block--background-image-text .content-area .btn{
   color: #6cace1;
   border-color: #6cace1;
+  background: white;
+}
+.ffc-page-wholesale-landing .landing-block--background-image-text .content-area .btn:hover, .ffc-page-wholesale-landing .landing-block--background-image-text .content-area .btn:focus, .ffc-page-wholesale-landing .landing-block--background-image-text .content-area .btn:active {
+  color: white!important;
+  background: #6cace1!important;
+  border-color: #6CACE4!important;
 }
 .ffc-page-wholesale-landing .ffc-background-image-text__image{
   height:30rem;
