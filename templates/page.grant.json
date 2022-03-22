@@ -1,1 +1,31 @@
-{"sections":{"main":{"type":"page-grant-redesign","settings":{}}},"order":["main"]}
+{
+  "sections": {
+    "main": {
+      "type": "page-grant-redesign",
+      "settings": {
+        "main_hero_title": "The nomz Grant",
+        "main_hero_subtitle": "",
+        "main_hero_img": "shopify:\/\/shop_images\/hazelnut_e84c3543-fdb0-4e60-8cce-a632f3a39f35.jpg",
+        "section_2_title": "How It Started",
+        "section_2_text": "",
+        "section_3_title": "How To Apply",
+        "section_3_text": "",
+        "section_4_main_title": "Recipients Of The Grant",
+        "section_4_title": "Sept 25 2020",
+        "section_4_text": "",
+        "section_4_more_title": "",
+        "section_4_more_text": "",
+        "section_5_title": "October 1, 2021",
+        "section_5_text": "",
+        "section_5_more_title": "",
+        "section_5_more_text": "",
+        "section_6_title": "Looking to get in touch?",
+        "section_6_subtitle": "",
+        "section_6_img": "shopify:\/\/shop_images\/bites-tray.jpg"
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}
