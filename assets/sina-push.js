@@ -207,3 +207,8 @@ recoverCancel.addEventListener('click', () => {
   containerLogin.classList.remove("hide");
   containerRecover2.classList.add("hide");
 });
+
+const customerLoginForm = document.querySelector('#customer_login');
+const customerSignupForm = document.querySelector('#create_customer');
+customerLoginForm.classList.add("form-login");
+customerSignupForm.classList.add("form-login");
