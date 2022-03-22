@@ -192,3 +192,18 @@ signUpButton.addEventListener('click', () => {
 signInButton.addEventListener('click', () => {
 	container.classList.remove("right-panel-active");
 });
+
+const forgotPasswordLink = document.querySelector('.forgot_password');
+const containerLogin = document.querySelector('.container-login');
+const containerRecover = document.querySelector('#RecoverPasswordForm');
+const recoverCancel = document.querySelector('#HideRecoverPasswordLink');
+const containerRecover2 = document.querySelector('.recover_password_container');
+forgotPasswordLink.addEventListener('click', () => {
+  containerLogin.classList.add("hide");
+  containerRecover.classList.remove("hide");
+  containerRecover2.classList.remove("hide");
+});
+recoverCancel.addEventListener('click', () => {
+  containerLogin.classList.remove("hide");
+  containerRecover2.classList.add("hide");
+});

@@ -3,24 +3,30 @@
 <div class="container-login" id="container">
 	<div class="form-container sign-up-container">
 		<form class="form-login" action="#">
-			<h1>{{ ss.sign_up_title }}</h1>
-			<span>{{ ss.sign_up_subtitle }}</span>
-            <input class="input-login" type="text" placeholder="First Name" />
-			<input class="input-login" type="text" placeholder="Last Name" />
-			<input class="input-login" type="email" placeholder="Email" />
-			<input class="input-login" type="password" placeholder="Password" />
-			<button class="button-login">Sign Up</button>
+			{% form 'create_customer' %}
+				{{ form.errors | default_errors }}
+				<h1>{{ ss.sign_up_title }}</h1>
+				<span>{{ ss.sign_up_subtitle }}</span>
+				<input class="input-login" name="customer[first_name]" id="FirstName" {% if form.first_name %}value="{{ form.first_name }}"{% endif %} type="text" placeholder="First Name" />
+				<input class="input-login" name="customer[last_name]" id="LastName" {% if form.last_name %}value="{{ form.last_name }}"{% endif %} type="text" placeholder="Last Name" />
+				<input class="input-login{% if form.errors contains 'email' %} error{% endif %}" {% if form.email %} value="{{ form.email }}"{% endif %} autocorrect="off" name="customer[email]" id="Email" type="email" placeholder="Email" />
+				<input class="input-login{% if form.errors contains 'password' %} error{% endif %}" name="customer[password]" id="CreatePassword" type="password" placeholder="Password" />
+				<button class="button-login">Sign Up</button>
+			{% endform %}
 		</form>
 	</div>
 	<div class="form-container sign-in-container">
 		<form class="form-login" action="#">
-			<h1>{{ ss.sign_in_title}}</h1>
-			<span>{{ ss.sign_in_subtitle}}</span>
-			<input class="input-login" type="email" placeholder="Email" />
-			<input class="input-login" type="password" placeholder="Password" />
-			<a href="#recover">{{ ss.sign_in_forgot }}</a>
-			<button class="button-login">Sign In</button>
-			<span class="wholesale_login">{{ ss.sign_in_wholesale}}<a href="https://wholesale.nomz.com/login">Click here.</a></span>
+			{% form 'customer_login' %}
+				{{ form.errors | default_errors }}
+				<h1>{{ ss.sign_in_title}}</h1>
+				<span>{{ ss.sign_in_subtitle}}</span>
+				<input class="input-login" type="email" placeholder="Email" />
+				<input class="input-login" type="password" placeholder="Password" />
+				<a href="#" class="forgot_password">{{ ss.sign_in_forgot }}</a>
+				<button class="button-login">Sign In</button>
+				<span class="wholesale_login">{{ ss.sign_in_wholesale}}<a href="https://wholesale.nomz.com/login">Click here.</a></span>
+			{% endform %}
 		</form>
 	</div>
 	<div class="overlay-container">
@@ -53,11 +59,10 @@
 					<span class="hide reset-password-success"></span>
 				{% endif %}
 	
-				<label for="RecoverEmail">{{ 'customer.recover_password.email' | t }}</label>
-				<input type="email" value="" name="email" id="RecoverEmail" class="input-full" autocorrect="off" autocapitalize="off" placeholder="Email">
+				<input type="email" value="" name="email" id="RecoverEmail" class="input-login" autocorrect="off" autocapitalize="off" placeholder="Email">
 	
 				<p>
-					<input type="submit" class="btn" value="{{ 'customer.recover_password.submit' | t }}">
+					<input type="submit" class="btn btn-recover" value="{{ 'customer.recover_password.submit' | t }}">
 				</p>
 				<button type="button" id="HideRecoverPasswordLink">{{ 'customer.recover_password.cancel' | t }}</button>
 			{% endform %}

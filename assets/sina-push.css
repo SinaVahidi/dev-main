@@ -660,6 +660,7 @@
 .btn:hover, .btn:focus{ 
   background-color: #6cace4!important;
   border-color: #6cace4!important;
+  color: white!important;
 }
 /* side to side problem on mobile */
 
@@ -3641,7 +3642,18 @@ button.ghost {
 .recover_password_container {
   margin: 0 auto;
   width: 30%;
-}
-.recover_password_container h2, .recover_password_container h2+p { 
   text-align: center;
+}
+.recover_password_container input { 
+  text-align: left;
+}
+
+.btn-recover{
+  background: #fff;
+  border: 1px solid #6cace4;
+  border-radius: 0.1em;
+  color: #6cace4;
+}
+.input-login:active, .input-login:focus, .input-login:focus-visible{
+  border: none!important;
 }
