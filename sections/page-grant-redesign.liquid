@@ -4,13 +4,13 @@
     background-image: url({{ section.settings.main_hero_img | img_url: '1200x'}});
   }
   .overlapping-feature__image.overlapping-feature--left::after{
-    background-image: url({{ ss.section_2_img | image_url: '1200x'}});
+    background-image: url({{ ss.section_2_img | img_url: '1200x'}});
   }
   .overlapping-feature__image.overlapping-feature--right::after{
-    background-image: url({{ ss.section_3_img | image_url: '1200x'}});
+    background-image: url({{ ss.section_3_img | img_url: '1200x'}});
   }
   .hero-alt:last-of-type {
-    background-image: url({{ ss.section_6_img | image_url: '1200x'}});
+    background-image: url({{ ss.section_6_img | img_url: '1200x'}});
   }
 {% endstyle %}
 <main class="wrapper">
