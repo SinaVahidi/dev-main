@@ -211,4 +211,10 @@ recoverCancel.addEventListener('click', () => {
 const customerLoginForm = document.querySelector('#customer_login');
 const customerSignupForm = document.querySelector('#create_customer');
 customerLoginForm.classList.add("form-login");
+customerLoginForm.addEventListener('submit', (e) => {
+  e.preventDefault();
+});
 customerSignupForm.classList.add("form-login");
+customerSignupForm.addEventListener('submit', (e) => {
+  e.preventDefault();
+});

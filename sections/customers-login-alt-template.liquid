@@ -13,7 +13,7 @@
 				<input type="submit" value="Sign Up" class="button-login"/>
 			{% endform %}
 	</div>
-	<div class="form-container sign-in-container">
+	<div class="form-container sign-in-container" id="CustomerLoginForm">
 			{% form 'customer_login' %}
 				{{ form.errors | default_errors }}
 				<h1>{{ ss.sign_in_title}}</h1>
