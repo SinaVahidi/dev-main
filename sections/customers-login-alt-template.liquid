@@ -1,8 +1,10 @@
+{% assign ss= section.settings %}
+
 <div class="container-login" id="container">
 	<div class="form-container sign-up-container">
 		<form class="form-login" action="#">
-			<h1>Create Account</h1>
-			<span>or use your account</span>
+			<h1>{{ ss.sign_up_title }}</h1>
+			<span>{{ ss.sign_up_subtitle }}</span>
             <input class="input-login" type="text" placeholder="First Name" />
 			<input class="input-login" type="text" placeholder="Last Name" />
 			<input class="input-login" type="email" placeholder="Email" />
@@ -12,27 +14,120 @@
 	</div>
 	<div class="form-container sign-in-container">
 		<form class="form-login" action="#">
-			<h1>Sign in</h1>
-			<span>or use your email for registration</span>
+			<h1>{{ ss.sign_in_title}}</h1>
+			<span>{{ ss.sign_in_subtitle}}</span>
 			<input class="input-login" type="email" placeholder="Email" />
 			<input class="input-login" type="password" placeholder="Password" />
-			<a href="#">Forgot your password?</a>
+			<a href="#recover">{{ ss.sign_in_forgot }}</a>
 			<button class="button-login">Sign In</button>
-			<span class="wholesale_login">Looking to login to the wholesale portal? <a href="https://wholesale.nomz.com/login">Click here.</a></span>
+			<span class="wholesale_login">{{ ss.sign_in_wholesale}}<a href="https://wholesale.nomz.com/login">Click here.</a></span>
 		</form>
 	</div>
 	<div class="overlay-container">
 		<div class="overlay">
 			<div class="overlay-panel overlay-left">
-				<h1>Welcome Back!</h1>
-				<p>Please login with your personal info</p>
+				<h1>{{ ss.sign_up_overlay_title }}</h1>
+				<p>{{ ss.sign_up_overlay_subtitle}}</p>
 				<button class="ghost" id="signIn" >Sign In</button>
 			</div>
 			<div class="overlay-panel overlay-right">
-				<h1>Hello, Friend!</h1>
-				<p>Enter your personal details and start your journey with us to access your subscription login and nomz rewards points</p>
+				<h1>{{ ss.sign_in_overlay_title }}</h1>
+				<p>{{ ss.sign_in_overlay_subtitle}}</p>
 				<button class="ghost" id="signUp" >Sign Up</button>
 			</div>
 		</div>
 	</div>
 </div>
+<div class="recover_password_container">
+	<div id="RecoverPasswordForm" class="hide">
+	
+		<h2>{{ 'customer.recover_password.title' | t }}</h2>
+		<p>{{ 'customer.recover_password.subtext' | t }}</p>
+	
+		<div class="form-vertical">
+			{% form 'recover_customer_password' %}
+	
+				{{ form.errors | default_errors }}
+	
+				{% if form.posted_successfully? %}
+					<span class="hide reset-password-success"></span>
+				{% endif %}
+	
+				<label for="RecoverEmail">{{ 'customer.recover_password.email' | t }}</label>
+				<input type="email" value="" name="email" id="RecoverEmail" class="input-full" autocorrect="off" autocapitalize="off" placeholder="Email">
+	
+				<p>
+					<input type="submit" class="btn" value="{{ 'customer.recover_password.submit' | t }}">
+				</p>
+				<button type="button" id="HideRecoverPasswordLink">{{ 'customer.recover_password.cancel' | t }}</button>
+			{% endform %}
+		</div>
+	</div>
+</div>
+{% schema %}
+	{
+		"name": "Animated Login Template",
+		"settings": [
+			{
+				"type": "text",
+				"id": "sign_in_title",
+				"label": "Sign in title",
+				"default": "Sign in"
+			},
+			{
+				"type": "text",
+				"id": "sign_in_subtitle",
+				"label": "Sign in subtitle",
+				"default": "or use your email for registration"
+			},
+			{
+				"type": "text",
+				"id": "sign_in_forgot",
+				"label": "Forgot password text",
+				"default": "Forgot your password?"
+			},
+			{
+				"type": "text",
+				"id": "sign_in_wholesale",
+				"label": "Wholesale redirect text",
+				"default": "Looking to login to the wholesale portal?"
+			},
+			{
+				"type": "text",
+				"id": "sign_in_overlay_title",
+				"label": "Sign in title(right overlay)",
+				"default": "Hello, Friend!"
+			},
+			{
+				"type": "text",
+				"id": "sign_in_overlay_subtitle",
+				"label": "Sign in subtitle(right overlay)",
+				"default": "Enter your personal details and start your journey with us to access your subscription login and nomz rewards points"
+			},
+			{
+				"type": "text",
+				"id": "sign_up_title",
+				"label": "Sign up title",
+				"default": "Create Account"
+			},
+			{
+				"type": "text",
+				"id": "sign_up_subtitle",
+				"label": "Sign up subtitle",
+				"default": "or use your account"
+			},
+			{
+				"type": "text",
+				"id": "sign_up_overlay_title",
+				"label": "Sign up title(left overlay)",
+				"default": "Welcome Back!"
+			},
+			{
+				"type": "text",
+				"id": "sign_up_overlay_subtitle",
+				"label": "Sign up subtitle(left overlay)",
+				"default": "Please login with your personal info"
+			}
+		]
+	}
+{% endschema %}
