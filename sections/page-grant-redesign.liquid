@@ -1,7 +1,7 @@
 {% assign ss= section.settings %}
 {% style %}
   .hero-alt {
-    background-image: url("{{ ss.main_hero_img | image_url: '1200x'}}");
+    background-image: url("{{ section.settings.main_hero_img | image_url: '1200x'}}");
   }
   .overlapping-feature__image.overlapping-feature--left::after{
     background-image: url({{ ss.section_2_img | image_url: '1200x'}});
