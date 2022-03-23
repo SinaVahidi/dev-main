@@ -3745,7 +3745,7 @@ button.ghost {
 }
 
 .customers .section-header a {
-  border-bottom: 1px solid #ececef;
+  border-bottom: 1.5px solid #ececef;
 }
     
 .customers a:after{
