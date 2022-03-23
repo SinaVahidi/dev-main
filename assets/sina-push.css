@@ -3670,3 +3670,6 @@ button.ghost {
   margin-top: -2rem;
 }
   
+.customers .grid .grid__item.medium-up--one-third {
+  background: white;
+}
