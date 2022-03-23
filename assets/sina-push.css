@@ -3682,3 +3682,7 @@ button.ghost {
 .customers .full.table--responsive thead th {
   background:#fbfbfd;
 }
+    
+.customers .grid .grid__item.medium-up--two-thirds {
+  padding-left: 3rem;
+}
