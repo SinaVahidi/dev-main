@@ -3713,3 +3713,21 @@ button.ghost {
 .customers .section-header a {
   border:none;
 }
+    
+.customers .section-header a:after{
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  float: right;
+  right: 0;
+  background: #4f4f4f;
+  transition: width 0.3s ease 0s;
+  width: 0;
+}
+
+.customers .section-header a:hover:after {
+  width: 100%;
+  float: right;
+}
