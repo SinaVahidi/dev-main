@@ -3693,10 +3693,14 @@ button.ghost {
 
 }
     
-.customers .full.table--responsive tbody .table__section, .orders .full.table--responsive tbody .table__section{
+.customers .full.table--responsive tbody .table__section{
   border-radius: 0.5rem;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   border:unset;
+}
+    
+.orders .full.table--responsive tbody .table__section{
+  border-radius: 0.5 0.5 0 0;
 }
     
 .customers .section-header, .orders .section-header{
