@@ -3665,6 +3665,6 @@ button.ghost {
 
 .page-width.page-content.customers{
   background: #fbfbfd;
-  width: 100%;
+  max-width: 100%;
 }
   
