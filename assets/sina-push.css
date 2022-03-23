@@ -3684,7 +3684,7 @@ button.ghost {
 }
     
 .customers .full.table--responsive tbody td {
-  padding:2rem 0;
+  padding:2rem 1rem;
 }
     
 .customers .full.table--responsive tbody .table__section{
