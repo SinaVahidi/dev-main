@@ -3732,7 +3732,7 @@ button.ghost {
   width: 100%;
 }
 
-.customers a:hover:after {
+.customers .grid__item.medium-up--one-third p>a:hover:after {
   width: 43%;
 }
 
