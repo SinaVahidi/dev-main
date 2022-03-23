@@ -3683,8 +3683,8 @@ button.ghost {
   background:#fbfbfd;
 }
     
-.customers .full.table--responsive tbody th {
-  padding:2rem;
+.customers .full.table--responsive tbody td {
+  padding:2rem 0;
 }
     
 .customers .full.table--responsive tbody .table__section{
