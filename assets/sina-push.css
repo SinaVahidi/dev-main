@@ -3808,8 +3808,8 @@ button.ghost {
 .addresses .btn:hover, .addresses .btn:focus{
   color: white;
   background: #6cace1!important;
-  border: 1px solid #6cace1;
-  border-radius: 0.1em;
+  border: 1px solid #6cace1!important;
+  border-radius: 0.1em!important;
 }
 
 .page-width.addresses {
