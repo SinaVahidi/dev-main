@@ -3790,6 +3790,11 @@ button.ghost {
   margin-bottom: 1rem;
 }
     
+.addresses .section-header {
+  display:flex;
+  justify-content: space-between;
+}
+    
 .btn.address-new-toggle{
   cursor:pointer!important;
 }
