@@ -3722,7 +3722,7 @@ button.ghost {
   padding: 1rem;
 }
     
-.customers a {
+.customers .grid__item.medium-up--one-third a {
   border:none;
   display: inline;
   text-decoration: underline;
@@ -3741,7 +3741,6 @@ button.ghost {
   background: #4f4f4f;
   transition: width 0.3s ease 0s;
   width: 0;
-  z-index: 10000;
 }
 
 .customers .section-header a:hover:after {
