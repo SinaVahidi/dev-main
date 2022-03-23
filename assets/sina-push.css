@@ -3743,3 +3743,7 @@ button.ghost {
 .customer_intro {
   padding: 1rem;
 }
+    
+.customers .section-header__title {
+  margin-bottom: 1rem;
+}
