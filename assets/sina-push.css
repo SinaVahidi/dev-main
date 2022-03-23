@@ -3726,8 +3726,8 @@ button.ghost {
   border:none;
   display: inline;
   text-decoration: underline;
-  text-underline-offset: 0.4rem;
-  text-decoration-color: #fbfbfd; 
+  text-underline-offset: 0.42rem;
+  text-decoration-color: #ececef; 
   
 }
     
