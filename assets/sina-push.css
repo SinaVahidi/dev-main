@@ -3790,6 +3790,6 @@ button.ghost {
   margin-bottom: 1rem;
 }
     
-.btn .address-new-toggle{
+.btn.address-new-toggle{
   cursor:pointer;
 }
