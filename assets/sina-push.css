@@ -3789,3 +3789,7 @@ button.ghost {
 .customers .section-header__title {
   margin-bottom: 1rem;
 }
+    
+.btn .address-new-toggle{
+  cursor:pointer;
+}
