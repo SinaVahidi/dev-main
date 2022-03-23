@@ -3712,7 +3712,7 @@ button.ghost {
 }
     
 .customers a {
-  border-bottom:1px solid #4f4f4f;
+  border:none;
   display: inline;
 }
     
