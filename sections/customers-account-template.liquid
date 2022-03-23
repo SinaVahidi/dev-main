@@ -3,7 +3,6 @@
 <div class="page-width page-content customers">
   <header class="section-header">
     <h1 class="section-header__title">{{ 'customer.account.title' | t }}
-    <p><a href="/pages/my-subscriptions" class="text-link">Manage Subscription</a></p>
 </h1>
     <br>
     {{ 'layout.customer.log_out'| t | customer_logout_link }}
@@ -56,7 +55,7 @@
       {{ customer.default_address | format_address }}
       
       <p><a href="{{ routes.account_addresses_url }}" class="text-link">{{ 'customer.account.view_addresses' | t }} ({{ customer.addresses_count }})</a></p>
-      {{ customer.default_address | format_address }}
+      <p><a href="/pages/my-subscriptions" class="text-link">Manage Subscription</a></p>
     </div>
 
   </div>
