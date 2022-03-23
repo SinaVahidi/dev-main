@@ -3663,14 +3663,14 @@ button.ghost {
     
 /*   Account page redesign   */
 
-.page-width.page-content.customers{
+.page-width.page-content.customers, .page-width.page-content.orders{
   background: #fbfbfd;
   max-width: 100%;
   height: 126vh;
   margin-top: -2rem;
 }
   
-.customers .grid .grid__item.medium-up--one-third {
+.customers .grid .grid__item.medium-up--one-third, .orders .grid .grid__item.medium-up--one-third {
   background: white;
   margin: 0 0 2rem 2rem;
   width: 30%;
