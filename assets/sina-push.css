@@ -3728,9 +3728,11 @@ button.ghost {
   text-decoration: underline;
   text-underline-offset: 0.42rem;
   text-decoration-color: #ececef; 
-  
 }
-    
+
+.customers .section-header a {
+  padding-bottom: 0;
+}
 .customers a:after{
   background: none repeat scroll 0 0 transparent;
   bottom: 0;
