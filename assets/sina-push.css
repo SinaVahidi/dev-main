@@ -3795,7 +3795,17 @@ button.ghost {
   justify-content: space-between;
 }
     
-.btn.address-new-toggle{
+.addresses .btn{
   cursor:pointer!important;
-  float: right;
+  color: #6cace1;
+  border: 1px solid #6cace1;
+  border-radius: 0.1em;
+  background: white;
+  transition: all 0.25s;
 }
+    
+.addresses .btn:hover {
+  color: white;
+  background: #6cace1;
+}
+  
