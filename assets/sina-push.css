@@ -3672,9 +3672,18 @@ button.ghost {
     
     
   
-.customers .grid .grid__item.medium-up--one-third, .orders .grid .grid__item.medium-up--one-third {
+.customers .grid .grid__item.medium-up--one-third {
   background: white;
   margin: 0 0 2rem 2rem;
+  width: 30%;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+    
+.orders .grid .grid__item.medium-up--one-third {
+  background: white;
+  margin: 2.5rem 0 2rem 2rem;
   width: 30%;
   padding: 1rem;
   border-radius: 0.5rem;
@@ -3715,9 +3724,6 @@ button.ghost {
   background: white;
 }
     
-.orders .grid__item.medium-up--one-third {
-  margin-top: 2rem;
-}
 .customers .section-header, .orders .section-header{
   margin: 0 auto 2rem;
 }
