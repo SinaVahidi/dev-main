@@ -3791,5 +3791,5 @@ button.ghost {
 }
     
 .btn.address-new-toggle{
-  cursor:pointer;
+  cursor:pointer!important;
 }
