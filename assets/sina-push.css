@@ -3793,6 +3793,7 @@ button.ghost {
 .addresses .section-header {
   display:flex;
   justify-content: space-between;
+  margin-left: -1.8rem;
 }
     
 .addresses .btn{
@@ -3807,6 +3808,10 @@ button.ghost {
 .addresses .btn:hover {
   color: white;
   background: #6cace1;
+}
+
+.page-width.addresses {
+  max-width: 1340px;
 }
     
 .addresses .grid__item.medium-up--one-third{
