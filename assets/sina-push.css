@@ -3808,4 +3808,10 @@ button.ghost {
   color: white;
   background: #6cace1;
 }
+    
+.addresses .grid__item.medium-up--one-third{
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border-radius: 0.5rem;
+  background: white;
+}
   
