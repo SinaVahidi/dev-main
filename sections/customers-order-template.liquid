@@ -1,12 +1,12 @@
 <div class="page-width page-content orders">
 
-  {% if settings.show_breadcrumbs %}
+  {% unless settings.show_breadcrumbs %}
     <nav class="breadcrumb" role="navigation" aria-label="breadcrumbs">
       <a href="{{ routes.account_url }}">{{ 'customer.account.title' | t }}</a>
       <span class="divider" aria-hidden="true">/</span>
       {{ 'customer.orders.title' | t }}
     </nav>
-  {% endif %}
+  {% endunless %}
 
   <header class="section-header">
     <h1 class="section-header__title">{{ 'customer.order.title' | t: name: order.name }}</h1>
