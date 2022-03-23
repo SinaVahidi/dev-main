@@ -3637,6 +3637,9 @@ button.ghost {
   .wholesale_login {
     margin-top: 2rem;
   }
+  .form-login {
+    padding: 0 20px;
+  }
 }
 
 .recover_password_container {
