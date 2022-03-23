@@ -3713,6 +3713,7 @@ button.ghost {
     
 .customers a {
   border:none;
+  display: inline;
 }
     
 .customers a:after{
