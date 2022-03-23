@@ -3715,6 +3715,9 @@ button.ghost {
   background: white;
 }
     
+.orders .grid__item.medium-up--one-third {
+  margin-top: 2rem;
+}
 .customers .section-header, .orders .section-header{
   margin: 0 auto 2rem;
 }
@@ -3822,4 +3825,3 @@ button.ghost {
   border-radius: 0.5rem;
   background: white;
 }
-  
