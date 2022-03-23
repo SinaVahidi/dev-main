@@ -3675,4 +3675,5 @@ button.ghost {
   margin: 0 0 2rem 2rem;
   width: 30%;
   padding: 1rem;
+  border-radius: 0.5rem;
 }
