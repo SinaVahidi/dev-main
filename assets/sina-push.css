@@ -3759,7 +3759,11 @@ button.ghost {
   transition: width 0.3s ease 0s;
   width: 0;
 }
-
+    
+.customers .section-header a:after{
+  height: 3px;
+}
+    
 .customers .section-header a:hover:after {
   width: 100%;
 }
