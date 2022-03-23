@@ -3711,6 +3711,7 @@ button.ghost {
 
 .customers .hr--clear {
   visibility: hidden;
+  margin: 0.3rem 0;
 }
     
 .customers .section-header {
