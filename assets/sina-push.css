@@ -3763,7 +3763,9 @@ button.ghost {
 .customers .section-header a:hover:after {
   width: 100%;
 }
-
+.customers td >a:hover:after {
+  width: 70%;
+}
 .customers .grid__item.medium-up--one-third p>a:hover:after {
   width: 43%;
 }
