@@ -138,8 +138,8 @@
           {% endfor %}
 
           <tr>
-            <td colspan="4" class="table__title table--small-hide">{{ 'customer.order.total' | t }}</td>
-            <td data-label="{{ 'customer.order.total' | t }}" class="table__title text-right">{{ order.total_price | money }}</td>
+            <td colspan="3" class="table__title table--small-hide">{{ 'customer.order.total' | t }}</td>
+            <td colspan="2" data-label="{{ 'customer.order.total' | t }}" class="table__title text-right">{{ order.total_price | money }}</td>
           </tr>
         </tfoot>
       </table>
