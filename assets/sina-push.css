@@ -3698,5 +3698,5 @@ button.ghost {
 }
 
 .customers .hr--clear {
-  visibility: none;
+  visibility: hidden;
 }
