@@ -3703,3 +3703,9 @@ button.ghost {
 .customers .hr--clear {
   visibility: hidden;
 }
+    
+.customers .section-header {
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+}
