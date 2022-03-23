@@ -3720,7 +3720,6 @@ button.ghost {
   content: "";
   display: block;
   height: 2px;
-  float: right;
   left: 0;
   background: #4f4f4f;
   transition: width 0.3s ease 0s;
