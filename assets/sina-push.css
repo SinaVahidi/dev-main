@@ -3805,9 +3805,9 @@ button.ghost {
   transition: all 0.25s;
 }
     
-.addresses .btn:hover {
+.addresses .btn:hover: .addresses .btn:focus{
   color: white;
-  background: #6cace1;
+  background: #6cace1!important;
 }
 
 .page-width.addresses {
