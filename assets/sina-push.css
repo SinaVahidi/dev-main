@@ -3696,3 +3696,7 @@ button.ghost {
 .customers .grid .grid__item.medium-up--two-thirds {
   padding-left: 3rem;
 }
+
+.customers .hr--clear {
+  visibility: none;
+}
