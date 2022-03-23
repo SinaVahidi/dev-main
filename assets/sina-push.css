@@ -3687,7 +3687,7 @@ button.ghost {
 }
  
 
-.customers .full.table--responsive tbody td, .orders .full.table--responsive tbody td {
+.customers .full.table--responsive tbody td {
   padding:1.5rem 1rem;
   border-radius: 0.5rem;
 
