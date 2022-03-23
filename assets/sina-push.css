@@ -3686,6 +3686,7 @@ button.ghost {
 .customers .full.table--responsive tbody {
   padding: 1rem;
   border-radius: 0.5rem;
+  border:unset;
 }
 .customers .grid .grid__item.medium-up--two-thirds {
   padding-left: 3rem;
