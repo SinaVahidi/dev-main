@@ -3763,6 +3763,11 @@ button.ghost {
 .customers .section-header a:hover:after {
   width: 100%;
 }
+
+.customers td >a{
+  padding-bottom:0.25rem;
+}
+    
 .customers td >a:hover:after {
   width: 70%;
 }
