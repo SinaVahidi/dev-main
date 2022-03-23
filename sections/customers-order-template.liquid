@@ -101,8 +101,8 @@
         </tbody>
         <tfoot>
           <tr>
-            <td colspan="4" class="table--small-hide">{{ 'customer.order.subtotal' | t }}</td>
-            <td data-label="{{ 'customer.order.subtotal' | t }}" class="text-right">{{ order.line_items_subtotal_price | money }}</td>
+            <td colspan="3" class="table--small-hide">{{ 'customer.order.subtotal' | t }}</td>
+            <td colspan="2" data-label="{{ 'customer.order.subtotal' | t }}" class="text-right">{{ order.line_items_subtotal_price | money }}</td>
           </tr>
 
           {% if order.cart_level_discount_applications != blank %}
@@ -125,15 +125,15 @@
 
           {% for shipping_method in order.shipping_methods %}
           <tr>
-            <td colspan="4" class="table--small-hide">{{ 'customer.order.shipping' | t }} ({{ shipping_method.title }})</td>
-            <td data-label="{{ 'customer.order.shipping' | t }}" class="text-right">{{ shipping_method.price | money }}</td>
+            <td colspan="3" class="table--small-hide">{{ 'customer.order.shipping' | t }} ({{ shipping_method.title }})</td>
+            <td colspan="2" data-label="{{ 'customer.order.shipping' | t }}" class="text-right">{{ shipping_method.price | money }}</td>
           </tr>
           {% endfor %}
 
           {% for tax_line in order.tax_lines %}
             <tr>
-              <td colspan="4" class="table--small-hide">{{ 'customer.order.tax' | t }} ({{ tax_line.title }} {{ tax_line.rate | times: 100 }}%)</td>
-              <td data-label="{{ 'customer.order.tax' | t }}" class="text-right">{{ tax_line.price | money }}</td>
+              <td colspan="3" class="table--small-hide">{{ 'customer.order.tax' | t }} ({{ tax_line.title }} {{ tax_line.rate | times: 100 }}%)</td>
+              <td colspan="2" data-label="{{ 'customer.order.tax' | t }}" class="text-right">{{ tax_line.price | money }}</td>
             </tr>
           {% endfor %}
 
