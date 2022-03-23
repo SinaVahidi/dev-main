@@ -3681,11 +3681,10 @@ button.ghost {
     
 .customers .full.table--responsive thead th {
   background:#fbfbfd;
-}
- 
-.customers .full.table--responsive thead {
   margin-bottom: 2rem;
 }
+ 
+
 .customers .full.table--responsive tbody td {
   padding:1.5rem 1rem;
   border-radius: 0.5rem;
