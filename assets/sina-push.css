@@ -3696,6 +3696,13 @@ button.ghost {
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   border:unset;
 }
+    
+.customers .section-header{
+  border-radius: 0.5rem;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  background: white;
+}
+    
 .customers .grid .grid__item.medium-up--two-thirds {
   padding-left: 3rem;
 }
