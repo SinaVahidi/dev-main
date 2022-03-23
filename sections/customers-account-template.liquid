@@ -3,10 +3,13 @@
 <div class="page-width page-content customers">
   <header class="section-header">
     <h1 class="section-header__title">{{ 'customer.account.title' | t }}
-</h1>
+	</h1>
     <br>
     {{ 'layout.customer.log_out'| t | customer_logout_link }}
   </header>
+  <div class="customer_intro">
+    <h2 class="customer_intro_title">Hey {{ customer.name }}, welcome back!</h2>
+  </div>
 
   <div class="grid">
 
