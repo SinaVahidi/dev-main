@@ -3711,11 +3711,11 @@ button.ghost {
   padding: 1rem;
 }
     
-.customers .section-header a {
+.customers a {
   border:none;
 }
     
-.customers .section-header a:after{
+.customers a:after{
   background: none repeat scroll 0 0 transparent;
   bottom: 0;
   content: "";
@@ -3727,7 +3727,7 @@ button.ghost {
   width: 0;
 }
 
-.customers .section-header a:hover:after {
+.customers a:hover:after {
   width: 100%;
 }
 
