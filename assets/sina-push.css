@@ -3721,7 +3721,7 @@ button.ghost {
   display: block;
   height: 2px;
   float: right;
-  right: 0;
+  left: 0;
   background: #4f4f4f;
   transition: width 0.3s ease 0s;
   width: 0;
@@ -3729,5 +3729,4 @@ button.ghost {
 
 .customers .section-header a:hover:after {
   width: 100%;
-  float: right;
 }
