@@ -51,7 +51,7 @@
     </div>
     <div class="grid__item medium-up--one-third">
       <h3>Have a subscription?</h3>
-      <p><a href="/pages/my-subscriptions" class="text-link">Manage Subscription</a></p>
+      <a href="/pages/my-subscriptions" class="text-link">Manage Subscription</a>
     </div>
     <div class="grid__item medium-up--one-third">
       <h3>{{ 'customer.account.details' | t }}</h3>
@@ -60,7 +60,7 @@
 
       {{ customer.default_address | format_address }}
       
-      <p><a href="{{ routes.account_addresses_url }}" class="text-link">{{ 'customer.account.view_addresses' | t }} ({{ customer.addresses_count }})</a></p>
+      <a href="{{ routes.account_addresses_url }}" class="text-link">{{ 'customer.account.view_addresses' | t }} ({{ customer.addresses_count }})</a>
     </div>
 
   </div>
