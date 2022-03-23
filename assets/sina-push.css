@@ -3698,7 +3698,7 @@ button.ghost {
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   border:unset;
 }
-.orders .full.table--responsive tfoot{
+.orders .full.table--responsive td{
   border-radius: 0 0 0.5rem 0.5rem;
 }
     
