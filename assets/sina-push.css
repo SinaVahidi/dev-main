@@ -3708,6 +3708,7 @@ button.ghost {
   text-align: left;
   display: flex;
   justify-content: space-between;
+  padding: 1rem;
 }
     
 .customers .section-header a {
