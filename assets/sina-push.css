@@ -3685,7 +3685,6 @@ button.ghost {
   background:#fbfbfd;
   margin-bottom: 2rem;
 }
- 
 
 .customers .full.table--responsive tbody td {
   padding:1.5rem 1rem;
@@ -3704,6 +3703,10 @@ button.ghost {
 .orders .full.table--responsive tbody td{
   padding:1.5rem 1rem;
   border-radius: 0.5rem 0.5rem 0 0;
+}
+    
+.orders .full.table--responsive{
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
     
 .customers .section-header, .orders .section-header{
