@@ -3683,7 +3683,7 @@ button.ghost {
   background:#fbfbfd;
 }
     
-.customers .full.table--responsive tbody {
+.customers .full.table--responsive tbody table__section{
   padding: 1rem;
   border-radius: 0.5rem;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
