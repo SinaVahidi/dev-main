@@ -3701,7 +3701,8 @@ button.ghost {
   border-radius: 0.5rem;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   background: white;
-  width: 90%;
+  width: 98%;
+  margin: auto;
 }
     
 .customers .grid .grid__item.medium-up--two-thirds {
