@@ -3690,7 +3690,6 @@ button.ghost {
 .customers .full.table--responsive tbody td {
   padding:1.5rem 1rem;
   border-radius: 0.5rem;
-
 }
     
 .customers .full.table--responsive tbody .table__section{
@@ -3702,7 +3701,8 @@ button.ghost {
   border-radius: 0 0 0.5rem 0.5rem;
 }
     
-.orders .full.table--responsive tbody .table__section{
+.orders .full.table--responsive tbody td{
+  padding:1.5rem 1rem;
   border-radius: 0.5rem 0.5rem 0 0;
 }
     
