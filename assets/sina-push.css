@@ -3727,6 +3727,7 @@ button.ghost {
   display: inline;
   text-decoration: underline;
   text-underline-offset: 0.4rem;
+  text-decoration-color: #fbfbfd; 
   
 }
     
