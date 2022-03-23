@@ -3703,7 +3703,7 @@ button.ghost {
 }
     
 .orders .full.table--responsive tbody .table__section{
-  border-radius: 0.5 0.5 0 0;
+  border-radius: 0.5rem 0.5rem 0 0;
 }
     
 .customers .section-header, .orders .section-header{
