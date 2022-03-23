@@ -3660,3 +3660,10 @@ button.ghost {
 .input-login:active, .input-login:focus, .input-login:focus-visible{
   border: none!important;
 }
+    
+/*   Account page redesign   */
+
+.page-width.page-content.customers{
+  background: #fbfbfd;
+}
+  
