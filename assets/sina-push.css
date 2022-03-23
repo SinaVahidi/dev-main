@@ -3684,7 +3684,9 @@ button.ghost {
   margin-bottom: 2rem;
 }
  
-
+.customers .full.table--responsive thead th:first-of-type {
+  padding-left:0;
+}
 .customers .full.table--responsive tbody td {
   padding:1.5rem 1rem;
   border-radius: 0.5rem;
