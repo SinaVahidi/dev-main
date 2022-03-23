@@ -3736,7 +3736,9 @@ button.ghost {
   width: 43%;
 }
 
-
+.customers .grid__item.medium-up--one-third a:hover:after {
+  width: 40%;
+}
 .customer_intro {
   padding: 1rem;
 }
