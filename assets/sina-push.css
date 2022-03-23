@@ -3707,6 +3707,7 @@ button.ghost {
     
 .orders .full.table--responsive{
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border-radius: 0.5rem;
 }
     
 .customers .section-header, .orders .section-header{
