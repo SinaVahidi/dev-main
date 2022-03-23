@@ -3681,38 +3681,38 @@ button.ghost {
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
     
-.customers .full.table--responsive thead th {
+.customers .full.table--responsive thead th, .orders .full.table--responsive thead th {
   background:#fbfbfd;
   margin-bottom: 2rem;
 }
  
 
-.customers .full.table--responsive tbody td {
+.customers .full.table--responsive tbody td, .orders .full.table--responsive tbody td {
   padding:1.5rem 1rem;
   border-radius: 0.5rem;
 
 }
     
-.customers .full.table--responsive tbody .table__section{
+.customers .full.table--responsive tbody .table__section, .orders .full.table--responsive tbody .table__section{
   border-radius: 0.5rem;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   border:unset;
 }
     
-.customers .section-header{
+.customers .section-header, .orders .section-header{
   margin: 0 auto 2rem;
 }
     
-.customers .grid .grid__item.medium-up--two-thirds {
+.customers .grid .grid__item.medium-up--two-thirds, .orders .grid .grid__item.medium-up--two-thirds {
   padding-left: 3rem;
 }
 
-.customers .hr--clear {
+.customers .hr--clear, .orders .hr--clear {
   visibility: hidden;
   margin: 0.3rem 0;
 }
     
-.customers .section-header {
+.customers .section-header, .orders .section-header  {
   text-align: left;
   display: flex;
   justify-content: space-between;
