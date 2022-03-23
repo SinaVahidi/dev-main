@@ -3672,5 +3672,6 @@ button.ghost {
   
 .customers .grid .grid__item.medium-up--one-third {
   background: white;
-  margin-left: 1rem;
+  padding-left: 0;
+  margin-left: 30px;
 }
