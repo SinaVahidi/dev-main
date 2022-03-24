@@ -3855,6 +3855,7 @@ button.ghost {
   width: 25%;
   text-align: center;
   transition: all 0.4s;
+  font-weight: bold;
 }
 .collection_toggle_button.active {
   color: white;
