@@ -48,14 +48,6 @@
 
   <div class="page-width page-content">
 
-    <!-- {% unless section.settings.collection_image_enable and collection.image %}
-      <header class="section-header">
-        <h1 class="section-header__title">
-          {{ collection.title }}
-        </h1>
-      </header>
-    {% endunless %} -->
-
     {% if section.settings.collection_tags_style == 'dropdown' or section.settings.collection_sort_enable %}
       <div class="collection-filter">
         <div class="grid grid--uniform">
@@ -107,14 +99,15 @@
         </div>
       </div>
     {% endif %}
-
-    <!-- {% if collection.description != blank %}
-      <div class="rte">
-        {{ collection.description }}
-      </div>
-      <hr class="hr--clear hr--small">
-    {% endif %} -->
     {% assign header = ss.collection_header %}
+    <div class="collection_toggle_container">
+      <div class="collection_toggle_buttons">
+        <a href=".../all" class="collection_toggle_button {% if collection.title = 'all' %} active {% endif %}">All Products</a>
+        <a href=".../best-sellers" class="collection_toggle_button {% if collection.title = 'best sellers' %} active {% endif %}">Best Sellers</a>
+        <a href=".../energy-bites" class="collection_toggle_button {% if collection.title = 'energy bites' %} active {% endif %}">Energy Bites</a>
+        <a href=".../nut-butters" class="collection_toggle_button {% if collection.title = 'nut butters' %} active {% endif %}">Nut Butters</a>
+      </div>
+    </div>
     {% unless collection.url == "/collections/all" %}
       <header class="header">
         <section class="header__container" {% if header == 'best sellers' or header == 'pistachio' %}style="background-position:bottom -270px right 0px;"{% endif %}>
@@ -127,6 +120,7 @@
         </section>
       </header>
     {% endunless %}
+
     <div id="CollectionAjaxResult">
       <div id="CollectionAjaxContent">
         <div class="grid grid--uniform">

@@ -3831,3 +3831,36 @@ button.ghost {
   border-radius: 0.5rem;
   background: white;
 }
+
+
+/* Collection filter styles */
+
+.collection_toggle_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.collection_toggle_buttons {
+  overflow: hidden;
+  width: 50%;
+  background: #DDDDDF;
+  border-radius: 0.3rem;
+  display: flex;
+  margin: -2rem 0 2rem;
+}
+
+.collection_toggle_button {
+  padding: 1rem;
+  width: 25%;
+  text-align: center;
+  transition: all 0.4s;
+}
+.collection_toggle_button.active {
+  color: white;
+  background: #6cace1;
+}
+.collection_toggle_button:hover{
+  color: white;
+  background: #6cace1;
+}
