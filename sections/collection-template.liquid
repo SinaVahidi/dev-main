@@ -100,8 +100,8 @@
       </div>
     {% endif %}
     {% assign header = ss.collection_header %}
+    {{collection.title}}
     <div class="collection_toggle_container">
-      {{collection.title}}
       <div class="collection_toggle_buttons">
         <a href="https://nomz.com/collections/all" class="collection_toggle_button {% if collection.title == 'product' %} active {% endif %}">All Products</a>
         <a href="https://nomz.com/collections/best-sellers" class="collection_toggle_button {% if collection.title == 'best sellers' %} active {% endif %}">Best Sellers</a>
