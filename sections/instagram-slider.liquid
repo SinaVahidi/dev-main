@@ -1,14 +1,25 @@
 {% assign ss = section.settings %}
 {% style %}
-.item:nth-child(1) { background-image: url('http://source.unsplash.com/random/300x300') ;}
-.item:nth-child(2) { background-image: url('http://source.unsplash.com/random/300x401') ;}
-.item:nth-child(3) { background-image: url('http://source.unsplash.com/random/300x452') ;}
-.item:nth-child(4) { background-image: url('http://source.unsplash.com/random/300x423') ;}
-.item:nth-child(5) { background-image: url('http://source.unsplash.com/random/300x354') ;}
-.item:nth-child(6) { background-image: url('http://source.unsplash.com/random/300x425') ;}
-.item:nth-child(7) { background-image: url('http://source.unsplash.com/random/300x370') ;}
-.item:nth-child(8) { background-image: url('http://source.unsplash.com/random/300x310') ;}
-.item:nth-child(9) { background-image: url('http://source.unsplash.com/random/300x350') ;}
+.item:nth-child(1) { background-image: url({{ ss.img_1 | img_url: '1200x'}}) ;}
+.item:nth-child(2) { background-image: url({{ ss.img_2 | img_url: '1200x'}}) ;}
+.item:nth-child(3) { background-image: url({{ ss.img_3 | img_url: '1200x'}}) ;}
+.item:nth-child(4) { background-image: url({{ ss.img_4 | img_url: '1200x'}}) ;}
+.item:nth-child(5) { background-image: url({{ ss.img_5 | img_url: '1200x'}}) ;}
+.item:nth-child(6) { background-image: url({{ ss.img_6 | img_url: '1200x'}}) ;}
+.item:nth-child(7) { background-image: url({{ ss.img_7 | img_url: '1200x'}}) ;}
+.item:nth-child(8) { background-image: url({{ ss.img_8 | img_url: '1200x'}}) ;}
+.item:nth-child(9) { background-image: url({{ ss.img_9 | img_url: '1200x'}}) ;}
+.item:nth-child(10) { background-image: url({{ ss.img_10 | img_url: '1200x'}}) ;}
+.item:nth-child(11) { background-image: url({{ ss.img_11 | img_url: '1200x'}}) ;}
+.item:nth-child(12) { background-image: url({{ ss.img_12 | img_url: '1200x'}}) ;}
+.item:nth-child(13) { background-image: url({{ ss.img_13 | img_url: '1200x'}}) ;}
+.item:nth-child(14) { background-image: url({{ ss.img_14 | img_url: '1200x'}}) ;}
+.item:nth-child(15) { background-image: url({{ ss.img_15 | img_url: '1200x'}}) ;}
+.item:nth-child(16) { background-image: url({{ ss.img_16 | img_url: '1200x'}}) ;}
+.item:nth-child(17) { background-image: url({{ ss.img_17 | img_url: '1200x'}}) ;}
+.item:nth-child(18) { background-image: url({{ ss.img_18 | img_url: '1200x'}}) ;}
+.item:nth-child(19) { background-image: url({{ ss.img_19 | img_url: '1200x'}}) ;}
+.item:nth-child(20) { background-image: url({{ ss.img_20 | img_url: '1200x'}}) ;}
 
 {% endstyle %}
 
@@ -18,64 +29,64 @@
 <main class="slider-content">
 	<div class="items">
 		<div class="item item1">
-			<a href="https://www.instagram.com/nomz/" class="item-link"></a>
+			<a href="{{ ss.img_1_url }}" class="item-link"></a>
 		</div>
 		<div class="item item2">
-			<a href="https://www.instagram.com/nomz/" class="item-link"></a>
+			<a href="{{ ss.img_2_url }}" class="item-link"></a>
 		</div>
 		<div class="item item3">
-			<a href="https://www.instagram.com/nomz/" class="item-link"></a>
+			<a href="{{ ss.img_3_url }}" class="item-link"></a>
 		</div>
 		<div class="item item4">
-			<a href="https://www.instagram.com/nomz/" class="item-link"></a>
+			<a href="{{ ss.img_4_url }}" class="item-link"></a>
 		</div>
 		<div class="item item5">
-			<a href="https://www.instagram.com/nomz/" class="item-link"></a>
+			<a href="{{ ss.img_5_url }}" class="item-link"></a>
 		</div>
 		<div class="item item6">
-			<a href="https://www.instagram.com/nomz/" class="item-link"></a>
+			<a href="{{ ss.img_6_url }}" class="item-link"></a>
 		</div>
 		<div class="item item7">
-			<a href="https://www.instagram.com/nomz/" class="item-link"></a>
+			<a href="{{ ss.img_7_url }}" class="item-link"></a>
 		</div>
 		<div class="item item8">
-			<a href="https://www.instagram.com/nomz/" class="item-link"></a>
+			<a href="{{ ss.img_8_url }}" class="item-link"></a>
 		</div>
 		<div class="item item9">
-			<a href="https://www.instagram.com/nomz/" class="item-link"></a>
+			<a href="{{ ss.img_9_url }}" class="item-link"></a>
 		</div>
 		<div class="item item10">
-			<a href="https://www.instagram.com/nomz/" class="item-link"></a>
+			<a href="{{ ss.img_10_url }}" class="item-link"></a>
 		</div>
 		<div class="item item11">
-			<a href="https://www.instagram.com/nomz/" class="item-link"></a>
+			<a href="{{ ss.img_11_url }}" class="item-link"></a>
 		</div>
 		<div class="item item12">
-			<a href="https://www.instagram.com/nomz/" class="item-link"></a>
+			<a href="{{ ss.img_12_url }}" class="item-link"></a>
 		</div>
 		<div class="item item13">
-			<a href="https://www.instagram.com/nomz/" class="item-link"></a>
+			<a href="{{ ss.img_13_url }}" class="item-link"></a>
 		</div>
 		<div class="item item14">
-			<a href="https://www.instagram.com/nomz/" class="item-link"></a>
+			<a href="{{ ss.img_14_url }}" class="item-link"></a>
 		</div>
 		<div class="item item15">
-			<a href="https://www.instagram.com/nomz/" class="item-link"></a>
+			<a href="{{ ss.img_15_url }}" class="item-link"></a>
 		</div>
 		<div class="item item16">
-			<a href="https://www.instagram.com/nomz/" class="item-link"></a>
+			<a href="{{ ss.img_16_url }}" class="item-link"></a>
 		</div>
 		<div class="item item17">
-			<a href="https://www.instagram.com/nomz/" class="item-link"></a>
+			<a href="{{ ss.img_17_url }}" class="item-link"></a>
 		</div>
 		<div class="item item18">
-			<a href="https://www.instagram.com/nomz/" class="item-link"></a>
+			<a href="{{ ss.img_18_url }}" class="item-link"></a>
 		</div>
 		<div class="item item19">
-			<a href="https://www.instagram.com/nomz/" class="item-link"></a>
+			<a href="{{ ss.img_19_url }}" class="item-link"></a>
 		</div>
 		<div class="item item20">
-			<a href="https://www.instagram.com/nomz/" class="item-link"></a>
+			<a href="{{ ss.img_20_url }}" class="item-link"></a>
 		</div>
   </div>
 </main>
