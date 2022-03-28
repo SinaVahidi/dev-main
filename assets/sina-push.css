@@ -3933,16 +3933,6 @@ button.ghost {
   box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 
-/* .item:nth-child(9n+1) { background-image: url('http://source.unsplash.com/random/300x300') ;}
-.item:nth-child(9n+2) { background-image: url('http://source.unsplash.com/random/300x401') ;}
-.item:nth-child(9n+3) { background-image: url('http://source.unsplash.com/random/300x452') ;}
-.item:nth-child(9n+4) { background-image: url('http://source.unsplash.com/random/300x423') ;}
-.item:nth-child(9n+5) { background-image: url('http://source.unsplash.com/random/300x354') ;}
-.item:nth-child(9n+6) { background-image: url('http://source.unsplash.com/random/300x425') ;}
-.item:nth-child(9n+7) { background-image: url('http://source.unsplash.com/random/300x370') ;}
-.item:nth-child(9n+8) { background-image: url('http://source.unsplash.com/random/300x310') ;}
-.item:nth-child(9n+9) { background-image: url('http://source.unsplash.com/random/300x350') ;} */
-
 .item-link {
   width: 100%;
   height: 100%;
