@@ -151,6 +151,12 @@ $(function() {
   $("[data-js=open2]").on("click", function() {
 		popupOpenClose($(".popup2"));
 	});
+  $('.site-nav--has-dropdown--megamenu').mouseover(() => {
+    $('#yotpo_testimonials_btn').css('visibility', 'hidden');
+  });   
+  $('.megamenu-init').mouseleave(() => {
+    $('#yotpo_testimonials_btn').css('visibility', 'visible');
+  }); 
 });
 
 function popupOpenClose(popup) {
@@ -198,6 +204,7 @@ const containerLogin = document.querySelector('.container-login');
 const containerRecover = document.querySelector('#RecoverPasswordForm');
 const recoverCancel = document.querySelector('#HideRecoverPasswordLink');
 const containerRecover2 = document.querySelector('.recover_password_container');
+const signInContainer = document.querySelector('.sign-in-container');
 forgotPasswordLink.addEventListener('click', () => {
   containerLogin.classList.add("hide");
   containerRecover.classList.remove("hide");

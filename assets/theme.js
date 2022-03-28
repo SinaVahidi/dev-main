@@ -2468,7 +2468,7 @@ lazySizesConfig.expFactor = 4;
      */
     function toggleRecoverPasswordForm() {
       $('#RecoverPasswordForm').toggleClass('hide');
-      $('#CustomerLoginForm').toggleClass('hide');
+      // $('#CustomerLoginForm').toggleClass('hide');
     }
   
     /**

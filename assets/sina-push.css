@@ -539,12 +539,11 @@
 }
 
 .header-section--v2 .megamenu-init {
-  margin: 24px 0% 0 3rem;
   top: 111px;
-  max-width: 86%;
+  max-width: 100%;
   right: 0;
-  border-radius: 0.4rem;
   padding: 15px 0 25px;
+  z-index: 30000000;
 }
 
 
