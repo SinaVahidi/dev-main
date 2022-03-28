@@ -3925,6 +3925,7 @@ button.ghost {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  background-size: cover;
   font-size: 80px;
   font-weight: 100;
   color:rgba(0,0,0,0.5);
