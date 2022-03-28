@@ -512,16 +512,20 @@
 
 /* desktop shop drop down overrides*/
 .header-section--v2 .megamenu-init .megamenu-init-inner {
-  justify-content: end;
-  max-width:1000px;
-  margin: 0 0 0 46%;
+  max-width:780px;
+  margin: 0;
 }
 
+.header-section--v2 .megamenu-init .megamenu-init-inner>li:first-child {
+  margin-left: 30px;
+}
 .header-section--v2 .megamenu-init .feat-prdct-grd-items-wrapper {
   max-width: 674px;
   margin-right: -200px;
 }
-
+.site-nav__deep-dropdown-trigger:nth-child(2) {
+  display: none;
+}
 .header-section--v2 .megamenu-init .feat-prdct-grd-items-wrapper .feat-prdct-grd-items {
   min-width: 1134px;
 }
@@ -540,10 +544,16 @@
 
 .header-section--v2 .megamenu-init {
   top: 111px;
-  max-width: 100%;
+  max-width: 70%;
   right: 0;
-  padding: 15px 0 25px;
+  left: 30px;
+  padding: 25px 0;
   z-index: 30000000;
+  border-radius: 0 0 0.5rem 0.5rem;
+}
+
+.site-nav--has-dropdown:hover .site-nav__dropdown, .is-focused>.site-nav__dropdown {
+  border-radius: 0 0 0.5rem 0.5rem;
 }
 
 
