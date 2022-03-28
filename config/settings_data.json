@@ -1836,6 +1836,36 @@
           "text": "We're lucky to have so many happy customers. We're confident you'll be one too.\n<br><br>\nIf you're not 100% satisfied with your order, reach out to care@nomz.com and we'll send you a full refund, no questions asked.",
           "layout": "left"
         }
+      },
+      "1648487083c94e20c8": {
+        "type": "instagram-slider",
+        "settings": {
+          "img_1": "shopify:\/\/shop_images\/857A2062.jpg",
+          "img_1_url": "",
+          "img_2": "shopify:\/\/shop_images\/857A1944.jpg",
+          "img_2_url": "",
+          "img_3": "shopify:\/\/shop_images\/hazelnut_butter.jpg",
+          "img_3_url": "",
+          "img_4": "shopify:\/\/shop_images\/Beeswax-Candle-4.jpg",
+          "img_4_url": "",
+          "img_5": "shopify:\/\/shop_images\/story_middle.jpg",
+          "img_5_url": "",
+          "img_6_url": "",
+          "img_7_url": "",
+          "img_8_url": "",
+          "img_9_url": "",
+          "img_10_url": "",
+          "img_11_url": "",
+          "img_12_url": "",
+          "img_13_url": "",
+          "img_14_url": "",
+          "img_15_url": "",
+          "img_16_url": "",
+          "img_17_url": "",
+          "img_18_url": "",
+          "img_19_url": "",
+          "img_20_url": ""
+        }
       }
     },
     "content_for_index": [
@@ -1855,7 +1885,8 @@
       "1644617339b9a020d3",
       "16401960982d1b854d",
       "1642170268a8da40df",
-      "16426573624d22dfce"
+      "16426573624d22dfce",
+      "1648487083c94e20c8"
     ]
   },
   "presets": {
