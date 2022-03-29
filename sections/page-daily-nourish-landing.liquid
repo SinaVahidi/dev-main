@@ -1,7 +1,4 @@
 <div class="product-landing-container">
-	<!-- <div class="product-landing-bar">
-		<img src="http://cdn.shopify.com/s/files/1/0857/4434/files/whitelogopng_140x@2x.png?v=1591974821" alt="">
-	</div> -->
 	<div class="product-landing-header">
 		<h1>5 Reasons why Daily Nourish Superfood Mix is the #1 greens and superfood mix available today!</h1>
 		<p> Simplify your morning routine, improve your digestion, energy, immunity and more - all with one serving of this delicious and nutrient-dense mix!</p>
@@ -110,3 +107,82 @@
 		<video autoplay loop muted controls="controls" src="https://cdn.shopify.com/s/files/1/0857/4434/files/almondwebvideo.mov?v=1645033360"></video>
 	</div>
 </div>
+<!-- <section class="bottom-section">
+    <div class="main-container mb-5">
+      <div class="row inside-content">
+        <h2 class="text-center bottom-heading">{{ ss.ingredient-section-head | escape}}</h2>
+        <p class="middle-text px-md-3 text-center mb-0 px-0">{{ ss.ingredient-section-text| escape}}</p>
+        
+        <div class="index-section product-ingredients-section">
+            <div class="main-container-ingredients">
+  
+              {% if ss.product_ingredients_heading != blank %}
+                <header class="section-header">
+                  <h3 class="section-header__title">
+                    {{ ss.product_ingredients_heading }}
+                  </h3>
+                </header>
+              {% endif %}
+  
+              {% case ss.number_of_items_per_row %}
+              {% when 1 %}
+                {%- assign grid_item_width = '' -%}
+              {% when 2 %}
+                {%- assign grid_item_width = 'medium-up--one-half' -%}
+              {% when 3 %}
+                {%- assign grid_item_width = 'medium-up--one-third' -%}
+              {% endcase %}
+  
+              <div class="product-ingredients grid grid--uniform flex f-wrap f-j-center" {% if ss.view_more %}data-toggle-group{% endif %}>
+                  {% for block in section.blocks %}
+                    {% assign bs = block.settings %}
+                      <div class="grid__item ingredient-item ingredient-block {{ grid_item_width }}">
+  
+                        <div class="image-area">
+                          {% if bs.image != blank %}
+                            {%- assign img_url = bs.image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
+                            <img class="lazyload"
+                                data-src="{{ img_url }}"
+                                data-widths="[180, 360, 540, 720, 900, 1080]"
+                                data-aspectratio="{{ bs.image.aspect_ratio }}"
+                                data-sizes="auto"
+                                alt="{{ bs.title | escape }}">
+                            <noscript>
+                              <img class="lazyloaded" src="{{ bs.image | img_url: '400x' }}" alt="{{ bs.title | escape }}">
+                            </noscript>
+                          {% endif %}
+                        </div>
+  
+                        <div class="content-area ingredient-content-block">
+                          <h3>{{ bs.title }}</h3>
+                          <div class="rte">
+                            {{ bs.text }}
+                          </div>
+                          <div class="more_info_btn"></div>
+                        </div>
+  
+                      </div>
+                  {% endfor %}
+  
+                  {% if ss.view_more %}
+                    {% if forloop.index == ss.number_of_items_per_row %}
+                      <div data-toggle-item>
+                        <div class="btn product-ingredients-more" data-toggle-trigger>
+                          <span class="more">{{ ss.view_more_button }}</span>
+                          <span class="less">{{ ss.view_less_button }}</span>
+                        </div>
+                        <div class="product-ingredients grid grid--uniform flex f-wrap f-j-center" style="max-height: 0px;" data-toggle-elem>
+                    {% endif %}
+  
+                    {% if forloop.last %}
+                        </div>
+                      </div>
+                    {% endif %}
+                  {% endif %}
+              </div>
+  
+            </div>
+          </div>
+      </div>
+    </div>
+  </section> -->
