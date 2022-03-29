@@ -1,0 +1,13 @@
+{
+    "sections": {
+      "main": {
+        "type": "page-daily-nourish-landing",
+        "settings": {
+        }
+      }
+    },
+    "order": [
+      "main"
+    ]
+  }
+  
