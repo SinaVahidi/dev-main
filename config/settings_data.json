@@ -1483,7 +1483,7 @@
             "settings": {
               "image": "shopify:\/\/shop_images\/Nomz_ProductBenefitsIcons_web-01.png",
               "link": "",
-              "title": "ORGANIC"
+              "title": ""
             }
           },
           "16335925935f4a84e3-1": {
@@ -1491,7 +1491,7 @@
             "settings": {
               "image": "shopify:\/\/shop_images\/Nomz_ProductBenefitsIcons_web-02.png",
               "link": "",
-              "title": "VEGAN"
+              "title": ""
             }
           },
           "16335925935f4a84e3-2": {
@@ -1499,7 +1499,7 @@
             "settings": {
               "image": "shopify:\/\/shop_images\/Nomz_ProductBenefitsIcons_web_v.png",
               "link": "",
-              "title": "PALEO"
+              "title": ""
             }
           },
           "16335925935f4a84e3-3": {
@@ -1507,7 +1507,7 @@
             "settings": {
               "image": "shopify:\/\/shop_images\/Nomz_ProductBenefitsIcons_web-04.png",
               "link": "",
-              "title": "GLUTEN FREE"
+              "title": ""
             }
           },
           "076f92e8-292a-4e87-9922-89a0eda45faf": {
@@ -1538,7 +1538,7 @@
         ],
         "settings": {
           "title": "naturally delicious",
-          "text": "<p>snacks made with simple, healthy ingredients<\/p>",
+          "text": "<p>all of our products are certified organic, vegan, gluten-free and have no refined sugars<\/p>",
           "color_bg": "",
           "color_text": ""
         }
