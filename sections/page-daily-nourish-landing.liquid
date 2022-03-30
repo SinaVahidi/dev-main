@@ -1,188 +1,493 @@
-<div class="product-landing-container">
-	<div class="product-landing-header">
-		<h1>5 Reasons why Daily Nourish Superfood Mix is the #1 greens and superfood mix available today!</h1>
-		<p> Simplify your morning routine, improve your digestion, energy, immunity and more - all with one serving of this delicious and nutrient-dense mix!</p>
+{% assign ss = section.settings %}
+{% style %}
+  .card:nth-child(1):before {
+    background-image: url('{{ ss.card_img_1 | img_url: "1200x"}}');
+  }
+  .card:nth-child(2):before {
+    background-image: url('{{ ss.card_img_2 | img_url: "1200x" }}');
+  }
+  .card:nth-child(3):before {
+    background-image: url('{{ ss.card_img_3 | img_url: "1200x" }}');
+  }
+{% endstyle %}
+<div class="product-landing-wrap">
+	<div class="product-landing-container">
+		<div class="product-landing-header">
+			<h1>{{ ss.product-landing-title }}</h1>
+			<p> {{ ss.product-landing-subtitle }}</p>
+		</div>
+		<div class="product-landing-row row">
+			<div class="col-md-6 image">
+				<img src='{{ ss.reason-img-1 | img_url: "1200x" }}' alt="">
+			</div>
+			<div class="col-md-6">
+				<h2 class="product-landing-count">1</h2>
+				<h3 class="reason-title">{{ ss.reason-title-1}}</h3>
+				<p class="reason-text">{{ ss.reason-text-1}}</p>
+			</div>
+		</div>
+		<div class="product-landing-row row">
+			<div class="col-md-6">
+				<h2 class="product-landing-count">2</h2>
+				<h3 class="reason-title">{{ ss.reason-title-2}}</h3>
+				<p class="reason-text">{{ ss.reason-text-2}}</p>
+			</div>
+			<div class="col-md-6 image">
+				<img src='{{ ss.reason-img-2 | img_url: "1200x" }}' alt="">
+			</div>
+		</div>
+		<div class="product-landing-row row">
+			<div class="col-md-6 image">
+				<img src='{{ ss.reason-img-3 | img_url: "1200x" }}' alt="">
+			</div>
+			<div class="col-md-6">
+				<h2 class="product-landing-count">3</h2>
+				<h3 class="reason-title">{{ ss.reason-title-3}}</h3>
+				<p class="reason-text">{{ ss.reason-text-3}}</p>
+			</div>
+		</div>
+		<div class="product-landing-row row">
+			<div class="col-md-6">
+				<h2 class="product-landing-count">4</h2>
+				<h3 class="reason-title">{{ ss.reason-title-4}}</h3>
+				<p class="reason-text">{{ ss.reason-text-4}}</p>
+			</div>
+			<div class="col-md-6 image">
+				<img src='{{ ss.reason-img-4 | img_url: "1200x" }}' alt="">
+			</div>
+		</div>
+		<div class="product-landing-row row">
+			<div class="col-md-6 image">
+				<img src='{{ ss.reason-img-5 | img_url: "1200x" }}' alt="">
+			</div>
+			<div class="col-md-6">
+				<h2 class="product-landing-count">5</h2>
+				<h3 class="reason-title">{{ ss.reason-title-5}}</h3>
+				<p class="reason-text">{{ ss.reason-text-5}}</p>
+			</div>
+		</div>
 	</div>
-	<div class="product-landing-row row">
-		<div class="col-md-6 image">
-			<img src="https://d33wubrfki0l68.cloudfront.net/55e6d484850f9a09b7c107d5890fa87e4a4a998b/4b5f9/images/rectangle-3.png" alt="">
+	<div class="testimonials-with-video">
+		<div class="testimonials-container">
+			<div class="testimonial-content">
+				<p class="product-landing-stars">
+					<span class="product-landing-star">&#11088;</span>
+					<span class="product-landing-star">&#11088;</span>
+					<span class="product-landing-star">&#11088;</span>
+					<span class="product-landing-star">&#11088;</span>
+					<span class="product-landing-star">&#11088;</span>
+				</p>
+				<h3 class="testimonial-title">{{ ss.testimonial-title-1 }}</h3>
+				<p class="testimonial-text">{{ ss.testimonial-text-1 }}</p>
+				<p class="testimonial-author">{{ ss.testimonial-author-1 }} &#10050; {{ ss.testimonial-author-stat-1 }}</p>
+			</div>
+			<div class="testimonial-content">
+				<p class="product-landing-stars">
+					<span class="product-landing-star">&#11088;</span>
+					<span class="product-landing-star">&#11088;</span>
+					<span class="product-landing-star">&#11088;</span>
+					<span class="product-landing-star">&#11088;</span>
+					<span class="product-landing-star">&#11088;</span>
+				</p>
+				<h3 class="testimonial-title">{{ ss.testimonial-title-2 }}</h3>
+				<p class="testimonial-text">{{ ss.testimonial-text-2 }}</p>
+				<p class="testimonial-author">{{ ss.testimonial-author-2 }} &#10050; {{ ss.testimonial-author-stat-2 }}</p>
+			</div>
+			<div class="testimonial-content">
+				<p class="product-landing-stars">
+					<span class="product-landing-star">&#11088;</span>
+					<span class="product-landing-star">&#11088;</span>
+					<span class="product-landing-star">&#11088;</span>
+					<span class="product-landing-star">&#11088;</span>
+					<span class="product-landing-star">&#11088;</span>
+				</p>
+				<h3 class="testimonial-title">{{ ss.testimonial-title-3 }}</h3>
+				<p class="testimonial-text">{{ ss.testimonial-text-3 }}</p>
+				<p class="testimonial-author">{{ ss.testimonial-author-3 }} &#10050; {{ ss.testimonial-author-stat-3 }}</p>
+			</div>
 		</div>
-		<div class="col-md-6">
-			<h2 class="product-landing-count">1</h2>
-			<h3 class="reason-title">Plant Based Iron </h3>
-			<p class="reason-text">Surpassing all other superfood mixes and greens powders currently available, Daily Nourish includes a synergistic mix of plant-based greens, supplying 22 mg of bioavailable iron per serving. This is thanks to the star ingredient, organic curry leaf! Iron supplements that come in capsule or pill form can be difficult to absorb and hard on the stomach, resulting in low compliance. The good news? It’s easier than ever to meet your daily iron intake with Daily Nourish superfood mix. </p>
-		</div>
-	</div>
-	<div class="product-landing-row row">
-		<div class="col-md-6">
-			<h2 class="product-landing-count">2</h2>
-			<h3 class="reason-title">Convenience, Elevated.</h3>
-			<p class="reason-text">Your time is just as valuable as your health! No one has the time (or pantry space) to measure out  and add over10 separate superfood ingredients to your daily smoothie. Instead, we’ve combined 13 of the world’s best superfoods into one simple mix. Best of all, each ingredient is optimized for the best serving size. Not sure how much flaxseed, maca, camu camu, hemp hearts, bee pollen, or moringa to add to your smoothie? No problem - we’ve got it covered for you in one simple scoop. 
-			</p>
-		</div>
-		<div class="col-md-6 image">
-			<img src="https://d33wubrfki0l68.cloudfront.net/55e6d484850f9a09b7c107d5890fa87e4a4a998b/4b5f9/images/rectangle-3.png" alt="">
-		</div>
-	</div>
-	<div class="product-landing-row row">
-		<div class="col-md-6 image">
-			<img src="https://d33wubrfki0l68.cloudfront.net/55e6d484850f9a09b7c107d5890fa87e4a4a998b/4b5f9/images/rectangle-3.png" alt="">
-		</div>
-		<div class="col-md-6">
-			<h2 class="product-landing-count">3</h2>
-			<h3 class="reason-title">360º Whole Body Benefits
-			</h3>
-			<p class="reason-text">In addition to iron, Daily Nourish is a source of fiber, magnesium, vitamin B12, and bioavailable vitamin C. With 11 g of plant-based protein per serving and 7 g of heart-healthy fats. Daily Nourish boosts energy and vitality, healthy digestion, immunity, heart health and cognitive health. This all in one mix is anti-inflammatory, rich in antioxidants, and can help to regular blood sugar balance. Simplify your pantry + medicine cabinet with this nutrient dense superfood mix.
-			</p>
-		</div>
-	</div>
-	<div class="product-landing-row row">
-		<div class="col-md-6">
-			<h2 class="product-landing-count">4</h2>
-			<h3 class="reason-title">Antioxidant Power</h3>
-			<p class="reason-text">Daily Nourish contains a substantial dose of bioavailable vitamin C per serving (110 mg) - thanks to a combination of camu camu, amla berry, moringa, and spirulina. These plant based superfoods contain numerous phytochemicals that act as antioxidants including polyphenols, flavanols, anthocyanin, catechin, and more! Antioxidants are a key component for longevity and health - helping the body to fight oxidative stress and neutralize free radicals. BONUS: Vitamin C aids the absorption of iron, making this an ideal pairing with the organic curry leaf.			</p>
-		</div>
-		<div class="col-md-6 image">
-			<img src="https://d33wubrfki0l68.cloudfront.net/55e6d484850f9a09b7c107d5890fa87e4a4a998b/4b5f9/images/rectangle-3.png" alt="">
-		</div>
-	</div>
-	<div class="product-landing-row row">
-		<div class="col-md-6 image">
-			<img src="https://d33wubrfki0l68.cloudfront.net/55e6d484850f9a09b7c107d5890fa87e4a4a998b/4b5f9/images/rectangle-3.png" alt="">
-		</div>
-		<div class="col-md-6">
-			<h2 class="product-landing-count">5</h2>
-			<h3 class="reason-title">Quality First</h3>
-			<p class="reason-text">Certified organic, vegan, gluten-free, and paleo. We know that what you put in your body is important. That's why we are committed to sourcing the world's best organic ingredients and why crafting quality goods is our true north. While these certifications may be essential to us, Daily Nourish stands out from the crowd of other greens powders and superfood mixes that lack diligent research and quality assurance. </p>
+		<div class="video-container">
+			<video autoplay loop muted src='{{ ss.testimonial-video }}'></video>
 		</div>
 	</div>
+	<section class="bottom-section">
+			<div class="main-container mb-5">
+				<div class="row inside-content">
+					<h2 class="text-center bottom-heading">{{ ss.ingredient-section-head | escape}}</h2>
+					<p class="middle-text px-md-3 text-center mb-0 px-0">{{ ss.ingredient-section-text| escape}}</p>
+	
+					<div class="index-section product-ingredients-section">
+							<div class="main-container-ingredients">
+	
+								{% if ss.product_ingredients_heading != blank %}
+									<header class="section-header">
+										<h3 class="section-header__title">
+											{{ ss.product_ingredients_heading }}
+										</h3>
+									</header>
+								{% endif %}
+	
+								{% case ss.number_of_items_per_row %}
+								{% when 1 %}
+									{%- assign grid_item_width = '' -%}
+								{% when 2 %}
+									{%- assign grid_item_width = 'medium-up--one-half' -%}
+								{% when 3 %}
+									{%- assign grid_item_width = 'medium-up--one-third' -%}
+								{% endcase %}
+	
+								<div class="product-ingredients grid grid--uniform flex f-wrap f-j-center" {% if ss.view_more %}data-toggle-group{% endif %}>
+										{% for block in section.blocks %}
+											{% assign bs = block.settings %}
+												<div class="grid__item ingredient-item ingredient-block {{ grid_item_width }}">
+	
+													<div class="image-area">
+														{% if bs.image != blank %}
+															{%- assign img_url = bs.image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
+															<img class="lazyload"
+																	data-src="{{ img_url }}"
+																	data-widths="[180, 360, 540, 720, 900, 1080]"
+																	data-aspectratio="{{ bs.image.aspect_ratio }}"
+																	data-sizes="auto"
+																	alt="{{ bs.title | escape }}">
+															<noscript>
+																<img class="lazyloaded" src="{{ bs.image | img_url: '400x' }}" alt="{{ bs.title | escape }}">
+															</noscript>
+														{% endif %}
+													</div>
+	
+													<div class="content-area ingredient-content-block">
+														<h3>{{ bs.title }}</h3>
+														<div class="rte">
+															{{ bs.text }}
+														</div>
+														<div class="more_info_btn"></div>
+													</div>
+	
+												</div>
+										{% endfor %}
+	
+										{% if ss.view_more %}
+											{% if forloop.index == ss.number_of_items_per_row %}
+												<div data-toggle-item>
+													<div class="btn product-ingredients-more" data-toggle-trigger>
+														<span class="more">{{ ss.view_more_button }}</span>
+														<span class="less">{{ ss.view_less_button }}</span>
+													</div>
+													<div class="product-ingredients grid grid--uniform flex f-wrap f-j-center" style="max-height: 0px;" data-toggle-elem>
+											{% endif %}
+	
+											{% if forloop.last %}
+													</div>
+												</div>
+											{% endif %}
+										{% endif %}
+								</div>
+	
+							</div>
+						</div>
+				</div>
+			</div>
+		</section>
+		<h2 class="h1" style="text-align:  center;">Shop Daily Nourish</h2>
+		<div class="page-content-alt">
+			<div class="card" ">
+				<div class="content">
+					<h2 class="title">{{ ss.card_title_1 }}</h2>
+					<p class="copy">{{ ss.card_text_1 }}</p>
+					<a class="btn-alt" href="{{ ss.card_btn-url_1}}">{{ ss.card_btn-text }}</a>
+				</div>
+			</div>
+			<div class="card" ">
+				<div class="content">
+					<h2 class="title">{{ ss.card_title_2 }}</h2>
+					<p class="copy">{{ ss.card_text_2 }}</p>
+					<a class="btn-alt" href="{{ ss.card_btn-url_2}}">{{ ss.card_btn-text }}</a>
+				</div>
+			</div>
+			<div class="card" ">
+				<div class="content">
+					<h2 class="title">{{ ss.card_title_3 }}</h2>
+					<p class="copy">{{ ss.card_text_3 }}</p>
+					<a class="btn-alt" href="{{ ss.card_btn-url_3}}">{{ ss.card_btn-text }}</a>
+				</div>
+			</div>
+		</div>
 </div>
-<div class="testimonials-with-video">
-	<div class="testimonials-container">
-		<div class="testimonial-content">
-			<p class="product-landing-stars">
-				<span class="product-landing-star">&#11088;</span>
-				<span class="product-landing-star">&#11088;</span>
-				<span class="product-landing-star">&#11088;</span>
-				<span class="product-landing-star">&#11088;</span>
-				<span class="product-landing-star">&#11088;</span>
-			</p>
-			<h3 class="testimonial-title">Absolute Game-Changer!</h3>
-			<p class="testimonial-text">“I've been using this in my smoothies, every day, & it's such a great product - I feel so much more satiated, energized & overall my mood has improved too :) The taste is delicious & easily blends into the smoothie. I will be using this product until the end of time, I cannot ever see myself going without it!”
-			</p>
-			<p class="testimonial-author">Chantel B &#10050; Verified Buyer</p>
-		</div>
-		<div class="testimonial-content">
-			<p class="product-landing-stars">
-				<span class="product-landing-star">&#11088;</span>
-				<span class="product-landing-star">&#11088;</span>
-				<span class="product-landing-star">&#11088;</span>
-				<span class="product-landing-star">&#11088;</span>
-				<span class="product-landing-star">&#11088;</span>
-			</p>
-			<h3 class="testimonial-title">Changed my smoothie game!
-			</h3>
-			<p class="testimonial-text">“I put a scoop of this in my smoothie every morning; it's all the ingredients I'd normally add individually, but so much more convenient (plus, it occupies less shelf space and is more affordable). It's like taking the most complete vitamin, and super fresh!”
-			</p>
-			<p class="testimonial-author">Lindsay &#10050; Verified Reviewer
-			</p>
-		</div>
-		<div class="testimonial-content">
-			<p class="product-landing-stars">
-				<span class="product-landing-star">&#11088;</span>
-				<span class="product-landing-star">&#11088;</span>
-				<span class="product-landing-star">&#11088;</span>
-				<span class="product-landing-star">&#11088;</span>
-				<span class="product-landing-star">&#11088;</span>
-			</p>
-			<h3 class="testimonial-title">It is amazing
-			</h3>
-			<p class="testimonial-text">“It is amazing, I add it to my morning smoothie , I also add ginger a handful of spinach, banana and coconut milk, I feel very energetic and keeps me full and satisfied until lunch time.”
-			</p>
-			<p class="testimonial-author">Abeer S &#10050; Verified Buyer
-			</p>
-		</div>
-	</div>
-	<div class="video-container">
-		<video autoplay loop muted controls="controls" src="https://cdn.shopify.com/s/files/1/0857/4434/files/almondwebvideo.mov?v=1645033360"></video>
-	</div>
-</div>
-<!-- <section class="bottom-section">
-    <div class="main-container mb-5">
-      <div class="row inside-content">
-        <h2 class="text-center bottom-heading">{{ ss.ingredient-section-head | escape}}</h2>
-        <p class="middle-text px-md-3 text-center mb-0 px-0">{{ ss.ingredient-section-text| escape}}</p>
-        
-        <div class="index-section product-ingredients-section">
-            <div class="main-container-ingredients">
-  
-              {% if ss.product_ingredients_heading != blank %}
-                <header class="section-header">
-                  <h3 class="section-header__title">
-                    {{ ss.product_ingredients_heading }}
-                  </h3>
-                </header>
-              {% endif %}
-  
-              {% case ss.number_of_items_per_row %}
-              {% when 1 %}
-                {%- assign grid_item_width = '' -%}
-              {% when 2 %}
-                {%- assign grid_item_width = 'medium-up--one-half' -%}
-              {% when 3 %}
-                {%- assign grid_item_width = 'medium-up--one-third' -%}
-              {% endcase %}
-  
-              <div class="product-ingredients grid grid--uniform flex f-wrap f-j-center" {% if ss.view_more %}data-toggle-group{% endif %}>
-                  {% for block in section.blocks %}
-                    {% assign bs = block.settings %}
-                      <div class="grid__item ingredient-item ingredient-block {{ grid_item_width }}">
-  
-                        <div class="image-area">
-                          {% if bs.image != blank %}
-                            {%- assign img_url = bs.image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
-                            <img class="lazyload"
-                                data-src="{{ img_url }}"
-                                data-widths="[180, 360, 540, 720, 900, 1080]"
-                                data-aspectratio="{{ bs.image.aspect_ratio }}"
-                                data-sizes="auto"
-                                alt="{{ bs.title | escape }}">
-                            <noscript>
-                              <img class="lazyloaded" src="{{ bs.image | img_url: '400x' }}" alt="{{ bs.title | escape }}">
-                            </noscript>
-                          {% endif %}
-                        </div>
-  
-                        <div class="content-area ingredient-content-block">
-                          <h3>{{ bs.title }}</h3>
-                          <div class="rte">
-                            {{ bs.text }}
-                          </div>
-                          <div class="more_info_btn"></div>
-                        </div>
-  
-                      </div>
-                  {% endfor %}
-  
-                  {% if ss.view_more %}
-                    {% if forloop.index == ss.number_of_items_per_row %}
-                      <div data-toggle-item>
-                        <div class="btn product-ingredients-more" data-toggle-trigger>
-                          <span class="more">{{ ss.view_more_button }}</span>
-                          <span class="less">{{ ss.view_less_button }}</span>
-                        </div>
-                        <div class="product-ingredients grid grid--uniform flex f-wrap f-j-center" style="max-height: 0px;" data-toggle-elem>
-                    {% endif %}
-  
-                    {% if forloop.last %}
-                        </div>
-                      </div>
-                    {% endif %}
-                  {% endif %}
-              </div>
-  
-            </div>
-          </div>
-      </div>
-    </div>
-  </section> -->
+
+
+{% schema %}
+	{
+		"name": "Nourish Landing",
+		"settings": [
+			{
+				"type": "text",
+				"id": "product-landing-title",
+				"label": "Product Landing Title",
+				"default": "5 Reasons why Daily Nourish Superfood Mix is the #1 greens and superfood mix available today!"
+			},
+			{
+				"type": "text",
+				"id": "product-landing-subtitle",
+				"label": "Product Landing Subtitle",
+				"default": "Simplify your morning routine, improve your digestion, energy, immunity and more - all with one serving of this delicious and nutrient-dense mix!"
+			},
+			{
+				"type": "text",
+				"id": "reason-title-1",
+				"label": "First reason title ",
+				"default": "Plant Based Iron"
+			},
+			{
+				"type": "textarea",
+				"id": "reason-text-1",
+				"label": "First reason text",
+				"default": "Surpassing all other superfood mixes and greens powders currently available, Daily Nourish includes a synergistic mix of plant-based greens, supplying 22 mg of bioavailable iron per serving. This is thanks to the star ingredient, organic curry leaf! Iron supplements that come in capsule or pill form can be difficult to absorb and hard on the stomach, resulting in low compliance. The good news? It’s easier than ever to meet your daily iron intake with Daily Nourish superfood mix."
+			},
+			{
+				"type": "image_picker",
+				"id": "reason-img-1",
+				"label": "First reason image"
+			},
+			{
+				"type": "text",
+				"id": "reason-title-2",
+				"label": "Second reason title ",
+				"default": "Convenience, Elevated."
+			},
+			{
+				"type": "textarea",
+				"id": "reason-text-2",
+				"label": "Second reason text",
+				"default": "Your time is just as valuable as your health! No one has the time (or pantry space) to measure out and add over10 separate superfood ingredients to your daily smoothie. Instead, we’ve combined 13 of the world’s best superfoods into one simple mix. Best of all, each ingredient is optimized for the best serving size. Not sure how much flaxseed, maca, camu camu, hemp hearts, bee pollen, or moringa to add to your smoothie? No problem - we’ve got it covered for you in one simple scoop."
+			},
+			{
+				"type": "image_picker",
+				"id": "reason-img-2",
+				"label": "Second reason image"
+			},
+			{
+				"type": "text",
+				"id": "reason-title-3",
+				"label": "Third reason title ",
+				"default": "360º Whole Body Benefits"
+			},
+			{
+				"type": "textarea",
+				"id": "reason-text-3",
+				"label": "Third reason text",
+				"default": "In addition to iron, Daily Nourish is a source of fiber, magnesium, vitamin B12, and bioavailable vitamin C. With 11 g of plant-based protein per serving and 7 g of heart-healthy fats. Daily Nourish boosts energy and vitality, healthy digestion, immunity, heart health and cognitive health. This all in one mix is anti-inflammatory, rich in antioxidants, and can help to regular blood sugar balance. Simplify your pantry + medicine cabinet with this nutrient dense superfood mix."
+			},
+			{
+				"type": "image_picker",
+				"id": "reason-img-3",
+				"label": "Third reason image"
+			},
+			{
+				"type": "text",
+				"id": "reason-title-4",
+				"label": "Fourth reason title ",
+				"default": "Antioxidant Power"
+			},
+			{
+				"type": "textarea",
+				"id": "reason-text-4",
+				"label": "Fourth reason text",
+				"default": "Daily Nourish contains a substantial dose of bioavailable vitamin C per serving (110 mg) - thanks to a combination of camu camu, amla berry, moringa, and spirulina. These plant based superfoods contain numerous phytochemicals that act as antioxidants including polyphenols, flavanols, anthocyanin, catechin, and more! Antioxidants are a key component for longevity and health - helping the body to fight oxidative stress and neutralize free radicals. BONUS: Vitamin C aids the absorption of iron, making this an ideal pairing with the organic curry leaf."
+			},
+			{
+				"type": "image_picker",
+				"id": "reason-img-4",
+				"label": "Fourth reason image"
+			},
+			{
+				"type": "text",
+				"id": "reason-title-5",
+				"label": "Fifth reason title ",
+				"default": "Quality First"
+			},
+			{
+				"type": "textarea",
+				"id": "reason-text-5",
+				"label": "Fifth reason text",
+				"default": "Certified organic, vegan, gluten-free, and paleo. We know that what you put in your body is important. That's why we are committed to sourcing the world's best organic ingredients and why crafting quality goods is our true north. While these certifications may be essential to us, Daily Nourish stands out from the crowd of other greens powders and superfood mixes that lack diligent research and quality assurance."
+			},
+			{
+				"type": "image_picker",
+				"id": "reason-img-5",
+				"label": "Fifth reason image"
+			},
+			{
+				"type": "text",
+				"id": "testimonial-title-1",
+				"label": "First testimonial title ",
+				"default": "Absolute Game-Changer!"
+			},
+			{
+				"type": "textarea",
+				"id": "testimonial-text-1",
+				"label": "First testimonial text",
+				"default": "“I've been using this in my smoothies, every day, & it's such a great product - I feel so much more satiated, energized & overall my mood has improved too :) The taste is delicious & easily blends into the smoothie. I will be using this product until the end of time, I cannot ever see myself going without it!”"
+			},
+			{
+				"type": "text",
+				"id": "testimonial-author-1",
+				"label": "First testimonial author",
+				"default": "Chantel B"
+			},
+			{
+				"type": "text",
+				"id": "testimonial-author-stat-1",
+				"label": "First testimonial author status",
+				"default": "Verified Buyer"
+			},
+			{
+				"type": "text",
+				"id": "testimonial-title-2",
+				"label": "Second testimonial title ",
+				"default": "Changed my smoothie game!"
+			},
+			{
+				"type": "textarea",
+				"id": "testimonial-text-2",
+				"label": "Second testimonial text",
+				"default": "“I put a scoop of this in my smoothie every morning; it's all the ingredients I'd normally add individually, but so much more convenient (plus, it occupies less shelf space and is more affordable). It's like taking the most complete vitamin, and super fresh!”"
+			},
+			{
+				"type": "text",
+				"id": "testimonial-author-2",
+				"label": "Second testimonial author",
+				"default": "Lindsay"
+			},
+			{
+				"type": "text",
+				"id": "testimonial-author-stat-2",
+				"label": "Second testimonial author status",
+				"default": "Verified Reviewer"
+			},
+			{
+				"type": "text",
+				"id": "testimonial-title-3",
+				"label": "Third testimonial title ",
+				"default": "It is amazing!"
+			},
+			{
+				"type": "textarea",
+				"id": "testimonial-text-3",
+				"label": "Third testimonial text",
+				"default": "“It is amazing, I add it to my morning smoothie , I also add ginger a handful of spinach, banana and coconut milk, I feel very energetic and keeps me full and satisfied until lunch time.”"
+			},
+			{
+				"type": "text",
+				"id": "testimonial-author-3",
+				"label": "Third testimonial author",
+				"default": "Abeer S"
+			},
+			{
+				"type": "text",
+				"id": "testimonial-author-stat-3",
+				"label": "Third testimonial author status",
+				"default": "Verified Buyer"
+			},
+			{
+				"type": "video_url",
+				"id": "testimonial-video",
+				"label": "Testimonial section video url"
+			},
+			{
+        "type":"html",
+        "id":"ingredient-section-head",
+        "label":"Ingredient section heading",
+        "default":"The Ingredients"
+      },
+			{
+				"type": "text",
+				"id": "card_title_1",
+				"label": "Title 1"
+			},
+			{
+				"type": "text",
+				"id": "card_text_1",
+				"label": "Text 1"
+			},
+			{
+				"type": "image_picker",
+				"id": "card_img_1",
+				"label": "Image 1"
+			},
+			{
+				"type": "text",
+				"id": "card_btn-url_1",
+				"label": "Button 1 URL"
+			},
+			{
+				"type": "text",
+				"id": "card_title_2",
+				"label": "Title 2"
+			},
+			{
+				"type": "text",
+				"id": "card_text_2",
+				"label": "Text 2"
+			},
+			{
+				"type": "image_picker",
+				"id": "card_img_2",
+				"label": "Image 2"
+			},
+			{
+				"type": "text",
+				"id": "card_btn-url_2",
+				"label": "Button 2 URL"
+			},
+			{
+				"type": "text",
+				"id": "card_title_3",
+				"label": "Title 3"
+			},
+			{
+				"type": "text",
+				"id": "card_text_3",
+				"label": "Text 3"
+			},
+			{
+				"type": "image_picker",
+				"id": "card_img_3",
+				"label": "Image 3"
+			},
+			{
+				"type": "text",
+				"id": "card_btn-url_3",
+				"label": "Button 3 URL"
+			},
+			{
+				"type": "text",
+				"id": "card_btn-text",
+				"label": "Button text(all)"
+			}
+		],
+	"blocks": [
+		{
+			"type": "ingredient",
+			"name": "Ingredient",
+			"settings": [
+				{
+					"type": "image_picker",
+					"id": "image",
+					"label": "Image"
+				},
+				{
+					"type": "text",
+					"id": "title",
+					"label": "Title"
+				},
+				{
+					"type": "richtext",
+					"id": "text",
+					"label": "Description"
+				}
+			]
+		}
+	]
+}
+{% endschema %}

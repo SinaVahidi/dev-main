@@ -751,7 +751,8 @@
 }
 @media screen and (min-width: 768px) {
   .grid-product.grid-product--ffc .grid-product__meta .grid-product__title-price{
-    height: 50px;
+    max-height: 70px;
+    gap: 2px;
   }
 }
 @media screen and (max-width: 589px) {
@@ -1036,6 +1037,7 @@
   }
   .bottom-heading{
     padding:0;
+    font-size: 2rem;
   }
   .middle-text, .grant-text {
     font-size:15px;
@@ -4052,15 +4054,18 @@ button.ghost {
 .testimonials-container {
   padding: 3rem 4rem;
   width: 50%;
+  /* margin: auto 0; */
 }
-
+/* .testimonial-content {
+  margin-bottom: 2rem;
+} */
 .video-container {
   width: 50%;
-  max-height: 850px;
+  max-height: 865px;
 }
 .video-container video {
   object-fit: cover;
-  max-height: 864px;
+  max-height: 100%;
 }
 .product-landing-stars {
   margin-bottom: 0.5rem;
@@ -4073,6 +4078,12 @@ button.ghost {
 .testimonial-author, .testimonial-author-stat {
   text-align: right;
   font-weight: bold;
+}
+
+.product-landing-wrap .page-content-alt {
+  grid-template-columns: repeat(3, 1fr);
+  max-width: 1000px;
+
 }
 
 @media screen and (max-width: 768px) {
@@ -4139,7 +4150,7 @@ button.ghost {
   border: none;
 }
 
-.medium-up--push-one-eighth .yotpo.bottomLine .yotpo-bottomline .yotpo-icon-star, .yotpo.bottomLine .yotpo-bottomline .yotpo-icon-half-star, .yotpo.bottomLine .yotpo-bottomline .yotpo-icon-empty-star, .yotpo.bottomline .yotpo-bottomline .yotpo-icon-star, .yotpo.bottomline .yotpo-bottomline .yotpo-icon-half-star, .yotpo.bottomline .yotpo-bottomline .yotpo-icon-empty-star, .yotpo .yotpo-modal-bottom-line .yotpo-bottomline .yotpo-icon-star, .yotpo .yotpo-modal-bottom-line .yotpo-bottomline .yotpo-icon-half-star, .yotpo .yotpo-modal-bottom-line .yotpo-bottomline .yotpo-icon-empty-star{
+.medium-up--push-one-eighth .yotpo.bottomLine .yotpo-bottomline .yotpo-icon-star, .yotpo.bottomLine .yotpo-bottomline, .yotpo.bottomLine .yotpo-bottomline .yotpo-icon-empty-star, .yotpo.bottomline .yotpo-bottomline .yotpo-icon-star, .yotpo.bottomline .yotpo-bottomline .yotpo-icon-half-star, .yotpo.bottomline .yotpo-bottomline .yotpo-icon-empty-star, .yotpo .yotpo-modal-bottom-line .yotpo-bottomline .yotpo-icon-star, .yotpo .yotpo-modal-bottom-line .yotpo-bottomline .yotpo-icon-half-star, .yotpo .yotpo-modal-bottom-line .yotpo-bottomline .yotpo-icon-empty-star{
   font-size: 46px!important;
 }
 
