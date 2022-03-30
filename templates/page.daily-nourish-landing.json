@@ -1,13 +1,148 @@
 {
-    "sections": {
-      "main": {
-        "type": "page-daily-nourish-landing",
-        "settings": {
+  "sections": {
+    "main": {
+      "type": "page-daily-nourish-landing",
+      "blocks": {
+        "d75f5d4e-79cf-435b-8635-6436a80239da": {
+          "type": "ingredient",
+          "settings": {
+            "title": "",
+            "text": ""
+          }
+        },
+        "86820e72-2ca8-45cd-a3cd-8bf63021ee3d": {
+          "type": "ingredient",
+          "settings": {
+            "title": "",
+            "text": ""
+          }
+        },
+        "149f37a9-56e1-4588-922a-e3bf9b928e17": {
+          "type": "ingredient",
+          "settings": {
+            "title": "",
+            "text": ""
+          }
+        },
+        "0e62d21d-70fb-4905-ba5f-111d5cee2c18": {
+          "type": "ingredient",
+          "settings": {
+            "title": "",
+            "text": ""
+          }
+        },
+        "0cd3209d-5801-4dc3-87c3-0de13241a447": {
+          "type": "ingredient",
+          "settings": {
+            "title": "",
+            "text": ""
+          }
+        },
+        "a61437e7-6041-4d7c-9887-b38f272caf2a": {
+          "type": "ingredient",
+          "settings": {
+            "title": "",
+            "text": ""
+          }
+        },
+        "0b9514bb-f982-4403-b1c2-a7e6d6e7a38c": {
+          "type": "ingredient",
+          "settings": {
+            "title": "",
+            "text": ""
+          }
+        },
+        "37af3821-c8f2-4f6b-9ddf-5058cfd6a60f": {
+          "type": "ingredient",
+          "settings": {
+            "title": "",
+            "text": ""
+          }
+        },
+        "2b55d279-5ad8-422a-856d-7c70447b3e91": {
+          "type": "ingredient",
+          "settings": {
+            "title": "",
+            "text": ""
+          }
+        },
+        "dca54614-03f0-4494-a514-14dd7f0ef440": {
+          "type": "ingredient",
+          "settings": {
+            "title": "",
+            "text": ""
+          }
+        },
+        "428ff9ed-1aca-4f72-bc9e-e61b53b82413": {
+          "type": "ingredient",
+          "settings": {
+            "title": "",
+            "text": ""
+          }
+        },
+        "ca8070fe-a7d1-46e9-9034-c94912f024cd": {
+          "type": "ingredient",
+          "settings": {
+            "title": "",
+            "text": ""
+          }
         }
+      },
+      "block_order": [
+        "d75f5d4e-79cf-435b-8635-6436a80239da",
+        "86820e72-2ca8-45cd-a3cd-8bf63021ee3d",
+        "149f37a9-56e1-4588-922a-e3bf9b928e17",
+        "0e62d21d-70fb-4905-ba5f-111d5cee2c18",
+        "0cd3209d-5801-4dc3-87c3-0de13241a447",
+        "a61437e7-6041-4d7c-9887-b38f272caf2a",
+        "0b9514bb-f982-4403-b1c2-a7e6d6e7a38c",
+        "37af3821-c8f2-4f6b-9ddf-5058cfd6a60f",
+        "2b55d279-5ad8-422a-856d-7c70447b3e91",
+        "dca54614-03f0-4494-a514-14dd7f0ef440",
+        "428ff9ed-1aca-4f72-bc9e-e61b53b82413",
+        "ca8070fe-a7d1-46e9-9034-c94912f024cd"
+      ],
+      "settings": {
+        "product-landing-title": "5 Reasons why Daily Nourish Superfood Mix is the #1 greens and superfood mix available today!",
+        "product-landing-subtitle": "Simplify your morning routine, improve your digestion, energy, immunity and more - all with one serving of this delicious and nutrient-dense mix!",
+        "reason-title-1": "Plant Based Iron",
+        "reason-text-1": "Surpassing all other superfood mixes and greens powders currently available, Daily Nourish includes a synergistic mix of plant-based greens, supplying 22 mg of bioavailable iron per serving. This is thanks to the star ingredient, organic curry leaf! Iron supplements that come in capsule or pill form can be difficult to absorb and hard on the stomach, resulting in low compliance. The good news? It’s easier than ever to meet your daily iron intake with Daily Nourish superfood mix.",
+        "reason-title-2": "Convenience, Elevated.",
+        "reason-text-2": "Your time is just as valuable as your health! No one has the time (or pantry space) to measure out and add over10 separate superfood ingredients to your daily smoothie. Instead, we’ve combined 13 of the world’s best superfoods into one simple mix. Best of all, each ingredient is optimized for the best serving size. Not sure how much flaxseed, maca, camu camu, hemp hearts, bee pollen, or moringa to add to your smoothie? No problem - we’ve got it covered for you in one simple scoop.",
+        "reason-title-3": "360º Whole Body Benefits",
+        "reason-text-3": "In addition to iron, Daily Nourish is a source of fiber, magnesium, vitamin B12, and bioavailable vitamin C. With 11 g of plant-based protein per serving and 7 g of heart-healthy fats. Daily Nourish boosts energy and vitality, healthy digestion, immunity, heart health and cognitive health. This all in one mix is anti-inflammatory, rich in antioxidants, and can help to regular blood sugar balance. Simplify your pantry + medicine cabinet with this nutrient dense superfood mix.",
+        "reason-title-4": "Antioxidant Power",
+        "reason-text-4": "Daily Nourish contains a substantial dose of bioavailable vitamin C per serving (110 mg) - thanks to a combination of camu camu, amla berry, moringa, and spirulina. These plant based superfoods contain numerous phytochemicals that act as antioxidants including polyphenols, flavanols, anthocyanin, catechin, and more! Antioxidants are a key component for longevity and health - helping the body to fight oxidative stress and neutralize free radicals. BONUS: Vitamin C aids the absorption of iron, making this an ideal pairing with the organic curry leaf.",
+        "reason-title-5": "Quality First",
+        "reason-text-5": "Certified organic, vegan, gluten-free, and paleo. We know that what you put in your body is important. That's why we are committed to sourcing the world's best organic ingredients and why crafting quality goods is our true north. While these certifications may be essential to us, Daily Nourish stands out from the crowd of other greens powders and superfood mixes that lack diligent research and quality assurance.",
+        "testimonial-title-1": "Absolute Game-Changer!",
+        "testimonial-text-1": "“I've been using this in my smoothies, every day, & it's such a great product - I feel so much more satiated, energized & overall my mood has improved too :) The taste is delicious & easily blends into the smoothie. I will be using this product until the end of time, I cannot ever see myself going without it!”",
+        "testimonial-author-1": "Chantel B",
+        "testimonial-author-stat-1": "Verified Buyer",
+        "testimonial-title-2": "Changed my smoothie game!",
+        "testimonial-text-2": "“I put a scoop of this in my smoothie every morning; it's all the ingredients I'd normally add individually, but so much more convenient (plus, it occupies less shelf space and is more affordable). It's like taking the most complete vitamin, and super fresh!”",
+        "testimonial-author-2": "Lindsay",
+        "testimonial-author-stat-2": "Verified Reviewer",
+        "testimonial-title-3": "It is amazing!",
+        "testimonial-text-3": "“It is amazing, I add it to my morning smoothie , I also add ginger a handful of spinach, banana and coconut milk, I feel very energetic and keeps me full and satisfied until lunch time.”",
+        "testimonial-author-3": "Abeer S",
+        "testimonial-author-stat-3": "Verified Buyer",
+        "testimonial-video": "",
+        "ingredient-section-head": "The Ingredients",
+        "card_title_1": "",
+        "card_text_1": "",
+        "card_btn-url_1": "",
+        "card_title_2": "",
+        "card_text_2": "",
+        "card_btn-url_2": "",
+        "card_title_3": "",
+        "card_text_3": "",
+        "card_btn-url_3": "",
+        "card_btn-text": ""
       }
-    },
-    "order": [
-      "main"
-    ]
-  }
-  
+    }
+  },
+  "order": [
+    "main"
+  ]
+}
