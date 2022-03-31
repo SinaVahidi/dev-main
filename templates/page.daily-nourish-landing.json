@@ -6,34 +6,39 @@
         "d75f5d4e-79cf-435b-8635-6436a80239da": {
           "type": "ingredient",
           "settings": {
-            "title": "",
+            "image": "shopify:\/\/shop_images\/hemp-hearts.jpg",
+            "title": "Hemp Hearts",
             "text": ""
           }
         },
         "86820e72-2ca8-45cd-a3cd-8bf63021ee3d": {
           "type": "ingredient",
           "settings": {
-            "title": "",
+            "image": "shopify:\/\/shop_images\/flax-seed.jpg",
+            "title": "Flax Seeds",
             "text": ""
           }
         },
         "149f37a9-56e1-4588-922a-e3bf9b928e17": {
           "type": "ingredient",
           "settings": {
-            "title": "",
+            "image": "shopify:\/\/shop_images\/cayenne.jpg",
+            "title": "Cayenne",
             "text": ""
           }
         },
         "0e62d21d-70fb-4905-ba5f-111d5cee2c18": {
           "type": "ingredient",
           "settings": {
-            "title": "",
+            "image": "shopify:\/\/shop_images\/ceylon-cinnamon.jpg",
+            "title": "Ceylon Cinnamon",
             "text": ""
           }
         },
         "0cd3209d-5801-4dc3-87c3-0de13241a447": {
           "type": "ingredient",
           "settings": {
+            "image": "shopify:\/\/shop_images\/bee-pollen.jpg",
             "title": "",
             "text": ""
           }
