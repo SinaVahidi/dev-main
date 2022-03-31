@@ -187,6 +187,10 @@ function popupOpenClose(popup) {
 	});
 }
 
+$(".card").click(function() {
+  window.location = $('.card').data("location");
+  return false;
+})
 
 
 const signUpButton = document.querySelector('#signUp');
@@ -227,3 +231,5 @@ customerSignupForm.classList.add("form-login");
 customerSignupForm.addEventListener('submit', (e) => {
   e.preventDefault();
 });
+
+
