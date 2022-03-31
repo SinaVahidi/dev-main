@@ -62,21 +62,24 @@
         "37af3821-c8f2-4f6b-9ddf-5058cfd6a60f": {
           "type": "ingredient",
           "settings": {
-            "title": "",
+            "image": "shopify:\/\/shop_images\/maca_aa16de2a-4446-41b6-83fc-7f00c9acba25.jpg",
+            "title": "Maca",
             "text": ""
           }
         },
         "2b55d279-5ad8-422a-856d-7c70447b3e91": {
           "type": "ingredient",
           "settings": {
-            "title": "",
+            "image": "shopify:\/\/shop_images\/curry-leaf_a9ac6356-4d12-484f-9c08-9d8397441579.jpg",
+            "title": "Curry Leaf",
             "text": ""
           }
         },
         "dca54614-03f0-4494-a514-14dd7f0ef440": {
           "type": "ingredient",
           "settings": {
-            "title": "",
+            "image": "shopify:\/\/shop_images\/spirulina_df629e98-d0a1-4b60-a250-2ff805722366.jpg",
+            "title": "Spirulina",
             "text": ""
           }
         },
