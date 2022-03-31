@@ -82,20 +82,6 @@
             "title": "Spirulina",
             "text": ""
           }
-        },
-        "428ff9ed-1aca-4f72-bc9e-e61b53b82413": {
-          "type": "ingredient",
-          "settings": {
-            "title": "",
-            "text": ""
-          }
-        },
-        "ca8070fe-a7d1-46e9-9034-c94912f024cd": {
-          "type": "ingredient",
-          "settings": {
-            "title": "",
-            "text": ""
-          }
         }
       },
       "block_order": [
@@ -108,9 +94,7 @@
         "0b9514bb-f982-4403-b1c2-a7e6d6e7a38c",
         "37af3821-c8f2-4f6b-9ddf-5058cfd6a60f",
         "2b55d279-5ad8-422a-856d-7c70447b3e91",
-        "dca54614-03f0-4494-a514-14dd7f0ef440",
-        "428ff9ed-1aca-4f72-bc9e-e61b53b82413",
-        "ca8070fe-a7d1-46e9-9034-c94912f024cd"
+        "dca54614-03f0-4494-a514-14dd7f0ef440"
       ],
       "settings": {
         "product-landing-title": "5 Reasons why Daily Nourish Superfood Mix is the #1 greens and superfood mix available today!",
