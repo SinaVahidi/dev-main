@@ -34,48 +34,48 @@ accordionItems.forEach(element => {
   });
 });
 
-const accordionColumns = document.querySelectorAll('.accordion-column-faq');
-accordionColumns.forEach(element => {
-  for(let i = 4; i < element.children.length - 1; i++)
-  {
-    element.children[i].style.display = 'none';
-  }
-  element.firstElementChild.lastElementChild.addEventListener('click', (btn) => {
-    element.classList.toggle('active-faq-all');
-    element.classList.toggle('active-faq-col');
-    element.style.maxHeight = '200rem';
-    element.firstElementChild.lastElementChild.firstElementChild.classList.toggle('dis-none');
-    element.firstElementChild.lastElementChild.lastElementChild.classList.toggle('dis-none');
-    for(let i = 0; i < element.children.length; i++){
-      if(element.children[i].firstElementChild.classList.contains('active-faq'))
-      {
-        element.children[i].firstElementChild.classList.toggle('active-faq');
-      }
-    }
-  })
-  element.lastElementChild.addEventListener('click', () => {
-    element.lastElementChild.classList.toggle('active-faq');
-    element.classList.toggle('active-faq-col');
-    if(element.lastElementChild.classList.contains('active-faq')){
-      for(let i = 1; i < element.children.length - 1; i++)
-      {
-        element.children[i].style.display = 'block';
-      }
-      element.style.overflow = 'hidden';
-      element.lastElementChild.firstElementChild.style.display = 'none';
-      element.lastElementChild.lastElementChild.style.display = 'inline';
-      element.style.maxHeight = '200rem';
-    }else {
-      for(let i = 4; i < element.children.length - 1; i++)
-      {
-        element.children[i].style.display = 'none';
-      }
-      element.lastElementChild.firstElementChild.style.display = 'inline';
-      element.lastElementChild.lastElementChild.style.display = 'none';
-      element.style.maxHeight = null;
-    }
-  });
-});
+// const accordionColumns = document.querySelectorAll('.accordion-column-faq');
+// accordionColumns.forEach(element => {
+//   for(let i = 4; i < element.children.length - 1; i++)
+//   {
+//     element.children[i].style.display = 'none';
+//   }
+//   element.firstElementChild.lastElementChild.addEventListener('click', (btn) => {
+//     element.classList.toggle('active-faq-all');
+//     element.classList.toggle('active-faq-col');
+//     element.style.maxHeight = '200rem';
+//     element.firstElementChild.lastElementChild.firstElementChild.classList.toggle('dis-none');
+//     element.firstElementChild.lastElementChild.lastElementChild.classList.toggle('dis-none');
+//     for(let i = 0; i < element.children.length; i++){
+//       if(element.children[i].firstElementChild.classList.contains('active-faq'))
+//       {
+//         element.children[i].firstElementChild.classList.toggle('active-faq');
+//       }
+//     }
+//   })
+//   element.lastElementChild.addEventListener('click', () => {
+//     element.lastElementChild.classList.toggle('active-faq');
+//     element.classList.toggle('active-faq-col');
+//     if(element.lastElementChild.classList.contains('active-faq')){
+//       for(let i = 1; i < element.children.length - 1; i++)
+//       {
+//         element.children[i].style.display = 'block';
+//       }
+//       element.style.overflow = 'hidden';
+//       element.lastElementChild.firstElementChild.style.display = 'none';
+//       element.lastElementChild.lastElementChild.style.display = 'inline';
+//       element.style.maxHeight = '200rem';
+//     }else {
+//       for(let i = 4; i < element.children.length - 1; i++)
+//       {
+//         element.children[i].style.display = 'none';
+//       }
+//       element.lastElementChild.firstElementChild.style.display = 'inline';
+//       element.lastElementChild.lastElementChild.style.display = 'none';
+//       element.style.maxHeight = null;
+//     }
+//   });
+// });
 
 const ingredientInfoToggle = document.querySelectorAll('.more_info_btn');
 ingredientInfoToggle.forEach(element => {

@@ -19,7 +19,7 @@
         </div>
         {% endif %}
         <div class="row">
-                <div class="col-md-6 accordion-column-faq">
+                <div class="accordion-column-faq">
                     <div class="accordion-item-category-faq">
                         <h4 class="category-header-faq">{{ section.settings.col_left_title }}</h4>
                         <button class="btn-wrap-faq2">
@@ -49,12 +49,12 @@
                             </div>
                         {% endif %}
                     {% endfor %}
-                    <div class="btn-wrap-faq" {% unless numRightBlocks > 3 %}style="display:none"{% endunless %}>
+                    <!-- <div class="btn-wrap-faq" {% unless numRightBlocks > 3 %}style="display:none"{% endunless %}>
                         <p class="expand-btn">View more</p>
                         <p class="close-btn">View less</p>
-                    </div>
+                    </div> -->
                 </div>
-                <div class="col-md-6 accordion-column-faq">
+                <div class="accordion-column-faq">
                     <div class="accordion-item-category-faq">
                         <h4 class="category-header-faq">{{ section.settings.col_right_title }}</h4>
                         <button class="btn-wrap-faq2">
@@ -84,10 +84,10 @@
                             </div>
                         {% endif %}
                     {% endfor %}
-                    <div class="btn-wrap-faq" {% unless numRightBlocks > 3 %}style="display:none"{% endunless %}>
+                    <!-- <div class="btn-wrap-faq" {% unless numRightBlocks > 3 %}style="display:none"{% endunless %}>
                         <p class="expand-btn">View more</p>
                         <p class="close-btn">View less</p>
-                    </div>
+                    </div> -->
                 </div>
         </div>
     </div>
