@@ -1570,7 +1570,7 @@ ion-icon[name="add-outline"] {
   max-width: 50%;
 }
 .landing-block--background-image-text .content-area {
-  max-width: 650px;
+  width: 650px;
 }
 .ffc-page-wholesale-landing .ffc-background-image-text__image .page-width .content-area .h3 {
   font-size: 4rem;
