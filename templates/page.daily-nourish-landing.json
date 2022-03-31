@@ -128,16 +128,19 @@
         "testimonial-author-stat-3": "Verified Buyer",
         "testimonial-video": "https:\/\/cdn.shopify.com\/s\/files\/1\/0857\/4434\/files\/nomz-smoothie-video_LR_website.mp4?v=1648703498",
         "ingredient-section-head": "The Ingredients",
-        "card_title_1": "",
+        "card_title_1": "Daily Nourish + Nut Butter of your choice",
         "card_text_1": "",
-        "card_btn-url_1": "",
-        "card_title_2": "",
+        "card_img_1": "shopify:\/\/shop_images\/dn-landing.png",
+        "card_btn-url_1": "https:\/\/nomz.com\/products\/daily-nourish-nut-butter-of-your-choice-assorted-bites-15-savings",
+        "card_title_2": "daily nourish superfood mix",
         "card_text_2": "",
-        "card_btn-url_2": "",
-        "card_title_3": "",
+        "card_img_2": "shopify:\/\/shop_images\/dn-landing-4_1193a760-79a2-4ccd-b030-7abb3d4a1ce1.png",
+        "card_btn-url_2": "https:\/\/nomz.com\/products\/daily-nourish?variant=36602519224473",
+        "card_title_3": "Daily Nourish + Nut Butter of your choice + Assorted Bites",
         "card_text_3": "",
-        "card_btn-url_3": "",
-        "card_btn-text": ""
+        "card_img_3": "shopify:\/\/shop_images\/dn-landing-2.png",
+        "card_btn-url_3": "https:\/\/nomz.com\/products\/daily-nourish-nut-butter-of-your-choice-10-savings",
+        "card_btn-text": "Shop Now"
       }
     }
   },
