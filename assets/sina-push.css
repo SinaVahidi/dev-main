@@ -4004,7 +4004,7 @@ button.ghost {
 
 .product-landing-container {
   max-width: 85%;
-  margin: 0 auto;
+  margin: 0 auto 5rem;
 }
 .product-landing-bar {
   display: flex;
@@ -4081,11 +4081,6 @@ button.ghost {
   color: white;
 }
 
-@media screen and (min-width: 768px) {
-  .testimonials-with-video {
-    max-height: 750px;
-  }
-}
 .testimonials-container {
   padding: 0rem 4rem;
   width: 50%;
@@ -4101,7 +4096,8 @@ button.ghost {
 }
 .video-container video {
   object-fit: cover;
-  max-height: 100%;
+  height: 100%;
+  width: 100%;
 }
 .product-landing-stars {
   margin-bottom: 0.5rem;
@@ -4111,8 +4107,12 @@ button.ghost {
   font-size: 1.3rem;
 }
 
-.testimonial-title, .testimonial-text {
-  margin-bottom: 0.7rem;
+.testimonial-title{
+  margin-bottom: 0.5rem;
+}
+
+.testimonial-text {
+  margin-bottom: 0;
 }
 .testimonial-author, .testimonial-author-stat {
   text-align: right;
@@ -4170,9 +4170,6 @@ button.ghost {
   .video-container {
     width: 100%;
     order: 1;
-  }
-  .video-container video {
-    max-height: 400px;
   }
   .testimonial-content {
     padding-top: 1rem;
