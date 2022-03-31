@@ -38,15 +38,16 @@
         "0cd3209d-5801-4dc3-87c3-0de13241a447": {
           "type": "ingredient",
           "settings": {
-            "image": "shopify:\/\/shop_images\/bee-pollen.jpg",
-            "title": "",
+            "image": "shopify:\/\/shop_images\/bee-pollen_b8aa6aa4-5a75-4044-82ea-71f77d5fd148.jpg",
+            "title": "Bee Pollen",
             "text": ""
           }
         },
         "a61437e7-6041-4d7c-9887-b38f272caf2a": {
           "type": "ingredient",
           "settings": {
-            "title": "",
+            "image": "shopify:\/\/shop_images\/turmeric_beb005da-ecdf-4ad0-901a-0e52878254aa.jpg",
+            "title": "Turmeric",
             "text": ""
           }
         },
