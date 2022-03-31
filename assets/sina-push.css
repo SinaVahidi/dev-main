@@ -4179,6 +4179,10 @@ button.ghost {
   }
 }
 
+
+.product-landing-wrap .card .content .title:not(:hover){
+ margin-top: -2rem;
+}
 /* border-radius on buttons */
 
 .btn {
@@ -4219,3 +4223,5 @@ display: none!important;
 .medium-up--push-one-eighth #yotpo-testimonials-custom-tab .yotpo-modal-bottom-line {
   border-top: none!important;
 }
+
+

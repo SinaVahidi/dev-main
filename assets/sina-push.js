@@ -218,7 +218,7 @@ forgotPasswordLink.addEventListener('click', () => {
 });
 recoverCancel.addEventListener('click', () => {
   containerLogin.classList.remove("hide");
-  containerRecover2.classList.add("hide");
+  // containerRecover2.classList.add("hide");
 });
 
 const customerLoginForm = document.querySelector('#customer_login');
