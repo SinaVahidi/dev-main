@@ -28,7 +28,7 @@
 </header>
 <main class="slider-content">
 	<div class="items" id="items">
-		<div class="item item1 {% if ss.img_1_url == empty %} hide {% endif %}"> 
+		<div class="item item1 {% if ss.img_1_url %} hide {% endif %}"> 
 			<a href="{{ ss.img_1_url }}" class="item-link"></a>
 		</div>
 		<div class="item item2{% if ss.img_2_url == empty %} hide {% endif %}">
