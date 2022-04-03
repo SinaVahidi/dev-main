@@ -1569,9 +1569,12 @@ ion-icon[name="add-outline"] {
   margin-left: 5rem;
   max-width: 50%;
 }
-.landing-block--background-image-text .content-area {
-  width: 650px;
+@media screen and (min-width: 768px) {
+  .landing-block--background-image-text .content-area {
+    width: 650px;
+  }
 }
+
 .ffc-page-wholesale-landing .ffc-background-image-text__image .page-width .content-area .h3 {
   font-size: 4rem;
   color: #4f4f4f;
@@ -1869,18 +1872,17 @@ ion-icon[name="add-outline"] {
   font-weight: bold;
   letter-spacing: 0.025rem;
   text-transform: uppercase;
-  color: white;
-  background-color: #202020;
+  color: #6cace1;
+  background-color: #fff;
   border: none;
-  border-radius: 0.2em;
+  border-radius: 0.1em;
+  transition: background-color 0.25s, color 0.25s;
 }
 .btn-alt:hover {
-  background-color: #0d0d0d;
+  background-color: #6cace1;
+  color: white;
 }
-.btn-alt:focus {
-  outline: 1px dashed yellow;
-  outline-offset: 3px;
-}
+
 
 @media (hover: hover) and (min-width: 600px) {
   .card:after {
@@ -1893,7 +1895,6 @@ ion-icon[name="add-outline"] {
   .content > *:not(.title) {
     opacity: 0;
     transform: translateY(1rem);
-    transition: transform var(--d) var(--e), opacity var(--d) var(--e);
   }
 
   .card:hover,
