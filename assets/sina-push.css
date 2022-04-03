@@ -4205,3 +4205,10 @@ display: none!important;
 }
   
   
+
+/* footer mobile */
+@media screen and (max-width: 590px){
+  .site-footer--v2 .site-footer__items .site-footer__item .site-footer__linklist li a {
+    text-align: left;
+  }
+}
