@@ -1094,13 +1094,13 @@
 }
 @media  screen and (max-width: 1300px) {
   .product__thumbs .slick-list {
-    max-width: 76%;
+    max-width: 83%;
   }
 }
 @media  screen and (max-width: 1050px) {
   .product__thumbs .slick-list {
-    max-width: 85%;
-    margin-left: -1rem;
+    max-width: 97%;
+    margin-left: 0rem;
   }
 }
 @media screen and (max-width: 1050px) and (min-width: 835px) {
