@@ -2759,7 +2759,9 @@ ion-icon[name="add-outline"] {
   justify-content: flex-start;
   align-items: center;
   height: 28rem;
-  background: #A4CC87;
+  color: white;
+  background: #7fbaea;
+  box-shadow: rgb(0 0 0 / 9%) 0px 2px 1px, rgb(0 0 0 / 9%) 0px 4px 2px, rgb(0 0 0 / 9%) 0px 8px 4px, rgb(0 0 0 / 9%) 0px 16px 8px, rgb(0 0 0 / 9%) 0px 8px 16px;
 }
 
 .contact-top-head{
@@ -2786,7 +2788,7 @@ ion-icon[name="add-outline"] {
   max-width: 65%;
   min-width: 50%;
   border-radius: 1rem;
-  padding: 2rem 4rem 1rem;
+  padding: 2rem 1rem 1rem;
 }
 .contact-form-label{
   color: rgb(194, 194, 194);
@@ -2822,14 +2824,14 @@ ion-icon[name="add-outline"] {
 }
 .contact-form-input:focus, .contact-form-input:active, .contact-form-input:focus-visible {
   border: none;
-  border-bottom: 1px solid #81ad63;
+  border-bottom: 1px solid #6cace1;
 }
 
 .contact-form-button {
   padding: 0.5em;
-  border: 1px solid #81ad63;
+  border: 1px solid #6cace1;
   background: #fff;
-  color: #81ad63;
+  color: #6cace1;
   border-radius: 0.1em;
   margin-left: 0.55rem;
   transition: all 0.25s;
@@ -2837,7 +2839,7 @@ ion-icon[name="add-outline"] {
   letter-spacing: 0.01rem;
 }
 .contact-form-button:hover, .contact-form-button:active {
-  background: #81ad63;
+  background: #6cace1;
   color: #fff;
 }
 .contact-left-col {
@@ -2857,7 +2859,7 @@ ion-icon[name="add-outline"] {
 }
 
 .contacts-wrap {
-  background: #81ad63;
+  background: #6cace1;
   color: #fff;
   border-radius: 1rem;
   width: 100%;

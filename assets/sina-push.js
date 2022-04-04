@@ -168,7 +168,7 @@ $(".card").click(function() {
   return false;
 })
 
+
 const bgImageText = document.querySelector('.ffc-page-wholesale-landing .landing-block--ffc-bg-img-text');
 console.log(bgImageText);
 bgImageText.classList.add('active');
-
