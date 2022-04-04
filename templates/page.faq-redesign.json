@@ -126,7 +126,7 @@
           "type": "col_left",
           "settings": {
             "col_left_question": "What is your shipping policy?",
-            "col_left_answer": "<b>Canada &amp; USA<\/b>\n<br>\nFree standard shipping on all orders $100.00 and above. Orders under $100.00 ship with $8.00 flat rate shipping. Delivery time within Canada is 1-4 business days. Delivery time to the US is 3-5 business days.\n\n<b>International<\/b>\n\nFree standard shipping on all orders $100.00 and above. Orders under $100.00 ship with $15.00 flat rate shipping. Delivery time internationally is 3-5 business days.\n\nOur standard shipping goes with UPS and can be tracked at: <a href=\"https:\/\/www.ups.com.\/track\" style=\"text-decoration: underline; text-underline-offset: 0.2em; font-weight: 700;\"> https:\/\/www.ups.com<\/a>"
+            "col_left_answer": "<b>Canada &amp; USA<\/b>\n<br>\n<br>\nFree standard shipping on all orders $100.00 and above. Orders under $100.00 ship with $8.00 flat rate shipping. Delivery time within Canada is 1-4 business days. Delivery time to the US is 3-5 business days.\n<br>\n<b>International<\/b>\n<br>\n<br>\nFree standard shipping on all orders $100.00 and above. Orders under $100.00 ship with $15.00 flat rate shipping. Delivery time internationally is 3-5 business days.\n\nOur standard shipping goes with UPS and can be tracked at: <a href=\"https:\/\/www.ups.com.\/track\" style=\"text-decoration: underline; text-underline-offset: 0.2em; font-weight: 700;\"> https:\/\/www.ups.com<\/a>"
           }
         }
       },
