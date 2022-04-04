@@ -1564,9 +1564,23 @@ ion-icon[name="add-outline"] {
   background-size: cover;
   background-position: center;
 }
-.ffc-page-wholesale-landing .ffc-background-image-text__image .page-width{
-  margin:0;
-  margin-left: 5rem;
+
+.ffc-page-wholesale-landing .active .ffc-background-image-text__image {
+  height: inherit;
+  align-items: center;
+  text-align: center;
+}
+.ffc-page-wholesale-landing .landing-block--ffc-bg-img-text.active .ffc-background-image-text__image .page-width{
+  margin: 0 auto;
+  max-width: 80%;
+}
+
+.ffc-page-wholesale-landing .page-width {
+  margin: 0 0 0 5rem;
+}
+
+.ffc-page-wholesale-landing .landing-block--ffc-bg-img-text .ffc-background-image-text__image .page-width{
+  margin: 0;
   max-width: 50%;
 }
 @media screen and (min-width: 768px) {
@@ -1590,14 +1604,17 @@ ion-icon[name="add-outline"] {
   border-color: #6cace1!important;
   color: #fff;
 }
+
+.ffc-page-wholesale-landing .active {
+  margin-bottom: 4rem!important;
+}
   
 @media (max-width: 590px) {
   .ffc-page-wholesale-landing .ffc-background-image-text__image{
-  height:11rem;
+  height:inherit;
   display:flex;
   flex-direction:column;
   justify-content:start;
-  background: none!important;
   }
   .ffc-page-wholesale-landing .ffc-background-image-text__image .page-width{
     margin:3rem 0 0;

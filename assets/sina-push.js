@@ -77,6 +77,10 @@ accordionItems.forEach(element => {
 //   });
 // });
 
+const bgImageText = document.querySelector('.ffc-page-wholesale-landing .landing-block--ffc-bg-img-text');
+bgImageText.classList.add('active');
+console.log(bgImageText);
+
 const ingredientInfoToggle = document.querySelectorAll('.more_info_btn');
 ingredientInfoToggle.forEach(element => {
   console.log(element);
