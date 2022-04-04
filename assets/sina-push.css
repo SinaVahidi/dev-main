@@ -1597,6 +1597,7 @@ ion-icon[name="add-outline"] {
   display:flex;
   flex-direction:column;
   justify-content:start;
+  background: none!important;
   }
   .ffc-page-wholesale-landing .ffc-background-image-text__image .page-width{
     margin:3rem 0 0;
