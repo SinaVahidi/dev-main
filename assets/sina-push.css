@@ -1593,7 +1593,7 @@ ion-icon[name="add-outline"] {
   
 @media (max-width: 590px) {
   .ffc-page-wholesale-landing .ffc-background-image-text__image{
-  height:40rem;
+  height:11rem;
   display:flex;
   flex-direction:column;
   justify-content:start;
