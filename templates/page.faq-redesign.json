@@ -119,7 +119,7 @@
           "type": "col_left",
           "settings": {
             "col_left_question": "What is your return policy?",
-            "col_left_answer": "If you aren't happy with your order, please reach out to our team with more details at <a href=\"\/pages\/contact-1\" style=\"text-decoration: underline; text-underline-offset: 0.2em; font-weight: 700;\">contact us<\/a> within 5 days of your delivery date. We'll be sure to make it right!"
+            "col_left_answer": "If you aren't happy with your order, please <a href=\"\/pages\/contact-1\" style=\"text-decoration: underline; text-underline-offset: 0.2em; font-weight: 700;\">contact us<\/a> within 5 days of your delivery date. We'll be sure to make it right!"
           }
         }
       },
