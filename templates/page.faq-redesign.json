@@ -121,6 +121,13 @@
             "col_left_question": "What is your return policy?",
             "col_left_answer": "If you aren't happy with your order, please <a href=\"\/pages\/contact-1\" style=\"text-decoration: underline; text-underline-offset: 0.2em; font-weight: 700;\">contact us<\/a> within 5 days of your delivery date. We'll be sure to make it right!"
           }
+        },
+        "d9641b26-acb1-490c-a6ad-1626d0bb0f32": {
+          "type": "col_left",
+          "settings": {
+            "col_left_question": "What is your shipping policy?",
+            "col_left_answer": "<b>Canada &amp; USA<\/b>\n\nFree standard shipping on all orders $100.00 and above. Orders under $100.00 ship with $8.00 flat rate shipping. Delivery time within Canada is 1-4 business days. Delivery time to the US is 3-5 business days.\n\n<b>International<\/b>\n\nFree standard shipping on all orders $100.00 and above. Orders under $100.00 ship with $15.00 flat rate shipping. Delivery time internationally is 3-5 business days.\n\nOur standard shipping goes with UPS and can be tracked at: <a href=\"https:\/\/www.ups.com.\/track\" style=\"text-decoration: underline; text-underline-offset: 0.2em; font-weight: 700;\"> https:\/\/www.ups.com<\/a>"
+          }
         }
       },
       "block_order": [
@@ -128,7 +135,8 @@
         "00701692-3c13-4147-ba92-d69f1934d720",
         "765ba8f6-2879-47c6-a226-9541cc422201",
         "f8c07962-77ea-4aee-aef1-4e4f08c41454",
-        "9259a3ab-20fc-4775-98d6-a44650d10ce6"
+        "9259a3ab-20fc-4775-98d6-a44650d10ce6",
+        "d9641b26-acb1-490c-a6ad-1626d0bb0f32"
       ],
       "settings": {
         "page_title_enable": false,
