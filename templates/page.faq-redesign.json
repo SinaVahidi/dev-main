@@ -80,7 +80,6 @@
       ],
       "settings": {
         "page_title_enable": true,
-        "page_content_enable": false,
         "col_left_title": "Subscriptions",
         "col_right_title": "Product"
       }
@@ -115,17 +114,24 @@
             "col_right_question": "Do you have a distributer?",
             "col_right_answer": "Yes, UNFI is our national distribution partner."
           }
+        },
+        "9259a3ab-20fc-4775-98d6-a44650d10ce6": {
+          "type": "col_left",
+          "settings": {
+            "col_left_question": "What is your return policy?",
+            "col_left_answer": "If you aren't happy with your order, please reach out to our team with more details at <a href=\"https:\/\/nomz.com\/pages\/contact-1\">contact us<\/a> within 5 days of your delivery date. We'll be sure to make it right!"
+          }
         }
       },
       "block_order": [
         "ee1e5ff1-47fc-4670-8dfc-7cc266e5dfde",
         "00701692-3c13-4147-ba92-d69f1934d720",
         "765ba8f6-2879-47c6-a226-9541cc422201",
-        "f8c07962-77ea-4aee-aef1-4e4f08c41454"
+        "f8c07962-77ea-4aee-aef1-4e4f08c41454",
+        "9259a3ab-20fc-4775-98d6-a44650d10ce6"
       ],
       "settings": {
         "page_title_enable": false,
-        "page_content_enable": false,
         "col_left_title": "Company",
         "col_right_title": "Wholesale"
       }
