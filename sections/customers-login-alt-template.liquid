@@ -132,3 +132,48 @@
 		]
 	}
 {% endschema %}
+
+{% javascript %}
+
+const signUpButton = document.querySelector('#signUp');
+const signInButton = document.querySelector('#signIn');
+const container = document.querySelector('#container');
+console.log(signUpButton);
+signUpButton.addEventListener('click', () => {
+	container.classList.add("right-panel-active");
+});
+
+signInButton.addEventListener('click', () => {
+	container.classList.remove("right-panel-active");
+});
+
+const forgotPasswordLink = document.querySelector('.forgot_password');
+const containerLogin = document.querySelector('.container-login');
+const containerRecover = document.querySelector('#RecoverPasswordForm');
+const recoverCancel = document.querySelector('#HideRecoverPasswordLink');
+const containerRecover2 = document.querySelector('.recover_password_container');
+const signInContainer = document.querySelector('.sign-in-container');
+forgotPasswordLink.addEventListener('click', () => {
+  containerLogin.classList.add("hide");
+  containerRecover.classList.remove("hide");
+  containerRecover2.classList.remove("hide");
+});
+recoverCancel.addEventListener('click', () => {
+  containerLogin.classList.remove("hide");
+  containerRecover2.classList.add("hide");
+});
+
+const customerLoginForm = document.querySelector('#customer_login');
+const customerSignupForm = document.querySelector('#create_customer');
+customerLoginForm.classList.add("form-login");
+customerLoginForm.addEventListener('submit', (e) => {
+  e.preventDefault();
+});
+customerSignupForm.classList.add("form-login");
+customerSignupForm.addEventListener('submit', (e) => {
+  e.preventDefault();
+});
+
+
+
+{% endjavascript %}
