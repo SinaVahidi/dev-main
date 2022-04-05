@@ -1092,6 +1092,9 @@
   max-width: 70%;
   margin: 0;
 }
+.product__thumbs .slick-list .slick-track {
+  width: 450px!important;
+}
 @media  screen and (max-width: 1300px) {
   .product__thumbs .slick-list {
     max-width: 450px;
@@ -4017,7 +4020,7 @@ button.ghost {
   font-size: 80px;
   font-weight: 100;
   color:rgba(0,0,0,0.5);
-  margin: 0 3rem;
+  margin: 0 1.9rem;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 
@@ -4127,7 +4130,7 @@ button.ghost {
 }
 .video-container video {
   object-fit: cover;
-  height: 107%;
+  height: 100%;
   width: 100%;
 }
 .product-landing-stars {
@@ -4234,9 +4237,18 @@ button.ghost {
 #yotpo-testimonials-product-bottomline .yotpo-icon-star {
   font-size: 46px!important;
 }
-
+ #yotpo-testimonials-product-bottomline .yotpo-bottomline.pull-left .yotpo-icon-star {
+  font-size: 22.5px!important;
+}
 .medium-up--push-one-eighth .yotpo.bottomLine .yotpo-bottomline .yotpo-stars, .yotpo.bottomline .yotpo-bottomline .yotpo-stars, .yotpo .yotpo-modal-bottom-line .yotpo-bottomline .yotpo-stars {
   margin-bottom: 0.5rem!important;
+}
+
+
+@media only screen and (min-width: 590px) {
+  .section-header {
+    margin-bottom: -2rem;
+  }
 }
 
 .medium-up--push-one-eighth .yotpo .yotpo-modal-bottom-line .yotpo-bottomline {
@@ -4286,11 +4298,27 @@ display: none!important;
 
 /* footer */
 
+.site-footer__items {
+  text-align: left;
+}
 .site-footer__items .newsletter-section {
   background: transparent!important;
   color: #fff!important;
+  order: 5;
+  text-align: left!important;
+  padding: 0;
+  width: 34%;
+}
+.site-footer__items .newsletter-section * {
+  text-align: left!important;
+}
+.site-footer__items .newsletter-section .page-width {
+  padding: 0;
 }
 
+.site-footer__items .newsletter-section .newsletter-input-group {
+  margin: 0;
+}
 .site-footer__items .newsletter-section .btn {
   background: #fff!important;
   color: #6cace1!important;
@@ -4302,3 +4330,9 @@ display: none!important;
   color: #fff!important;
   border-color: #fff!important;
 }
+
+
+#CollectionSection-16370769490ce1fb5d .page-width--extra, #CollectionSection-1601304991319 .page-width--extra, #CollectionSection-1600796453398 .page-width--extra{
+  margin-top: 4rem;
+}
+
