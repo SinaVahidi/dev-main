@@ -1221,7 +1221,7 @@
             "type": "menu",
             "settings": {
               "show_footer_title": true,
-              "menu": "footer-v2-2",
+              "menu": "footer-v2-3",
               "width": 18
             }
           },
