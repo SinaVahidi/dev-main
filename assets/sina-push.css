@@ -4308,6 +4308,7 @@ display: none!important;
   text-align: left!important;
   padding: 0;
   width: 34%;
+  display: none;
 }
 .site-footer__items .newsletter-section * {
   text-align: left!important;
