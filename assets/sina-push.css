@@ -1546,6 +1546,13 @@ ion-icon[name="add-outline"] {
   border-color: #6cace1;
   background: white;
 }
+@media screen and (min-width: 768px) {
+  .ffc-page-wholesale-landing .landing-block--background-image-text .content-area .btn{
+    color: #6cace1;
+    border-color: transparent;
+    background: white;
+  }
+}
 .ffc-page-wholesale-landing .landing-block--background-image-text .content-area .btn:hover, .ffc-page-wholesale-landing .landing-block--background-image-text .content-area .btn:focus, .ffc-page-wholesale-landing .landing-block--background-image-text .content-area .btn:active {
   color: white!important;
   background: #6cace1!important;
@@ -3106,7 +3113,7 @@ footer {
 .homepage .index-section--hero .hero__text-wrap .hero__text-content .hero__link .btn {
   border-radius: 0.1em;
   color: #6cace1;
-  border: 1px solid #6cace1!important;
+  border: 1px solid transparent!important;
 }
 
 /* pop up */
