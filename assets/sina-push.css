@@ -587,8 +587,17 @@
 
 @media screen and (max-width: 834px){
   .site-footer--v2 .site-footer__items .site-footer__item {
-    width:50%!important;
+    width:33%!important;
     padding-bottom: 15px;
+  }
+  .site-footer__item--signup-inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .site-footer--v2 .site-footer__items .site-footer__item {
+    border-bottom: none;
   }
 }
 @media screen and (max-width: 834px){
