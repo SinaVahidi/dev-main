@@ -1217,6 +1217,14 @@
               "width": 18
             }
           },
+          "547d8d02-ed50-4e10-bb42-f7a18c53100e": {
+            "type": "menu",
+            "settings": {
+              "show_footer_title": true,
+              "menu": "footer-v2-2",
+              "width": 20
+            }
+          },
           "8f27ebf1-c706-40e2-8752-772ad73ac978": {
             "type": "menu",
             "settings": {
@@ -1227,7 +1235,6 @@
           },
           "292663bc-4fab-4264-aec8-a431ebeebd51": {
             "type": "newsletter",
-            "disabled": true,
             "settings": {
               "show_footer_title": true,
               "title": "sign up to our newsletter",
@@ -1239,13 +1246,22 @@
         "block_order": [
           "footer-v2-1",
           "footer-v2-0",
+          "547d8d02-ed50-4e10-bb42-f7a18c53100e",
           "8f27ebf1-c706-40e2-8752-772ad73ac978",
           "292663bc-4fab-4264-aec8-a431ebeebd51"
         ],
         "settings": {
           "show_payment_icons": false,
           "show_copyright": true,
-          "copyright_text": ""
+          "copyright_text": "",
+          "title": "Sign up and save",
+          "text": "<p>Subscribe to get special offers, free giveaways, and once-in-a-lifetime deals.<\/p>",
+          "email_text": "Email address",
+          "email_button": "Subscribe",
+          "color_background": "#6CACE4",
+          "color_text": "#ffffff",
+          "button_color_bg": "#f0bb5a",
+          "button_color_text": "#ffffff"
         }
       },
       "newsletter-bar": {
