@@ -169,3 +169,5 @@ $(".card").click(function() {
 })
 
 
+const dnBundlePrice = document.querySelector('#ProductPrice-7636724842747.product__price');
+dnBundlePrice.classList.remove('hidden'); 
