@@ -3,6 +3,16 @@
     "main": {
       "type": "customers-login-alt-template",
       "settings": {
+        "sign_in_title": "Sign in",
+        "sign_in_subtitle": "or use your email for registration",
+        "sign_in_forgot": "Forgot your password?",
+        "sign_in_wholesale": "Looking to login to the wholesale portal?",
+        "sign_in_overlay_title": "Hello, Friend!",
+        "sign_in_overlay_subtitle": "Enter your personal details and start your journey with us to access your subscription login and nomz rewards points",
+        "sign_up_title": "Create Account",
+        "sign_up_subtitle": "or use your account",
+        "sign_up_overlay_title": "Welcome Back!",
+        "sign_up_overlay_subtitle": "Please login with your personal info"
       }
     }
   },
