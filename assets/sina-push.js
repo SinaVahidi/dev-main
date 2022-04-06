@@ -164,17 +164,17 @@ function popupOpenClose(popup) {
 }
 
 $(".card.one").click(function() {
-  window.location = $('.card').data("location");
+  window.location = $('.card.one').data("location");
   return false;
 })
 
 $(".card.two").click(function() {
-  window.location = $('.card').data("location");
+  window.location = $('.card.two').data("location");
   return false;
 })
 
 $(".card.three").click(function() {
-  window.location = $('.card').data("location");
+  window.location = $('.card.three').data("location");
   return false;
 })
 
