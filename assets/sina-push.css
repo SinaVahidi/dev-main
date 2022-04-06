@@ -4256,6 +4256,23 @@ button.ghost {
     margin-top: 0rem;
    }
 }
+
+.title.outside {
+  margin-top: 1rem;
+  text-align: center;
+  opacity: 1;
+  transition: opacity 0.25s;
+}
+.title.inside {
+  opacity: 0;
+  transition: opacity 0.25s;
+}
+.card:hover .title.inside {
+  opacity: 1;
+}
+.card:hover + h2 {
+  opacity: 0;
+}
 /* border-radius on buttons */
 
 .btn {

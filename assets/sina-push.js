@@ -166,18 +166,32 @@ function popupOpenClose(popup) {
 $(".card.one").click(function() {
   window.location = $('.card.one').data("location");
   return false;
-})
+});
 
 $(".card.two").click(function() {
   window.location = $('.card.two').data("location");
   return false;
-})
+});
 
 $(".card.three").click(function() {
   window.location = $('.card.three').data("location");
   return false;
-})
+});
 
+$(".card.one").touch(function() {
+  window.location = $('.card.one').data("location");
+  return false;
+});
+
+$(".card.two").touch(function() {
+  window.location = $('.card.two').data("location");
+  return false;
+});
+
+$(".card.three").touch(function() {
+  window.location = $('.card.three').data("location");
+  return false;
+});
 
 const dnBundlePrice = document.querySelector('#ProductPrice-7636724842747.product__price');
 dnBundlePrice.classList.remove('hidden'); 

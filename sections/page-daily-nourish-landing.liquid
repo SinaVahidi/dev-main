@@ -1,12 +1,12 @@
 {% assign ss = section.settings %}
 {% style %}
-  .card:nth-child(1):before {
+  .card.one:before {
     background-image: url('{{ ss.card_img_1 | img_url: "1200x"}}');
   }
-  .card:nth-child(2):before {
+  .card.two:before {
     background-image: url('{{ ss.card_img_2 | img_url: "1200x" }}');
   }
-  .card:nth-child(3):before {
+  .card.three:before {
     background-image: url('{{ ss.card_img_3 | img_url: "1200x" }}');
   }
 {% endstyle %}
@@ -196,26 +196,35 @@
 		</section>
 		<h2 class="h1" style="text-align:  center;">Shop Daily Nourish</h2>
 		<div class="page-content-alt">
-			<div class="card one" data-location="{{ ss.card_btn-url_1}}">
-				<div class="content">
-					<h2 class="title">{{ ss.card_title_1 }}</h2>
-					<p class="copy">{{ ss.card_text_1 }}</p>
-					<a class="btn-alt" href="{{ ss.card_btn-url_1}}">{{ ss.card_btn-text }}</a>
+			<div class="card-wrap">
+				<div class="card one" data-location="{{ ss.card_btn-url_1}}">
+					<div class="content">
+						<h2 class="title inside">{{ ss.card_title_1 }}</h2>
+						<p class="copy">{{ ss.card_text_1 }}</p>
+						<a class="btn-alt" href="{{ ss.card_btn-url_1}}">{{ ss.card_btn-text }}</a>
+					</div>
 				</div>
+				<h2 class="title outside">{{ ss.card_title_1 }}</h2>
 			</div>
-			<div class="card two" data-location="{{ ss.card_btn-url_2}}">
-				<div class="content">
-					<h2 class="title">{{ ss.card_title_2 }}</h2>
-					<p class="copy">{{ ss.card_text_2 }}</p>
-					<a class="btn-alt" href="{{ ss.card_btn-url_2}}">{{ ss.card_btn-text }}</a>
+			<div class="card-wrap">
+				<div class="card two" data-location="{{ ss.card_btn-url_2}}">
+					<div class="content">
+						<h2 class="title inside">{{ ss.card_title_2 }}</h2>
+						<p class="copy">{{ ss.card_text_2 }}</p>
+						<a class="btn-alt" href="{{ ss.card_btn-url_2}}">{{ ss.card_btn-text }}</a>
+					</div>
 				</div>
+				<h2 class="title outside">{{ ss.card_title_2 }}</h2>
 			</div>
-			<div class="card three" data-location="{{ ss.card_btn-url_3}}">
-				<div class="content">
-					<h2 class="title">{{ ss.card_title_3 }}</h2>
-					<p class="copy">{{ ss.card_text_3 }}</p>
-					<a class="btn-alt" href="{{ ss.card_btn-url_3}}">{{ ss.card_btn-text }}</a>
+			<div class="card-wrap">
+				<div class="card three" data-location="{{ ss.card_btn-url_3}}">
+					<div class="content">
+						<h2 class="title inside">{{ ss.card_title_3 }}</h2>
+						<p class="copy">{{ ss.card_text_3 }}</p>
+						<a class="btn-alt" href="{{ ss.card_btn-url_3}}">{{ ss.card_btn-text }}</a>
+					</div>
 				</div>
+				<h2 class="title outside">{{ ss.card_title_3 }}</h2>
 			</div>
 		</div>
 </div>
