@@ -163,7 +163,17 @@ function popupOpenClose(popup) {
 	});
 }
 
-$(".card").click(function() {
+$(".card.one").click(function() {
+  window.location = $('.card').data("location");
+  return false;
+})
+
+$(".card.two").click(function() {
+  window.location = $('.card').data("location");
+  return false;
+})
+
+$(".card.three").click(function() {
   window.location = $('.card').data("location");
   return false;
 })
