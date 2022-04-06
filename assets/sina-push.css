@@ -2842,7 +2842,7 @@ ion-icon[name="add-outline"] {
 }
 
 .contact-form-button {
-  padding: 0.5em;
+  padding: 0.5rem 1rem;
   border: 1px solid #6cace1;
   background: #fff;
   color: #6cace1;
@@ -4070,7 +4070,7 @@ button.ghost {
   margin-top: 20px;
   color: #4f4f4f;
   font-size: 42px;
-  line-height: 52px;
+  line-height: 45px;
   font-weight: 700;
   text-align: center;
   letter-spacing: -2px;
@@ -4082,8 +4082,8 @@ button.ghost {
   color: #4f4f4f;
   font-size: 20px;
   line-height: 28px;
-  font-weight: 400;
   text-align: center;
+  font-weight: 400;
   letter-spacing: -.5px;
 }
 
@@ -4173,11 +4173,20 @@ button.ghost {
   .product-landing-container {
     max-width: 90%;
   }
+  .testimonials-with-video {
+    height: unset;
+  }
+  .product-landing-count {
+    display: none;
+  }
   .product-landing-header h1 {
     font-size: 24px;
+    text-align: left;
+    line-height: 38px;
   }
   .product-landing-header p {
     font-size: 18px;
+    text-align: left;
   }
   .product-landing-header {
     padding: 1rem 10px;
@@ -4212,6 +4221,7 @@ button.ghost {
   }
   .video-container {
     width: 100%;
+    height: 25rem;
     order: 1;
   }
   .testimonial-content {
@@ -4219,6 +4229,21 @@ button.ghost {
   }
   .testimonial-text {
     margin-bottom: 0;
+  }
+  .reason-title {
+    font-size: 2rem;
+    margin: 1rem 0;
+
+    text-align: left;
+  }
+  .reason-text {
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 590px) {
+  .reason-title-mb {
+    display: none;
   }
 }
 
@@ -4253,12 +4278,14 @@ button.ghost {
   margin-bottom: 0.5rem!important;
 }
 
-
-@media only screen and (min-width: 590px) {
-  .section-header {
-    margin-bottom: -2rem;
-  }
+.product-landing-star {
+  background-image: url('https://cdn-icons-png.flaticon.com/512/561/561238.png');
+  width: 1.5rem;
+  height: 1.5rem;
+  background-size: cover;
+  display: inline-block;
 }
+
 
 .medium-up--push-one-eighth .yotpo .yotpo-modal-bottom-line .yotpo-bottomline {
   display: flex;
@@ -4344,5 +4371,28 @@ display: none!important;
 
 #CollectionSection-16370769490ce1fb5d .page-width--extra, #CollectionSection-1601304991319 .page-width--extra, #CollectionSection-1600796453398 .page-width--extra{
   margin-top: 4rem;
+}
+
+.contact-row .col-md-6:first-of-type {
+  padding: 9rem 5rem 9rem 18rem;
+}
+
+.contact_form_wrap {
+  margin-top: 5rem;
+  padding: 3rem;
+  box-shadow: rgb(0 0 0 / 10%) 0px 4px 12px;
+  border-radius: 1rem;
+  width: 70%;
+}
+.contact_title_wrap h1 { 
+  font-size: 3rem;
+}
+.contact_title_wrap p { 
+  font-weight: bold;
+  padding-left: 0.2rem;
+}
+.contact_form_wrap h3 { 
+  padding-left: 0.4rem;
+  color: #4f4f4f;
 }
 

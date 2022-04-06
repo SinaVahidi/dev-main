@@ -1,7 +1,7 @@
 {
   "sections": {
     "main": {
-      "type": "customers-login-alt-template",
+      "type": "page-curated-favourites",
       "settings": {
         "sign_in_title": "Sign in",
         "sign_in_subtitle": "or use your email for registration",

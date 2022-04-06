@@ -22,14 +22,16 @@
 			</div>
 			<div class="col-md-6">
 				<h2 class="product-landing-count">1</h2>
-				<h3 class="reason-title">{{ ss.reason-title-1}}</h3>
+				<h3 class="reason-title display-none-mobile">{{ ss.reason-title-1}}</h3>
+				<h3 class="reason-title reason-title-mb">{{ ss.reason-title-1-mb}}</h3>
 				<p class="reason-text">{{ ss.reason-text-1}}</p>
 			</div>
 		</div>
 		<div class="product-landing-row row">
 			<div class="col-md-6">
 				<h2 class="product-landing-count">2</h2>
-				<h3 class="reason-title">{{ ss.reason-title-2}}</h3>
+				<h3 class="reason-title display-none-mobile">{{ ss.reason-title-2}}</h3>
+				<h3 class="reason-title reason-title-mb">{{ ss.reason-title-2-mb}}</h3>
 				<p class="reason-text">{{ ss.reason-text-2}}</p>
 			</div>
 			<div class="col-md-6 image">
@@ -42,14 +44,16 @@
 			</div>
 			<div class="col-md-6">
 				<h2 class="product-landing-count">3</h2>
-				<h3 class="reason-title">{{ ss.reason-title-3}}</h3>
+				<h3 class="reason-title display-none-mobile">{{ ss.reason-title-3}}</h3>
+				<h3 class="reason-title reason-title-mb">{{ ss.reason-title-3-mb}}</h3>
 				<p class="reason-text">{{ ss.reason-text-3}}</p>
 			</div>
 		</div>
 		<div class="product-landing-row row">
 			<div class="col-md-6">
 				<h2 class="product-landing-count">4</h2>
-				<h3 class="reason-title">{{ ss.reason-title-4}}</h3>
+				<h3 class="reason-title display-none-mobile">{{ ss.reason-title-4}}</h3>
+				<h3 class="reason-title reason-title-mb">{{ ss.reason-title-4-mb}}</h3>
 				<p class="reason-text">{{ ss.reason-text-4}}</p>
 			</div>
 			<div class="col-md-6 image">
@@ -62,7 +66,8 @@
 			</div>
 			<div class="col-md-6">
 				<h2 class="product-landing-count">5</h2>
-				<h3 class="reason-title">{{ ss.reason-title-5}}</h3>
+				<h3 class="reason-title display-none-mobile">{{ ss.reason-title-5}}</h3>
+				<h3 class="reason-title reason-title-mb">{{ ss.reason-title-5-mb}}</h3>
 				<p class="reason-text">{{ ss.reason-text-5}}</p>
 			</div>
 		</div>
@@ -70,37 +75,37 @@
 	<div class="testimonials-with-video">
 		<div class="testimonials-container">
 			<div class="testimonial-content">
-				<p class="product-landing-stars">
-					<span class="product-landing-star">&#11088;</span>
-					<span class="product-landing-star">&#11088;</span>
-					<span class="product-landing-star">&#11088;</span>
-					<span class="product-landing-star">&#11088;</span>
-					<span class="product-landing-star">&#11088;</span>
-				</p>
+				<div class="product-landing-stars">
+					<div class="product-landing-star"></div>
+					<div class="product-landing-star"></div>
+					<div class="product-landing-star"></div>
+					<div class="product-landing-star"></div>
+					<div class="product-landing-star"></div>
+				</div>
 				<h3 class="testimonial-title">{{ ss.testimonial-title-1 }}</h3>
 				<p class="testimonial-text">{{ ss.testimonial-text-1 }}</p>
 				<p class="testimonial-author">{{ ss.testimonial-author-1 }} &#10050; {{ ss.testimonial-author-stat-1 }}</p>
 			</div>
 			<div class="testimonial-content">
-				<p class="product-landing-stars">
-					<span class="product-landing-star">&#11088;</span>
-					<span class="product-landing-star">&#11088;</span>
-					<span class="product-landing-star">&#11088;</span>
-					<span class="product-landing-star">&#11088;</span>
-					<span class="product-landing-star">&#11088;</span>
-				</p>
+				<div class="product-landing-stars">
+					<div class="product-landing-star"></div>
+					<div class="product-landing-star"></div>
+					<div class="product-landing-star"></div>
+					<div class="product-landing-star"></div>
+					<div class="product-landing-star"></div>
+				</div>
 				<h3 class="testimonial-title">{{ ss.testimonial-title-2 }}</h3>
 				<p class="testimonial-text">{{ ss.testimonial-text-2 }}</p>
 				<p class="testimonial-author">{{ ss.testimonial-author-2 }} &#10050; {{ ss.testimonial-author-stat-2 }}</p>
 			</div>
 			<div class="testimonial-content">
-				<p class="product-landing-stars">
-					<span class="product-landing-star">&#11088;</span>
-					<span class="product-landing-star">&#11088;</span>
-					<span class="product-landing-star">&#11088;</span>
-					<span class="product-landing-star">&#11088;</span>
-					<span class="product-landing-star">&#11088;</span>
-				</p>
+				<div class="product-landing-stars">
+					<div class="product-landing-star"></div>
+					<div class="product-landing-star"></div>
+					<div class="product-landing-star"></div>
+					<div class="product-landing-star"></div>
+					<div class="product-landing-star"></div>
+				</div>
 				<h3 class="testimonial-title">{{ ss.testimonial-title-3 }}</h3>
 				<p class="testimonial-text">{{ ss.testimonial-text-3 }}</p>
 				<p class="testimonial-author">{{ ss.testimonial-author-3 }} &#10050; {{ ss.testimonial-author-stat-3 }}</p>
@@ -239,6 +244,12 @@
 				"default": "Plant Based Iron"
 			},
 			{
+				"type": "text",
+				"id": "reason-title-1-mb",
+				"label": "First reason title (mobile)",
+				"default": "1. Plant Based Iron"
+			},
+			{
 				"type": "textarea",
 				"id": "reason-text-1",
 				"label": "First reason text",
@@ -254,6 +265,12 @@
 				"id": "reason-title-2",
 				"label": "Second reason title ",
 				"default": "Convenience, Elevated."
+			},
+			{
+				"type": "text",
+				"id": "reason-title-2-mb",
+				"label": "Second reason title (mobile)",
+				"default": "2. Convenience, Elevated."
 			},
 			{
 				"type": "textarea",
@@ -273,6 +290,12 @@
 				"default": "360º Whole Body Benefits"
 			},
 			{
+				"type": "text",
+				"id": "reason-title-3-mb",
+				"label": "Third reason title (mobile)",
+				"default": "3. 360º Whole Body Benefits"
+			},
+			{
 				"type": "textarea",
 				"id": "reason-text-3",
 				"label": "Third reason text",
@@ -290,6 +313,12 @@
 				"default": "Antioxidant Power"
 			},
 			{
+				"type": "text",
+				"id": "reason-title-4-mb",
+				"label": "Fourth reason title (mobile)",
+				"default": "4. Antioxidant Power"
+			},
+			{
 				"type": "textarea",
 				"id": "reason-text-4",
 				"label": "Fourth reason text",
@@ -305,6 +334,12 @@
 				"id": "reason-title-5",
 				"label": "Fifth reason title ",
 				"default": "Quality First"
+			},
+			{
+				"type": "text",
+				"id": "reason-title-5-mb",
+				"label": "Fifth reason title (mobile)",
+				"default": "5. Quality First"
 			},
 			{
 				"type": "textarea",
