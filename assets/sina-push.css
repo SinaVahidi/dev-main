@@ -2908,7 +2908,6 @@ ion-icon[name="add-outline"] {
 .contact-text-link{
   display: inline-block;
   color: inherit;
-  margin: 0 0 20px;
 }
 
 .contact-text-link:hover{
@@ -4449,13 +4448,21 @@ display: none!important;
   font-weight: bold;
   padding-left: 0.4rem;
 }
+
+.form-head-contact p:first-of-type {
+  margin-bottom: 0.5rem;
+}
+.form-head-contact p:last-of-type {
+  color: #4f4f4fc0;
+  font-size: smaller;
+  margin-bottom: 0;
+}
 .contact_form_wrap h3 { 
   padding-left: 0.4rem;
   color: #4f4f4f;
 }
 
 .info-group-alt {
-  width: 50%;
   text-align: center;
 }
 
@@ -4463,9 +4470,9 @@ display: none!important;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+  justify-content: space-between; 
+  margin: 1rem auto;
+  width: 90%;
 }
 
 @media screen and (max-width: 768px) {

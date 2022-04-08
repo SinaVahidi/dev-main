@@ -97,6 +97,7 @@
 			<div class="form-head-contact">
 				<h1>{{ ss.contact-top-head }}</h1>
 				<p>{{ ss.contact-subhead }}</p>
+				<p>Our office hours are 9AM - 5PM EST, Monday to Friday</p>
 			</div>
 			<form class="contact-form" action="https://formspree.io/f/mzbovvnb" method="POST">
 				<div class="form-group-alt">
@@ -114,15 +115,9 @@
 				<button class="contact-form-button" type="submit">Send Message</button>
 			</form>
 		</div>
-	</div>
-	<div class="col-md-5">
-		<img src="{{ ss.contact-image |img_url: '1200x' }}" alt="">
 		<div class="info-container">
 			<div class="info-group-alt">
-				<a href="tel:647-370-6740"class="contact-text-link">{{ ss.contacts-info-phone }}</a>
-			</div>
-			<div class="info-group-alt">
-				<a href="mailto:hello@nomz.com"class="contact-text-link">{{ ss.contacts-info-email }}</a>
+				<a href="tel:647-370-6740"class="contact-text-link">text us | {{ ss.contacts-info-phone }}</a>
 			</div>
 			<div class="info-group-alt">
 				<a class="contact-socials" target="_blank" href="https://www.instagram.com/nomz/" title="nomz on Instagram">
@@ -134,7 +129,13 @@
 					<span class="icon__fallback-text">Facebook</span>
 				  </a>
 			</div>
+			<div class="info-group-alt">
+				<a href="mailto:hello@nomz.com"class="contact-text-link">email | {{ ss.contacts-info-email }}</a>
+			</div>
 		</div>
+	</div>
+	<div class="col-md-5">
+		<img src="{{ ss.contact-image |img_url: '1200x' }}" alt="">
 	</div>
 </div>
 {% schema %}
