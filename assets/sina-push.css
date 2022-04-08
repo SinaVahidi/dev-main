@@ -680,7 +680,7 @@
 
 @media screen and (max-width: 589px) {
   .grid-product.grid-product--ffc .grid-product__meta{
-    row-gap:15px;
+    row-gap:0px;
   }
 }
 
@@ -699,7 +699,7 @@
 }
 
 .grid-product.grid-product--ffc .grid-product__meta .grid-product__title-price{
-  height: 66px;
+  height: auto;
   flex-direction: column;
 }
 @media screen and (min-width: 768px) {
@@ -1101,9 +1101,7 @@
   max-width: 70%;
   margin: 0;
 }
-.product__thumbs .slick-list .slick-track {
-  width: 450px!important;
-}
+
 @media  screen and (max-width: 1300px) {
   .product__thumbs .slick-list {
     max-width: 450px;
@@ -1201,12 +1199,12 @@
 /* from text on collections */
 
 .from-text{
-  font-size: 16px;
+  font-size: 18px;
   color: #4f4f4f;
 }
 
 .grid-product.grid-product--ffc--subscription .grid-product__title-price .grid-product__price .grid-product__price-orgnl .money{
-  font-size: 16px;
+  font-size: 18px;
 }
 
 .grid-product.grid-product--ffc .grid-product__meta .grid-product__title-price .grid-product__price .money{
@@ -1229,11 +1227,27 @@
     display:none!important;
   }
 }
-
+.grid-product__price-orgnl{
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
 /* non-updated phones price in grid */
 @media screen and (max-width:590px){
   .grid-product__price-orgnl{
     margin-top:15px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .from-text {
+    font-size: 16px;
+  color: #4f4f4f;
+  display: flex;
+  align-items: center;
+  margin-right: 4px;
+  }
+  .grid-product.grid-product--ffc--subscription .grid-product__title-price .grid-product__price .grid-product__price-orgnl .money {
+    font-size: 12px;
   }
 }
 
@@ -2881,7 +2895,8 @@ ion-icon[name="add-outline"] {
 }
 
 .contact-label {
-  color: rgb(215, 215, 215);
+  color: #4f4f4f;
+  font-weight: bold;
   display: block;
 }
 
@@ -2907,7 +2922,7 @@ ion-icon[name="add-outline"] {
   display: block;
   height: 2px;
   left: 50%;
-  background: #fff;
+  background: #000;
   transition: width 0.3s ease 0s, left 0.3s ease 0s;
   width: 0;
 }
@@ -2920,6 +2935,7 @@ ion-icon[name="add-outline"] {
   margin-bottom: 0.5rem;
 }
 .contact-socials{
+  cursor: pointer;
   margin-right: 0.5rem;
 }
 
@@ -2928,7 +2944,7 @@ ion-icon[name="add-outline"] {
 }
 
 .contact-socials > svg {
-  fill: #fff;
+  fill: #6cace1;
 }
 @media screen and (max-width: 1250px){
   .contact-right-col{
@@ -4409,26 +4425,124 @@ display: none!important;
   margin-top: 4rem;
 }
 
-.contact-row .col-md-6:first-of-type {
-  padding: 9rem 5rem 9rem 18rem;
+.contact-row {
+  width: 90%;
+  margin: 4rem auto;
+  box-shadow: rgb(0 0 0 / 10%) 0px 4px 12px;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+.contact-row .col-md-7, .contact-row .col-md-5 {
+  padding: 0
 }
 
 .contact_form_wrap {
-  margin-top: 5rem;
-  padding: 3rem;
-  box-shadow: rgb(0 0 0 / 10%) 0px 4px 12px;
-  border-radius: 1rem;
-  width: 70%;
+  padding: 2rem;
+  display: flex;
+  row-gap: 20px;
+  flex-direction: column;
 }
-.contact_title_wrap h1 { 
+.contact_form_wrap h1 { 
   font-size: 3rem;
 }
-.contact_title_wrap p { 
+.contact_form_wrap p { 
   font-weight: bold;
-  padding-left: 0.2rem;
+  padding-left: 0.4rem;
 }
 .contact_form_wrap h3 { 
   padding-left: 0.4rem;
   color: #4f4f4f;
 }
 
+.info-group-alt {
+  width: 50%;
+  text-align: center;
+}
+
+.info-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+  .contact-row {
+    margin-top: 1.5rem;
+  }
+  .contact_form_wrap {
+    padding: 1.5rem;
+  }
+  .contact-row .col-md-7 {
+    order: 2;
+  }
+  .contact-row .col-md-5 {
+    order: 1;
+  }
+}
+
+.dn-discount-wrap{
+  display: flex;
+  flex-direction: column;
+  flex-direction: center;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.dn-discount-wrap * {
+  width: 40%;
+  text-align: center;
+}
+
+.dn-discount-wrap p {
+  margin-bottom: 0;
+}
+
+.dn-discount-timer {
+  padding: 0.7rem 1rem;
+  border:2px dashed #6cace1;
+  width: unset;
+  display: inline;
+  border-radius: 1000px;
+  margin: 2.5rem;
+  font-weight: bold;
+}
+.dn-discount-timer span {
+  color: #6cace1;
+}
+.dn-discount-wrap h5 {
+  font-size: 1.5rem;
+}
+.dn-discount-wrap h2 {
+  font-size: 3rem;
+}
+.dn-discount-wrap a {
+  padding: 1.5rem;
+  background-color: #6cace1;
+  border-radius: 1000px;
+  width: 25%;
+  font-weight: 800;
+  color: #fff;
+  margin-bottom: 2rem;
+}
+
+.dn-discount-below { 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  margin-right: -1.5rem;
+}
+
+.dn-discount-below span {
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+/* cart total */
+
+.total-area {
+  color: #202020;
+}

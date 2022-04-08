@@ -194,37 +194,19 @@
 				</div>
 			</div>
 		</section>
-		<h2 class="h1" style="text-align:  center;">Shop Daily Nourish</h2>
-		<div class="page-content-alt">
-			<div class="card-wrap">
-				<div class="card one" data-location="{{ ss.card_btn-url_1}}">
-					<div class="content">
-						<h2 class="title inside">{{ ss.card_title_1 }}</h2>
-						<p class="copy">{{ ss.card_text_1 }}</p>
-						<a class="btn-alt" href="{{ ss.card_btn-url_1}}">{{ ss.card_btn-text }}</a>
-					</div>
+		<div class="dn-discount-wrap">
+			<h5>AN EXCLUSIVE DISCOUNT</h5>
+			<h2>Save 10% Instantly</h2>
+			<p>Are you ready to treat your body right? Simply click the discount button below and a 10% off coupon will be added to your cart. Add the Daily Nourish Superfood Mix to your cart and view the discount being applied when you are in the checkout portal</p>
+			<div class="dn-discount-timer">OFFER ENDS IN <span id="time">15:00</span></div>
+			<a href="https://nomz.com/discount/NOURISH10?redirect=%2Fproducts%2Fdaily-nourish">GET EXCLUSIVE DISCOUNT</a>
+			<div class="dn-discount-below">
+				<div>
+					<span>LIMITED INVENTORY</span>
 				</div>
-				<h2 class="title outside">{{ ss.card_title_1 }}</h2>
-			</div>
-			<div class="card-wrap">
-				<div class="card two" data-location="{{ ss.card_btn-url_2}}">
-					<div class="content">
-						<h2 class="title inside">{{ ss.card_title_2 }}</h2>
-						<p class="copy">{{ ss.card_text_2 }}</p>
-						<a class="btn-alt" href="{{ ss.card_btn-url_2}}">{{ ss.card_btn-text }}</a>
-					</div>
+				<div>
+					<span>FREE SHIPPING</span>
 				</div>
-				<h2 class="title outside">{{ ss.card_title_2 }}</h2>
-			</div>
-			<div class="card-wrap">
-				<div class="card three" data-location="{{ ss.card_btn-url_3}}">
-					<div class="content">
-						<h2 class="title inside">{{ ss.card_title_3 }}</h2>
-						<p class="copy">{{ ss.card_text_3 }}</p>
-						<a class="btn-alt" href="{{ ss.card_btn-url_3}}">{{ ss.card_btn-text }}</a>
-					</div>
-				</div>
-				<h2 class="title outside">{{ ss.card_title_3 }}</h2>
 			</div>
 		</div>
 </div>
@@ -439,75 +421,10 @@
 				"label": "Testimonial section video url"
 			},
 			{
-        "type":"html",
-        "id":"ingredient-section-head",
-        "label":"Ingredient section heading",
-        "default":"The Ingredients"
-      },
-			{
-				"type": "text",
-				"id": "card_title_1",
-				"label": "Title 1"
-			},
-			{
-				"type": "text",
-				"id": "card_text_1",
-				"label": "Text 1"
-			},
-			{
-				"type": "image_picker",
-				"id": "card_img_1",
-				"label": "Image 1"
-			},
-			{
-				"type": "text",
-				"id": "card_btn-url_1",
-				"label": "Button 1 URL"
-			},
-			{
-				"type": "text",
-				"id": "card_title_2",
-				"label": "Title 2"
-			},
-			{
-				"type": "text",
-				"id": "card_text_2",
-				"label": "Text 2"
-			},
-			{
-				"type": "image_picker",
-				"id": "card_img_2",
-				"label": "Image 2"
-			},
-			{
-				"type": "text",
-				"id": "card_btn-url_2",
-				"label": "Button 2 URL"
-			},
-			{
-				"type": "text",
-				"id": "card_title_3",
-				"label": "Title 3"
-			},
-			{
-				"type": "text",
-				"id": "card_text_3",
-				"label": "Text 3"
-			},
-			{
-				"type": "image_picker",
-				"id": "card_img_3",
-				"label": "Image 3"
-			},
-			{
-				"type": "text",
-				"id": "card_btn-url_3",
-				"label": "Button 3 URL"
-			},
-			{
-				"type": "text",
-				"id": "card_btn-text",
-				"label": "Button text(all)"
+			"type":"html",
+			"id":"ingredient-section-head",
+			"label":"Ingredient section heading",
+			"default":"The Ingredients"
 			}
 		],
 	"blocks": [
@@ -535,3 +452,42 @@
 	]
 }
 {% endschema %}
+
+
+{% javascript %}
+function startTimer(duration, display) {
+	var start = Date.now(),
+		diff,
+		minutes,
+		seconds;
+	function timer() {
+		// get the number of seconds that have elapsed since 
+		// startTimer() was called
+		diff = duration - (((Date.now() - start) / 1000) | 0);
+  
+		// does the same job as parseInt truncates the float
+		minutes = (diff / 60) | 0;
+		seconds = (diff % 60) | 0;
+  
+		minutes = minutes < 10 ? "0" + minutes : minutes;
+		seconds = seconds < 10 ? "0" + seconds : seconds;
+  
+		display.textContent = minutes + ":" + seconds; 
+  
+		if (diff <= 0) {
+			// add one second so that the count down starts at the full duration
+			// example 05:00 not 04:59
+			start = Date.now() + 1000;
+		}
+	};
+	// we don't want to wait a full second before the timer starts
+	timer();
+	setInterval(timer, 1000);
+  }
+  
+  window.onload = function () {
+	var fifteenMinutes = 60 * 15,
+		display = document.querySelector('#time');
+	startTimer(fifteenMinutes, display);
+  };
+{% endjavascript %}
