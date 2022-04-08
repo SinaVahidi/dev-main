@@ -195,11 +195,11 @@
 			</div>
 		</section>
 		<div class="dn-discount-wrap">
-			<h5>AN EXCLUSIVE DISCOUNT</h5>
-			<h2>Save 10% Instantly</h2>
-			<p>Are you ready to treat your body right? Simply click the discount button below and a 10% off coupon will be added to your cart. Add the Daily Nourish Superfood Mix to your cart and view the discount being applied when you are in the checkout portal</p>
+			<h5>{{ ss.dn-discount-h5 }}</h5>
+			<h2>{{ ss.dn-discount-h2 }}</h2>
+			<p>{{ ss.dn-discount-p }}</p>
 			<div class="dn-discount-timer">OFFER ENDS IN <span id="time">15:00</span></div>
-			<a href="https://nomz.com/discount/NOURISH10?redirect=%2Fproducts%2Fdaily-nourish">GET EXCLUSIVE DISCOUNT</a>
+			<a href="https://nomz.com/discount/NOURISH10?redirect=%2Fproducts%2Fdaily-nourish">{{ ss.dn-discount-a }}</a>
 			<div class="dn-discount-below">
 				<div>
 					<span>LIMITED INVENTORY</span>
@@ -421,11 +421,36 @@
 				"label": "Testimonial section video url"
 			},
 			{
-			"type":"html",
-			"id":"ingredient-section-head",
-			"label":"Ingredient section heading",
-			"default":"The Ingredients"
+				"type":"html",
+				"id":"ingredient-section-head",
+				"label":"Ingredient section heading",
+				"default":"The Ingredients"
+			},
+			{
+				"type": "text",
+				"id": "dn-discount-h5",
+				"label": "Discount text above header",
+				"default": "AN EXCLUSIVE DISCOUNT"
+			},
+			{
+				"type": "text",
+				"id": "dn-discount-h2",
+				"label": "Discount header",
+				"default": "Save 10% Instantly"
+			},
+			{
+				"type": "text",
+				"id": "dn-discount-p",
+				"label": "Discount description",
+				"default": "Are you ready to treat your body right? Simply click the discount button below and a 10% off coupon will be added to your cart. Add the Daily Nourish Superfood Mix to your cart and view the discount being applied when you are in the checkout portal"
+			},
+			{
+				"type": "text",
+				"id": "dn-discount-a",
+				"label": "Discount button text",
+				"default": "GET EXCLUSIVE DISCOUNT"
 			}
+
 		],
 	"blocks": [
 		{
