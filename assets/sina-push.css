@@ -4434,6 +4434,10 @@ display: none!important;
 .contact-row .col-md-7, .contact-row .col-md-5 {
   padding: 0
 }
+.contact-row .col-md-5 {
+  height: 0;
+  padding-bottom: 49%;
+}
 
 .contact_form_wrap {
   padding: 2rem;
