@@ -1098,6 +1098,7 @@
 }
 
 .product__thumbs .slick-list {
+  min-width: 430px;
   max-width: 450px;
   margin: 0;
 }
