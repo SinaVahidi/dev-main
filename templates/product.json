@@ -117,7 +117,7 @@
       ],
       "settings": {
         "show_product_ingredients": false,
-        "product_ingredients_heading": "The Ingredients",
+        "product_ingredients_heading": "{{ product.metafields.my_fields.ingredients_title.value }}",
         "view_more": true,
         "view_more_button": "View All Ingredients",
         "view_less_button": "View less",
