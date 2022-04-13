@@ -21,6 +21,100 @@
     },
     "ingredients": {
       "type": "product-ingredients",
+      "blocks": {
+        "a65519e3-d211-4857-aa76-815dec8ee4fd": {
+          "type": "ingredient",
+          "settings": {
+            "image": "{{ product.metafields.my_fields.ingredient_1_img.value }}",
+            "title": "{{ product.metafields.my_fields.ingredient_1_title.value }}",
+            "text": "<p>{{ product.metafields.my_fields.ingredient_1_description | metafield_tag }}<\/p>"
+          }
+        },
+        "0c583e04-2573-48e3-ab9b-f32614cdf8f6": {
+          "type": "ingredient",
+          "settings": {
+            "image": "{{ product.metafields.my_fields.ingredient_2_img.value }}",
+            "title": "{{ product.metafields.my_fields.ingredient_2_title.value }}",
+            "text": "<p>{{ product.metafields.my_fields.ingredient_2_description | metafield_tag }}<\/p>"
+          }
+        },
+        "0a02ca35-2edd-48eb-a7c8-697416a9d747": {
+          "type": "ingredient",
+          "settings": {
+            "image": "{{ product.metafields.my_fields.ingredient_3_img.value }}",
+            "title": "{{ product.metafields.my_fields.ingredient_3_title.value }}",
+            "text": "<p>{{ product.metafields.my_fields.ingredient_3_description | metafield_tag }}<\/p>"
+          }
+        },
+        "390a7e48-cfa8-4c50-ad8e-17dee0c6f2e2": {
+          "type": "ingredient",
+          "settings": {
+            "image": "{{ product.metafields.my_fields.ingredient_4_img.value }}",
+            "title": "{{ product.metafields.my_fields.ingredient_4_title.value }}",
+            "text": "<p>{{ product.metafields.my_fields.ingredient_4_description | metafield_tag }}<\/p>"
+          }
+        },
+        "30ac3955-ed0d-4841-a87f-131326e86bac": {
+          "type": "ingredient",
+          "settings": {
+            "image": "{{ product.metafields.my_fields.ingredient_5_img.value }}",
+            "title": "{{ product.metafields.my_fields.ingredient_5_title.value }}",
+            "text": "<p>{{ product.metafields.my_fields.ingredient_5_description | metafield_tag }}<\/p>"
+          }
+        },
+        "4dd20d8e-6424-4f79-aed3-c57fbaa70fb4": {
+          "type": "ingredient",
+          "settings": {
+            "image": "{{ product.metafields.my_fields.ingredient_6_img.value }}",
+            "title": "{{ product.metafields.my_fields.ingredient_6_title.value }}",
+            "text": "<p>{{ product.metafields.my_fields.ingredient_6_description | metafield_tag }}<\/p>"
+          }
+        },
+        "b000ce88-a09c-4fce-9b9f-80c07801b053": {
+          "type": "ingredient",
+          "settings": {
+            "image": "{{ product.metafields.my_fields.ingredient_7_img.value }}",
+            "title": "{{ product.metafields.my_fields.ingredient_7_title.value }}",
+            "text": "<p>{{ product.metafields.my_fields.ingredient_7_description | metafield_tag }}<\/p>"
+          }
+        },
+        "af76e96f-1881-49e1-b2b8-6cfe760bb4fe": {
+          "type": "ingredient",
+          "settings": {
+            "image": "{{ product.metafields.my_fields.ingredient_8_img.value }}",
+            "title": "{{ product.metafields.my_fields.ingredient_8_title.value }}",
+            "text": "<p>{{ product.metafields.my_fields.ingredient_8_description | metafield_tag }}<\/p>"
+          }
+        },
+        "3e8efc73-2acb-45be-9c83-b92d0f359069": {
+          "type": "ingredient",
+          "settings": {
+            "image": "{{ product.metafields.my_fields.ingredient_9_img.value }}",
+            "title": "{{ product.metafields.my_fields.ingredient_9_title.value }}",
+            "text": "<p>{{ product.metafields.my_fields.ingredient_9_description | metafield_tag }}<\/p>"
+          }
+        },
+        "70437c25-b1a7-4082-a986-6d0bd9790049": {
+          "type": "ingredient",
+          "settings": {
+            "image": "{{ product.metafields.my_fields.ingredient_10_img.value }}",
+            "title": "{{ product.metafields.my_fields.ingredient_10_title.value }}",
+            "text": "<p>{{ product.metafields.my_fields.ingredient_10_description | metafield_tag }}<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "a65519e3-d211-4857-aa76-815dec8ee4fd",
+        "0c583e04-2573-48e3-ab9b-f32614cdf8f6",
+        "0a02ca35-2edd-48eb-a7c8-697416a9d747",
+        "390a7e48-cfa8-4c50-ad8e-17dee0c6f2e2",
+        "30ac3955-ed0d-4841-a87f-131326e86bac",
+        "4dd20d8e-6424-4f79-aed3-c57fbaa70fb4",
+        "b000ce88-a09c-4fce-9b9f-80c07801b053",
+        "af76e96f-1881-49e1-b2b8-6cfe760bb4fe",
+        "3e8efc73-2acb-45be-9c83-b92d0f359069",
+        "70437c25-b1a7-4082-a986-6d0bd9790049"
+      ],
       "settings": {
         "show_product_ingredients": false,
         "product_ingredients_heading": "The Ingredients",
