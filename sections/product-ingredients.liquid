@@ -22,7 +22,7 @@
     <div class="product-ingredients grid grid--uniform flex f-wrap f-j-center" {% if ss.view_more %}data-toggle-group{% endif %}>
       {% for block in section.blocks %}
       {% assign bs = block.settings %}
-      <div class="grid__item ingredient-item ingredient-block medium-up--one-third">
+      <div class="{%unless bs.title != blank %} hide {% endunless %} grid__item ingredient-item ingredient-block medium-up--one-third">
 
         <div class="image-area">
           {% if bs.image != blank %}
