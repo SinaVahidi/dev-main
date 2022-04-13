@@ -1106,6 +1106,7 @@
 @media  screen and (max-width: 1300px) {
   .product__thumbs .slick-list {
     max-width: 450px;
+    min-width:unset;
   }
 }
 @media  screen and (max-width: 1050px) {
