@@ -7,7 +7,7 @@
         "thumbnail_position": "below",
         "description_style": "default",
         "social_enable": true,
-        "mobile_description": "One line description that is about this long maybe but maybe this long",
+        "mobile_description": "",
         "logos_position": "hide",
         "logos_color_bg": "",
         "logos_color_text": "",
