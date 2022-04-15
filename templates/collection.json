@@ -17,8 +17,8 @@
     "newsletter": {
       "type": "newsletter",
       "settings": {
-        "title": "Sign up and save",
-        "text": "<p>Subscribe to get special offers, free giveaways, and once-in-a-lifetime deals.<\/p>",
+        "title": "Sign Up + Save",
+        "text": "<p>Join our wellness mailing list for delish recipes, health tips, and fun news from us! We send out an email once a week.<\/p>",
         "email_text": "Email address",
         "email_button": "Subscribe",
         "color_background": "#6cace4",
