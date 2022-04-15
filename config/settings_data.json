@@ -1806,8 +1806,8 @@
       "1642170268a8da40df": {
         "type": "newsletter",
         "settings": {
-          "title": "Sign Up and Save 10%",
-          "text": "<p>Join our email list and get the latest offers, recipes and healthy living tips.<\/p>",
+          "title": "Sign Up + Save",
+          "text": "<p>Join our wellness mailing list for delish recipes, health tips, and fun news from us! We send out an email once a week.<\/p>",
           "email_text": "Email address",
           "email_button": "Sign Me Up",
           "color_background": "#ffffff",
