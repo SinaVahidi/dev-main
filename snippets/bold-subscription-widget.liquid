@@ -25,7 +25,9 @@
     window.BOLD.subscriptions.config.currencyFormat = "\u003Cspan class=money\u003E$ \u0026#123;\u0026#123;amount}} CAD\u003C\/span\u003E";
     window.BOLD.subscriptions.config.shopCurrencies = [{"id":2522,"currency":"CAD","currency_format":"$\u0026#123;\u0026#123;amount}}","created_at":"2021-05-12 14:52:36","updated_at":"2021-05-12 14:52:36"},{"id":2643,"currency":"USD","currency_format":"$\u0026#123;\u0026#123;amount}}","created_at":"2021-05-26 03:11:35","updated_at":"2021-05-26 03:11:35"}];
     window.BOLD.subscriptions.config.shopSettings = {"allow_msp_cancellation":true,"allow_msp_prepaid_renewal":true,"customer_can_pause_subscription":true,"customer_can_change_next_order_date":true,"line_item_discount_policy":"inherit","customer_can_change_order_frequency":true,"customer_can_create_an_additional_order":true,"show_currency_code":true,"stored_payment_method_policy":"required"};
-    window.BOLD.subscriptions.config.cashierPluginOnlyMode = window.BOLD.subscriptions.config.cashierPluginOnlyMode || false;
+
+    // TODO: Remove the isset with BS2-4659_improve_large_group_selection
+            window.BOLD.subscriptions.config.cashierPluginOnlyMode = window.BOLD.subscriptions.config.cashierPluginOnlyMode || false;
     if (window.BOLD.subscriptions.config.waitForCheckoutLoader === undefined) {
         window.BOLD.subscriptions.config.waitForCheckoutLoader = true;
     }
@@ -40,7 +42,7 @@
     window.BOLD.subscriptions.config.lineItemNameSelectors = window.BOLD.subscriptions.config.lineItemNameSelectors || [];
     window.BOLD.subscriptions.config.checkoutButtonSelectors = window.BOLD.subscriptions.config.checkoutButtonSelectors || [];
 
-    window.BOLD.subscriptions.config.featureFlags = window.BOLD.subscriptions.config.featureFlags || ["BS2-1882-gen-settings-tz","BS2-3318-prepaid-import-recurrence-fix","BS2-3719-discount-code-with-sdc","BS2-4386-add-address-source-to-address-models","BS2-4255-storefront-get-subs-by-product-ids","BS2-4434-validate-address-with-platform-validate","BS2-4296-webhook-sub-pause","SUB-79-subscription-frequency-updated-webhook","BS2-4295-subscription-reactivated-webhook","BS2-4297-webhook-resume-sub","BS2-4294-subscription-cancelled-webhook","BS2-4177-enable-historical-report-datepicker","SUB-83-subscription-quantity-updated-webhook","SUB-82-subscription-credit-card-updated-webhook","SUB-81-webhook-sub-shipping-address-updated","SUB-80-subscription-payment-failed-webhook","SUB-256-subscription-skipped-webhook","SUB-273-chain-report-jobs","bs2-3811-add-shopify-discount-code","bs2-4270-enable-remove-discount-code-UI","bs2-1804-cancellation-management-page","BS2-3651-orderstream-webhook-source-validation","BS2-3660-delete-line-items-command","BS2-4377-filter-list-sub-orders-endpoint","SUB-221-map-customer-info-created","SUB-260-expand-cashier-response-trans-failed","SUB-267-customer-info-variant-deleted","SUB-293-query-filter-webhook-requests"];
+    window.BOLD.subscriptions.config.featureFlags = window.BOLD.subscriptions.config.featureFlags || ["BS2-4177-enable-historical-report-datepicker","SUB-20-failing-transaction-report","bs2-1804-cancellation-management-page","BS2-3660-delete-line-items-command","BS2-4377-filter-list-sub-orders-endpoint","SUB-431-validate-update-line-items-endpoint","SUB-637-delay-subscription-contract-creation","SUB-720-applepay-ui"];
     window.BOLD.subscriptions.config.subscriptionProcessingFrequency = '60';
     window.BOLD.subscriptions.config.requireMSPInitialLoadingMessage = true;
     window.BOLD.subscriptions.data = window.BOLD.subscriptions.data || {};
@@ -70,10 +72,11 @@
         window.BOLD.subscriptions.config.assetBaseUrl = window.localStorage.getItem('boldSubscriptionsAssetBaseUrl')
     }
 
+    window.BOLD.subscriptions.data.subscriptionGroups = [];
     if (localStorage && localStorage.getItem('boldSubscriptionsSubscriptionGroups')) {
         window.BOLD.subscriptions.data.subscriptionGroups = JSON.parse(localStorage.getItem('boldSubscriptionsSubscriptionGroups'));
     } else {
-        window.BOLD.subscriptions.data.subscriptionGroups = [{"id":15286,"billing_rules":[{"id":31364,"subscription_group_id":15286,"interval_name":"2 weeks","billing_rule":"FREQ=WEEKLY;INTERVAL=2","custom_billing_rule":""},{"id":48319,"subscription_group_id":15286,"interval_name":"3 weeks","billing_rule":"FREQ=WEEKLY;INTERVAL=3","custom_billing_rule":""},{"id":48320,"subscription_group_id":15286,"interval_name":"4 weeks","billing_rule":"FREQ=WEEKLY;INTERVAL=4","custom_billing_rule":""},{"id":48321,"subscription_group_id":15286,"interval_name":"5 weeks","billing_rule":"FREQ=WEEKLY;INTERVAL=5","custom_billing_rule":""},{"id":48322,"subscription_group_id":15286,"interval_name":"6 weeks","billing_rule":"FREQ=WEEKLY;INTERVAL=6","custom_billing_rule":""},{"id":48323,"subscription_group_id":15286,"interval_name":"7 weeks","billing_rule":"FREQ=WEEKLY;INTERVAL=7","custom_billing_rule":""},{"id":48324,"subscription_group_id":15286,"interval_name":"8 weeks","billing_rule":"FREQ=WEEKLY;INTERVAL=8","custom_billing_rule":""}],"is_subscription_only":false,"allow_prepaid":false,"is_prepaid_only":false,"should_continue_prepaid":true,"continue_prepaid_type":"as_prepaid","prepaid_durations":[{"id":15169,"subscription_group_id":15286,"total_duration":1,"discount_type":"percentage","discount_value":0}],"selection_options":[{"platform_entity_id":"720861249"},{"platform_entity_id":"778386049"},{"platform_entity_id":"778391105"},{"platform_entity_id":"778397697"},{"platform_entity_id":"8508893133"},{"platform_entity_id":"8508908877"},{"platform_entity_id":"4582596837508"},{"platform_entity_id":"4582597132420"},{"platform_entity_id":"4582598180996"},{"platform_entity_id":"4858526040196"},{"platform_entity_id":"5786929201305"},{"platform_entity_id":"4858977714308"},{"platform_entity_id":"4858982170756"},{"platform_entity_id":"4858983841924"},{"platform_entity_id":"5302145876121"},{"platform_entity_id":"5641535324313"},{"platform_entity_id":"5773434060953"},{"platform_entity_id":"5786927136921"},{"platform_entity_id":"6938432176281"}],"discount_type":"percentage","percent_discount":15,"fixed_discount":0,"can_add_to_cart":true}];
+        window.BOLD.subscriptions.data.subscriptionGroups = [{"id":15286,"billing_rules":[{"id":31364,"subscription_group_id":15286,"interval_name":"2 weeks","billing_rule":"FREQ=WEEKLY;INTERVAL=2","custom_billing_rule":""},{"id":48319,"subscription_group_id":15286,"interval_name":"3 weeks","billing_rule":"FREQ=WEEKLY;INTERVAL=3","custom_billing_rule":""},{"id":48320,"subscription_group_id":15286,"interval_name":"4 weeks","billing_rule":"FREQ=WEEKLY;INTERVAL=4","custom_billing_rule":""},{"id":48321,"subscription_group_id":15286,"interval_name":"5 weeks","billing_rule":"FREQ=WEEKLY;INTERVAL=5","custom_billing_rule":""},{"id":48322,"subscription_group_id":15286,"interval_name":"6 weeks","billing_rule":"FREQ=WEEKLY;INTERVAL=6","custom_billing_rule":""},{"id":48323,"subscription_group_id":15286,"interval_name":"7 weeks","billing_rule":"FREQ=WEEKLY;INTERVAL=7","custom_billing_rule":""},{"id":48324,"subscription_group_id":15286,"interval_name":"8 weeks","billing_rule":"FREQ=WEEKLY;INTERVAL=8","custom_billing_rule":""}],"is_subscription_only":false,"allow_prepaid":false,"is_prepaid_only":false,"should_continue_prepaid":true,"continue_prepaid_type":"as_prepaid","prepaid_durations":[{"id":15169,"subscription_group_id":15286,"total_duration":1,"discount_type":"percentage","discount_value":0}],"selection_options":[{"platform_entity_id":"720861249"},{"platform_entity_id":"778386049"},{"platform_entity_id":"778391105"},{"platform_entity_id":"778397697"},{"platform_entity_id":"8508893133"},{"platform_entity_id":"8508908877"},{"platform_entity_id":"4582596837508"},{"platform_entity_id":"4582597132420"},{"platform_entity_id":"4582598180996"},{"platform_entity_id":"4858526040196"},{"platform_entity_id":"5786929201305"},{"platform_entity_id":"4858977714308"},{"platform_entity_id":"4858982170756"},{"platform_entity_id":"4858983841924"},{"platform_entity_id":"5302145876121"},{"platform_entity_id":"5641535324313"},{"platform_entity_id":"5773434060953"},{"platform_entity_id":"5786927136921"},{"platform_entity_id":"6938432176281"},{"platform_entity_id":"7593865380091"},{"platform_entity_id":"7606133424379"},{"platform_entity_id":"7633027203323"}],"discount_type":"percentage","percent_discount":15,"fixed_discount":0,"can_add_to_cart":true}];
     }
 
     window.BOLD.subscriptions.isFeatureFlagEnabled = function (featureFlag) {
@@ -136,6 +139,10 @@
         }
     }
 
+    window.BOLD.subscriptions.shouldLoadSubscriptionGroupFromAPI = function() {
+        return window.BOLD.subscriptions.config.loadSubscriptionGroupFrom === window.BOLD.subscriptions.config.loadSubscriptionGroupFromTypes['BSUB_API'];
+    }
+
     window.BOLD.subscriptions.getSubscriptionGroupFromProductId = function (productId) {
         var data = window.BOLD.subscriptions.data;
         var foundGroup = null;
@@ -167,6 +174,13 @@
 
         return null;
     };
+
+    window.BOLD.subscriptions.addSubscriptionGroup = function (subscriptionGroup) {
+        if(!window.BOLD.subscriptions.getSubscriptionGroupById(subscriptionGroup.id))
+        {
+            window.BOLD.subscriptions.data.subscriptionGroups.push(subscriptionGroup);
+        }
+    }
 
     window.BOLD.subscriptions.getSubscriptionGroupPrepaidDurationById = function(subscriptionGroupId, prepaidDurationId) {
         var subscriptionGroup = window.BOLD.subscriptions.getSubscriptionGroupById(subscriptionGroupId);
@@ -208,16 +222,30 @@
             var productId = window.BOLD.subscriptions.getProductIdFromAddToCartForm(addToCartForm);
             var subscriptionGroup = window.BOLD.subscriptions.getSubscriptionGroupFromProductId(productId);
 
-            if (subscriptionGroup) {
-                var addToCartButtons = addToCartForm.querySelectorAll(window.BOLD.subscriptions.config.addToCartButtonSelectors.join(','));
-                for (var j = 0; j < addToCartButtons.length; j++) {
-                    var addToCartButton = addToCartButtons[j];
-                    var toggleAction = disable ?  addToCartButton.setAttribute : addToCartButton.removeAttribute;
+            if(window.BOLD.subscriptions.isFeatureFlagEnabled('BS2-4659_improve_large_group_selection') ) {
+                if (subscriptionGroup || window.BOLD.subscriptions.shouldLoadSubscriptionGroupFromAPI()) {
+                    var addToCartButtons = addToCartForm.querySelectorAll(window.BOLD.subscriptions.config.addToCartButtonSelectors.join(','));
+                    for (var j = 0; j < addToCartButtons.length; j++) {
+                        var addToCartButton = addToCartButtons[j];
+                        var toggleAction = disable ?  addToCartButton.setAttribute : addToCartButton.removeAttribute;
 
-                    addToCartButton.disabled = disable;
-                    toggleAction.call(addToCartButton, 'data-disabled-by-subscriptions', disable);
+                        addToCartButton.disabled = disable;
+                        toggleAction.call(addToCartButton, 'data-disabled-by-subscriptions', disable);
+                    }
+                }
+            } else {
+                if (subscriptionGroup) {
+                    var addToCartButtons = addToCartForm.querySelectorAll(window.BOLD.subscriptions.config.addToCartButtonSelectors.join(','));
+                    for (var j = 0; j < addToCartButtons.length; j++) {
+                        var addToCartButton = addToCartButtons[j];
+                        var toggleAction = disable ?  addToCartButton.setAttribute : addToCartButton.removeAttribute;
+
+                        addToCartButton.disabled = disable;
+                        toggleAction.call(addToCartButton, 'data-disabled-by-subscriptions', disable);
+                    }
                 }
             }
+
         }
     };
 
@@ -340,14 +368,25 @@
         if (e.target.matches(window.BOLD.subscriptions.config.addToCartButtonSelectors.join(',')) && e.target.form) {
             var productId = window.BOLD.subscriptions.getProductIdFromAddToCartForm(e.target.form);
             var subscriptionGroup = window.BOLD.subscriptions.getSubscriptionGroupFromProductId(productId);
-
-            if (subscriptionGroup) {
-                // This code prevents products in subscription groups from being added to the cart before the
-                // Subscriptions app fully loads. Once the subscriptions app loads it will re-enable the
-                // buttons. Use window.BOLD.subscriptions.enableAddToCartButtons enable them manually.
-                e.preventDefault();
-                return false;
+            if(window.BOLD.subscriptions.isFeatureFlagEnabled('BS2-4659_improve_large_group_selection'))
+            {
+                if (subscriptionGroup || window.BOLD.subscriptions.shouldLoadSubscriptionGroupFromAPI()) {
+                    // This code prevents products in subscription groups from being added to the cart before the
+                    // Subscriptions app fully loads. Once the subscriptions app loads it will re-enable the
+                    // buttons. Use window.BOLD.subscriptions.enableAddToCartButtons enable them manually.
+                    e.preventDefault();
+                    return false;
+                }
+            } else {
+                if (subscriptionGroup) {
+                    // This code prevents products in subscription groups from being added to the cart before the
+                    // Subscriptions app fully loads. Once the subscriptions app loads it will re-enable the
+                    // buttons. Use window.BOLD.subscriptions.enableAddToCartButtons enable them manually.
+                    e.preventDefault();
+                    return false;
+                }
             }
+
         }
     };
 
@@ -542,7 +581,10 @@
     window.BOLD.subscriptions.addCachedProductData({{ search.results | json }});
     {% endif %}
 
-    window.BOLD.subscriptions.config.addToCartFormSelectors.push('.product-form.product-form-product-template:not(.bold-subscriptions-no-widget)');
+    window.BOLD.subscriptions.config.addToCartFormSelectors.push(
+        '.product-form.product-form-product-template:not(.bold-subscriptions-no-widget)'
+        ,'.product-form.product-form--payment-button:not(.bold-subscriptions-no-widget)'
+    );
     window.BOLD.subscriptions.config.addToCartButtonSelectors.push('[type="submit"]');
     window.BOLD.subscriptions.config.quickAddToCartButtonSelectors.push('a[data-event-type="product-click"]');
     window.BOLD.subscriptions.config.widgetInsertBeforeSelectors.push('[type="submit"]');
@@ -748,6 +790,4 @@
     };
 
     </script>
-
-
 
