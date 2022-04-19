@@ -34,22 +34,22 @@ accordionItems.forEach(element => {
   });
 });
 
-// const accordionColumns = document.querySelectorAll('.accordion-column-faq');
-// accordionColumns.forEach(element => {
-//   element.firstElementChild.lastElementChild.addEventListener('click', (btn) => {
-//     element.classList.toggle('active-faq-all');
-//     element.classList.toggle('active-faq-col');
-//     element.style.maxHeight = '200rem';
-//     element.firstElementChild.lastElementChild.firstElementChild.classList.toggle('dis-none');
-//     element.firstElementChild.lastElementChild.lastElementChild.classList.toggle('dis-none');
-//     for(let i = 0; i < element.children.length; i++){
-//       if(element.children[i].firstElementChild.classList.contains('active-faq'))
-//       {
-//         element.children[i].firstElementChild.classList.toggle('active-faq');
-//       }
-//     }
-//   });
-// });
+const accordionColumns = document.querySelectorAll('.accordion-column-faq');
+accordionColumns.forEach(element => {
+  element.firstElementChild.lastElementChild.addEventListener('click', (btn) => {
+    element.classList.toggle('active-faq-all');
+    element.classList.toggle('active-faq-col');
+    element.style.maxHeight = '200rem';
+    element.firstElementChild.lastElementChild.firstElementChild.classList.toggle('dis-none');
+    element.firstElementChild.lastElementChild.lastElementChild.classList.toggle('dis-none');
+    for(let i = 0; i < element.children.length; i++){
+      if(element.children[i].firstElementChild.classList.contains('active-faq'))
+      {
+        element.children[i].firstElementChild.classList.toggle('active-faq');
+      }
+    }
+  });
+});
 
 
 
