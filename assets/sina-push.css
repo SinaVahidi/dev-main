@@ -4559,3 +4559,7 @@ display: none!important;
 .total-area {
   color: #202020;
 }
+    
+.article__body li {
+  list-style: disc;
+}
