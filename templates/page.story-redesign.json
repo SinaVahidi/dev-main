@@ -19,18 +19,10 @@
             "text": "<p>Delicious and nutritious! Hazelnuts’ high level of vitamin E make them powerful cancer-fighting foods, boost the brain, and contribute to healthy skin and hair.<\/p>"
           }
         },
-        "3f06a907-3571-413d-80e6-ab9b3c5c76be": {
-          "type": "ingredient",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/coconuts3.jpg",
-            "title": "Coconuts",
-            "text": "<p>Sulfate-free coconut contains many disease fighting properties. It has many beneficial effects on cholesterol levels, bone health, and blood sugar control.<\/p>"
-          }
-        },
         "0cb98a2c-7892-44f4-bda7-21610e6da64c": {
           "type": "ingredient",
           "settings": {
-            "image": "shopify:\/\/shop_images\/pistachios.webp",
+            "image": "shopify:\/\/shop_images\/pistachios_1_999769bd-da84-4457-b0a1-283573ee0b3f.jpg",
             "title": "Pistachios",
             "text": "<p>Filled with vitamin B6, pistachios help maintain a healthy nervous and immune system. They also lower cholesterol and support gut, eye, and blood vessel health.<\/p>"
           }
@@ -38,7 +30,7 @@
         "376b3202-81af-4df5-b33b-fccde4c04a60": {
           "type": "ingredient",
           "settings": {
-            "image": "shopify:\/\/shop_images\/cashews.jpg",
+            "image": "shopify:\/\/shop_images\/cashews_a80c2701-b2ee-45fc-b98c-6fae31a9894f.jpg",
             "title": "Cashews",
             "text": "<p>Filled with healthy fats – cashews control blood sugar, boost bone strength and lower cholesterol. Plus, the high magnesium content works to protect the heart.<\/p>"
           }
@@ -46,31 +38,39 @@
         "a0bd29a5-a4d8-4f2b-baed-f088bea3c205": {
           "type": "ingredient",
           "settings": {
-            "image": "shopify:\/\/shop_images\/dates.jpg",
+            "image": "shopify:\/\/shop_images\/dates_1_3c872ded-38cc-4cd8-9863-18429d3ce37a.jpg",
             "title": "Dates",
             "text": "<p>By weight, dates contain 50% more potassium than bananas. One of seven essential macrominerals – potassium helps send nerve signals and regulate fluid balance.<\/p>"
-          }
-        },
-        "f5a2dc29-9eb0-47a2-adda-9ff37f084d8f": {
-          "type": "ingredient",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/cocoa.jpg",
-            "title": "Cocoa",
-            "text": "<p>Cocoa is packed with polyphenols, a naturally occurring antioxidant, known to improve blood flow and supply to your brain, neuron creation, and brain function.<\/p>"
           }
         },
         "51a175b6-68ce-4c2e-8316-df33f42e9c64": {
           "type": "ingredient",
           "settings": {
-            "image": "shopify:\/\/shop_images\/seasalt.jpg",
+            "image": "shopify:\/\/shop_images\/sea_salt_93526c5c-2244-4f91-bc4a-64838c83b12b.jpg",
             "title": "Sea Salt",
             "text": "<p>Sea salt is natural source of sodium loaded with electrolytes. Sea salt nourishes adrenal glands, improves dental health, and prmotes Nutrient Absorption.<\/p>"
+          }
+        },
+        "3f06a907-3571-413d-80e6-ab9b3c5c76be": {
+          "type": "ingredient",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Coconut_1_243d4cdb-13cf-46c7-a35f-5658c7522666.jpg",
+            "title": "Coconuts",
+            "text": "<p>Sulfate-free coconut contains many disease fighting properties. It has many beneficial effects on cholesterol levels, bone health, and blood sugar control.<\/p>"
+          }
+        },
+        "f5a2dc29-9eb0-47a2-adda-9ff37f084d8f": {
+          "type": "ingredient",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/cocoa_6db60352-17f6-4e53-aa9a-ff7953118b5e.jpg",
+            "title": "Cocoa",
+            "text": "<p>Cocoa is packed with polyphenols, a naturally occurring antioxidant, known to improve blood flow and supply to your brain, neuron creation, and brain function.<\/p>"
           }
         },
         "7789e9d9-0f9f-4445-b60c-3642b29b69f2": {
           "type": "ingredient",
           "settings": {
-            "image": "shopify:\/\/shop_images\/superfoods.jpg",
+            "image": "shopify:\/\/shop_images\/275785419_3169039610050603_2380955394473397706_n.jpg",
             "title": "Superfoods",
             "text": "<p>Rich in minerals, vitamins, and antioxidants – superfoods are nutrionally super-charged! They help ward off diseases, boost immunity, and reduce inflammation.<\/p>"
           }
@@ -79,12 +79,12 @@
       "block_order": [
         "449abd21-5607-49fc-a766-cf0793d40b91",
         "4c6aa60b-c0f7-42e5-b6e0-5dec8fe6dcc3",
-        "3f06a907-3571-413d-80e6-ab9b3c5c76be",
         "0cb98a2c-7892-44f4-bda7-21610e6da64c",
         "376b3202-81af-4df5-b33b-fccde4c04a60",
         "a0bd29a5-a4d8-4f2b-baed-f088bea3c205",
-        "f5a2dc29-9eb0-47a2-adda-9ff37f084d8f",
         "51a175b6-68ce-4c2e-8316-df33f42e9c64",
+        "3f06a907-3571-413d-80e6-ab9b3c5c76be",
+        "f5a2dc29-9eb0-47a2-adda-9ff37f084d8f",
         "7789e9d9-0f9f-4445-b60c-3642b29b69f2"
       ],
       "settings": {
