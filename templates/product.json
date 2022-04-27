@@ -101,6 +101,14 @@
             "title": "{{ product.metafields.my_fields.ingredient_10_title.value }}",
             "text": "<p>{{ product.metafields.my_fields.ingredient_10_description | metafield_tag }}<\/p>"
           }
+        },
+        "7a2891b9-a0aa-41c1-95ef-7eeb67bd7fee": {
+          "type": "ingredient",
+          "settings": {
+            "image": "{{ product.metafields.my_fields.ingredient_11_image.value }}",
+            "title": "{{ product.metafields.my_fields.ingredient_11_title.value }}",
+            "text": "<p>{{ product.metafields.my_fields.ingredient_11_description | metafield_tag }}<\/p>"
+          }
         }
       },
       "block_order": [
@@ -113,7 +121,8 @@
         "b000ce88-a09c-4fce-9b9f-80c07801b053",
         "af76e96f-1881-49e1-b2b8-6cfe760bb4fe",
         "3e8efc73-2acb-45be-9c83-b92d0f359069",
-        "70437c25-b1a7-4082-a986-6d0bd9790049"
+        "70437c25-b1a7-4082-a986-6d0bd9790049",
+        "7a2891b9-a0aa-41c1-95ef-7eeb67bd7fee"
       ],
       "settings": {
         "show_product_ingredients": false,
