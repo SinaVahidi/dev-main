@@ -1732,7 +1732,7 @@
       "16370769490ce1fb5d": {
         "type": "featured-collection",
         "settings": {
-          "title": "best sellers",
+          "title": "featured",
           "home_featured_products": "best-sellers",
           "per_row": 4,
           "rows": 1,
