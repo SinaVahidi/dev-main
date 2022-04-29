@@ -23,7 +23,7 @@
         
         {% if bs[logo_image] != blank %}
           <div class="logo-grid__item">
-            {% assign img_url = bs[logo_image] | img_url: '1x1' | replace: '_1x1.', '_{width}x.' %}
+            {% assign img_url = bs[logo_image] | img_url: '1200x' %}
 
             {% if bs[logo_link] != blank %}
               <a href="{{ bs[logo_link] }}" class="logo-grid__link">
