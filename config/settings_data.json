@@ -1565,7 +1565,7 @@
           "title": "your cart",
           "checkout_notice": "Shipping, taxes & discounts calculated at checkout",
           "enable_additional_buttons": false,
-          "cart_notes_enable": false,
+          "cart_notes_enable": true,
           "cart_notes_title": "add a gift note?",
           "enable_upsell": true,
           "upsell_title": "why not add?",
