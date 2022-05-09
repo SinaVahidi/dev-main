@@ -104,6 +104,7 @@
         },
         "7a2891b9-a0aa-41c1-95ef-7eeb67bd7fee": {
           "type": "ingredient",
+          "disabled": true,
           "settings": {
             "image": "{{ product.metafields.my_fields.ingredient_11_image.value }}",
             "title": "{{ product.metafields.my_fields.ingredient_11_title.value }}",
