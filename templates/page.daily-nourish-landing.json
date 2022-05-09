@@ -6,7 +6,7 @@
         "d75f5d4e-79cf-435b-8635-6436a80239da": {
           "type": "ingredient",
           "settings": {
-            "image": "shopify:\/\/shop_images\/hemp-seeds.jpg",
+            "image": "shopify:\/\/shop_images\/hemp_seeds_3.jpg",
             "title": "Hemp Hearts",
             "text": "<p>A great source of iron, calcium, and magnesium – hemp hearts are comprised of 25% protein and 20% fiber. Plus, they support both heart and cognitive health.<\/p>"
           }
@@ -14,7 +14,7 @@
         "86820e72-2ca8-45cd-a3cd-8bf63021ee3d": {
           "type": "ingredient",
           "settings": {
-            "image": "shopify:\/\/shop_images\/flax-seeds.jpg",
+            "image": "shopify:\/\/shop_images\/flax_chia_3.jpg",
             "title": "Flax Seeds",
             "text": "<p>Rich in fiber, omega-3, and amino acids – sprouted seeds result in higher amounts of vitamins and increased nutrient absorption compared to unsprouted seeds.<\/p>"
           }
@@ -22,7 +22,7 @@
         "149f37a9-56e1-4588-922a-e3bf9b928e17": {
           "type": "ingredient",
           "settings": {
-            "image": "shopify:\/\/shop_images\/cayenne_21f097f4-1982-4512-9f17-493d5dc5b38d.jpg",
+            "image": "shopify:\/\/shop_images\/cayenne_3.jpg",
             "title": "Cayenne Pepper",
             "text": "<p>A rich source of vitamins B6, C, and E – Cayenne pepper contains beneficial plant compounds that help protect against cellular damage from oxidative stress.<\/p>"
           }
@@ -30,7 +30,7 @@
         "0e62d21d-70fb-4905-ba5f-111d5cee2c18": {
           "type": "ingredient",
           "settings": {
-            "image": "shopify:\/\/shop_images\/cinnamon.jpg",
+            "image": "shopify:\/\/shop_images\/cinnamon_2.jpg",
             "title": "Ceylon Cinnamon",
             "text": "<p>Ceylon cinnamon is superior nutritionally to cassia cinnamon. It regulates blood sugar, preserves brain function, protects heart health, and improves immunity.<\/p>"
           }
@@ -38,7 +38,7 @@
         "0cd3209d-5801-4dc3-87c3-0de13241a447": {
           "type": "ingredient",
           "settings": {
-            "image": "shopify:\/\/shop_images\/bee-pollen_6f3d778c-87bb-49c0-ba5f-144f3268bfb1.jpg",
+            "image": "shopify:\/\/shop_images\/bee_pollen-2.jpg",
             "title": "Bee Pollen",
             "text": "<p>Nature’s multivitamin! Bee Pollen contains anti-inflammatory properties and is known to enhance energy, speed healing, reduce stress, and boost liver health.<\/p>"
           }
@@ -46,7 +46,7 @@
         "a61437e7-6041-4d7c-9887-b38f272caf2a": {
           "type": "ingredient",
           "settings": {
-            "image": "shopify:\/\/shop_images\/turmeric_816dc426-f67c-44b2-a6ee-aa6ed6bc15e9.jpg",
+            "image": "shopify:\/\/shop_images\/turmeric_3.jpg",
             "title": "Turmeric",
             "text": "<p>This calming plant is a potent antioxidant that reduces inflammation, aids in detoxification and liver support – all of which support mental well-being.<\/p>"
           }
@@ -54,7 +54,7 @@
         "0b9514bb-f982-4403-b1c2-a7e6d6e7a38c": {
           "type": "ingredient",
           "settings": {
-            "image": "shopify:\/\/shop_images\/camu-camu_197bfd09-de13-46c2-b000-0594c855ed43.jpg",
+            "image": "shopify:\/\/shop_images\/camu_camu.jpg",
             "title": "Camu Camu",
             "text": "<p>This superfood berry helps promote collagen formation and support intestinal health. It’s an amazing source of vitamin C – with 30x more than a kiwi!<\/p>"
           }
@@ -62,7 +62,7 @@
         "37af3821-c8f2-4f6b-9ddf-5058cfd6a60f": {
           "type": "ingredient",
           "settings": {
-            "image": "shopify:\/\/shop_images\/maca_6cdf4a25-75a1-4b12-8906-6c04ad41f8ce.jpg",
+            "image": "shopify:\/\/shop_images\/maca_2.jpg",
             "title": "Maca",
             "text": "<p>This popular adaptogen promotes hormone balance and vitality! Gelatinized powder is not gelatin, but a process of removing starches, allowing easier digestion.<\/p>"
           }
@@ -70,7 +70,7 @@
         "2b55d279-5ad8-422a-856d-7c70447b3e91": {
           "type": "ingredient",
           "settings": {
-            "image": "shopify:\/\/shop_images\/curry-leaf_ce77293e-d4a9-41e7-8f74-d391991744ff.jpg",
+            "image": "shopify:\/\/shop_images\/curry_leaf_mix_4.jpg",
             "title": "Curry Leaf",
             "text": "<p>An easily absorbed source of plant-based iron – packed with vitamin A and C! Plus, they contain antibacterial, antifungal, and anti-inflammatory properties.<\/p>"
           }
@@ -78,13 +78,14 @@
         "dca54614-03f0-4494-a514-14dd7f0ef440": {
           "type": "ingredient",
           "settings": {
-            "image": "shopify:\/\/shop_images\/spirulina_c3d5c152-9d26-4303-9e1c-f247fdd9e264.jpg",
+            "image": "shopify:\/\/shop_images\/spirulina_2.jpg",
             "title": "Spirulina",
             "text": "<p>One of the most nutrient-dense foods on the planet – this powerhouse superfood helps flush out toxins, boost the immune system, and support mental health.<\/p>"
           }
         },
         "09293178-4788-4279-aee1-91fd7f2ad7bd": {
           "type": "ingredient",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/chia-seeds.jpg",
             "title": "Chia Seeds",
