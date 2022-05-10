@@ -1,1 +1,152 @@
-{"sections":{"main":{"type":"page-faq-template","blocks":{"ee0e9741-93b8-4058-b4a5-d02134bfa178":{"type":"rich-text","settings":{"title":"subscriptions","text":"","align_text":"left"}},"4de491cb-0ff5-4ff4-9de4-4e759a7cbe78":{"type":"question","settings":{"title":"I can't log into my account?","text":"<p>You are not required to create an account when you make a subscription order. However, in order to manage your subscription preferences, you need to create an account with the same email provided during your order. <a href=\"https:\/\/nomz.com\/account\/register\"><span style=\"text-decoration:underline\">Click here<\/span><\/a> if you haven’t created an account yet. If you already have an account, log in below<\/p>"}},"178f498d-a082-445c-a1da-da19c988203e":{"type":"question","settings":{"title":"Can I skip my next order?","text":"<p>Yes, <a href=\"https:\/\/nomz.com\/account\/login?return_url=%2Faccount\"><strong>log in<\/strong><\/a> to your account and click 'Manage my subscription' on the left hand side of your desktop or scroll down on your mobile. Click View details. Click Manage upcoming orders. Click Skip order for any upcoming orders you wouldn't like to receive.<\/p>"}},"79e21c11-8c49-41ad-be3a-df9176104c61":{"type":"question","settings":{"title":"Can I change the products in my subscription?","text":"<p>Yes, <a href=\"https:\/\/nomz.com\/account\/login?return_url=%2Faccount\"><strong>log in<\/strong><\/a> to your account and click 'Manage my subscription' on the left hand side of your desktop or scroll down on your mobile. Click View details. Click Products in your subscription. Click Swap product and select which flavour you would like to receive instead.<\/p>"}},"c91d54a4-f41c-454c-ace1-4a83c52ca01a":{"type":"question","settings":{"title":"Can I cancel my subscription?","text":"<p>Yes, <a href=\"https:\/\/nomz.com\/account\/login?return_url=%2Faccount\"><strong>log in<\/strong><\/a> to your account and click 'Manage my subscription' on the left hand side of your desktop or scroll down on your mobile. Click View details. Click Cancel Subscription.<\/p>"}},"de066528-14a8-49a2-bd44-ff2745a90bee":{"type":"rich-text","settings":{"title":"Product","text":"","align_text":"left"}},"83eb3acd-f467-4d99-828b-d38d4fd79157":{"type":"question","settings":{"title":"What are nomz energy bites?","text":"<p>Nomz Energy Bites are a decadent healthy snack that everyone enjoys. It's perfect for a workout, a car snack, or breakfast. You can add it to your smoothie bowls, take it with you to the park, or enjoy on vacation. Our energy bites are certified organic, vegan, gluten free, and paleo. It's a snack that tastes good, made with simple and real ingredients.<\/p>"}},"15c42a24-4bb3-46ab-ba2c-a338ed2c1d1d":{"type":"question","settings":{"title":"How many flavours of nomz are there?","text":"<p>Our energy bites are available in four different coatings: Hazelnut, Pistachio, Coconut and Almond.<\/p>"}},"0b411187-a3cf-4e4a-af9d-7e3528cb4200":{"type":"question","settings":{"title":"I have a nut allergy, can I eat your products?","text":"<p>Nomz is <strong>not<\/strong> a nut free facility. A majority of our products are made with tree nuts including almonds, hazelnuts, pistachios and cashews.<\/p><p>Our facility <strong>does not <\/strong>process peanuts.<\/p>"}},"48117b9f-526b-4f31-b014-a2f4b9045c35":{"type":"question","settings":{"title":"90 calories per ball – is that good or bad?","text":"<p>Nomz Energy Bites are an enjoyable snack for two equally weighted reasons: they taste good and they are healthy. Win\/win. As a bonus, they also sustain your hunger and tide you over when you haven't had much else to eat. Our calories are packed with nutrients and healthy fats. We always believe that as long as you're eating good calories, there's no need to count.<\/p>"}},"92f50c6b-594f-415c-bad1-84605dd30036":{"type":"question","settings":{"title":"What is the shelf life of nomz energy bites?","text":"<p>4 months stored at room temperature. We ship out energy bites that have been freshly made<\/p>"}},"2450f19a-ee8d-4f1a-afd0-c95149806924":{"type":"rich-text","settings":{"title":"company","text":"","align_text":"left"}},"ef877eef-7606-4e44-a583-c1c849f8a488":{"type":"question","settings":{"title":"Where are you based out of?","text":"<p>We are a proudly Canadian company based in Toronto, Ontario.<\/p>"}},"69d86ee4-ab8a-46dd-bd79-c03f75a6d80b":{"type":"question","settings":{"title":"Do you ship to countries outside of Canada?","text":"<p>Yes, we ship worldwide via UPS. All orders ship out same day or next day from Toronto, Ontario in Canada. Depending on where you're located, you'll receive your parcel within days of placing the order. UPS tracking numbers are automatically emailed to you upon shipment, so you are able to check the progress and ETA of your orders. Send us a note for any questions about your shipment!<\/p>"}},"7215892b-4fe0-4419-ac55-d8498fbf71f8":{"type":"rich-text","settings":{"title":"wholesale","text":"","align_text":"left"}},"bc8b0c9f-c31c-4901-ab12-ded6a620fa61":{"type":"question","settings":{"title":"I have a store and would like to carry your product. Do you sell wholesale?","text":"<p>Thank you for your interest in carrying our products! We would be delighted to work with you as a wholesale partner. Please create an account on our wholesale portal at <a href=\"http:\/\/wholesale.nomz.com\/\">wholesale.nomz.com<\/a>. If need any help, please reach out to us directly. We would be happy to answer any questions and guide you through the process!<\/p>"}}},"block_order":["ee0e9741-93b8-4058-b4a5-d02134bfa178","4de491cb-0ff5-4ff4-9de4-4e759a7cbe78","178f498d-a082-445c-a1da-da19c988203e","79e21c11-8c49-41ad-be3a-df9176104c61","c91d54a4-f41c-454c-ace1-4a83c52ca01a","de066528-14a8-49a2-bd44-ff2745a90bee","83eb3acd-f467-4d99-828b-d38d4fd79157","15c42a24-4bb3-46ab-ba2c-a338ed2c1d1d","0b411187-a3cf-4e4a-af9d-7e3528cb4200","48117b9f-526b-4f31-b014-a2f4b9045c35","92f50c6b-594f-415c-bad1-84605dd30036","2450f19a-ee8d-4f1a-afd0-c95149806924","ef877eef-7606-4e44-a583-c1c849f8a488","69d86ee4-ab8a-46dd-bd79-c03f75a6d80b","7215892b-4fe0-4419-ac55-d8498fbf71f8","bc8b0c9f-c31c-4901-ab12-ded6a620fa61"],"settings":{"page_title_enable":false,"page_content_enable":true}}},"order":["main"]}
+{
+  "sections": {
+    "main": {
+      "type": "faq-row",
+      "blocks": {
+        "e32df639-1c3d-4ed1-b95a-8c15bbaff246": {
+          "type": "col_left",
+          "settings": {
+            "col_left_question": "I can't log into my account?",
+            "col_left_answer": "You are not required to create an account when you make a subscription order. However, in order to manage your subscription preferences, you need to create an account with the same email provided during your order. <a href=\"\/account\/register\" style=\"text-decoration: underline; text-underline-offset: 0.2em;\">Click here<\/a> if you haven’t created an account yet. If you already have an account, log in below"
+          }
+        },
+        "7363a40e-1d5b-4888-9ce5-efae2d27a422": {
+          "type": "col_left",
+          "settings": {
+            "col_left_question": "Can I skip my next order?",
+            "col_left_answer": "Yes, <a href=\"\/account\/login\" style=\"text-decoration: underline; text-underline-offset: 0.2em; font-weight: 700;\">log in<\/a> to your account and click 'Manage my subscription' on the left hand side of your desktop or scroll down on your mobile. Click View details. Click Manage upcoming orders. Click Skip order for any upcoming orders you wouldn't like to receive."
+          }
+        },
+        "c34ec5f8-4e17-4f73-9e64-4565c697aa0b": {
+          "type": "col_left",
+          "settings": {
+            "col_left_question": "Can I change the products in my subscription?",
+            "col_left_answer": "Yes, <a href=\"\/account\/login\" style=\"text-decoration: underline; text-underline-offset: 0.2em; font-weight: 700;\">log in<\/a> to your account and click 'Manage my subscription' on the left hand side of your desktop or scroll down on your mobile. Click View details. Click Products in your subscription. Click Swap product and select which flavour you would like to receive instead."
+          }
+        },
+        "01120b05-049c-44bd-a085-47b10546bbca": {
+          "type": "col_left",
+          "settings": {
+            "col_left_question": "Can I cancel my subscription?",
+            "col_left_answer": "Yes, <a href=\"\/account\/login\" style=\"text-decoration: underline; text-underline-offset: 0.2em; font-weight: 700;\">log in<\/a> to your account and click 'Manage my subscription' on the left hand side of your desktop or scroll down on your mobile. Click View details. Click Cancel Subscription."
+          }
+        },
+        "63dadf34-d367-431f-8fbc-54ed299bb10a": {
+          "type": "col_right",
+          "settings": {
+            "col_right_question": "What are nomz energy bites?",
+            "col_right_answer": "Nomz Energy Bites are a decadent healthy snack that everyone enjoys. It's perfect for a workout, a car snack, or breakfast. You can add it to your smoothie bowls, take it with you to the park, or enjoy on vacation. Our energy bites are certified organic, vegan, gluten free, and paleo. It's a snack that tastes good, made with simple and real ingredients."
+          }
+        },
+        "46f75333-0bdd-4cf6-a85f-2e02fa6f9908": {
+          "type": "col_right",
+          "settings": {
+            "col_right_question": "How many flavours of nomz are there?",
+            "col_right_answer": "Our energy bites are available in four different coatings: Hazelnut, Pistachio, Coconut and Almond."
+          }
+        },
+        "36340d57-520c-42b5-b024-7278d366bb2f": {
+          "type": "col_right",
+          "settings": {
+            "col_right_question": "I have a nut allergy, can I eat your products?",
+            "col_right_answer": "Nomz is <span style=\"font-weight: 700;\">not<\/span> a nut free facility. A majority of our products are made with tree nuts including almonds, hazelnuts, pistachios and cashews.\n\nOur facility <span style=\"font-weight: 700;\">does not<\/span> process peanuts."
+          }
+        },
+        "bfa50819-240b-45e4-b409-94f7a46c8126": {
+          "type": "col_right",
+          "settings": {
+            "col_right_question": "90 calories per ball – is that good or bad?",
+            "col_right_answer": "Nomz Energy Bites are an enjoyable snack for two equally weighted reasons: they taste good and they are healthy. Win\/win. As a bonus, they also sustain your hunger and tide you over when you haven't had much else to eat. Our calories are packed with nutrients and healthy fats. We always believe that as long as you're eating good calories, there's no need to count."
+          }
+        },
+        "6628af77-b24e-4d5c-9c4e-0605c01458ab": {
+          "type": "col_right",
+          "settings": {
+            "col_right_question": "What is the shelf life of nomz energy bites?",
+            "col_right_answer": "4 months stored at room temperature. We ship out energy bites that have been freshly made"
+          }
+        }
+      },
+      "block_order": [
+        "e32df639-1c3d-4ed1-b95a-8c15bbaff246",
+        "7363a40e-1d5b-4888-9ce5-efae2d27a422",
+        "c34ec5f8-4e17-4f73-9e64-4565c697aa0b",
+        "01120b05-049c-44bd-a085-47b10546bbca",
+        "63dadf34-d367-431f-8fbc-54ed299bb10a",
+        "46f75333-0bdd-4cf6-a85f-2e02fa6f9908",
+        "36340d57-520c-42b5-b024-7278d366bb2f",
+        "bfa50819-240b-45e4-b409-94f7a46c8126",
+        "6628af77-b24e-4d5c-9c4e-0605c01458ab"
+      ],
+      "settings": {
+        "page_title_enable": true,
+        "col_left_title": "Subscriptions",
+        "col_right_title": "Product"
+      }
+    },
+    "164562804122ac4670": {
+      "type": "faq-row",
+      "blocks": {
+        "ee1e5ff1-47fc-4670-8dfc-7cc266e5dfde": {
+          "type": "col_left",
+          "settings": {
+            "col_left_question": "Where are you based out of?",
+            "col_left_answer": "We are a proudly Canadian company based in Toronto, Ontario."
+          }
+        },
+        "00701692-3c13-4147-ba92-d69f1934d720": {
+          "type": "col_left",
+          "settings": {
+            "col_left_question": "Do you ship to countries outside of Canada?",
+            "col_left_answer": "Yes, we ship worldwide via UPS. All orders ship out same day or next day from Toronto, Ontario in Canada. Depending on where you're located, you'll receive your parcel within days of placing the order. UPS tracking numbers are automatically emailed to you upon shipment, so you are able to check the progress and ETA of your orders. Send us a note for any questions about your shipment!"
+          }
+        },
+        "765ba8f6-2879-47c6-a226-9541cc422201": {
+          "type": "col_right",
+          "settings": {
+            "col_right_question": "I have a store and would like to carry your product. Do you sell wholesale?",
+            "col_right_answer": "Thank you for your interest in carrying our products! We would be delighted to work with you as a wholesale partner. Please create an account on our wholesale portal at \n<a href=\"https:\/\/wholesale.nomz.com\/login\" style=\"text-decoration: underline; text-underline-offset: 0.2em;\">wholesale.nomz.com.<\/a>"
+          }
+        },
+        "f8c07962-77ea-4aee-aef1-4e4f08c41454": {
+          "type": "col_right",
+          "settings": {
+            "col_right_question": "Do you have a distributer?",
+            "col_right_answer": "Yes, UNFI is our national distribution partner."
+          }
+        },
+        "9259a3ab-20fc-4775-98d6-a44650d10ce6": {
+          "type": "col_left",
+          "settings": {
+            "col_left_question": "What is your return policy?",
+            "col_left_answer": "If you aren't happy with your order, please <a href=\"\/pages\/contact-1\" style=\"text-decoration: underline; text-underline-offset: 0.2em; font-weight: 700;\">contact us<\/a> within 5 days of your delivery date. We'll be sure to make it right!"
+          }
+        },
+        "d9641b26-acb1-490c-a6ad-1626d0bb0f32": {
+          "type": "col_left",
+          "settings": {
+            "col_left_question": "What is your shipping policy?",
+            "col_left_answer": "<b>Canada &amp; USA<\/b>\n<br>\n<br>\nFree standard shipping on all orders $100.00 and above. Orders under $100.00 ship with $8.00 flat rate shipping. Delivery time within Canada is 1-4 business days. Delivery time to the US is 3-5 business days.\n<br>\n<br>\n<b>International<\/b>\n<br>\n<br>\nFree standard shipping on all orders $100.00 and above. Orders under $100.00 ship with $15.00 flat rate shipping. Delivery time internationally is 3-5 business days.\n\nOur standard shipping goes with UPS and can be tracked at: <a href=\"https:\/\/www.ups.com.\/track\" style=\"text-decoration: underline; text-underline-offset: 0.2em; font-weight: 700;\"> https:\/\/www.ups.com<\/a>"
+          }
+        }
+      },
+      "block_order": [
+        "ee1e5ff1-47fc-4670-8dfc-7cc266e5dfde",
+        "00701692-3c13-4147-ba92-d69f1934d720",
+        "765ba8f6-2879-47c6-a226-9541cc422201",
+        "f8c07962-77ea-4aee-aef1-4e4f08c41454",
+        "9259a3ab-20fc-4775-98d6-a44650d10ce6",
+        "d9641b26-acb1-490c-a6ad-1626d0bb0f32"
+      ],
+      "settings": {
+        "page_title_enable": false,
+        "col_left_title": "Company",
+        "col_right_title": "Wholesale"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "164562804122ac4670"
+  ]
+}
