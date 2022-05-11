@@ -1001,8 +1001,7 @@
         "type": "text",
         "id": "social_tiktok_link",
         "label": "Tiktok",
-        "info": "https:\/\/www.tiktok.com\/shopify",
-        "default": "https:\/\/nomz.com\/"
+        "info": "https:\/\/www.tiktok.com\/shopify"
       },
       {
         "type": "text",
