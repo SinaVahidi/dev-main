@@ -1,7 +1,4 @@
 <div class="mlvedaform">
-  {% if product.available %}
-{% render 'subscription-product' %}
-{% endif %} 
   {%- include 'bold-product' with product, hide_action: 'break', output: 'none' -%}
   {% include 'product-template',
     description_style: section.settings.description_style,
