@@ -1908,7 +1908,33 @@
       "16401960982d1b854d",
       "1642170268a8da40df",
       "16426573624d22dfce"
-    ]
+    ],
+    "blocks": {
+      "855628211100114053": {
+        "type": "shopify:\/\/apps\/klaviyo-email-marketing-sms\/blocks\/klaviyo-onsite-embed\/2632fe16-c075-4321-a88b-50b567f42507",
+        "disabled": true,
+        "settings": {
+        }
+      },
+      "6143736321357441667": {
+        "type": "shopify:\/\/apps\/tidio-live-chat\/blocks\/app-embed\/1002274d-fb18-4939-98f6-5f05a8deeadc",
+        "disabled": true,
+        "settings": {
+        }
+      },
+      "6174324309569838175": {
+        "type": "shopify:\/\/apps\/smile-rewards-loyalty\/blocks\/smile-shopify-app\/2fae4e25-1841-4ea2-bc02-bd548478c4f6",
+        "disabled": true,
+        "settings": {
+        }
+      },
+      "7570552984445421165": {
+        "type": "shopify:\/\/apps\/yotpo-product-reviews-photos\/blocks\/settings\/eb7dfd7d-db44-4334-bc49-c893b51b36cf",
+        "disabled": true,
+        "settings": {
+        }
+      }
+    }
   },
   "presets": {
     "Classic": {

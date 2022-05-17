@@ -7,7 +7,7 @@
         "blog_show_tags": true,
         "blog_show_date": true,
         "blog_show_comments": true,
-        "blog_show_author": false,
+        "blog_show_author": true,
         "social_sharing_blog": true,
         "featured_products_heading": "Shop This Post",
         "related_articles_heading": "Related Articles"
@@ -20,7 +20,7 @@
         "text": "<p>Join our wellness mailing list for delish recipes, health tips, and fun news from us! We send out an email once a week..<\/p>",
         "email_text": "Email address",
         "email_button": "Subscribe",
-        "color_background": "#6CACE4",
+        "color_background": "#6cace4",
         "color_text": "#ffffff",
         "button_color_bg": "#f0bb5a",
         "button_color_text": "#ffffff"
