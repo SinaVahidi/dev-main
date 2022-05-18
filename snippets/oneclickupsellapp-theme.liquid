@@ -882,6 +882,8 @@ PopupDispatcher.prototype = {
         this._clearFlow();
         this.secondAttempt = true;
         const button = this.target.querySelector('[type="submit"], [name="add"], [name="checkout"]');
+
+        this.context.helpers.removeExtraClassList(button);
         button.click();
         if (this.bt && this.bt.present) this.bt.endLoadingBtn();
     },
@@ -960,7 +962,7 @@ PopupDispatcher.prototype = {
         let form = this.context.cart.serialize(target);
         form = decodeURI(form);
 
-        const matches = form.match(/id=(\d+)/g);
+        const matches = form.match(/id(\[\])?=(\d+)/g);
         if (!matches) return [];
 
         return matches.map(function(item) {
@@ -1023,7 +1025,7 @@ PopupDispatcher.prototype = {
     get _productPageVariant() {
         if (!this.isProductAction) return {};
 
-        const variant = this.target.querySelector('[name="id"]');
+        const variant = this.target.querySelector('[name="id"], [name="id[]"]');
         const quantity = this.target.querySelector('[name="quantity"]');
         const currentVariant = lqd.product.variants.find(function(item) {
             return item.id === +variant.value && item.available;
@@ -2973,9 +2975,20 @@ const UpdaterHelpers = {
         return match && match[1].split('_')[0];
       },
     _getThemeId: function(item) {
-        const link = item.closest('[id^="CartItem"]').querySelector('[id^="Remove"] a').href;
-        const match = link.match(/id=(\d+)/);
-        return match && +match[1];
+        const selectors = [
+            { selector: '[id^="Remove"] a', regexp: /id=(\d+)/ },
+            { selector: 'a[href*=\'variant=\']', regexp: /variant=(\d+)/ }
+        ];
+        return selectors.reduce((acc, element) => {
+            if (acc) return acc;
+
+            const link = item
+                .closest('[id^="CartItem"]')
+                .querySelector(element.selector);
+            const match = link && link.href.match(element.regexp);
+
+            return match && +match[1];
+        }, null) || [];
       },
     _getClosestKey: function(item) {
         const closestKey = item.closest(this.selectors.cartItemKey);
@@ -3805,6 +3818,14 @@ function Helpers() {
         // handle outofthesandbox themes
         return Shopify.theme_settings && Shopify.theme_settings.go_to_checkout === false;
     };
+
+    this.removeExtraClassList = function(elem) {
+        if (!elem) return;
+
+        const classList = utils.store.get('extraClassListToRemove').join(',');
+
+        elem.classList.remove(classList);
+    };
 }
 
 function ApplicationsUtils() {
@@ -3952,6 +3973,9 @@ function Store() {
                 variant_id: null,
                 product_id: null,
             },
+            extraClassListToRemove: [
+                'hulkapps_submit_cart'
+            ],
             pagesIntegrationData: {}
         },
         event: function(e) {
