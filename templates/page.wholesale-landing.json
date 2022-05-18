@@ -240,8 +240,8 @@
           "settings": {
             "title": "we’d love to hear from you!",
             "text": "",
-            "heading_phone": "call or text us",
-            "phone": "+1 647-370-6740",
+            "heading_phone": "",
+            "phone": "",
             "heading_email": "write to us",
             "email": "hello@nomz.com"
           }
