@@ -1063,7 +1063,7 @@
   opacity: 0;
   overflow: hidden;
 }
-.inside-content .product-ingredients-section .product-ingredients .ingredient-item.active .image-area  {
+.inside-content .product-ingredients-section .product-ingredients .ingredient-item.active .image-area, .product-ingredients-section .product-ingredients .ingredient-item.active .image-area {
   background: #4f4f4f;
 }
 
