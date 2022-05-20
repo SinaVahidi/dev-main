@@ -142,12 +142,3 @@
 	]
   }
 {% endschema %}
-{% javascript %}
-  const ingredientInfoToggle = document.querySelectorAll('.more_info_btn');
-ingredientInfoToggle.forEach(element => {
-  console.log(element);
-  element.addEventListener('click', () => {
-    element.parentElement.parentElement.classList.toggle('active');
-  })
-})
-{% endjavascript %}
