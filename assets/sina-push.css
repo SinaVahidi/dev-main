@@ -1055,7 +1055,7 @@
   background: url('https://cdn-icons-png.flaticon.com/512/1828/1828906.png');
 }
 
-.inside-content .product-ingredients-section .product-ingredients .ingredient-item .image-area , .inside-content .product-ingredients-section .product-ingredients .ingredient-item h3 {
+.inside-content .product-ingredients-section .product-ingredients .ingredient-item .image-area , .inside-content .product-ingredients-section .product-ingredients .ingredient-item h3, .product-ingredients-section .product-ingredients .ingredient-item .image-area, .product-ingredients-section .inside-content .product-ingredients-section .product-ingredients .ingredient-item h3{
   transition: all 0.5s;
 }
 
