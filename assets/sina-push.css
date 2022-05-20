@@ -1059,7 +1059,7 @@
   transition: all 0.5s;
 }
 
-.inside-content .product-ingredients-section .product-ingredients .ingredient-item .rte{
+.inside-content .product-ingredients-section .product-ingredients .ingredient-item .rte, .product-ingredients-section .product-ingredients .ingredient-item .content-area .rte{
   opacity: 0;
   overflow: hidden;
 }
