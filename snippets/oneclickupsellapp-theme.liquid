@@ -1,5 +1,5 @@
 {% comment %}
-  Updated: 2022/05/05
+  Updated: 2022/05/25
 {% endcomment %}
 
 {% unless oneclickupsellapp %}
@@ -785,7 +785,7 @@ PopupDispatcher.prototype = {
         const isSameCart = self.helpers.isSameCart(cart);
         const isSameCartToken = self.helpers.isSameCartToken(cart);
 
-        if (!isSameCart && !isSameCartToken) utils.cookie.remove('ocu_popup_ids')
+        if ((!isSameCart && !isSameCartToken) || !isSameCartToken) utils.cookie.remove('ocu_popup_ids')
         const isShownOfferIdPresent = utils.cookie.get('ocu_popup_ids');
 
         if (isShownOfferIdPresent) query += 'split_test_weight=' + isShownOfferIdPresent;
