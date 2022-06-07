@@ -188,9 +188,9 @@
           "type_navigation_size": 16,
           "type_navigation_style": false,
           "show_announcement": true,
-          "announcement_text": "5% of sales this month will be going to Rainbow Railroad 🏳️‍🌈",
-          "announcement_text_us": "5% of sales this month will be going to Rainbow Railroad 🏳️‍🌈",
-          "announcement_text_ca": "5% of sales this month will be going to Rainbow Railroad 🏳️‍🌈",
+          "announcement_text": "5% of this month's sales will be going to Rainbow Railroad 🏳️‍🌈",
+          "announcement_text_us": "5% of this month's sales will be going to Rainbow Railroad 🏳️‍🌈",
+          "announcement_text_ca": "5% of this month's sales will be going to Rainbow Railroad 🏳️‍🌈",
           "announcement_link": "https:\/\/www.rainbowrailroad.org\/",
           "announcement_closable": false
         }
