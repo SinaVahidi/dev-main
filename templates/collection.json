@@ -10,7 +10,7 @@
         "collection_sort_enable": false,
         "collection_header": "{{ collection.metafields.my_fields.collection_heading.value }}",
         "collection_subheader": "",
-        "collection_image_desk": "{{ collection.metafields.my_fields.collection_image_desktop.value }}",
+        "collection_image_desk": "https:\/\/cdn.shopify.com\/s\/files\/1\/0857\/4434\/files\/NOMZ_Product2021_lifestyle-144-Edit-June8_22-crop-2500x956.jpg?v=1654733182",
         "collection_image_cell": "{{ collection.metafields.my_fields.collection_image_mobile.value }}"
       }
     },
