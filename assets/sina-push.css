@@ -894,10 +894,16 @@
   box-sizing: border-box;
 }
 
+
 .inside-content {
   background-color: #f8f9fa;
   padding: 2em 1.5em;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.template-product .inside-content {
+  background-color: #fff;
+  box-shadow: none;
 }
 
 .inside-content-text{
